@@ -1,0 +1,18 @@
+[Unit]
+Description=Decoropic Next.js application
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/var/www/decoropic
+ExecStart=/usr/bin/node /var/www/decoropic/server.js
+Restart=always
+RestartSec=5
+Environment=NODE_ENV=production
+Environment=PORT=3000
+Environment=HOSTNAME=127.0.0.1
+User=www-data
+Group=www-data
+
+[Install]
+WantedBy=multi-user.target

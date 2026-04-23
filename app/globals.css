@@ -1,0 +1,337 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  --brand-forest: #1c3833;
+  --brand-ink: #16211f;
+  --brand-gold: #ae9260;
+  --brand-gold-soft: #c6ad7f;
+  --brand-gold-deep: #8c744a;
+  --brand-sand: #f3ede4;
+  --brand-mist: #edf0ea;
+  --brand-line: #d9d2c6;
+  --brand-ivory: #f7f3ec;
+
+  /* v2.0 Editorial Architecture typography */
+  --type-display: clamp(4rem, 12vw, 10rem); /* 64 → 160px */
+  --type-hero-xl: clamp(3.25rem, 9vw, 7.5rem); /* 52 → 120px */
+  --type-hero: clamp(2.5rem, 7vw, 5.25rem); /* 40 → 84px */
+  --type-megatitle: clamp(1.75rem, 4vw, 3rem); /* 28 → 48px */
+  --type-quote: clamp(1.375rem, 2.6vw, 2.25rem); /* 22 → 36px */
+
+  --serif: var(--font-serif-display), "Iowan Old Style", "Playfair Display", "Palatino Linotype", Georgia, serif;
+  --sans: var(--font-sans), "Avenir Next", "Helvetica Neue", "Segoe UI", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-brand-sand text-brand-ink antialiased;
+  font-family: var(--sans);
+  background-image:
+    radial-gradient(circle at 10% 0%, rgba(174, 146, 96, 0.2), transparent 24rem),
+    radial-gradient(circle at 90% 12%, rgba(28, 56, 51, 0.12), transparent 20rem),
+    linear-gradient(180deg, #f6f1e9 0%, #f2ece4 40%, #f7f5f1 100%);
+}
+
+a {
+  @apply transition-colors duration-200;
+}
+
+/* ============ Container System (v2.0) ============ */
+/* Three container widths can be mixed on a single page to break the frame. */
+
+.container-shell {
+  @apply mx-auto w-full max-w-[1240px] px-4 sm:px-6 lg:px-8;
+}
+
+.container-wide {
+  @apply mx-auto w-full max-w-container-wide px-4 sm:px-6 lg:px-8;
+}
+
+.container-narrow {
+  @apply mx-auto w-full max-w-container-narrow px-4 sm:px-6 lg:px-8;
+}
+
+.container-edge {
+  @apply w-full px-0;
+}
+
+/* ============ Editorial Typography (v2.0) ============ */
+
+.text-display {
+  font-family: var(--serif);
+  font-size: var(--type-display);
+  line-height: 0.95;
+  font-weight: 900;
+  letter-spacing: -0.05em;
+}
+
+.text-hero-xl {
+  font-family: var(--serif);
+  font-size: var(--type-hero-xl);
+  line-height: 0.95;
+  font-weight: 900;
+  letter-spacing: -0.04em;
+}
+
+.text-hero {
+  font-family: var(--serif);
+  font-size: var(--type-hero);
+  line-height: 1;
+  font-weight: 900;
+  letter-spacing: -0.04em;
+}
+
+.text-megatitle {
+  font-family: var(--serif);
+  font-size: var(--type-megatitle);
+  line-height: 1.05;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.text-quote {
+  font-family: var(--serif);
+  font-size: var(--type-quote);
+  line-height: 1.3;
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: -0.005em;
+}
+
+.text-eyebrow-lg {
+  font-size: 0.875rem;
+  line-height: 1.2;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+/* ============ Existing utilities ============ */
+
+.card-surface {
+  @apply rounded-[2rem] border border-brand-line bg-white shadow-card backdrop-blur;
+}
+
+.section-gap {
+  @apply py-16 sm:py-24;
+}
+
+/* v2.0 breathing section rhythm — 120 / 160 / 200px */
+.section-rhythm {
+  @apply py-20 sm:py-28 lg:py-section;
+}
+
+.section-rhythm-lg {
+  @apply py-24 sm:py-32 lg:py-section-lg;
+}
+
+.section-rhythm-breathe {
+  @apply py-28 sm:py-40 lg:py-breathe;
+}
+
+.panel-grid {
+  background-image:
+    linear-gradient(rgba(22, 33, 31, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(22, 33, 31, 0.04) 1px, transparent 1px);
+  background-size: 36px 36px;
+}
+
+.ink-gradient {
+  background:
+    linear-gradient(135deg, rgba(17, 28, 26, 0.98) 0%, rgba(24, 45, 41, 0.94) 56%, rgba(36, 56, 51, 0.9) 100%);
+}
+
+.hero-sheen::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(120deg, transparent 18%, rgba(255, 255, 255, 0.08) 38%, transparent 58%);
+  opacity: 0.45;
+}
+
+.soft-ring {
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.55),
+    0 16px 34px rgba(20, 32, 29, 0.08);
+}
+
+.eyebrow-label {
+  @apply text-xs font-semibold uppercase tracking-[0.26em] text-brand-gold;
+}
+
+.display-title {
+  font-family: var(--serif);
+  letter-spacing: -0.04em;
+}
+
+.site-section {
+  @apply section-gap;
+}
+
+.site-grid {
+  @apply grid gap-6 lg:gap-8;
+}
+
+.pill-chip {
+  @apply inline-flex items-center rounded-full border border-brand-line bg-white px-4 py-2 text-sm text-slate-700;
+}
+
+.metric-card {
+  @apply rounded-[1.4rem] px-4 py-4 backdrop-blur;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.site-divider {
+  @apply h-px w-full bg-gradient-to-r from-transparent via-brand-line to-transparent;
+}
+
+/* ============ v2.0 Breakout / full-bleed helpers ============ */
+/* Lets a child of a max-width container punch out to full viewport width. */
+
+.full-bleed {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+}
+
+.edge-bleed-right {
+  margin-right: calc(50% - 50vw);
+}
+
+.edge-bleed-left {
+  margin-left: calc(50% - 50vw);
+}
+
+/* ============ v2.0 Editorial Motion ============ */
+
+@keyframes editorial-rise {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 30px, 0);
+    filter: blur(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    filter: blur(0);
+  }
+}
+
+@keyframes editorial-fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes editorial-hero-zoom {
+  from {
+    transform: scale(1.06);
+    filter: blur(2px);
+    opacity: 0.6;
+  }
+  to {
+    transform: scale(1);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+.editorial-rise {
+  animation: editorial-rise 0.9s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.editorial-fade {
+  animation: editorial-fade 0.6s ease-out both;
+}
+
+.editorial-hero-zoom {
+  animation: editorial-hero-zoom 1.4s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+[data-reveal] {
+  opacity: 0;
+  transform: translate3d(0, 30px, 0);
+  filter: blur(6px);
+  transition:
+    opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.9s cubic-bezier(0.22, 1, 0.36, 1),
+    filter 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform, filter;
+}
+
+[data-reveal="in"] {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  filter: blur(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .editorial-rise,
+  .editorial-fade,
+  .editorial-hero-zoom,
+  [data-reveal] {
+    animation: none !important;
+    transition: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+    filter: none !important;
+  }
+}
+
+/* ============ Film grain + editorial image placeholder ============ */
+
+.film-grain {
+  position: relative;
+  isolation: isolate;
+}
+
+.film-grain::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  mix-blend-mode: overlay;
+  opacity: 0.18;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.95' numOctaves='2' stitchTiles='stitch'/><feColorMatrix type='saturate' values='0'/></filter><rect width='100%' height='100%' filter='url(%23n)' opacity='0.6'/></svg>");
+}
+
+.warm-shadow-image {
+  background:
+    radial-gradient(ellipse at 22% 18%, rgba(219, 176, 110, 0.32) 0%, transparent 42%),
+    radial-gradient(ellipse at 78% 88%, rgba(28, 56, 51, 0.55) 0%, transparent 55%),
+    linear-gradient(140deg, #201a14 0%, #141210 45%, #0d1715 100%);
+}
+
+.pine-overlay {
+  background: linear-gradient(180deg, rgba(17, 40, 36, 0.28) 0%, rgba(17, 40, 36, 0.42) 55%, rgba(10, 20, 18, 0.72) 100%);
+}
+
+/* Editorial vertical rule — used in timelines */
+.rule-gold {
+  background: linear-gradient(180deg, transparent, var(--brand-gold) 18%, var(--brand-gold) 82%, transparent);
+}
+
+/* Hero parallax sits behind; subtle transform driven by CSS scroll-linked anim where supported */
+@supports (animation-timeline: scroll()) {
+  .hero-parallax {
+    animation: hero-parallax linear both;
+    animation-timeline: scroll();
+    animation-range: 0 80vh;
+  }
+  @keyframes hero-parallax {
+    to {
+      transform: translateY(12%) scale(1.08);
+    }
+  }
+}

@@ -1,0 +1,67 @@
+# ================================================================
+# Decoropic .gitignore (v2 — env rules hardened)
+# ================================================================
+
+# ---- dependencies ----
+/node_modules
+/.pnp
+.pnp.*
+
+# ---- testing ----
+/coverage
+
+# ---- next.js build output ----
+/.next/
+/out/
+/build
+/dist
+
+# ---- TypeScript ----
+*.tsbuildinfo
+next-env.d.ts
+
+# ---- env files (catch BOTH .env* prefix AND *.env suffix) ----
+.env*
+*.env
+!.env.example
+!*.env.example
+
+# ---- debug logs ----
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# ---- vercel ----
+.vercel
+
+# ---- editor ----
+.vscode/
+.idea/
+*.swp
+
+# ---- OS ----
+.DS_Store
+Thumbs.db
+*.pem
+*.key
+*.p12
+
+# ---- secrets (generic) ----
+**/secret.*
+**/credentials.*
+
+# ---- Decoropic-specific (from original .gitignore) ----
+.submissions
+.deploy
+public/uploads/*
+!public/uploads/.gitkeep
+
+# ---- Decoropic deploy artifacts (zip/html preview) ----
+*.zip
+/decoropic-html-preview
+/decoropic-html-preview*
+
+# ---- WordPress theme projects (not part of Next.js app) ----
+/decolovely-product-center
+/wordpress-theme
