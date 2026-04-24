@@ -24,6 +24,6 @@ export const faqs = [
   },
   {
     question: "Can I browse products separately before starting a project discussion?",
-    answer: "Yes. Decolovely.com works as the product center, while Decoropic focuses on project services and lead qualification."
+    answer: "Yes. Our product center is available for independent browsing — explore categories, styles and project-type collections before reaching out."
   }
 ];

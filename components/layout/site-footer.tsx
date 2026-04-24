@@ -10,7 +10,7 @@ type SiteFooterProps = {
 };
 
 export function SiteFooter({ locale }: SiteFooterProps) {
-  const brandLink = locale === "zh" ? "Decoropic 与 Decolovely" : "Decoropic x Decolovely";
+  const brandLink = locale === "zh" ? "室内装饰，落地加纳。" : "Interiors, delivered in Ghana.";
   const readinessText = locale === "zh" ? "高端、项目导向、适配加纳市场" : "Premium, project-focused, Ghana-ready";
   const phoneLabel = locale === "zh" ? "电话" : "Tel";
   const locationLabel = locale === "zh" ? "地区" : "Location";

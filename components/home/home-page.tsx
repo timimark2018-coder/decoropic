@@ -13,8 +13,8 @@ export async function HomePage({ locale }: HomePageProps) {
   const projectChainEyebrow = locale === "zh" ? "项目交付支持链路" : "Project-ready support chain";
   const projectChainBody =
     locale === "zh"
-      ? "Decoropic 负责项目沟通与方案推进，Decolovely.com 延伸到产品浏览与选型。"
-      : "Decoropic builds the project conversation. Decolovely.com extends it into product discovery.";
+      ? "Decoropic 负责项目全流程——从采购到规格、到加纳现场落地。"
+      : "Decoropic handles the full project, end to end — sourcing, specification, site execution.";
   const brandEyebrow = locale === "zh" ? "品牌定位" : "Brand positioning";
   const whyChooseUsEyebrow = locale === "zh" ? "为什么选择我们" : "Why choose us";
   const whyChooseUsDescription =

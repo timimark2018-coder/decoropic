@@ -212,8 +212,8 @@ export const homeContent = {
       zh: "浏览更多产品类别与选择"
     },
     body: {
-      en: "If you would like to explore specific categories, styles and a broader product range, continue to Decolovely.com and browse by category, space or project type.",
-      zh: "如果您希望进一步查看具体品类、款式与更多产品选择，可以进入 Decolovely.com，按类别、空间或项目类型继续浏览。"
+      en: "To explore specific categories, styles, and a broader product range, continue to our product center and browse by category, space, or project type.",
+      zh: "如希望进一步查看具体品类、款式与更多产品选择，可进入我们的产品中心，按类别、空间或项目类型继续浏览。"
     },
     ctas: [
       { label: { en: "Explore Product Center", zh: "进入产品中心" }, href: "PRODUCT_CENTER" },
