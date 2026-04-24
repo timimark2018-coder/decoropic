@@ -1,56 +1,150 @@
 import { homeContent } from "@/content/home";
 import type { Locale } from "@/content/types";
 import { t } from "@/lib/i18n/content";
-import { SectionTitle } from "@/components/shared/section-title";
+import { HandDrawnLine, Reveal } from "@/components/ui";
 
-type HomeWhyChooseUsProps = {
+type Props = {
   locale: Locale;
 };
 
-export function HomeWhyChooseUs({ locale }: HomeWhyChooseUsProps) {
-  const whyChooseUsEyebrow = locale === "zh" ? "为什么选择我们" : "Why choose us";
-  const whyChooseUsDescription =
-    locale === "zh"
-      ? "高端项目体验不只是产品本身，更取决于前期规划是否清晰、执行过程是否顺畅。"
-      : "A premium project experience depends on more than products. These are the capabilities that shape clearer planning and smoother execution.";
-  const servicesEyebrow = locale === "zh" ? "我们的服务" : "Our services";
-  const servicesDescription =
-    locale === "zh"
-      ? "这条服务链覆盖规划、采购与加纳现场落地，帮助不同阶段的项目更顺畅衔接。"
-      : "The service chain is designed to support planning, sourcing and Ghana execution as one coordinated workflow.";
+// Home Why Choose Us v4.0 — Editorial Breakout with numbered items
+// Design philosophy:
+//   - Breakout 2fr:3fr: left narrative anchor, right numbered items list.
+//   - Matches Brand Positioning v3.0 grid + eyebrow + gold-line + corner accent vocabulary.
+//   - Each of 6 items uses numeric prefix (01-06) in Playfair + gold line
+//     + title in pine-dark + body in pine-dark/75.
+//   - Copy rewritten as counter-narrative against the "just a supplier" perception,
+//     extending the Brand Positioning tone of voice.
+//   - Left anchor shows oversized title + hand-drawn wave + italic supporting subtitle.
+//   - Our Services has been extracted into a separate component (home-our-services.tsx).
+export function HomeWhyChooseUs({ locale }: Props) {
+  const { whyChooseUs } = homeContent;
 
   return (
-    <section className="site-section pt-0">
-      <div className="container-shell grid gap-6 lg:grid-cols-[0.96fr_1.04fr]">
-        <div className="card-surface p-8">
-          <SectionTitle
-            eyebrow={whyChooseUsEyebrow}
-            title={t(homeContent.whyChooseUs.title, locale)}
-            description={whyChooseUsDescription}
-          />
-          <div className="mt-8 grid gap-4">
-            {homeContent.whyChooseUs.items.map((item) => (
-              <div key={item.title.en} className="rounded-[1.4rem] bg-brand-mist/40 px-5 py-4">
-                <p className="font-semibold text-brand-ink">{t(item.title, locale)}</p>
-                <p className="mt-2 text-sm leading-7 text-slate-600">{t(item.body, locale)}</p>
-              </div>
-            ))}
+    <section
+      id="home-why-choose-us"
+      className="relative bg-[#efe7d9] pt-24 pb-24 lg:pt-32 lg:pb-32 overflow-hidden"
+    >
+      {/* Corner gold accent — mirrors Brand Positioning v3.0 */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute right-6 top-8 h-16 w-16 border-t border-r border-brand-gold/50 sm:right-12 sm:top-12 lg:top-16"
+      />
+
+      <div className="container-wide">
+        {/* Eyebrow */}
+        <Reveal>
+          <div className="flex items-center gap-3 text-brand-gold">
+            <span className="h-[2px] w-16 bg-brand-gold" />
+            <span
+              className="text-brand-gold"
+              style={{
+                fontSize: "0.78rem",
+                fontWeight: 700,
+                letterSpacing: "0.28em",
+                textTransform: "uppercase"
+              }}
+            >
+              {t(whyChooseUs.eyebrow, locale)}
+            </span>
           </div>
-        </div>
-        <div className="card-surface panel-grid relative overflow-hidden p-8">
-          <div className="absolute right-0 top-0 h-32 w-32 rounded-full bg-brand-gold/10 blur-3xl" />
-          <SectionTitle
-            eyebrow={servicesEyebrow}
-            title={t(homeContent.services.title, locale)}
-            description={servicesDescription}
-          />
-          <div className="mt-8 grid gap-4">
-            {homeContent.services.items.map((item) => (
-              <div key={item.title.en} className="rounded-[1.35rem] border border-brand-line/70 bg-white/80 px-5 py-4">
-                <p className="font-semibold text-brand-ink">{t(item.title, locale)}</p>
-                <p className="mt-2 text-sm leading-7 text-slate-600">{t(item.body, locale)}</p>
+        </Reveal>
+
+        {/* Main grid — 2fr narrative anchor : 3fr numbered items */}
+        <div className="mt-12 grid grid-cols-1 gap-12 lg:grid-cols-[2fr_3fr] lg:gap-20">
+          {/* Left column — narrative anchor */}
+          <div className="max-w-[540px]">
+            {/* Title */}
+            <Reveal delay={120}>
+              <h2
+                className="text-brand-pine-dark"
+                style={{
+                  fontFamily: "var(--serif)",
+                  fontSize: "clamp(2rem, 4.5vw, 3.75rem)",
+                  fontWeight: 800,
+                  lineHeight: 1.1,
+                  letterSpacing: "-0.025em"
+                }}
+              >
+                {t(whyChooseUs.title, locale)}
+              </h2>
+            </Reveal>
+
+            {/* Hand-drawn gold wave line */}
+            <Reveal delay={280}>
+              <div className="mt-10 max-w-[200px]">
+                <HandDrawnLine
+                  variant="wave"
+                  height={20}
+                  color="var(--brand-gold)"
+                  strokeWidth={1.4}
+                />
               </div>
-            ))}
+            </Reveal>
+
+            {/* Subtitle / supporting statement */}
+            <Reveal delay={440}>
+              <p
+                className="mt-10 text-brand-pine-dark/85"
+                style={{
+                  fontFamily: "var(--serif)",
+                  fontSize: "clamp(1.125rem, 1.8vw, 1.5rem)",
+                  fontWeight: 400,
+                  fontStyle: "italic",
+                  lineHeight: 1.4,
+                  letterSpacing: "-0.01em"
+                }}
+              >
+                {t(whyChooseUs.subtitle, locale)}
+              </p>
+            </Reveal>
+          </div>
+
+          {/* Right column — 6 numbered items */}
+          <div className="flex flex-col gap-10">
+            {whyChooseUs.items.map((item, idx) => {
+              const number = String(idx + 1).padStart(2, "0");
+              return (
+                <Reveal key={item.title.en} delay={320 + idx * 140}>
+                  <div className="flex items-start gap-6">
+                    {/* Number column */}
+                    <div className="flex flex-col items-start pt-1">
+                      <span
+                        className="text-brand-gold leading-none"
+                        style={{
+                          fontFamily: "var(--serif)",
+                          fontSize: "1.375rem",
+                          fontWeight: 700,
+                          letterSpacing: "-0.02em"
+                        }}
+                      >
+                        {number}
+                      </span>
+                      <span className="mt-2 h-px w-8 bg-brand-gold/60" />
+                    </div>
+
+                    {/* Content column */}
+                    <div className="flex-1">
+                      <h3
+                        className="text-brand-pine-dark"
+                        style={{
+                          fontFamily: "var(--serif)",
+                          fontSize: "clamp(1.125rem, 1.6vw, 1.5rem)",
+                          fontWeight: 700,
+                          lineHeight: 1.3,
+                          letterSpacing: "-0.015em"
+                        }}
+                      >
+                        {t(item.title, locale)}
+                      </h3>
+                      <p className="mt-3 text-sm leading-[1.75] text-brand-pine-dark/75 sm:text-base sm:leading-[1.8]">
+                        {t(item.body, locale)}
+                      </p>
+                    </div>
+                  </div>
+                </Reveal>
+              );
+            })}
           </div>
         </div>
       </div>

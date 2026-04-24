@@ -3,6 +3,7 @@ import {
   HomeHero,
   HomeBrandPositioning,
   HomeWhyChooseUs,
+  HomeOurServices,
   HomeEstimatorSection,
   HomeSolutionsGhana,
   HomeHowWeWork,
@@ -20,6 +21,7 @@ export async function HomePage({ locale }: HomePageProps) {
       <HomeHero locale={locale} />
       <HomeBrandPositioning locale={locale} />
       <HomeWhyChooseUs locale={locale} />
+      <HomeOurServices locale={locale} />
       <HomeEstimatorSection locale={locale} />
       <HomeSolutionsGhana locale={locale} />
       <HomeHowWeWork locale={locale} />

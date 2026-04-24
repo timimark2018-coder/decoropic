@@ -50,7 +50,7 @@ export const homeContent = {
         label: { en: "Core service stages", zh: "核心服务环节" }
       },
       {
-        value: "4",
+        value: "3",
         label: { en: "Business pillars", zh: "业务板块" }
       },
       {
@@ -60,51 +60,77 @@ export const homeContent = {
     ]
   },
   whyChooseUs: {
+    eyebrow: {
+      en: "Why Decoropic",
+      zh: "为什么选择 Decoropic"
+    },
     title: {
-      en: "Why Clients Choose Us",
-      zh: "为什么客户选择我们"
+      en: "Six reasons clients trust us with their projects.",
+      zh: "客户把项目交给我们，有六个理由。"
+    },
+    subtitle: {
+      en: "We don't sell products to Ghana. We deliver projects in Ghana.",
+      zh: "我们不是把产品卖到加纳——我们在加纳交付项目。"
     },
     items: [
       {
-        title: { en: "Coordinated Multi-Category Sourcing", zh: "多品类一体化整合" },
+        title: {
+          en: "We don't quote furniture. We quote projects.",
+          zh: "我们不是报家具——我们报的是整个项目。"
+        },
         body: {
-          en: "Furniture, lighting, rugs, bathroom products, doors, finishes and other interior categories can be coordinated around one project scope.",
-          zh: "家具、灯饰、地毯、卫浴、门类、饰面材料及其他室内产品，可围绕同一项目进行统筹配置。"
+          en: "Furniture, lighting, stone, doors, bathroom, finishes — not a line-item sheet, but one project speaking in one voice.",
+          zh: "家具、灯饰、石材、门类、卫浴、饰面——不是一份单品清单，是一个项目的完整声音。"
         }
       },
       {
-        title: { en: "Project-Focused Execution", zh: "以项目为导向的服务方式" },
+        title: {
+          en: "We start with your drawing. Not our catalog.",
+          zh: "我们从你的图纸开始——不是从我们的目录。"
+        },
         body: {
-          en: "We work around drawings, budgets, style direction, positioning and timelines, not just product listings.",
-          zh: "我们围绕图纸、预算、风格、定位和交期来组织建议，而不是简单罗列单品。"
+          en: "Drawings, budget, style, timeline — we understand the structure of your project first, then talk about products.",
+          zh: "图纸、预算、风格、交期——先懂你的项目结构，再谈产品选型。仓库有什么不是起点。"
         }
       },
       {
-        title: { en: "More Accurate Site Dimensions", zh: "现场尺寸更准确" },
+        title: {
+          en: "What reads on paper may not stand in Accra.",
+          zh: "图纸上合理的尺寸，未必能在阿克拉落地。"
+        },
         body: {
-          en: "On-site measurement helps reduce downstream issues caused by mismatches between drawings and actual site conditions.",
-          zh: "通过现场测量与基础核对，减少图纸与实际条件不一致带来的后续问题。"
+          en: "The gaps between drawings and Ghana site conditions are where projects pay their hidden costs. We resolve them before orders ship.",
+          zh: "图纸尺寸和加纳现场条件之间的误差，藏着项目最常见的隐性代价。我们在订货之前把它先解决。"
         }
       },
       {
-        title: { en: "Premium Design Guided by Budget", zh: "预算导向的高端设计能力" },
+        title: {
+          en: "Budget isn't a ceiling. It's the starting line.",
+          zh: "预算不是天花板，是起跑线。"
+        },
         body: {
-          en: "With a target budget in mind, we help shape spaces that feel more refined while remaining practical to deliver.",
-          zh: "在明确大概预算的前提下，帮助客户做出更有品质感、同时更具可执行性的空间方案。"
+          en: "We treat budget as the decision about where to invest fully and where to restrain — not as a constraint on ambition.",
+          zh: "我们把预算当作\"哪里要顶级、哪里要克制\"的决策起点——不是限制创意的天花板。"
         }
       },
       {
-        title: { en: "Ghana On-Site Installation Guidance", zh: "加纳现场指导安装支持" },
+        title: {
+          en: "On installation day, someone from us is standing there.",
+          zh: "到安装那一天，我们的人站在现场。"
+        },
         body: {
-          en: "We provide practical follow-up and coordination support for real site execution.",
-          zh: "我们提供更贴近实际施工落地的跟进与协调支持。"
+          en: "On Ghana installation day, a Decoropic person is on site — not to sell, but to make sure what was drawn actually stands.",
+          zh: "到加纳安装那一天，Decoropic 的人在场——不为销售，为确认图纸上的东西真的站住了。"
         }
       },
       {
-        title: { en: "Clearer Cross-Team Coordination", zh: "更清晰的跨团队协作" },
+        title: {
+          en: "One team across five voices of the project.",
+          zh: "一支团队，贯穿项目的五种声音。"
+        },
         body: {
-          en: "We help reduce communication gaps across owners, designers, contractors, buyers and suppliers.",
-          zh: "帮助业主、设计师、施工方、采购方与供应方之间减少沟通偏差。"
+          en: "Owner, designer, contractor, buyer, supplier — we reduce communication drift across all five so the project speaks in one voice.",
+          zh: "业主、设计师、施工方、采购方、供应方——我们让这五方之间的沟通偏差降到最低，让项目只说一个声音。"
         }
       }
     ]
