@@ -5,8 +5,7 @@ import {
   HomeWhyChooseUs,
   HomeOurServices,
   HomeEstimatorSection,
-  HomeSolutionsGhana,
-  HomeHowWeWork,
+  HomeSolutionsBySpace,
   HomeProductBridge,
   HomeFinalCta
 } from "@/components/home";
@@ -23,8 +22,7 @@ export async function HomePage({ locale }: HomePageProps) {
       <HomeWhyChooseUs locale={locale} />
       <HomeOurServices locale={locale} />
       <HomeEstimatorSection locale={locale} />
-      <HomeSolutionsGhana locale={locale} />
-      <HomeHowWeWork locale={locale} />
+      <HomeSolutionsBySpace locale={locale} />
       <HomeProductBridge locale={locale} />
       <HomeFinalCta locale={locale} />
     </>

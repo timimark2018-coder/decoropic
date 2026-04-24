@@ -230,55 +230,59 @@ export const homeContent = {
     }
   },
   solutionsBySpace: {
-    title: {
-      en: "Solutions by Space",
+    eyebrow: {
+      en: "Solutions by space",
       zh: "按空间查看解决方案"
     },
+    title: {
+      en: "Six spaces. Six playbooks.",
+      zh: "六种空间，六套打法。"
+    },
     subtitle: {
-      en: "Different spaces require different priorities in style, durability, budget and delivery timing. Our recommendations are shaped around real project use cases.",
-      zh: "不同空间对风格、耐用性、预算和交付节奏的要求并不相同，我们围绕实际使用场景来组织建议。"
+      en: "From private villas to hospitality — every space carries its own priorities, risks, and delivery calculus.",
+      zh: "从私人别墅到酒店餐饮——每一种空间都有自己的优先级、风险和交付逻辑。"
     },
+    tagline: {
+      en: "Every space has its own playbook. See how we shape the delivery for yours.",
+      zh: "每种空间都有自己的方法论。看看我们如何为你的项目量身打造。"
+    },
+    ctaLabel: {
+      en: "Explore Solutions",
+      zh: "查看解决方案"
+    },
+    ctaHref: "/solutions",
     items: [
-      { en: "Villas", zh: "别墅" },
-      { en: "Apartments", zh: "公寓" },
-      { en: "Hotels", zh: "酒店" },
-      { en: "Offices", zh: "办公空间" },
-      { en: "Restaurants", zh: "餐饮空间" },
-      { en: "Showrooms & Retail", zh: "展厅与零售空间" }
-    ] satisfies LocalizedText[]
-  },
-  ghanaHighlight: {
-    title: {
-      en: "More Than Supply, We Support Real Project Delivery in Ghana",
-      zh: "不止于供货，更支持项目在加纳现场真正落地"
-    },
-    body: {
-      en: "Many suppliers can ship products. The more difficult part often begins on site. We focus on site measurement, installation guidance, communication support and issue follow-up to help reduce risks caused by dimensional errors, unclear details and execution gaps.",
-      zh: "很多供应商可以发货，但项目真正的难点往往出现在现场。我们重视现场测量、安装指导、沟通协调及后续问题跟进，帮助客户减少因尺寸偏差、理解不一致及施工衔接不足带来的风险。"
-    },
-    bullets: [
-      { en: "Local Site Measurement", zh: "当地现场测量" },
-      { en: "Installation Guidance", zh: "安装指导" },
-      { en: "Local Communication Support", zh: "本地沟通协调" },
-      { en: "Issue Follow-Up", zh: "问题跟进" },
-      { en: "After-Sales Coordination", zh: "售后衔接" }
-    ] satisfies LocalizedText[]
-  },
-  howWeWork: {
-    title: {
-      en: "How We Work",
-      zh: "我们的合作流程"
-    },
-    steps: [
-      { en: "Share your drawings, references or requirements", zh: "提交图纸、参考图或需求" },
-      { en: "Align budget, style and project scope", zh: "沟通预算、风格与项目范围" },
-      { en: "Conduct local site measurement and verification", zh: "当地现场测量与基础核对" },
-      { en: "Develop a premium design direction based on target budget", zh: "按目标预算制定高端方案方向" },
-      { en: "Recommend suitable products and package options", zh: "推荐合适的产品与配套方案" },
-      { en: "Confirm specifications, materials and details", zh: "确认规格、材质与细节" },
-      { en: "Coordinate production, consolidation and shipment", zh: "组织生产、整合与出货" },
-      { en: "Support implementation and installation guidance in Ghana", zh: "支持加纳现场实施与安装指导" }
-    ] satisfies LocalizedText[]
+      {
+        icon: "Home",
+        title: { en: "Private Villas", zh: "私人别墅" },
+        quote: { en: "Your home, as drawn.", zh: "住进设计图里的房子。" }
+      },
+      {
+        icon: "Building",
+        title: { en: "High-End Apartments", zh: "高端公寓" },
+        quote: { en: "Every unit carries the same finishes.", zh: "每一户都讲同一个故事。" }
+      },
+      {
+        icon: "Building2",
+        title: { en: "Hotels & Hospitality", zh: "酒店与度假村" },
+        quote: { en: "Every room tells one story.", zh: "每一间房说同一个故事。" }
+      },
+      {
+        icon: "Briefcase",
+        title: { en: "Corporate Offices", zh: "企业办公" },
+        quote: { en: "A workplace that says what you say.", zh: "办公空间替你说话。" }
+      },
+      {
+        icon: "UtensilsCrossed",
+        title: { en: "Restaurants & F&B", zh: "餐饮空间" },
+        quote: { en: "Design that holds until the last table.", zh: "从第一桌到最后一桌。" }
+      },
+      {
+        icon: "Store",
+        title: { en: "Showrooms & Retail", zh: "展厅与零售" },
+        quote: { en: "Where the brand doesn't get lost in shipping.", zh: "品牌不会在运输中丢失。" }
+      }
+    ]
   },
   productCenterBridge: {
     title: {
