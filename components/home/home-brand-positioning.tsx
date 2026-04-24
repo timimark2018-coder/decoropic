@@ -7,83 +7,216 @@ type Props = {
   locale: Locale;
 };
 
-// Home Brand Positioning v2.0 — Editorial
-// Design principles:
-//   - No card grid, no borrowed whyChooseUs.items (fixes TODO-12 data reuse bug).
-//   - Pure prose layout — title + hand-drawn line + two paragraphs.
-//   - Syntax mirrors AboutPositioning for site-wide consistency.
-//   - container-narrow (760px) keeps reading line length measured.
+// Home Brand Positioning v3.0 — Editorial Breakout
+// Design philosophy:
+//   - Two-column asymmetric grid (2fr narrative : 1fr data pillars).
+//   - Left: eyebrow + oversized Playfair title with gold italic "to"
+//     connector (echoes Hero v2.5's gold italic "interior solutions").
+//   - Gold hand-drawn wave line (continues Hero vocabulary).
+//   - Pull quote in Playfair italic gold — the counter-punch against
+//     "just a supplier" market perception.
+//   - Body rhythm: short punchy opening, medium mid-weight coordination
+//     sentences, then three short time-asset statements to close.
+//   - Right: three oversized Playfair numerals (6 / 4 / 20) — evidence
+//     of depth, breadth, and longevity.
+//   - Corner gold accent (top-right, mirrors Hero) binds the two sections
+//     into one Editorial system.
 export function HomeBrandPositioning({ locale }: Props) {
   const { brandPositioning } = homeContent;
 
-  const brandEyebrow = locale === "zh" ? "品牌定位" : "Brand positioning";
+  const brandEyebrow =
+    locale === "zh" ? "品牌立场" : "Brand positioning";
 
-  // Split body into two paragraphs on the period-space heuristic for paragraph rhythm.
-  // Falls back to single paragraph if body has no internal sentence break we can use.
-  const bodyText = t(brandPositioning.body, locale);
-  const paragraphs = splitIntoParagraphs(bodyText);
+  // Split the English title on " to " for gold italic mid-word treatment.
+  // Chinese uses a parallel split on "，到" to achieve similar visual beat.
+  const titleText = t(brandPositioning.title, locale);
+  const titleParts =
+    locale === "zh"
+      ? splitTitleChinese(titleText)
+      : splitTitleEnglish(titleText);
 
   return (
     <section
       id="home-brand-positioning"
-      className="bg-[#f7f3ec] pt-24 pb-24 lg:pt-32 lg:pb-32"
+      className="relative bg-[#f7f3ec] pt-24 pb-24 lg:pt-32 lg:pb-32 overflow-hidden"
     >
-      <div className="container-narrow">
+      {/* Corner gold accent — mirrors Hero v2.5 */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute right-6 top-8 h-16 w-16 border-t border-r border-brand-gold/50 sm:right-12 sm:top-12 lg:top-16"
+      />
+
+      <div className="container-wide">
+        {/* Eyebrow */}
         <Reveal>
           <div className="flex items-center gap-3 text-brand-gold">
-            <span className="h-px w-10 bg-brand-gold" />
-            <span className="text-eyebrow-lg">{brandEyebrow}</span>
+            <span className="h-[2px] w-16 bg-brand-gold" />
+            <span
+              className="text-brand-gold"
+              style={{
+                fontSize: "0.78rem",
+                fontWeight: 700,
+                letterSpacing: "0.28em",
+                textTransform: "uppercase"
+              }}
+            >
+              {brandEyebrow}
+            </span>
           </div>
         </Reveal>
 
-        <Reveal delay={120}>
-          <h2
-            className="mt-8 text-brand-pine-dark"
-            style={{
-              fontFamily: "var(--serif)",
-              fontSize: "clamp(2.25rem, 6vw, 4.5rem)",
-              fontWeight: 800,
-              lineHeight: 1.05,
-              letterSpacing: "-0.03em"
-            }}
-          >
-            {t(brandPositioning.title, locale)}
-          </h2>
-        </Reveal>
+        {/* Main grid — 2fr narrative : 1fr data pillars */}
+        <div className="mt-12 grid grid-cols-1 gap-12 lg:grid-cols-[2fr_1fr] lg:gap-20">
+          {/* Left column — narrative */}
+          <div className="max-w-[720px]">
+            {/* Title with gold italic connector */}
+            <Reveal delay={120}>
+              <h2
+                className="text-brand-pine-dark"
+                style={{
+                  fontFamily: "var(--serif)",
+                  fontSize: "clamp(2.25rem, 5.5vw, 4.5rem)",
+                  fontWeight: 800,
+                  lineHeight: 1.05,
+                  letterSpacing: "-0.03em"
+                }}
+              >
+                {titleParts.before}
+                <span
+                  className="text-brand-gold"
+                  style={{ fontWeight: 400, fontStyle: "italic" }}
+                >
+                  {titleParts.connector}
+                </span>
+                {titleParts.after}
+              </h2>
+            </Reveal>
 
-        <Reveal delay={260}>
-          <div className="mt-10 max-w-md">
-            <HandDrawnLine variant="wave" height={32} />
-          </div>
-        </Reveal>
+            {/* Hand-drawn gold wave line */}
+            <Reveal delay={280}>
+              <div className="mt-10 max-w-[240px]">
+                <HandDrawnLine
+                  variant="wave"
+                  height={24}
+                  color="var(--brand-gold)"
+                  strokeWidth={1.4}
+                />
+              </div>
+            </Reveal>
 
-        <div className="mt-10 space-y-7">
-          {paragraphs.map((paragraph, idx) => (
-            <Reveal key={idx} delay={340 + idx * 120}>
-              <p className="text-lg leading-[1.85] text-brand-pine/85 sm:text-xl sm:leading-[1.85]">
-                {paragraph}
+            {/* Pull quote — Playfair italic gold */}
+            <Reveal delay={440}>
+              <blockquote
+                className="mt-10 text-brand-gold"
+                style={{
+                  fontFamily: "var(--serif)",
+                  fontSize: "clamp(1.5rem, 2.8vw, 2.25rem)",
+                  fontWeight: 400,
+                  fontStyle: "italic",
+                  lineHeight: 1.3,
+                  letterSpacing: "-0.015em"
+                }}
+              >
+                <span
+                  aria-hidden
+                  className="text-brand-gold/50 mr-1"
+                  style={{ fontStyle: "normal" }}
+                >
+                  “
+                </span>
+                {t(brandPositioning.pullQuote, locale)}
+                <span
+                  aria-hidden
+                  className="text-brand-gold/50 ml-1"
+                  style={{ fontStyle: "normal" }}
+                >
+                  ”
+                </span>
+              </blockquote>
+            </Reveal>
+
+            {/* Divider */}
+            <Reveal delay={600}>
+              <div className="mt-10 h-px w-20 bg-brand-pine-dark/20" />
+            </Reveal>
+
+            {/* Body */}
+            <Reveal delay={740}>
+              <p className="mt-8 text-base leading-[1.8] text-brand-pine-dark/85 sm:text-lg sm:leading-[1.85]">
+                {t(brandPositioning.body, locale)}
               </p>
             </Reveal>
-          ))}
+          </div>
+
+          {/* Right column — 3 data pillars */}
+          <div className="flex flex-col gap-10 lg:pt-4">
+            {brandPositioning.stats.map((stat, idx) => (
+              <Reveal key={stat.value + stat.label.en} delay={360 + idx * 180}>
+                <div className="flex flex-col">
+                  <span
+                    className="text-brand-pine-dark leading-none"
+                    style={{
+                      fontFamily: "var(--serif)",
+                      fontSize: "clamp(4.5rem, 9vw, 8rem)",
+                      fontWeight: 800,
+                      letterSpacing: "-0.04em"
+                    }}
+                  >
+                    {stat.value}
+                  </span>
+                  <div className="mt-3 flex items-center gap-3">
+                    <span className="h-px w-10 bg-brand-gold" />
+                    <span
+                      className="text-brand-pine-dark/75"
+                      style={{
+                        fontSize: "0.7rem",
+                        fontWeight: 700,
+                        letterSpacing: "0.26em",
+                        textTransform: "uppercase"
+                      }}
+                    >
+                      {t(stat.label, locale)}
+                    </span>
+                  </div>
+                </div>
+              </Reveal>
+            ))}
+          </div>
         </div>
       </div>
     </section>
   );
 }
 
-// Helper: split body text into 1-2 paragraphs on a clear sentence break.
-// Keeps output stable whether content has natural paragraph breaks or not.
-function splitIntoParagraphs(text: string): string[] {
-  // Prefer explicit double-newline split if the source has it.
-  const explicit = text.split(/\n{2,}/).map((p) => p.trim()).filter(Boolean);
-  if (explicit.length > 1) return explicit;
+// Helpers — split the title so we can render "to" (or Chinese "，到") in gold italic.
+// If the expected split marker is not found, we render the whole title as a
+// single dark block (degrade gracefully rather than error).
+function splitTitleEnglish(text: string): {
+  before: string;
+  connector: string;
+  after: string;
+} {
+  const marker = " to ";
+  const idx = text.indexOf(marker);
+  if (idx === -1) return { before: text, connector: "", after: "" };
+  return {
+    before: text.slice(0, idx) + " ",
+    connector: "to",
+    after: " " + text.slice(idx + marker.length)
+  };
+}
 
-  // Otherwise try to split roughly at the midpoint on a sentence boundary.
-  const sentences = text.match(/[^.!?。！？]+[.!?。！？]+/g);
-  if (!sentences || sentences.length < 2) return [text];
-
-  const mid = Math.floor(sentences.length / 2);
-  const first = sentences.slice(0, mid).join(" ").trim();
-  const second = sentences.slice(mid).join(" ").trim();
-  return [first, second].filter(Boolean);
+function splitTitleChinese(text: string): {
+  before: string;
+  connector: string;
+  after: string;
+} {
+  const marker = "，到";
+  const idx = text.indexOf(marker);
+  if (idx === -1) return { before: text, connector: "", after: "" };
+  return {
+    before: text.slice(0, idx) + "，",
+    connector: "到",
+    after: text.slice(idx + marker.length)
+  };
 }

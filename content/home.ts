@@ -36,10 +36,28 @@ export const homeContent = {
       en: "From Early Planning to On-Site Delivery",
       zh: "从前期测量与设计，到产品落地与现场支持"
     },
+    pullQuote: {
+      en: "The project doesn't end when the container lands.",
+      zh: "项目不在集装箱靠岸的那一刻结束。"
+    },
     body: {
-      en: "We do more than supply products. We support the key stages before and after procurement. Through site measurement, budget-led premium design, specification coordination, sourcing integration, shipment planning and on-site guidance, we help turn ideas into spaces that are more practical to execute and deliver.",
-      zh: "我们不仅提供产品，更参与项目落地前后的关键环节。通过现场测量、预算导向的高端方案设计、规格协调、供货整合、出货组织及现场指导支持，我们帮助客户把想法更稳妥地转化为可执行、可落地的空间成果。"
-    }
+      en: "For most, \"supply\" ends at the dock. For us, it's where the real work begins. We measure before we source. We coordinate across furniture, lighting, stone, doors, bathroom and finishes so one project speaks in one voice. We plan shipments around your build calendar, not around our warehouse. And on installation day in Accra, someone from Decoropic is there — not to sell, but to make sure what was drawn is what actually stands. Twenty-six years of international trade. Twenty years on the ground in Ghana. One team across both.",
+      zh: "对大多数人来说，\"供货\"止于港口。对我们来说，这里才是项目真正开始的地方。我们先测量，再订货；把家具、灯饰、石材、门类、卫浴和饰面协调成一个项目、一个声音；按你的工程节奏安排出货，不是按我们仓库的节奏；到加纳现场安装那天，Decoropic 的人在场——不是为了卖东西，是为了确认图纸上的东西真的站住了。二十六年国际贸易。二十年加纳深耕。一支团队贯穿前后。"
+    },
+    stats: [
+      {
+        value: "6",
+        label: { en: "Core service stages", zh: "核心服务环节" }
+      },
+      {
+        value: "4",
+        label: { en: "Business pillars", zh: "业务板块" }
+      },
+      {
+        value: "20",
+        label: { en: "Years in Ghana", zh: "加纳深耕年数" }
+      }
+    ]
   },
   whyChooseUs: {
     title: {
