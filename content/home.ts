@@ -136,51 +136,81 @@ export const homeContent = {
     ]
   },
   services: {
-    title: {
-      en: "Our Services",
+    eyebrow: {
+      en: "Our services",
       zh: "我们的服务"
+    },
+    title: {
+      en: "From measurement to installation.",
+      zh: "从测量到安装。"
+    },
+    subtitle: {
+      en: "Six stages. One team. One project.",
+      zh: "六个阶段，一支团队，一个项目。"
+    },
+    endNote: {
+      en: "Every project moves through every stage — no skipping, no handoffs to anyone outside the team.",
+      zh: "每个项目都会完整走过六个阶段——不跳步，不转包给团队以外的任何人。"
     },
     items: [
       {
-        title: { en: "Local Site Measurement", zh: "当地现场测量服务" },
+        title: {
+          en: "We measure before we quote.",
+          zh: "先测量，再报价。"
+        },
         body: {
-          en: "We provide on-site measurement and dimension verification to support more accurate customization, product selection and installation preparation.",
-          zh: "在项目现场进行基础测量与尺寸核对，帮助更准确地推进定制、选型与安装准备。"
+          en: "On-site measurement and dimension verification in Accra, before a single item gets ordered. Drawings lie. Sites tell the truth.",
+          zh: "在订一件产品之前，先在阿克拉现场完成测量与尺寸核对。图纸会骗人，现场不会。"
         }
       },
       {
-        title: { en: "Budget-Led Premium Design", zh: "按目标预算进行高端方案设计" },
+        title: {
+          en: "Design shaped by your budget.",
+          zh: "用你的预算塑造设计。"
+        },
         body: {
-          en: "Based on the client’s target budget, spatial needs and style direction, we provide premium design guidance that balances visual quality and implementation feasibility.",
-          zh: "根据客户的大概预算、空间功能与风格方向，提供更具高级感且更可落地的设计建议。"
+          en: "We take your target budget, spatial needs and style direction, and turn them into design guidance that's both refined and actually buildable.",
+          zh: "我们把你的预算、空间功能和风格方向，转化为既有品质感、又能真正落地的设计建议。"
         }
       },
       {
-        title: { en: "Interior Package Sourcing", zh: "室内产品整合配套" },
+        title: {
+          en: "One project scope. Many categories.",
+          zh: "一个项目范围，覆盖多品类。"
+        },
         body: {
-          en: "We coordinate multiple interior product categories for residential, hospitality, office and commercial projects.",
-          zh: "整合住宅、酒店、办公及商业空间项目所需的多类室内产品资源。"
+          en: "Furniture, lighting, stone, doors, bathroom, finishes — sourced for residential, hospitality, office and commercial projects around one scope, not six invoices.",
+          zh: "家具、灯饰、石材、门类、卫浴、饰面——围绕住宅、酒店、办公、商业项目统筹采购，一个范围，而不是六张发票。"
         }
       },
       {
-        title: { en: "Specification & Selection Coordination", zh: "选型与规格协调" },
+        title: {
+          en: "Specs that hold on paper and on site.",
+          zh: "图纸上成立，现场也成立的规格。"
+        },
         body: {
-          en: "We help align dimensions, materials, colors, finishes and suitability.",
-          zh: "协助确认尺寸、材质、颜色、表面处理及适配关系。"
+          en: "Dimensions, materials, colors, finishes, suitability — aligned across drawings, suppliers and Accra conditions before orders ship.",
+          zh: "尺寸、材质、颜色、表面处理、适配性——在出货之前就在图纸、供应商和阿克拉现场条件之间对齐。"
         }
       },
       {
-        title: { en: "Consolidation & Shipment Planning", zh: "出货与集运组织" },
+        title: {
+          en: "Shipments timed to your build calendar.",
+          zh: "按你的工程节奏安排出货。"
+        },
         body: {
-          en: "For multi-supplier and multi-category projects, we help organize shipment and delivery coordination.",
-          zh: "针对多供应商、多品类项目进行发货组织与配套协调。"
+          en: "Multi-supplier, multi-category consolidation organized around when your site is ready — not when our warehouse is.",
+          zh: "多供应商、多品类的集运组织，围绕你工地准备好的时间——不是围绕我们仓库的时间。"
         }
       },
       {
-        title: { en: "Ghana Implementation Support", zh: "加纳现场落地支持" },
+        title: {
+          en: "We stand on site until it stands.",
+          zh: "我们站在现场，直到它真的站住。"
+        },
         body: {
-          en: "We support on-site execution in Ghana through installation guidance, communication assistance and issue follow-up.",
-          zh: "为项目现场提供安装指导、沟通协调及问题跟进支持。"
+          en: "On-site execution support in Ghana: installation guidance, communication, issue follow-up — from the first crate to the final detail.",
+          zh: "加纳现场执行支持：安装指导、沟通协调、问题跟进——从第一个集装箱到最后一个细节。"
         }
       }
     ]
