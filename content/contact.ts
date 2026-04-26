@@ -1,58 +1,101 @@
+// =============================================================================
+// CONTACT — Battle 7 Phase 2 (Editorial upgrade)
+// 5 章节：Hero / Methods / Inquiry Form / What Happens Next / Estimator CTA
+// PRESERVED: form + options.projectTypes (used by ProjectInquiryForm)
+// =============================================================================
+
 export const contactContent = {
   hero: {
+    eyebrow: { en: "Contact", zh: "联系" },
     title: {
-      en: "Let’s Discuss Your Project",
-      zh: "让我们一起讨论您的项目"
+      en: "Let's start your project.",
+      zh: "从你的项目开始。"
     },
+    // Backwards-compat: subtitle is no longer rendered, but kept for any legacy import
     subtitle: {
       en: "Whether you are at the planning stage, exploring a budget, or already preparing drawings and procurement, we are ready to support your next step.",
       zh: "无论您正处于前期规划、预算评估，还是已经开始准备图纸与采购，我们都可以协助您推进下一步。"
+    },
+    pullQuote: {
+      en: "Real conversations. Real timelines. No automated follow-ups.",
+      zh: "真实对话。真实时间表。没有自动化推送。"
     }
   },
-  options: {
-    title: {
-      en: "How Would You Like to Start?",
-      zh: "您希望从哪一步开始？"
+  methods: {
+    eyebrow: { en: "Reach Lily", zh: "联系 Lily" },
+    title: { en: "Three ways to reach us.", zh: "三种方式联系我们。" },
+    whatsapp: {
+      title: { en: "WhatsApp", zh: "WhatsApp" },
+      value: "+233 53 151 9347",
+      note: { en: "Mon–Sat, 9:00–18:00 GMT", zh: "周一至周六，9:00–18:00 GMT" },
+      href: "https://wa.me/233531519347"
     },
-    items: [
+    email: {
+      title: { en: "Email", zh: "邮箱" },
+      value: "lily@decoropic.com",
+      note: { en: "Coming soon — domain in setup", zh: "即将开通 — 域名配置中" }
+    },
+    offices: {
+      title: { en: "Offices", zh: "办公地点" },
+      primary: {
+        location: { en: "Accra, Ghana", zh: "加纳，阿克拉" },
+        role: {
+          en: "On-site service & installation team",
+          zh: "现场服务与安装团队"
+        }
+      },
+      secondary: {
+        location: { en: "Foshan, China", zh: "中国，佛山" },
+        role: { en: "Sourcing & quality control hub", zh: "采购与品控中心" }
+      }
+    }
+  },
+  inquirySection: {
+    eyebrow: { en: "Or send the project details", zh: "或发送项目详情" },
+    title: { en: "Tell us about your project.", zh: "告诉我们你的项目。" }
+  },
+  whatHappensNext: {
+    eyebrow: { en: "After you reach out", zh: "联系我们之后" },
+    title: { en: "What happens next.", zh: "接下来是这样。" },
+    steps: [
       {
-        title: { en: "Request Consultation", zh: "咨询项目方案" },
+        number: "01",
+        title: { en: "Lily replies within 24 hours", zh: "Lily 在 24 小时内回复" },
         body: {
-          en: "Discuss your project type, needs, style direction and next steps with our team.",
-          zh: "与我们沟通您的项目类型、需求、风格方向及下一步安排。"
+          en: "Direct response from the founder. Not a CRM auto-message.",
+          zh: "创始人直接回复。不是 CRM 自动消息。"
         }
       },
       {
-        title: { en: "Book a Site Measurement", zh: "预约现场测量" },
+        number: "02",
+        title: { en: "30-minute discovery call", zh: "30 分钟初次了解" },
         body: {
-          en: "Arrange a local measurement service to verify dimensions and site conditions.",
-          zh: "预约当地量尺服务，核对空间尺寸与现场条件。"
+          en: "WhatsApp video or voice. We listen first, ask questions, share initial thoughts.",
+          zh: "WhatsApp 视频或语音。我们先听、再提问、再分享初步想法。"
         }
       },
       {
-        title: { en: "Request Design Support", zh: "咨询设计方案" },
+        number: "03",
+        title: {
+          en: "Detailed proposal in 5 working days",
+          zh: "5 个工作日内出详细方案"
+        },
         body: {
-          en: "Get premium design guidance based on your target budget and space needs.",
-          zh: "根据您的预算范围与空间需求，获取高端方案设计建议。"
-        }
-      },
-      {
-        title: { en: "Send Drawings / BOQ", zh: "发送图纸 / BOQ" },
-        body: {
-          en: "Share your drawings, BOQ, references or product list for a more focused discussion.",
-          zh: "发送图纸、BOQ、参考图或产品清单，便于我们更有针对性地沟通。"
+          en: "Scope, timeline, investment ranges, sourcing strategy. Yours to compare and decide.",
+          zh: "范围、时间表、投资区间、采购策略。供你对比与决策。"
         }
       }
-    ],
-    projectTypes: [
-      { en: "Villa", zh: "别墅" },
-      { en: "Apartment", zh: "公寓" },
-      { en: "Hospitality", zh: "酒店" },
-      { en: "Office", zh: "办公空间" },
-      { en: "Commercial", zh: "商业空间" },
-      { en: "Mixed Project", zh: "综合项目" }
     ]
   },
+  estimatorCta: {
+    eyebrow: { en: "Not ready to talk?", zh: "还没准备好？" },
+    title: { en: "Try the 11-step estimator first.", zh: "先试 11 步预算测算器。" },
+    ctaLabel: { en: "Open the estimator", zh: "打开测算器" },
+    ctaHref: "/#estimator"
+  },
+  // ===================================================================
+  // PRESERVED for ProjectInquiryForm.tsx
+  // ===================================================================
   form: {
     title: {
       en: "Project Inquiry Form",
@@ -73,28 +116,14 @@ export const contactContent = {
       zh: "提交咨询"
     }
   },
-  whatsapp: {
-    title: {
-      en: "Prefer to Talk on WhatsApp?",
-      zh: "更希望通过 WhatsApp 沟通？"
-    },
-    body: {
-      en: "You can reach our team directly on WhatsApp for faster project discussion and follow-up.",
-      zh: "您可以直接通过 WhatsApp 联系我们的团队，获得更快捷的项目沟通与跟进。"
-    },
-    cta: {
-      en: "Talk on WhatsApp",
-      zh: "WhatsApp联系"
-    }
-  },
-  cta: {
-    title: {
-      en: "We’re Ready to Help You Move Forward",
-      zh: "我们已准备好协助您推进下一步"
-    },
-    body: {
-      en: "Send us your project information and we will help you identify the right starting point: measurement, design, sourcing or execution support.",
-      zh: "欢迎发送您的项目信息，我们将帮助您判断最合适的起点：量尺、设计、采购，或现场执行支持。"
-    }
+  options: {
+    projectTypes: [
+      { en: "Villa", zh: "别墅" },
+      { en: "Apartment", zh: "公寓" },
+      { en: "Hospitality", zh: "酒店" },
+      { en: "Office", zh: "办公空间" },
+      { en: "Commercial", zh: "商业空间" },
+      { en: "Mixed Project", zh: "综合项目" }
+    ]
   }
 };
