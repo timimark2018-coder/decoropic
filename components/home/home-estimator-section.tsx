@@ -1,7 +1,7 @@
 import { homeContent } from "@/content/home";
 import type { Locale } from "@/content/types";
 import { t } from "@/lib/i18n/content";
-import { EstimatorExperience } from "@/components/estimator/estimator-experience";
+import { HomeEstimatorHook } from "./home-estimator-hook";
 import { HandDrawnLine, Reveal } from "@/components/ui";
 
 type HomeEstimatorSectionProps = {
@@ -106,10 +106,10 @@ export function HomeEstimatorSection({ locale }: HomeEstimatorSectionProps) {
           </p>
         </Reveal>
 
-        {/* EstimatorExperience — UNTOUCHED, rendered as-is */}
+        {/* HOOK Estimator — Battle 3 replacement */}
         <Reveal delay={1100}>
           <div className="mt-16 lg:mt-20">
-            <EstimatorExperience locale={locale} />
+            <HomeEstimatorHook locale={locale} />
           </div>
         </Reveal>
       </div>

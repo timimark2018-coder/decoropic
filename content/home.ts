@@ -217,16 +217,57 @@ export const homeContent = {
   },
   estimator: {
     title: {
-      en: "Estimate Your Villa Project Budget",
-      zh: "快速测算您的别墅项目预算"
+      en: "Shape your project in eleven steps.",
+      zh: "用 11 步勾勒你的项目。"
     },
     subtitle: {
-      en: "Get a preliminary budget range based on area, functional zones, finish level and service scope.",
-      zh: "根据面积、功能区数量、配置档次和服务范围，获取初步预算参考。"
+      en: "Quick choices, no typing — and we'll prepare an early sense of what your project could become.",
+      zh: "只需点选，无需输入——我们会为你准备一份项目早期预估。"
     },
     note: {
-      en: "This tool provides a preliminary estimate only. Final scope and quotation will depend on site measurement, design requirements, material standards and project details.",
-      zh: "本工具仅用于提供初步预算参考，最终方案及报价需根据现场测量、设计范围、材料标准和项目要求进一步确认。"
+      en: "This is a preliminary estimate only. Final scope and quotation will depend on site measurement, design requirements, material standards and project details.",
+      zh: "这只是初步预估。最终方案及报价需根据现场测量、设计范围、材料标准和项目要求进一步确认。"
+    },
+    hookIntro: {
+      en: "In three minutes, see what your project could cost.",
+      zh: "三分钟，看看你的项目可能要多少预算。"
+    },
+    revealLabel: {
+      en: "See what your project becomes →",
+      zh: "看看你的项目会变成什么 →"
+    },
+    contactTitle: {
+      en: "This is just the early sense.",
+      zh: "这只是初步感觉。"
+    },
+    contactSubtitle: {
+      en: "Want to see what your project actually becomes?",
+      zh: "想看看你的项目实际会变成什么吗？"
+    },
+    contactBullets: [
+      { en: "A refined budget breakdown", zh: "精细化预算拆解" },
+      { en: "A few project references at your scale", zh: "几个同规模项目参考" },
+      { en: "An honest scope discussion", zh: "一次坦诚的项目范围讨论" }
+    ],
+    contactPrincipal: {
+      en: "Lily will reach out within 24 hours.",
+      zh: "Lily 将在 24 小时内联系你。"
+    },
+    contactDisclaimer: {
+      en: "We respect your time. No mass marketing, no automated follow-ups. A real person reaches out, once.",
+      zh: "我们尊重你的时间。不发垃圾营销，不自动跟进。一位真实的人，只联系一次。"
+    },
+    submitLabel: {
+      en: "Submit — request consultation",
+      zh: "提交 —— 请求咨询"
+    },
+    thankYouTitle: {
+      en: "Thank you.",
+      zh: "感谢你。"
+    },
+    thankYouBody: {
+      en: "Your conversation with Decoropic has begun. Lily will reach out within 24 hours. Not before. Not later.",
+      zh: "你和 Decoropic 的对话已经开始。Lily 将在 24 小时内联系你——不会更早，也不会更晚。"
     }
   },
   solutionsBySpace: {
