@@ -119,20 +119,31 @@ export const aboutContent = {
     },
     paragraphs: [
       {
-        en: "In the year 2000, our founder entered the international building-materials trade. At a time when Accra was not yet widely regarded as an emerging market, he had already begun working on the ground there — building long-term relationships with clients and project teams from different countries and regions.",
-        zh: "2000 年，创始人进入建材国际贸易行业。彼时，阿克拉尚未被广泛视为新兴市场，而他已开始深入当地，与不同国家和地区的客户及项目方长期合作。"
+        iconSlug: "compass-line",
+        subtitle: { en: "Where it began — 2000.", zh: "起点 —— 2000 年。" },
+        body: {
+          en: "In the year 2000, our founder entered the international building-materials trade. At a time when Accra was not yet widely regarded as an emerging market, he had already begun working on the ground there — building long-term relationships with clients and project teams from different countries and regions.",
+          zh: "2000 年，创始人进入建材国际贸易行业。彼时，阿克拉尚未被广泛视为新兴市场，而他已开始深入当地，与不同国家和地区的客户及项目方长期合作。"
+        }
       },
       {
-        en: "Twenty-six years in the field have let him take part in and witness the delivery of projects across hotels, apartments, commercial spaces, private villas, and high-end residences. It is precisely these years of front-line experience that have led him to a conviction: a successful project is never the simple procurement of materials — it is the systemic integration of spatial effect, quality, cost, and on-the-ground execution.",
-        zh: "二十六年的行业历练，让他参与并见证了从酒店、公寓、商业空间到私人别墅与高端住宅等多类项目的推进与落地。也正因这些一线经验，他始终坚信：一个成功的项目，不是材料的简单采购，而是对空间效果、品质、成本与落地执行的系统整合。"
+        iconSlug: "concentric-circles",
+        subtitle: { en: "Twenty-six years on the ground.", zh: "二十六年在一线。" },
+        body: {
+          en: "Twenty-six years in the field have let him take part in and witness the delivery of projects across hotels, apartments, commercial spaces, private villas, and high-end residences. It is precisely these years of front-line experience that have led him to a conviction: a successful project is never the simple procurement of materials — it is the systemic integration of spatial effect, quality, cost, and on-the-ground execution.",
+          zh: "二十六年的行业历练，让他参与并见证了从酒店、公寓、商业空间到私人别墅与高端住宅等多类项目的推进与落地。也正因这些一线经验，他始终坚信：一个成功的项目，不是材料的简单采购，而是对空间效果、品质、成本与落地执行的系统整合。"
+        }
       },
       {
-        en: "From international trade manager to a practitioner focused on end-to-end solutions, he has distilled years of experience into a method that begins with the client's needs and is anchored in project delivery. The founding purpose of Decoropic follows from this — not merely to supply products, but to help clients turn the space they envision into a space they can walk into.",
-        zh: "从国际贸易经理，到专注整体解决方案的实践者，他逐步将多年积累沉淀为一套以客户需求为起点、以项目落地为核心的方法。创业的初心，也由此而来——不止于提供产品，更致力于帮助客户把理想空间真正变成现实。"
+        iconSlug: "arrow-through",
+        subtitle: { en: "From trade to delivery.", zh: "从贸易到交付。" },
+        body: {
+          en: "From international trade manager to a practitioner focused on end-to-end solutions, he has distilled years of experience into a method that begins with the client's needs and is anchored in project delivery. The founding purpose of Decoropic follows from this — not merely to supply products, but to help clients turn the space they envision into a space they can walk into.",
+          zh: "从国际贸易经理，到专注整体解决方案的实践者，他逐步将多年积累沉淀为一套以客户需求为起点、以项目落地为核心的方法。创业的初心，也由此而来——不止于提供产品，更致力于帮助客户把理想空间真正变成现实。"
+        }
       }
     ],
-    ctaLabel: { en: "Talk with Our Team", zh: "与我们团队沟通" },
-    imageLabel: { en: "Founder Portrait — On Site in Accra", zh: "创始人肖像 — 阿克拉现场" }
+    ctaLabel: { en: "Talk with Our Team", zh: "与我们团队沟通" }
   },
 
   whoWeServe: {
