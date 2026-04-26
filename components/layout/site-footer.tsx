@@ -1,121 +1,114 @@
 import Link from "next/link";
 import type { Locale } from "@/content/types";
 import { siteNavContent } from "@/content/site-nav";
-import { t } from "@/lib/i18n/content";
 import { siteConfig } from "@/lib/utils/constants";
-import { HandDrawnLine } from "@/components/ui/hand-drawn-line";
 
 type SiteFooterProps = {
   locale: Locale;
 };
 
-// Footer Editorial v2.0
-// Design principles:
-//   - No white cards, no rounded capsule buttons, no glass backdrop-blur.
-//   - Type sits directly on a deep pine-dark ground, like a magazine endpiece.
-//   - Oversized "Decoropic" wordmark acts as both brand signature and edge-breaker,
-//     satisfying the "oversized + break-edge" Editorial laws.
-//   - Asymmetric 2fr:1fr:1fr grid — brand is the star, nav and contact ride quiet.
-//   - Two hand-drawn gold lines bookend the composition (top entry / bottom sign-off).
-//   - Footer is the closing full stop of the page: no CTAs, no phone line,
-//     no sub-brand narrative. Clients leave, they don't re-engage here.
+// Footer Editorial v3.0 (Battle 7 Phase 2.5)
+// 4 等列简洁布局：Brand / Navigate / Reach out / Trust
+// 删除：双 wave 装饰 + 巨型 Decoropic 水印 + mt-20 大间距
+// 保留：深墨绿底 + Playfair serif + 金色 eyebrow（Editorial 调性核心）
+// 目标高度：380-420px（之前 ~680px）
 export function SiteFooter({ locale }: SiteFooterProps) {
-  const eyebrow = locale === "zh" ? "加纳，二十载深耕" : "Ghana, for twenty years";
-  const tagline = locale === "zh" ? "室内装饰，落地加纳。" : "Interiors, delivered.";
-  const navigateTitle = locale === "zh" ? "导航" : "Navigate";
-  const reachOutTitle = locale === "zh" ? "联系" : "Reach out";
-  const copyright = locale === "zh"
-    ? `© ${new Date().getFullYear()} Decoropic. 版权所有.`
-    : `© ${new Date().getFullYear()} Decoropic. All rights reserved.`;
+  const eyebrowStyle = {
+    fontSize: "0.7rem",
+    fontWeight: 700,
+    letterSpacing: "0.28em",
+    textTransform: "uppercase" as const
+  };
 
   return (
-    <footer className="relative overflow-hidden bg-brand-pine-dark text-brand-ivory">
-      {/* Top hand-drawn gold line — entry divider */}
-      <div className="container-wide pt-20 lg:pt-24">
-        <HandDrawnLine variant="wave" strokeWidth={1} className="w-full opacity-40" />
-      </div>
+    <footer className="bg-brand-pine-dark text-brand-ivory">
+      <div className="container-wide pt-16 pb-8 lg:pt-20">
+        {/* 4 等列网格 */}
+        <div className="mb-12 grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-4 lg:gap-12">
 
-      {/* Main content */}
-      <div className="container-wide relative pt-12 pb-8">
-        {/* Eyebrow */}
-        <p className="text-eyebrow-lg text-brand-gold mb-12">
-          {eyebrow}
-        </p>
-
-        {/* Asymmetric grid: brand (2fr) : navigate (1fr) : reach out (1fr) */}
-        <div className="grid grid-cols-1 lg:grid-cols-[2fr_1fr_1fr] gap-12 lg:gap-16 items-start">
-
-          {/* Column 1 — brand signature (oversized + edge-breaking) */}
-          <div className="relative">
-            {/* Oversized Decoropic wordmark */}
-            {/* - Serif via inline var(--serif) to stay Footer-scoped per project convention */}
-            {/* - Gold at 8% opacity reads as a watermark rather than text */}
-            {/* - translate-y nudges it to graze/kiss the footer bottom edge = break-edge */}
-            <h2
-              aria-hidden="true"
-              className="select-none pointer-events-none font-normal leading-[0.9] tracking-tight text-brand-gold/10"
-              style={{
-                fontFamily: "var(--serif)",
-                fontSize: "clamp(88px, 14vw, 180px)",
-                transform: "translateY(12px)"
-              }}
+          {/* Col 1 — Brand */}
+          <div>
+            <p className="text-brand-gold mb-3" style={eyebrowStyle}>
+              {locale === "zh" ? "品牌" : "Brand"}
+            </p>
+            <h3
+              className="text-brand-ivory"
+              style={{ fontFamily: "var(--serif)", fontSize: "clamp(1.5rem, 2.2vw, 1.75rem)", fontWeight: 700, lineHeight: 1.2 }}
             >
               Decoropic
-            </h2>
-            {/* Readable tagline, Playfair, sits just below the giant mark */}
+            </h3>
             <p
-              className="text-2xl lg:text-3xl leading-snug mt-6 max-w-md text-brand-ivory"
-              style={{ fontFamily: "var(--serif)" }}
+              className="mt-3 text-brand-ivory/75 italic"
+              style={{ fontFamily: "var(--serif)", fontSize: "1.0625rem", lineHeight: 1.5 }}
             >
-              {tagline}
+              {locale === "zh" ? "室内空间，整套交付。" : "Interiors, delivered."}
             </p>
           </div>
 
-          {/* Column 2 — Navigate (plain text links, no capsules) */}
-          <nav aria-label={navigateTitle}>
-            <p className="text-eyebrow-lg text-brand-gold mb-6">{navigateTitle}</p>
-            <ul className="space-y-3">
+          {/* Col 2 — Navigate */}
+          <nav aria-label={locale === "zh" ? "导航" : "Navigate"}>
+            <p className="text-brand-gold mb-3" style={eyebrowStyle}>
+              {locale === "zh" ? "导航" : "Navigate"}
+            </p>
+            <ul className="space-y-2.5">
               {siteNavContent.mainNav.map((item) => (
                 <li key={item.href}>
                   <Link
                     href={item.href}
-                    className="group relative inline-block text-base text-brand-ivory/70 transition-colors duration-200 hover:text-brand-gold"
+                    className="text-sm text-brand-ivory/80 transition-colors hover:text-brand-gold"
                   >
-                    {t(item.label, locale)}
-                    <span className="absolute left-0 -bottom-0.5 h-px w-0 bg-brand-gold transition-all duration-300 group-hover:w-full" />
+                    {locale === "zh" ? item.label.zh : item.label.en}
                   </Link>
                 </li>
               ))}
             </ul>
           </nav>
 
-          {/* Column 3 — Reach out (email + location only; no tel, no badge) */}
+          {/* Col 3 — Reach out */}
           <div>
-            <p className="text-eyebrow-lg text-brand-gold mb-6">{reachOutTitle}</p>
-            <div className="space-y-3">
-              <a
-                href={`mailto:${siteConfig.contactEmail}`}
-                className="group relative inline-block text-base text-brand-ivory/70 transition-colors duration-200 hover:text-brand-gold"
-              >
-                {siteConfig.contactEmail}
-                <span className="absolute left-0 -bottom-0.5 h-px w-0 bg-brand-gold transition-all duration-300 group-hover:w-full" />
-              </a>
-              <p className="text-base text-brand-ivory/70">
+            <p className="text-brand-gold mb-3" style={eyebrowStyle}>
+              {locale === "zh" ? "联系" : "Reach out"}
+            </p>
+            <ul className="space-y-2.5 text-sm">
+              <li>
+                <a
+                  href={`mailto:${siteConfig.contactEmail}`}
+                  className="text-brand-ivory/80 transition-colors hover:text-brand-gold"
+                >
+                  {siteConfig.contactEmail}
+                </a>
+              </li>
+              <li className="text-brand-ivory/80">
                 {siteConfig.contactLocation}
-              </p>
-            </div>
+              </li>
+            </ul>
           </div>
+
+          {/* Col 4 — Trust */}
+          <div>
+            <p className="text-brand-gold mb-3" style={eyebrowStyle}>
+              {locale === "zh" ? "信任背书" : "Trust"}
+            </p>
+            <p
+              className="text-brand-ivory/85"
+              style={{ fontFamily: "var(--serif)", fontSize: "1.0625rem", lineHeight: 1.5, fontStyle: "italic" }}
+            >
+              {locale === "zh"
+                ? "二十年深耕加纳。一个国家。数百个家。"
+                : "Two decades. One country. Hundreds of homes shaped."}
+            </p>
+          </div>
+
         </div>
 
-        {/* Bottom hand-drawn gold line — sign-off divider */}
-        <div className="mt-20 mb-6">
-          <HandDrawnLine variant="wave" strokeWidth={1} className="w-full opacity-30" />
+        {/* 底部分隔线 + Copyright */}
+        <div className="border-t border-brand-gold/15 pt-8">
+          <p className="text-xs uppercase tracking-wider text-brand-ivory/50">
+            {locale === "zh"
+              ? `© ${new Date().getFullYear()} Decoropic. 保留所有权利。`
+              : `© ${new Date().getFullYear()} Decoropic. All rights reserved.`}
+          </p>
         </div>
-
-        {/* Copyright */}
-        <p className="text-xs uppercase tracking-[0.22em] text-brand-ivory/40">
-          {copyright}
-        </p>
       </div>
     </footer>
   );
