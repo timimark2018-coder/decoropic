@@ -30,7 +30,6 @@ export function SiteHeader({ locale }: SiteHeaderProps) {
                 key={item.href}
                 href={resolved}
                 label={t(item.label, locale)}
-                isHome={item.label.en === "Home"}
                 external={isExternalHref(resolved)}
                 className="text-[17px] tracking-wide text-brand-pine-dark hover:text-brand-gold transition-colors"
               />
@@ -55,7 +54,6 @@ export function SiteHeader({ locale }: SiteHeaderProps) {
               key={item.href}
               href={resolved}
               label={t(item.label, locale)}
-              isHome={item.label.en === "Home"}
               external={isExternalHref(resolved)}
               className="whitespace-nowrap text-[15px] text-brand-pine-dark hover:text-brand-gold transition-colors"
             />
