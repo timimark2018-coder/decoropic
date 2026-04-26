@@ -341,17 +341,16 @@ export const homeContent = {
   },
   finalCta: {
     title: {
-      en: "Let’s Move Your Project Forward More Efficiently",
-      zh: "让您的项目推进得更清晰、更高效"
+      en: "Twenty years in Ghana. Hundreds of homes shaped. Yours next?",
+      zh: "二十年深耕加纳。数百个家蜕变。下一个，是不是你？"
     },
     body: {
-      en: "Send us your drawings, reference images, BOQ or product list. Based on your project type, budget and delivery priorities, we will help you build a more suitable sourcing and execution plan.",
-      zh: "欢迎发送图纸、参考图片、BOQ 或产品清单给我们。我们将根据您的项目类型、预算和交付需求，协助您梳理更合适的产品与执行方案。"
+      en: "Two paths. The 11-step estimator gives you an early sense in three minutes — no typing required. Or talk to Lily directly: she replies herself, within 24 hours, not a CRM.",
+      zh: "两种方式。11 步预算测算器三分钟获得初步预估——无需打字。或直接和 Lily 对话：她在 24 小时内亲自回复，不是自动消息。"
     },
     ctas: [
-      { label: { en: "Request Consultation", zh: "咨询项目方案" }, href: "/contact" },
-      { label: { en: "Send Drawings / BOQ", zh: "发送图纸 / BOQ" }, href: "/contact" },
-      { label: { en: "Talk on WhatsApp", zh: "WhatsApp联系" }, href: "WHATSAPP" }
+      { label: { en: "Open the 11-step estimator", zh: "打开 11 步测算器" }, href: "/#estimator" },
+      { label: { en: "Talk to Lily", zh: "直接联系 Lily" }, href: "/contact" }
     ] satisfies CtaLink[]
   }
 };
