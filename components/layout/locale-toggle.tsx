@@ -39,7 +39,7 @@ export function LocaleToggle({ locale }: LocaleToggleProps) {
   }
 
   return (
-    <div className="inline-flex items-center rounded-full border border-brand-line/90 bg-white/80 p-1">
+    <div className="inline-flex items-center gap-1">
       {(["en", "zh"] as const).map((item) => {
         const active = item === locale;
 
