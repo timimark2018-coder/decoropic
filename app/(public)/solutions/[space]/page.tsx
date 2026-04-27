@@ -234,12 +234,53 @@ export default async function SpaceDetailPage({
         </div>
       </section>
 
-      {/* 05 INVESTMENT */}
+      {/* 05 DESIGN CONCEPT */}
       <section className="bg-[#f7f3ec] py-24">
         <div className="container-wide">
           <Reveal>
             <p className="text-brand-gold mb-2" style={{ fontSize: "0.78rem", fontWeight: 700, letterSpacing: "0.28em", textTransform: "uppercase" }}>
-              05 — Investment
+              05 — Design Concept
+            </p>
+          </Reveal>
+          <Reveal delay={150}>
+            <h2 className="text-brand-pine-dark mb-12" style={{ fontFamily: "var(--serif)", fontSize: "clamp(1.75rem, 3.5vw, 2.75rem)", fontWeight: 700, lineHeight: 1.15 }}>
+              {locale === "zh" ? "设计理念" : "The concept behind it."}
+            </h2>
+          </Reveal>
+          <div className="max-w-[800px]">
+            <Reveal delay={300}>
+              <p
+                className="text-brand-pine-dark mb-10 lg:mb-12"
+                style={{ fontFamily: "var(--serif)", fontStyle: "italic", fontSize: "clamp(1.375rem, 2.2vw, 1.75rem)", lineHeight: 1.4 }}
+              >
+                {t(data.designConcept.theme, locale)}
+              </p>
+            </Reveal>
+            <Reveal delay={500}>
+              <p className="text-brand-pine-dark/85 mb-10 lg:mb-12" style={{ fontSize: "1.0625rem", lineHeight: 1.7 }}>
+                {t(data.designConcept.summary, locale)}
+              </p>
+            </Reveal>
+            <Reveal delay={700}>
+              <div className="border-l-2 border-brand-gold pl-6 lg:pl-8">
+                <p
+                  className="text-brand-pine-dark"
+                  style={{ fontFamily: "var(--serif)", fontStyle: "italic", fontSize: "clamp(1.125rem, 1.6vw, 1.375rem)", lineHeight: 1.5 }}
+                >
+                  {t(data.designConcept.coreIdea, locale)}
+                </p>
+              </div>
+            </Reveal>
+          </div>
+        </div>
+      </section>
+
+      {/* 06 INVESTMENT */}
+      <section className="bg-[#efe7d9] py-24">
+        <div className="container-wide">
+          <Reveal>
+            <p className="text-brand-gold mb-2" style={{ fontSize: "0.78rem", fontWeight: 700, letterSpacing: "0.28em", textTransform: "uppercase" }}>
+              06 — Investment
             </p>
           </Reveal>
           <Reveal delay={150}>
