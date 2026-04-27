@@ -32,7 +32,7 @@ export function buildWhatsAppHref(message?: string, locale: Locale = "en") {
 
 export function resolveSiteHref(href: string, locale: Locale = "en") {
   if (href === "PRODUCT_CENTER") {
-    return appendLocaleQuery(siteConfig.productCenterUrl, locale);
+    return "/products";
   }
 
   if (href === "WHATSAPP") {
