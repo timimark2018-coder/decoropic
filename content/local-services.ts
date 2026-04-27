@@ -1,28 +1,28 @@
 export const localServicesContent = {
   hero: {
     title: {
-      en: "Ghana Local Services and Project Delivery Support",
-      zh: "加纳本地服务与项目落地支持"
+      en: "Local Services & Project Delivery",
+      zh: "本地服务与项目落地"
     },
     subtitle: {
-      en: "We provide project support closer to the realities of the Ghana market, including site measurement, budget-led design, installation guidance, communication support and issue follow-up.",
-      zh: "我们在加纳提供更贴近项目现场的支持，包括现场测量、预算导向设计、安装指导、沟通协调及后续问题跟进。"
+      en: "Twenty years of on-the-ground experience in Ghana, applied to every project we deliver. Site measurements, budget-led design, installation guidance, and after-sales follow-through — handled by people who actually live in your market.",
+      zh: "深耕加纳 20 年的本地经验，应用于我们交付的每一个项目。当地测量、预算导向设计、安装指导、售后跟进——由真正生活在你的市场的人来处理。"
     }
   },
   whyItMatters: {
     title: {
-      en: "Why Local Support in Ghana Matters",
-      zh: "为什么加纳本地支持很重要"
+      en: "Why Local Support Matters",
+      zh: "为什么本地支持很重要"
     },
     body: {
-      en: "Many cross-border project issues do not arise at the ordering stage, but rather on site. Common challenges include mismatches between dimensions and actual space conditions, gaps between budget and design expectations, inconsistent installation understanding, and weak coordination across teams. Our local support is designed to help turn early plans into completed spaces more smoothly.",
-      zh: "跨境项目常见的问题，并不总发生在下单阶段，而往往发生在项目现场。例如尺寸与实际空间不符、预算与设计效果不匹配、安装理解不一致、不同团队沟通衔接不足等。因此，我们希望通过更贴近本地执行的服务，帮助客户把前期方案更顺利地转化为最终空间成果。"
+      en: "Most overseas suppliers ship containers and disappear. We don't. Twenty years of trading with Ghana taught us that the difference between a successful project and a failed one is rarely the materials — it's whether someone shows up after the container arrives. Our principle applies to any market we operate in: site measurements before order, budget-aligned recommendations during design, on-site guidance during installation, and follow-through long after the invoice is closed.",
+      zh: "大多数海外供应商发完集装箱就消失。我们不会。深耕加纳 20 年教会我们的是：项目成功与否，很少取决于材料本身，而取决于集装箱抵达后是否有人到场。这个原则适用于我们经营的任何市场——下单前现场测量、设计阶段预算导向建议、安装阶段现场指导、发票结清后长期跟进。"
     }
   },
   localServices: {
     title: {
-      en: "Our Local Services in Ghana",
-      zh: "我们的加纳本地服务"
+      en: "Our Local Services",
+      zh: "我们的本地服务"
     },
     items: [
       {
