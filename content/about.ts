@@ -275,6 +275,6 @@ export const aboutContent = {
 
 // ARCHIVED (2026-04-23) — Former paragraphs[1] in founderStory, relocated to a reusable asset.
 // Original intent: four-joint breakdown of project execution pain points.
-// Reuse target: likely Approach page OR Ghana Services "on-the-ground" section.
+// Reuse target: likely Approach page OR Local Services "on-the-ground" section.
 // EN: "The turning point was realising that the parts clients struggle with most are never 'the product'. They are the joints: budget vs design, design vs site, site vs shipping, shipping vs installation. Decoropic was built to hold those joints."
 // ZH: "真正的转折在于意识到：客户最头疼的部分从来不是产品本身，而是各个衔接点——预算与设计、设计与现场、现场与出货、出货与安装。Decoropic 正是为了把这些衔接点承接下来而存在。"

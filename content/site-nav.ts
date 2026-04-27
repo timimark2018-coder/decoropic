@@ -6,7 +6,7 @@ export const siteNavContent = {
     { label: { en: "Solutions", zh: "解决方案" }, href: "/solutions" },
     { label: { en: "Products", zh: "产品中心" }, href: "PRODUCT_CENTER" },
     { label: { en: "Projects", zh: "项目展示" }, href: "/projects" },
-    { label: { en: "Ghana Services", zh: "加纳服务" }, href: "/ghana-services" },
+    { label: { en: "Local Services", zh: "本地服务" }, href: "/local-services" },
     { label: { en: "About", zh: "关于我们" }, href: "/about" },
     { label: { en: "Contact", zh: "联系我们" }, href: "/contact" }
   ] satisfies Array<{ label: LocalizedText; href: string }>,

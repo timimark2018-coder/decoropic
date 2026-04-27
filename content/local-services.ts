@@ -1,4 +1,4 @@
-export const ghanaServicesContent = {
+export const localServicesContent = {
   hero: {
     title: {
       en: "Ghana Local Services and Project Delivery Support",
