@@ -429,9 +429,9 @@ export default async function ProductsPage() {
         </div>
       </section>
 
-      {/* 03 — Selection Guides (5 大类目) */}
+      {/* 03 — Selection Guides (5 大类目，Zigzag 布局) */}
       <section className="bg-[#efe7d9] py-24 lg:py-32">
-        <div className="container-wide max-w-[1000px]">
+        <div className="container-wide max-w-[1200px]">
           <Reveal>
             <p
               className="text-brand-gold mb-8"
@@ -443,7 +443,7 @@ export default async function ProductsPage() {
 
           <Reveal delay={200}>
             <h2
-              className="text-brand-pine-dark mb-16"
+              className="text-brand-pine-dark mb-20"
               style={{
                 fontFamily: "var(--serif)",
                 fontSize: "clamp(1.875rem, 3.5vw, 2.75rem)",
@@ -455,64 +455,84 @@ export default async function ProductsPage() {
             </h2>
           </Reveal>
 
-          {/* 5 类目 — 垂直堆叠卡片 */}
-          <div className="space-y-12">
-            {c.selectionGuides.categories.map((cat, i) => (
-              <Reveal key={cat.slug} delay={300 + i * 100}>
-                <div className="border-l-2 border-brand-gold pl-6 lg:pl-8">
-                  <h3
-                    className="text-brand-pine-dark mb-2"
-                    style={{
-                      fontFamily: "var(--serif)",
-                      fontSize: "clamp(1.5rem, 2.4vw, 2rem)",
-                      fontWeight: 700,
-                      lineHeight: 1.2
-                    }}
+          {/* 5 类目 — Zigzag 交替（奇偶左图右文 / 右图左文） */}
+          <div className="space-y-20 lg:space-y-28">
+            {c.selectionGuides.categories.map((cat, idx) => {
+              const reverse = idx % 2 === 1;
+              return (
+                <Reveal key={cat.slug} delay={idx * 100}>
+                  <div
+                    className={`flex flex-col gap-8 lg:gap-16 lg:items-center ${reverse ? "lg:flex-row-reverse" : "lg:flex-row"}`}
                   >
-                    {t(cat.title, locale)}
-                  </h3>
-                  <p
-                    className="text-brand-gold mb-6"
-                    style={{
-                      fontFamily: "var(--serif)",
-                      fontStyle: "italic",
-                      fontSize: "clamp(1rem, 1.3vw, 1.125rem)",
-                      lineHeight: 1.5
-                    }}
-                  >
-                    {t(cat.tagline, locale)}
-                  </p>
+                    {/* 图 */}
+                    <div className="lg:w-1/2">
+                      <div className="relative aspect-[4/3] w-full overflow-hidden bg-brand-pine-dark/5">
+                        <img
+                          src={cat.imageSrc}
+                          alt={t(cat.title, locale)}
+                          loading="lazy"
+                          className="h-full w-full object-cover"
+                        />
+                      </div>
+                    </div>
 
-                  <ul className="mb-8 space-y-3">
-                    {cat.tips.map((tip, j) => (
-                      <li
-                        key={j}
-                        className="flex gap-3 text-brand-pine-dark/85"
-                        style={{ fontSize: "0.9375rem", lineHeight: 1.6 }}
+                    {/* 文字 */}
+                    <div className="border-l-2 border-brand-gold pl-6 lg:w-1/2 lg:pl-8">
+                      <h3
+                        className="text-brand-pine-dark mb-4"
+                        style={{
+                          fontFamily: "var(--serif)",
+                          fontSize: "clamp(1.75rem, 3vw, 2.75rem)",
+                          fontWeight: 700,
+                          lineHeight: 1.1
+                        }}
                       >
-                        <span className="text-brand-gold mt-1">✦</span>
-                        <span>{t(tip, locale)}</span>
-                      </li>
-                    ))}
-                  </ul>
+                        {t(cat.title, locale)}
+                      </h3>
+                      <p
+                        className="text-brand-gold mb-6"
+                        style={{
+                          fontFamily: "var(--serif)",
+                          fontStyle: "italic",
+                          fontSize: "clamp(1.05rem, 1.5vw, 1.25rem)",
+                          lineHeight: 1.5
+                        }}
+                      >
+                        {t(cat.tagline, locale)}
+                      </p>
 
-                  <a
-                    href={cat.catalogUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-brand-gold hover:text-brand-pine-dark transition-colors inline-flex items-center"
-                    style={{
-                      fontSize: "0.78rem",
-                      letterSpacing: "0.22em",
-                      textTransform: "uppercase",
-                      fontWeight: 700
-                    }}
-                  >
-                    {t(cat.browseLabel, locale)}
-                  </a>
-                </div>
-              </Reveal>
-            ))}
+                      <ul className="mb-8 space-y-3">
+                        {cat.tips.map((tip, j) => (
+                          <li
+                            key={j}
+                            className="flex gap-3 text-brand-pine-dark/80"
+                            style={{ fontSize: "0.95rem", lineHeight: 1.6 }}
+                          >
+                            <span className="text-brand-gold flex-shrink-0">✦</span>
+                            <span>{t(tip, locale)}</span>
+                          </li>
+                        ))}
+                      </ul>
+
+                      <a
+                        href={cat.catalogUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-brand-gold hover:text-brand-pine-dark transition-colors inline-flex items-center"
+                        style={{
+                          fontSize: "0.78rem",
+                          letterSpacing: "0.22em",
+                          textTransform: "uppercase",
+                          fontWeight: 700
+                        }}
+                      >
+                        {t(cat.browseLabel, locale)}
+                      </a>
+                    </div>
+                  </div>
+                </Reveal>
+              );
+            })}
           </div>
         </div>
       </section>

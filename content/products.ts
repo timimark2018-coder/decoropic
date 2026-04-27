@@ -31,6 +31,7 @@ export type ProductsContent = {
     h2: LocalizedText;
     categories: Array<{
       slug: string;
+      imageSrc: string;
       title: LocalizedText;
       tagline: LocalizedText;
       tips: LocalizedText[];
@@ -207,6 +208,7 @@ export const productsContent: ProductsContent = {
     categories: [
       {
         slug: "tiles",
+        imageSrc: "/images/products/tiles.jpg",
         title: { en: "Tiles & Flooring", zh: "瓷砖与地板" },
         tagline: {
           en: "The foundation that 5,000 daily footsteps walk on.",
@@ -222,6 +224,7 @@ export const productsContent: ProductsContent = {
       },
       {
         slug: "furniture",
+        imageSrc: "/images/products/furniture.jpg",
         title: { en: "Furniture", zh: "家具" },
         tagline: {
           en: "What sits in the room for the next 20 years.",
@@ -237,6 +240,7 @@ export const productsContent: ProductsContent = {
       },
       {
         slug: "bathroom-kitchen",
+        imageSrc: "/images/products/bathroom-kitchen.jpg",
         title: { en: "Bathroom & Kitchen", zh: "卫浴与厨房" },
         tagline: {
           en: "The two rooms that get used three times a day.",
@@ -252,6 +256,7 @@ export const productsContent: ProductsContent = {
       },
       {
         slug: "lighting",
+        imageSrc: "/images/products/lighting.jpg",
         title: { en: "Lighting", zh: "灯饰" },
         tagline: {
           en: "What the room actually feels like at 9pm.",
@@ -267,6 +272,7 @@ export const productsContent: ProductsContent = {
       },
       {
         slug: "doors-windows",
+        imageSrc: "/images/products/doors-windows.jpg",
         title: { en: "Doors & Windows", zh: "门窗" },
         tagline: {
           en: "The thresholds the project can't compromise on.",
