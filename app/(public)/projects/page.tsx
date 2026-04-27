@@ -23,6 +23,197 @@ export async function generateMetadata(): Promise<Metadata> {
   });
 }
 
+// =============================================================================
+// SVG Illustration — Supply Journey China → Ghana
+// =============================================================================
+
+function SupplyJourneyIllustration() {
+  return (
+    <svg
+      viewBox="0 0 800 220"
+      className="h-auto w-full"
+      xmlns="http://www.w3.org/2000/svg"
+      role="img"
+      aria-label="Supply journey from China to Ghana"
+    >
+      {/* CHINA 左侧标签 */}
+      <text
+        x="40"
+        y="30"
+        fill="var(--brand-pine-dark)"
+        fontSize="11"
+        fontFamily="var(--font-sans, sans-serif)"
+        fontWeight="600"
+        letterSpacing="0.28em"
+      >
+        CHINA
+      </text>
+
+      {/* GHANA 右侧标签 */}
+      <text
+        x="710"
+        y="30"
+        fill="var(--brand-pine-dark)"
+        fontSize="11"
+        fontFamily="var(--font-sans, sans-serif)"
+        fontWeight="600"
+        letterSpacing="0.28em"
+      >
+        GHANA
+      </text>
+
+      {/* 中间纵向边界虚线（象征国界） */}
+      <line
+        x1="400"
+        y1="50"
+        x2="400"
+        y2="170"
+        stroke="var(--brand-gold)"
+        strokeWidth="0.8"
+        strokeDasharray="2 4"
+        opacity="0.4"
+      />
+
+      {/* 节点 1→2 实线 */}
+      <line x1="120" y1="110" x2="280" y2="110" stroke="var(--brand-gold)" strokeWidth="1.6" />
+
+      {/* 节点 2→3 海运段虚线 */}
+      <line
+        x1="320"
+        y1="110"
+        x2="480"
+        y2="110"
+        stroke="var(--brand-gold)"
+        strokeWidth="1.6"
+        strokeDasharray="5 4"
+      />
+
+      {/* 节点 3→4 虚线继续（跨海到 Ghana） */}
+      <line
+        x1="520"
+        y1="110"
+        x2="680"
+        y2="110"
+        stroke="var(--brand-gold)"
+        strokeWidth="1.6"
+        strokeDasharray="5 4"
+      />
+
+      {/* 节点 1: FACTORY · QC */}
+      <g>
+        <circle cx="100" cy="110" r="24" fill="#fdf6e3" stroke="var(--brand-gold)" strokeWidth="1.6" />
+        <path
+          d="M 88 116 L 88 104 L 95 100 L 100 104 L 105 100 L 112 104 L 112 116 Z"
+          fill="none"
+          stroke="var(--brand-gold)"
+          strokeWidth="1.4"
+          strokeLinejoin="round"
+        />
+        <line x1="108" y1="100" x2="108" y2="96" stroke="var(--brand-gold)" strokeWidth="1.4" />
+        <text
+          x="100"
+          y="160"
+          fill="var(--brand-pine-dark)"
+          fontSize="10"
+          fontFamily="var(--font-sans, sans-serif)"
+          fontWeight="600"
+          letterSpacing="0.18em"
+          textAnchor="middle"
+        >
+          FACTORY · QC
+        </text>
+      </g>
+
+      {/* 节点 2: PACKING */}
+      <g>
+        <circle cx="300" cy="110" r="24" fill="#fdf6e3" stroke="var(--brand-gold)" strokeWidth="1.6" />
+        <rect
+          x="288"
+          y="102"
+          width="24"
+          height="16"
+          fill="none"
+          stroke="var(--brand-gold)"
+          strokeWidth="1.4"
+          strokeLinejoin="round"
+        />
+        <line x1="288" y1="110" x2="312" y2="110" stroke="var(--brand-gold)" strokeWidth="0.8" />
+        <text
+          x="300"
+          y="160"
+          fill="var(--brand-pine-dark)"
+          fontSize="10"
+          fontFamily="var(--font-sans, sans-serif)"
+          fontWeight="600"
+          letterSpacing="0.18em"
+          textAnchor="middle"
+        >
+          PACKING
+        </text>
+      </g>
+
+      {/* 节点 3: OCEAN */}
+      <g>
+        <circle cx="500" cy="110" r="24" fill="#fdf6e3" stroke="var(--brand-gold)" strokeWidth="1.6" />
+        <path
+          d="M 488 108 L 512 108 L 508 114 L 492 114 Z"
+          fill="none"
+          stroke="var(--brand-gold)"
+          strokeWidth="1.4"
+          strokeLinejoin="round"
+        />
+        <line x1="500" y1="108" x2="500" y2="100" stroke="var(--brand-gold)" strokeWidth="1.2" />
+        <path
+          d="M 488 120 Q 492 117 496 120 T 504 120 T 512 120"
+          fill="none"
+          stroke="var(--brand-gold)"
+          strokeWidth="1.2"
+          strokeLinecap="round"
+        />
+        <text
+          x="500"
+          y="160"
+          fill="var(--brand-pine-dark)"
+          fontSize="10"
+          fontFamily="var(--font-sans, sans-serif)"
+          fontWeight="600"
+          letterSpacing="0.18em"
+          textAnchor="middle"
+        >
+          OCEAN
+        </text>
+      </g>
+
+      {/* 节点 4: SITE */}
+      <g>
+        <circle cx="700" cy="110" r="24" fill="#fdf6e3" stroke="var(--brand-gold)" strokeWidth="1.6" />
+        <path
+          d="M 686 116 L 686 108 L 700 98 L 714 108 L 714 116 Z"
+          fill="none"
+          stroke="var(--brand-gold)"
+          strokeWidth="1.4"
+          strokeLinejoin="round"
+        />
+        <rect x="696" y="110" width="3" height="4" fill="var(--brand-gold)" />
+        <rect x="701" y="110" width="3" height="4" fill="var(--brand-gold)" />
+        <text
+          x="700"
+          y="160"
+          fill="var(--brand-pine-dark)"
+          fontSize="10"
+          fontFamily="var(--font-sans, sans-serif)"
+          fontWeight="600"
+          letterSpacing="0.18em"
+          textAnchor="middle"
+        >
+          SITE
+        </text>
+      </g>
+
+    </svg>
+  );
+}
+
 export default async function ProjectsPage() {
   const locale = await getLocale();
   const c = projectsContent;
@@ -476,17 +667,24 @@ export default async function ProjectsPage() {
 
           <Reveal delay={300}>
             <p
-              className="text-brand-pine-dark/85 mb-16 max-w-[840px]"
+              className="text-brand-pine-dark/85 mb-12 max-w-[840px]"
               style={{ fontSize: "1.0625rem", lineHeight: 1.7 }}
             >
               {t(c.supplyProcessSection.intro, locale)}
             </p>
           </Reveal>
 
+          {/* SupplyJourneyIllustration — China → Ghana 流程示意 */}
+          <Reveal delay={350}>
+            <div className="mx-auto mb-12 max-w-[1000px]">
+              <SupplyJourneyIllustration />
+            </div>
+          </Reveal>
+
           {/* 4 阶段图（aspect-[4/5] 竖向） */}
           <div className="mb-12 grid grid-cols-2 gap-4 lg:grid-cols-4 lg:gap-6">
             {c.supplyProcessSection.images.map((img, i) => (
-              <Reveal key={i} delay={400 + i * 100}>
+              <Reveal key={i} delay={500 + i * 100}>
                 <figure>
                   <div className="relative aspect-[4/5] w-full overflow-hidden bg-brand-pine-dark/5">
                     <img src={img.src} alt={t(img.alt, locale)} loading="lazy" className="h-full w-full object-cover" />
@@ -507,7 +705,7 @@ export default async function ProjectsPage() {
             ))}
           </div>
 
-          <Reveal delay={900}>
+          <Reveal delay={950}>
             <Link
               href={c.supplyProcessSection.viewAllUrl}
               className="text-brand-gold hover:text-brand-pine-dark transition-colors inline-flex items-center"
