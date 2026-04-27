@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { ChevronRight, ChevronLeft } from "lucide-react";
+import { ChevronRight } from "lucide-react";
 import { buildMetadata } from "@/lib/seo/metadata";
 import { getLocale } from "@/lib/i18n/server";
 import { solutionsContent } from "@/content/solutions";
@@ -57,53 +57,131 @@ export default async function SpaceDetailPage({
 
   return (
     <main className="min-h-screen">
-      {/* HERO */}
-      <section className="relative bg-[#efe7d9] pt-32 pb-24 overflow-hidden">
+      {/* HERO — 100vh 全屏图 + 文字左下角 */}
+      <section
+        className="relative w-full overflow-hidden"
+        style={{ height: "100vh", minHeight: "640px" }}
+      >
+        {/* 全屏图，无蒙层 */}
         <div
           aria-hidden
-          className="pointer-events-none absolute right-6 top-8 h-16 w-16 border-t border-r border-brand-gold/50 sm:right-12 sm:top-12"
+          className="absolute inset-0"
+          style={{
+            backgroundImage: `url('/images/solutions/${data.slug}.jpg')`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat"
+          }}
         />
-        <div className="container-wide">
+
+        {/* 右上角金色直角装饰 */}
+        <div
+          aria-hidden
+          className="pointer-events-none absolute top-6 right-6 lg:top-10 lg:right-10 h-12 w-12 lg:h-16 lg:w-16 border-t-2 border-r-2 border-brand-gold/70"
+        />
+
+        {/* 返回链接 — 顶部左侧 */}
+        <div className="absolute top-6 left-6 lg:top-10 lg:left-10 z-10">
           <Reveal>
             <Link
               href="/solutions"
-              className="inline-flex items-center gap-2 text-brand-pine-dark/60 hover:text-brand-gold text-xs uppercase tracking-widest mb-8"
+              className="text-white/90 hover:text-brand-gold transition-colors"
+              style={{
+                fontSize: "0.78rem",
+                letterSpacing: "0.28em",
+                textTransform: "uppercase",
+                fontWeight: 700,
+                textShadow: "0 2px 8px rgba(0, 0, 0, 0.6)"
+              }}
             >
-              <ChevronLeft size={14} />
-              <span>Solutions / {data.number} {t(data.heroTitle, locale)}</span>
+              ← Solutions / {data.number} {t(data.cardTitle, locale)}
             </Link>
           </Reveal>
-          <Reveal delay={150}>
-            <p
-              className="text-brand-gold mb-6"
-              style={{ fontFamily: "var(--serif)", fontSize: "3rem", fontWeight: 800, lineHeight: 1 }}
-            >
-              {data.number}
-            </p>
-          </Reveal>
-          <Reveal delay={300}>
-            <h1
-              className="text-brand-pine-dark max-w-[900px] mb-8"
-              style={{ fontFamily: "var(--serif)", fontSize: "clamp(2.5rem, 6vw, 5rem)", fontWeight: 800, lineHeight: 1.05, letterSpacing: "-0.03em" }}
-            >
-              {t(data.heroTitle, locale)}
-            </h1>
-          </Reveal>
-          <Reveal delay={500}>
-            <div className="max-w-[220px] mb-10">
-              <HandDrawnLine variant="wave" height={24} color="var(--brand-gold)" strokeWidth={1.4} />
-            </div>
-          </Reveal>
-          <Reveal delay={700}>
-            <p
-              className="text-brand-gold max-w-[760px]"
-              style={{ fontFamily: "var(--serif)", fontSize: "clamp(1.25rem, 2vw, 1.75rem)", fontStyle: "italic", lineHeight: 1.5 }}
-            >
-              &quot;{t(data.heroQuote, locale)}&quot;
-            </p>
-          </Reveal>
+        </div>
+
+        {/* 文字盒 — 左下角，半透明深色矩形仅围绕文字 */}
+        <div className="absolute bottom-8 left-6 lg:bottom-12 lg:left-12 z-10 max-w-[440px]">
+          <div
+            className="px-5 py-5 lg:px-7 lg:py-6"
+            style={{
+              backgroundColor: data.heroBoxColor,
+              backdropFilter: "blur(10px)",
+              WebkitBackdropFilter: "blur(10px)",
+              borderTop: "1px solid rgba(174, 146, 96, 0.45)"
+            }}
+          >
+            <Reveal delay={150}>
+              <p
+                className="text-brand-gold mb-2.5"
+                style={{
+                  fontFamily: "var(--serif)",
+                  fontSize: "clamp(1.125rem, 1.4vw, 1.25rem)",
+                  fontWeight: 400,
+                  lineHeight: 1
+                }}
+              >
+                {data.number}
+              </p>
+            </Reveal>
+
+            <Reveal delay={300}>
+              <h1
+                className="text-white mb-4"
+                style={{
+                  fontFamily: "var(--serif)",
+                  fontSize: "clamp(1.75rem, 3.6vw, 2.75rem)",
+                  fontWeight: 700,
+                  lineHeight: 1.05,
+                  letterSpacing: "-0.01em"
+                }}
+              >
+                {t(data.heroTitle, locale)}
+              </h1>
+            </Reveal>
+
+            <Reveal delay={500}>
+              <div className="mb-4 max-w-[200px]">
+                <HandDrawnLine variant="wave" height={24} color="var(--brand-gold)" strokeWidth={1.6} />
+              </div>
+            </Reveal>
+
+            <Reveal delay={700}>
+              <p
+                className="text-brand-gold"
+                style={{
+                  fontFamily: "var(--serif)",
+                  fontStyle: "italic",
+                  fontSize: "clamp(0.875rem, 1.05vw, 0.9375rem)",
+                  lineHeight: 1.5,
+                  maxWidth: "400px"
+                }}
+              >
+                &quot;{t(data.heroQuote, locale)}&quot;
+              </p>
+            </Reveal>
+          </div>
         </div>
       </section>
+
+      {/* 金色信息条 — 紧接 Hero（电影标题字幕风） */}
+      <div className="bg-brand-pine-dark text-brand-ivory" style={{ paddingTop: "20px", paddingBottom: "20px" }}>
+        <div className="container-wide">
+          <div className="flex items-center justify-between flex-wrap gap-4">
+            <p
+              className="text-brand-gold"
+              style={{ fontSize: "0.78rem", letterSpacing: "0.28em", textTransform: "uppercase", fontWeight: 700 }}
+            >
+              {data.number} — {t(data.cardTitle, locale)}
+            </p>
+            <p
+              className="text-brand-ivory/70"
+              style={{ fontSize: "0.78rem", letterSpacing: "0.28em", textTransform: "uppercase", fontWeight: 500 }}
+            >
+              {t(data.cardTagline, locale)}
+            </p>
+          </div>
+        </div>
+      </div>
 
       {/* 01 STORY */}
       <section className="bg-[#f7f3ec] py-24">

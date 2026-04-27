@@ -23,6 +23,8 @@ export type SolutionSpace = {
   cardTagline: LocalizedText;
   // SVG geometric icon (path data, golden 1px stroke, 60×60 viewBox)
   iconSvg: string;
+  // RGBA 文字盒背景色，per-space 与图片协调
+  heroBoxColor: string;
   // 错落布局尺寸（主页用） — small / medium / large
   cardSize: "small" | "medium" | "large";
   heroTitle: LocalizedText;
@@ -105,6 +107,7 @@ export const solutionsContent = {
       cardTitle: { en: "Living Room", zh: "客厅" },
       cardTagline: { en: "The room you remember the project by.", zh: "让人记住整个项目的房间。" },
       iconSvg: `<rect x="8" y="14" width="44" height="32" fill="none" stroke="currentColor" stroke-width="1"/><path d="M14 36 Q30 30 46 36" fill="none" stroke="currentColor" stroke-width="1"/><circle cx="30" cy="20" r="2" fill="currentColor"/><line x1="46" y1="14" x2="52" y2="6" stroke="currentColor" stroke-width="0.8"/>`,
+      heroBoxColor: "rgba(48, 28, 18, 0.70)",
       cardSize: "large",
       heroTitle: { en: "The Living Room", zh: "客厅" },
       heroQuote: {
@@ -168,6 +171,7 @@ export const solutionsContent = {
       cardTitle: { en: "Dining", zh: "餐厅" },
       cardTagline: { en: "Where the conversation continues.", zh: "对话延续的地方。" },
       iconSvg: `<ellipse cx="30" cy="38" rx="20" ry="6" fill="none" stroke="currentColor" stroke-width="1"/><circle cx="14" cy="42" r="1.5" fill="currentColor"/><circle cx="30" cy="44" r="1.5" fill="currentColor"/><circle cx="46" cy="42" r="1.5" fill="currentColor"/><circle cx="22" cy="32" r="1.5" fill="currentColor"/><circle cx="38" cy="32" r="1.5" fill="currentColor"/><line x1="22" y1="10" x2="22" y2="22" stroke="currentColor" stroke-width="0.8"/><line x1="30" y1="10" x2="30" y2="20" stroke="currentColor" stroke-width="0.8"/><line x1="38" y1="10" x2="38" y2="24" stroke="currentColor" stroke-width="0.8"/>`,
+      heroBoxColor: "rgba(58, 38, 24, 0.70)",
       cardSize: "small",
       heroTitle: { en: "The Dining Room", zh: "餐厅" },
       heroQuote: { en: "A table that holds long meals and longer conversations.", zh: "一张桌子，承载漫长的晚餐和更漫长的对话。" },
@@ -223,6 +227,7 @@ export const solutionsContent = {
       cardTitle: { en: "Family Area", zh: "家庭活动区" },
       cardTagline: { en: "Where life actually happens.", zh: "真正的生活发生地。" },
       iconSvg: `<rect x="8" y="14" width="44" height="32" fill="none" stroke="currentColor" stroke-width="1"/><rect x="14" y="20" width="22" height="12" fill="none" stroke="currentColor" stroke-width="0.8"/><path d="M40 30 L40 40 L48 40" fill="none" stroke="currentColor" stroke-width="1"/>`,
+      heroBoxColor: "rgba(38, 28, 22, 0.72)",
       cardSize: "medium",
       heroTitle: { en: "The Family Area", zh: "家庭活动区" },
       heroQuote: { en: "The most lived-in room — where comfort outranks formality.", zh: "最有生活气息的房间——舒适胜过形式。" },
@@ -278,6 +283,7 @@ export const solutionsContent = {
       cardTitle: { en: "Study", zh: "书房" },
       cardTagline: { en: "Quiet by design.", zh: "为安静而设计。" },
       iconSvg: `<rect x="14" y="14" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1"/><line x1="20" y1="22" x2="40" y2="22" stroke="currentColor" stroke-width="0.8"/><line x1="20" y1="28" x2="40" y2="28" stroke="currentColor" stroke-width="0.8"/><rect x="22" y="34" width="16" height="8" fill="none" stroke="currentColor" stroke-width="1"/>`,
+      heroBoxColor: "rgba(35, 22, 16, 0.72)",
       cardSize: "small",
       heroTitle: { en: "The Study", zh: "书房" },
       heroQuote: { en: "Where the mind earns its rest.", zh: "心灵获得休息的地方。" },
@@ -333,6 +339,7 @@ export const solutionsContent = {
       cardTitle: { en: "Kitchen", zh: "厨房" },
       cardTagline: { en: "The hardest room to get right.", zh: "最难做对的房间。" },
       iconSvg: `<rect x="6" y="32" width="48" height="10" fill="none" stroke="currentColor" stroke-width="1"/><circle cx="16" cy="14" r="1.5" fill="currentColor"/><circle cx="30" cy="10" r="1.5" fill="currentColor"/><circle cx="44" cy="14" r="1.5" fill="currentColor"/><line x1="16" y1="14" x2="16" y2="28" stroke="currentColor" stroke-width="0.6"/><line x1="30" y1="10" x2="30" y2="28" stroke="currentColor" stroke-width="0.6"/><line x1="44" y1="14" x2="44" y2="28" stroke="currentColor" stroke-width="0.6"/>`,
+      heroBoxColor: "rgba(45, 32, 22, 0.68)",
       cardSize: "large",
       heroTitle: { en: "The Kitchen", zh: "厨房" },
       heroQuote: { en: "The room that survives every other trend.", zh: "经得起所有潮流考验的房间。" },
@@ -389,6 +396,7 @@ export const solutionsContent = {
       cardTitle: { en: "Outdoor Area", zh: "户外区域" },
       cardTagline: { en: "Designed for Ghana's climate.", zh: "为加纳气候而设计。" },
       iconSvg: `<polygon points="30,8 18,20 42,20" fill="none" stroke="currentColor" stroke-width="1"/><line x1="18" y1="20" x2="42" y2="20" stroke="currentColor" stroke-width="1"/><path d="M6 38 Q14 34 22 38 T38 38 T54 38" fill="none" stroke="currentColor" stroke-width="0.8"/><path d="M6 44 Q14 40 22 44 T38 44 T54 44" fill="none" stroke="currentColor" stroke-width="0.8"/>`,
+      heroBoxColor: "rgba(40, 38, 30, 0.70)",
       cardSize: "medium",
       heroTitle: { en: "The Outdoor Area", zh: "户外区域" },
       heroQuote: { en: "Where the home meets the climate, and wins.", zh: "家与气候交汇之处，并赢下一切。" },
@@ -444,6 +452,7 @@ export const solutionsContent = {
       cardTitle: { en: "Entrance Hall", zh: "玄关" },
       cardTagline: { en: "The first thing the project says.", zh: "项目说的第一句话。" },
       iconSvg: `<line x1="14" y1="6" x2="14" y2="54" stroke="currentColor" stroke-width="1"/><line x1="46" y1="6" x2="46" y2="54" stroke="currentColor" stroke-width="1"/><circle cx="30" cy="22" r="2" fill="currentColor"/><line x1="30" y1="6" x2="30" y2="20" stroke="currentColor" stroke-width="0.6"/><line x1="22" y1="44" x2="38" y2="44" stroke="currentColor" stroke-width="0.6"/>`,
+      heroBoxColor: "rgba(40, 30, 22, 0.72)",
       cardSize: "small",
       heroTitle: { en: "The Entrance Hall", zh: "玄关" },
       heroQuote: { en: "The shortest room — and the one that sets every tone.", zh: "最短的房间——却定下所有的基调。" },
