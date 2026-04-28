@@ -12,7 +12,7 @@ export type HotelMiniCase = {
   completedAt: LocalizedText;
   scope: LocalizedText;
   scopeNote?: LocalizedText;
-  imageSrc: string;
+  images: string[];
 };
 
 export type FeaturedHotel = {
@@ -41,8 +41,8 @@ export type ProjectsContent = {
     intro: LocalizedText;
     featured: FeaturedHotel;
     miniCases: HotelMiniCase[];
-    viewAllLabel: LocalizedText;
-    viewAllUrl: string;
+    viewAllLabel?: LocalizedText;
+    viewAllUrl?: string;
   };
   villaSection: {
     eyebrow: LocalizedText;
@@ -51,8 +51,8 @@ export type ProjectsContent = {
     conceptLabel: LocalizedText;
     imageSrc: string;
     imageAlt: LocalizedText;
-    viewAllLabel: LocalizedText;
-    viewAllUrl: string;
+    viewAllLabel?: LocalizedText;
+    viewAllUrl?: string;
   };
   residentialSection: {
     eyebrow: LocalizedText;
@@ -62,8 +62,8 @@ export type ProjectsContent = {
       src: string;
       alt: LocalizedText;
     }>;
-    viewAllLabel: LocalizedText;
-    viewAllUrl: string;
+    viewAllLabel?: LocalizedText;
+    viewAllUrl?: string;
   };
   supplyProcessSection: {
     eyebrow: LocalizedText;
@@ -74,8 +74,8 @@ export type ProjectsContent = {
       alt: LocalizedText;
       stage: LocalizedText;
     }>;
-    viewAllLabel: LocalizedText;
-    viewAllUrl: string;
+    viewAllLabel?: LocalizedText;
+    viewAllUrl?: string;
   };
   finalCta: {
     h2: LocalizedText;
@@ -280,7 +280,22 @@ export const projectsContent: ProjectsContent = {
           en: "Turnkey delivery + supervision",
           zh: "交钥匙交付 + 现场监督"
         },
-        imageSrc: "/images/projects/hotel-tamale.jpg"
+        images: [
+          "/images/projects/hotels/tamale-01.jpg",
+          "/images/projects/hotels/tamale-02.jpg",
+          "/images/projects/hotels/tamale-03.jpg",
+          "/images/projects/hotels/tamale-04.jpg",
+          "/images/projects/hotels/tamale-05.jpg",
+          "/images/projects/hotels/tamale-06.jpg",
+          "/images/projects/hotels/tamale-07.jpg",
+          "/images/projects/hotels/tamale-08.jpg",
+          "/images/projects/hotels/tamale-09.jpg",
+          "/images/projects/hotels/tamale-10.jpg",
+          "/images/projects/hotels/tamale-11.jpg",
+          "/images/projects/hotels/tamale-12.jpg",
+          "/images/projects/hotels/tamale-13.jpg",
+          "/images/projects/hotels/tamale-14.jpg"
+        ]
       },
       {
         slug: "accra-hotel-partial",
@@ -295,14 +310,15 @@ export const projectsContent: ProjectsContent = {
           en: "Decoropic provided design, materials and installation supervision for selected zones.",
           zh: "Decoropic 为部分区域提供设计、材料供应及安装监督。"
         },
-        imageSrc: "/images/projects/hotel-accra.jpg"
+        images: [
+          "/images/projects/hotels/accra-01.jpg",
+          "/images/projects/hotels/accra-02.jpg",
+          "/images/projects/hotels/accra-03.jpg",
+          "/images/projects/hotels/accra-04.jpg",
+          "/images/projects/hotels/accra-05.jpg"
+        ]
       }
-    ],
-    viewAllLabel: {
-      en: "View All Hotel Projects →",
-      zh: "查看所有酒店项目 →"
-    },
-    viewAllUrl: "/projects/hotels"
+    ]
   },
 
   // ════════════════════════════════════════
@@ -318,8 +334,8 @@ export const projectsContent: ProjectsContent = {
       zh: "设计开始的地方。"
     },
     intro: {
-      en: "Conceptual design proposals for Ghana's high-end residential market. Renderings — not built projects. We use these to start conversations with clients about what's possible.",
-      zh: "面向加纳高端住宅市场的概念设计提案。这些是渲染图——不是已建成的项目。我们用它们与客户开启关于「可能性」的对话。"
+      en: "Conceptual design proposals for Ghana's high-end residential market. We use these to start conversations with clients about what's possible.",
+      zh: "面向加纳高端住宅市场的概念设计提案。我们用它们与客户开启关于「可能性」的对话。"
     },
     conceptLabel: {
       en: "CONCEPT CASE",
@@ -331,10 +347,10 @@ export const projectsContent: ProjectsContent = {
       zh: "East Legon 高端别墅概念渲染"
     },
     viewAllLabel: {
-      en: "View All Concept Cases →",
-      zh: "查看所有概念案例 →"
+      en: "Read Full Case Study →",
+      zh: "查看完整案例 →"
     },
-    viewAllUrl: "/projects/villas"
+    viewAllUrl: "/projects/villas/east-legon-luxury-villa"
   },
 
   // ════════════════════════════════════════
@@ -358,12 +374,7 @@ export const projectsContent: ProjectsContent = {
       { src: "/images/projects/residential-2.jpg", alt: { en: "Residential interior 2", zh: "住宅室内 2" } },
       { src: "/images/projects/residential-3.jpg", alt: { en: "Residential interior 3", zh: "住宅室内 3" } },
       { src: "/images/projects/residential-4.jpg", alt: { en: "Residential interior 4", zh: "住宅室内 4" } }
-    ],
-    viewAllLabel: {
-      en: "View Full Gallery →",
-      zh: "查看完整图集 →"
-    },
-    viewAllUrl: "/projects/residential"
+    ]
   },
 
   // ════════════════════════════════════════
@@ -403,12 +414,7 @@ export const projectsContent: ProjectsContent = {
         alt: { en: "On-site delivery", zh: "现场交付" },
         stage: { en: "Delivery", zh: "现场交付" }
       }
-    ],
-    viewAllLabel: {
-      en: "View Full Process →",
-      zh: "查看完整流程 →"
-    },
-    viewAllUrl: "/projects/supply-process"
+    ]
   },
 
   // ════════════════════════════════════════

@@ -423,62 +423,87 @@ export default async function ProjectsPage() {
             </article>
           </Reveal>
 
-          {/* Mini cases: Tamale + Accra */}
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-10 mb-12">
+          {/* Mini cases: Tamale + Accra — vertical stack with horizontal scroll strips */}
+          <div className="space-y-12 lg:space-y-16 mb-12">
             {c.hotelsSection.miniCases.map((mc, i) => (
               <Reveal key={mc.slug} delay={500 + i * 150}>
                 <article>
-                  <div className="relative mb-6 aspect-[4/3] w-full overflow-hidden bg-brand-pine-dark/5">
-                    <img src={mc.imageSrc} alt={t(mc.city, locale)} loading="lazy" className="h-full w-full object-cover" />
-                  </div>
-                  <p
-                    className="text-brand-gold mb-2"
-                    style={{ fontSize: "0.78rem", letterSpacing: "0.22em", textTransform: "uppercase", fontWeight: 700 }}
-                  >
-                    {t(mc.city, locale)} · {mc.rooms} {t({ en: "rooms", zh: "间客房" }, locale)}
-                  </p>
-                  <h3
-                    className="text-brand-pine-dark mb-3"
-                    style={{
-                      fontFamily: "var(--serif)",
-                      fontSize: "clamp(1.25rem, 1.6vw, 1.5rem)",
-                      fontWeight: 700,
-                      lineHeight: 1.2
-                    }}
-                  >
-                    {t(mc.completedAt, locale)}
-                  </h3>
-                  <p className="text-brand-pine-dark/80" style={{ fontSize: "0.95rem", lineHeight: 1.6 }}>
-                    {t(mc.scope, locale)}
-                  </p>
-                  {mc.scopeNote ? (
+                  {/* Header: city + rooms + completedAt + scope */}
+                  <div className="mb-5">
                     <p
-                      className="text-brand-pine-dark/55 mt-2"
-                      style={{ fontFamily: "var(--serif)", fontStyle: "italic", fontSize: "0.875rem", lineHeight: 1.5 }}
+                      className="text-brand-gold mb-2"
+                      style={{ fontSize: "0.78rem", letterSpacing: "0.22em", textTransform: "uppercase", fontWeight: 700 }}
                     >
-                      {t(mc.scopeNote, locale)}
+                      {t(mc.city, locale)} · {mc.rooms} {t({ en: "rooms", zh: "间客房" }, locale)}
                     </p>
-                  ) : null}
+                    <h3
+                      className="text-brand-pine-dark mb-2"
+                      style={{
+                        fontFamily: "var(--serif)",
+                        fontSize: "clamp(1.5rem, 2.2vw, 1.875rem)",
+                        fontWeight: 700,
+                        lineHeight: 1.2
+                      }}
+                    >
+                      {t(mc.completedAt, locale)}
+                    </h3>
+                    <p className="text-brand-pine-dark/80" style={{ fontSize: "0.95rem", lineHeight: 1.6 }}>
+                      {t(mc.scope, locale)}
+                    </p>
+                    {mc.scopeNote ? (
+                      <p
+                        className="text-brand-pine-dark/55 mt-2"
+                        style={{ fontFamily: "var(--serif)", fontStyle: "italic", fontSize: "0.875rem", lineHeight: 1.5 }}
+                      >
+                        {t(mc.scopeNote, locale)}
+                      </p>
+                    ) : null}
+                  </div>
+
+                  {/* Horizontal scroll strip */}
+                  <div className="overflow-x-auto pb-4 -mx-4 lg:-mx-0">
+                    <div
+                      className="flex gap-3 lg:gap-4 px-4 lg:px-0"
+                      style={{ width: "max-content", scrollSnapType: "x mandatory" }}
+                    >
+                      {mc.images.map((img, imgIdx) => (
+                        <figure
+                          key={imgIdx}
+                          className="flex-shrink-0 relative aspect-[4/3] bg-brand-pine-dark/5 overflow-hidden"
+                          style={{ width: "320px", scrollSnapAlign: "start" }}
+                        >
+                          <img
+                            src={img}
+                            alt={`${t(mc.city, locale)} ${imgIdx + 1}`}
+                            loading="lazy"
+                            className="w-full h-full object-cover"
+                          />
+                        </figure>
+                      ))}
+                    </div>
+                  </div>
                 </article>
               </Reveal>
             ))}
           </div>
 
           {/* View All */}
-          <Reveal delay={900}>
-            <Link
-              href={c.hotelsSection.viewAllUrl}
-              className="text-brand-gold hover:text-brand-pine-dark transition-colors inline-flex items-center"
-              style={{
-                fontSize: "0.78rem",
-                letterSpacing: "0.22em",
-                textTransform: "uppercase",
-                fontWeight: 700
-              }}
-            >
-              {t(c.hotelsSection.viewAllLabel, locale)}
-            </Link>
-          </Reveal>
+          {c.hotelsSection.viewAllUrl && c.hotelsSection.viewAllLabel ? (
+            <Reveal delay={900}>
+              <Link
+                href={c.hotelsSection.viewAllUrl}
+                className="text-brand-gold hover:text-brand-pine-dark transition-colors inline-flex items-center"
+                style={{
+                  fontSize: "0.78rem",
+                  letterSpacing: "0.22em",
+                  textTransform: "uppercase",
+                  fontWeight: 700
+                }}
+              >
+                {t(c.hotelsSection.viewAllLabel, locale)}
+              </Link>
+            </Reveal>
+          ) : null}
         </div>
       </section>
 
@@ -559,20 +584,22 @@ export default async function ProjectsPage() {
             </Reveal>
           </div>
 
-          <Reveal delay={700}>
-            <Link
-              href={c.villaSection.viewAllUrl}
-              className="text-brand-gold hover:text-brand-pine-dark transition-colors inline-flex items-center"
-              style={{
-                fontSize: "0.78rem",
-                letterSpacing: "0.22em",
-                textTransform: "uppercase",
-                fontWeight: 700
-              }}
-            >
-              {t(c.villaSection.viewAllLabel, locale)}
-            </Link>
-          </Reveal>
+          {c.villaSection.viewAllUrl && c.villaSection.viewAllLabel ? (
+            <Reveal delay={700}>
+              <Link
+                href={c.villaSection.viewAllUrl}
+                className="text-brand-gold hover:text-brand-pine-dark transition-colors inline-flex items-center"
+                style={{
+                  fontSize: "0.78rem",
+                  letterSpacing: "0.22em",
+                  textTransform: "uppercase",
+                  fontWeight: 700
+                }}
+              >
+                {t(c.villaSection.viewAllLabel, locale)}
+              </Link>
+            </Reveal>
+          ) : null}
         </div>
       </section>
 
@@ -622,20 +649,22 @@ export default async function ProjectsPage() {
             ))}
           </div>
 
-          <Reveal delay={900}>
-            <Link
-              href={c.residentialSection.viewAllUrl}
-              className="text-brand-gold hover:text-brand-pine-dark transition-colors inline-flex items-center"
-              style={{
-                fontSize: "0.78rem",
-                letterSpacing: "0.22em",
-                textTransform: "uppercase",
-                fontWeight: 700
-              }}
-            >
-              {t(c.residentialSection.viewAllLabel, locale)}
-            </Link>
-          </Reveal>
+          {c.residentialSection.viewAllUrl && c.residentialSection.viewAllLabel ? (
+            <Reveal delay={900}>
+              <Link
+                href={c.residentialSection.viewAllUrl}
+                className="text-brand-gold hover:text-brand-pine-dark transition-colors inline-flex items-center"
+                style={{
+                  fontSize: "0.78rem",
+                  letterSpacing: "0.22em",
+                  textTransform: "uppercase",
+                  fontWeight: 700
+                }}
+              >
+                {t(c.residentialSection.viewAllLabel, locale)}
+              </Link>
+            </Reveal>
+          ) : null}
         </div>
       </section>
 
@@ -705,20 +734,22 @@ export default async function ProjectsPage() {
             ))}
           </div>
 
-          <Reveal delay={950}>
-            <Link
-              href={c.supplyProcessSection.viewAllUrl}
-              className="text-brand-gold hover:text-brand-pine-dark transition-colors inline-flex items-center"
-              style={{
-                fontSize: "0.78rem",
-                letterSpacing: "0.22em",
-                textTransform: "uppercase",
-                fontWeight: 700
-              }}
-            >
-              {t(c.supplyProcessSection.viewAllLabel, locale)}
-            </Link>
-          </Reveal>
+          {c.supplyProcessSection.viewAllUrl && c.supplyProcessSection.viewAllLabel ? (
+            <Reveal delay={950}>
+              <Link
+                href={c.supplyProcessSection.viewAllUrl}
+                className="text-brand-gold hover:text-brand-pine-dark transition-colors inline-flex items-center"
+                style={{
+                  fontSize: "0.78rem",
+                  letterSpacing: "0.22em",
+                  textTransform: "uppercase",
+                  fontWeight: 700
+                }}
+              >
+                {t(c.supplyProcessSection.viewAllLabel, locale)}
+              </Link>
+            </Reveal>
+          ) : null}
         </div>
       </section>
 
