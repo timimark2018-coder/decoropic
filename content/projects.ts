@@ -161,11 +161,29 @@ export type KumasiDetailContent = {
     h2: LocalizedText;
     intro: LocalizedText;
     items: Array<{
-      title: LocalizedText;
-      body: LocalizedText;
-      image: string;
+      area: LocalizedText;
+      current: {
+        label: LocalizedText;
+        caption: LocalizedText;
+        image: string;
+      };
+      improved: {
+        label: LocalizedText;
+        caption: LocalizedText;
+        image: string;
+      };
     }>;
     closingQuote: LocalizedText;
+  };
+  behindTheBuild: {
+    eyebrow: LocalizedText;
+    h2: LocalizedText;
+    intro: LocalizedText;
+    images: Array<{
+      src: string;
+      caption: LocalizedText;
+      aspect?: "square" | "portrait" | "landscape";
+    }>;
   };
   finalCta: {
     h2: LocalizedText;
@@ -540,13 +558,13 @@ export const kumasiDetailContent: KumasiDetailContent = {
         image: "/images/projects/kumasi/space-suite.jpg"
       },
       {
-        slug: "restaurant",
-        title: { en: "Restaurant", zh: "餐厅" },
+        slug: "lounge",
+        title: { en: "Lobby Lounge", zh: "大堂休息区" },
         body: {
-          en: "All-day dining with evening transformation. Pendant lighting drops at dusk; the room becomes a destination.",
-          zh: "全日餐厅，晚间变身。落日时分吊灯降下，餐厅成为目的地。"
+          en: "Where the day pauses. Deep leather, warm wood paneling, soft cove light over polished cream marble. The kind of space you sit in for one more conversation, one more call, one more moment before checking in.",
+          zh: "让一天停下脚步的地方。深棕真皮、暖色木饰墙板、浅米色岩板上的间接灯光。是那种你想多停留一刻的空间——多一段对话、多一通电话、check-in 前的最后片刻。"
         },
-        image: "/images/projects/kumasi/space-restaurant.jpg"
+        image: "/images/projects/kumasi/space-lounge.jpg"
       },
       {
         slug: "bar",
@@ -704,41 +722,133 @@ export const kumasiDetailContent: KumasiDetailContent = {
       zh: "08 — 可以做得更好"
     },
     h2: {
-      en: "What we'd do differently.",
-      zh: "如果重做，我们会怎样。"
+      en: "We Can Do Better.",
+      zh: "可以做得更好。"
     },
     intro: {
-      en: "Honesty is part of how we work. The Kumasi project taught us two things we'd push for next time. Both about the lobby — the first space every guest walks into. Both within our control in the right project.",
-      zh: "诚实是我们工作的一部分。Kumasi 项目教会我们两件事——下一次我们会争取的事。两件事都关于大堂——每一位客人走进的第一个空间。两件事都在我们能掌控的范围内——前提是项目允许。"
+      en: "Honesty is part of how we work. The owner's preferred tile carried a deeper tone than we'd have chosen — across the lobby, the lounge, and the corridors. With a lighter cream or beige porcelain, the entire ground floor would breathe differently. Three rooms, three side-by-side comparisons. This is what we'd push for next time.",
+      zh: "诚实是我们工作的一部分。业主指定的瓷砖比我们会选择的色调更深——大堂、休息区、走廊都是。如果换成米黄或浅米色岩板，整个一层空间的呼吸感会完全不同。三个区域，三组并排对比。这是下一次我们会争取的。"
     },
     items: [
       {
-        title: {
-          en: "Lobby flooring — lighter is brighter.",
-          zh: "大堂地面 — 浅色更明亮。"
+        area: { en: "Lobby Overall", zh: "大堂整体" },
+        current: {
+          label: { en: "CURRENT", zh: "现状" },
+          caption: {
+            en: "Owner-specified darker tile.",
+            zh: "业主指定的深色瓷砖。"
+          },
+          image: "/images/projects/kumasi/wcdb-lobby-current.jpg"
         },
-        body: {
-          en: "The owner's preferred tile carried a deeper tone. With a lighter cream or beige porcelain, the entire lobby would feel ~40% brighter. More daylight bouncing back. More warmth at evening.",
-          zh: "业主指定的瓷砖色调偏深。如果换成米黄或浅米色岩板，整个大堂的明亮度会提升约 40%。日光反射更多。夜晚的暖意更足。"
-        },
-        image: "/images/projects/kumasi/wcdb-floor-comparison.jpg"
+        improved: {
+          label: { en: "IMPROVED", zh: "改善后" },
+          caption: {
+            en: "Lighter cream porcelain — ~40% brighter.",
+            zh: "浅米色岩板——明亮度提升约 40%。"
+          },
+          image: "/images/projects/kumasi/wcdb-lobby-improved.jpg"
+        }
       },
       {
-        title: {
-          en: "Lobby ceiling — flat instead of compartmentalized.",
-          zh: "大堂天花板 — 平吊顶代替区隔吊顶。"
+        area: { en: "Lobby Lounge Area", zh: "大堂休息区" },
+        current: {
+          label: { en: "CURRENT", zh: "现状" },
+          caption: {
+            en: "Heavy floor tone weighs the seating.",
+            zh: "深色地面让座位显得沉重。"
+          },
+          image: "/images/projects/kumasi/wcdb-lounge-current.jpg"
         },
-        body: {
-          en: "The ceiling was built with compartmentalized panels. With a single flat ceiling, the lobby would feel taller and more spacious — the area is modest, but the volume could have read much larger.",
-          zh: "大堂的天花板做成了一块块区隔的吊顶。如果是一块完整的平吊顶，大堂的视觉高度会更高，显得更宽敞——大堂实际面积不大，但天花板设计可以让空间感放大很多。"
+        improved: {
+          label: { en: "IMPROVED", zh: "改善后" },
+          caption: {
+            en: "Lighter floor lifts the lounge.",
+            zh: "浅色地面让休息区轻盈起来。"
+          },
+          image: "/images/projects/kumasi/wcdb-lounge-improved.jpg"
+        }
+      },
+      {
+        area: { en: "Corridors", zh: "走廊" },
+        current: {
+          label: { en: "CURRENT", zh: "现状" },
+          caption: {
+            en: "Dark floor compresses the corridor.",
+            zh: "深色地面让走廊视觉上压缩。"
+          },
+          image: "/images/projects/kumasi/wcdb-corridor-current.jpg"
         },
-        image: "/images/projects/kumasi/wcdb-ceiling-comparison.jpg"
+        improved: {
+          label: { en: "IMPROVED", zh: "改善后" },
+          caption: {
+            en: "Lighter floor extends the perspective.",
+            zh: "浅色地面延展走廊的视觉纵深。"
+          },
+          image: "/images/projects/kumasi/wcdb-corridor-improved.jpg"
+        }
       }
     ],
     closingQuote: {
       en: "Better is never finished. That's the work.",
       zh: "更好，永远未完。这就是工作的本质。"
     }
+  },
+
+  behindTheBuild: {
+    eyebrow: {
+      en: "09 — Behind the Build",
+      zh: "09 — 幕后施工"
+    },
+    h2: {
+      en: "From empty floors to opening doors.",
+      zh: "从毛坯地板到开门迎客。"
+    },
+    intro: {
+      en: "180 days of fieldwork condensed. Material arriving. Local craftsmen at work. Site supervision in motion. The hotel guests will never see this — but it is where the project actually got built.",
+      zh: "180 天现场工作的浓缩。材料到场。本地工匠在工作。现场监督在进行。酒店的客人永远不会看到这些——但项目就是在这里真正建造完成的。"
+    },
+    images: [
+      {
+        src: "/images/projects/kumasi/build-1.jpg",
+        caption: { en: "Material delivery", zh: "材料到场" },
+        aspect: "landscape"
+      },
+      {
+        src: "/images/projects/kumasi/build-2.jpg",
+        caption: { en: "Floor preparation", zh: "地面基层" },
+        aspect: "portrait"
+      },
+      {
+        src: "/images/projects/kumasi/build-3.jpg",
+        caption: { en: "Tile installation", zh: "瓷砖铺贴" },
+        aspect: "square"
+      },
+      {
+        src: "/images/projects/kumasi/build-4.jpg",
+        caption: { en: "Local craftsmen at work", zh: "本地工匠施工" },
+        aspect: "landscape"
+      },
+      {
+        src: "/images/projects/kumasi/build-5.jpg",
+        caption: { en: "On-site supervision", zh: "现场监督" },
+        aspect: "portrait"
+      },
+      {
+        src: "/images/projects/kumasi/build-6.jpg",
+        caption: { en: "Joinery work", zh: "木作工艺" },
+        aspect: "square"
+      },
+      {
+        src: "/images/projects/kumasi/build-7.jpg",
+        caption: { en: "Pre-opening details", zh: "开业前细节" },
+        aspect: "landscape"
+      },
+      {
+        src: "/images/projects/kumasi/build-8.jpg",
+        caption: { en: "Final QC walkthrough", zh: "最终质检巡场" },
+        aspect: "portrait"
+      }
+    ]
   },
 
   finalCta: {

@@ -715,39 +715,96 @@ export default async function HotelDetailPage({
             </p>
           </Reveal>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 mb-16">
-            {data.weCanDoBetter.items.map((item, i) => (
-              <Reveal key={i} delay={400 + i * 150}>
+          {/* 3 区域 × 2 张对比图 */}
+          <div className="space-y-16 lg:space-y-20 mb-16">
+            {data.weCanDoBetter.items.map((item, idx) => (
+              <Reveal key={idx} delay={400 + idx * 100}>
                 <div>
-                  <div
-                    className="w-full bg-brand-pine-dark/10 border border-brand-pine-dark/15 overflow-hidden mb-6"
-                    style={{ aspectRatio: "4 / 3" }}
-                  >
-                    <div
-                      aria-hidden
-                      className="w-full h-full"
-                      style={{
-                        backgroundImage: `url('${item.image}')`,
-                        backgroundSize: "cover",
-                        backgroundPosition: "center",
-                        backgroundRepeat: "no-repeat"
-                      }}
-                    />
-                  </div>
                   <h3
-                    className="text-brand-pine-dark mb-4"
+                    className="text-brand-pine-dark mb-6"
                     style={{
                       fontFamily: "var(--serif)",
-                      fontSize: "clamp(1.25rem, 2vw, 1.625rem)",
-                      fontWeight: 700,
-                      lineHeight: 1.25
+                      fontSize: "clamp(1.5rem, 2.5vw, 2.25rem)",
+                      fontWeight: 600,
+                      lineHeight: 1.2
                     }}
                   >
-                    {t(item.title, locale)}
+                    {t(item.area, locale)}
                   </h3>
-                  <p className="text-brand-pine-dark/80 leading-relaxed">
-                    {t(item.body, locale)}
-                  </p>
+
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+                    {/* CURRENT */}
+                    <div>
+                      <div
+                        className="relative w-full bg-brand-pine-dark/10 border border-brand-pine-dark/15 overflow-hidden mb-3"
+                        style={{ aspectRatio: "4 / 3" }}
+                      >
+                        <div
+                          aria-hidden
+                          className="absolute inset-0"
+                          style={{
+                            backgroundImage: `url('${item.current.image}')`,
+                            backgroundSize: "cover",
+                            backgroundPosition: "center",
+                            backgroundRepeat: "no-repeat"
+                          }}
+                        />
+                        <span
+                          className="absolute top-3 left-3 px-2.5 py-1 bg-brand-pine-dark/85 text-brand-ivory"
+                          style={{
+                            fontSize: "0.7rem",
+                            letterSpacing: "0.24em",
+                            textTransform: "uppercase",
+                            fontWeight: 600
+                          }}
+                        >
+                          {t(item.current.label, locale)}
+                        </span>
+                      </div>
+                      <p
+                        className="text-brand-pine-dark/70"
+                        style={{ fontSize: "0.9rem", lineHeight: 1.5 }}
+                      >
+                        {t(item.current.caption, locale)}
+                      </p>
+                    </div>
+
+                    {/* IMPROVED */}
+                    <div>
+                      <div
+                        className="relative w-full bg-brand-pine-dark/10 border border-brand-gold/40 overflow-hidden mb-3"
+                        style={{ aspectRatio: "4 / 3" }}
+                      >
+                        <div
+                          aria-hidden
+                          className="absolute inset-0"
+                          style={{
+                            backgroundImage: `url('${item.improved.image}')`,
+                            backgroundSize: "cover",
+                            backgroundPosition: "center",
+                            backgroundRepeat: "no-repeat"
+                          }}
+                        />
+                        <span
+                          className="absolute top-3 left-3 px-2.5 py-1 bg-brand-gold text-brand-pine-dark"
+                          style={{
+                            fontSize: "0.7rem",
+                            letterSpacing: "0.24em",
+                            textTransform: "uppercase",
+                            fontWeight: 700
+                          }}
+                        >
+                          {t(item.improved.label, locale)}
+                        </span>
+                      </div>
+                      <p
+                        className="text-brand-pine-dark/70"
+                        style={{ fontSize: "0.9rem", lineHeight: 1.5 }}
+                      >
+                        {t(item.improved.caption, locale)}
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </Reveal>
             ))}
@@ -765,6 +822,96 @@ export default async function HotelDetailPage({
             >
               &ldquo;{t(data.weCanDoBetter.closingQuote, locale)}&rdquo;
             </p>
+          </Reveal>
+        </div>
+      </section>
+
+      {/* 09 — Behind the Build */}
+      <section className="bg-[#f7f3ec] py-24 lg:py-32">
+        <div className="container-wide max-w-[1200px]">
+          <Reveal>
+            <p
+              className="text-brand-gold mb-2"
+              style={{
+                fontSize: "0.78rem",
+                fontWeight: 700,
+                letterSpacing: "0.28em",
+                textTransform: "uppercase"
+              }}
+            >
+              {t(data.behindTheBuild.eyebrow, locale)}
+            </p>
+          </Reveal>
+          <Reveal delay={150}>
+            <h2
+              className="text-brand-pine-dark mb-8 max-w-[800px]"
+              style={{
+                fontFamily: "var(--serif)",
+                fontSize: "clamp(1.75rem, 3.5vw, 2.75rem)",
+                fontWeight: 700,
+                lineHeight: 1.15
+              }}
+            >
+              {t(data.behindTheBuild.h2, locale)}
+            </h2>
+          </Reveal>
+          <Reveal delay={300}>
+            <p
+              className="text-brand-pine-dark/85 mb-12 max-w-[820px]"
+              style={{
+                fontFamily: "var(--serif)",
+                fontSize: "1.125rem",
+                lineHeight: 1.7
+              }}
+            >
+              {t(data.behindTheBuild.intro, locale)}
+            </p>
+          </Reveal>
+
+          {/* Mosaic 不规则网格 — 8 张图 */}
+          <Reveal delay={400}>
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 lg:gap-4">
+              {data.behindTheBuild.images.map((img, idx) => {
+                const aspectRatio =
+                  img.aspect === "landscape"
+                    ? "16 / 10"
+                    : img.aspect === "portrait"
+                      ? "3 / 4"
+                      : "1 / 1";
+                const colSpan = img.aspect === "landscape" ? "md:col-span-2" : "";
+
+                return (
+                  <figure
+                    key={idx}
+                    className={`group relative overflow-hidden bg-brand-pine-dark/10 border border-brand-pine-dark/15 ${colSpan}`}
+                    style={{ aspectRatio }}
+                  >
+                    <div
+                      aria-hidden
+                      className="absolute inset-0"
+                      style={{
+                        backgroundImage: `url('${img.src}')`,
+                        backgroundSize: "cover",
+                        backgroundPosition: "center",
+                        backgroundRepeat: "no-repeat"
+                      }}
+                    />
+                    <figcaption
+                      className="absolute inset-x-0 bottom-0 p-3 text-brand-ivory opacity-0 group-hover:opacity-100 transition-opacity"
+                      style={{
+                        background:
+                          "linear-gradient(to top, rgba(15, 38, 32, 0.85) 0%, transparent 100%)",
+                        fontSize: "0.78rem",
+                        letterSpacing: "0.12em",
+                        fontWeight: 500
+                      }}
+                    >
+                      {t(img.caption, locale)}
+                    </figcaption>
+                  </figure>
+                );
+              })}
+            </div>
           </Reveal>
         </div>
       </section>
