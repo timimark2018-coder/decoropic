@@ -74,6 +74,16 @@ export type ProjectsContent = {
       alt: LocalizedText;
       stage: LocalizedText;
     }>;
+    factoryStrip?: {
+      eyebrow: LocalizedText;
+      h3: LocalizedText;
+      intro: LocalizedText;
+      images: Array<{
+        src: string;
+        stage: LocalizedText;
+        caption: LocalizedText;
+      }>;
+    };
     viewAllLabel?: LocalizedText;
     viewAllUrl?: string;
   };
@@ -414,7 +424,93 @@ export const projectsContent: ProjectsContent = {
         alt: { en: "On-site delivery", zh: "现场交付" },
         stage: { en: "Delivery", zh: "现场交付" }
       }
-    ]
+    ],
+    factoryStrip: {
+      eyebrow: {
+        en: "Inside the Factory",
+        zh: "工厂深处"
+      },
+      h3: {
+        en: "Behind the four steps above.",
+        zh: "在以上四个阶段背后。"
+      },
+      intro: {
+        en: "26 years of factory partnerships across China. Every order — every day — passes through our hands at every stage. Production, painting, packing, inspection, loading. We are there.",
+        zh: "26 年中国工厂合作。每一笔订单——每一天——都经过我们手中的每一个环节。生产、上油漆、打包、验货、装柜。我们都在场。"
+      },
+      images: [
+        {
+          src: "/images/projects/factory/factory-01-production.jpg",
+          stage: { en: "Production", zh: "生产" },
+          caption: { en: "Production · 01", zh: "生产 · 01" }
+        },
+        {
+          src: "/images/projects/factory/factory-02-production.jpg",
+          stage: { en: "Production", zh: "生产" },
+          caption: { en: "Production · 02", zh: "生产 · 02" }
+        },
+        {
+          src: "/images/projects/factory/factory-03-painting.jpg",
+          stage: { en: "Painting", zh: "上油漆" },
+          caption: { en: "Painting · 03", zh: "上油漆 · 03" }
+        },
+        {
+          src: "/images/projects/factory/factory-04-painting.jpg",
+          stage: { en: "Painting", zh: "上油漆" },
+          caption: { en: "Painting · 04", zh: "上油漆 · 04" }
+        },
+        {
+          src: "/images/projects/factory/factory-05-packing.jpg",
+          stage: { en: "Packing", zh: "成品打包" },
+          caption: { en: "Packing · 05", zh: "打包 · 05" }
+        },
+        {
+          src: "/images/projects/factory/factory-06-packing.jpg",
+          stage: { en: "Packing", zh: "成品打包" },
+          caption: { en: "Packing · 06", zh: "打包 · 06" }
+        },
+        {
+          src: "/images/projects/factory/factory-07-inspection.jpg",
+          stage: { en: "Inspection", zh: "验货" },
+          caption: { en: "Inspection · 07", zh: "验货 · 07" }
+        },
+        {
+          src: "/images/projects/factory/factory-08-inspection.jpg",
+          stage: { en: "Inspection", zh: "验货" },
+          caption: { en: "Inspection · 08", zh: "验货 · 08" }
+        },
+        {
+          src: "/images/projects/factory/factory-09-inspection.jpg",
+          stage: { en: "Inspection", zh: "验货" },
+          caption: { en: "Inspection · 09", zh: "验货 · 09" }
+        },
+        {
+          src: "/images/projects/factory/factory-10-loading.jpg",
+          stage: { en: "Loading", zh: "装柜" },
+          caption: { en: "Loading · 10", zh: "装柜 · 10" }
+        },
+        {
+          src: "/images/projects/factory/factory-11-loading.jpg",
+          stage: { en: "Loading", zh: "装柜" },
+          caption: { en: "Loading · 11", zh: "装柜 · 11" }
+        },
+        {
+          src: "/images/projects/factory/factory-12-loading.jpg",
+          stage: { en: "Loading", zh: "装柜" },
+          caption: { en: "Loading · 12", zh: "装柜 · 12" }
+        },
+        {
+          src: "/images/projects/factory/factory-13-loading.jpg",
+          stage: { en: "Loading", zh: "装柜" },
+          caption: { en: "Loading · 13", zh: "装柜 · 13" }
+        },
+        {
+          src: "/images/projects/factory/factory-14-loading.jpg",
+          stage: { en: "Loading", zh: "装柜" },
+          caption: { en: "Loading · 14", zh: "装柜 · 14" }
+        }
+      ]
+    }
   },
 
   // ════════════════════════════════════════
@@ -873,6 +969,223 @@ export const kumasiDetailContent: KumasiDetailContent = {
     secondaryCta: {
       en: "View All Hotels",
       zh: "查看所有酒店项目"
+    }
+  }
+};
+
+// ════════════════════════════════════════
+// East Legon Villa Concept Case Type
+// ════════════════════════════════════════
+
+export type EastLegonVillaContent = {
+  slug: string;
+  meta: {
+    title: LocalizedText;
+    description: LocalizedText;
+  };
+  hero: {
+    eyebrow: LocalizedText;
+    title: LocalizedText;
+    subtitle: LocalizedText;
+    pullQuote: LocalizedText;
+    author: LocalizedText;
+    heroImage: string;
+  };
+  infoBar: {
+    text: LocalizedText;
+  };
+  briefAndDesign: {
+    eyebrow: LocalizedText;
+    h2: LocalizedText;
+    intro: LocalizedText;
+    body: LocalizedText;
+    images: Array<{
+      src: string;
+      caption: LocalizedText;
+    }>;
+  };
+  materials: {
+    eyebrow: LocalizedText;
+    h2: LocalizedText;
+    body: LocalizedText;
+    images: Array<{
+      src: string;
+      caption: LocalizedText;
+    }>;
+  };
+  onSite: {
+    eyebrow: LocalizedText;
+    h2: LocalizedText;
+    body: LocalizedText;
+    images: Array<{
+      src: string;
+      caption: LocalizedText;
+    }>;
+  };
+  finalCta: {
+    h2: LocalizedText;
+    subtitle: LocalizedText;
+    primaryCta: LocalizedText;
+    secondaryCta: LocalizedText;
+  };
+};
+
+// ════════════════════════════════════════
+// East Legon Villa Concept Case Content
+// ════════════════════════════════════════
+
+export const eastLegonVillaContent: EastLegonVillaContent = {
+  slug: "east-legon-luxury-villa",
+
+  meta: {
+    title: {
+      en: "East Legon Luxury Villa — Concept Case Study | Decoropic",
+      zh: "East Legon 奢华别墅 — 概念案例 | Decoropic"
+    },
+    description: {
+      en: "From the first conversation to materials on site. A concept case showing how Decoropic transforms a client's vision into a delivered villa.",
+      zh: "从第一次对话到材料到达工地。概念案例展示 Decoropic 如何把客户愿景变为交付的别墅。"
+    }
+  },
+
+  hero: {
+    eyebrow: {
+      en: "Concept Case · East Legon · Ghana",
+      zh: "概念案例 · East Legon · 加纳"
+    },
+    title: {
+      en: "East Legon Luxury Villa",
+      zh: "East Legon 奢华别墅"
+    },
+    subtitle: {
+      en: "From conversation to completion.",
+      zh: "从对话开始，到完工结束。"
+    },
+    pullQuote: {
+      en: "Concept work shows how we think. Delivered work shows how we deliver. This is both.",
+      zh: "概念展现我们如何思考。交付展现我们如何兑现。这两者都在这里。"
+    },
+    author: {
+      en: "— The Decoropic Project Team",
+      zh: "— Decoropic 项目团队"
+    },
+    heroImage: "/images/projects/villas/east-legon/hero.jpg"
+  },
+
+  infoBar: {
+    text: {
+      en: "Concept · East Legon · Ghana · Turnkey delivery",
+      zh: "概念案例 · East Legon · 加纳 · 交钥匙交付"
+    }
+  },
+
+  briefAndDesign: {
+    eyebrow: {
+      en: "01 — The Brief & The Design",
+      zh: "01 — 了解需求与洽谈设计"
+    },
+    h2: {
+      en: "We listen first. Then we draw.",
+      zh: "我们先听，再画。"
+    },
+    intro: {
+      en: "Every project starts with a conversation — not a portfolio. We understand the family, the lifestyle, the way light moves through the day. Only then do we propose.",
+      zh: "每个项目都从对话开始——不是从作品集。我们了解家庭、生活方式、光线在一天中的流动。然后才提出方案。"
+    },
+    body: {
+      en: "For East Legon, the client wanted a private villa that felt warm but expansive. Open public spaces during the day, intimate private quarters at night. Our design proposal came in four space studies — bedroom, bathroom, dining, and hall — each calibrated to that single brief.",
+      zh: "在 East Legon 项目中，客户想要一栋私密但开阔的别墅。白天的公共空间开放，夜晚的私人区域亲密。我们的设计提案分为四个空间研究——卧室、卫浴、餐厅、客厅——每个都围绕这一份简单需求展开。"
+    },
+    images: [
+      {
+        src: "/images/projects/villas/east-legon/design-overview.jpg",
+        caption: { en: "Design Overview", zh: "设计总览" }
+      },
+      {
+        src: "/images/projects/villas/east-legon/space-bedroom.jpg",
+        caption: { en: "Bedroom", zh: "卧室" }
+      },
+      {
+        src: "/images/projects/villas/east-legon/space-bathroom.jpg",
+        caption: { en: "Bathroom", zh: "卫浴" }
+      },
+      {
+        src: "/images/projects/villas/east-legon/space-dining.jpg",
+        caption: { en: "Dining", zh: "餐厅" }
+      },
+      {
+        src: "/images/projects/villas/east-legon/space-hall.jpg",
+        caption: { en: "Hall", zh: "客厅" }
+      }
+    ]
+  },
+
+  materials: {
+    eyebrow: {
+      en: "02 — The Materials",
+      zh: "02 — 发货材料"
+    },
+    h2: {
+      en: "From China factory floors to a Ghana villa.",
+      zh: "从中国工厂到加纳别墅。"
+    },
+    body: {
+      en: "Once the design is approved, we move into our 26-year specialty: cross-border material delivery. Production, painting, packing, inspection, container loading. Every shipment timed to the construction phase. Every container packed to maximize what arrives intact.",
+      zh: "设计通过后，我们进入 26 年专长：跨境材料交付。生产、上漆、打包、验货、装柜。每一次发货精准对应施工阶段。每一个集装箱的打包都为了让到达的材料完好无损。"
+    },
+    images: [
+      {
+        src: "/images/projects/villas/east-legon/material-curation.jpg",
+        caption: { en: "Material curation", zh: "材料选定" }
+      },
+      {
+        src: "/images/projects/villas/east-legon/container-loading.jpg",
+        caption: { en: "Container loading", zh: "装柜准备" }
+      }
+    ]
+  },
+
+  onSite: {
+    eyebrow: {
+      en: "03 — On Site",
+      zh: "03 — 到工地"
+    },
+    h2: {
+      en: "Where China meets Ghana.",
+      zh: "中国遇见加纳。"
+    },
+    body: {
+      en: "The materials arrive in Tema port, clear customs, travel inland. On site, our supervision teams work side-by-side with local craftsmen — translating Chinese factory specifications into Ghana installation reality. The villa comes together. The concept becomes a home.",
+      zh: "材料抵达 Tema 港，完成清关，驶向内陆。到了工地，我们的现场监督团队与本地工匠并肩工作——把中国工厂的规格转化为加纳现场的施工。别墅成型。概念成为一个家。"
+    },
+    images: [
+      {
+        src: "/images/projects/villas/east-legon/delivery-local.jpg",
+        caption: { en: "Materials delivered to site", zh: "材料抵达工地" }
+      },
+      {
+        src: "/images/projects/villas/east-legon/villa-completion.jpg",
+        caption: { en: "Villa completion", zh: "别墅完工" }
+      }
+    ]
+  },
+
+  finalCta: {
+    h2: {
+      en: "Have a villa project of your own?",
+      zh: "想为你的别墅项目这样做？"
+    },
+    subtitle: {
+      en: "Tell us about your vision. We'll handle the journey.",
+      zh: "告诉我们你的愿景。旅程交给我们。"
+    },
+    primaryCta: {
+      en: "Book Consultation",
+      zh: "预约咨询"
+    },
+    secondaryCta: {
+      en: "← Back to Projects",
+      zh: "← 返回项目"
     }
   }
 };

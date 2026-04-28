@@ -410,15 +410,11 @@ export default async function ProjectsPage() {
 
               <Link
                 href={c.hotelsSection.featured.detailUrl}
-                className="text-brand-gold hover:text-brand-pine-dark transition-colors inline-flex items-center"
-                style={{
-                  fontSize: "0.78rem",
-                  letterSpacing: "0.22em",
-                  textTransform: "uppercase",
-                  fontWeight: 700
-                }}
+                className="inline-flex items-center gap-2 bg-brand-pine-dark hover:bg-brand-pine-dark/90 text-white font-medium px-6 py-3 transition-all"
+                style={{ fontSize: "0.875rem", letterSpacing: "0.08em" }}
               >
-                {t({ en: "Read Full Case Study →", zh: "阅读完整案例 →" }, locale)}
+                {t({ en: "Read Full Case Study", zh: "阅读完整案例" }, locale)}
+                <span aria-hidden>→</span>
               </Link>
             </article>
           </Reveal>
@@ -588,13 +584,8 @@ export default async function ProjectsPage() {
             <Reveal delay={700}>
               <Link
                 href={c.villaSection.viewAllUrl}
-                className="text-brand-gold hover:text-brand-pine-dark transition-colors inline-flex items-center"
-                style={{
-                  fontSize: "0.78rem",
-                  letterSpacing: "0.22em",
-                  textTransform: "uppercase",
-                  fontWeight: 700
-                }}
+                className="inline-flex items-center gap-2 bg-brand-pine-dark hover:bg-brand-pine-dark/90 text-white font-medium px-6 py-3 transition-all"
+                style={{ fontSize: "0.875rem", letterSpacing: "0.08em" }}
               >
                 {t(c.villaSection.viewAllLabel, locale)}
               </Link>
@@ -710,29 +701,44 @@ export default async function ProjectsPage() {
             </div>
           </Reveal>
 
-          {/* 4 阶段图（aspect-[4/5] 竖向） */}
-          <div className="mb-12 grid grid-cols-2 gap-4 lg:grid-cols-4 lg:gap-6">
-            {c.supplyProcessSection.images.map((img, i) => (
-              <Reveal key={i} delay={500 + i * 100}>
-                <figure>
-                  <div className="relative aspect-[4/5] w-full overflow-hidden bg-brand-pine-dark/5">
-                    <img src={img.src} alt={t(img.alt, locale)} loading="lazy" className="h-full w-full object-cover" />
-                  </div>
-                  <figcaption
-                    className="mt-3 text-brand-gold"
-                    style={{
-                      fontSize: "0.7rem",
-                      letterSpacing: "0.22em",
-                      textTransform: "uppercase",
-                      fontWeight: 700
-                    }}
-                  >
-                    {`0${i + 1}`} · {t(img.stage, locale)}
-                  </figcaption>
-                </figure>
-              </Reveal>
-            ))}
-          </div>
+          {/* Factory strip — 14 张水平滚动 */}
+          {c.supplyProcessSection.factoryStrip ? (
+            <Reveal delay={500}>
+              <div className="overflow-x-auto -mx-4 lg:-mx-0 pb-4 mb-12">
+                <div
+                  className="flex gap-3 lg:gap-4 px-4 lg:px-0"
+                  style={{ width: "max-content", scrollSnapType: "x mandatory" }}
+                >
+                  {c.supplyProcessSection.factoryStrip.images.map((img, idx) => (
+                    <figure
+                      key={idx}
+                      className="flex-shrink-0 relative aspect-[4/5] bg-brand-pine-dark/5 overflow-hidden"
+                      style={{ width: "260px", scrollSnapAlign: "start" }}
+                    >
+                      <img
+                        src={img.src}
+                        alt={t(img.stage, locale)}
+                        loading="lazy"
+                        className="w-full h-full object-cover"
+                      />
+                      <figcaption
+                        className="absolute inset-x-0 bottom-0 p-3 text-brand-ivory"
+                        style={{
+                          background:
+                            "linear-gradient(to top, rgba(15, 38, 32, 0.9) 0%, transparent 100%)",
+                          fontSize: "0.75rem",
+                          letterSpacing: "0.15em",
+                          fontWeight: 500
+                        }}
+                      >
+                        {t(img.caption, locale)}
+                      </figcaption>
+                    </figure>
+                  ))}
+                </div>
+              </div>
+            </Reveal>
+          ) : null}
 
           {c.supplyProcessSection.viewAllUrl && c.supplyProcessSection.viewAllLabel ? (
             <Reveal delay={950}>
