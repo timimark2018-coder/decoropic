@@ -6,6 +6,7 @@ import { trackLead } from "@/lib/analytics/gtag";
 import { readSubmissionError } from "@/lib/forms/submission-feedback";
 import { t } from "@/lib/i18n/content";
 import { contactContent } from "@/content/contact";
+import { InquirySuccess } from "./inquiry-success";
 
 type ProjectInquiryFormProps = {
   sourcePage: string;
@@ -33,6 +34,8 @@ export function ProjectInquiryForm({ sourcePage, locale }: ProjectInquiryFormPro
   const [status, setStatus] = useState("");
   const [fieldErrors, setFieldErrors] = useState<Record<string, string>>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [submittedName, setSubmittedName] = useState<string | undefined>(undefined);
 
   function inputClass(name: string) {
     return `rounded-[1.35rem] border px-4 py-3 text-sm ${
@@ -42,10 +45,11 @@ export function ProjectInquiryForm({ sourcePage, locale }: ProjectInquiryFormPro
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
+    const form = event.currentTarget;
     setIsSubmitting(true);
     setFieldErrors({});
     setStatus(copy[locale].sending);
-    const formData = new FormData(event.currentTarget);
+    const formData = new FormData(form);
     formData.append("sourcePage", sourcePage);
 
     try {
@@ -59,8 +63,14 @@ export function ProjectInquiryForm({ sourcePage, locale }: ProjectInquiryFormPro
           source_page: sourcePage,
           project_type: String(formData.get("projectType") || "")
         });
+        const nameValue = String(formData.get("name") || "") || undefined;
         setStatus(copy[locale].success);
-        event.currentTarget.reset();
+        form.reset();
+        setSubmittedName(nameValue);
+        setIsSubmitted(true);
+        setTimeout(() => {
+          document.querySelector("#inquiry-form-anchor")?.scrollIntoView({ behavior: "smooth" });
+        }, 100);
         return;
       }
 
@@ -74,8 +84,16 @@ export function ProjectInquiryForm({ sourcePage, locale }: ProjectInquiryFormPro
     }
   }
 
+  if (isSubmitted) {
+    return (
+      <div id="inquiry-form-anchor">
+        <InquirySuccess locale={locale} customerName={submittedName} showResetCta={false} />
+      </div>
+    );
+  }
+
   return (
-    <form onSubmit={handleSubmit} className="card-surface p-6 sm:p-8">
+    <form id="inquiry-form-anchor" onSubmit={handleSubmit} className="card-surface p-6 sm:p-8">
       <p className="eyebrow-label">{t(contactContent.form.title, locale)}</p>
       <div className="mt-6 grid gap-4">
         <input name="name" placeholder={t(contactContent.form.fields.name, locale)} className={inputClass("name")} required />
@@ -118,7 +136,7 @@ export function ProjectInquiryForm({ sourcePage, locale }: ProjectInquiryFormPro
         </ul>
       ) : null}
       {status ? (
-        <p className={`mt-4 text-sm ${Object.keys(fieldErrors).length ? "text-rose-700" : "text-slate-600"}`} aria-live="polite">
+        <p className={`mt-4 text-sm ${Object.keys(fieldErrors).length ? "text-rose-700" : "text-current opacity-80"}`} aria-live="polite">
           {status}
         </p>
       ) : null}

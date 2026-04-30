@@ -23,6 +23,7 @@ import { t } from "@/lib/i18n/content";
 import { trackEvent } from "@/lib/analytics/gtag";
 import { readSubmissionError } from "@/lib/forms/submission-feedback";
 import { formatPrice } from "@/lib/utils/format";
+import { InquirySuccess } from "@/components/forms/inquiry-success";
 import type {
   EstimatorResult,
   FunctionalZone,
@@ -912,16 +913,18 @@ export function HomeEstimatorHook({ locale }: Props) {
       )}
 
       {step === "thank_you" && (
-        <div className="text-center py-16">
-          <div className="text-brand-gold text-4xl mb-6">✦</div>
-          <h3 className="text-brand-pine-dark mb-6" style={{ fontFamily: "var(--serif)", fontSize: "clamp(2rem, 4vw, 3rem)", fontWeight: 700, lineHeight: 1.1 }}>
-            {t(c.thankYouTitle, locale)} {form.name && `, ${form.name}.`}
-          </h3>
-          <p className="text-brand-pine-dark/75 max-w-xl mx-auto" style={{ fontSize: "1.125rem", lineHeight: 1.6 }}>
-            {t(c.thankYouBody, locale)}
-          </p>
-          <p className="mt-12 text-sm text-brand-pine-dark/50 italic">— The Decoropic Team</p>
-        </div>
+        <InquirySuccess
+          locale={locale}
+          customerName={form.name || undefined}
+          showResetCta={true}
+          onReset={() => {
+            setForm(initialState);
+            setResult(null);
+            setSubmitError("");
+            setExitedAtStep(null);
+            setStep("intro");
+          }}
+        />
       )}
     </div>
   );
