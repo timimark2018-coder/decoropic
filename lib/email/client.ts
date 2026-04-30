@@ -16,7 +16,7 @@ export function getResendClient(): Resend | null {
 
 export function getEmailConfig() {
   return {
-    notificationEmail: process.env.LEAD_NOTIFICATION_EMAIL || "Service@decoropic.com",
+    notificationEmail: process.env.LEAD_NOTIFICATION_EMAIL || "service@decoropic.com",
     fromEmail: process.env.LEAD_FROM_EMAIL || "onboarding@resend.dev"
   };
 }

@@ -250,12 +250,12 @@ export const homeContent = {
       { en: "An honest scope discussion", zh: "一次坦诚的项目范围讨论" }
     ],
     contactPrincipal: {
-      en: "Lily will reach out within 24 hours.",
-      zh: "Lily 将在 24 小时内联系你。"
+      en: "Our team will reach out within 24 hours.",
+      zh: "我们的团队将在 24 小时内联系你。"
     },
     contactDisclaimer: {
-      en: "We respect your time. No mass marketing, no automated follow-ups. A real person reaches out, once.",
-      zh: "我们尊重你的时间。不发垃圾营销，不自动跟进。一位真实的人，只联系一次。"
+      en: "We respect your time. No mass marketing, no automated follow-ups. We reach out personally, once.",
+      zh: "我们尊重你的时间。不发垃圾营销，不自动跟进。我们亲自联系，只联系一次。"
     },
     submitLabel: {
       en: "Submit — request consultation",
@@ -266,8 +266,8 @@ export const homeContent = {
       zh: "感谢你。"
     },
     thankYouBody: {
-      en: "Your conversation with Decoropic has begun. Lily will reach out within 24 hours. Not before. Not later.",
-      zh: "你和 Decoropic 的对话已经开始。Lily 将在 24 小时内联系你——不会更早，也不会更晚。"
+      en: "Your conversation with Decoropic has begun. Our team will reach out within 24 hours. Not before. Not later.",
+      zh: "你和 Decoropic 的对话已经开始。我们的团队将在 24 小时内联系你——不会更早，也不会更晚。"
     }
   },
   solutionsBySpace: {
@@ -345,12 +345,12 @@ export const homeContent = {
       zh: "二十年深耕加纳。数百个家蜕变。下一个，是不是你？"
     },
     body: {
-      en: "Two paths. The 11-step estimator gives you an early sense in one minute — no typing required. Or talk to Lily directly: she replies herself, within 24 hours, not a CRM.",
-      zh: "两种方式。11 步预算测算器一分钟获得初步预估——无需打字。或直接和 Lily 对话：她在 24 小时内亲自回复，不是自动消息。"
+      en: "Two paths. The 11-step estimator gives you an early sense in one minute — no typing required. Or talk to our team directly. We reply personally within 24 hours.",
+      zh: "两种方式。11 步预算测算器一分钟获得初步预估——无需打字。或直接联系我们的团队。我们 24 小时内亲自回复。"
     },
     ctas: [
       { label: { en: "Open the 11-step estimator", zh: "打开 11 步测算器" }, href: "/#estimator" },
-      { label: { en: "Talk to Lily", zh: "直接联系 Lily" }, href: "/contact" }
+      { label: { en: "Talk to our team", zh: "联系我们" }, href: "/contact" }
     ] satisfies CtaLink[]
   }
 };

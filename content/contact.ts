@@ -22,7 +22,7 @@ export const contactContent = {
     }
   },
   methods: {
-    eyebrow: { en: "Reach Lily", zh: "联系 Lily" },
+    eyebrow: { en: "Reach our team", zh: "联系我们" },
     title: { en: "Three ways to reach us.", zh: "三种方式联系我们。" },
     whatsapp: {
       title: { en: "WhatsApp", zh: "WhatsApp" },
@@ -32,8 +32,7 @@ export const contactContent = {
     },
     email: {
       title: { en: "Email", zh: "邮箱" },
-      value: "lily@decoropic.com",
-      note: { en: "Coming soon — domain in setup", zh: "即将开通 — 域名配置中" }
+      value: "service@decoropic.com"
     },
     offices: {
       title: { en: "Offices", zh: "办公地点" },
@@ -60,10 +59,10 @@ export const contactContent = {
     steps: [
       {
         number: "01",
-        title: { en: "Lily replies within 24 hours", zh: "Lily 在 24 小时内回复" },
+        title: { en: "Our team replies within 24 hours", zh: "我们 24 小时内回复" },
         body: {
-          en: "Direct response from the founder. Not a CRM auto-message.",
-          zh: "创始人直接回复。不是 CRM 自动消息。"
+          en: "Direct response from our team. Personal, not automated.",
+          zh: "团队直接回复。亲自处理，不是自动消息。"
         }
       },
       {

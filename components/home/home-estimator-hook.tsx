@@ -541,7 +541,7 @@ export function HomeEstimatorHook({ locale }: Props) {
               Stuck on something?
             </h4>
             <p className="text-brand-pine-dark/70 text-sm leading-6 mb-5">
-              Send Lily what you've shared so far — we'll continue from there. Or finish the
+              Send our team what you've shared so far — we'll continue from there. Or finish the
               flow to see your project's preliminary budget.
             </p>
             {summarizeAnswered(form).length > 0 && (
@@ -881,7 +881,7 @@ export function HomeEstimatorHook({ locale }: Props) {
           {exitedAtStep && (
             <div className="mb-6 rounded-2xl border border-brand-gold/30 bg-brand-gold/10 p-4">
               <p className="text-brand-gold text-sm leading-6">
-                ✦ We'll send Lily what you've shared. Just need your contact.
+                ✦ We'll send our team what you've shared. Just need your contact.
               </p>
             </div>
           )}

@@ -17,8 +17,8 @@ export async function generateMetadata(): Promise<Metadata> {
       zh: "联系我们 | Decoropic"
     },
     description: {
-      en: "Talk to Lily directly. Real conversations, real timelines, no automated follow-ups. Project consultation for villas, hospitality and commercial spaces in Ghana.",
-      zh: "直接联系 Lily。真实对话，真实时间表，没有自动化推送。加纳别墅、酒店与商业空间项目咨询。"
+      en: "Talk to our team directly. Real conversations, real timelines, personal replies. Project consultation for villas, hospitality and commercial spaces in Ghana.",
+      zh: "直接联系我们的团队。真实对话，真实时间表，亲自回复。加纳别墅、酒店与商业空间项目咨询。"
     },
     path: "/contact",
     locale
@@ -128,11 +128,8 @@ export default async function ContactPage() {
                 >
                   {t(c.methods.email.title, locale)}
                 </h3>
-                <p className="text-brand-pine-dark/85 text-lg font-semibold mb-2">
+                <p className="text-brand-pine-dark/85 text-lg font-semibold mb-2 mt-auto">
                   {c.methods.email.value}
-                </p>
-                <p className="text-brand-pine-dark/55 text-sm leading-6 italic mt-auto">
-                  {t(c.methods.email.note, locale)}
                 </p>
               </div>
             </Reveal>

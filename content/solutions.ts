@@ -93,11 +93,11 @@ export const solutionsContent = {
     eyebrow: { en: "Ready to start?", zh: "准备好开始？" },
     title: { en: "Not sure where to begin?", zh: "不确定从哪里开始？" },
     body: {
-      en: "Use our 11-step estimator to shape your project. Or talk to Lily directly.",
-      zh: "使用我们的 11 步测算器梳理你的项目。或直接和 Lily 联系。"
+      en: "Use our 11-step estimator to shape your project. Or talk to our team directly.",
+      zh: "使用我们的 11 步测算器梳理你的项目。或直接联系我们的团队。"
     },
     primaryCtaLabel: { en: "Open the estimator", zh: "打开测算器" },
-    secondaryCtaLabel: { en: "Talk to Lily", zh: "联系 Lily" }
+    secondaryCtaLabel: { en: "Talk to our team", zh: "联系我们" }
   },
   spaces: [
     // ========================= 1. Living Room =========================
