@@ -17,7 +17,7 @@ export const estimatorPreviewSchema = z.object({
 
 export const estimatorLeadSchema = estimatorPreviewSchema.extend({
   name: z.string().min(2, "Please enter your name."),
-  company: z.string().min(2, "Please enter your company name."),
+  company: z.string().optional(),
   whatsapp: z.string().min(6, "Please enter a valid WhatsApp number."),
   email: z.email("Please enter a valid email address."),
   notes: z.string().optional()
