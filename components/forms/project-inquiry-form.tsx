@@ -36,7 +36,7 @@ export function ProjectInquiryForm({ sourcePage, locale }: ProjectInquiryFormPro
 
   function inputClass(name: string) {
     return `rounded-[1.35rem] border px-4 py-3 text-sm ${
-      fieldErrors[name] ? "border-rose-300 bg-rose-50" : "border-brand-line bg-white"
+      fieldErrors[name] ? "border-rose-300 bg-rose-50 text-brand-ink" : "border-brand-line bg-white text-brand-ink"
     }`;
   }
 
@@ -81,7 +81,7 @@ export function ProjectInquiryForm({ sourcePage, locale }: ProjectInquiryFormPro
         <input name="name" placeholder={t(contactContent.form.fields.name, locale)} className={inputClass("name")} required />
         <input name="company" placeholder={t(contactContent.form.fields.company, locale)} className={inputClass("company")} required />
         <div className="grid gap-4 sm:grid-cols-2">
-          <input name="whatsapp" placeholder={t(contactContent.form.fields.whatsapp, locale)} className={inputClass("whatsapp")} required />
+          <input name="whatsapp" type="tel" minLength={6} placeholder={t(contactContent.form.fields.whatsapp, locale)} className={inputClass("whatsapp")} required />
           <input name="email" type="email" placeholder={t(contactContent.form.fields.email, locale)} className={inputClass("email")} required />
         </div>
         <div className="grid gap-4 sm:grid-cols-2">
@@ -97,7 +97,7 @@ export function ProjectInquiryForm({ sourcePage, locale }: ProjectInquiryFormPro
           </select>
           <input name="location" placeholder={t(contactContent.form.fields.location, locale)} className={inputClass("location")} required />
         </div>
-        <textarea name="notes" rows={5} placeholder={t(contactContent.form.fields.notes, locale)} className={inputClass("notes")} required />
+        <textarea name="notes" rows={5} placeholder={t(contactContent.form.fields.notes, locale)} className={inputClass("notes")} />
         <label className="rounded-[1.35rem] border border-dashed border-brand-line bg-brand-mist/35 px-4 py-4 text-sm text-slate-600">
           <span className="mb-2 block font-medium text-brand-ink">{t(contactContent.form.fields.upload, locale)}</span>
           <input name="files" type="file" className="block w-full text-sm" multiple />

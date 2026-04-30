@@ -107,7 +107,7 @@ export const contactContent = {
       email: { en: "Email", zh: "邮箱" },
       projectType: { en: "Project Type", zh: "项目类型" },
       location: { en: "Project Location", zh: "项目所在地" },
-      notes: { en: "Project Details", zh: "项目说明" },
+      notes: { en: "Anything specific to share? (optional)", zh: "想分享的项目细节？（可选）" },
       upload: { en: "Upload Drawings / BOQ", zh: "上传图纸 / BOQ" }
     },
     submitLabel: {

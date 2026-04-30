@@ -336,3 +336,14 @@ a {
     }
   }
 }
+
+/* Defend against Chrome/Safari autofill blue-purple background overriding brand text color */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  -webkit-text-fill-color: var(--brand-ink, #16211f);
+  -webkit-box-shadow: 0 0 0 1000px white inset;
+  transition: background-color 5000s ease-in-out 0s;
+}

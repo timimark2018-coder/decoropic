@@ -18,5 +18,5 @@ export const contactSchema = z.object({
   email: z.email("Please enter a valid email address."),
   projectType: z.string().min(2, "Please choose a project type."),
   location: z.string().min(2, "Please enter the project location."),
-  notes: z.string().min(10, "Please add a few more project details.")
+  notes: z.string().optional()
 });

@@ -2,6 +2,7 @@ import type { EstimatorResult } from "@/types/estimator";
 
 export type LeadNotificationData = {
   name?: string;
+  company?: string;
   email?: string;
   whatsapp?: string;
   notes?: string;
@@ -84,6 +85,7 @@ export function renderLeadNotificationEmail(data: LeadNotificationData) {
     <div class="section">
       <h2>Contact</h2>
       <div class="row"><div class="label">Name</div><div class="value">${safe(data.name)}</div></div>
+      ${data.company ? `<div class="row"><div class="label">Company</div><div class="value">${safe(data.company)}</div></div>` : ""}
       <div class="row"><div class="label">Email</div><div class="value">${safe(data.email)}</div></div>
       <div class="row"><div class="label">WhatsApp</div><div class="value">${safe(data.whatsapp)}</div></div>
       ${data.notes ? `<div class="row"><div class="label">Notes</div><div class="value">${safe(data.notes)}</div></div>` : ""}

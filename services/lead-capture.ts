@@ -7,12 +7,14 @@ type SubmissionKind = "contact" | "estimator";
 
 type EstimatorLeadPayload = {
   name?: string;
+  company?: string;
   email?: string;
   whatsapp?: string;
   notes?: string;
   projectType?: string;
   builtUpArea?: number;
   projectLocation?: string;
+  location?: string;
   bedrooms?: number;
   bathrooms?: number;
   finishLevel?: string;
@@ -33,18 +35,19 @@ export async function persistLeadCapture(kind: SubmissionKind, payload: Record<s
   await mkdir(dir, { recursive: true });
   await writeFile(path.join(dir, `${id}.json`), `${JSON.stringify(record, null, 2)}\n`, "utf8");
 
-  if (kind === "estimator") {
+  if (kind === "estimator" || kind === "contact") {
     const p = payload as EstimatorLeadPayload;
     void import("@/lib/email/send-lead-notification")
       .then(({ sendLeadNotification }) =>
         sendLeadNotification({
           name: p.name,
+          company: p.company,
           email: p.email,
           whatsapp: p.whatsapp,
           notes: p.notes,
           projectType: p.projectType,
           builtUpArea: p.builtUpArea,
-          city: p.projectLocation,
+          city: p.projectLocation || p.location,
           bedrooms: p.bedrooms,
           bathrooms: p.bathrooms,
           finishLevel: p.finishLevel,
