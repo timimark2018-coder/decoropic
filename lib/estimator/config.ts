@@ -1,13 +1,13 @@
 export const estimatorConfig = {
   currency: "USD",
   projectTypes: ["villa"],
-  baseAreaPrice: 250,
+  baseAreaPrice: 80,
   minRangeFactor: 0.9,
   maxRangeFactor: 1.15,
   finishMultiplier: {
     standard: 1,
-    premium: 1.2,
-    luxury: 1.5
+    premium: 1.5,
+    luxury: 2.5
   },
   serviceMultiplier: {
     product_only: 1,
@@ -21,13 +21,13 @@ export const estimatorConfig = {
     not_sure: 1.05
   },
   zoneAddOns: {
-    livingRoom: 8000,
-    dining: 4000,
-    familyArea: 5000,
-    study: 3000,
-    kitchen: 12000,
-    outdoorArea: 6000,
-    entranceHall: 2500
+    livingRoom: 2500,
+    dining: 1000,
+    familyArea: 1500,
+    study: 1000,
+    kitchen: 3500,
+    outdoorArea: 2000,
+    entranceHall: 1000
   },
   allocationDefaults: {
     livingPublic: 25,
