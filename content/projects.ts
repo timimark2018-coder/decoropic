@@ -953,6 +953,11 @@ export const kumasiDetailContent: KumasiDetailContent = {
         src: "/images/projects/kumasi/build-8.jpg",
         caption: { en: "Final QC walkthrough", zh: "最终质检巡场" },
         aspect: "portrait"
+      },
+      {
+        src: "/images/projects/kumasi/build-9.jpg",
+        caption: { en: "Cross-cultural collaboration", zh: "跨文化协作" },
+        aspect: "portrait"
       }
     ]
   },
