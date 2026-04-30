@@ -361,7 +361,7 @@ export default async function HotelDetailPage({
 
           <div className="space-y-16 lg:space-y-24">
             {data.spaces.items.map((space, i) => (
-              <Reveal key={space.slug} delay={i * 80}>
+              <Reveal key={space.number} delay={i * 80}>
                 <div
                   className={`flex flex-col gap-8 lg:gap-12 items-center ${
                     i % 2 === 1 ? "lg:flex-row-reverse" : "lg:flex-row"
@@ -382,7 +382,7 @@ export default async function HotelDetailPage({
                       }}
                     />
                   </div>
-                  <div className="lg:w-1/2 w-full">
+                  <div className="lg:w-1/2 w-full flex flex-col">
                     <p
                       className="text-brand-gold mb-3"
                       style={{
@@ -392,8 +392,21 @@ export default async function HotelDetailPage({
                         fontWeight: 700
                       }}
                     >
-                      0{i + 1} / 0{data.spaces.items.length}
+                      {space.number}
                     </p>
+                    {/* 金色边框小标题徽章 */}
+                    <div className="inline-block mb-4 self-start">
+                      <span
+                        className="inline-block px-3.5 py-1.5 border text-[10px] font-medium tracking-[0.18em] uppercase"
+                        style={{
+                          borderColor: "var(--brand-gold)",
+                          color: "var(--brand-gold)",
+                          background: "transparent"
+                        }}
+                      >
+                        {t(space.badge, locale)}
+                      </span>
+                    </div>
                     <h3
                       className="text-brand-pine-dark mb-4"
                       style={{

@@ -132,7 +132,8 @@ export type KumasiDetailContent = {
     eyebrow: LocalizedText;
     h2: LocalizedText;
     items: Array<{
-      slug: string;
+      number: string;
+      badge: LocalizedText;
       title: LocalizedText;
       body: LocalizedText;
       image: string;
@@ -623,66 +624,69 @@ export const kumasiDetailContent: KumasiDetailContent = {
   },
 
   spaces: {
-    eyebrow: {
-      en: "03 — The Spaces",
-      zh: "03 — 空间集锦"
-    },
+    eyebrow: { en: "03 — The Spaces", zh: "03 — 空间篇" },
     h2: {
       en: "Six spaces. Six experiences.",
       zh: "六个空间。六种体验。"
     },
     items: [
       {
-        slug: "lobby",
+        number: "01 / 06",
+        badge: { en: "THE ARRIVAL", zh: "到达时刻" },
         title: { en: "Lobby", zh: "大堂" },
         body: {
-          en: "The arrival space — first impression of the hotel. Marble floor meets walnut paneling, layered lighting sets the evening mood.",
-          zh: "抵达空间——酒店的第一印象。大理石地面与核桃木饰面相遇，分层灯光奠定夜晚的氛围。"
+          en: "A 24-meter axis of walnut and warm light. Marble underfoot, framed art at eye level. The first impression sets the tone for everything that follows.",
+          zh: "24 米胡桃木长廊与暖光中轴。脚下大理石，眼前画作。第一印象为之后的一切定调。"
         },
         image: "/images/projects/kumasi/space-lobby.jpg"
       },
       {
-        slug: "guest-rooms",
+        number: "02 / 06",
+        badge: { en: "THE STANDARD", zh: "标准之上" },
         title: { en: "Guest Rooms", zh: "客房" },
         body: {
-          en: "72 rooms, identical specifications. Italian solid walnut. Custom upholstered headboards. Brass fittings throughout.",
-          zh: "72 间客房，规格统一。意大利实木核桃。定制软包床头。全屋黄铜五金。"
+          en: "72 rooms. Identical specifications. Italian solid walnut wardrobes, custom upholstered headboards, brass fittings throughout. No room is the lesser room.",
+          zh: "72 间客房，规格统一。意大利实木胡桃柜体，定制软包床头，全屋黄铜配件。没有任何一间是次选。"
         },
         image: "/images/projects/kumasi/space-guestroom.jpg"
       },
       {
-        slug: "suites",
+        number: "03 / 06",
+        badge: { en: "THE PRIVILEGE", zh: "尊享之处" },
         title: { en: "Suites", zh: "套房" },
         body: {
-          en: "Four suites — each gets the marble accent wall, the larger window seat, the bath with the better view.",
-          zh: "四间套房——每一间都有大理石饰面墙、更大的窗边卡座、视野更好的浴室。"
+          en: "Four suites. Each one larger by design — extended wood-clad TV wall, lounge chair by the corner, deeper headboard cove. Space measured in breathing room, not just square meters.",
+          zh: "四间套房，皆经放大设计——延伸木饰电视墙、转角休闲椅、加深床头光带。空间以呼吸感丈量，而非平米。"
         },
         image: "/images/projects/kumasi/space-suite.jpg"
       },
       {
-        slug: "lounge",
+        number: "04 / 06",
+        badge: { en: "THE PAUSE", zh: "停留之间" },
         title: { en: "Lobby Lounge", zh: "大堂休息区" },
         body: {
-          en: "Where the day pauses. Deep leather, warm wood paneling, soft cove light over polished cream marble. The kind of space you sit in for one more conversation, one more call, one more moment before checking in.",
-          zh: "让一天停下脚步的地方。深棕真皮、暖色木饰墙板、浅米色岩板上的间接灯光。是那种你想多停留一刻的空间——多一段对话、多一通电话、check-in 前的最后片刻。"
+          en: "Where the day pauses. Deep tan leather, warm walnut paneling, soft cove light over polished cream marble. The kind of space you sit in for one more conversation before checking in.",
+          zh: "日程在此停顿。深棕皮革、暖胡桃木墙、米色大理石上的柔和反光。让人愿意在入住前再多谈一会儿的那种空间。"
         },
         image: "/images/projects/kumasi/space-lounge.jpg"
       },
       {
-        slug: "bar",
+        number: "05 / 06",
+        badge: { en: "THE NIGHTCAP", zh: "夜深小酌" },
         title: { en: "Bar", zh: "酒吧" },
         body: {
-          en: "Brass-framed back bar. Smoked mirror. The kind of bar where you stay for one more drink.",
-          zh: "黄铜框背柜。烟熏镜面。是那种让你想多留一杯的酒吧。"
+          en: "Brass-framed back bar. Smoked mirror reflecting the bottle wall. Marble counter, leather stools at amber height. The kind of bar where one more drink makes sense.",
+          zh: "黄铜框架背吧，烟熏镜映照酒墙。大理石吧台、琥珀色皮椅。让人愿意再点一杯的那种酒吧。"
         },
         image: "/images/projects/kumasi/space-bar.jpg"
       },
       {
-        slug: "corridors",
+        number: "06 / 06",
+        badge: { en: "THE PASSAGE", zh: "归途回廊" },
         title: { en: "Corridors", zh: "走廊" },
         body: {
-          en: "Most hotels treat corridors as transit. We treated them as narrative space. Wood paneling. Wall sconces every 2.4m. Carpets that tell guests they've arrived somewhere.",
-          zh: "大多数酒店把走廊当成通道。我们把它当成叙事空间。木饰面。每 2.4 米一盏壁灯。地毯告诉客人：你已经到了某个特别的地方。"
+          en: "Most hotels treat corridors as transit. We treated them as arrival. Wood-clad walls, recessed light at floor and ceiling, room numbers backlit at eye level. Every step says: you've arrived somewhere.",
+          zh: "多数酒店把走廊当通道。我们把它当作\"已到达\"。木饰墙板、上下双重光带、与视线齐平的房号背光。每一步都在说：你已抵达某处。"
         },
         image: "/images/projects/kumasi/space-corridor.jpg"
       }
