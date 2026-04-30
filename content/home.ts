@@ -217,12 +217,12 @@ export const homeContent = {
   },
   estimator: {
     title: {
-      en: "Shape your project in eleven steps.",
-      zh: "用 11 步勾勒你的项目。"
+      en: "Get your renovation budget in 60 seconds.",
+      zh: "60 秒得到你的装修预算。"
     },
     subtitle: {
-      en: "Quick choices, no typing — and we'll prepare an early sense of what your project could become.",
-      zh: "只需点选，无需输入——我们会为你准备一份项目早期预估。"
+      en: "",
+      zh: ""
     },
     note: {
       en: "This is a preliminary estimate only. Final scope and quotation will depend on site measurement, design requirements, material standards and project details.",

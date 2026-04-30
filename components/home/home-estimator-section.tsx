@@ -83,21 +83,23 @@ export function HomeEstimatorSection({ locale }: HomeEstimatorSectionProps) {
         </Reveal>
 
         {/* Subtitle — italic gold */}
-        <Reveal delay={700}>
-          <p
-            className="mt-10 text-brand-gold max-w-[780px]"
-            style={{
-              fontFamily: "var(--serif)",
-              fontSize: "clamp(1.125rem, 1.8vw, 1.5rem)",
-              fontWeight: 400,
-              fontStyle: "italic",
-              lineHeight: 1.4,
-              letterSpacing: "-0.005em"
-            }}
-          >
-            {t(homeContent.estimator.subtitle, locale)}
-          </p>
-        </Reveal>
+        {homeContent.estimator.subtitle.en && (
+          <Reveal delay={700}>
+            <p
+              className="mt-10 text-brand-gold max-w-[780px]"
+              style={{
+                fontFamily: "var(--serif)",
+                fontSize: "clamp(1.125rem, 1.8vw, 1.5rem)",
+                fontWeight: 400,
+                fontStyle: "italic",
+                lineHeight: 1.4,
+                letterSpacing: "-0.005em"
+              }}
+            >
+              {t(homeContent.estimator.subtitle, locale)}
+            </p>
+          </Reveal>
+        )}
 
         {/* Fine-print note — kept as subtle slate text */}
         <Reveal delay={900}>
