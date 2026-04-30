@@ -470,7 +470,13 @@ export function HomeEstimatorHook({ locale }: Props) {
   );
 
   return (
-    <div className="relative min-h-[680px] rounded-3xl bg-[#faf6ec] p-8 sm:p-12 lg:p-16 overflow-hidden">
+    <div
+      className="relative min-h-[680px] rounded-3xl p-8 sm:p-12 lg:p-16 overflow-hidden border"
+      style={{
+        background: "#f7f3ec",
+        borderColor: "rgba(174, 146, 96, 0.25)"
+      }}
+    >
       {/* Top-right control cluster (Battle 3 tweak 2) */}
       {step !== "intro" && step !== "thank_you" && step !== "loading" && (
         <div className="absolute right-6 top-6 z-10 flex items-center gap-4">
@@ -539,7 +545,7 @@ export function HomeEstimatorHook({ locale }: Props) {
               flow to see your project's preliminary budget.
             </p>
             {summarizeAnswered(form).length > 0 && (
-              <div className="rounded-2xl bg-[#faf6ec] p-4 mb-6 space-y-1">
+              <div className="rounded-2xl bg-[#f7f3ec] p-4 mb-6 space-y-1">
                 {summarizeAnswered(form).map((line, i) => (
                   <p key={i} className="text-xs text-brand-pine-dark/80 leading-5">
                     ✓ {line}
@@ -646,7 +652,7 @@ export function HomeEstimatorHook({ locale }: Props) {
         </QuestionShell>
       )}
 
-      {step === "q3_reward" && form.location && <RewardScreen text={rewards.q3[form.location]} />}
+      {step === "q3_reward" && form.location && <RewardScreen text={rewards.q3[form.location]} badgeKey="foundation" locale={locale} />}
 
       {step === "q4" && (
         <QuestionShell title="How many bedrooms?">
@@ -745,7 +751,7 @@ export function HomeEstimatorHook({ locale }: Props) {
         </QuestionShell>
       )}
 
-      {step === "q7_reward" && form.style && <RewardScreen text={rewards.q7[form.style]} />}
+      {step === "q7_reward" && form.style && <RewardScreen text={rewards.q7[form.style]} badgeKey="style" locale={locale} />}
 
       {step === "q8" && (
         <QuestionShell title="What level of finish?">
@@ -788,7 +794,7 @@ export function HomeEstimatorHook({ locale }: Props) {
         </QuestionShell>
       )}
 
-      {step === "q9_reward" && form.serviceScope && <RewardScreen text={rewards.q9[form.serviceScope]} />}
+      {step === "q9_reward" && form.serviceScope && <RewardScreen text={rewards.q9[form.serviceScope]} badgeKey="method" locale={locale} />}
 
       {step === "q10" && (
         <QuestionShell title="When do you need it ready?">
@@ -826,7 +832,7 @@ export function HomeEstimatorHook({ locale }: Props) {
         </QuestionShell>
       )}
 
-      {step === "q11_reward" && form.investmentRange && <RewardScreen text={rewards.q11[form.investmentRange]} />}
+      {step === "q11_reward" && form.investmentRange && <RewardScreen text={rewards.q11[form.investmentRange]} badgeKey="readiness" locale={locale} />}
 
       {step === "loading" && (
         <div className="flex flex-col items-center justify-center py-20 text-center">
@@ -933,9 +939,42 @@ function QuestionShell({ title, subtitle, children }: { title: string; subtitle?
   );
 }
 
-function RewardScreen({ text }: { text: string }) {
+type RewardBadgeKey = "foundation" | "style" | "method" | "readiness";
+
+const REWARD_BADGES: Record<RewardBadgeKey, { en: string; zh: string }> = {
+  foundation: { en: "THE FOUNDATION", zh: "基础奠定" },
+  style: { en: "THE STYLE", zh: "风格成型" },
+  method: { en: "THE METHOD", zh: "方法清晰" },
+  readiness: { en: "THE READINESS", zh: "准备就绪" }
+};
+
+function RewardScreen({
+  text,
+  badgeKey,
+  locale
+}: {
+  text: string;
+  badgeKey: RewardBadgeKey;
+  locale: Locale;
+}) {
+  const badge = REWARD_BADGES[badgeKey];
+  const badgeText = locale === "zh" ? badge.zh : badge.en;
+
   return (
     <div className="flex flex-col items-center justify-center py-20 text-center" style={{ animation: "fadeInScale 0.4s ease-out" }}>
+      {/* 金色边框小标题徽章 */}
+      <div className="inline-block mb-6">
+        <span
+          className="inline-block px-3.5 py-1.5 border text-[10px] font-medium tracking-[0.18em] uppercase"
+          style={{
+            borderColor: "var(--brand-gold)",
+            color: "var(--brand-gold)",
+            background: "transparent"
+          }}
+        >
+          {badgeText}
+        </span>
+      </div>
       <div className="text-brand-gold text-3xl mb-6">♪</div>
       <p className="text-brand-gold max-w-2xl mx-auto" style={{ fontFamily: "var(--serif)", fontSize: "clamp(1.375rem, 2.5vw, 1.875rem)", fontStyle: "italic", fontWeight: 400, lineHeight: 1.4 }}>
         &quot;{text}&quot;
