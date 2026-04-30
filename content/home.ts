@@ -229,8 +229,8 @@ export const homeContent = {
       zh: "这只是初步预估。最终方案及报价需根据现场测量、设计范围、材料标准和项目要求进一步确认。"
     },
     hookIntro: {
-      en: "In three minutes, see what your project could cost.",
-      zh: "三分钟，看看你的项目可能要多少预算。"
+      en: "In one minute, see what your project could cost.",
+      zh: "一分钟，看看你的项目可能要多少预算。"
     },
     revealLabel: {
       en: "See what your project becomes →",
@@ -345,8 +345,8 @@ export const homeContent = {
       zh: "二十年深耕加纳。数百个家蜕变。下一个，是不是你？"
     },
     body: {
-      en: "Two paths. The 11-step estimator gives you an early sense in three minutes — no typing required. Or talk to Lily directly: she replies herself, within 24 hours, not a CRM.",
-      zh: "两种方式。11 步预算测算器三分钟获得初步预估——无需打字。或直接和 Lily 对话：她在 24 小时内亲自回复，不是自动消息。"
+      en: "Two paths. The 11-step estimator gives you an early sense in one minute — no typing required. Or talk to Lily directly: she replies herself, within 24 hours, not a CRM.",
+      zh: "两种方式。11 步预算测算器一分钟获得初步预估——无需打字。或直接和 Lily 对话：她在 24 小时内亲自回复，不是自动消息。"
     },
     ctas: [
       { label: { en: "Open the 11-step estimator", zh: "打开 11 步测算器" }, href: "/#estimator" },
