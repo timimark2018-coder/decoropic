@@ -36,18 +36,29 @@ export async function POST(request: Request) {
   const uploadedFiles: string[] = [];
 
   if (files.length) {
-    await mkdir(uploadDir, { recursive: true });
-
     for (const file of files) {
       if (!acceptedContactFileTypes.has(file.type)) {
         return NextResponse.json({ ok: false, error: `Unsupported file type: ${file.type || "unknown"}.` }, { status: 400 });
       }
+    }
 
-      const extension = path.extname(file.name) || "";
-      const filename = `${randomUUID()}${extension}`;
-      const bytes = Buffer.from(await file.arrayBuffer());
-      await writeFile(path.join(uploadDir, filename), bytes);
-      uploadedFiles.push(file.name);
+    try {
+      await mkdir(uploadDir, { recursive: true });
+
+      for (const file of files) {
+        const extension = path.extname(file.name) || "";
+        const filename = `${randomUUID()}${extension}`;
+        const bytes = Buffer.from(await file.arrayBuffer());
+        await writeFile(path.join(uploadDir, filename), bytes);
+        uploadedFiles.push(file.name);
+      }
+    } catch (err) {
+      const code = (err as NodeJS.ErrnoException | null)?.code;
+      if (code === "EROFS" || code === "EACCES" || code === "EPERM") {
+        console.warn("[contact] file upload write skipped (read-only fs):", code);
+      } else {
+        throw err;
+      }
     }
   }
 
