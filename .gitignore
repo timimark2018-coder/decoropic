@@ -71,3 +71,6 @@ public/uploads/*
 /素材/
 /materials/
 /drafts/
+
+# ---- untracked legacy image (decision pending) ----
+public/images/home/home-hero-old-living.jpg
