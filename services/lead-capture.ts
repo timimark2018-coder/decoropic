@@ -37,13 +37,8 @@ export async function persistLeadCapture(kind: SubmissionKind, payload: Record<s
     await mkdir(dir, { recursive: true });
     await writeFile(path.join(dir, `${id}.json`), `${JSON.stringify(record, null, 2)}\n`, "utf8");
   } catch (err) {
-    const code = (err as NodeJS.ErrnoException | null)?.code;
-    if (code === "EROFS" || code === "EACCES" || code === "EPERM") {
-      console.warn("[lead-capture] disk write skipped (read-only fs):", code);
-      persisted = false;
-    } else {
-      throw err;
-    }
+    console.warn("[lead-capture] disk write failed (continuing without persistence):", err);
+    persisted = false;
   }
 
   if (kind === "estimator" || kind === "contact") {

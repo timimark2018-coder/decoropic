@@ -53,12 +53,7 @@ export async function POST(request: Request) {
         uploadedFiles.push(file.name);
       }
     } catch (err) {
-      const code = (err as NodeJS.ErrnoException | null)?.code;
-      if (code === "EROFS" || code === "EACCES" || code === "EPERM") {
-        console.warn("[contact] file upload write skipped (read-only fs):", code);
-      } else {
-        throw err;
-      }
+      console.warn("[contact] file upload write failed (continuing without files):", err);
     }
   }
 
