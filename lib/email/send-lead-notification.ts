@@ -20,6 +20,7 @@ export async function sendLeadNotification(data: LeadNotificationData): Promise<
     const response = await resend.emails.send({
       from: config.fromEmail,
       to: config.notificationEmail,
+      replyTo: config.notificationEmail,
       subject,
       html
     });
