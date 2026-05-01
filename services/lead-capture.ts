@@ -43,29 +43,28 @@ export async function persistLeadCapture(kind: SubmissionKind, payload: Record<s
 
   if (kind === "estimator" || kind === "contact") {
     const p = payload as EstimatorLeadPayload;
-    void import("@/lib/email/send-lead-notification")
-      .then(({ sendLeadNotification }) =>
-        sendLeadNotification({
-          name: p.name,
-          company: p.company,
-          email: p.email,
-          whatsapp: p.whatsapp,
-          notes: p.notes,
-          projectType: p.projectType,
-          builtUpArea: p.builtUpArea,
-          city: p.projectLocation || p.location,
-          bedrooms: p.bedrooms,
-          bathrooms: p.bathrooms,
-          finishLevel: p.finishLevel,
-          serviceScope: p.serviceScope,
-          result: p.result,
-          submittedAt: new Date(),
-          submissionId: id
-        })
-      )
-      .catch((err) => {
-        console.error("[lead-capture] Email notification failed (non-blocking):", err);
+    try {
+      const { sendLeadNotification } = await import("@/lib/email/send-lead-notification");
+      await sendLeadNotification({
+        name: p.name,
+        company: p.company,
+        email: p.email,
+        whatsapp: p.whatsapp,
+        notes: p.notes,
+        projectType: p.projectType,
+        builtUpArea: p.builtUpArea,
+        city: p.projectLocation || p.location,
+        bedrooms: p.bedrooms,
+        bathrooms: p.bathrooms,
+        finishLevel: p.finishLevel,
+        serviceScope: p.serviceScope,
+        result: p.result,
+        submittedAt: new Date(),
+        submissionId: id
       });
+    } catch (err) {
+      console.error("[lead-capture] Email notification failed:", err);
+    }
   }
 
   return { id, persisted };
