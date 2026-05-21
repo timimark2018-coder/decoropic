@@ -4,7 +4,7 @@ export const siteConfig = {
   siteUrl: process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000",
   productCenterUrl: process.env.NEXT_PUBLIC_PRODUCT_CENTER_URL || "https://www.decolovely.com",
   whatsappNumber: process.env.NEXT_PUBLIC_CONTACT_WHATSAPP || "",
-  contactPhoneDisplay: process.env.NEXT_PUBLIC_CONTACT_PHONE_DISPLAY || "Available via inquiry",
+  contactPhoneDisplay: process.env.NEXT_PUBLIC_CONTACT_PHONE_DISPLAY || "+233 53 151 9347",
   contactEmail: process.env.NEXT_PUBLIC_CONTACT_EMAIL || "service@decoropic.com",
   contactLocation: process.env.NEXT_PUBLIC_CONTACT_LOCATION || "Ghana"
 };

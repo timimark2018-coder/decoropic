@@ -11,12 +11,12 @@ export async function generateMetadata(): Promise<Metadata> {
 
   return buildMetadata({
     title: {
-      en: "Local Services | Decoropic",
-      zh: "本地服务 | Decoropic"
+      en: "Local Services — Measurement to Installation",
+      zh: "本地服务"
     },
     description: {
-      en: "Local site measurement, budget-led design support and on-site delivery coordination in Ghana.",
-      zh: "提供加纳当地现场测量、预算导向设计支持与项目现场交付协调。"
+      en: "On-site measurement, technical supervision, installation guidance and post-delivery support — all delivered by our Accra-based team.",
+      zh: "现场测量、技术监理、安装指导与交付后支持——全部由阿克拉本地团队完成。"
     },
     path: "/local-services",
     locale

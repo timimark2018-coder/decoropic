@@ -11,12 +11,12 @@ export async function generateMetadata(): Promise<Metadata> {
 
   return buildMetadata({
     title: {
-      en: "Products & Catalog | Decoropic",
-      zh: "产品与精选 | Decoropic"
+      en: "Products & Catalog — From 1,000+ Factories",
+      zh: "产品与精选"
     },
     description: {
-      en: "One source. One contract. One delivery. Curated material ecosystem for your project.",
-      zh: "一站采购、一份合同、一次交付——为你的项目精选的材料生态系统。"
+      en: "One source. One contract. One delivery. Curated material ecosystem of tiles, furniture, lighting, bathroom, doors and finishes for Ghana projects.",
+      zh: "一站采购、一份合同、一次交付——为加纳项目精选的瓷砖、家具、灯具、卫浴、门窗与饰面生态系统。"
     },
     path: "/products",
     locale

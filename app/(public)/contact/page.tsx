@@ -13,12 +13,12 @@ export async function generateMetadata(): Promise<Metadata> {
 
   return buildMetadata({
     title: {
-      en: "Contact | Decoropic",
-      zh: "联系我们 | Decoropic"
+      en: "Contact — Talk to Our Team",
+      zh: "联系我们"
     },
     description: {
-      en: "Talk to our team directly. Real conversations, real timelines, personal replies. Project consultation for villas, hospitality and commercial spaces in Ghana.",
-      zh: "直接联系我们的团队。真实对话，真实时间表，亲自回复。加纳别墅、酒店与商业空间项目咨询。"
+      en: "We reply on WhatsApp within 24 hours. Email service@decoropic.com or schedule a sourcing call with our team.",
+      zh: "我们在 WhatsApp 上 24 小时内回复。发送邮件至 service@decoropic.com 或预约电话咨询。"
     },
     path: "/contact",
     locale

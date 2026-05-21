@@ -12,12 +12,12 @@ export async function generateMetadata(): Promise<Metadata> {
 
   return buildMetadata({
     title: {
-      en: "Solutions by Space | Decoropic",
-      zh: "按空间分类的解决方案 | Decoropic"
+      en: "Solutions — 6 Spaces, 6 Playbooks",
+      zh: "按空间分类的解决方案"
     },
     description: {
-      en: "Every space tells a different story. Decoropic's interior solutions for living rooms, dining, kitchens, studies, family areas, outdoor spaces, and entrance halls in Ghana villas.",
-      zh: "每个空间都讲述不同的故事。Decoropic 为加纳别墅提供客厅、餐厅、厨房、书房、家庭区、户外、玄关的室内解决方案。"
+      en: "Private villas, hotels, offices, apartments, restaurants, showrooms — six space types, six delivery playbooks, one Decoropic team.",
+      zh: "私人别墅、酒店、办公、公寓、餐厅、展厅——六种空间类型,六套交付剧本,一支 Decoropic 团队。"
     },
     path: "/solutions",
     locale

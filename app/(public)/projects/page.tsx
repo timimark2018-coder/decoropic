@@ -11,12 +11,12 @@ export async function generateMetadata(): Promise<Metadata> {
 
   return buildMetadata({
     title: {
-      en: "Projects | Decoropic",
-      zh: "项目作品 | Decoropic"
+      en: "Projects — 20 Years of Ghana Delivery",
+      zh: "项目作品"
     },
     description: {
-      en: "26 years of cross-border trade. The proof is the project. Hotels, villas, residential, and supply process across Ghana.",
-      zh: "26 年跨境贸易。证据就是项目本身。覆盖加纳的酒店、别墅、住宅与供应流程。"
+      en: "Hundreds of villas, apartments, hotels and offices delivered across Ghana since 2006. Browse our project portfolio.",
+      zh: "自 2006 年以来,数百个别墅、公寓、酒店与办公项目在加纳交付。浏览我们的项目作品集。"
     },
     path: "/projects",
     locale
