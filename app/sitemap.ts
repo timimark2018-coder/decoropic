@@ -3,18 +3,35 @@ import { siteConfig } from "@/lib/utils/constants";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = siteConfig.siteUrl;
-  const staticRoutes = [
-    "",
-    "/solutions",
-    "/projects",
-    "/products",
-    "/local-services",
-    "/about",
-    "/contact"
-  ].map((route) => ({
-    url: `${baseUrl}${route}`,
-    lastModified: new Date()
-  }));
+  const lastModified = new Date();
 
-  return staticRoutes;
+  const routes: Array<{
+    path: string;
+    changeFrequency: MetadataRoute.Sitemap[number]["changeFrequency"];
+    priority: number;
+  }> = [
+    { path: "", changeFrequency: "weekly", priority: 1.0 },
+    { path: "/solutions", changeFrequency: "monthly", priority: 0.9 },
+    { path: "/products", changeFrequency: "weekly", priority: 0.9 },
+    { path: "/projects", changeFrequency: "weekly", priority: 0.9 },
+    { path: "/local-services", changeFrequency: "monthly", priority: 0.8 },
+    { path: "/about", changeFrequency: "monthly", priority: 0.7 },
+    { path: "/contact", changeFrequency: "monthly", priority: 0.8 }
+  ];
+
+  return routes.map(({ path, changeFrequency, priority }) => {
+    const url = `${baseUrl}${path}`;
+    return {
+      url,
+      lastModified,
+      changeFrequency,
+      priority,
+      alternates: {
+        languages: {
+          "en-GH": url,
+          "x-default": url
+        }
+      }
+    };
+  });
 }

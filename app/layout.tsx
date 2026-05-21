@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import { Suspense } from "react";
 import { Playfair_Display, Inter } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import { GoogleAnalytics } from "@/components/analytics/google-analytics";
 import { getLocale } from "@/lib/i18n/server";
@@ -34,6 +35,7 @@ export async function generateMetadata(): Promise<Metadata> {
       en: "Project-focused interior solutions brand for Ghana, combining site measurement, budget-led design, sourcing coordination and local delivery support.",
       zh: "面向加纳项目的室内装饰品牌，整合现场测量、预算导向设计、采购协调与本地交付支持。"
     },
+    titleTemplate: "%s | Decoropic",
     locale
   });
 }
@@ -41,11 +43,30 @@ export async function generateMetadata(): Promise<Metadata> {
 export default async function RootLayout({ children }: Readonly<{ children: ReactNode }>) {
   const locale = await getLocale();
   const structuredData = [websiteSchema(locale), organizationSchema(locale)];
+  const gtmId = process.env.NEXT_PUBLIC_GTM_ID;
+  const htmlLang = locale === "zh" ? "zh-CN" : "en-GH";
 
   return (
-    <html lang={locale} className={`${inter.variable} ${playfair.variable}`}>
-      <body>
+    <html lang={htmlLang} className={`${inter.variable} ${playfair.variable}`}>
+      <head>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
+        {gtmId && (
+          <Script id="gtm" strategy="afterInteractive">
+            {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','${gtmId}');`}
+          </Script>
+        )}
+      </head>
+      <body>
+        {gtmId && (
+          <noscript>
+            <iframe
+              src={`https://www.googletagmanager.com/ns.html?id=${gtmId}`}
+              height="0"
+              width="0"
+              style={{ display: "none", visibility: "hidden" }}
+            />
+          </noscript>
+        )}
         <Suspense fallback={null}>
           <GoogleAnalytics />
         </Suspense>

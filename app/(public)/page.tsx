@@ -7,13 +7,9 @@ export async function generateMetadata(): Promise<Metadata> {
   const locale = await getLocale();
 
   return buildMetadata({
-    title: {
-      en: "Decoropic | One-Stop Interior Solutions for Projects in Ghana",
-      zh: "Decoropic | 加纳项目的一站式室内装饰解决方案"
-    },
     description: {
-      en: "From local site measurement and budget-led design to sourcing coordination and Ghana delivery support.",
-      zh: "从当地现场测量、预算导向设计到采购协调与加纳本地交付支持。"
+      en: "From local site measurement and budget-led design to sourcing coordination and Ghana delivery support. 20 years on the ground in Accra. 26 years of international building-materials trade.",
+      zh: "从当地现场测量、预算导向设计到采购协调与加纳本地交付支持。深耕加纳 20 年,26 年国际建材贸易。"
     },
     path: "/",
     locale

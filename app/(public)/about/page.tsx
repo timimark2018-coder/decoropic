@@ -17,12 +17,12 @@ export async function generateMetadata(): Promise<Metadata> {
 
   return buildMetadata({
     title: {
-      en: "About | Decoropic",
-      zh: "关于我们 | Decoropic"
+      en: "About — 26 Years in Trade, 20 in Ghana",
+      zh: "关于我们"
     },
     description: {
-      en: "Twenty-six years of building-material and project-delivery experience in Ghana — Decoropic's editorial look at how we work.",
-      zh: "二十六年建材与加纳项目交付经验 —— Decoropic 用编辑视角呈现我们的工作方式。"
+      en: "Decoropic is a service-led brand built for cross-border interior projects. 26 years of international building-materials trade, 20 years on the ground in Accra.",
+      zh: "Decoropic 是面向跨境室内项目的服务型品牌。26 年国际建材贸易经验,20 年深耕阿克拉。"
     },
     path: "/about",
     locale

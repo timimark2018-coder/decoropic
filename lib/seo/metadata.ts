@@ -3,47 +3,82 @@ import type { Locale, LocalizedText } from "@/content/types";
 import { siteConfig } from "@/lib/utils/constants";
 
 type MetadataInput = {
-  title: string | LocalizedText;
+  title?: string | LocalizedText;
   description: string | LocalizedText;
   path?: string;
   locale?: Locale;
+  titleTemplate?: string;
 };
 
 function pickLocalizedCopy(value: string | LocalizedText, locale: Locale) {
   return typeof value === "string" ? value : value[locale] || value.en;
 }
 
-export function buildMetadata({ title, description, path = "/", locale = "en" }: MetadataInput): Metadata {
-  const url = new URL(path, siteConfig.siteUrl).toString();
+export function buildMetadata({
+  title,
+  description,
+  path = "/",
+  locale = "en",
+  titleTemplate
+}: MetadataInput): Metadata {
+  const baseUrl = siteConfig.siteUrl;
+  const url = new URL(path, baseUrl).toString();
   const googleVerification = process.env.GOOGLE_SITE_VERIFICATION;
-  const resolvedTitle = pickLocalizedCopy(title, locale);
   const resolvedDescription = pickLocalizedCopy(description, locale);
-  const openGraphLocale = locale === "zh" ? "zh_CN" : "en_US";
+  const resolvedTitle = title ? pickLocalizedCopy(title, locale) : undefined;
+  const openGraphLocale = locale === "zh" ? "zh_CN" : "en_GH";
+  const alternateLocale = locale === "zh" ? "en_GH" : "zh_CN";
+
+  let metadataTitle: Metadata["title"] | undefined;
+  if (titleTemplate) {
+    metadataTitle = {
+      default: resolvedTitle ?? siteConfig.name,
+      template: titleTemplate
+    };
+  } else if (resolvedTitle) {
+    metadataTitle = resolvedTitle;
+  }
 
   return {
-    title: resolvedTitle,
+    ...(metadataTitle !== undefined ? { title: metadataTitle } : {}),
     description: resolvedDescription,
-    metadataBase: new URL(siteConfig.siteUrl),
+    metadataBase: new URL(baseUrl),
     verification: googleVerification
       ? {
           google: googleVerification
         }
       : undefined,
     alternates: {
-      canonical: url
+      canonical: url,
+      languages: {
+        "en-GH": url,
+        "x-default": url
+      }
     },
     openGraph: {
-      title: resolvedTitle,
+      ...(resolvedTitle ? { title: resolvedTitle } : {}),
       description: resolvedDescription,
       url,
       siteName: siteConfig.name,
       locale: openGraphLocale,
+      alternateLocale: [alternateLocale],
       type: "website"
     },
     twitter: {
       card: "summary_large_image",
-      title: resolvedTitle,
+      ...(resolvedTitle ? { title: resolvedTitle } : {}),
       description: resolvedDescription
+    },
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        "max-image-preview": "large",
+        "max-snippet": -1,
+        "max-video-preview": -1
+      }
     }
   };
 }
