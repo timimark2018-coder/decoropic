@@ -23,6 +23,7 @@ export function buildMetadata({
 }: MetadataInput): Metadata {
   const baseUrl = siteConfig.siteUrl;
   const url = new URL(path, baseUrl).toString();
+  const ogImageUrl = `${baseUrl}/og/default.jpg`;
   const googleVerification = process.env.GOOGLE_SITE_VERIFICATION;
   const resolvedDescription = pickLocalizedCopy(description, locale);
   const resolvedTitle = title ? pickLocalizedCopy(title, locale) : undefined;
@@ -62,12 +63,22 @@ export function buildMetadata({
       siteName: siteConfig.name,
       locale: openGraphLocale,
       alternateLocale: [alternateLocale],
-      type: "website"
+      type: "website",
+      images: [
+        {
+          url: ogImageUrl,
+          width: 1200,
+          height: 630,
+          alt: "Decoropic — One-Stop Interior Solutions for Projects in Ghana",
+          type: "image/jpeg"
+        }
+      ]
     },
     twitter: {
       card: "summary_large_image",
       ...(resolvedTitle ? { title: resolvedTitle } : {}),
-      description: resolvedDescription
+      description: resolvedDescription,
+      images: [ogImageUrl]
     },
     robots: {
       index: true,
