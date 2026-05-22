@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { Locale } from "@/content/types";
 import { siteNavContent } from "@/content/site-nav";
 import { siteConfig } from "@/lib/utils/constants";
+import { resolveSiteHref } from "@/lib/utils/site-links";
 
 type SiteFooterProps = {
   locale: Locale;
@@ -54,7 +55,7 @@ export function SiteFooter({ locale }: SiteFooterProps) {
               {siteNavContent.mainNav.map((item) => (
                 <li key={item.href}>
                   <Link
-                    href={item.href}
+                    href={resolveSiteHref(item.href, locale)}
                     className="text-sm text-brand-ivory/80 transition-colors hover:text-brand-gold"
                   >
                     {locale === "zh" ? item.label.zh : item.label.en}
