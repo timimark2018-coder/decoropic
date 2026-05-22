@@ -1,6 +1,7 @@
 import { homeContent } from "@/content/home";
 import type { Locale } from "@/content/types";
 import { t } from "@/lib/i18n/content";
+import { resolveSiteHref } from "@/lib/utils/site-links";
 import { HandDrawnLine, Reveal } from "@/components/ui";
 import { IconArrowDown } from "@/components/ui/icon";
 
@@ -154,7 +155,7 @@ export function HomeHero({ locale }: Props) {
               {hero.ctas.map((cta, idx) => (
                 <a
                   key={cta.label.en}
-                  href={cta.href}
+                  href={resolveSiteHref(cta.href, locale)}
                   className="group relative inline-flex items-center gap-2 text-sm font-medium text-brand-pine-dark transition-colors duration-200 hover:text-brand-gold"
                 >
                   <span className="relative">
