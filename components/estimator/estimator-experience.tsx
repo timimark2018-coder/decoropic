@@ -3,6 +3,7 @@
 import { type FormEvent, useState } from "react";
 import type { Locale } from "@/content/types";
 import { trackEvent } from "@/lib/analytics/gtag";
+import { pixelTrack } from "@/lib/analytics/meta-pixel";
 import { readSubmissionError } from "@/lib/forms/submission-feedback";
 import { formatPrice } from "@/lib/utils/format";
 import type { CustomItems, EstimatorResult, FinishLevel, FunctionalZone, ServiceScope } from "@/types/estimator";
@@ -366,6 +367,11 @@ export function EstimatorExperience({ locale }: EstimatorExperienceProps) {
         page: "/",
         source_site: "decoropic",
         device_type: deviceType()
+      });
+      pixelTrack("CompleteRegistration", {
+        project_type: previewForm.projectType,
+        finish_level: previewForm.finishLevel,
+        service_scope: previewForm.serviceScope
       });
       trackEvent("estimator_lead_submitted", {
         page: "/",

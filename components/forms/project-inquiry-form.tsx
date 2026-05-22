@@ -3,6 +3,7 @@
 import { type FormEvent, useState } from "react";
 import type { Locale } from "@/content/types";
 import { trackLead } from "@/lib/analytics/gtag";
+import { pixelTrack } from "@/lib/analytics/meta-pixel";
 import { readSubmissionError } from "@/lib/forms/submission-feedback";
 import { t } from "@/lib/i18n/content";
 import { contactContent } from "@/content/contact";
@@ -63,6 +64,7 @@ export function ProjectInquiryForm({ sourcePage, locale }: ProjectInquiryFormPro
           source_page: sourcePage,
           project_type: String(formData.get("projectType") || "")
         });
+        pixelTrack("Lead", { source_page: sourcePage });
         const nameValue = String(formData.get("name") || "") || undefined;
         setStatus(copy[locale].success);
         form.reset();

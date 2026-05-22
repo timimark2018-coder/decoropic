@@ -5,6 +5,8 @@ import { Playfair_Display, Inter } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 import { GoogleAnalytics } from "@/components/analytics/google-analytics";
+import { MetaPixel } from "@/components/analytics/meta-pixel";
+import { CookieConsentBanner } from "@/components/analytics/cookie-consent-banner";
 import { getLocale } from "@/lib/i18n/server";
 import { buildMetadata } from "@/lib/seo/metadata";
 import { organizationSchema, websiteSchema } from "@/lib/seo/schema";
@@ -70,7 +72,9 @@ export default async function RootLayout({ children }: Readonly<{ children: Reac
         <Suspense fallback={null}>
           <GoogleAnalytics />
         </Suspense>
+        <MetaPixel />
         {children}
+        <CookieConsentBanner locale={locale} />
       </body>
     </html>
   );
