@@ -1,4 +1,6 @@
 import type { Config } from "tailwindcss";
+// eslint-disable-next-line @typescript-eslint/no-require-imports
+const typography = require("@tailwindcss/typography");
 
 const config: Config = {
   content: [
@@ -39,6 +41,26 @@ const config: Config = {
         "container-wide": "1200px",
         "container-narrow": "760px"
       },
+      // @tailwindcss/typography prose brand colour overrides
+      // Only affects elements wrapped with the `prose` class (blog pages).
+      typography: {
+        DEFAULT: {
+          css: {
+            "h1, h2, h3, h4": {
+              fontFamily: "var(--serif)",
+              color: "var(--brand-pine-dark)"
+            },
+            a: {
+              color: "var(--brand-gold)",
+              "&:hover": { color: "var(--brand-gold-deep)" }
+            },
+            strong: { color: "var(--brand-pine-dark)" },
+            blockquote: { borderLeftColor: "var(--brand-gold)" },
+            "thead th": { color: "var(--brand-pine-dark)" },
+            hr: { borderColor: "var(--brand-line)" }
+          }
+        }
+      },
       fontSize: {
         "eyebrow-lg": [
           "0.875rem",
@@ -67,7 +89,7 @@ const config: Config = {
       }
     }
   },
-  plugins: []
+  plugins: [typography]
 };
 
 export default config;
