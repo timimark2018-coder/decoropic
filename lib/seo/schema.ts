@@ -9,7 +9,7 @@ const ORG_FOUNDING_DATE = "2000";
 const ORG_ADDRESS = {
   "@type": "PostalAddress" as const,
   streetAddress:
-    "Room 1502, Building 1, Poly Business Center, No. 8 Wenhua South Road, Dongping New Town, Lecong Town",
+    "Room 1502, Building 1, Poly Business Center, No. 8 Wenhua South Road, Dongping New Town, Lecong Town, Shunde District",
   addressLocality: "Foshan",
   addressRegion: "Guangdong",
   postalCode: "528000",
