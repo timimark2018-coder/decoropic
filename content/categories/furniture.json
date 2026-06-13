@@ -1,0 +1,80 @@
+{
+  "slug": "furniture",
+  "label": "Furniture",
+  "seo": {
+    "title": "Italian-Style Furniture for Ghana Villa Projects | Decoropic",
+    "description": "Imported Italian leather sofas and designer dining sets for Accra villa and apartment owners. Sourced through Decoropic's curated factory network."
+  },
+  "hero": {
+    "eyebrow": "FURNITURE · CURATED",
+    "h1": "Sofas built for villa living.",
+    "lead": "Five curated soft-furniture pieces — Italian sanded leather, designer Casa Calla, and French-line silhouettes — that have walked into Accra living rooms through Decoropic's containers."
+  },
+  "why": {
+    "items": [
+      {
+        "title": "Italian leather, no markup chain",
+        "body": "We're the factory's direct buyer, you're the project's direct receiver."
+      },
+      {
+        "title": "Container-fit dimensions",
+        "body": "All five SKUs verified to fit 40HQ container loading plans for Tema port arrival."
+      },
+      {
+        "title": "Project-tested upholstery",
+        "body": "Tropical-climate-grade leather and fabric, vetted against Ghana's coastal humidity."
+      }
+    ]
+  },
+  "skus": [
+    {
+      "name": "Italian Sanded Leather Sofa 13",
+      "spec": "Full-grain leather, 3-seater + chaise",
+      "priceFrom": "$4,140",
+      "priceLow": 4140,
+      "image": "https://www.decolovely.com/wp-content/uploads/2025/02/111-10.jpg",
+      "detailUrl": "https://www.decolovely.com/product/italian-sanded-leather-sofa-13/"
+    },
+    {
+      "name": "Casa Calla Sofa",
+      "spec": "Designer Italian-style sectional",
+      "priceFrom": "$3,540",
+      "priceLow": 3540,
+      "image": "https://www.decolovely.com/wp-content/uploads/2025/02/111-10.png",
+      "detailUrl": "https://www.decolovely.com/product/casa-calla-sofa/"
+    },
+    {
+      "name": "Oscar Sofa",
+      "spec": "Curved modular, modern silhouette",
+      "priceFrom": "$3,540",
+      "priceLow": 3540,
+      "image": "https://www.decolovely.com/wp-content/uploads/2025/02/111-9.png",
+      "detailUrl": "https://www.decolovely.com/product/oscar/"
+    },
+    {
+      "name": "Nappa LWT01 Sofa",
+      "spec": "Nappa leather, 3+2 configuration",
+      "priceFrom": "$3,540",
+      "priceLow": 3540,
+      "image": "https://www.decolovely.com/wp-content/uploads/2025/02/111-7.png",
+      "detailUrl": "https://www.decolovely.com/product/sofa-lwt01/"
+    },
+    {
+      "name": "French Design Couches 12",
+      "spec": "French line, classic profile",
+      "priceFrom": "$1,740",
+      "priceLow": 1740,
+      "image": "https://www.decolovely.com/wp-content/uploads/2025/02/012.jpg",
+      "detailUrl": "https://www.decolovely.com/product/franch-design-couches-12/"
+    }
+  ],
+  "applications": [
+    "Villa main living room — Italian Sanded Leather and Casa Calla anchor large open-plan arrangements with sculptural presence.",
+    "Family room / second living area — Nappa LWT01 in a 3+2 layout for relaxed daily use away from the formal lounge.",
+    "Reception lounge — French Design Couches 12 in a paired arrangement with a console table and gallery lighting."
+  ],
+  "archive": {
+    "count": "577 SKUs",
+    "url": "https://www.decolovely.com/product-category/furniture/"
+  }
+}

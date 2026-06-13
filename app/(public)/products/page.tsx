@@ -514,20 +514,35 @@ export default async function ProductsPage() {
                         ))}
                       </ul>
 
-                      <a
-                        href={cat.catalogUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-brand-gold hover:text-brand-pine-dark transition-colors inline-flex items-center"
-                        style={{
-                          fontSize: "0.78rem",
-                          letterSpacing: "0.22em",
-                          textTransform: "uppercase",
-                          fontWeight: 700
-                        }}
-                      >
-                        {t(cat.browseLabel, locale)}
-                      </a>
+                      {cat.catalogUrl.startsWith("/") ? (
+                        <Link
+                          href={cat.catalogUrl}
+                          className="text-brand-gold hover:text-brand-pine-dark transition-colors inline-flex items-center"
+                          style={{
+                            fontSize: "0.78rem",
+                            letterSpacing: "0.22em",
+                            textTransform: "uppercase",
+                            fontWeight: 700
+                          }}
+                        >
+                          {t(cat.browseLabel, locale)}
+                        </Link>
+                      ) : (
+                        <a
+                          href={cat.catalogUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-brand-gold hover:text-brand-pine-dark transition-colors inline-flex items-center"
+                          style={{
+                            fontSize: "0.78rem",
+                            letterSpacing: "0.22em",
+                            textTransform: "uppercase",
+                            fontWeight: 700
+                          }}
+                        >
+                          {t(cat.browseLabel, locale)}
+                        </a>
+                      )}
                     </div>
                   </div>
                 </Reveal>
