@@ -219,8 +219,8 @@ export const productsContent: ProductsContent = {
           { en: "Size logic — bigger tiles mean fewer grout lines, but installation gets harder.", zh: "尺寸逻辑——大砖少缝，但安装更难。两者要权衡。" },
           { en: "Climate match — substrate selection for tropical humidity is non-negotiable.", zh: "气候适配——基层选择对热带湿气至关重要，不能将就。" }
         ],
-        catalogUrl: "https://www.decolovely.com/product-category/wall-flooring/tiles/",
-        browseLabel: { en: "Browse Tile Catalog →", zh: "浏览瓷砖产品 →" }
+        catalogUrl: "/products/tiles-flooring",
+        browseLabel: { en: "Browse Tiles & Flooring →", zh: "浏览瓷砖与地板 →" }
       },
       {
         slug: "furniture",
@@ -235,7 +235,7 @@ export const productsContent: ProductsContent = {
           { en: "Frame engineering — what matters under the upholstery is rarely visible.", zh: "框架工艺——软包内部真正的奥秘，往往看不见。" },
           { en: "Container packing — how to lose 30% of your shipment in transit if done wrong.", zh: "集装箱装载——做错了运输中可能损失 30%。" }
         ],
-        catalogUrl: "https://www.decolovely.com/product-category/furniture/",
+        catalogUrl: "/products/furniture",
         browseLabel: { en: "Browse Furniture →", zh: "浏览家具产品 →" }
       },
       {
@@ -251,7 +251,7 @@ export const productsContent: ProductsContent = {
           { en: "Ceramic firing — why some tubs crack in year three.", zh: "陶瓷烧制——为什么有些浴缸在第 3 年开裂。" },
           { en: "Fitting standards — UK / EU / US standards must match your house plumbing.", zh: "水路标准——UK / EU / US 不同标准必须与你的房屋管路匹配。" }
         ],
-        catalogUrl: "https://www.decolovely.com/product-category/bathroom-kitchen/",
+        catalogUrl: "/products/bathroom-kitchen",
         browseLabel: { en: "Browse Bathroom & Kitchen →", zh: "浏览卫浴厨房 →" }
       },
       {
@@ -267,8 +267,8 @@ export const productsContent: ProductsContent = {
           { en: "Power supply — Ghana's 230V reality vs Chinese 220V factory specs.", zh: "电源——加纳 230V 实际工程要求 vs 中国 220V 工厂标准。" },
           { en: "Crystal grade — K9 vs Egyptian crystal, what changes when light hits it.", zh: "水晶等级——K9 vs 埃及水晶，光线打上去的差别。" }
         ],
-        catalogUrl: "https://www.decolovely.com/product-category/lights-lighting/",
-        browseLabel: { en: "Browse Lighting →", zh: "浏览灯饰产品 →" }
+        catalogUrl: "/products/lights-lighting",
+        browseLabel: { en: "Browse Lights & Lighting →", zh: "浏览灯饰产品 →" }
       },
       {
         slug: "doors-windows",
@@ -283,7 +283,7 @@ export const productsContent: ProductsContent = {
           { en: "Glass spec — single / double / Low-E, what's worth paying for.", zh: "玻璃规格——单层 / 双层 / Low-E，哪个值得花钱。" },
           { en: "Hardware grade — hinges and locks define the daily experience for 20 years.", zh: "五金等级——铰链和锁，决定 20 年的日常体验。" }
         ],
-        catalogUrl: "https://www.decolovely.com/product-category/door-windows/",
+        catalogUrl: "/products/doors-windows",
         browseLabel: { en: "Browse Doors & Windows →", zh: "浏览门窗产品 →" }
       }
     ]
@@ -399,7 +399,7 @@ export const productsContent: ProductsContent = {
       en: "Our complete catalog of tiles, furniture, sanitary, lighting, doors, and finishes — sourced from our trusted factory network.",
       zh: "瓷砖、家具、卫浴、灯饰、门窗、饰面材料的完整产品中心——全部来自我们信任的工厂网络。"
     },
-    primaryCta: { en: "View Full Catalog →", zh: "查看完整产品中心 →" },
+    primaryCta: { en: "Browse 5,000+ archive SKUs at Decolovely →", zh: "在 Decolovely 浏览 5,000+ 存档产品 →" },
     secondaryCta: { en: "Book a Sourcing Call", zh: "预约采购沟通" },
     catalogUrl: "https://www.decolovely.com/"
   },

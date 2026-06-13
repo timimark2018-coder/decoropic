@@ -1,0 +1,80 @@
+{
+  "slug": "bathroom-kitchen",
+  "label": "Bathroom & Kitchen",
+  "seo": {
+    "title": "Bathroom & Kitchen Systems for Ghana Villa Projects | Decoropic",
+    "description": "Modern bathroom vanity systems with artificial stone tops, smart LED mirrors, and hydro-massage tubs — sourced direct for Accra villa renovations."
+  },
+  "hero": {
+    "eyebrow": "BATHROOM & KITCHEN · CURATED",
+    "h1": "Wet-area systems, project-ready.",
+    "lead": "Three modern vanity systems (artificial stone + solid wood + smart LED mirror), one 2-person hydro-massage bathtub, one premium configuration — designed to be ordered as a system, not piece by piece."
+  },
+  "why": {
+    "items": [
+      {
+        "title": "Sold as systems, not parts",
+        "body": "Each vanity bundles top + cabinet + mirror + LED + soft-close hardware. One PO, one shipment."
+      },
+      {
+        "title": "Tested against Ghana mains pressure",
+        "body": "Tap mechanisms and shower controls spec'd for Accra Ghana Water Company supply."
+      },
+      {
+        "title": "Replacement parts pre-stocked",
+        "body": "Decoropic carries 18-month replacement inventory for every system listed."
+      }
+    ]
+  },
+  "skus": [
+    {
+      "name": "Modern Vanity V043",
+      "spec": "Artificial stone + solid wood + LED mirror",
+      "priceFrom": "$1,560",
+      "priceLow": 1560,
+      "image": "https://www.decolovely.com/wp-content/uploads/2024/12/43.png",
+      "detailUrl": "https://www.decolovely.com/product/2024-modern-design-artificial-stone-vanity-bathroom-cabinets-style-solid-wood-smart-led-mirror-bathroom-cabinet-v043/"
+    },
+    {
+      "name": "Modern Vanity V040",
+      "spec": "Artificial stone + solid wood + LED mirror",
+      "priceFrom": "$1,560",
+      "priceLow": 1560,
+      "image": "https://www.decolovely.com/wp-content/uploads/2024/12/40-1.png",
+      "detailUrl": "https://www.decolovely.com/product/2024-modern-design-artificial-stone-vanity-bathroom-cabinets-style-solid-wood-smart-led-mirror-bathroom-cabinet-v040/"
+    },
+    {
+      "name": "Modern Vanity V036",
+      "spec": "Artificial stone + solid wood + LED mirror",
+      "priceFrom": "$1,560",
+      "priceLow": 1560,
+      "image": "https://www.decolovely.com/wp-content/uploads/2024/12/036.png",
+      "detailUrl": "https://www.decolovely.com/product/2024-modern-design-artificial-stone-vanity-bathroom-cabinets-style-solid-wood-smart-led-mirror-bathroom-cabinet-v036/"
+    },
+    {
+      "name": "Hydro Massage Tub WET005-5026",
+      "spec": "2-person corner, chromotherapy LED",
+      "priceFrom": "$1,068",
+      "priceLow": 1068,
+      "image": "https://www.decolovely.com/wp-content/uploads/2024/11/wet005-4.png",
+      "detailUrl": "https://www.decolovely.com/product/corner-bathtub-2-person-jetted-tub-spa-bathtubs-with-jets-hydro-massage-tub-with-chroma-therapy-led-corner-tub-acrylic-white-wet005-5026/"
+    },
+    {
+      "name": "Modern Vanity V030",
+      "spec": "Artificial stone + solid wood + LED mirror",
+      "priceFrom": "$900",
+      "priceLow": 900,
+      "image": "https://www.decolovely.com/wp-content/uploads/2024/12/030.png",
+      "detailUrl": "https://www.decolovely.com/product/2024-modern-design-artificial-stone-vanity-bathroom-cabinets-style-solid-wood-smart-led-mirror-bathroom-cabinet-v030/"
+    }
+  ],
+  "applications": [
+    "Master bathroom — V043 and V040 wider configurations with double basins, LED mirror spanning full width.",
+    "Guest bathroom — V036 and V030 compact configurations balanced for standard 2.4 m ceiling height.",
+    "Master bath relaxation zone — WET005 corner tub installed on the window wall, separate from the shower walk-in."
+  ],
+  "archive": {
+    "count": "353 SKUs",
+    "url": "https://www.decolovely.com/product-category/bathroom-kitchen/"
+  }
+}

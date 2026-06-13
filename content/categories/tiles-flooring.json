@@ -1,0 +1,80 @@
+{
+  "slug": "tiles-flooring",
+  "label": "Tiles & Flooring",
+  "seo": {
+    "title": "Tiles & Flooring — Imported Porcelain Slabs for Ghana Projects | Decoropic",
+    "description": "Italian-grade porcelain slabs, marble-look stone, and large-format tiles for villa and premium apartment projects in Accra. Curated from Foshan."
+  },
+  "hero": {
+    "eyebrow": "TILES & FLOORING · CURATED",
+    "h1": "Large-format porcelain. Sized for projects.",
+    "lead": "From 1200×2700 mm Supreme Slabs to 90×180 cm warm-tone porcelain, every tile in this curation has been used on a real Decoropic site in Ghana. Sourced direct from Foshan factories, shipped through Tema port."
+  },
+  "why": {
+    "items": [
+      {
+        "title": "Source-direct from Foshan",
+        "body": "We work with 1,000+ factories in the Pearl River Delta. No middleman markup."
+      },
+      {
+        "title": "Ghana-fit specs",
+        "body": "All tiles tested for tropical humidity, salt air, and on-site cutting tools available in Accra."
+      },
+      {
+        "title": "Project-backed",
+        "body": "Each selection has shipped to at least one Ghanaian villa we've delivered."
+      }
+    ]
+  },
+  "skus": [
+    {
+      "name": "Supreme Slab Castle Peak",
+      "spec": "1200×2700 mm Porcelain Slab",
+      "priceFrom": "$120 / m²",
+      "priceLow": 120,
+      "image": "https://www.decolovely.com/wp-content/uploads/2025/01/111-23.png",
+      "detailUrl": "https://www.decolovely.com/product/supreme-slab-castle-peak-1200x2700/"
+    },
+    {
+      "name": "Supreme Slab Royal Jade",
+      "spec": "1200×2700 mm Porcelain Slab",
+      "priceFrom": "$120 / m²",
+      "priceLow": 120,
+      "image": "https://www.decolovely.com/wp-content/uploads/2025/01/111-20.png",
+      "detailUrl": "https://www.decolovely.com/product/supreme-bella-white-1200x2700/"
+    },
+    {
+      "name": "Adria Stone",
+      "spec": "600×600 mm Porcelain Slab",
+      "priceFrom": "$108 / m²",
+      "priceLow": 108,
+      "image": "https://www.decolovely.com/wp-content/uploads/2025/01/111-64.jpg",
+      "detailUrl": "https://www.decolovely.com/product/adria-stone/"
+    },
+    {
+      "name": "Supreme Slab Athens Gold",
+      "spec": "800×2600 mm Porcelain Slab",
+      "priceFrom": "$90 / m²",
+      "priceLow": 90,
+      "image": "https://www.decolovely.com/wp-content/uploads/2025/01/111-31.jpg",
+      "detailUrl": "https://www.decolovely.com/product/supreme-slab-athens-gold-800x2600/"
+    },
+    {
+      "name": "Pandora Barbiano",
+      "spec": "90×180 cm Marble-Look",
+      "priceFrom": "$30 / m²",
+      "priceLow": 30,
+      "image": "https://www.decolovely.com/wp-content/uploads/2025/01/111-57.jpg",
+      "detailUrl": "https://www.decolovely.com/product/pandora-barbiano-90x180/"
+    }
+  ],
+  "applications": [
+    "Villa living room TV background wall — Castle Peak slab used as a full-height feature panel behind the media unit.",
+    "Main entrance lobby vertical feature — Royal Jade floor-to-ceiling cladding creates a gallery-like arrival moment.",
+    "Master bathroom full-height wet-area — Adria Stone 600×600 on walls and floor, continuous groutless look."
+  ],
+  "archive": {
+    "count": "179 SKUs",
+    "url": "https://www.decolovely.com/product-category/wall-flooring/tiles/"
+  }
+}

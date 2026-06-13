@@ -1,0 +1,80 @@
+{
+  "slug": "doors-windows",
+  "label": "Doors & Windows",
+  "seo": {
+    "title": "Aluminum Sliding Doors & Pivot Entrances for Ghana Villas | Decoropic",
+    "description": "3000mm aluminum sliding patio doors, folding doors, and cast aluminum pivot entrance doors for Accra villa projects. Container-ready."
+  },
+  "hero": {
+    "eyebrow": "DOORS & WINDOWS · CURATED",
+    "h1": "Large openings, sealed for the tropics.",
+    "lead": "Five door systems built around 1500–3000 mm openings — corner patio sliders, folding doors, and cast aluminum pivot entrances. All container-loaded and sealed for Ghana coastal humidity."
+  },
+  "why": {
+    "items": [
+      {
+        "title": "3000 mm openings as standard",
+        "body": "Modern Accra villas need wide openings; we stock 3000 mm width as our default."
+      },
+      {
+        "title": "Sealed against coastal humidity",
+        "body": "Frames and gaskets spec'd against salt air corrosion typical of Accra/Tema climate."
+      },
+      {
+        "title": "Pivot hardware tested 100,000 cycles",
+        "body": "Entrance door hardware rated for villa use, no replacement needed within 5 years."
+      }
+    ]
+  },
+  "skus": [
+    {
+      "name": "ZHP005 Corner Patio Sliding Door",
+      "spec": "3000 mm aluminum sliding glass",
+      "priceFrom": "$1,980",
+      "priceLow": 1980,
+      "image": "https://www.decolovely.com/wp-content/uploads/2024/11/ZHP005.png",
+      "detailUrl": "https://www.decolovely.com/product/corner-patio-doors-aluminum-sliding-glass-door-balcony-glass-view-door-3000mm-house-hotel-glass-door-zhp005/"
+    },
+    {
+      "name": "ZHP003 Aluminum Folding Doors",
+      "spec": "3000 mm folding, balcony view",
+      "priceFrom": "$1,980",
+      "priceLow": 1980,
+      "image": "https://www.decolovely.com/wp-content/uploads/2024/11/ZHP003.png",
+      "detailUrl": "https://www.decolovely.com/product/aluminum-folding-doors-balcony-glass-view-door-house-hotel-waterproof-double-glass-door-zhp003/"
+    },
+    {
+      "name": "JG002 Cast Aluminum Pivot Door",
+      "spec": "1500 mm entrance, villa main door",
+      "priceFrom": "$1,200",
+      "priceLow": 1200,
+      "image": "https://www.decolovely.com/wp-content/uploads/2024/11/1731641101216.png",
+      "detailUrl": "https://www.decolovely.com/product/luxury-villa-residential-pivot-door-solid-wood-entrance-door-cast-aluminum-door-2000mm-width-latest-design-main-entrance-exterior-front-entry-doors-american-type-security-door-jg002/"
+    },
+    {
+      "name": "JG001 Luxury Villa Pivot Door",
+      "spec": "1500 mm entrance, cast aluminum",
+      "priceFrom": "$1,200",
+      "priceLow": 1200,
+      "image": "https://www.decolovely.com/wp-content/uploads/2024/11/002-3.jpg",
+      "detailUrl": "https://www.decolovely.com/product/luxury-villa-residential-pivot-door-solid-wood-entrance-door-cast-aluminum-door-2000mm-width-latest-design-main-entrance-exterior-front-entry-doors-american-type-security-door-jg001/"
+    },
+    {
+      "name": "ZHP006 Multi-Panel Sliding Door",
+      "spec": "3000 mm, 3-linkage panels",
+      "priceFrom": "$990",
+      "priceLow": 990,
+      "image": "https://www.decolovely.com/wp-content/uploads/2024/11/ZHP006.png",
+      "detailUrl": "https://www.decolovely.com/product/aluminum-multi-panel-sliding-doors-balcony-glass-view-door-3000mm-house-hotel-waterproof-double-glass-door-three-linkage-zhp006/"
+    }
+  ],
+  "applications": [
+    "Villa living room → garden — ZHP005 corner slider opens two walls simultaneously for an indoor-outdoor living room.",
+    "Balcony / patio — ZHP003 folding door stacks neatly to one side, maximising the opening width.",
+    "Main entrance — JG001 and JG002 pivot doors make a statement arrival moment for villa and compound entrances."
+  ],
+  "archive": {
+    "count": "260 SKUs",
+    "url": "https://www.decolovely.com/product-category/door-windows/"
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "slug": "lights-lighting",
+  "label": "Lights & Lighting",
+  "seo": {
+    "title": "Crystal Chandeliers & Villa Lighting for Ghana Projects | Decoropic",
+    "description": "Long crystal staircase chandeliers, hall main lights, and dining feature lights for high-ceiling Accra villa interiors."
+  },
+  "hero": {
+    "eyebrow": "LIGHTS & LIGHTING · CURATED",
+    "h1": "Statement lighting for high ceilings.",
+    "lead": "Five crystal chandeliers — engineered for villa stairwells, double-height halls, and dining feature ceilings. From a 5-tier 40×80 cm crystal to a long-drop staircase piece."
+  },
+  "why": {
+    "items": [
+      {
+        "title": "Sized for villa ceiling heights",
+        "body": "All five selected for 3.0–6.0 m ceiling drops, common in Accra villa stairwells."
+      },
+      {
+        "title": "220V Ghana spec",
+        "body": "All wiring and fittings spec'd for Ghana 220V/50Hz mains, no transformer needed."
+      },
+      {
+        "title": "Installation included on quote",
+        "body": "Every lighting order quotes installation by Decoropic's Accra electrical partners."
+      }
+    ]
+  },
+  "skus": [
+    {
+      "name": "CYM007 Staircase Crystal Chandelier",
+      "spec": "Long drop, villa hall / stairwell",
+      "priceFrom": "$480",
+      "priceLow": 480,
+      "image": "https://www.decolovely.com/wp-content/uploads/2024/10/001.png",
+      "detailUrl": "https://www.decolovely.com/product/long-crystal-staircase-gold-chandelier-modern-loft-crystal-lamp-luxury-villa-hotel-hall-living-room-large-chandelier-home-decor-aliexpress-39/"
+    },
+    {
+      "name": "CMY011 Hot Sale Chandelier",
+      "spec": "Main living room ceiling",
+      "priceFrom": "$299",
+      "priceLow": 299,
+      "image": "https://www.decolovely.com/wp-content/uploads/2024/10/KDS026.png",
+      "detailUrl": "https://www.decolovely.com/product/0026/"
+    },
+    {
+      "name": "CYM033 Beauty Crystal Chandelier",
+      "spec": "36 head, 4 m drop",
+      "priceFrom": "$276",
+      "priceLow": 276,
+      "image": "https://www.decolovely.com/wp-content/uploads/2024/11/A-3.jpg",
+      "detailUrl": "https://www.decolovely.com/product/36-20%e4%b8%aa%e5%a4%b4-4%e7%b1%b3/"
+    },
+    {
+      "name": "CYM032 Line-Design Chandelier",
+      "spec": "35 head, linear-modern",
+      "priceFrom": "$276",
+      "priceLow": 276,
+      "image": "https://www.decolovely.com/wp-content/uploads/2024/11/CYM032.png",
+      "detailUrl": "https://www.decolovely.com/product/35-20%e4%b8%aa%e5%a4%b4/"
+    },
+    {
+      "name": "CYM039 American Villa Chandelier",
+      "spec": "5-tier 40×80 cm",
+      "priceFrom": "$192",
+      "priceLow": 192,
+      "image": "https://www.decolovely.com/wp-content/uploads/2024/11/CYM039.png",
+      "detailUrl": "https://www.decolovely.com/product/40-80cm-5%e5%b1%82/"
+    }
+  ],
+  "applications": [
+    "Villa staircase / double-height entrance — CYM007 long-drop piece suspended from the upper floor, visible from both levels.",
+    "Main living room — CMY011 and CYM033 as the primary overhead anchor, layered with floor lamps.",
+    "Dining feature — CYM032 linear and CYM039 5-tier positioned over a round or rectangular dining table."
+  ],
+  "archive": {
+    "count": "202 SKUs",
+    "url": "https://www.decolovely.com/product-category/lights-lighting/"
+  }
+}
