@@ -73,6 +73,14 @@ export function SiteFooter({ locale }: SiteFooterProps) {
             <ul className="space-y-2.5 text-sm">
               <li>
                 <a
+                  href={`tel:${siteConfig.contactPhoneDisplay.replace(/\s/g, "")}`}
+                  className="text-brand-ivory/80 transition-colors hover:text-brand-gold"
+                >
+                  {siteConfig.contactPhoneDisplay}
+                </a>
+              </li>
+              <li>
+                <a
                   href={`mailto:${siteConfig.contactEmail}`}
                   className="text-brand-ivory/80 transition-colors hover:text-brand-gold"
                 >
