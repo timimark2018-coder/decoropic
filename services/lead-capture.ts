@@ -19,6 +19,16 @@ type EstimatorLeadPayload = {
   bathrooms?: number;
   finishLevel?: string;
   serviceScope?: string;
+  budget?: string;
+  sourcePage?: string;
+  utm?: {
+    utmSource?: string;
+    utmMedium?: string;
+    utmCampaign?: string;
+    utmContent?: string;
+    utmTerm?: string;
+    referrer?: string;
+  };
   result?: EstimatorResult;
 };
 
@@ -58,6 +68,9 @@ export async function persistLeadCapture(kind: SubmissionKind, payload: Record<s
         bathrooms: p.bathrooms,
         finishLevel: p.finishLevel,
         serviceScope: p.serviceScope,
+        budget: p.budget,
+        sourcePage: p.sourcePage,
+        utm: p.utm,
         result: p.result,
         submittedAt: new Date(),
         submissionId: id

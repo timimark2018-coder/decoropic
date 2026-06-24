@@ -70,3 +70,81 @@ export function organizationSchema(locale: Locale = "en") {
     sameAs: [siteConfig.productCenterUrl]
   };
 }
+
+// ─── Landing-page schema helpers ─────────────────────────────────────────────
+// Reusable builders for per-page WebPage / FAQPage / BreadcrumbList / Person.
+// Inject the returned objects into a <script type="application/ld+json"> tag.
+
+function absoluteUrl(path: string): string {
+  return new URL(path, siteConfig.siteUrl).toString();
+}
+
+export function webPageSchema({
+  title,
+  description,
+  path
+}: {
+  title: string;
+  description: string;
+  path: string;
+}) {
+  const url = absoluteUrl(path);
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": `${url}#webpage`,
+    url,
+    name: title,
+    description,
+    isPartOf: { "@id": `${siteConfig.siteUrl}/#website` },
+    publisher: { "@id": `${siteConfig.siteUrl}/#organization` },
+    inLanguage: "en-GH"
+  };
+}
+
+export function faqPageSchema(items: Array<{ question: string; answer: string }>) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: items.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.answer
+      }
+    }))
+  };
+}
+
+export function breadcrumbListSchema(items: Array<{ name: string; path: string }>) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: items.map((item, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: item.name,
+      item: absoluteUrl(item.path)
+    }))
+  };
+}
+
+export function personSchema() {
+  const url = absoluteUrl("/lp/founder-story");
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": `${siteConfig.siteUrl}/#founder`,
+    name: "Kevin Lau",
+    jobTitle: "Founder",
+    worksFor: { "@id": `${siteConfig.siteUrl}/#organization` },
+    description:
+      "Founder of Decoropic. 26 years in international building-materials trade and 20 years on the ground in Accra, Ghana.",
+    knowsLanguage: ["en", "zh"],
+    url,
+    mainEntityOfPage: `${url}#webpage`
+  };
+}

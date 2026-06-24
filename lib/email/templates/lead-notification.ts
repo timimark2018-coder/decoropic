@@ -13,6 +13,16 @@ export type LeadNotificationData = {
   bathrooms?: number;
   finishLevel?: string;
   serviceScope?: string;
+  budget?: string;
+  sourcePage?: string;
+  utm?: {
+    utmSource?: string;
+    utmMedium?: string;
+    utmCampaign?: string;
+    utmContent?: string;
+    utmTerm?: string;
+    referrer?: string;
+  };
   result?: EstimatorResult;
   submittedAt: Date;
   submissionId: string;
@@ -46,6 +56,22 @@ export function renderLeadNotificationEmail(data: LeadNotificationData) {
   const minStr = data.result ? `$${data.result.minEstimate.toLocaleString()}` : "N/A";
   const maxStr = data.result ? `$${data.result.maxEstimate.toLocaleString()}` : "N/A";
   const midStr = data.result ? `$${data.result.midpointEstimate.toLocaleString()}` : "N/A";
+
+  const utm = data.utm;
+  const sourceSection =
+    data.sourcePage || (utm && Object.values(utm).some(Boolean))
+      ? `
+    <div class="section">
+      <h2>Source</h2>
+      ${data.sourcePage ? `<div class="row"><div class="label">Landing page</div><div class="value">${safe(data.sourcePage)}</div></div>` : ""}
+      ${utm?.utmSource ? `<div class="row"><div class="label">Campaign src</div><div class="value">${safe(utm.utmSource)}</div></div>` : ""}
+      ${utm?.utmMedium ? `<div class="row"><div class="label">Medium</div><div class="value">${safe(utm.utmMedium)}</div></div>` : ""}
+      ${utm?.utmCampaign ? `<div class="row"><div class="label">Campaign</div><div class="value">${safe(utm.utmCampaign)}</div></div>` : ""}
+      ${utm?.utmContent ? `<div class="row"><div class="label">Content</div><div class="value">${safe(utm.utmContent)}</div></div>` : ""}
+      ${utm?.utmTerm ? `<div class="row"><div class="label">Term</div><div class="value">${safe(utm.utmTerm)}</div></div>` : ""}
+      ${utm?.referrer ? `<div class="row"><div class="label">Referrer</div><div class="value">${safe(utm.referrer)}</div></div>` : ""}
+    </div>`
+      : "";
 
   const whatsappLink = data.whatsapp
     ? `https://wa.me/${data.whatsapp.replace(/\D/g, "")}?text=${encodeURIComponent(`Hi ${data.name || "there"}, this is Decoropic. We received your project estimate request and would love to discuss further.`)}`
@@ -97,6 +123,7 @@ export function renderLeadNotificationEmail(data: LeadNotificationData) {
       <div class="row"><div class="label">Type</div><div class="value">${safe(data.projectType)}</div></div>
       <div class="row"><div class="label">Area</div><div class="value">${data.builtUpArea ? `${data.builtUpArea} m²` : "—"}</div></div>
       <div class="row"><div class="label">City</div><div class="value">${safe(data.city)}</div></div>
+      ${data.budget ? `<div class="row"><div class="label">Budget</div><div class="value">${safe(data.budget)}</div></div>` : ""}
       <div class="row"><div class="label">Bedrooms</div><div class="value">${data.bedrooms ?? "—"}</div></div>
       <div class="row"><div class="label">Bathrooms</div><div class="value">${data.bathrooms ?? "—"}</div></div>
       <div class="row"><div class="label">Finish</div><div class="value">${safe(data.finishLevel)}</div></div>
@@ -110,7 +137,7 @@ export function renderLeadNotificationEmail(data: LeadNotificationData) {
         <div class="midpoint">Midpoint: ${midStr}</div>
       </div>
     </div>
-
+${sourceSection}
     <div class="footer">
       Decoropic Lead Notification · Auto-generated
     </div>
