@@ -109,6 +109,14 @@ export function HomeFinalCta({ locale }: HomeFinalCtaProps) {
                 {t(cta.label, locale)}
               </ActionLink>
             ))}
+            <ActionLink
+              href="/lp/villa-renovation-quote"
+              variant="ghost"
+              className="text-white ring-white/25 hover:bg-white/10"
+              locale={locale}
+            >
+              {locale === "zh" ? "免费别墅预算估算" : "Free villa budget estimate"}
+            </ActionLink>
           </div>
         </Reveal>
       </div>

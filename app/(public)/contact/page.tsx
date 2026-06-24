@@ -252,6 +252,15 @@ export default async function ContactPage() {
               <ChevronRight size={18} />
             </Link>
           </Reveal>
+          <Reveal delay={520}>
+            <Link
+              href="/lp/villa-renovation-quote"
+              className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-brand-gold underline-offset-4 hover:underline"
+            >
+              <span>{locale === "zh" ? "或试试别墅装修预算落地页" : "Or try our villa renovation budget page"}</span>
+              <ChevronRight size={16} />
+            </Link>
+          </Reveal>
         </div>
       </section>
     </main>

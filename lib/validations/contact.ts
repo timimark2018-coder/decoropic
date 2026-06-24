@@ -13,10 +13,15 @@ export const acceptedContactFileTypes = new Set([
 
 export const contactSchema = z.object({
   name: z.string().min(2, "Please enter your name."),
-  company: z.string().min(2, "Please enter your company name."),
+  // Optional: consumer landing-page leads (/lp/*) omit company. The /contact
+  // business form still sends it and marks it required on the client.
+  company: z.string().optional(),
   whatsapp: z.string().min(6, "Please enter a valid WhatsApp number."),
-  email: z.email("Please enter a valid email address."),
+  // Optional: landing-page lead form collects email only for PDF delivery, so
+  // an empty string is acceptable. The /contact form keeps it required client-side.
+  email: z.union([z.email("Please enter a valid email address."), z.literal("")]).optional(),
   projectType: z.string().min(2, "Please choose a project type."),
   location: z.string().min(2, "Please enter the project location."),
+  budget: z.string().optional(),
   notes: z.string().optional()
 });

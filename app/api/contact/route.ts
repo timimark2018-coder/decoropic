@@ -23,6 +23,7 @@ export async function POST(request: Request) {
     email: String(formData.get("email") || ""),
     projectType: String(formData.get("projectType") || ""),
     location: String(formData.get("location") || ""),
+    budget: String(formData.get("budget") || ""),
     notes: String(formData.get("notes") || "")
   };
 
@@ -31,6 +32,18 @@ export async function POST(request: Request) {
   if (!result.success) {
     return NextResponse.json({ ok: false, errors: result.error.flatten() }, { status: 400 });
   }
+
+  // Campaign attribution forwarded from the landing-page lead form (UTM params
+  // persisted in sessionStorage). Captured for lead routing / reporting.
+  const utm = {
+    utmSource: String(formData.get("utm_source") || ""),
+    utmMedium: String(formData.get("utm_medium") || ""),
+    utmCampaign: String(formData.get("utm_campaign") || ""),
+    utmContent: String(formData.get("utm_content") || ""),
+    utmTerm: String(formData.get("utm_term") || ""),
+    referrer: String(formData.get("referrer") || "")
+  };
+  const hasUtm = Object.values(utm).some(Boolean);
 
   const files = formData.getAll("files").filter((entry): entry is File => entry instanceof File && entry.size > 0);
   const uploadedFiles: string[] = [];
@@ -60,7 +73,8 @@ export async function POST(request: Request) {
   const stored = await persistLeadCapture("contact", {
     ...result.data,
     sourcePage: String(formData.get("sourcePage") || "/contact"),
-    uploadedFiles
+    uploadedFiles,
+    ...(hasUtm ? { utm } : {})
   });
 
   return NextResponse.json({
