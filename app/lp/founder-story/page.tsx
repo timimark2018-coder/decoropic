@@ -4,7 +4,7 @@ import { buildMetadata } from "@/lib/seo/metadata";
 import { breadcrumbListSchema, organizationSchema, personSchema, webPageSchema } from "@/lib/seo/schema";
 import { getLocale } from "@/lib/i18n/server";
 import { Reveal } from "@/components/ui";
-import { WhatsAppButton } from "@/components/shared/whatsapp-button";
+import { LpWhatsAppButton } from "@/components/lp/lp-whatsapp-button";
 
 const PATH = "/lp/founder-story";
 const TITLE = "26 Years in Building Materials, 20 Years in Ghana — The Decoropic Founder Story";
@@ -45,7 +45,8 @@ const STORY_PROJECTS = [
   ["Trasacco Valley New Build", "Working alongside the architect from foundation, we shipped 3 containers across 4 months, coordinated 7 sub-trades, hit the move-in date."]
 ];
 
-const WA_MESSAGE = "Hi Kevin, I'm planning a villa renovation in Ghana and would like to talk.";
+const WA_MESSAGE = "Hi Kevin, I just read your founder story and I'd like to chat.";
+const BRIEF_URL = "https://decoropic.com/lp/villa-renovation-quote#lp-lead-form";
 const eyebrow = "text-brand-gold text-[0.78rem] font-bold uppercase tracking-[0.28em]";
 
 export default async function FounderStoryPage() {
@@ -85,7 +86,7 @@ export default async function FounderStoryPage() {
           </Reveal>
           <Reveal delay={480}>
             <div className="mt-10 flex flex-wrap items-center gap-4">
-              <WhatsAppButton message={WA_MESSAGE} label="Talk to Kevin Directly — WhatsApp" locale={locale} className="bg-brand-gold text-brand-pine-dark" />
+              <LpWhatsAppButton sourcePage={PATH} message={WA_MESSAGE} label="Talk to Kevin Directly — WhatsApp" />
               <Link href="#story" className="text-sm font-semibold text-brand-pine-dark underline-offset-4 hover:underline">
                 Read the full story below ↓
               </Link>
@@ -163,6 +164,12 @@ export default async function FounderStoryPage() {
               </Reveal>
             ))}
           </div>
+          <Reveal delay={560}>
+            <div className="mt-12 flex flex-col items-center gap-3 text-center">
+              <p className="text-brand-ink/70">Want to hear how this applies to your project?</p>
+              <LpWhatsAppButton sourcePage={PATH} message={WA_MESSAGE} />
+            </div>
+          </Reveal>
         </div>
       </section>
 
@@ -270,8 +277,8 @@ export default async function FounderStoryPage() {
           </Reveal>
           <Reveal delay={500}>
             <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
-              <WhatsAppButton message={WA_MESSAGE} label="WhatsApp Kevin Directly" locale={locale} className="bg-brand-gold text-brand-pine-dark" />
-              <Link href="/lp/villa-renovation-quote#lp-lead-form" className="rounded-full border border-brand-ivory/30 px-6 py-3 text-sm font-semibold text-brand-ivory transition-colors hover:bg-white/10">
+              <LpWhatsAppButton sourcePage={PATH} message={WA_MESSAGE} label="WhatsApp Kevin Directly" className="bg-brand-gold text-brand-pine-dark" />
+              <Link href={BRIEF_URL} className="rounded-full border border-brand-ivory/30 px-6 py-3 text-sm font-semibold text-brand-ivory transition-colors hover:bg-white/10">
                 Send a Project Brief
               </Link>
             </div>

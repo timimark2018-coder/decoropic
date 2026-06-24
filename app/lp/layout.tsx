@@ -18,7 +18,7 @@ export default async function LpLayout({ children }: Readonly<{ children: ReactN
         <div className="container-wide flex items-center justify-between py-4">
           <BrandLogo href="/" variant="header" locale={locale} />
           <Link
-            href="#lp-lead-form"
+            href="/lp/villa-renovation-quote#lp-estimator"
             className="hidden rounded-full bg-brand-gold px-5 py-2.5 text-sm font-semibold text-brand-pine-dark transition-transform hover:scale-[1.02] sm:inline-flex"
           >
             Get My Estimate
