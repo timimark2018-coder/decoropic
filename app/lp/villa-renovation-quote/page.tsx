@@ -8,6 +8,7 @@ import { EstimatorExperience } from "@/components/estimator/estimator-experience
 import { LpLeadForm } from "@/components/lp/lp-lead-form";
 import { LpStickyCta } from "@/components/lp/lp-sticky-cta";
 import { LpWhatsAppButton } from "@/components/lp/lp-whatsapp-button";
+import { LpCtaGroup } from "@/components/lp/lp-cta-group";
 
 const PATH = "/lp/villa-renovation-quote";
 const WA_MESSAGE = "Hi Kevin, I'm looking at the Decoropic villa estimator and I'd like to chat.";
@@ -102,7 +103,7 @@ const MINI_CASES = [
     no: "03",
     name: "Trasacco Penthouse Refit",
     spec: "Luxury · 380 m² · 3-bed · 16 weeks",
-    highlight: "Italian leather upholstery, full smart-home integration, pivot entrance door."
+    highlight: "Italian leather upholstery, full smart-home, pivot entrance door."
   }
 ];
 
@@ -171,14 +172,13 @@ export default async function VillaRenovationQuotePage() {
             </p>
           </Reveal>
           <Reveal delay={480}>
-            <div className="mt-10 flex flex-wrap items-center gap-4">
-              <Link
-                href="#lp-estimator"
-                className="inline-flex items-center justify-center rounded-full bg-brand-gold px-8 py-4 text-sm font-semibold text-brand-pine-dark shadow-card transition-transform hover:scale-[1.02]"
-              >
-                Get My Estimate — 90 Seconds
-              </Link>
-              <LpWhatsAppButton sourcePage={PATH} message={WA_MESSAGE} className="px-7 py-4" />
+            <div className="mt-10 flex flex-col gap-4">
+              <LpCtaGroup
+                sourcePage={PATH}
+                primaryLabel="Get My Estimate — 90 Seconds"
+                primaryHref="#lp-estimator"
+                whatsappMessage={WA_MESSAGE}
+              />
               <span className="text-sm text-brand-ink/60">No signup. No phone call. No commitment. Just clarity.</span>
             </div>
           </Reveal>
@@ -247,9 +247,12 @@ export default async function VillaRenovationQuotePage() {
           </div>
           <Reveal delay={680}>
             <div className="mt-10">
-              <Link href="#lp-estimator" className="inline-flex items-center justify-center rounded-full bg-brand-pine px-8 py-4 text-sm font-semibold text-white transition-transform hover:scale-[1.02]">
-                Find My Tier in 90 Seconds →
-              </Link>
+              <LpCtaGroup
+                sourcePage={PATH}
+                primaryLabel="Find My Tier in 90 Seconds →"
+                primaryHref="#lp-estimator"
+                whatsappMessage={WA_MESSAGE}
+              />
             </div>
           </Reveal>
         </div>
@@ -303,9 +306,16 @@ export default async function VillaRenovationQuotePage() {
             ))}
           </div>
           <Reveal delay={600}>
-            <div className="mt-12 flex flex-col items-center gap-3 border-t border-brand-gold/20 pt-10 text-center">
-              <p className="text-brand-ivory/80">Want a human read on your numbers?</p>
-              <LpWhatsAppButton sourcePage={PATH} message={WA_MESSAGE} label="Talk to a Project Lead on WhatsApp" className="bg-brand-gold text-brand-pine-dark" />
+            <div className="mt-12 flex flex-col items-center gap-4 border-t border-brand-gold/20 pt-10 text-center">
+              <p className="text-brand-ivory/80">Want to talk first?</p>
+              <LpCtaGroup
+                sourcePage={PATH}
+                primaryLabel="Get My Estimate"
+                primaryHref="#lp-estimator"
+                whatsappMessage={WA_MESSAGE}
+                whatsappLabel="Talk to a Project Lead"
+                onDark
+              />
             </div>
           </Reveal>
         </div>
@@ -494,9 +504,16 @@ export default async function VillaRenovationQuotePage() {
             </h2>
           </Reveal>
           <Reveal delay={120}>
-            <div className="mt-6 flex flex-col items-center gap-3 text-center">
-              <p className="text-brand-ivory/75">Prefer to talk first?</p>
-              <LpWhatsAppButton sourcePage={PATH} message={WA_MESSAGE} label="WhatsApp us" className="bg-brand-gold text-brand-pine-dark" />
+            <div className="mt-6 flex flex-col items-center gap-4 text-center">
+              <p className="text-brand-ivory/75">Prefer to talk before submitting?</p>
+              <LpCtaGroup
+                sourcePage={PATH}
+                primaryLabel="See My Estimate First"
+                primaryHref="#lp-estimator"
+                whatsappMessage={WA_MESSAGE}
+                whatsappLabel="WhatsApp us"
+                onDark
+              />
             </div>
           </Reveal>
           <Reveal delay={200}>
