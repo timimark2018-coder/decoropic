@@ -7,8 +7,11 @@ import { Reveal } from "@/components/ui";
 import { EstimatorExperience } from "@/components/estimator/estimator-experience";
 import { LpLeadForm } from "@/components/lp/lp-lead-form";
 import { LpStickyCta } from "@/components/lp/lp-sticky-cta";
+import { LpWhatsAppButton } from "@/components/lp/lp-whatsapp-button";
+import { LpCtaGroup } from "@/components/lp/lp-cta-group";
 
 const PATH = "/lp/villa-renovation-quote";
+const WA_MESSAGE = "Hi Kevin, I'm looking at the Decoropic villa estimator and I'd like to chat.";
 const TITLE = "Free Villa Renovation Budget Estimator (Ghana 2026)";
 const DESCRIPTION =
   "90-second free estimator showing which of 4 budget tiers (USD 20K–245K+) fits your Accra villa project, in real 2026 prices. No signup.";
@@ -83,6 +86,27 @@ const PROJECTS = [
   { title: "Airport Residential Apartment", meta: "2-bed · Functional Refresh · 140 m²", body: "Marble-look tile, fresh paint, ready-made furniture replacement. Delivered in 6 weeks." }
 ];
 
+const MINI_CASES = [
+  {
+    no: "01",
+    name: "Adjiringanor Family Villa",
+    spec: "Premium · 312 m² · 5-bed · 13 weeks",
+    highlight: "Marble-look porcelain throughout, custom kitchen, smart lighting integration."
+  },
+  {
+    no: "02",
+    name: "Airport Hills Modern Build",
+    spec: "Mid-Range · 240 m² · 4-bed · 11 weeks",
+    highlight: "Travertine slab feature wall, designer Italian sofa, walk-in pantry millwork."
+  },
+  {
+    no: "03",
+    name: "Trasacco Penthouse Refit",
+    spec: "Luxury · 380 m² · 3-bed · 16 weeks",
+    highlight: "Italian leather upholstery, full smart-home, pivot entrance door."
+  }
+];
+
 const VALUE_STACK = [
   "A written tier recommendation based on your brief — which of the 4 tiers fits, and why",
   "A realistic budget range for your specific project — a real low/high, not a generic figure",
@@ -148,13 +172,13 @@ export default async function VillaRenovationQuotePage() {
             </p>
           </Reveal>
           <Reveal delay={480}>
-            <div className="mt-10 flex flex-wrap items-center gap-4">
-              <Link
-                href="#lp-estimator"
-                className="inline-flex items-center justify-center rounded-full bg-brand-gold px-8 py-4 text-sm font-semibold text-brand-pine-dark shadow-card transition-transform hover:scale-[1.02]"
-              >
-                Get My Estimate — 90 Seconds
-              </Link>
+            <div className="mt-10 flex flex-col gap-4">
+              <LpCtaGroup
+                sourcePage={PATH}
+                primaryLabel="Get My Estimate — 90 Seconds"
+                primaryHref="#lp-estimator"
+                whatsappMessage={WA_MESSAGE}
+              />
               <span className="text-sm text-brand-ink/60">No signup. No phone call. No commitment. Just clarity.</span>
             </div>
           </Reveal>
@@ -223,9 +247,12 @@ export default async function VillaRenovationQuotePage() {
           </div>
           <Reveal delay={680}>
             <div className="mt-10">
-              <Link href="#lp-estimator" className="inline-flex items-center justify-center rounded-full bg-brand-pine px-8 py-4 text-sm font-semibold text-white transition-transform hover:scale-[1.02]">
-                Find My Tier in 90 Seconds →
-              </Link>
+              <LpCtaGroup
+                sourcePage={PATH}
+                primaryLabel="Find My Tier in 90 Seconds →"
+                primaryHref="#lp-estimator"
+                whatsappMessage={WA_MESSAGE}
+              />
             </div>
           </Reveal>
         </div>
@@ -278,6 +305,19 @@ export default async function VillaRenovationQuotePage() {
               </Reveal>
             ))}
           </div>
+          <Reveal delay={600}>
+            <div className="mt-12 flex flex-col items-center gap-4 border-t border-brand-gold/20 pt-10 text-center">
+              <p className="text-brand-ivory/80">Want to talk first?</p>
+              <LpCtaGroup
+                sourcePage={PATH}
+                primaryLabel="Get My Estimate"
+                primaryHref="#lp-estimator"
+                whatsappMessage={WA_MESSAGE}
+                whatsappLabel="Talk to a Project Lead"
+                onDark
+              />
+            </div>
+          </Reveal>
         </div>
       </section>
 
@@ -320,6 +360,45 @@ export default async function VillaRenovationQuotePage() {
               </Reveal>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* 07b MINI CASES */}
+      <section className="bg-brand-sand py-20 lg:py-24">
+        <div className="container-wide">
+          <Reveal>
+            <h2 className="text-brand-pine-dark" style={{ fontFamily: "var(--serif)", fontSize: "clamp(1.6rem, 3.5vw, 2.6rem)", fontWeight: 700, lineHeight: 1.1 }}>
+              More Projects, At a Glance
+            </h2>
+          </Reveal>
+          <div className="mt-10 grid gap-6 md:grid-cols-3">
+            {MINI_CASES.map((c, i) => (
+              <Reveal key={c.no} delay={180 + i * 120}>
+                <div className="h-full rounded-2xl border border-brand-line bg-white p-5 shadow-card">
+                  <div
+                    aria-hidden
+                    className="mb-4 grid aspect-[16/9] w-full place-items-center rounded-xl bg-brand-beige"
+                  >
+                    <span className="text-brand-gold/70" style={{ fontFamily: "var(--serif)", fontSize: "2.75rem", fontWeight: 800 }}>
+                      {c.no}
+                    </span>
+                  </div>
+                  <h3 className="text-brand-pine-dark" style={{ fontFamily: "var(--serif)", fontSize: "1.15rem", fontWeight: 700 }}>
+                    {c.name}
+                  </h3>
+                  <p className="mt-1 text-xs font-semibold uppercase tracking-wider text-brand-gold-deep">{c.spec}</p>
+                  <p className="mt-3 text-sm leading-6 text-brand-ink/75">{c.highlight}</p>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+          <Reveal delay={560}>
+            <div className="mt-10">
+              <Link href="/projects" className="inline-flex items-center gap-2 text-sm font-semibold text-brand-gold-deep underline-offset-4 hover:underline">
+                See full project portfolio →
+              </Link>
+            </div>
+          </Reveal>
         </div>
       </section>
 
@@ -383,6 +462,14 @@ export default async function VillaRenovationQuotePage() {
             </dl>
           </div>
         </div>
+        <div className="container-wide">
+          <Reveal>
+            <div className="mt-14 flex flex-col items-center gap-3 text-center">
+              <p className="text-brand-ink/70">Have a question before you submit?</p>
+              <LpWhatsAppButton sourcePage={PATH} message={WA_MESSAGE} label="Have a question? WhatsApp Kevin" />
+            </div>
+          </Reveal>
+        </div>
       </section>
 
       {/* 10 FAQ */}
@@ -416,6 +503,19 @@ export default async function VillaRenovationQuotePage() {
               Get Your Estimate — 90 Seconds, No Commitment
             </h2>
           </Reveal>
+          <Reveal delay={120}>
+            <div className="mt-6 flex flex-col items-center gap-4 text-center">
+              <p className="text-brand-ivory/75">Prefer to talk before submitting?</p>
+              <LpCtaGroup
+                sourcePage={PATH}
+                primaryLabel="See My Estimate First"
+                primaryHref="#lp-estimator"
+                whatsappMessage={WA_MESSAGE}
+                whatsappLabel="WhatsApp us"
+                onDark
+              />
+            </div>
+          </Reveal>
           <Reveal delay={200}>
             <div className="mt-10">
               <LpLeadForm sourcePage={PATH} locale={locale} variant="full" />
@@ -424,7 +524,7 @@ export default async function VillaRenovationQuotePage() {
         </div>
       </section>
 
-      <LpStickyCta sourcePage={PATH} locale={locale} />
+      <LpStickyCta sourcePage={PATH} locale={locale} whatsappMessage={WA_MESSAGE} />
     </>
   );
 }
