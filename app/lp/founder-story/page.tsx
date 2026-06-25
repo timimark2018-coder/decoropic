@@ -5,6 +5,9 @@ import { breadcrumbListSchema, organizationSchema, personSchema, webPageSchema }
 import { getLocale } from "@/lib/i18n/server";
 import { Reveal } from "@/components/ui";
 import { LpWhatsAppButton } from "@/components/lp/lp-whatsapp-button";
+import { LpCtaGroup } from "@/components/lp/lp-cta-group";
+
+const ESTIMATE_URL = "https://decoropic.com/lp/villa-renovation-quote#lp-estimator";
 
 const PATH = "/lp/founder-story";
 const TITLE = "26 Years in Building Materials, 20 Years in Ghana — The Decoropic Founder Story";
@@ -85,8 +88,14 @@ export default async function FounderStoryPage() {
             </p>
           </Reveal>
           <Reveal delay={480}>
-            <div className="mt-10 flex flex-wrap items-center gap-4">
-              <LpWhatsAppButton sourcePage={PATH} message={WA_MESSAGE} label="Talk to Kevin Directly — WhatsApp" />
+            <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:flex-wrap sm:items-center">
+              <LpCtaGroup
+                sourcePage={PATH}
+                primaryLabel="Get a Villa Estimate"
+                primaryHref={ESTIMATE_URL}
+                whatsappMessage={WA_MESSAGE}
+                whatsappLabel="Talk to Kevin Directly"
+              />
               <Link href="#story" className="text-sm font-semibold text-brand-pine-dark underline-offset-4 hover:underline">
                 Read the full story below ↓
               </Link>
@@ -276,11 +285,16 @@ export default async function FounderStoryPage() {
             <p className="mt-4 text-sm font-semibold text-brand-gold">— Kevin Lau</p>
           </Reveal>
           <Reveal delay={500}>
-            <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
-              <LpWhatsAppButton sourcePage={PATH} message={WA_MESSAGE} label="WhatsApp Kevin Directly" className="bg-brand-gold text-brand-pine-dark" />
-              <Link href={BRIEF_URL} className="rounded-full border border-brand-ivory/30 px-6 py-3 text-sm font-semibold text-brand-ivory transition-colors hover:bg-white/10">
-                Send a Project Brief
-              </Link>
+            <div className="mt-8 flex justify-center">
+              <LpCtaGroup
+                sourcePage={PATH}
+                primaryLabel="Send a Project Brief"
+                primaryHref={BRIEF_URL}
+                whatsappMessage={WA_MESSAGE}
+                whatsappLabel="WhatsApp Kevin"
+                onDark
+                className="sm:justify-center"
+              />
             </div>
           </Reveal>
         </div>

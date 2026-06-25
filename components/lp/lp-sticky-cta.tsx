@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { ChevronDown, ChevronUp, MessageCircle } from "lucide-react";
+import { Calculator, ChevronDown, ChevronUp, MessageCircle } from "lucide-react";
 import type { Locale } from "@/content/types";
 import { trackEvent } from "@/lib/analytics/gtag";
 import { pixelTrack } from "@/lib/analytics/meta-pixel";
@@ -15,8 +15,8 @@ type LpStickyCtaProps = {
   whatsappMessage?: string;
 };
 
-function scrollToForm() {
-  document.querySelector("#lp-lead-form")?.scrollIntoView({ behavior: "smooth", block: "center" });
+function scrollToEstimator() {
+  document.querySelector("#lp-estimator")?.scrollIntoView({ behavior: "smooth", block: "start" });
 }
 
 export function LpStickyCta({
@@ -34,24 +34,25 @@ export function LpStickyCta({
 
   return (
     <>
-      {/* Mobile: fixed bottom action bar — WhatsApp + scroll-to-form */}
-      <div className="fixed inset-x-0 bottom-0 z-40 flex gap-2 border-t border-brand-line/60 bg-brand-sand/95 p-3 backdrop-blur lg:hidden">
+      {/* Mobile: two circular FABs — gold estimator + dark-green WhatsApp */}
+      <div className="fixed bottom-5 right-5 z-40 flex items-center gap-3 lg:hidden">
         <a
           href={waHref}
           target="_blank"
           rel="noreferrer"
           onClick={trackWhatsApp}
           aria-label="Chat on WhatsApp"
-          className="inline-flex flex-none items-center justify-center rounded-full bg-brand-pine px-5 py-3.5 text-white"
+          className="grid h-14 w-14 place-items-center rounded-full bg-brand-pine-dark text-brand-sand shadow-card"
         >
-          <MessageCircle size={18} strokeWidth={1.8} />
+          <MessageCircle size={24} strokeWidth={1.8} />
         </a>
         <button
           type="button"
-          onClick={scrollToForm}
-          className="inline-flex flex-1 items-center justify-center rounded-full bg-brand-gold px-6 py-3.5 text-sm font-semibold text-brand-pine-dark shadow-card"
+          onClick={scrollToEstimator}
+          aria-label="Get my estimate"
+          className="grid h-14 w-14 place-items-center rounded-full bg-brand-gold text-brand-pine-dark shadow-card"
         >
-          Get My Estimate
+          <Calculator size={24} strokeWidth={1.8} />
         </button>
       </div>
 
@@ -71,16 +72,18 @@ export function LpStickyCta({
               No signup. No phone call. Just clarity — in 24 hours.
             </p>
             <LpLeadForm sourcePage={sourcePage} locale={locale} variant="compact" />
-            <a
-              href={waHref}
-              target="_blank"
-              rel="noreferrer"
-              onClick={trackWhatsApp}
-              className="mt-3 inline-flex w-full items-center justify-center gap-2 rounded-full bg-brand-pine px-5 py-2.5 text-sm font-semibold text-white"
-            >
-              <MessageCircle size={16} strokeWidth={1.8} />
-              Chat on WhatsApp
-            </a>
+            <div className="mt-3 flex justify-center">
+              <a
+                href={waHref}
+                target="_blank"
+                rel="noreferrer"
+                onClick={trackWhatsApp}
+                className="inline-flex items-center gap-1.5 text-sm font-semibold text-brand-pine underline-offset-2 hover:underline"
+              >
+                <MessageCircle size={16} strokeWidth={1.8} />
+                Prefer WhatsApp? Chat now
+              </a>
+            </div>
           </div>
         ) : null}
       </div>
