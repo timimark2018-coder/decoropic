@@ -4,9 +4,7 @@ import Link from "next/link";
 import { MessageCircle } from "lucide-react";
 import { trackEvent } from "@/lib/analytics/gtag";
 import { pixelTrack } from "@/lib/analytics/meta-pixel";
-
-// Single source of truth for the campaign WhatsApp line.
-const WA_NUMBER = "233531519347";
+import { WHATSAPP_NUMBER } from "@/lib/constants/contact";
 
 type LpWhatsAppButtonProps = {
   sourcePage: string;
@@ -21,7 +19,7 @@ export function LpWhatsAppButton({
   label = "Chat on WhatsApp",
   className = ""
 }: LpWhatsAppButtonProps) {
-  const href = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(message)}`;
+  const href = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
 
   return (
     <Link

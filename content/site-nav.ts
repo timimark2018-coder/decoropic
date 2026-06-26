@@ -3,7 +3,7 @@ import type { CtaLink, LocalizedText } from "@/content/types";
 export const siteNavContent = {
   mainNav: [
     { label: { en: "Home", zh: "首页" }, href: "/" },
-    { label: { en: "Solutions", zh: "解决方案" }, href: "/solutions" },
+    { label: { en: "Design", zh: "设计方案" }, href: "/solutions" },
     { label: { en: "Products", zh: "产品中心" }, href: "PRODUCT_CENTER" },
     { label: { en: "Projects", zh: "项目展示" }, href: "/projects" },
     { label: { en: "Local Services", zh: "本地服务" }, href: "/local-services" },

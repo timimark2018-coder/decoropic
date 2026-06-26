@@ -60,14 +60,14 @@ export function organizationSchema(locale: Locale = "en") {
         "@type": "ContactPoint",
         contactType: "sales",
         email: siteConfig.contactEmail,
-        telephone: "+233531519347",
+        telephone: "+8613392247649",
         availableLanguage: ["English", "Chinese"],
         areaServed: ["GH", "CN"]
       }
     ],
     areaServed: { "@type": "Country", name: "Ghana" },
     knowsLanguage: ["en", "zh", "en-GH"],
-    sameAs: [siteConfig.productCenterUrl]
+    sameAs: [siteConfig.productCenterUrl, "https://diy.decoropic.com"]
   };
 }
 

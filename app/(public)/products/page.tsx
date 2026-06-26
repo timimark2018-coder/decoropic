@@ -777,6 +777,32 @@ export default async function ProductsPage() {
       </section>
 
       {/* Final CTA — 深绿渐变 */}
+      {/* DESIGN CENTER CROSS-LINK */}
+      <section className="bg-[#efe7d9] py-14 border-t border-brand-gold/15">
+        <div className="container-wide flex flex-col items-center text-center gap-4 sm:flex-row sm:justify-between sm:text-left">
+          <div>
+            <p className="text-brand-gold mb-1" style={{ fontSize: "0.75rem", fontWeight: 700, letterSpacing: "0.28em", textTransform: "uppercase" }}>
+              DESIGN CENTER · DIY
+            </p>
+            <p className="text-brand-pine-dark" style={{ fontFamily: "var(--serif)", fontSize: "1.125rem", fontWeight: 600, lineHeight: 1.4 }}>
+              Looking for design inspiration?
+            </p>
+            <p className="text-brand-ink/60 mt-1" style={{ fontSize: "0.9rem" }}>
+              Curated styles, palettes and project briefs at our Design Center.
+            </p>
+          </div>
+          <a
+            href="https://diy.decoropic.com"
+            target="_blank"
+            rel="alternate"
+            className="shrink-0 inline-block border-2 border-brand-gold text-brand-pine-dark px-7 py-3 transition-colors hover:bg-brand-gold/10"
+            style={{ fontFamily: "var(--serif)", fontSize: "0.8125rem", letterSpacing: "0.16em", textTransform: "uppercase", fontWeight: 700 }}
+          >
+            Visit Design Center →
+          </a>
+        </div>
+      </section>
+
       <section
         className="relative overflow-hidden"
         style={{

@@ -78,6 +78,41 @@ export default async function SolutionsPage() {
         </div>
       </section>
 
+      {/* DESIGN CENTER BANNER */}
+      <section className="bg-brand-pine-dark py-16 lg:py-20">
+        <div className="container-wide max-w-[900px]">
+          <Reveal>
+            <p className="text-brand-gold mb-4" style={{ fontSize: "0.78rem", fontWeight: 700, letterSpacing: "0.28em", textTransform: "uppercase" }}>
+              DESIGN CENTER · DIY
+            </p>
+          </Reveal>
+          <Reveal delay={150}>
+            <h2
+              className="text-brand-ivory mb-4"
+              style={{ fontFamily: "var(--serif)", fontSize: "clamp(1.75rem, 3.5vw, 2.5rem)", fontWeight: 700, lineHeight: 1.15 }}
+            >
+              Looking for style inspiration?
+            </h2>
+          </Reveal>
+          <Reveal delay={280}>
+            <p className="text-brand-ivory/75 mb-8 max-w-[680px]" style={{ fontSize: "1.0625rem", lineHeight: 1.6 }}>
+              Browse curated design references and DIY ideas at our Design Center — a complete library of styles, palettes, and project briefs.
+            </p>
+          </Reveal>
+          <Reveal delay={420}>
+            <a
+              href="https://diy.decoropic.com"
+              target="_blank"
+              rel="alternate"
+              className="inline-block bg-brand-gold text-brand-pine-dark px-8 py-4 transition-colors hover:bg-brand-gold/90"
+              style={{ fontFamily: "var(--serif)", fontSize: "0.875rem", letterSpacing: "0.18em", textTransform: "uppercase", fontWeight: 700 }}
+            >
+              Visit Design Center →
+            </a>
+          </Reveal>
+        </div>
+      </section>
+
       {/* GRID INTRO + ASYMMETRIC LAYOUT */}
       <section className="bg-[#f7f3ec] py-24 lg:py-32">
         <div className="container-wide">
