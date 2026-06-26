@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { buildMetadata } from "@/lib/seo/metadata";
 import { breadcrumbListSchema, organizationSchema, personSchema, webPageSchema } from "@/lib/seo/schema";
@@ -43,9 +44,24 @@ const TEAM = [
 ];
 
 const STORY_PROJECTS = [
-  ["East Legon Villa", "Three brothers, one inherited family compound. We delivered three coordinated renovations over 18 months while keeping the family's design unity intact."],
-  ["Cantonments Penthouse", "A returning Ghanaian-American family wanted “feels like London but works for Accra.” Italian materials, Ghana-spec wiring, 9-week turnaround."],
-  ["Trasacco Valley New Build", "Working alongside the architect from foundation, we shipped 3 containers across 4 months, coordinated 7 sub-trades, hit the move-in date."]
+  {
+    title: "East Legon Villa",
+    body: "Three brothers, one inherited family compound. We delivered three coordinated renovations over 18 months while keeping the family's design unity intact.",
+    img: "/projects/01-east-legon-villa/exterior.webp",
+    alt: "East Legon villa exterior at golden hour — Decoropic project, Accra"
+  },
+  {
+    title: "Cantonments Penthouse",
+    body: "A returning Ghanaian-American family wanted “feels like London but works for Accra.” Italian materials, Ghana-spec wiring, 9-week turnaround.",
+    img: "/projects/02-cantonments-penthouse/exterior.webp",
+    alt: "Cantonments penthouse balcony with sea view — Decoropic project, Accra"
+  },
+  {
+    title: "Trasacco Valley New Build",
+    body: "Working alongside the architect from foundation, we shipped 3 containers across 4 months, coordinated 7 sub-trades, hit the move-in date.",
+    img: "/projects/07-trasacco-valley-new-build/exterior.webp",
+    alt: "Trasacco Valley new-build villa exterior — Decoropic project, Accra"
+  }
 ];
 
 const WA_MESSAGE = "Hi Kevin, I just read your founder story and I'd like to chat.";
@@ -251,14 +267,16 @@ export default async function FounderStoryPage() {
             </h2>
           </Reveal>
           <div className="mt-10 grid gap-6 md:grid-cols-3">
-            {STORY_PROJECTS.map(([title, body], i) => (
-              <Reveal key={title} delay={180 + i * 120}>
+            {STORY_PROJECTS.map((p, i) => (
+              <Reveal key={p.title} delay={180 + i * 120}>
                 <div className="h-full rounded-2xl border border-brand-line bg-white p-6 shadow-card">
-                  <div aria-hidden className="mb-5 aspect-[4/3] w-full rounded-xl bg-gradient-to-br from-brand-beige to-brand-mist" />
+                  <div className="relative mb-5 aspect-[4/3] w-full overflow-hidden rounded-xl bg-brand-beige">
+                    <Image src={p.img} alt={p.alt} fill sizes="(max-width: 768px) 100vw, 33vw" className="object-cover" />
+                  </div>
                   <h3 className="text-brand-pine-dark" style={{ fontFamily: "var(--serif)", fontSize: "1.25rem", fontWeight: 700 }}>
-                    {title}
+                    {p.title}
                   </h3>
-                  <p className="mt-3 text-sm leading-7 text-brand-ink/75">{body}</p>
+                  <p className="mt-3 text-sm leading-7 text-brand-ink/75">{p.body}</p>
                 </div>
               </Reveal>
             ))}
