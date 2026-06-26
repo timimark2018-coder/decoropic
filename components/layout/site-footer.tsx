@@ -90,6 +90,17 @@ export function SiteFooter({ locale }: SiteFooterProps) {
               <li className="text-brand-ivory/80">
                 {siteConfig.contactLocation}
               </li>
+              <li className="mt-4 border-t border-brand-ivory/10 pt-4">
+                <a
+                  href="https://diy.decoropic.com"
+                  target="_blank"
+                  rel="alternate"
+                  className="text-brand-gold/80 transition-colors hover:text-brand-gold text-xs tracking-wider uppercase"
+                  style={{ letterSpacing: "0.12em" }}
+                >
+                  Design Center →
+                </a>
+              </li>
             </ul>
           </div>
 

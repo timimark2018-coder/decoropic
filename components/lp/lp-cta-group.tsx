@@ -4,9 +4,7 @@ import Link from "next/link";
 import { MessageCircle } from "lucide-react";
 import { trackEvent } from "@/lib/analytics/gtag";
 import { pixelTrack } from "@/lib/analytics/meta-pixel";
-
-// Single source of truth for the campaign WhatsApp line.
-const WA_NUMBER = "233531519347";
+import { WHATSAPP_NUMBER } from "@/lib/constants/contact";
 
 type LpCtaGroupProps = {
   sourcePage: string;
@@ -33,7 +31,7 @@ export function LpCtaGroup({
   onDark = false,
   className = ""
 }: LpCtaGroupProps) {
-  const waHref = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(whatsappMessage)}`;
+  const waHref = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(whatsappMessage)}`;
 
   return (
     <div className={`flex flex-col gap-3 sm:flex-row ${className}`}>

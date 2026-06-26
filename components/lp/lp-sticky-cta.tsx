@@ -6,8 +6,7 @@ import type { Locale } from "@/content/types";
 import { trackEvent } from "@/lib/analytics/gtag";
 import { pixelTrack } from "@/lib/analytics/meta-pixel";
 import { LpLeadForm } from "./lp-lead-form";
-
-const WA_NUMBER = "233531519347";
+import { WHATSAPP_NUMBER } from "@/lib/constants/contact";
 
 type LpStickyCtaProps = {
   sourcePage: string;
@@ -25,7 +24,7 @@ export function LpStickyCta({
   whatsappMessage = "Hi Kevin, I'm looking at the Decoropic villa estimator and I'd like to chat."
 }: LpStickyCtaProps) {
   const [open, setOpen] = useState(true);
-  const waHref = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(whatsappMessage)}`;
+  const waHref = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(whatsappMessage)}`;
 
   function trackWhatsApp() {
     trackEvent("whatsapp_click", { source_page: sourcePage });

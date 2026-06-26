@@ -26,9 +26,9 @@ export const contactContent = {
     title: { en: "Three ways to reach us.", zh: "三种方式联系我们。" },
     whatsapp: {
       title: { en: "WhatsApp", zh: "WhatsApp" },
-      value: "+233 53 151 9347",
-      note: { en: "Mon–Sat, 9:00–18:00 GMT", zh: "周一至周六，9:00–18:00 GMT" },
-      href: "https://wa.me/233531519347"
+      value: "+86 133 9224 7649",
+      note: { en: "Mon–Sat, 9:00–18:00 GMT+8", zh: "周一至周六，9:00–18:00 GMT+8" },
+      href: "https://wa.me/8613392247649"
     },
     email: {
       title: { en: "Email", zh: "邮箱" },
