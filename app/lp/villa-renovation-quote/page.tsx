@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { buildMetadata } from "@/lib/seo/metadata";
 import { breadcrumbListSchema, faqPageSchema, webPageSchema } from "@/lib/seo/schema";
@@ -81,9 +82,27 @@ const NUMBERS = [
 ];
 
 const PROJECTS = [
-  { title: "East Legon Villa", meta: "4-bed · Premium · 487 m²", body: "Marble-look porcelain feature wall, custom kitchen with Italian millwork, brass linear pendant in stairwell. Delivered in 14 weeks." },
-  { title: "Cantonments Penthouse", meta: "3-bed · Mid-Range · 220 m²", body: "Travertine porcelain throughout, wall-hung sanitary, designer Italian sofa. Delivered in 11 weeks." },
-  { title: "Airport Residential Apartment", meta: "2-bed · Functional Refresh · 140 m²", body: "Marble-look tile, fresh paint, ready-made furniture replacement. Delivered in 6 weeks." }
+  {
+    title: "East Legon Villa",
+    meta: "4-bed · Premium · 487 m²",
+    body: "Marble-look porcelain feature wall, custom kitchen with Italian millwork, brass linear pendant in stairwell. Delivered in 14 weeks.",
+    img: "/projects/01-east-legon-villa/living-room.webp",
+    alt: "East Legon villa living room — Decoropic Premium tier project, Accra, 4-bed 487 m²"
+  },
+  {
+    title: "Cantonments Penthouse",
+    meta: "3-bed · Mid-Range · 220 m²",
+    body: "Travertine porcelain throughout, wall-hung sanitary, designer Italian sofa. Delivered in 11 weeks.",
+    img: "/projects/02-cantonments-penthouse/open-plan-living.webp",
+    alt: "Cantonments penthouse open-plan living — Decoropic Mid-Range tier project, Accra, 3-bed 220 m²"
+  },
+  {
+    title: "Airport Residential Apartment",
+    meta: "2-bed · Functional Refresh · 140 m²",
+    body: "Marble-look tile, fresh paint, ready-made furniture replacement. Delivered in 6 weeks.",
+    img: "/projects/03-airport-residential-apt/living-room.webp",
+    alt: "Airport Residential apartment living room — Decoropic Functional Refresh project, Accra, 2-bed 140 m²"
+  }
 ];
 
 const MINI_CASES = [
@@ -91,19 +110,25 @@ const MINI_CASES = [
     no: "01",
     name: "Adjiringanor Family Villa",
     spec: "Premium · 312 m² · 5-bed · 13 weeks",
-    highlight: "Marble-look porcelain throughout, custom kitchen, smart lighting integration."
+    highlight: "Marble-look porcelain throughout, custom kitchen, smart lighting integration.",
+    img: "/projects/04-adjiringanor-family-villa/exterior.webp",
+    alt: "Adjiringanor family villa exterior — Decoropic Premium tier project, Accra, 5-bed 312 m²"
   },
   {
     no: "02",
     name: "Airport Hills Modern Build",
     spec: "Mid-Range · 240 m² · 4-bed · 11 weeks",
-    highlight: "Travertine slab feature wall, designer Italian sofa, walk-in pantry millwork."
+    highlight: "Travertine slab feature wall, designer Italian sofa, walk-in pantry millwork.",
+    img: "/projects/05-airport-hills-modern-build/exterior.webp",
+    alt: "Airport Hills modern build exterior — Decoropic Mid-Range tier project, Accra, 4-bed 240 m²"
   },
   {
     no: "03",
     name: "Trasacco Penthouse Refit",
     spec: "Luxury · 380 m² · 3-bed · 16 weeks",
-    highlight: "Italian leather upholstery, full smart-home, pivot entrance door."
+    highlight: "Italian leather upholstery, full smart-home, pivot entrance door.",
+    img: "/projects/06-trasacco-penthouse-refit/exterior-entry-door.webp",
+    alt: "Trasacco penthouse refit pivot entrance door — Decoropic Luxury tier project, Accra, 3-bed 380 m²"
   }
 ];
 
@@ -350,7 +375,9 @@ export default async function VillaRenovationQuotePage() {
             {PROJECTS.map((p, i) => (
               <Reveal key={p.title} delay={200 + i * 120}>
                 <div className="h-full rounded-2xl border border-brand-line bg-white p-6 shadow-card">
-                  <div aria-hidden className="mb-5 aspect-[4/3] w-full rounded-xl bg-gradient-to-br from-brand-beige to-brand-mist" />
+                  <div className="relative mb-5 aspect-[4/3] w-full overflow-hidden rounded-xl bg-brand-beige">
+                    <Image src={p.img} alt={p.alt} fill sizes="(max-width: 768px) 100vw, 33vw" className="object-cover" />
+                  </div>
                   <h3 className="text-brand-pine-dark" style={{ fontFamily: "var(--serif)", fontSize: "1.25rem", fontWeight: 700 }}>
                     {p.title}
                   </h3>
@@ -375,11 +402,12 @@ export default async function VillaRenovationQuotePage() {
             {MINI_CASES.map((c, i) => (
               <Reveal key={c.no} delay={180 + i * 120}>
                 <div className="h-full rounded-2xl border border-brand-line bg-white p-5 shadow-card">
-                  <div
-                    aria-hidden
-                    className="mb-4 grid aspect-[16/9] w-full place-items-center rounded-xl bg-brand-beige"
-                  >
-                    <span className="text-brand-gold/70" style={{ fontFamily: "var(--serif)", fontSize: "2.75rem", fontWeight: 800 }}>
+                  <div className="relative mb-4 aspect-[16/9] w-full overflow-hidden rounded-xl bg-brand-beige">
+                    <Image src={c.img} alt={c.alt} fill sizes="(max-width: 768px) 100vw, 33vw" className="object-cover" />
+                    <span
+                      className="absolute left-2 top-2 rounded-md bg-brand-pine-dark/70 px-2 text-brand-sand"
+                      style={{ fontFamily: "var(--serif)", fontSize: "1rem", fontWeight: 800 }}
+                    >
                       {c.no}
                     </span>
                   </div>
