@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import Link from "next/link";
 import { buildMetadata } from "@/lib/seo/metadata";
 import { breadcrumbListSchema, faqPageSchema, webPageSchema } from "@/lib/seo/schema";
 import { getLocale } from "@/lib/i18n/server";
@@ -383,6 +382,16 @@ export default async function VillaRenovationQuotePage() {
                   </h3>
                   <p className="mt-1 text-xs font-semibold uppercase tracking-wider text-brand-gold-deep">{p.meta}</p>
                   <p className="mt-3 text-sm leading-7 text-brand-ink/75">{p.body}</p>
+                  <div className="mt-4 flex justify-end">
+                    <a
+                      href="https://diy.decoropic.com"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="inline-flex items-center gap-1 text-sm font-semibold text-brand-gold-deep underline-offset-4 hover:underline"
+                    >
+                      diy.decoropic.com →
+                    </a>
+                  </div>
                 </div>
               </Reveal>
             ))}
@@ -416,15 +425,25 @@ export default async function VillaRenovationQuotePage() {
                   </h3>
                   <p className="mt-1 text-xs font-semibold uppercase tracking-wider text-brand-gold-deep">{c.spec}</p>
                   <p className="mt-3 text-sm leading-6 text-brand-ink/75">{c.highlight}</p>
+                  <div className="mt-4 flex justify-end">
+                    <a
+                      href="https://diy.decoropic.com"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="inline-flex items-center gap-1 text-sm font-semibold text-brand-gold-deep underline-offset-4 hover:underline"
+                    >
+                      diy.decoropic.com →
+                    </a>
+                  </div>
                 </div>
               </Reveal>
             ))}
           </div>
           <Reveal delay={560}>
             <div className="mt-10">
-              <Link href="/projects" className="inline-flex items-center gap-2 text-sm font-semibold text-brand-gold-deep underline-offset-4 hover:underline">
+              <a href="https://diy.decoropic.com" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 text-sm font-semibold text-brand-gold-deep underline-offset-4 hover:underline">
                 See full project portfolio →
-              </Link>
+              </a>
             </div>
           </Reveal>
         </div>
