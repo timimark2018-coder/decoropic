@@ -6,7 +6,7 @@ import type { Locale } from "@/content/types";
 import { trackEvent } from "@/lib/analytics/gtag";
 import { pixelTrack } from "@/lib/analytics/meta-pixel";
 import { LpLeadForm } from "./lp-lead-form";
-import { WHATSAPP_NUMBER } from "@/lib/constants/contact";
+import { WHATSAPP_LINK } from "@/lib/constants/contact";
 
 type LpStickyCtaProps = {
   sourcePage: string;
@@ -24,7 +24,7 @@ export function LpStickyCta({
   whatsappMessage = "Hi Kevin, I'm looking at the Decoropic villa estimator and I'd like to chat."
 }: LpStickyCtaProps) {
   const [open, setOpen] = useState(true);
-  const waHref = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(whatsappMessage)}`;
+  const waHref = WHATSAPP_LINK(whatsappMessage);
 
   function trackWhatsApp() {
     trackEvent("whatsapp_click", { source_page: sourcePage });
@@ -38,7 +38,7 @@ export function LpStickyCta({
         <a
           href={waHref}
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
           onClick={trackWhatsApp}
           aria-label="Chat on WhatsApp"
           className="grid h-14 w-14 place-items-center rounded-full bg-brand-pine-dark text-brand-sand shadow-card"
@@ -75,7 +75,7 @@ export function LpStickyCta({
               <a
                 href={waHref}
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 onClick={trackWhatsApp}
                 className="inline-flex items-center gap-1.5 text-sm font-semibold text-brand-pine underline-offset-2 hover:underline"
               >

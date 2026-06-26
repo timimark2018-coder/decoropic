@@ -1,10 +1,9 @@
 "use client";
 
-import Link from "next/link";
 import { MessageCircle } from "lucide-react";
 import { trackEvent } from "@/lib/analytics/gtag";
 import { pixelTrack } from "@/lib/analytics/meta-pixel";
-import { WHATSAPP_NUMBER } from "@/lib/constants/contact";
+import { WHATSAPP_LINK } from "@/lib/constants/contact";
 
 type LpWhatsAppButtonProps = {
   sourcePage: string;
@@ -19,13 +18,13 @@ export function LpWhatsAppButton({
   label = "Chat on WhatsApp",
   className = ""
 }: LpWhatsAppButtonProps) {
-  const href = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+  const href = WHATSAPP_LINK(message);
 
   return (
-    <Link
+    <a
       href={href}
       target="_blank"
-      rel="noreferrer"
+      rel="noopener noreferrer"
       onClick={() => {
         trackEvent("whatsapp_click", { source_page: sourcePage });
         pixelTrack("Contact", { source_page: sourcePage });
@@ -34,6 +33,6 @@ export function LpWhatsAppButton({
     >
       <MessageCircle size={18} strokeWidth={1.8} />
       {label}
-    </Link>
+    </a>
   );
 }
