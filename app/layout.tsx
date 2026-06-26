@@ -75,7 +75,7 @@ export default async function RootLayout({ children }: Readonly<{ children: Reac
         <MetaPixel />
         {children}
         <CookieConsentBanner locale={locale} />
-        {/* Deco Bot chat widget — hosted on bot.decoropic.com (WebSocket gateway) */}
+        {/* TODO: Deco Bot 浮窗暂时下线（2026-06）。如需恢复，取消下面注释即可。
         <Script
           src="https://bot.decoropic.com/widget.js"
           strategy="afterInteractive"
@@ -85,6 +85,7 @@ export default async function RootLayout({ children }: Readonly<{ children: Reac
           data-ga=""
           data-pixel=""
         />
+        */}
       </body>
     </html>
   );
