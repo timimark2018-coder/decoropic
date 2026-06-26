@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import Link from "next/link";
 import { buildMetadata } from "@/lib/seo/metadata";
 import { breadcrumbListSchema, faqPageSchema, webPageSchema } from "@/lib/seo/schema";
 import { getLocale } from "@/lib/i18n/server";
@@ -367,9 +366,19 @@ export default async function VillaRenovationQuotePage() {
       <section className="bg-[#f7f3ec] py-20 lg:py-28">
         <div className="container-wide">
           <Reveal>
-            <h2 className="text-brand-pine-dark" style={{ fontFamily: "var(--serif)", fontSize: "clamp(1.875rem, 4vw, 3rem)", fontWeight: 700, lineHeight: 1.1 }}>
-              Projects Like Yours
-            </h2>
+            <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+              <h2 className="text-brand-pine-dark" style={{ fontFamily: "var(--serif)", fontSize: "clamp(1.875rem, 4vw, 3rem)", fontWeight: 700, lineHeight: 1.1 }}>
+                Projects Like Yours
+              </h2>
+              <a
+                href="https://diy.decoropic.com"
+                target="_blank"
+                rel="alternate"
+                className="shrink-0 text-[0.95rem] font-semibold text-brand-gold-deep underline-offset-4 hover:underline"
+              >
+                Explore design styles →
+              </a>
+            </div>
           </Reveal>
           <div className="mt-12 grid gap-6 md:grid-cols-3">
             {PROJECTS.map((p, i) => (
@@ -394,9 +403,19 @@ export default async function VillaRenovationQuotePage() {
       <section className="bg-brand-sand py-20 lg:py-24">
         <div className="container-wide">
           <Reveal>
-            <h2 className="text-brand-pine-dark" style={{ fontFamily: "var(--serif)", fontSize: "clamp(1.6rem, 3.5vw, 2.6rem)", fontWeight: 700, lineHeight: 1.1 }}>
-              More Projects, At a Glance
-            </h2>
+            <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+              <h2 className="text-brand-pine-dark" style={{ fontFamily: "var(--serif)", fontSize: "clamp(1.6rem, 3.5vw, 2.6rem)", fontWeight: 700, lineHeight: 1.1 }}>
+                More Projects, At a Glance
+              </h2>
+              <a
+                href="https://diy.decoropic.com"
+                target="_blank"
+                rel="alternate"
+                className="shrink-0 text-[0.95rem] font-semibold text-brand-gold-deep underline-offset-4 hover:underline"
+              >
+                More design references →
+              </a>
+            </div>
           </Reveal>
           <div className="mt-10 grid gap-6 md:grid-cols-3">
             {MINI_CASES.map((c, i) => (
@@ -422,9 +441,14 @@ export default async function VillaRenovationQuotePage() {
           </div>
           <Reveal delay={560}>
             <div className="mt-10">
-              <Link href="/projects" className="inline-flex items-center gap-2 text-sm font-semibold text-brand-gold-deep underline-offset-4 hover:underline">
-                See full project portfolio →
-              </Link>
+              <a
+                href="https://diy.decoropic.com"
+                target="_blank"
+                rel="alternate"
+                className="inline-flex items-center gap-2 text-sm font-semibold text-brand-gold-deep underline-offset-4 hover:underline"
+              >
+                Explore the Design Center →
+              </a>
             </div>
           </Reveal>
         </div>

@@ -4,7 +4,7 @@ import Link from "next/link";
 import { MessageCircle } from "lucide-react";
 import { trackEvent } from "@/lib/analytics/gtag";
 import { pixelTrack } from "@/lib/analytics/meta-pixel";
-import { WHATSAPP_NUMBER } from "@/lib/constants/contact";
+import { WHATSAPP_LINK } from "@/lib/constants/contact";
 
 type LpCtaGroupProps = {
   sourcePage: string;
@@ -31,7 +31,7 @@ export function LpCtaGroup({
   onDark = false,
   className = ""
 }: LpCtaGroupProps) {
-  const waHref = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(whatsappMessage)}`;
+  const waHref = WHATSAPP_LINK(whatsappMessage);
 
   return (
     <div className={`flex flex-col gap-3 sm:flex-row ${className}`}>
@@ -44,7 +44,7 @@ export function LpCtaGroup({
       <a
         href={waHref}
         target="_blank"
-        rel="noreferrer"
+        rel="noopener noreferrer"
         onClick={() => {
           trackEvent("whatsapp_click", { source_page: sourcePage });
           pixelTrack("Contact", { source_page: sourcePage });
