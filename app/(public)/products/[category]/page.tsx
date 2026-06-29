@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import { buildMetadata } from "@/lib/seo/metadata";
 import { faqPageSchema } from "@/lib/seo/schema";
@@ -37,6 +38,34 @@ type CategoryData = {
   applications: string[];
   archive: { count: string; url: string };
   faq?: Array<{ question: string; answer: string }>;
+};
+
+const RELATED_CATEGORIES: Record<CategorySlug, Array<{ slug: CategorySlug; label: string }>> = {
+  "tiles-flooring": [
+    { slug: "bathroom-kitchen", label: "Bathroom & Kitchen" },
+    { slug: "doors-windows", label: "Doors & Windows" },
+    { slug: "lights-lighting", label: "Lights & Lighting" }
+  ],
+  "furniture": [
+    { slug: "lights-lighting", label: "Lights & Lighting" },
+    { slug: "tiles-flooring", label: "Tiles & Flooring" },
+    { slug: "bathroom-kitchen", label: "Bathroom & Kitchen" }
+  ],
+  "bathroom-kitchen": [
+    { slug: "tiles-flooring", label: "Tiles & Flooring" },
+    { slug: "doors-windows", label: "Doors & Windows" },
+    { slug: "furniture", label: "Furniture" }
+  ],
+  "lights-lighting": [
+    { slug: "furniture", label: "Furniture" },
+    { slug: "tiles-flooring", label: "Tiles & Flooring" },
+    { slug: "bathroom-kitchen", label: "Bathroom & Kitchen" }
+  ],
+  "doors-windows": [
+    { slug: "tiles-flooring", label: "Tiles & Flooring" },
+    { slug: "bathroom-kitchen", label: "Bathroom & Kitchen" },
+    { slug: "lights-lighting", label: "Lights & Lighting" }
+  ]
 };
 
 async function getCategoryData(slug: string): Promise<CategoryData | null> {
@@ -79,6 +108,7 @@ export default async function CategoryPage({
   if (!data) notFound();
 
   const baseUrl = siteConfig.siteUrl;
+  const relatedCategories = RELATED_CATEGORIES[data.slug as CategorySlug] ?? [];
 
   const breadcrumbSchema = {
     "@context": "https://schema.org",
@@ -134,6 +164,30 @@ export default async function CategoryPage({
                   </div>
                 ))}
               </dl>
+            </div>
+          </section>
+        )}
+        {relatedCategories.length > 0 && (
+          <section className="bg-brand-pine-dark/5 py-12 lg:py-16">
+            <div className="container-wide max-w-[860px]">
+              <p
+                className="text-brand-gold mb-6"
+                style={{ fontSize: "0.78rem", fontWeight: 700, letterSpacing: "0.28em", textTransform: "uppercase" }}
+              >
+                Related Categories
+              </p>
+              <ul className="flex flex-wrap gap-3">
+                {relatedCategories.map(({ slug, label }) => (
+                  <li key={slug}>
+                    <Link
+                      href={`/products/${slug}`}
+                      className="inline-block rounded border border-brand-pine-dark/20 bg-white px-5 py-2.5 text-sm font-medium text-brand-pine-dark transition-colors hover:bg-brand-pine-dark hover:text-brand-ivory"
+                    >
+                      {label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
             </div>
           </section>
         )}

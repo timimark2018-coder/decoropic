@@ -8,11 +8,17 @@ type SiteFooterProps = {
   locale: Locale;
 };
 
-// Footer Editorial v3.0 (Battle 7 Phase 2.5)
-// 4 等列简洁布局：Brand / Navigate / Reach out / Trust
-// 删除：双 wave 装饰 + 巨型 Decoropic 水印 + mt-20 大间距
-// 保留：深墨绿底 + Playfair serif + 金色 eyebrow（Editorial 调性核心）
-// 目标高度：380-420px（之前 ~680px）
+const PRODUCT_CATEGORIES = [
+  { slug: "tiles-flooring", en: "Tiles & Flooring", zh: "瓷砖·地板" },
+  { slug: "furniture", en: "Furniture", zh: "家具" },
+  { slug: "bathroom-kitchen", en: "Bathroom & Kitchen", zh: "卫浴·厨房" },
+  { slug: "lights-lighting", en: "Lights & Lighting", zh: "灯具·照明" },
+  { slug: "doors-windows", en: "Doors & Windows", zh: "门窗" }
+];
+
+// Footer Editorial v3.1 (SSR product links)
+// 5 等列: Brand / Navigate / Products / Reach out / Trust
+// Products column added for crawlable SSR links to all 5 category pages
 export function SiteFooter({ locale }: SiteFooterProps) {
   const eyebrowStyle = {
     fontSize: "0.7rem",
@@ -24,8 +30,7 @@ export function SiteFooter({ locale }: SiteFooterProps) {
   return (
     <footer className="bg-brand-pine-dark text-brand-ivory">
       <div className="container-wide pt-16 pb-8 lg:pt-20">
-        {/* 4 等列网格 */}
-        <div className="mb-12 grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-4 lg:gap-12">
+        <div className="mb-12 grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-5 lg:gap-8">
 
           {/* Col 1 — Brand */}
           <div>
@@ -65,7 +70,26 @@ export function SiteFooter({ locale }: SiteFooterProps) {
             </ul>
           </nav>
 
-          {/* Col 3 — Reach out */}
+          {/* Col 3 — Products */}
+          <nav aria-label={locale === "zh" ? "产品品类" : "Products"}>
+            <p className="text-brand-gold mb-3" style={eyebrowStyle}>
+              {locale === "zh" ? "产品品类" : "Products"}
+            </p>
+            <ul className="space-y-2.5">
+              {PRODUCT_CATEGORIES.map((cat) => (
+                <li key={cat.slug}>
+                  <Link
+                    href={`/products/${cat.slug}`}
+                    className="text-sm text-brand-ivory/80 transition-colors hover:text-brand-gold"
+                  >
+                    {locale === "zh" ? cat.zh : cat.en}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
+
+          {/* Col 4 — Reach out */}
           <div>
             <p className="text-brand-gold mb-3" style={eyebrowStyle}>
               {locale === "zh" ? "联系" : "Reach out"}
@@ -104,7 +128,7 @@ export function SiteFooter({ locale }: SiteFooterProps) {
             </ul>
           </div>
 
-          {/* Col 4 — Trust */}
+          {/* Col 5 — Trust */}
           <div>
             <p className="text-brand-gold mb-3" style={eyebrowStyle}>
               {locale === "zh" ? "信任背书" : "Trust"}
