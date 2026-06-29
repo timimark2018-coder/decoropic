@@ -310,7 +310,7 @@ export const productsContent: ProductsContent = {
         reasonEn: "Up to 1.5 × 3 metres in a single piece. The fewest grout lines, the strongest visual continuity. We specify it for villas, hotel lobbies, and any space where the floor and the wall should speak the same language.",
         reasonZh: "单板尺寸最大可达 1.5 × 3 米。缝隙最少，视觉延续最强。我们为别墅、酒店大堂、以及任何\"地面与墙面要说同一种语言\"的空间，推荐岩板作为基底材料。",
         imageSrc: "/images/products/porcelain-slab.jpg",
-        catalogUrl: "https://www.decolovely.com/product-category/wall-flooring/tiles/porcelain-slab/"
+        catalogUrl: "/products/tiles-flooring"
       },
       {
         slug: "wall-hung-toilet",
@@ -320,7 +320,7 @@ export const productsContent: ProductsContent = {
         reasonEn: "Tank concealed in the wall. Bowl floats above the floor. The quietest flush, the easiest to clean, and the cleanest visual line. Standard fitting in modern hotels and high-end residences across Europe.",
         reasonZh: "水箱嵌入墙内，便器悬空。冲水最静音，清洁最容易，视觉线条最干净。这是欧洲现代酒店和高端住宅的标配。",
         imageSrc: "/images/products/wall-hung-toilet.jpg",
-        catalogUrl: "https://www.decolovely.com/product-category/bathroom-kitchen/toilets/wall-mounted-toilet/"
+        catalogUrl: "/products/bathroom-kitchen"
       },
       {
         slug: "kitchen-cabinet",
@@ -330,7 +330,7 @@ export const productsContent: ProductsContent = {
         reasonEn: "Modular German framework. Integrated appliances. Soft-close drawers. Handleless fronts. We design the kitchen around how you actually cook — not around what catalogs sell.",
         reasonZh: "模块化德式框架。嵌入式电器。缓冲抽屉。无把手柜门。我们围绕你\"真实的烹饪方式\"设计厨房，而不是围绕\"目录推销\"。",
         imageSrc: "/images/products/kitchen-cabinet.jpg",
-        catalogUrl: "https://www.decolovely.com/product-category/bathroom-kitchen/kitchen/"
+        catalogUrl: "/products/bathroom-kitchen"
       }
     ]
   },

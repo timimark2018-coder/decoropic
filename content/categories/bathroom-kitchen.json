@@ -76,5 +76,19 @@
   "archive": {
     "count": "353 SKUs",
     "url": "https://www.decolovely.com/product-category/bathroom-kitchen/"
-  }
+  },
+  "faq": [
+    {
+      "question": "What bathroom products do you supply for villa projects in Ghana?",
+      "answer": "We supply complete bathroom systems: vanity units with artificial stone tops and smart LED mirrors, 2-person hydro-massage tubs, and walk-in shower enclosures — all sourced to EU specifications and tested against Accra Ghana Water Company supply pressure."
+    },
+    {
+      "question": "Are your bathroom fittings compatible with Ghana's plumbing standards?",
+      "answer": "We supply to both UK and EU fitting standards. Our team cross-checks fitting compatibility against your house drawings before finalising any order — no on-site surprises. Replacement parts are pre-stocked in Accra for every system we sell."
+    },
+    {
+      "question": "Can you supply a complete bathroom package for an Accra villa?",
+      "answer": "Yes. We provide full-bathroom packages — vanity, sanitary ware, tub or shower enclosure, and accessories — as a single coordinated sourcing order. This is our standard delivery model for Accra villa and hotel bathroom fit-outs."
+    }
+  ]
 }

@@ -76,5 +76,19 @@
   "archive": {
     "count": "179 SKUs",
     "url": "https://www.decolovely.com/product-category/wall-flooring/tiles/"
-  }
+  },
+  "faq": [
+    {
+      "question": "What types of tiles do you supply for projects in Ghana?",
+      "answer": "We supply large-format porcelain slabs (1200×2700 mm), marble-look stone tiles, and 90×180 cm format tiles — sourced direct from Foshan factories and shipped to Tema port. Every SKU has been used on a real Decoropic project in Accra or Ghana."
+    },
+    {
+      "question": "How are imported tiles priced for projects in Accra?",
+      "answer": "Pricing runs from $30/m² for standard porcelain to $120/m² for large-format Supreme Slabs, quoted FOB Foshan. Decoropic handles container shipping, customs clearance at Tema, and last-mile delivery to Accra. Request a quote with your floor plan for a project estimate."
+    },
+    {
+      "question": "Can you supply enough tiles for a full villa in Ghana?",
+      "answer": "Yes — full-villa tile packages covering living areas, bedrooms, bathrooms, and outdoor terraces are our standard order size. We coordinate a single bill of materials, one container, and one shipment direct to your Accra or regional project site."
+    }
+  ]
 }

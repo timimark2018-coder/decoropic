@@ -76,5 +76,19 @@
   "archive": {
     "count": "202 SKUs",
     "url": "https://www.decolovely.com/product-category/lights-lighting/"
-  }
+  },
+  "faq": [
+    {
+      "question": "What lighting do you supply for villas and hotels in Ghana?",
+      "answer": "We supply crystal chandeliers for stairwells, halls, and dining features; ambient ceiling lights; and outdoor feature lighting — all specified at 220–230V for Ghana's mains supply and selected for performance in tropical humidity conditions."
+    },
+    {
+      "question": "Are your chandeliers compatible with Ghana's 220V power supply?",
+      "answer": "Yes — all lighting is specified and tested at 220–230V / 50 Hz, which matches Ghana's mains standard. We advise on surge protection given the voltage fluctuation common on the Accra grid, and all wiring is certified for export."
+    },
+    {
+      "question": "How do crystal chandeliers arrive undamaged to Accra?",
+      "answer": "Each chandelier is factory-packed per piece in foam-lined crating with impact indicators. Decoropic handles export documentation, Tema port customs clearance, and last-mile delivery to your project site as standard."
+    }
+  ]
 }

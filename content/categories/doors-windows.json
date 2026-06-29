@@ -76,5 +76,19 @@
   "archive": {
     "count": "260 SKUs",
     "url": "https://www.decolovely.com/product-category/door-windows/"
-  }
+  },
+  "faq": [
+    {
+      "question": "What door and window systems do you supply for Ghana villas?",
+      "answer": "We supply 3000 mm aluminum sliding patio doors, folding doors, and cast aluminum pivot entrance doors — all with profiles and gaskets sealed against the salt-air corrosion typical of Accra and Tema coastal conditions."
+    },
+    {
+      "question": "How do aluminium doors perform in Ghana's coastal climate?",
+      "answer": "Powder-coated or anodized aluminum is the standard for Ghana's coastal environment. All frames are sealed against salt-air corrosion. Hardware — hinges, locks, and pivot mechanisms — is marine-grade, rated for 20+ years of daily use."
+    },
+    {
+      "question": "Can you supply oversized pivot entrance doors for an Accra villa?",
+      "answer": "Yes. We supply cast aluminum pivot entrance doors up to 3500 mm height — a standard specification on East Legon and Cantonments villa projects. Factory lead time is 35–45 days after drawing confirmation, plus 28–35 days container transit to Tema port."
+    }
+  ]
 }

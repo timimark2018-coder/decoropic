@@ -76,5 +76,19 @@
   "archive": {
     "count": "577 SKUs",
     "url": "https://www.decolovely.com/product-category/furniture/"
-  }
+  },
+  "faq": [
+    {
+      "question": "Do you supply imported furniture to Accra, Ghana?",
+      "answer": "Yes. We source Italian-style leather sofas, designer sectionals, and imported dining sets from our Foshan factory network and ship direct to Tema port. Every furniture SKU has been container-shipped to an Accra villa or apartment project."
+    },
+    {
+      "question": "What is the minimum order size for imported furniture in Ghana?",
+      "answer": "We work on project-level orders — full-villa or full-apartment furniture packages, typically consolidated with tiles and bathroom fittings in one 40HQ container. No single-piece minimums; combined shipping significantly reduces per-unit cost."
+    },
+    {
+      "question": "How long does furniture take to arrive in Ghana from China?",
+      "answer": "Container transit from Foshan to Tema port runs 28–35 days. We handle factory coordination, QC inspection, export packing, and customs documentation as part of the sourcing service."
+    }
+  ]
 }

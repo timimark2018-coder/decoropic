@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { buildMetadata } from "@/lib/seo/metadata";
+import { faqPageSchema } from "@/lib/seo/schema";
 import { siteConfig } from "@/lib/utils/constants";
 import { CategoryHero } from "@/components/categories/CategoryHero";
 import { WhySection } from "@/components/categories/WhySection";
@@ -35,6 +36,7 @@ type CategoryData = {
   }>;
   applications: string[];
   archive: { count: string; url: string };
+  faq?: Array<{ question: string; answer: string }>;
 };
 
 async function getCategoryData(slug: string): Promise<CategoryData | null> {
@@ -99,11 +101,42 @@ export default async function CategoryPage({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
+      {data.faq && data.faq.length > 0 && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqPageSchema(data.faq)) }}
+        />
+      )}
       <main className="min-h-screen">
         <CategoryHero eyebrow={data.hero.eyebrow} h1={data.hero.h1} lead={data.hero.lead} />
         <WhySection items={data.why.items} />
         <FeaturedSKUs skus={data.skus} categoryLabel={data.label} baseUrl={baseUrl} />
         <ApplicationSection applications={data.applications} categoryLabel={data.label} />
+        {data.faq && data.faq.length > 0 && (
+          <section className="bg-white py-16 lg:py-20">
+            <div className="container-wide max-w-[860px]">
+              <p
+                className="text-brand-gold mb-8"
+                style={{ fontSize: "0.78rem", fontWeight: 700, letterSpacing: "0.28em", textTransform: "uppercase" }}
+              >
+                FAQ
+              </p>
+              <dl className="divide-y divide-brand-pine-dark/10">
+                {data.faq.map(({ question, answer }) => (
+                  <div key={question} className="py-6">
+                    <dt
+                      className="text-brand-pine-dark font-semibold mb-2"
+                      style={{ fontFamily: "var(--serif)", fontSize: "1.0625rem", lineHeight: 1.4 }}
+                    >
+                      {question}
+                    </dt>
+                    <dd className="text-brand-pine-dark/70 text-sm leading-relaxed">{answer}</dd>
+                  </div>
+                ))}
+              </dl>
+            </div>
+          </section>
+        )}
         <DecolovelyBridge
           categoryLabel={data.label}
           count={data.archive.count}

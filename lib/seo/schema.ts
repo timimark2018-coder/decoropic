@@ -67,7 +67,12 @@ export function organizationSchema(locale: Locale = "en") {
     ],
     areaServed: { "@type": "Country", name: "Ghana" },
     knowsLanguage: ["en", "zh", "en-GH"],
-    sameAs: [siteConfig.productCenterUrl, "https://diy.decoropic.com"]
+    sameAs: [
+      siteConfig.productCenterUrl,
+      "https://diy.decoropic.com",
+      "https://www.facebook.com/decoropicgh",
+      "https://www.instagram.com/decoropic"
+    ]
   };
 }
 
