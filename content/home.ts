@@ -22,8 +22,8 @@ export const homeContent = {
     ] satisfies LocalizedText[],
     ctas: [
       { label: { en: "Start Your Project", zh: "开始您的项目" }, href: "/contact" },
-      { label: { en: "Browse Products", zh: "浏览产品" }, href: "PRODUCT_CENTER" },
-      { label: { en: "Estimate Budget", zh: "预算测算" }, href: "ESTIMATOR" }
+      { label: { en: "Browse Products", zh: "浏览产品" }, href: "/products" },
+      { label: { en: "Estimate Budget", zh: "预算测算" }, href: "/#estimator" }
     ] satisfies CtaLink[],
     stats: [
       { value: "6", label: { en: "Core service stages", zh: "核心服务阶段" } },
@@ -335,7 +335,7 @@ export const homeContent = {
       zh: "如希望进一步查看具体品类、款式与更多产品选择，可进入我们的产品中心，按类别、空间或项目类型继续浏览。"
     },
     ctas: [
-      { label: { en: "Explore Product Center", zh: "进入产品中心" }, href: "PRODUCT_CENTER" },
+      { label: { en: "Explore Product Center", zh: "进入产品中心" }, href: "/products" },
       { label: { en: "Send Project Requirements", zh: "提交项目需求" }, href: "/contact" }
     ] satisfies CtaLink[]
   },

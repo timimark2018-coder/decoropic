@@ -89,13 +89,6 @@ export function FeaturedSKUs({ skus, categoryLabel, baseUrl }: Props) {
     brand: {
       "@type": "Brand",
       name: "Decoropic"
-    },
-    offers: {
-      "@type": "Offer",
-      priceCurrency: "USD",
-      lowPrice: sku.priceLow,
-      availability: "https://schema.org/InStock",
-      url: `${baseUrl}/contact?product=${encodeURIComponent(sku.name)}`
     }
   }));
 
