@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { buildMetadata } from "@/lib/seo/metadata";
 import { getLocale } from "@/lib/i18n/server";
@@ -634,7 +635,7 @@ export default async function ProjectsPage() {
             {c.residentialSection.images.map((img, i) => (
               <Reveal key={i} delay={400 + i * 100}>
                 <div className="relative aspect-square w-full overflow-hidden bg-brand-pine-dark/5">
-                  <img src={img.src} alt={t(img.alt, locale)} loading="lazy" className="h-full w-full object-cover" />
+                  <Image src={img.src} alt={t(img.alt, locale)} fill sizes="(max-width: 1024px) 50vw, 25vw" className="object-cover" />
                 </div>
               </Reveal>
             ))}

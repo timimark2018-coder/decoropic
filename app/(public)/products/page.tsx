@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { buildMetadata } from "@/lib/seo/metadata";
 import { faqPageSchema } from "@/lib/seo/schema";
@@ -12,8 +13,8 @@ export async function generateMetadata(): Promise<Metadata> {
 
   return buildMetadata({
     title: {
-      en: "Building Materials from China to Ghana — Tiles, Sanitary, Lighting, Furniture | Decoropic",
-      zh: "从中国采购建材到加纳 — 瓷砖、卫浴、灯饰、家具 | Decoropic"
+      en: "Building Materials from China to Ghana — Tiles, Sanitary, Lighting, Furniture",
+      zh: "从中国采购建材到加纳 — 瓷砖、卫浴、灯饰、家具"
     },
     description: {
       en: "Source building materials from China for Ghana projects — tiles, sanitary ware, lighting, furniture, doors. Foshan-direct, project pricing, Accra delivery.",
@@ -513,11 +514,12 @@ export default async function ProductsPage() {
                     {/* 图 */}
                     <div className="lg:w-1/2">
                       <div className="relative aspect-[4/3] w-full overflow-hidden bg-brand-pine-dark/5">
-                        <img
+                        <Image
                           src={cat.imageSrc}
                           alt={t(cat.title, locale)}
-                          loading="lazy"
-                          className="h-full w-full object-cover"
+                          fill
+                          sizes="(max-width: 1024px) 100vw, 50vw"
+                          className="object-cover"
                         />
                       </div>
                     </div>
@@ -631,13 +633,13 @@ export default async function ProductsPage() {
               return (
                 <Reveal key={item.slug} delay={300 + i * 150}>
                   <article className="flex flex-col">
-                    {/* Image placeholder (P4 will fill /images/products/*.jpg) */}
                     <div className="relative mb-6 aspect-[4/3] w-full overflow-hidden bg-brand-line/40">
-                      <img
+                      <Image
                         src={item.imageSrc}
                         alt={title}
-                        loading="lazy"
-                        className="h-full w-full object-cover"
+                        fill
+                        sizes="(max-width: 768px) 100vw, 33vw"
+                        className="object-cover"
                       />
                     </div>
 

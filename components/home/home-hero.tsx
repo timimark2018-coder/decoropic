@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { homeContent } from "@/content/home";
 import type { Locale } from "@/content/types";
 import { t } from "@/lib/i18n/content";
@@ -35,17 +36,19 @@ export function HomeHero({ locale }: Props) {
       id="home-hero"
       className="relative isolate w-full overflow-hidden bg-[#efe7d9]"
     >
-      {/* Background photograph — zero overlay, full clarity */}
-      <div
-        className="absolute inset-0 editorial-hero-zoom"
-        style={{
-          backgroundImage: "url('/images/home/home-hero.jpg')",
-          backgroundSize: "cover",
-          backgroundPosition: "center right",
-          backgroundRepeat: "no-repeat"
-        }}
-        aria-hidden
-      />
+      {/* Background photograph — next/image with priority for LCP */}
+      <div className="absolute inset-0 editorial-hero-zoom" aria-hidden>
+        <Image
+          src="/images/home/home-hero.jpg"
+          alt=""
+          fill
+          priority
+          quality={85}
+          sizes="100vw"
+          className="object-cover"
+          style={{ objectPosition: "center right" }}
+        />
+      </div>
 
       {/* Content — 90svh for strong immersion */}
       <div className="relative z-10 flex min-h-[90svh] flex-col justify-between pt-28 pb-12 sm:pt-32 lg:pt-40 lg:pb-16">

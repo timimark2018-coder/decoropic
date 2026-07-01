@@ -1,7 +1,7 @@
 export const siteConfig = {
   name: "Decoropic",
   description: "One-stop interior solutions for projects in Ghana.",
-  siteUrl: process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000",
+  siteUrl: process.env.NEXT_PUBLIC_SITE_URL || "https://www.decoropic.com",
   productCenterUrl: process.env.NEXT_PUBLIC_PRODUCT_CENTER_URL || "https://www.decolovely.com",
   whatsappNumber: process.env.NEXT_PUBLIC_CONTACT_WHATSAPP || "8613392247649",
   contactPhoneDisplay: process.env.NEXT_PUBLIC_CONTACT_PHONE_DISPLAY || "+86 133 9224 7649",

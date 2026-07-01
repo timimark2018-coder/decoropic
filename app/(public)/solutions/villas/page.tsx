@@ -10,8 +10,8 @@ export async function generateMetadata(): Promise<Metadata> {
 
   return buildMetadata({
     title: {
-      en: "House Decoration in Ghana — Villa & Residential Fit-Out | Decoropic",
-      zh: "加纳别墅与住宅装修 | Decoropic"
+      en: "House Decoration in Ghana — Villa & Residential Fit-Out",
+      zh: "加纳别墅与住宅装修"
     },
     description: {
       en: "House decoration in Ghana for villas and private residences — China-sourced tiles, furniture, lighting, sanitary ware and doors delivered to Accra. Project pricing, one contract.",
