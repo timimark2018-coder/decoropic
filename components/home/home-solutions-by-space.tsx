@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { homeContent } from "@/content/home";
 import type { Locale } from "@/content/types";
 import { t } from "@/lib/i18n/content";
@@ -100,20 +101,36 @@ export function HomeSolutionsBySpace({ locale }: Props) {
           </div>
         </Reveal>
 
-        {/* Subtitle — italic gold */}
-        <Reveal delay={700}>
-          <p
-            className="mt-10 text-brand-gold max-w-[780px]"
+        {/* H2 keyword line — "house & hotel decoration in Ghana" */}
+        <Reveal delay={600}>
+          <h2
+            className="mt-10 text-brand-pine-dark max-w-[860px]"
             style={{
               fontFamily: "var(--serif)",
-              fontSize: "clamp(1.125rem, 1.8vw, 1.5rem)",
+              fontSize: "clamp(1.25rem, 2vw, 1.75rem)",
+              fontWeight: 700,
+              lineHeight: 1.3,
+              letterSpacing: "-0.01em"
+            }}
+          >
+            {t(solutionsBySpace.subtitle, locale)}
+          </h2>
+        </Reveal>
+
+        {/* Subtitle detail — italic gold */}
+        <Reveal delay={750}>
+          <p
+            className="mt-4 text-brand-gold max-w-[780px]"
+            style={{
+              fontFamily: "var(--serif)",
+              fontSize: "clamp(1.0625rem, 1.6vw, 1.375rem)",
               fontWeight: 400,
               fontStyle: "italic",
               lineHeight: 1.4,
               letterSpacing: "-0.005em"
             }}
           >
-            {t(solutionsBySpace.subtitle, locale)}
+            {t(solutionsBySpace.subtitleDetail, locale)}
           </p>
         </Reveal>
 
@@ -171,6 +188,17 @@ export function HomeSolutionsBySpace({ locale }: Props) {
                   >
                     {t(item.quote, locale)}
                   </p>
+
+                  {/* Keyword CTA for villas / hotels */}
+                  {"href" in item && item.href && "ctaLabel" in item && item.ctaLabel && (
+                    <Link
+                      href={item.href as string}
+                      className="mt-4 text-brand-gold hover:text-brand-pine-dark transition-colors"
+                      style={{ fontSize: "0.78rem", fontWeight: 700, letterSpacing: "0.18em", textTransform: "uppercase" }}
+                    >
+                      {t(item.ctaLabel as { en: string; zh: string }, locale)}
+                    </Link>
+                  )}
                 </div>
               </Reveal>
             );

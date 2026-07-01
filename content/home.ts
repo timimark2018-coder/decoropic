@@ -280,6 +280,10 @@ export const homeContent = {
       zh: "六种空间，六套打法。"
     },
     subtitle: {
+      en: "House & hotel decoration in Ghana — China-sourced materials, local project delivery.",
+      zh: "加纳别墅与酒店装修 — 中国直供材料，本地项目交付。"
+    },
+    subtitleDetail: {
       en: "From private villas to hospitality — every space carries its own priorities, risks, and delivery calculus.",
       zh: "从私人别墅到酒店餐饮——每一种空间都有自己的优先级、风险和交付逻辑。"
     },
@@ -296,7 +300,9 @@ export const homeContent = {
       {
         icon: "Home",
         title: { en: "Private Villas", zh: "私人别墅" },
-        quote: { en: "Your home, as drawn.", zh: "住进设计图里的房子。" }
+        quote: { en: "Your home, as drawn.", zh: "住进设计图里的房子。" },
+        href: "/solutions/villas",
+        ctaLabel: { en: "House decoration in Ghana →", zh: "加纳别墅装修 →" }
       },
       {
         icon: "Building",
@@ -306,7 +312,9 @@ export const homeContent = {
       {
         icon: "Building2",
         title: { en: "Hotels & Hospitality", zh: "酒店与度假村" },
-        quote: { en: "Every room tells one story.", zh: "每一间房说同一个故事。" }
+        quote: { en: "Every room tells one story.", zh: "每一间房说同一个故事。" },
+        href: "/solutions/hotels",
+        ctaLabel: { en: "Hotel decoration in Ghana →", zh: "加纳酒店装修 →" }
       },
       {
         icon: "Briefcase",

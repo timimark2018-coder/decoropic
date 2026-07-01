@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { buildMetadata } from "@/lib/seo/metadata";
+import { faqPageSchema } from "@/lib/seo/schema";
 import { getLocale } from "@/lib/i18n/server";
 import { productsContent } from "@/content/products";
 import { t } from "@/lib/i18n/content";
@@ -11,12 +12,12 @@ export async function generateMetadata(): Promise<Metadata> {
 
   return buildMetadata({
     title: {
-      en: "Products & Catalog — From 1,000+ Factories",
-      zh: "产品与精选"
+      en: "Building Materials from China to Ghana — Tiles, Sanitary, Lighting, Furniture | Decoropic",
+      zh: "从中国采购建材到加纳 — 瓷砖、卫浴、灯饰、家具 | Decoropic"
     },
     description: {
-      en: "One source. One contract. One delivery. Curated material ecosystem of tiles, furniture, lighting, bathroom, doors and finishes for Ghana projects.",
-      zh: "一站采购、一份合同、一次交付——为加纳项目精选的瓷砖、家具、灯具、卫浴、门窗与饰面生态系统。"
+      en: "Source building materials from China for Ghana projects — tiles, sanitary ware, lighting, furniture, doors. Foshan-direct, project pricing, Accra delivery.",
+      zh: "为加纳项目从中国直采建材 — 瓷砖、卫浴、灯饰、家具、门窗，佛山直供，项目报价，阿克拉配送。"
     },
     path: "/products",
     locale
@@ -212,6 +213,22 @@ export default async function ProductsPage() {
             </h1>
           </Reveal>
 
+          {/* Subtitle — original catalog tagline, demoted below new SEO H1 */}
+          <Reveal delay={300}>
+            <p
+              className="text-brand-pine-dark/70 mb-8"
+              style={{
+                fontFamily: "var(--serif)",
+                fontSize: "clamp(1.125rem, 1.6vw, 1.375rem)",
+                fontWeight: 400,
+                lineHeight: 1.4,
+                letterSpacing: "-0.005em"
+              }}
+            >
+              {t(c.hero.subtitle, locale)}
+            </p>
+          </Reveal>
+
           {/* HandDrawnLine wave */}
           <Reveal delay={400}>
             <div className="mb-10 max-w-[280px] lg:mb-12">
@@ -272,6 +289,35 @@ export default async function ProductsPage() {
           </div>
         </div>
       </div>
+
+      {/* Intro — keyword-dense prose for "building materials from China to Ghana" */}
+      <section className="bg-[#f7f3ec] py-16 lg:py-20">
+        <div className="container-wide max-w-[860px]">
+          <Reveal>
+            <div className="space-y-5 text-brand-pine-dark/85" style={{ fontSize: "1rem", lineHeight: 1.75 }}>
+              <p>
+                Ghana&apos;s construction and renovation market sources a significant share of its high-specification interior materials — tiles, sanitary ware, lighting fixtures, furniture, and doors — directly from Chinese factories. The Foshan region in Guangdong province alone is home to over 1,000 manufacturers supplying every tier of the market, from contractor-grade ceramic to large-format porcelain slab and bespoke hotel FF&amp;E.
+              </p>
+              <p>
+                The challenge is not sourcing. It is coordinating: qualifying the right factories, consolidating orders across five material categories, managing quality control before shipment, clearing customs at Tema Port, and delivering to your site in Accra on schedule. Most Ghana developers and contractors who attempt direct procurement from China report spending more management time on the supply chain than the price differential saves.
+              </p>
+              <p>
+                Decoropic was built to close that gap. We operate as a single-source procurement layer between Ghana project clients and the Chinese supply chain. Our sourcing team works across five categories — tiles and flooring, furniture, bathroom and kitchen fittings, lighting, and doors and windows — selecting factories based on production standard, consistency, and track record in export to West Africa.
+              </p>
+              <p>
+                For every project, we issue one contract covering all materials across all categories, carry out one QC inspection before loading, and ship in one container (or one groupage slot) from Foshan to Tema Port. One delivery date. One point of contact who speaks English, Mandarin, and Twi.
+              </p>
+              <p>
+                Import building materials to Ghana from China competitively — and without the coordination overhead — by treating procurement, logistics, and compliance as a single discipline. Browse the five category guides below, or{" "}
+                <Link href="/contact" className="text-brand-gold hover:text-brand-pine-dark transition-colors underline underline-offset-2">
+                  contact us
+                </Link>{" "}
+                to submit a project brief and receive a quoted material list within 48 hours.
+              </p>
+            </div>
+          </Reveal>
+        </div>
+      </section>
 
       {/* 01 — Procurement Problem */}
       <section className="bg-[#efe7d9] py-24 lg:py-32">
@@ -802,6 +848,81 @@ export default async function ProductsPage() {
           </a>
         </div>
       </section>
+
+      {/* FAQ — FAQPage schema + on-page Q&A for "building materials from China" */}
+      {(() => {
+        const faqs = [
+          {
+            question: "Can I import building materials from China to Ghana?",
+            answer: "Yes. Decoropic specialises in sourcing building materials from China for Ghana projects. We handle procurement from Foshan factories, quality control, export documentation, sea freight to Tema Port, and final delivery to your site in Accra or across Ghana. One contract covers the entire journey."
+          },
+          {
+            question: "What building materials does Decoropic supply from China?",
+            answer: "We supply five main categories: tiles and flooring (porcelain, marble, engineered stone), furniture (dining, bedroom, office, hospitality FF&E), bathroom and kitchen fittings, lighting (chandeliers, wall sconces, track and LED systems), and doors and windows. All sourced from our network of 1,000+ vetted factories across China, primarily in Foshan, Guangdong."
+          },
+          {
+            question: "How long does it take to import building materials from China to Ghana?",
+            answer: "Lead time from confirmed order to Tema Port typically runs 45–75 days — factory production (25–40 days), QC and packing (7–10 days), and sea freight (13–25 days). We provide a detailed project timeline with your quote so your construction schedule can plan around the delivery date."
+          },
+          {
+            question: "What is the minimum order for building materials from China?",
+            answer: "There is no minimum SKU count. We work with both full-container and groupage (shared container) shipments. For a single villa or apartment, a groupage option is often the most cost-effective. For hotels or multi-unit developments, we typically fill one or more 40HQ containers. Contact us with your material list and we will advise on the most efficient shipping arrangement."
+          }
+        ];
+        return (
+          <section className="bg-[#f7f3ec] py-20 lg:py-28">
+            <script
+              type="application/ld+json"
+              dangerouslySetInnerHTML={{ __html: JSON.stringify(faqPageSchema(faqs)) }}
+            />
+            <div className="container-wide max-w-[860px]">
+              <Reveal>
+                <p
+                  className="text-brand-gold mb-8"
+                  style={{ fontSize: "0.78rem", letterSpacing: "0.28em", textTransform: "uppercase", fontWeight: 700 }}
+                >
+                  {t({ en: "Frequently asked questions", zh: "常见问题" }, locale)}
+                </p>
+              </Reveal>
+              <Reveal delay={150}>
+                <h2
+                  className="text-brand-pine-dark mb-14"
+                  style={{
+                    fontFamily: "var(--serif)",
+                    fontSize: "clamp(1.875rem, 3.5vw, 2.75rem)",
+                    fontWeight: 700,
+                    lineHeight: 1.1
+                  }}
+                >
+                  {t({ en: "Importing building materials from China to Ghana", zh: "从中国向加纳进口建材" }, locale)}
+                </h2>
+              </Reveal>
+              <div className="space-y-10">
+                {faqs.map((faq, i) => (
+                  <Reveal key={i} delay={200 + i * 120}>
+                    <div className="border-b border-brand-pine-dark/10 pb-8 last:border-b-0">
+                      <h3
+                        className="text-brand-pine-dark mb-4"
+                        style={{
+                          fontFamily: "var(--serif)",
+                          fontSize: "clamp(1.125rem, 1.5vw, 1.375rem)",
+                          fontWeight: 700,
+                          lineHeight: 1.3
+                        }}
+                      >
+                        {faq.question}
+                      </h3>
+                      <p className="text-brand-pine-dark/80" style={{ fontSize: "1rem", lineHeight: 1.7 }}>
+                        {faq.answer}
+                      </p>
+                    </div>
+                  </Reveal>
+                ))}
+              </div>
+            </div>
+          </section>
+        );
+      })()}
 
       <section
         className="relative overflow-hidden"

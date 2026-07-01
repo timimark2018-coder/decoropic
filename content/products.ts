@@ -4,6 +4,7 @@ export type ProductsContent = {
   hero: {
     eyebrow: LocalizedText;
     title: LocalizedText;
+    subtitle: LocalizedText;
     pullQuote: LocalizedText;
     author: LocalizedText;
   };
@@ -88,6 +89,10 @@ export const productsContent: ProductsContent = {
       zh: "05 — 产品与精选"
     },
     title: {
+      en: "Building Materials from China to Ghana",
+      zh: "从中国采购建材到加纳"
+    },
+    subtitle: {
       en: "From 1,000+ factories. One contract. One delivery.",
       zh: "从 1,000+ 家工厂。一份合同。一次发货。"
     },
