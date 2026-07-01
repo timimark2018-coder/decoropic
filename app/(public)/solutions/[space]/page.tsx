@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { ChevronRight } from "lucide-react";
@@ -62,17 +63,18 @@ export default async function SpaceDetailPage({
         className="relative w-full overflow-hidden"
         style={{ height: "100vh", minHeight: "640px" }}
       >
-        {/* 全屏图，无蒙层 */}
-        <div
-          aria-hidden
-          className="absolute inset-0"
-          style={{
-            backgroundImage: `url('/images/solutions/${data.slug}.jpg')`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            backgroundRepeat: "no-repeat"
-          }}
-        />
+        {/* 全屏图，无蒙层 — next/image with priority for LCP */}
+        <div aria-hidden className="absolute inset-0">
+          <Image
+            src={`/images/solutions/${data.slug}.jpg`}
+            alt=""
+            fill
+            priority
+            quality={85}
+            sizes="100vw"
+            className="object-cover object-center"
+          />
+        </div>
 
         {/* 右上角金色直角装饰 */}
         <div
