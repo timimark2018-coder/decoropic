@@ -47,7 +47,7 @@ const related = [
   { label: "Building Materials", href: "/source-from-china/building-materials" },
   { label: "Hotel FF&E", href: "/source-from-china/hotel-ff-e" },
   { label: "Furniture", href: "/source-from-china/furniture" },
-  { label: "Tiles", href: "/source-from-china/tiles" }
+  { label: "Tiles & Sanitary", href: "/source-from-china/tiles-sanitary" }
 ];
 
 export default async function LightingPage() {

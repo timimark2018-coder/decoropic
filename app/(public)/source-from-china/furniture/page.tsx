@@ -46,7 +46,7 @@ const related = [
   { label: "Sourcing hub", href: "/source-from-china" },
   { label: "Building Materials", href: "/source-from-china/building-materials" },
   { label: "Hotel FF&E", href: "/source-from-china/hotel-ff-e" },
-  { label: "Tiles", href: "/source-from-china/tiles" },
+  { label: "Tiles & Sanitary", href: "/source-from-china/tiles-sanitary" },
   { label: "Lighting", href: "/source-from-china/lighting" }
 ];
 

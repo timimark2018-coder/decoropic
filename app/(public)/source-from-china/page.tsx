@@ -59,7 +59,7 @@ export default async function SourceFromChinaHub() {
         { title: "Building Materials", body: "Tiles, flooring, sanitary ware, doors, windows and finishes — the full material package for a project, consolidated into one export shipment.", href: "/source-from-china/building-materials" },
         { title: "Hotel FF&E", body: "Guestroom furniture, lobby finishes, lighting and bathroom fittings specified to hospitality grade for hotel groups and operators.", href: "/source-from-china/hotel-ff-e" },
         { title: "Furniture", body: "Residential and contract furniture — dining, bedroom, living, office and hospitality — from a vetted supplier base with QC before shipment.", href: "/source-from-china/furniture" },
-        { title: "Tiles & Flooring", body: "Porcelain slab, ceramic, marble and engineered stone at project volumes, batch-consistent and export-packed.", href: "/source-from-china/tiles" },
+        { title: "Tiles & Sanitary Ware", body: "Porcelain slab, ceramic, marble, toilets, basins and brassware at project volume — best value into tariff-friendly markets.", href: "/source-from-china/tiles-sanitary" },
         { title: "Lighting", body: "Chandeliers, pendants, architectural and commercial LED systems — voltage and certification matched to your market on request.", href: "/source-from-china/lighting" }
       ]}
       buyersTitle="Who we work with"
@@ -79,9 +79,15 @@ export default async function SourceFromChinaHub() {
         { label: "Building Materials", href: "/source-from-china/building-materials" },
         { label: "Hotel FF&E", href: "/source-from-china/hotel-ff-e" },
         { label: "Furniture", href: "/source-from-china/furniture" },
-        { label: "Tiles", href: "/source-from-china/tiles" },
+        { label: "Tiles & Sanitary", href: "/source-from-china/tiles-sanitary" },
         { label: "Lighting", href: "/source-from-china/lighting" }
       ]}
+      tariffNote={{
+        body:
+          "Duty on China-sourced goods varies sharply by destination and category. Tiles and aluminium can face high anti-dumping or Section 301 duties into the EU and US, while Australia (under ChAFTA), the Middle East and much of Africa apply low or zero tariffs on most interior materials. Furniture and lighting are generally treated more mildly across markets. We handle sourcing and export from China; you decide what to import based on your destination's current duty.",
+        sourceLabel: "Felixdeco — China Import Tariffs on Building Materials 2026",
+        sourceHref: "https://felixdeco.com/tariff-tracker/"
+      }}
     />
   );
 }

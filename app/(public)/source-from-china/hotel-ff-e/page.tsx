@@ -46,7 +46,7 @@ const related = [
   { label: "Sourcing hub", href: "/source-from-china" },
   { label: "Building Materials", href: "/source-from-china/building-materials" },
   { label: "Furniture", href: "/source-from-china/furniture" },
-  { label: "Tiles", href: "/source-from-china/tiles" },
+  { label: "Tiles & Sanitary", href: "/source-from-china/tiles-sanitary" },
   { label: "Lighting", href: "/source-from-china/lighting" }
 ];
 
@@ -75,6 +75,18 @@ export default async function HotelFFEPage() {
         { title: "Owners & Developers", body: "Property owners equipping independent or franchise hotels to a defined budget and standard." },
         { title: "Fit-Out Contractors", body: "Contractors sourcing consolidated FF&E shipments phased to a live construction schedule." }
       ]}
+      marketsTitle="Markets we focus on"
+      markets={[
+        { title: "Middle East", body: "Fast-moving hotel and resort construction with widespread factory-direct FF&E sourcing from China — the single largest opportunity for hospitality furniture out of Foshan and Lecong." },
+        { title: "Africa", body: "Growing hospitality investment across the continent; the region where our project delivery experience runs deepest and where we can advise most confidently." },
+        { title: "Australia", body: "Low or zero tariffs under ChAFTA make China-sourced FF&E straightforward to land for Australian hotel and accommodation projects." }
+      ]}
+      tariffNote={{
+        body:
+          "Hospitality furniture and FF&E generally face milder import duties than tiles or aluminium across most markets, which is part of why hotel groups so often source it factory-direct from China. Australia (ChAFTA), the Middle East and much of Africa are especially friendly; the EU and US vary by product. We handle sourcing and export from China; your customs broker confirms the landed duty for your destination.",
+        sourceLabel: "Felixdeco — China Import Tariffs on Building Materials 2026",
+        sourceHref: "https://felixdeco.com/tariff-tracker/"
+      }}
       faqTitle="Hotel FF&E from China — your questions"
       faqs={faqs}
       ctaHeading="Get a hotel FF&E export quote"

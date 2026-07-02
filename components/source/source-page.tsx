@@ -31,6 +31,11 @@ export type SourcePageProps = {
   categories?: SourceListItem[];
   buyersTitle?: string;
   buyers?: SourceListItem[];
+  /** Target-market focus (region-level, e.g. Middle East / Australia / Africa). */
+  marketsTitle?: string;
+  markets?: SourceListItem[];
+  /** Honest, cited tariff reference for buyers — not advice, not a fabricated figure. */
+  tariffNote?: { body: string; sourceLabel: string; sourceHref: string };
   faqTitle: string;
   faqs: SourceFaq[];
   ctaHeading: string;
@@ -92,6 +97,9 @@ export function SourcePage(props: SourcePageProps) {
     categories,
     buyersTitle,
     buyers,
+    marketsTitle,
+    markets,
+    tariffNote,
     faqTitle,
     faqs,
     ctaHeading,
@@ -219,6 +227,46 @@ export function SourcePage(props: SourcePageProps) {
         <section className="bg-[#f7f3ec] py-16 lg:py-24">
           <div className="container-wide max-w-[1000px]">
             <ListGrid title={buyersTitle ?? "Who we work with"} items={buyers} />
+          </div>
+        </section>
+      )}
+
+      {/* Target markets */}
+      {markets && markets.length > 0 && (
+        <section className="bg-[#efe7d9] py-16 lg:py-24">
+          <div className="container-wide max-w-[1000px]">
+            <ListGrid title={marketsTitle ?? "Markets we serve"} items={markets} />
+          </div>
+        </section>
+      )}
+
+      {/* Tariff reality — honest buyer reference with citation */}
+      {tariffNote && (
+        <section className="bg-[#f7f3ec] py-14 lg:py-16 border-t border-brand-gold/15">
+          <div className="container-wide max-w-[900px]">
+            <Reveal>
+              <p
+                className="text-brand-gold mb-4"
+                style={{ fontSize: "0.72rem", letterSpacing: "0.28em", textTransform: "uppercase", fontWeight: 700 }}
+              >
+                Tariff reality — buyer reference, not advice
+              </p>
+              <p className="text-brand-pine-dark/85" style={{ fontSize: "1rem", lineHeight: 1.7 }}>
+                {tariffNote.body}
+              </p>
+              <p className="text-brand-pine-dark/55 mt-4" style={{ fontSize: "0.8125rem", lineHeight: 1.6 }}>
+                Rates change and vary by product code — confirm current duties with your customs broker before ordering. Source:{" "}
+                <a
+                  href={tariffNote.sourceHref}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-brand-gold hover:text-brand-pine-dark underline underline-offset-2"
+                >
+                  {tariffNote.sourceLabel}
+                </a>
+                .
+              </p>
+            </Reveal>
           </div>
         </section>
       )}
