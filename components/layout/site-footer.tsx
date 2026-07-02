@@ -125,6 +125,15 @@ export function SiteFooter({ locale }: SiteFooterProps) {
                   Design Center →
                 </a>
               </li>
+              <li className="mt-3">
+                <Link
+                  href="/source-from-china"
+                  className="text-brand-gold/80 transition-colors hover:text-brand-gold text-xs tracking-wider uppercase"
+                  style={{ letterSpacing: "0.12em" }}
+                >
+                  {locale === "zh" ? "全球采购与出口 →" : "Global Sourcing & Export →"}
+                </Link>
+              </li>
             </ul>
           </div>
 
