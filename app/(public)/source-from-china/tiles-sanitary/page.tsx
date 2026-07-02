@@ -43,7 +43,7 @@ const faqs: SourceFaq[] = [
 ];
 
 const related = [
-  { label: "Sourcing hub", href: "/source-from-china" },
+  { label: "Project sourcing hub", href: "/source-from-china" },
   { label: "Hotel FF&E", href: "/source-from-china/hotel-ff-e" },
   { label: "Building Materials", href: "/source-from-china/building-materials" },
   { label: "Furniture", href: "/source-from-china/furniture" },
@@ -57,6 +57,7 @@ export default async function TilesSanitaryPage() {
       h1="Tiles & Sanitary Ware Supplier from China — Worldwide Export"
       subtitle="Porcelain slab, ceramic, toilets, basins and brassware at project volume — sourced from Foshan, quality-controlled, and exported to tariff-friendly markets worldwide."
       intro={[
+        "Tiles and sanitary ware are one part of the complete project material package Decoropic designs and supplies for hotel, villa and apartment projects — specified alongside furniture, lighting and finishes so the whole interior reads as one scheme. This page covers the tile and sanitary layer; you can source it on its own, or as part of a full project package from our <a href=\"/source-from-china\" style=\"color:var(--brand-gold);text-decoration:underline;text-underline-offset:2px\">project sourcing hub</a>.",
         "Foshan is the tile and sanitary capital of the world — it produces roughly 54% of China's ceramic tile and around a quarter of global output, alongside one of the densest concentrations of sanitary-ware factories anywhere. For a project buyer, that means almost any format, finish or fitting standard can be sourced from a single region, in one consolidated shipment.",
         "Decoropic sources tiles and sanitary ware from China as an export partner. We match your technical requirements — slip rating, thickness, fitting standard, finish — to the right factory, place project orders against a single batch for colour consistency, and inspect calibre, finish and function before shipment. Tile and sanitary for one project consolidate under a single contract, export-packed to survive the sea voyage.",
         "Where these categories pay off most is a market's duty position. Under the China–Australia Free Trade Agreement, Australia applies low or zero tariffs; the Middle East and much of Africa are similarly friendly. Those are the markets where China-direct tile and sanitary pricing carries all the way through. The EU and US, by contrast, apply anti-dumping and Section 301 duties on Chinese ceramic tile — so buyers there should confirm the landed duty before committing.",
@@ -83,9 +84,9 @@ export default async function TilesSanitaryPage() {
       }}
       faqTitle="Tiles & sanitary ware from China — your questions"
       faqs={faqs}
-      ctaHeading="Get a tiles & sanitary export quote"
-      ctaBody="Send your tile and sanitary schedule with your destination market. We return a factory-matched plan, project pricing and an export shipping arrangement."
-      whatsappText="Hi Decoropic, I'd like to source tiles and sanitary ware from China."
+      ctaHeading="Get a project material plan"
+      ctaBody="Send your tile and sanitary schedule — or your whole project brief — with your destination market. We return selection guidance, a specified package, project pricing and an export shipping plan."
+      whatsappText="Hi Decoropic, I'd like a project material plan including tiles and sanitary from China."
       related={related}
     />
   );

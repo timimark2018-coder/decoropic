@@ -43,7 +43,7 @@ const faqs: SourceFaq[] = [
 ];
 
 const related = [
-  { label: "Sourcing hub", href: "/source-from-china" },
+  { label: "Project sourcing hub", href: "/source-from-china" },
   { label: "Building Materials", href: "/source-from-china/building-materials" },
   { label: "Hotel FF&E", href: "/source-from-china/hotel-ff-e" },
   { label: "Tiles & Sanitary", href: "/source-from-china/tiles-sanitary" },
@@ -57,6 +57,7 @@ export default async function FurniturePage() {
       h1="Furniture Supplier from China — Worldwide Export"
       subtitle="A vetted China furniture supply base, one accountable partner: sample approval, quality control, export-grade packing and worldwide shipping."
       intro={[
+        "Furniture is one part of the complete project package Decoropic designs and supplies for hotel, villa and apartment projects — selected alongside tiles, lighting and finishes to one design intent. You can source furniture on its own, or as part of a full project material package from our <a href=\"/source-from-china\" style=\"color:var(--brand-gold);text-decoration:underline;text-underline-offset:2px\">project sourcing hub</a>.",
         "China is the world's largest furniture manufacturer, and buyers everywhere source from it — but finding a reliable furniture supplier in China from the outside is genuinely difficult. Factory listings are unverified, quality varies widely between workshops that look identical online, and the difference between solid-wood joinery and veneer over particleboard is invisible until the furniture arrives.",
         "Decoropic works as your furniture sourcing and export partner. We qualify manufacturers from our network on the things that matter over a twenty-year lifespan — frame construction, joinery, upholstery grade and finish durability — arrange physical samples for your approval, and inspect production before it ships. You get one accountable relationship instead of a spreadsheet of factories you have never met.",
         "The furniture we export spans residential (dining, bedroom, living, built-in wardrobes), office and workspace, and contract or hospitality ranges. Where a piece is custom, we manage the specification with the factory and confirm it at sample stage. Where it is catalogue, we hold the batch to a consistent standard across the order.",
@@ -71,9 +72,9 @@ export default async function FurniturePage() {
       ]}
       faqTitle="Furniture from China — your questions"
       faqs={faqs}
-      ctaHeading="Get a furniture export quote"
-      ctaBody="Send your furniture schedule, references or drawings. We return a vetted supplier plan, pricing and an export-packed shipping arrangement."
-      whatsappText="Hi Decoropic, I'd like to source furniture from China."
+      ctaHeading="Get a project material plan"
+      ctaBody="Send your furniture schedule, references or project brief. We return selection guidance, a vetted supplier plan, pricing and an export-packed shipping plan."
+      whatsappText="Hi Decoropic, I'd like a project material plan including furniture from China."
       related={related}
     />
   );

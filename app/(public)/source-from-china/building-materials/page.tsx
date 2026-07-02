@@ -43,7 +43,7 @@ const faqs: SourceFaq[] = [
 ];
 
 const related = [
-  { label: "Sourcing hub", href: "/source-from-china" },
+  { label: "Project sourcing hub", href: "/source-from-china" },
   { label: "Hotel FF&E", href: "/source-from-china/hotel-ff-e" },
   { label: "Furniture", href: "/source-from-china/furniture" },
   { label: "Tiles & Sanitary", href: "/source-from-china/tiles-sanitary" },
@@ -57,6 +57,7 @@ export default async function BuildingMaterialsPage() {
       h1="Building Materials from China — Worldwide Export"
       subtitle="Source a complete building-materials package from China's largest manufacturing cluster — vetted, quality-controlled, and consolidated for export to your port."
       intro={[
+        "Building materials are the structural layer of the complete project package Decoropic designs and supplies for hotel, villa and apartment projects — specified alongside furniture, lighting and FF&amp;E as one scheme. You can source the material package on its own, or as part of a full project from our <a href=\"/source-from-china\" style=\"color:var(--brand-gold);text-decoration:underline;text-underline-offset:2px\">project sourcing hub</a>.",
         "China produces the majority of the world's interior building materials, and the Foshan region in Guangdong is its centre of gravity — tens of thousands of factories making tiles, sanitary ware, doors, windows and finishes at every specification tier. For an international buyer, that scale is both the opportunity and the problem: the choice is vast, quality is uneven, and coordinating a full material package across categories is a full-time job.",
         "Decoropic operates the sourcing and export layer so you don't have to. We qualify factories, negotiate project pricing, arrange samples, inspect goods before shipment, and consolidate everything into a single export shipment. One contract covers tiles, sanitary, doors and finishes together — not a stack of separate supplier agreements each with its own lead time and its own chance to go wrong.",
         "The categories we export cover the structural interior package: porcelain slab and ceramic tile, marble and engineered stone, sanitary ware and brassware, aluminium, steel and timber doors and windows, and surface finishes. Where a material has a market-specific requirement — voltage, fire rating, plumbing standard — we source to the specification you give us and confirm it at the sample stage.",
@@ -71,9 +72,9 @@ export default async function BuildingMaterialsPage() {
       ]}
       faqTitle="Building materials from China — your questions"
       faqs={faqs}
-      ctaHeading="Get a building-materials export quote"
-      ctaBody="Share your material list or drawings. We return a vetted supplier plan, project pricing and a consolidated export shipping arrangement."
-      whatsappText="Hi Decoropic, I'd like to source building materials from China."
+      ctaHeading="Get a project material plan"
+      ctaBody="Share your material list, drawings or project brief. We return selection guidance, a vetted supplier plan, project pricing and a consolidated export shipping plan."
+      whatsappText="Hi Decoropic, I'd like a project material plan sourced from China."
       related={related}
     />
   );

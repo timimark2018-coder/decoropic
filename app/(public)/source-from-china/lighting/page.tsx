@@ -43,7 +43,7 @@ const faqs: SourceFaq[] = [
 ];
 
 const related = [
-  { label: "Sourcing hub", href: "/source-from-china" },
+  { label: "Project sourcing hub", href: "/source-from-china" },
   { label: "Building Materials", href: "/source-from-china/building-materials" },
   { label: "Hotel FF&E", href: "/source-from-china/hotel-ff-e" },
   { label: "Furniture", href: "/source-from-china/furniture" },
@@ -57,6 +57,7 @@ export default async function LightingPage() {
       h1="Lighting from China — Worldwide Export"
       subtitle="Chandeliers, pendants, architectural and commercial LED — sourced to your market's voltage and certification, quality-controlled and exported worldwide."
       intro={[
+        "Lighting is one part of the complete project package Decoropic designs and supplies for hotel, villa and apartment projects — specified alongside tiles, furniture and finishes as one scheme. You can source lighting on its own, or as part of a full project material package from our <a href=\"/source-from-china\" style=\"color:var(--brand-gold);text-decoration:underline;text-underline-offset:2px\">project sourcing hub</a>.",
         "China manufactures the majority of the world's lighting, decorative and architectural alike. The variety available to an international buyer is enormous — but lighting carries a risk that most other categories don't: it has to match your market's electrical standards. A fitting sourced without regard to voltage, driver compatibility or certification can be unsellable or uninstallable when it lands.",
         "Decoropic sources lighting from China as an export partner and specifies to the destination from the start. Tell us the target market and we source to its mains voltage, confirm driver compatibility, and arrange certification — CE, UL, SAA or others — where your project or customs authority requires it. That is the difference between a shipment that clears and installs, and one that sits in a warehouse.",
         "The range we export runs from decorative — chandeliers, pendants, wall sconces, crystal fittings — to architectural and commercial: recessed and track LED, linear systems, and hospitality-grade fixtures with quality drivers and controls. Crystal grade, colour temperature and dimming behaviour are all specified to your brief and confirmed at sample stage.",
@@ -71,9 +72,9 @@ export default async function LightingPage() {
       ]}
       faqTitle="Lighting from China — your questions"
       faqs={faqs}
-      ctaHeading="Get a lighting export quote"
-      ctaBody="Send your lighting schedule and target market. We return a specification-matched supplier plan, pricing and an export shipping arrangement."
-      whatsappText="Hi Decoropic, I'd like to source lighting from China."
+      ctaHeading="Get a project material plan"
+      ctaBody="Send your lighting schedule, target market or project brief. We return selection guidance, a specification-matched supplier plan, pricing and an export shipping plan."
+      whatsappText="Hi Decoropic, I'd like a project material plan including lighting from China."
       related={related}
     />
   );

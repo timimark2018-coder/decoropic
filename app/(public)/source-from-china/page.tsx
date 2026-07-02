@@ -47,33 +47,39 @@ export default async function SourceFromChinaHub() {
     <SourcePage
       eyebrow="Global Sourcing · Worldwide Export"
       h1="Source Building Materials & Interior FF&E from China — Worldwide Export"
-      subtitle="One partner for the China side: factory selection, quality control, consolidation and export. We ship worldwide; you handle local import and installation."
+      subtitle="Design and full-material supply for hotel, villa and apartment projects — we design and specify remotely, then source, QC, consolidate and export the whole package from China. You import and install locally."
       intro={[
-        "Decoropic is a China-side sourcing and export partner for building materials and interior FF&amp;E. We work with a network of over 1,000 manufacturers — concentrated in Foshan, Guangdong, the largest interior-materials manufacturing cluster in the world — across tiles, furniture, bathroom and kitchen fittings, lighting, and doors and windows.",
-        "For international buyers, the hard part of sourcing from China is rarely finding a factory. It is qualifying the right one, consolidating orders across categories, controlling quality before money leaves your account, and getting a clean set of export documents so goods clear customs at the other end. That is exactly the layer we operate.",
-        "We select and vet factories, negotiate project pricing, inspect goods before shipment, consolidate multiple categories into one shipment, and handle export from China to your nominated port. What we do not do abroad is import, clear customs, or install — those steps are arranged by you or your local contractor, who knows your market's duties, standards and trades far better than any exporter could.",
-        "Our credibility rests on capability, not borrowed local presence: a 20-year turnkey track record delivering complete interior projects in Ghana, and a sourcing and export operation built to serve buyers anywhere. Explore the category pages below, or request an export quote to get started."
+        "Decoropic supplies complete interior material packages — with design and selection — for hotel, villa and apartment projects worldwide. Rather than selling loose categories, we work at project level: we help you design and specify the interior, then source every material for it from China and export the package as one coordinated shipment.",
+        "The design side is remote. We produce layouts, renders and a fully specified material list — the schedule that turns a project brief into an orderable package. From there we work the China supply chain: qualifying factories from our 1,000+ network in Foshan, Guangdong, negotiating project pricing, inspecting goods before shipment, and consolidating tiles, furniture, sanitary ware, lighting, doors and finishes into a single export shipment.",
+        "For a hotel, that means guestroom FF&amp;E, lobby finishes and bathrooms specified as one scheme. For a villa or apartment, it means the whole interior — floors, furniture, lighting, sanitary and doors — sourced to a single design intent instead of assembled from unrelated suppliers. One design, one material package, one export shipment.",
+        "Our service runs from design through export from China. Local import, customs clearance, delivery and on-site installation are arranged by you or your local contractor. The one market where we deliver a complete turnkey project — including installation — is Ghana, where our team's 20-year track record stands behind the design and sourcing capability we offer everywhere else."
       ]}
-      categoriesTitle="What we source and export"
+      marketsTitle="Projects we design and supply"
+      markets={[
+        { title: "Hotels & Hospitality", body: "Guestrooms, lobbies and restaurants designed and specified as one scheme, with full FF&E and finish materials sourced from China.", href: "/source-from-china/hotel-ff-e" },
+        { title: "Private Villas", body: "The whole residence — floors, furniture, lighting, sanitary and doors — designed to one intent and supplied as a single material package." },
+        { title: "Apartments & Developments", body: "Consistent design and specification across every unit, with materials batched and consolidated for a single coordinated shipment." }
+      ]}
+      categoriesTitle="Every category in your project's material package"
       categories={[
-        { title: "Building Materials", body: "Tiles, flooring, sanitary ware, doors, windows and finishes — the full material package for a project, consolidated into one export shipment.", href: "/source-from-china/building-materials" },
-        { title: "Hotel FF&E", body: "Guestroom furniture, lobby finishes, lighting and bathroom fittings specified to hospitality grade for hotel groups and operators.", href: "/source-from-china/hotel-ff-e" },
-        { title: "Furniture", body: "Residential and contract furniture — dining, bedroom, living, office and hospitality — from a vetted supplier base with QC before shipment.", href: "/source-from-china/furniture" },
-        { title: "Tiles & Sanitary Ware", body: "Porcelain slab, ceramic, marble, toilets, basins and brassware at project volume — best value into tariff-friendly markets.", href: "/source-from-china/tiles-sanitary" },
-        { title: "Lighting", body: "Chandeliers, pendants, architectural and commercial LED systems — voltage and certification matched to your market on request.", href: "/source-from-china/lighting" }
+        { title: "Building Materials", body: "Tiles, flooring, sanitary ware, doors, windows and finishes — the structural material layer of the package.", href: "/source-from-china/building-materials" },
+        { title: "Hotel FF&E", body: "Guestroom furniture, lobby finishes, lighting and bathroom fittings, specified to hospitality grade within the project scheme.", href: "/source-from-china/hotel-ff-e" },
+        { title: "Furniture", body: "Residential and contract furniture selected to the project's design intent, QC-checked before shipment.", href: "/source-from-china/furniture" },
+        { title: "Tiles & Sanitary Ware", body: "Porcelain slab, ceramic, marble, toilets, basins and brassware — best value into tariff-friendly markets.", href: "/source-from-china/tiles-sanitary" },
+        { title: "Lighting", body: "Decorative and architectural lighting matched to the scheme and to your market's voltage and certification.", href: "/source-from-china/lighting" }
       ]}
       buyersTitle="Who we work with"
       buyers={[
-        { title: "Developers", body: "Residential and mixed-use developers sourcing full material packages across multiple units under one contract." },
-        { title: "Contractors", body: "Main contractors and fit-out firms needing reliable QC and consolidated shipments to hold a build schedule." },
-        { title: "Hotel Groups", body: "Operators and owners equipping new-build or refurbishment projects to brand-standard FF&E specifications." },
-        { title: "Importers & Distributors", body: "Trade buyers building inventory across categories who need vetted factories and clean export documentation." }
+        { title: "Developers", body: "Residential and mixed-use developers equipping projects with a designed, consolidated material package across multiple units." },
+        { title: "Contractors", body: "Main contractors and fit-out firms needing a specified material package, reliable QC and consolidated shipments to hold a build schedule." },
+        { title: "Hotel Groups", body: "Operators and owners equipping new-build or refurbishment projects to brand-standard FF&E and finishes." },
+        { title: "Importers & Distributors", body: "Trade buyers who need vetted factories, coherent specification and clean export documentation." }
       ]}
-      faqTitle="Sourcing from China — how it works"
+      faqTitle="Project material sourcing from China — how it works"
       faqs={faqs}
-      ctaHeading="Request a China sourcing & export quote"
-      ctaBody="Send your material list, drawings or project scope. We reply with a vetted supplier plan, project pricing and an export shipping arrangement."
-      whatsappText="Hi Decoropic, I'd like a China sourcing & export quote."
+      ctaHeading="Get a project material plan"
+      ctaBody="Send your project brief, drawings or material list. We reply with design and selection guidance, a specified material package, project pricing and an export shipping plan."
+      whatsappText="Hi Decoropic, I'd like a project material plan for a project sourced from China."
       relatedTitle="Explore by category"
       related={[
         { label: "Building Materials", href: "/source-from-china/building-materials" },

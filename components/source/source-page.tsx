@@ -16,7 +16,7 @@ import { WHATSAPP_LINK } from "@/lib/constants/contact";
 // ─────────────────────────────────────────────────────────────────────────────
 
 export const SERVICE_BOUNDARY =
-  "We handle sourcing, quality control, consolidation and export from China, and ship worldwide. Local import, customs clearance, delivery and installation are arranged by you or your local contractor. Full turnkey delivery is available in Ghana, where our team has a 20-year track record.";
+  "We provide design and material selection remotely — layouts, renders and specified material lists — then source, quality-control, consolidate and export the complete package from China, shipping worldwide. We do not carry out on-site construction, installation or customs clearance abroad: local import, clearance, delivery and installation are arranged by you or your local contractor. Full turnkey delivery, including on-site installation, is available only in Ghana, where our team has a 20-year track record.";
 
 export type SourceFaq = { question: string; answer: string };
 
@@ -164,7 +164,7 @@ export function SourcePage(props: SourcePageProps) {
                 className="bg-brand-gold text-brand-pine-dark px-7 py-4 transition-colors hover:bg-brand-gold/90"
                 style={{ fontFamily: "var(--serif)", fontSize: "0.875rem", letterSpacing: "0.18em", textTransform: "uppercase", fontWeight: 700 }}
               >
-                Request a China Sourcing Quote
+                Get a Project Material Plan
               </Link>
               <a
                 href={WHATSAPP_LINK(whatsappText)}
@@ -366,7 +366,7 @@ export function SourcePage(props: SourcePageProps) {
                 className="bg-brand-gold text-brand-pine-dark px-8 py-4 transition-colors hover:bg-brand-gold/90"
                 style={{ fontFamily: "var(--serif)", fontSize: "0.875rem", letterSpacing: "0.18em", textTransform: "uppercase", fontWeight: 700 }}
               >
-                Request Export Quote
+                Submit Your Project List
               </Link>
               <a
                 href={WHATSAPP_LINK(whatsappText)}

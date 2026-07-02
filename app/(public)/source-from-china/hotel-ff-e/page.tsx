@@ -43,7 +43,7 @@ const faqs: SourceFaq[] = [
 ];
 
 const related = [
-  { label: "Sourcing hub", href: "/source-from-china" },
+  { label: "Project sourcing hub", href: "/source-from-china" },
   { label: "Building Materials", href: "/source-from-china/building-materials" },
   { label: "Furniture", href: "/source-from-china/furniture" },
   { label: "Tiles & Sanitary", href: "/source-from-china/tiles-sanitary" },
@@ -55,12 +55,12 @@ export default async function HotelFFEPage() {
     <SourcePage
       eyebrow="Sourcing · Hospitality FF&E"
       h1="Hotel FF&E from China — Worldwide Export"
-      subtitle="Guestroom furniture, lobby finishes, lighting and bathroom fittings — sourced to hospitality grade, quality-controlled, and consolidated for export to your project."
+      subtitle="Design and full FF&E supply for hotel projects — guestrooms, lobbies and bathrooms specified as one scheme, then sourced, quality-controlled and exported from China as a single package."
       intro={[
-        "China is the primary manufacturing source of hotel FF&amp;E — furniture, fixtures and equipment — for the global hospitality industry. Foshan and the surrounding Guangdong factories produce the guestroom casegoods, lobby feature furniture, lighting systems and bathroom fittings that equip hotels on every continent, at specification tiers from three-star contract grade to five-star bespoke.",
-        "Sourcing hotel FF&amp;E at project scale demands more than a good price. It demands consistency across hundreds of rooms, fire and durability compliance, batch colour control, and shipments phased to a construction programme. Decoropic operates that sourcing and export discipline: we qualify factories, hold samples against your brand standard, inspect every category before shipment, and consolidate FF&amp;E into export shipments timed to your build.",
-        "We work backwards from your room count, brand standard and per-room budget to a full FF&amp;E specification, then source it across our factory network. Guestroom furniture, soft seating, lighting, sanitary ware and custom millwork ship under coordinated export documentation so your local team receives the right goods in the right sequence.",
-        "Our service covers the China side through to export. Import, customs, duties, local delivery and installation at your property are arranged by you or your local fit-out contractor. Full turnkey delivery — including installation — is available only in Ghana, where our team has completed hospitality and residential projects for two decades. That record is the proof behind our sourcing capability, not a claim of local presence in your market."
+        "Decoropic equips hotel projects with a complete, designed FF&amp;E and finish-material package sourced from China — not loose furniture orders. We design and specify the interior remotely (layouts, renders and a room-by-room material schedule), then source every element for it: guestroom casegoods, lobby feature furniture, bathroom fittings, lighting and finishes, coordinated as one scheme.",
+        "China is the primary manufacturing source of hotel FF&amp;E for the global hospitality industry, and Foshan and Lecong sit at its centre — producing the casegoods, seating, lighting and bathroom fittings that equip hotels on every continent, from three-star contract grade to five-star bespoke. The value is not a single cheap category; it is a whole property specified coherently and bought as one package.",
+        "We work backwards from your room count, brand standard and per-room budget to a full FF&amp;E specification, then source it across our factory network, hold samples against your brand standard, inspect every category before shipment, and consolidate into export shipments phased to your construction programme — so your local team receives the right goods in the right sequence.",
+        "Our service runs from design through export from China. Import, customs, duties, local delivery and on-site installation at your property are arranged by you or your local fit-out contractor. Full turnkey delivery — including installation — is available only in Ghana, where our team has completed hospitality and residential projects for two decades. That record is the proof behind our design and sourcing capability, not a claim of local presence in your market."
       ]}
       categoriesTitle="Hotel FF&E categories we export"
       categories={[
@@ -89,9 +89,9 @@ export default async function HotelFFEPage() {
       }}
       faqTitle="Hotel FF&E from China — your questions"
       faqs={faqs}
-      ctaHeading="Get a hotel FF&E export quote"
-      ctaBody="Send your room count, brand standard or FF&E schedule. We return a compliant supplier plan, pricing and a phased export shipping arrangement."
-      whatsappText="Hi Decoropic, I'd like to source hotel FF&E from China."
+      ctaHeading="Get a hotel project material plan"
+      ctaBody="Send your room count, brand standard, drawings or FF&E schedule. We return design and selection guidance, a specified FF&E and finishes package, pricing and a phased export shipping plan."
+      whatsappText="Hi Decoropic, I'd like a hotel project FF&E plan sourced from China."
       related={related}
     />
   );
