@@ -93,6 +93,12 @@ export default async function HotelFFEPage() {
       ctaBody="Send your room count, brand standard, drawings or FF&E schedule. We return design and selection guidance, a specified FF&E and finishes package, pricing and a phased export shipping plan."
       whatsappText="Hi Decoropic, I'd like a hotel project FF&E plan sourced from China."
       related={related}
+      guidesTitle="Related guides"
+      guides={[
+        { label: "How to source hotel FF&E from China", href: "/guides/how-to-source-hotel-ffe-from-china" },
+        { label: "China → Middle East sourcing", href: "/guides/china-to-middle-east-materials-sourcing" },
+        { label: "QC & consolidation checklist", href: "/guides/china-export-qc-consolidation-checklist" }
+      ]}
     />
   );
 }

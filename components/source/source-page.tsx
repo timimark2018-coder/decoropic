@@ -44,6 +44,9 @@ export type SourcePageProps = {
   /** Related pages inside the cluster (kept separate from the Ghana cluster). */
   relatedTitle?: string;
   related?: { label: string; href: string }[];
+  /** Related in-depth guides (bidirectional link with the /guides content area). */
+  guidesTitle?: string;
+  guides?: { label: string; href: string }[];
 };
 
 function ListGrid({ title, items }: { title: string; items: SourceListItem[] }) {
@@ -106,7 +109,9 @@ export function SourcePage(props: SourcePageProps) {
     ctaBody,
     whatsappText,
     relatedTitle,
-    related
+    related,
+    guidesTitle,
+    guides
   } = props;
 
   return (
@@ -329,6 +334,32 @@ export function SourcePage(props: SourcePageProps) {
                   style={{ fontFamily: "var(--serif)", fontSize: "1.0625rem", fontWeight: 600 }}
                 >
                   {r.label} →
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* Related in-depth guides — bidirectional link with /guides */}
+      {guides && guides.length > 0 && (
+        <section className="bg-[#efe7d9] py-12 border-t border-brand-gold/15">
+          <div className="container-wide max-w-[1000px]">
+            <p
+              className="text-brand-gold mb-5"
+              style={{ fontSize: "0.72rem", letterSpacing: "0.28em", textTransform: "uppercase", fontWeight: 700 }}
+            >
+              {guidesTitle ?? "Related guides"}
+            </p>
+            <div className="flex flex-wrap gap-x-8 gap-y-3">
+              {guides.map((g) => (
+                <Link
+                  key={g.href}
+                  href={g.href}
+                  className="text-brand-pine-dark hover:text-brand-gold transition-colors"
+                  style={{ fontFamily: "var(--serif)", fontSize: "1.0625rem", fontWeight: 600 }}
+                >
+                  {g.label} →
                 </Link>
               ))}
             </div>

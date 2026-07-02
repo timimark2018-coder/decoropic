@@ -94,6 +94,15 @@ export default async function SourceFromChinaHub() {
         sourceLabel: "Felixdeco — China Import Tariffs on Building Materials 2026",
         sourceHref: "https://felixdeco.com/tariff-tracker/"
       }}
+      guidesTitle="In-depth guides"
+      guides={[
+        { label: "How to source hotel FF&E from China", href: "/guides/how-to-source-hotel-ffe-from-china" },
+        { label: "China → Middle East sourcing", href: "/guides/china-to-middle-east-materials-sourcing" },
+        { label: "China → Australia (ChAFTA)", href: "/guides/china-to-australia-project-materials-chafta" },
+        { label: "Villa & apartment fit-out package", href: "/guides/villa-apartment-fit-out-materials-from-china" },
+        { label: "China tariffs (EU/US) & how to verify", href: "/guides/china-materials-tariffs-eu-us-how-to-verify" },
+        { label: "QC & consolidation checklist", href: "/guides/china-export-qc-consolidation-checklist" }
+      ]}
     />
   );
 }

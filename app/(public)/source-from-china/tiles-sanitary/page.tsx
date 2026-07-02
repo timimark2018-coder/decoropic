@@ -88,6 +88,12 @@ export default async function TilesSanitaryPage() {
       ctaBody="Send your tile and sanitary schedule — or your whole project brief — with your destination market. We return selection guidance, a specified package, project pricing and an export shipping plan."
       whatsappText="Hi Decoropic, I'd like a project material plan including tiles and sanitary from China."
       related={related}
+      guidesTitle="Related guides"
+      guides={[
+        { label: "China tariffs (EU/US) & how to verify", href: "/guides/china-materials-tariffs-eu-us-how-to-verify" },
+        { label: "China → Australia (ChAFTA)", href: "/guides/china-to-australia-project-materials-chafta" },
+        { label: "Villa & apartment fit-out package", href: "/guides/villa-apartment-fit-out-materials-from-china" }
+      ]}
     />
   );
 }
