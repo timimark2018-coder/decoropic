@@ -87,6 +87,13 @@ export default async function TilesSanitaryPage() {
       ctaHeading="Get a project material plan"
       ctaBody="Send your tile and sanitary schedule — or your whole project brief — with your destination market. We return selection guidance, a specified package, project pricing and an export shipping plan."
       whatsappText="Hi Decoropic, I'd like a project material plan including tiles and sanitary from China."
+      proof={{
+        body: "26 years in cross-border trade and 200+ delivered projects — villas and hotels finished with tiles and sanitaryware we selected at the factory, inspected and exported.",
+        links: [
+          { label: "See our completed projects", href: "/projects" },
+          { label: "A delivered luxury-villa fit-out", href: "/projects/villas/east-legon-luxury-villa" }
+        ]
+      }}
       related={related}
       guidesTitle="Related guides"
       guides={[

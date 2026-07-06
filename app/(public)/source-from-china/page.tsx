@@ -80,6 +80,10 @@ export default async function SourceFromChinaHub() {
       ctaHeading="Get a project material plan"
       ctaBody="Send your project brief, drawings or material list. We reply with design and selection guidance, a specified material package, project pricing and an export shipping plan."
       whatsappText="Hi Decoropic, I'd like a project material plan for a project sourced from China."
+      proof={{
+        body: "26 years in cross-border trade and 200+ delivered projects stand behind every package we export — real hotels, villas and apartments furnished with materials we sourced, inspected and shipped.",
+        links: [{ label: "See our completed projects", href: "/projects" }]
+      }}
       relatedTitle="Explore by category"
       related={[
         { label: "Building Materials", href: "/source-from-china/building-materials" },
@@ -101,7 +105,8 @@ export default async function SourceFromChinaHub() {
         { label: "China → Australia (ChAFTA)", href: "/guides/china-to-australia-project-materials-chafta" },
         { label: "Villa & apartment fit-out package", href: "/guides/villa-apartment-fit-out-materials-from-china" },
         { label: "China tariffs (EU/US) & how to verify", href: "/guides/china-materials-tariffs-eu-us-how-to-verify" },
-        { label: "QC & consolidation checklist", href: "/guides/china-export-qc-consolidation-checklist" }
+        { label: "QC & consolidation checklist", href: "/guides/china-export-qc-consolidation-checklist" },
+        { label: "China → Africa project materials", href: "/guides/china-to-africa-project-materials" }
       ]}
     />
   );

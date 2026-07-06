@@ -51,4 +51,6 @@ The fastest way to a useful quote is to share the project: property type, room c
 
 *Scope note: Decoropic provides remote design/selection and complete material supply exported from China. Local import, customs clearance and installation are the buyer's own; full turnkey delivery is available in Ghana only.*
 
+Proof of delivery: [see our completed projects](/projects) — 26 years in cross-border trade, 200+ delivered fit-outs.
+
 Related: [Hotel FF&E from China](/source-from-china/hotel-ff-e) · [Source from China (overview)](/source-from-china) · [Tiles & sanitaryware](/source-from-china/tiles-sanitary)

@@ -43,4 +43,6 @@ Tell us the property type, unit/room count, location, target completion and desi
 
 *Scope note: remote design/selection and complete material supply exported from China. Local import, customs clearance, certification and installation are the buyer's own; full turnkey is available in Ghana only. ChAFTA duty and compliance figures are reported estimates — verify current rates and requirements before ordering.*
 
+Proof of delivery: [see our completed projects](/projects) — 26 years in cross-border trade, 200+ delivered fit-outs.
+
 Related: [Source from China (overview)](/source-from-china) · [Tiles & sanitaryware](/source-from-china/tiles-sanitary) · [Hotel FF&E](/source-from-china/hotel-ff-e)

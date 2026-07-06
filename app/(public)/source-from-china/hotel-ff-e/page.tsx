@@ -92,6 +92,13 @@ export default async function HotelFFEPage() {
       ctaHeading="Get a hotel project material plan"
       ctaBody="Send your room count, brand standard, drawings or FF&E schedule. We return design and selection guidance, a specified FF&E and finishes package, pricing and a phased export shipping plan."
       whatsappText="Hi Decoropic, I'd like a hotel project FF&E plan sourced from China."
+      proof={{
+        body: "26 years in cross-border trade and 200+ delivered projects — including complete boutique-hotel fit-outs where we sourced, inspected and exported the full FF&E package.",
+        links: [
+          { label: "See our completed projects", href: "/projects" },
+          { label: "A delivered boutique-hotel fit-out", href: "/projects/hotels/kumasi-boutique-hotel" }
+        ]
+      }}
       related={related}
       guidesTitle="Related guides"
       guides={[

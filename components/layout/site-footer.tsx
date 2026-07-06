@@ -126,13 +126,29 @@ export function SiteFooter({ locale }: SiteFooterProps) {
                 </a>
               </li>
               <li className="mt-3">
-                <Link
-                  href="/source-from-china"
-                  className="text-brand-gold/80 transition-colors hover:text-brand-gold text-xs tracking-wider uppercase"
+                <p
+                  className="text-brand-gold/80 text-xs tracking-wider uppercase mb-2"
                   style={{ letterSpacing: "0.12em" }}
                 >
-                  {locale === "zh" ? "全球采购与出口 →" : "Global Sourcing & Export →"}
-                </Link>
+                  {locale === "zh" ? "全球采购与出口" : "Global Sourcing & Export"}
+                </p>
+                <ul className="space-y-1.5">
+                  {[
+                    { href: "/source-from-china", en: "Source from China", zh: "从中国采购" },
+                    { href: "/source-from-china/hotel-ff-e", en: "Hotel FF&E", zh: "酒店FF&E" },
+                    { href: "/source-from-china/tiles-sanitary", en: "Tiles & Sanitaryware", zh: "瓷砖·卫浴" },
+                    { href: "/guides", en: "Sourcing Guides", zh: "采购指南" }
+                  ].map((l) => (
+                    <li key={l.href}>
+                      <Link
+                        href={l.href}
+                        className="text-sm text-brand-ivory/70 transition-colors hover:text-brand-gold"
+                      >
+                        {locale === "zh" ? l.zh : l.en}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
               </li>
             </ul>
           </div>

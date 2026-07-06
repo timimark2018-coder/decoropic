@@ -41,6 +41,11 @@ export type SourcePageProps = {
   ctaHeading: string;
   ctaBody: string;
   whatsappText: string;
+  /**
+   * One-way capability proof pointing at delivered work (/projects).
+   * Anchor labels stay neutral — no geo terms imported into this cluster.
+   */
+  proof?: { body: string; links: { label: string; href: string }[] };
   /** Related pages inside the cluster (kept separate from the Ghana cluster). */
   relatedTitle?: string;
   related?: { label: string; href: string }[];
@@ -108,6 +113,7 @@ export function SourcePage(props: SourcePageProps) {
     ctaHeading,
     ctaBody,
     whatsappText,
+    proof,
     relatedTitle,
     related,
     guidesTitle,
@@ -217,6 +223,37 @@ export function SourcePage(props: SourcePageProps) {
           </Reveal>
         </div>
       </section>
+
+      {/* Capability proof — one-way link to delivered work */}
+      {proof && (
+        <section className="bg-[#f7f3ec] py-14 lg:py-16 border-b border-brand-gold/15">
+          <div className="container-wide max-w-[900px]">
+            <Reveal>
+              <p
+                className="text-brand-gold mb-4"
+                style={{ fontSize: "0.72rem", letterSpacing: "0.28em", textTransform: "uppercase", fontWeight: 700 }}
+              >
+                Proven in delivered projects
+              </p>
+              <p className="text-brand-pine-dark/85 mb-5" style={{ fontSize: "1rem", lineHeight: 1.7 }}>
+                {proof.body}
+              </p>
+              <div className="flex flex-wrap gap-x-8 gap-y-3">
+                {proof.links.map((link) => (
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    className="text-brand-gold hover:text-brand-pine-dark transition-colors"
+                    style={{ fontSize: "0.78rem", fontWeight: 700, letterSpacing: "0.18em", textTransform: "uppercase" }}
+                  >
+                    {link.label} →
+                  </Link>
+                ))}
+              </div>
+            </Reveal>
+          </div>
+        </section>
+      )}
 
       {/* Categories */}
       {categories && categories.length > 0 && (

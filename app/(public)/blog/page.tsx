@@ -89,6 +89,37 @@ export default function BlogPage() {
           )}
         </div>
       </section>
+
+      {/* Related: global sourcing guides (crawlable path Blog → global cluster) */}
+      <section className="py-14 lg:py-16 bg-[#efe7d9] border-t border-brand-gold/15">
+        <div className="container-shell">
+          <p
+            className="text-brand-gold mb-4"
+            style={{
+              fontSize: "0.72rem",
+              fontWeight: 700,
+              letterSpacing: "0.28em",
+              textTransform: "uppercase"
+            }}
+          >
+            Related
+          </p>
+          <p
+            className="text-brand-pine-dark max-w-[640px]"
+            style={{ fontFamily: "var(--serif)", fontSize: "1.125rem", lineHeight: 1.6 }}
+          >
+            Sourcing materials from China for a project abroad? Read our{" "}
+            <Link href="/guides" className="text-brand-gold hover:text-brand-pine-dark underline underline-offset-2">
+              in-depth sourcing guides
+            </Link>{" "}
+            or start at the{" "}
+            <Link href="/source-from-china" className="text-brand-gold hover:text-brand-pine-dark underline underline-offset-2">
+              Source from China overview
+            </Link>
+            .
+          </p>
+        </div>
+      </section>
     </>
   );
 }
