@@ -1,6 +1,6 @@
 ---
-title: "How to Source Hotel FF&E from China — A Project Buyer's Guide"
-description: "A step-by-step guide for hotel developers and procurement teams sourcing FF&E from China — design, selection, QC, consolidation and export to your market."
+title: "Source Hotel FF&E from China: Buyer's Guide"
+description: "Source hotel FF&E from China the right way — design, QC, consolidation and export for hotel projects in the Middle East, Australia and Africa."
 slug: "how-to-source-hotel-ffe-from-china"
 targetKeyword: "how to source hotel FF&E from China"
 order: 1

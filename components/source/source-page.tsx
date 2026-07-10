@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { Reveal } from "@/components/ui";
 import { faqPageSchema } from "@/lib/seo/schema";
@@ -34,6 +35,9 @@ export type SourcePageProps = {
   /** Target-market focus (region-level, e.g. Middle East / Australia / Africa). */
   marketsTitle?: string;
   markets?: SourceListItem[];
+  /** Real project/product photos (E-E-A-T); each needs descriptive alt text. */
+  showcaseTitle?: string;
+  showcase?: { src: string; alt: string; caption?: string }[];
   /** Honest, cited tariff reference for buyers — not advice, not a fabricated figure. */
   tariffNote?: { body: string; sourceLabel: string; sourceHref: string };
   faqTitle: string;
@@ -107,6 +111,8 @@ export function SourcePage(props: SourcePageProps) {
     buyers,
     marketsTitle,
     markets,
+    showcaseTitle,
+    showcase,
     tariffNote,
     faqTitle,
     faqs,
@@ -203,6 +209,46 @@ export function SourcePage(props: SourcePageProps) {
           </Reveal>
         </div>
       </section>
+
+      {/* Real project/product showcase — E-E-A-T */}
+      {showcase && showcase.length > 0 && (
+        <section className="bg-[#efe7d9] py-16 lg:py-20">
+          <div className="container-wide max-w-[1100px]">
+            {showcaseTitle && (
+              <Reveal>
+                <p
+                  className="text-brand-gold mb-10"
+                  style={{ fontSize: "0.78rem", letterSpacing: "0.28em", textTransform: "uppercase", fontWeight: 700 }}
+                >
+                  {showcaseTitle}
+                </p>
+              </Reveal>
+            )}
+            <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+              {showcase.map((img, i) => (
+                <Reveal key={img.src} delay={i * 80}>
+                  <figure>
+                    <div className="relative aspect-[4/3] w-full overflow-hidden rounded-lg bg-brand-pine-dark/5">
+                      <Image
+                        src={img.src}
+                        alt={img.alt}
+                        fill
+                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                        className="object-cover"
+                      />
+                    </div>
+                    {img.caption && (
+                      <figcaption className="text-brand-pine-dark/60 mt-3" style={{ fontSize: "0.85rem", lineHeight: 1.5 }}>
+                        {img.caption}
+                      </figcaption>
+                    )}
+                  </figure>
+                </Reveal>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* Mandatory service-boundary statement */}
       <section className="bg-brand-pine-dark py-14 lg:py-16">

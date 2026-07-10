@@ -1,6 +1,6 @@
 ---
-title: "Tariffs on Chinese Building Materials (EU & US) — What's Reported and How to Verify"
-description: "Anti-dumping and Section 301 tariffs affect some Chinese materials into the EU and US. Here's what's commonly reported, why it varies, and how to confirm before you order."
+title: "China Material Tariffs (EU & US): How to Verify"
+description: "EU and US tariffs on Chinese building materials — what's reported, why it varies, and how to verify your real rate before you order."
 slug: "china-materials-tariffs-eu-us-how-to-verify"
 targetKeyword: "China building materials tariffs EU US how to verify"
 order: 5
@@ -44,6 +44,36 @@ The reason Decoropic focuses its global material-supply service on the **Middle 
 2. Have a **licensed customs broker** in your destination confirm the current total (duty + any AD/CVD + policy tariff + VAT/GST).
 3. Build landed cost on the **verified** figure — never on a number from a blog or a supplier.
 4. For borderline cases, compare markets: the same package can be far more economical delivered to a tariff-friendly destination.
+
+## A worked example: how one figure changes the decision
+
+Imagine a US$40,000 tile package, ex-works China. Standard duty might be modest, but if an anti-dumping measure applies at a *reported* rate in the tens of percent, the added duty alone can run into five figures — before freight, VAT/GST and clearance. Into a tariff-friendly destination under a trade agreement, that same package may attract little or no preferential duty. The ex-works price did not change; the **landed** cost did. This is why the verified duty figure — not the factory quote — is the number that should drive your market and sourcing decision.
+
+## Build your landed cost in this order
+
+1. **Ex-works price** — the factory quote for the goods.
+2. **Consolidation** — combining factories into one shipment.
+3. **Freight** — sea (FCL/LCL) or air to your port.
+4. **Insurance** — typically a small percentage of cargo value.
+5. **Duty + AD/CVD + policy tariff** — the *verified* figures for your HS code.
+6. **VAT / GST** — applied in most markets on the landed value.
+7. **Local clearance + inland delivery** — your broker and transport.
+
+Only lines 5–7 depend on your destination — and lines 5 is where markets diverge most. Get that number verified first.
+
+## Frequently asked questions
+
+### Are the tariff figures on this page current?
+
+No. They are **reported estimates** collected from public and industry sources, and they change with policy and by product classification. Treat them as context only and confirm the live rate for your HS code with official sources (EU TARIC, USITC HTS / USTR) and a licensed customs broker before ordering.
+
+### Does Decoropic handle customs or guarantee duty rates?
+
+No. Decoropic provides design, selection and material supply exported from China. Import, customs clearance and installation are the buyer's own (full turnkey is offered in Ghana only), and we do not act as a customs agent or guarantee any rate. We can flag commonly reported figures with their sources so you know what to verify.
+
+### Which markets are most tariff-friendly for Chinese materials?
+
+Australia (under ChAFTA), the Middle East and much of Africa generally apply low or zero tariffs on most interior materials — which is why our global material-supply service focuses there. The EU and US apply anti-dumping and Section 301 measures on some Chinese goods, so verify before assuming a saving.
 
 ---
 

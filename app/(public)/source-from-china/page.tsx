@@ -7,12 +7,12 @@ export async function generateMetadata(): Promise<Metadata> {
   const locale = await getLocale();
   return buildMetadata({
     title: {
-      en: "Source Building Materials & Interior FF&E from China — Worldwide Export",
+      en: "Source Building Materials & FF&E from China",
       zh: "从中国采购建材与室内FF&E — 全球出口"
     },
     description: {
-      en: "Source building materials and interior FF&E from China with one export partner — tiles, furniture, bathroom, lighting, doors. Factory selection, QC, consolidation and worldwide shipping. You handle local import and installation.",
-      zh: "与一个出口伙伴从中国采购建材与室内FF&E — 瓷砖、家具、卫浴、灯饰、门窗。工厂选品、验货、拼柜、全球发运。当地进口与安装由买方自办。"
+      en: "Design + full material supply from China for hotel, villa & apartment projects worldwide — sourcing, QC, consolidation and export. You import locally.",
+      zh: "为全球酒店·别墅·公寓项目提供中国侧设计+整套材料供应:选品、验货、拼柜、出口。当地进口安装由买方自办。"
     },
     path: "/source-from-china",
     locale
@@ -39,6 +39,16 @@ const faqs: SourceFaq[] = [
     question: "What is the minimum order to source from China through Decoropic?",
     answer:
       "There is no fixed SKU minimum. For small projects we consolidate into shared containers (LCL); for developers, hotel groups and importers we fill one or more full containers. Send your material list or project scope and we will advise the most efficient consolidation and shipping arrangement."
+  },
+  {
+    question: "How long does a project material package take from order to port?",
+    answer:
+      "For a typical package, plan 8–12 weeks: factory production 15–45 days depending on how much is custom, pre-shipment QC and consolidation 7–10 days, and sea freight 13–35 days to most ports. We issue a project-specific timeline with the quote so procurement stays off the critical path."
+  },
+  {
+    question: "What payment and QC gates protect my order?",
+    answer:
+      "Standard terms are a deposit to start production and the balance released only after an accepted pre-shipment inspection. QC is run against your approved samples and a written spec matrix, with a photo report per category, before the container is sealed — so issues are fixed at the factory, not discovered at your port."
   }
 ];
 
@@ -53,6 +63,12 @@ export default async function SourceFromChinaHub() {
         "The design side is remote. We produce layouts, renders and a fully specified material list — the schedule that turns a project brief into an orderable package. From there we work the China supply chain: qualifying factories from our 1,000+ network in Foshan, Guangdong, negotiating project pricing, inspecting goods before shipment, and consolidating tiles, furniture, sanitary ware, lighting, doors and finishes into a single export shipment.",
         "For a hotel, that means guestroom FF&amp;E, lobby finishes and bathrooms specified as one scheme. For a villa or apartment, it means the whole interior — floors, furniture, lighting, sanitary and doors — sourced to a single design intent instead of assembled from unrelated suppliers. One design, one material package, one export shipment.",
         "Our service runs from design through export from China. Local import, customs clearance, delivery and on-site installation are arranged by you or your local contractor. The one market where we deliver a complete turnkey project — including installation — is Ghana, where our team's 20-year track record stands behind the design and sourcing capability we offer everywhere else."
+      ]}
+      showcaseTitle="Real material we source and export"
+      showcase={[
+        { src: "/images/products/porcelain-slab.jpg", alt: "Large-format porcelain slab sourced from Foshan, China for project supply", caption: "Large-format porcelain slab" },
+        { src: "/images/products/furniture.jpg", alt: "Contract-grade furniture prepared as part of a project material package", caption: "Furniture for project supply" },
+        { src: "/images/products/lighting.jpg", alt: "Decorative and architectural lighting sourced from China", caption: "Project lighting" }
       ]}
       marketsTitle="Projects we design and supply"
       markets={[

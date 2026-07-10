@@ -39,6 +39,16 @@ const faqs: SourceFaq[] = [
     question: "Who handles import, customs and installation?",
     answer:
       "You or your local contractor. We deliver QC-inspected, export-packed tiles and sanitary ware with documentation to your port or forwarder; import, duties, local delivery and installation are outside our scope. Full turnkey delivery, including installation, is available only in Ghana."
+  },
+  {
+    question: "What volume and lead time should I plan for tiles and sanitary?",
+    answer:
+      "A project's tile and sanitary package typically runs 6–10 weeks from confirmed order to port: production 15–30 days, QC and palletising 5–10 days, and sea freight 13–35 days. We consolidate floor, wall and sanitary into one shipment, export-packed on timber pallets to survive the voyage."
+  },
+  {
+    question: "How do you prevent shade and calibre variation across a large tile order?",
+    answer:
+      "We place the project order against a single production batch and verify shade, calibre and thickness against your approved sample at pre-shipment inspection — batch drift is the single biggest cause of on-site tile problems, and it is caught before loading, not after arrival."
   }
 ];
 
@@ -69,6 +79,12 @@ export default async function TilesSanitaryPage() {
         { title: "Ceramic & Stone", body: "Standard ceramic and porcelain, natural marble and engineered stone across finishes." },
         { title: "Sanitary Ware", body: "Close-coupled and wall-hung toilets, basins, tubs and vanity units to your fitting standard." },
         { title: "Brassware & Showers", body: "Taps, mixers, shower systems and accessories at project volume, finish-matched to spec." }
+      ]}
+      showcaseTitle="Tiles & sanitary we supply"
+      showcase={[
+        { src: "/images/products/tiles.jpg", alt: "Porcelain and ceramic floor tiles sourced from Foshan, China", caption: "Tiles & flooring" },
+        { src: "/images/products/wall-hung-toilet.jpg", alt: "Wall-hung toilet and sanitary ware for project supply", caption: "Sanitary ware" },
+        { src: "/images/products/porcelain-slab.jpg", alt: "Large-format porcelain slab for floor-to-wall continuity", caption: "Porcelain slab" }
       ]}
       marketsTitle="Markets we focus on"
       markets={[

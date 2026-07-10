@@ -39,6 +39,16 @@ const faqs: SourceFaq[] = [
     question: "What is outside your scope for an overseas hotel project?",
     answer:
       "Import, customs clearance, duties, local delivery and on-site installation are arranged by you or your appointed local contractor. We deliver QC-inspected, export-packed FF&E with full documentation to your port or forwarder. Complete turnkey installation is offered only in Ghana, where our team executes projects directly."
+  },
+  {
+    question: "How is a hotel FF&E order phased and scheduled?",
+    answer:
+      "We work backwards from your opening date. Public-area and lobby materials can ship ahead of guestroom furniture; a typical property runs 50–80 days from approved specification to port, phased across one or more 40HQ containers so each floor is equipped in build sequence."
+  },
+  {
+    question: "How do you keep finishes consistent across hundreds of rooms?",
+    answer:
+      "Guestroom items are ordered against a single production batch wherever possible and checked at pre-shipment inspection for colour, dimension, hardware function and quantity against the approved sample — so room 5 matches room 305. Each category ships with a photo QC report."
   }
 ];
 
@@ -74,6 +84,12 @@ export default async function HotelFFEPage() {
         { title: "Hotel Groups & Operators", body: "New-build and refurbishment programmes needing brand-standard FF&E under one sourcing partner." },
         { title: "Owners & Developers", body: "Property owners equipping independent or franchise hotels to a defined budget and standard." },
         { title: "Fit-Out Contractors", body: "Contractors sourcing consolidated FF&E shipments phased to a live construction schedule." }
+      ]}
+      showcaseTitle="FF&E we source for hotel projects"
+      showcase={[
+        { src: "/images/products/furniture.jpg", alt: "Guestroom furniture sourced to hospitality contract grade", caption: "Guestroom casegoods" },
+        { src: "/images/products/lighting.jpg", alt: "Commercial lighting for hotel lobbies and corridors", caption: "Hospitality lighting" },
+        { src: "/images/products/bathroom-kitchen.jpg", alt: "Bathroom fittings and sanitary ware for hotel guestrooms", caption: "Guestroom bathrooms" }
       ]}
       marketsTitle="Markets we focus on"
       markets={[

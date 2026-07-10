@@ -6,4 +6,5 @@ export { HomeEstimatorSection } from "./home-estimator-section";
 export { HomeEstimatorHook } from "./home-estimator-hook";
 export { HomeSolutionsBySpace } from "./home-solutions-by-space";
 export { HomeProductBridge } from "./home-product-bridge";
+export { HomeGlobalSourcing } from "./home-global-sourcing";
 export { HomeFinalCta } from "./home-final-cta";

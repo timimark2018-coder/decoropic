@@ -7,6 +7,7 @@ import {
   HomeEstimatorSection,
   HomeSolutionsBySpace,
   HomeProductBridge,
+  HomeGlobalSourcing,
   HomeFinalCta
 } from "@/components/home";
 
@@ -24,6 +25,7 @@ export async function HomePage({ locale }: HomePageProps) {
       <HomeEstimatorSection locale={locale} />
       <HomeSolutionsBySpace locale={locale} />
       <HomeProductBridge locale={locale} />
+      <HomeGlobalSourcing locale={locale} />
       <HomeFinalCta locale={locale} />
     </>
   );
