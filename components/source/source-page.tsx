@@ -446,6 +446,15 @@ export function SourcePage(props: SourcePageProps) {
                 </Link>
               ))}
             </div>
+            {/* Index link — every cluster page reaches the /guides hub, not just
+                the individual guides it lists. */}
+            <Link
+              href="/guides"
+              className="text-brand-gold hover:text-brand-pine-dark transition-colors mt-6 inline-block"
+              style={{ fontSize: "0.78rem", fontWeight: 700, letterSpacing: "0.18em", textTransform: "uppercase" }}
+            >
+              All sourcing guides →
+            </Link>
           </div>
         </section>
       )}
