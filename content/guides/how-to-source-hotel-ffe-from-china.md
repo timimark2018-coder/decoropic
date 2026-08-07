@@ -1,6 +1,6 @@
 ---
-title: "Source Hotel FF&E from China: Buyer's Guide"
-description: "Source hotel FF&E from China the right way — design, QC, consolidation and export for hotel projects in the Middle East, Australia and Africa."
+title: "How to Source Hotel FF&E from China: A Buyer's Guide"
+description: "Guestroom packages, container sizing (33–38 m³ per 40ft), $1,800–3,200 freight, 10–12 week timelines and $200–400/day inspection — how hotel FF&E buying works."
 slug: "how-to-source-hotel-ffe-from-china"
 targetKeyword: "how to source hotel FF&E from China"
 order: 1
@@ -43,6 +43,44 @@ Landed cost depends on your destination's import duties and any trade measures. 
 ## 8. Reach out with your project, not a product code
 
 The fastest way to a useful quote is to share the project: property type, room count, target markets, design references, and rough timeline. From that we can propose a coordinated material package and a realistic delivery plan.
+
+## 9. What actually sits inside a guestroom package
+
+Before you can price anything, the package has to be broken into the parts that get bought differently. A guestroom splits into **casegoods** (bed base and headboard, wardrobe, desk, nightstands, luggage bench — usually one joinery factory), **seating and soft furnishings** (lounge chair, sofa bed, upholstery, curtains — a second factory with its own fabric supply chain), **lighting** (bedside, desk, floor, decorative — often Zhongshan rather than Foshan), **bathroom** (sanitaryware, brassware, mirrors, shower enclosures), and **finishes** (floor and wall tile, carpet, vinyl, skirting).
+
+Public areas are a separate exercise: lobby seating and reception joinery are usually bespoke, run on longer lead times than guestroom items, and are the pieces most likely to need a full prototype rather than a sample.
+
+The reason this matters commercially: a hotel package is never one order. It is five to eight parallel orders that have to arrive on one ship. That is the coordination problem, and it is what a sourcing partner is actually being paid to solve.
+
+## 10. Sizing the shipment before you commit
+
+Container volume is the constraint that decides whether your programme ships in one lift or three. A 20ft container takes roughly **18–22 m³** of packed goods; a 40ft takes **33–38 m³**; a 40ft high-cube adds about **0.3 m** of internal height, which matters more than the extra volume suggests once you are stacking wardrobes, door leaves or crated light fittings.
+
+Work it the practical way: get packed volume per room from the factory — packed, not product dimensions, because crating and pallets add real bulk — multiply by room count, then divide by 33–38 m³ to see how many 40ft units the guestroom scope needs. Do it before you sign, not after. Discovering you need a fourth container when the budget carried three is one of the more expensive surprises in this trade.
+
+Sea freight from South China ran **$1,800–3,200 per 40ft container** through 2026, moving with the market. Quotes older than four weeks should be re-confirmed before you build them into a client price.
+
+## 11. A timeline that survives contact with a construction programme
+
+Standard-catalogue items are usually produced in **7–15 days**. Bespoke joinery, large-format slab and anything with custom upholstery runs **20–40 days**. Direct sea sailings take **28–35 days**. Add sample approval at the front and clearance at the back, and the realistic figure from confirmed order to material on site is **10–12 weeks**.
+
+For a hotel, phase against the build sequence rather than shipping everything at once. Public-area finishes and bathroom materials are usually needed while guestroom fit-out is still weeks away, so they can travel in an earlier lift; guestroom furniture is often the last thing you want on site, because it needs a finished, lockable room to be stored in. Getting this order wrong means paying to warehouse furniture next to a building site.
+
+## 12. Turning a brand standard into something a factory can quote
+
+Brand standards are written for operators, not manufacturers. The translation step is where projects quietly go wrong. Take each requirement — fire performance of upholstery and case materials, finish durability, acoustic expectations for corridors and headboards, accessibility clearances — and convert it into a line a factory can price and be held to: material, grade, test certificate required, and who pays for the test.
+
+Then lock it with samples. Approve a physical sample per finish before production, and require a **pre-production sample** for anything bespoke. Photographs are not approval; screen colour is not colour. Where a brand's inspector will sign off on site, get their sign-off on the sample instead — approving in Foshan costs a re-make, approving on site costs a programme delay.
+
+## 13. Inspection, and what it actually buys you
+
+Third-party inspection from an SGS or Bureau Veritas-grade firm runs **$200–400 per inspector-day**. On a multi-container hotel package that is a rounding error against the cost of a container of wrong-finish wardrobes.
+
+Book inspection at two points: **in-line**, while production can still be corrected, and **pre-shipment**, before anything is loaded. Ask for the report to include photographs against the approved sample, carton and crate condition, quantity verification against the packing list, and — for anything with a certificate requirement — the certificate itself rather than a claim that it exists.
+
+Consolidating several factories into one shipment typically saves **$1,500–3,000** in logistics overhead per project: one customs entry rather than five, one set of port charges, one inland delivery to schedule your crew around.
+
+*Rates and trade measures change, are set by the destination authority at the time of clearance, and depend on your exact classification and origin evidence. Treat every figure here as a planning estimate and confirm your position with a licensed customs broker before you order. Figures reflect August 2026.*
 
 ---
 

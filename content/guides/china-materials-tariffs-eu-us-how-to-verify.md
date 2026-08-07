@@ -1,6 +1,6 @@
 ---
-title: "China Material Tariffs (EU & US): How to Verify"
-description: "EU and US tariffs on Chinese building materials — what's reported, why it varies, and how to verify your real rate before you order."
+title: "China Materials Tariffs (EU & US): How to Verify Your Rate"
+description: "What's reported for EU anti-dumping and US Section 301, why the same product gets assessed differently, and how to build a landed cost you can defend."
 slug: "china-materials-tariffs-eu-us-how-to-verify"
 targetKeyword: "China building materials tariffs EU US how to verify"
 order: 5
@@ -74,6 +74,39 @@ No. Decoropic provides design, selection and material supply exported from China
 ### Which markets are most tariff-friendly for Chinese materials?
 
 Australia (under ChAFTA), the Middle East and much of Africa generally apply low or zero tariffs on most interior materials — which is why our global material-supply service focuses there. The EU and US apply anti-dumping and Section 301 measures on some Chinese goods, so verify before assuming a saving.
+
+## Building a landed cost you can defend
+
+Once you know your classification and rate, the arithmetic still catches people out, because duty is rarely the only thing charged and is rarely charged alone. Build the number in this order:
+
+1. **Ex-works or FOB price** — what the factory charges
+2. **Consolidation and export handling** — collection, checking, re-palletising, export entry
+3. **Freight to your port** — **$1,800–3,200 per 40ft** from South China through 2026, market-dependent
+4. **Insurance** — on the goods value plus freight
+5. **Duty** — on the customs value your authority assesses, which may not equal your invoice
+6. **VAT or sales tax** — in most markets calculated on the duty-inclusive value, which is why a higher duty rate raises the tax line as well
+7. **Local clearance, port charges and inland delivery**
+
+Step 6 is the one that surprises buyers most often: because consumption taxes are typically assessed on customs value *plus* duty rather than on the invoice alone, the duty rate compounds into the tax rather than sitting beside it.
+
+## Why the same product can be assessed differently
+
+Two shipments of what looks like the same product can attract different treatment for reasons that have nothing to do with the goods:
+
+- **Classification** — a small difference in composition, surface finish or intended use can move a line to a different code with a different rate
+- **Origin evidence** — preferential treatment requires documentation that matches the shipment; an unevidenced claim simply gets assessed at the standard rate
+- **Valuation** — customs authorities can assess on their own valuation where the declared value is questioned
+- **Trade measures in force at the time of entry** — anti-dumping and safeguard duties are periodically reviewed, extended and amended
+
+This is why the only reliable answer is a binding or advance ruling from the authority itself, obtained before you commit — the mechanism covered earlier in this guide.
+
+## Where the volume and timing constraints sit
+
+For planning: a 20ft container carries roughly **18–22 m³** packed and a 40ft **33–38 m³**, with the high-cube adding about **0.3 m** of internal height. Production runs **7–15 days** for standard items and **20–40 days** for bespoke or large-format; sea transit is **28–35 days**; from confirmed order to material on site, plan **10–12 weeks**.
+
+Consolidating several factories into one shipment removes **$1,500–3,000** of duplicated logistics overhead and — relevant here — gives you one customs entry to get right rather than five separate opportunities for a classification error.
+
+*Rates and trade measures change, are set by the destination authority at the time of clearance, and depend on your exact classification and origin evidence. Treat every figure here as a planning estimate and confirm your position with a licensed customs broker before you order. Figures reflect August 2026.*
 
 ---
 

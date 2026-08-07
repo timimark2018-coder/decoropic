@@ -1,6 +1,6 @@
 ---
-title: "Sourcing Project Materials from China to the Middle East — Duties, Shipping & QC"
-description: "How hotel, villa and apartment developers in the UAE, Saudi Arabia and the GCC source complete material packages from China — selection, duties, consolidation and export."
+title: "Sourcing Project Materials from China to the Middle East"
+description: "Gulf ports and routing, the Chinese New Year trap that slips fit-out programmes, GCC certification, container sizing and realistic 10–12 week lead times."
 slug: "china-to-middle-east-materials-sourcing"
 targetKeyword: "sourcing building materials from China to the Middle East"
 order: 2
@@ -38,6 +38,41 @@ From approved spec to delivered container, plan for design/selection, sampling a
 
 Share your project: property type, room/unit count, target completion, and design references for the UAE/Saudi/wider GCC. From that we can propose a coordinated material package and delivery plan to your port.
 
+## Ports, routing and what it does to your programme
+
+Most China-to-Gulf cargo lands at Jebel Ali for the UAE and the wider re-export trade, King Abdullah Port or Jeddah Islamic Port for the western Saudi corridor, Dammam for the Eastern Province, Hamad for Qatar and Sohar or Salalah for Oman. Which one you use is usually decided by where the project is, but it also decides your inland leg — a Riyadh site served through Jeddah carries a long domestic haul that has to be in the programme, not discovered at the end of it.
+
+Direct sailings from South China to the Gulf run in the same band as other long-haul routes, **28–35 days**, with transhipment services adding time and one more handling point where damage can occur. On a tight hotel opening, paying for a direct service is usually cheaper than the two weeks you lose waiting on a transhipment connection.
+
+## Sizing and freight
+
+A 20ft container carries roughly **18–22 m³** packed; a 40ft carries **33–38 m³**; the high-cube variant adds about **0.3 m** of internal height, which matters for tall wardrobes, door leaves and crated light fittings. Sea freight from South China ran **$1,800–3,200 per 40ft** through 2026 and moves with the market — treat any quote older than four weeks as indicative.
+
+Ask factories for **packed** volume rather than product dimensions when you plan. Crating on furniture and slab adds bulk that routinely turns a "three container" job into a four container job.
+
+## The seasonal problem nobody plans for
+
+Gulf construction programmes cluster around a small number of opening windows, and the material supply chain has its own calendar on the other end. Chinese New Year shuts most factories for two to three weeks, with output degrading before the break and ramping slowly after it; the run-up is the busiest and least flexible period of the year. Ramadan and the peak summer heat change site working hours and installation productivity at your end.
+
+The practical consequence: an order placed six weeks before Chinese New Year for delivery straight after it is the single most common way a Gulf fit-out programme slips. If your installation window is fixed, the order date has to be worked backwards from it — **10–12 weeks** from confirmed order to material on site, plus contingency across a factory shutdown.
+
+## Specification and certification for GCC projects
+
+Hospitality and residential projects in the Gulf carry expectations around upholstery flammability, glazing safety, wet-area sanitaryware performance and — for anything electrical — plug configuration and approval. Several GCC markets also operate conformity assessment schemes that require certification issued before shipment rather than after arrival; a certificate obtained late is worth very little to a container already sitting at the port.
+
+Decide per category who owns certification — factory, appointed test house or your own consultant — and write it into the purchase specification alongside material and finish. This is the same discipline as the sample matrix, applied to compliance.
+
+## Duty, VAT and landed cost
+
+The Gulf's customs framework applies a common external tariff across GCC states, with VAT levied in most of them and product-specific measures that vary by classification. Because rates depend on your exact HS code, destination and origin evidence — and because they change — we do not publish a figure here.
+
+*Rates are set by the destination customs authority at the time of clearance and vary by classification. Treat any figure you read as a planning estimate and confirm your position with a licensed customs broker in-market before you order. Figures reflect August 2026.*
+
+Build landed cost as: ex-works price + consolidation + freight to port + insurance + duty and VAT + local clearance + inland delivery. Consolidating several factories into one shipment typically removes **$1,500–3,000** of duplicated logistics overhead — one entry, one set of port charges, one inland movement.
+
+## Inspection before it sails
+
+Third-party inspection runs **$200–400 per inspector-day**. Book it in-line while production can still be corrected, and again pre-shipment before loading. Require photographs against the approved sample, quantity verification against the packing list, carton and crate condition, and copies of any certificates the specification calls for. Fixing a finish in Foshan is a re-make; fixing it in Dubai is a delay.
 ---
 
 **Building in the Gulf?** Send your project brief and we'll prepare a material package proposal.
