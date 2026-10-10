@@ -17,12 +17,12 @@ export function SiteHeader({ locale }: SiteHeaderProps) {
       <div className="absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-brand-gold/45 to-transparent" />
 
       {/* 桌面单行水平布局 — 三段对称：Logo 居左 / 菜单 flex-1 居中 (xl+) / 右组居右 */}
-      <div className="container-shell flex min-h-20 items-center justify-between gap-6 py-4 lg:py-5 xl:gap-8">
+      <div className="container-shell flex min-h-20 flex-wrap items-center justify-between gap-3 py-4 lg:py-5 xl:gap-6">
         <div className="flex-shrink-0">
           <BrandLogo variant="header" priority locale={locale} />
         </div>
 
-        <nav className="hidden flex-1 items-center justify-center gap-7 xl:flex">
+        <nav className="hidden min-w-0 flex-1 flex-wrap items-center justify-center gap-x-5 gap-y-2 xl:flex">
           {siteNavContent.mainNav.map((item) => {
             const resolved = resolveSiteHref(item.href, locale);
             return (
@@ -37,7 +37,7 @@ export function SiteHeader({ locale }: SiteHeaderProps) {
           })}
         </nav>
 
-        <div className="flex flex-shrink-0 items-center gap-3 lg:gap-4">
+        <div className="flex max-w-full flex-wrap items-center gap-3 lg:gap-4">
           <LocaleToggle locale={locale} />
           <ActionLink href={siteNavContent.headerCta.href} locale={locale}>
             {t(siteNavContent.headerCta.label, locale)}

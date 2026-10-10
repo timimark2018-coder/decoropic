@@ -135,6 +135,7 @@ export function SiteFooter({ locale }: SiteFooterProps) {
                 <ul className="space-y-1.5">
                   {[
                     { href: "/source-from-china", en: "Source from China", zh: "从中国采购" },
+                    { href: "/source-from-china/southeast-asia", en: "Southeast Asia Projects", zh: "东南亚项目采购" },
                     { href: "/source-from-china/hotel-ff-e", en: "Hotel FF&E", zh: "酒店FF&E" },
                     { href: "/source-from-china/tiles-sanitary", en: "Tiles & Sanitaryware", zh: "瓷砖·卫浴" },
                     { href: "/guides", en: "Sourcing Guides", zh: "采购指南" }

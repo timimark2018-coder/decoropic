@@ -1,0 +1,49 @@
+.page { background: #fff; color: #16211f; letter-spacing: 0; }
+.hero { position: relative; min-height: 500px; isolation: isolate; display: flex; align-items: center; }
+.heroImage { object-fit: cover; object-position: center; z-index: -2; }
+.heroShade { position: absolute; inset: 0; background: #071a1480; z-index: -1; }
+.heroContent { padding-top: 56px; padding-bottom: 56px; color: #fff; }
+.heroContent > p:first-child { margin-bottom: 18px; font-size: 15px; }
+.hero h1 { font-family: var(--serif); font-size: 44px; font-weight: 700; line-height: 1.12; max-width: 760px; letter-spacing: 0; }
+.subtitle { max-width: 680px; font-size: 18px; line-height: 1.6; margin: 24px 0; }
+.actions { display: flex; flex-wrap: wrap; gap: 16px; align-items: center; }
+.primary, .page .whatsapp { display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 14px 22px; border-radius: 4px; font-size: 15px; font-weight: 600; line-height: 1.4; text-align: center; white-space: normal; }
+.primary { background: #fff; color: #112824; }
+.page .whatsapp { background: #174c40; color: #fff; border: 1px solid #ffffff80; }
+.boundary { background: #edf3f1; padding: 28px 0; }
+.page h2 { font-family: var(--serif); font-size: 30px; line-height: 1.2; font-weight: 700; margin-bottom: 24px; letter-spacing: 0; }
+.boundary h2 { font-size: 24px; margin-bottom: 12px; }
+.page p { line-height: 1.7; }
+.section { padding: 56px 0; }
+.light { background: #f3f6f7; }
+.packages { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px; }
+.image { position: relative; aspect-ratio: 4 / 3; overflow: hidden; }
+.image img { object-fit: cover; }
+.page h3 { font-family: var(--serif); font-size: 21px; font-weight: 700; line-height: 1.3; margin: 18px 0 12px; letter-spacing: 0; }
+.page article p { margin-bottom: 16px; }
+.section a:not(.whatsapp) { display: inline-flex; align-items: center; gap: 8px; color: #174c40; font-weight: 600; line-height: 1.5; }
+.markets { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px 32px; }
+.markets article { border-top: 1px solid #cddbd7; }
+.other { margin: 24px 0; max-width: 900px; }
+.steps { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 24px; list-style: none; padding: 0; }
+.proof { margin-top: 32px; padding-top: 24px; border-top: 1px solid #cddbd7; max-width: 900px; }
+.proof p { margin-bottom: 16px; }
+.faq { border-bottom: 1px solid #cddbd7; padding: 18px 0; }
+.faq summary { cursor: pointer; font-weight: 600; line-height: 1.5; }
+.faq p { margin-top: 16px; }
+.brief { scroll-margin-top: 100px; }
+.brief > p { margin-bottom: 28px; }
+.brief form { border-radius: 8px; box-shadow: none; }
+.brief input, .brief select, .brief textarea, .brief label, .brief button { border-radius: 4px; }
+@media (max-width: 767px) {
+  .hero { min-height: 480px; }
+  .hero h1 { font-size: 34px; }
+  .heroContent { padding-top: 40px; padding-bottom: 40px; }
+  .subtitle { font-size: 16px; }
+  .section { padding: 40px 0; }
+  .page h2 { font-size: 26px; }
+  .boundary h2 { font-size: 22px; }
+  .packages, .markets, .steps { grid-template-columns: 1fr; }
+  .steps { gap: 12px; }
+  .actions > * { width: 100%; }
+}

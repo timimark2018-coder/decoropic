@@ -102,6 +102,7 @@ export default async function SourceFromChinaHub() {
       }}
       relatedTitle="Explore by category"
       related={[
+        { label: "Southeast Asia projects", href: "/source-from-china/southeast-asia" },
         { label: "Building Materials", href: "/source-from-china/building-materials" },
         { label: "Hotel FF&E", href: "/source-from-china/hotel-ff-e" },
         { label: "Furniture", href: "/source-from-china/furniture" },
@@ -116,6 +117,7 @@ export default async function SourceFromChinaHub() {
       }}
       guidesTitle="In-depth guides"
       guides={[
+        { label: "China to Southeast Asia procurement checklist", href: "/guides/china-to-southeast-asia-project-materials" },
         { label: "How to source hotel FF&E from China", href: "/guides/how-to-source-hotel-ffe-from-china" },
         { label: "China → Middle East sourcing", href: "/guides/china-to-middle-east-materials-sourcing" },
         { label: "China → Australia (ChAFTA)", href: "/guides/china-to-australia-project-materials-chafta" },

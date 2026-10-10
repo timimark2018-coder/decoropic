@@ -23,6 +23,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { path: "/products/lights-lighting", changeFrequency: "monthly", priority: 0.85 },
     { path: "/products/doors-windows", changeFrequency: "monthly", priority: 0.85 },
     { path: "/source-from-china", changeFrequency: "monthly", priority: 0.85 },
+    { path: "/source-from-china/southeast-asia", changeFrequency: "monthly", priority: 0.85 },
     { path: "/source-from-china/hotel-ff-e", changeFrequency: "monthly", priority: 0.85 },
     { path: "/source-from-china/tiles-sanitary", changeFrequency: "monthly", priority: 0.8 },
     { path: "/source-from-china/building-materials", changeFrequency: "monthly", priority: 0.8 },
