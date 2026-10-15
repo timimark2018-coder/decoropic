@@ -99,6 +99,7 @@ export default function SoutheastAsiaPage() {
             <li><h3>04 / Export and receive</h3><p>Agree the export terms. Your importer and contractor coordinate clearance, delivery and installation locally.</p></li>
           </ol>
           <div className={styles.proof}><h3>Experience you can inspect</h3><p>Our published hotel projects are in Ghana. Review the Kumasi hotel case to see how design, multiple material categories and shipments were coordinated.</p><Link href="/projects/hotels/kumasi-boutique-hotel">View the Ghana hotel case <ArrowRight size={16} /></Link></div>
+          <div className={styles.proof}><h3>Request comparable hotel quotations</h3><p>Organise room quantities, item specifications, sample approvals and quote exclusions before asking suppliers to price your package.</p><Link href="/guides/hotel-ffe-rfq-template-southeast-asia">Use the hotel FF&amp;E RFQ template <ArrowRight size={16} /></Link></div>
         </div>
       </section>
       <section className={`${styles.section} ${styles.light}`}>

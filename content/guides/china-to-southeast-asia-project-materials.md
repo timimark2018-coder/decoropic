@@ -20,6 +20,8 @@ For a hotel, separate guestroom, bathroom and public-area schedules. For an apar
 
 Name the person who approves samples and the contractor who will install the package. Unclear approval ownership can hold production even when the supplier is ready.
 
+For repeated guestrooms, use our [hotel FF&E RFQ template for Southeast Asia](/guides/hotel-ffe-rfq-template-southeast-asia) to organise item codes, room quantities, specification revisions and quotation exclusions before asking suppliers to price the package.
+
 ## 2. Compare packages against the same specification
 
 Price comparisons are only useful when the material, dimensions, hardware, finish and included accessories match. Write these into the request rather than asking several suppliers for their best price on a photograph.
