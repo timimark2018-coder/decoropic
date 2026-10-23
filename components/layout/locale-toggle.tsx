@@ -1,7 +1,7 @@
 "use client";
 
-import { useEffect, useState, useTransition } from "react";
-import { useRouter } from "next/navigation";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 import type { Locale } from "@/content/types";
 
 type LocaleToggleProps = {
@@ -13,30 +13,14 @@ const localeLabels: Record<Locale, string> = {
   zh: "中文"
 };
 
+// 切语言 = 换地址，不再写 NEXT_LOCALE cookie。
+// 用 <Link> 而不是按钮，这样两种语言互为可爬行的链接，Google 能顺着发现 /zh。
 export function LocaleToggle({ locale }: LocaleToggleProps) {
-  const router = useRouter();
-  const [isPending, startTransition] = useTransition();
-  const [pendingLocale, setPendingLocale] = useState<Locale | null>(null);
-
-  useEffect(() => {
-    if (!pendingLocale) {
-      return;
-    }
-
-    window.document.cookie = `NEXT_LOCALE=${pendingLocale}; path=/; max-age=31536000; samesite=lax`;
-    startTransition(() => {
-      router.refresh();
-      setPendingLocale(null);
-    });
-  }, [pendingLocale, router, startTransition]);
-
-  function setLocale(nextLocale: Locale) {
-    if (nextLocale === locale) {
-      return;
-    }
-
-    setPendingLocale(nextLocale);
-  }
+  const pathname = usePathname() || "/";
+  // middleware 已把 /zh 剥掉，所以 pathname 始终是英文版路径。
+  const basePath = pathname.replace(/^\/zh(?=\/|$)/, "") || "/";
+  const hrefFor = (target: Locale) =>
+    target === "zh" ? `/zh${basePath === "/" ? "" : basePath}` : basePath;
 
   return (
     <div className="inline-flex items-center gap-1">
@@ -44,17 +28,17 @@ export function LocaleToggle({ locale }: LocaleToggleProps) {
         const active = item === locale;
 
         return (
-          <button
+          <Link
             key={item}
-            type="button"
-            onClick={() => setLocale(item)}
-            disabled={isPending || pendingLocale === item}
+            href={hrefFor(item)}
+            hrefLang={item}
+            aria-current={active ? "true" : undefined}
             className={`rounded-full px-3 py-1.5 text-xs font-semibold transition ${
               active ? "bg-brand-pine text-white" : "text-slate-600 hover:bg-brand-mist/70"
             }`}
           >
             {localeLabels[item]}
-          </button>
+          </Link>
         );
       })}
     </div>

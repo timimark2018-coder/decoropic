@@ -6,18 +6,23 @@ const defaultWhatsAppMessage: Record<Locale, string> = {
   zh: "你好 Decoropic，我想咨询一个加纳室内项目。"
 };
 
-function appendLocaleQuery(url: string, locale: Locale) {
-  if (locale !== "zh") {
-    return url;
+// 站内路径加语言前缀。语言现在由 URL 决定(/zh/...)，所以中文页的内链必须
+// 留在中文簇里 —— 否则点任何一个导航都会掉回英文，中文页也就成了没有内链的孤儿页。
+export function localizePath(href: string, locale: Locale) {
+  if (locale !== "zh" || !href.startsWith("/")) {
+    return href;
   }
 
-  try {
-    const parsed = new URL(url);
-    parsed.searchParams.set("lang", "zh");
-    return parsed.toString();
-  } catch {
-    return url;
+  if (href === "/zh" || href.startsWith("/zh/")) {
+    return href;
   }
+
+  // 纯锚点或查询串原样保留
+  if (href.startsWith("/#") || href.startsWith("/?")) {
+    return `/zh${href.slice(1)}`;
+  }
+
+  return href === "/" ? "/zh" : `/zh${href}`;
 }
 
 export function buildWhatsAppHref(message?: string, locale: Locale = "en") {
@@ -32,7 +37,7 @@ export function buildWhatsAppHref(message?: string, locale: Locale = "en") {
 
 export function resolveSiteHref(href: string, locale: Locale = "en") {
   if (href === "PRODUCT_CENTER") {
-    return "/products";
+    return localizePath("/products", locale);
   }
 
   if (href === "WHATSAPP") {
@@ -40,10 +45,10 @@ export function resolveSiteHref(href: string, locale: Locale = "en") {
   }
 
   if (href === "ESTIMATOR") {
-    return "/#estimator";
+    return localizePath("/estimator", locale);
   }
 
-  return href;
+  return localizePath(href, locale);
 }
 
 export function isExternalHref(href: string) {

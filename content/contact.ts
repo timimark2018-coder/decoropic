@@ -90,7 +90,7 @@ export const contactContent = {
     eyebrow: { en: "Not ready to talk?", zh: "还没准备好？" },
     title: { en: "Try the 11-step estimator first.", zh: "先试 11 步预算测算器。" },
     ctaLabel: { en: "Open the estimator", zh: "打开测算器" },
-    ctaHref: "/#estimator"
+    ctaHref: "/estimator"
   },
   // ===================================================================
   // PRESERVED for ProjectInquiryForm.tsx

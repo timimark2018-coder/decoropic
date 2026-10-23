@@ -10,11 +10,11 @@ export async function generateMetadata(): Promise<Metadata> {
 
   return buildMetadata({
     title: {
-      en: "Hotel Decoration in Ghana — Hospitality FF&E Sourcing from China",
+      en: "Hotel FF&E Sourcing from China — Ghana Fit-Out",
       zh: "加纳酒店装修 — 中国直采酒店FF&E"
     },
     description: {
-      en: "Hotel decoration in Ghana — hospitality FF&E and interior materials sourced from China. Guestrooms, lobbies, restaurants. Project pricing, Tema Port delivery, Accra installation support.",
+      en: "Hospitality FF&E and finish packages for hotel projects: specification, factory production, QC and consolidated shipping, with full fit-out support in Ghana.",
       zh: "加纳酒店装修 — 从中国直采酒店室内材料与FF&E。客房、大堂、餐厅。项目报价，特马港配送，阿克拉现场支持。"
     },
     path: "/solutions/hotels",

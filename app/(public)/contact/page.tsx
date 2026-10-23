@@ -17,7 +17,7 @@ export async function generateMetadata(): Promise<Metadata> {
       zh: "联系我们"
     },
     description: {
-      en: "We reply on WhatsApp within 24 hours. Email service@decoropic.com or schedule a sourcing call with our team.",
+      en: "Send your project brief — location and port, property type, unit count and timing — and we will come back with a material package proposal and indicative costs.",
       zh: "我们在 WhatsApp 上 24 小时内回复。发送邮件至 service@decoropic.com 或预约电话咨询。"
     },
     path: "/contact",

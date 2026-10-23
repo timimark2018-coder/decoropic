@@ -8,7 +8,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return buildMetadata({
     title: "Renovation & Interior Design Resources for Ghana Projects",
     description:
-      "Practical guides on villa renovation costs, building material sourcing, and project management in Ghana — from Decoropic's team with 20 years on the ground in Accra.",
+      "Notes on sourcing, shipping and fitting out projects with Chinese-made materials — prices, lead times and what actually goes wrong, written from live projects.",
     path: "/blog"
   });
 }

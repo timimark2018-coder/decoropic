@@ -11,7 +11,7 @@ export async function generateMetadata(): Promise<Metadata> {
       zh: "从中国采购灯饰 — 全球出口"
     },
     description: {
-      en: "Source lighting from China for export worldwide — chandeliers, pendants, architectural and commercial LED. Voltage and certification matched to your market. QC, consolidation and shipping; you handle local import and install.",
+      en: "Decorative and architectural lighting from China for hotel and residential projects. Voltage, driver and IP checked for your market, with bulk project pricing.",
       zh: "从中国采购灯饰并全球出口 — 吊灯、壁灯、建筑与商业LED。电压与认证匹配你的市场。验货、拼柜与发运;当地进口与安装由买方自办。"
     },
     path: "/source-from-china/lighting",

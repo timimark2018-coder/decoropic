@@ -11,7 +11,7 @@ export async function generateMetadata(): Promise<Metadata> {
       zh: "从中国采购酒店FF&E — 全球出口"
     },
     description: {
-      en: "Source hotel FF&E from China for export worldwide — guestroom furniture, lobby finishes, lighting and bathroom fittings to brand standard. Factory selection, QC, consolidation and shipping. You handle local import and install.",
+      en: "Hotel FF&E manufactured to specification in China: case goods, seating, lighting and bathroom packages, inspected and consolidated for export to your port.",
       zh: "从中国采购酒店FF&E并全球出口 — 客房家具、大堂饰面、灯饰与卫浴。工厂选品、验货、拼柜与发运。当地进口与安装由买方自办。"
     },
     path: "/source-from-china/hotel-ff-e",

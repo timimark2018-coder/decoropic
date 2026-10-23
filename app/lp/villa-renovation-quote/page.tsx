@@ -14,7 +14,7 @@ const PATH = "/lp/villa-renovation-quote";
 const WA_MESSAGE = "Hi Kevin, I'm looking at the Decoropic villa estimator and I'd like to chat.";
 const TITLE = "Free Villa Renovation Budget Estimator (Ghana 2026)";
 const DESCRIPTION =
-  "90-second free estimator showing which of 4 budget tiers (USD 20K–245K+) fits your Accra villa project, in real 2026 prices. No signup.";
+  "Get an indicative villa renovation budget for a Ghana project in about a minute — scope, finish level and material package, before any drawing or site visit.";
 
 export async function generateMetadata(): Promise<Metadata> {
   const locale = await getLocale();

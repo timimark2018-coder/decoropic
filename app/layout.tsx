@@ -30,12 +30,12 @@ export async function generateMetadata(): Promise<Metadata> {
 
   return buildMetadata({
     title: {
-      en: "Decoropic | One-Stop Interior Solutions for Projects in Ghana",
-      zh: "Decoropic | 加纳项目的一站式室内装饰解决方案"
+      en: "Decoropic | Building Materials Sourcing from China",
+      zh: "Decoropic | 中国建材家居一站式采购与出口"
     },
     description: {
-      en: "Project-focused interior solutions brand for Ghana, combining site measurement, budget-led design, sourcing coordination and local delivery support.",
-      zh: "面向加纳项目的室内装饰品牌，整合现场测量、预算导向设计、采购协调与本地交付支持。"
+      en: "Source building materials, furniture and interior packages from China for overseas projects. Factory-direct supply, QC, consolidation and Ghana delivery.",
+      zh: "为海外项目从中国采购建材、家具与室内整体配套：工厂直供、验货、拼柜装柜，并提供加纳本地交付。"
     },
     titleTemplate: "%s | Decoropic",
     locale
@@ -46,14 +46,15 @@ export default async function RootLayout({ children }: Readonly<{ children: Reac
   const locale = await getLocale();
   const structuredData = [websiteSchema(locale), organizationSchema(locale)];
   const gtmId = process.env.NEXT_PUBLIC_GTM_ID;
-  const htmlLang = locale === "zh" ? "zh-CN" : "en-GH";
+  // en(不是 en-GH):站点面向全球买家，锁区域会让 Google 判定为加纳本地站。
+  const htmlLang = locale === "zh" ? "zh-CN" : "en";
 
   return (
     <html lang={htmlLang} className={`${inter.variable} ${playfair.variable}`}>
       <head>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
         {gtmId && (
-          <Script id="gtm" strategy="afterInteractive">
+          <Script id="gtm" strategy="lazyOnload">
             {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','${gtmId}');`}
           </Script>
         )}

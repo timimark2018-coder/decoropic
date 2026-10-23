@@ -12,7 +12,7 @@ export async function generateMetadata(): Promise<Metadata> {
       zh: "采购指南 — 从中国采购建材与FF&E"
     },
     description: {
-      en: "Practical guides for developers and procurement teams sourcing complete project material packages from China — hotel FF&E, tiles, tariffs, QC, consolidation and export.",
+      en: "Practical guides for teams sourcing project material packages from China: hotel FF&E, tiles, tariffs, QC, consolidation and export, with real operating numbers.",
       zh: "面向开发商与采购团队的实用指南：从中国采购整套项目材料包 — 酒店FF&E、瓷砖、关税、验货、拼柜与出口。"
     },
     path: "/guides"

@@ -122,7 +122,7 @@ export async function PostBody({ content, frontmatter }: PostBodyProps) {
               Send your project brief →
             </Link>
             <Link
-              href="/#estimator"
+              href="/estimator"
               className="inline-flex items-center gap-2 rounded-full border border-brand-pine-dark/25 px-8 py-4 text-brand-pine-dark hover:border-brand-gold transition-colors"
             >
               Get an instant estimate

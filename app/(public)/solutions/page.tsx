@@ -16,7 +16,7 @@ export async function generateMetadata(): Promise<Metadata> {
       zh: "按空间分类的解决方案"
     },
     description: {
-      en: "Private villas, hotels, offices, apartments, restaurants, showrooms — six space types, six delivery playbooks, one Decoropic team.",
+      en: "Material and furniture packages by project type — villas, apartments, hotels, offices, restaurants and retail — specified to budget and delivered as one order.",
       zh: "私人别墅、酒店、办公、公寓、餐厅、展厅——六种空间类型,六套交付剧本,一支 Decoropic 团队。"
     },
     path: "/solutions",
@@ -173,7 +173,7 @@ export default async function SolutionsPage() {
             {/* Hook 卡 — small slot, dark theme */}
             <Reveal delay={c.spaces.length * 80}>
               <Link
-                href="/#estimator"
+                href="/estimator"
                 className="group relative block rounded-3xl bg-brand-pine-dark p-8 text-white hover:bg-brand-gold hover:text-brand-pine-dark transition-all duration-500 min-h-[280px] flex flex-col justify-between sm:col-span-2 lg:col-span-2"
               >
                 <Sparkles size={28} className="text-brand-gold group-hover:text-brand-pine-dark mb-4" strokeWidth={1.5} />
@@ -218,7 +218,7 @@ export default async function SolutionsPage() {
           </Reveal>
           <Reveal delay={600}>
             <div className="flex flex-wrap gap-4">
-              <Link href="/#estimator" className="inline-flex items-center gap-3 rounded-full bg-brand-gold px-8 py-4 text-brand-pine-dark font-semibold hover:bg-brand-gold/90 transition-colors">
+              <Link href="/estimator" className="inline-flex items-center gap-3 rounded-full bg-brand-gold px-8 py-4 text-brand-pine-dark font-semibold hover:bg-brand-gold/90 transition-colors">
                 <span>{t(c.bottomCta.primaryCtaLabel, locale)}</span>
                 <ChevronRight size={18} />
               </Link>

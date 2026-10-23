@@ -1,6 +1,8 @@
+import Link from "next/link";
 import { homeContent } from "@/content/home";
 import type { Locale } from "@/content/types";
 import { t } from "@/lib/i18n/content";
+import { localizePath } from "@/lib/utils/site-links";
 import { ActionLink } from "@/components/shared/action-link";
 import { HandDrawnLine, Reveal } from "@/components/ui";
 
@@ -87,9 +89,40 @@ export function HomeProductBridge({ locale }: HomeProductBridgeProps) {
           </p>
         </Reveal>
 
+        {/* 五大品类 — 每块 80–120 词正文。
+            此前首页只有一句"去产品中心看看"，品类词在首页没有任何可索引的正文。 */}
+        <Reveal delay={620}>
+          <div className="mt-14 grid gap-x-10 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
+            {homeContent.productCenterBridge.categories.map((category) => (
+              <div key={category.slug}>
+                <h3
+                  className="text-brand-pine-dark"
+                  style={{
+                    fontFamily: "var(--serif)",
+                    fontSize: "1.25rem",
+                    fontWeight: 700,
+                    lineHeight: 1.25,
+                    letterSpacing: "-0.015em"
+                  }}
+                >
+                  <Link
+                    href={localizePath(`/products/${category.slug}`, locale)}
+                    className="transition-colors hover:text-brand-gold"
+                  >
+                    {t(category.title, locale)}
+                  </Link>
+                </h3>
+                <p className="mt-4 text-sm leading-[1.8] text-brand-pine-dark/75">
+                  {t(category.body, locale)}
+                </p>
+              </div>
+            ))}
+          </div>
+        </Reveal>
+
         {/* CTAs */}
-        <Reveal delay={680}>
-          <div className="mt-10 flex flex-wrap gap-3">
+        <Reveal delay={800}>
+          <div className="mt-14 flex flex-wrap gap-3">
             {homeContent.productCenterBridge.ctas.map((cta, index) => (
               <ActionLink
                 key={cta.label.en}
