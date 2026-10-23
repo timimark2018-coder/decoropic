@@ -70,7 +70,7 @@ export function organizationSchema(locale: Locale = "en") {
     sameAs: [
       siteConfig.productCenterUrl,
       "https://diy.decoropic.com",
-      "https://www.facebook.com/decoropicgh",
+      siteConfig.facebookUrl,
       "https://www.instagram.com/decoropic"
     ]
   };

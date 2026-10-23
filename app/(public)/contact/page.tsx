@@ -7,6 +7,8 @@ import { contactContent } from "@/content/contact";
 import { t } from "@/lib/i18n/content";
 import { HandDrawnLine, Reveal } from "@/components/ui";
 import { ProjectInquiryForm } from "@/components/forms/project-inquiry-form";
+import { FacebookIcon } from "@/components/shared/facebook-link";
+import { facebookLink } from "@/lib/utils/constants";
 
 export async function generateMetadata(): Promise<Metadata> {
   const locale = await getLocale();
@@ -93,7 +95,7 @@ export default async function ContactPage() {
             </h2>
           </Reveal>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
             {/* WhatsApp 卡 */}
             <Reveal delay={300}>
               <Link
@@ -132,6 +134,32 @@ export default async function ContactPage() {
                   {c.methods.email.value}
                 </p>
               </div>
+            </Reveal>
+
+            {/* Facebook 卡 */}
+            <Reveal delay={450}>
+              <a
+                href={facebookLink("contact")}
+                target="_blank"
+                rel="noopener noreferrer me"
+                data-track="facebook-follow"
+                data-campaign="contact"
+                className="group block rounded-3xl bg-white border border-brand-pine-dark/10 p-8 hover:border-brand-gold transition-colors min-h-[240px] flex flex-col"
+              >
+                <FacebookIcon size={28} className="text-brand-gold mb-6" />
+                <h3
+                  className="text-brand-pine-dark mb-3"
+                  style={{ fontFamily: "var(--serif)", fontSize: "1.5rem", fontWeight: 700 }}
+                >
+                  {t(c.methods.facebook.title, locale)}
+                </h3>
+                <p className="text-brand-pine-dark text-lg font-semibold mb-2 group-hover:text-brand-gold transition-colors">
+                  {c.methods.facebook.value}
+                </p>
+                <p className="text-brand-pine-dark/65 text-sm leading-6 mt-auto">
+                  {t(c.methods.facebook.note, locale)}
+                </p>
+              </a>
             </Reveal>
 
             {/* Offices 卡 */}

@@ -6,8 +6,15 @@ export const siteConfig = {
   whatsappNumber: process.env.NEXT_PUBLIC_CONTACT_WHATSAPP || "8613392247649",
   contactPhoneDisplay: process.env.NEXT_PUBLIC_CONTACT_PHONE_DISPLAY || "+86 133 9224 7649",
   contactEmail: process.env.NEXT_PUBLIC_CONTACT_EMAIL || "service@decoropic.com",
-  contactLocation: process.env.NEXT_PUBLIC_CONTACT_LOCATION || "Ghana"
+  contactLocation: process.env.NEXT_PUBLIC_CONTACT_LOCATION || "Ghana",
+  facebookUrl: process.env.NEXT_PUBLIC_FACEBOOK_URL || "https://www.facebook.com/decoropicdesign",
+  facebookHandle: "@decoropicdesign"
 };
+
+/** Facebook page link with UTM so Meta/GA attribute the traffic to the website. */
+export function facebookLink(campaign: string): string {
+  return `${siteConfig.facebookUrl}?utm_source=decoropic.com&utm_medium=website&utm_campaign=${campaign}`;
+}
 
 export const faqs = [
   {

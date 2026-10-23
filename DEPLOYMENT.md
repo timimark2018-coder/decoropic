@@ -69,6 +69,8 @@ You can also follow the step-by-step checklist in:
 ### Optional analytics variables
 
 - `GOOGLE_SITE_VERIFICATION`
+- `FACEBOOK_DOMAIN_VERIFICATION` — Meta Business Suite 域名验证 meta 标签值（可选）
+- `NEXT_PUBLIC_FACEBOOK_URL` — 官方 Facebook 主页（默认 https://www.facebook.com/decoropicdesign）
 - `NEXT_PUBLIC_GA_MEASUREMENT_ID`
 - `NEXT_PUBLIC_GOOGLE_ADS_ID`
 - `NEXT_PUBLIC_GOOGLE_ADS_CONVERSION_LABEL`
