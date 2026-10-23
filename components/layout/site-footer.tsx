@@ -3,6 +3,7 @@ import type { Locale } from "@/content/types";
 import { siteNavContent } from "@/content/site-nav";
 import { siteConfig } from "@/lib/utils/constants";
 import { resolveSiteHref } from "@/lib/utils/site-links";
+import { FacebookFollowLink } from "@/components/shared/facebook-link";
 
 type SiteFooterProps = {
   locale: Locale;
@@ -113,6 +114,13 @@ export function SiteFooter({ locale }: SiteFooterProps) {
               </li>
               <li className="text-brand-ivory/80">
                 {siteConfig.contactLocation}
+              </li>
+              <li className="pt-1">
+                <FacebookFollowLink
+                  locale={locale}
+                  campaign="footer"
+                  className="inline-flex items-center gap-2 text-brand-ivory/80 transition-colors hover:text-brand-gold"
+                />
               </li>
               <li className="mt-4 border-t border-brand-ivory/10 pt-4">
                 <a
