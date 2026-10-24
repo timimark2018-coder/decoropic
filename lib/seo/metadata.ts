@@ -30,6 +30,8 @@ export function buildMetadata({
   const url = locale === "zh" ? zhUrl : enUrl;
   const ogImageUrl = `${baseUrl}/og/default.jpg`;
   const googleVerification = process.env.GOOGLE_SITE_VERIFICATION;
+  // Meta Business Suite → Brand Safety → Domains → "Meta-tag verification"
+  const facebookDomainVerification = process.env.FACEBOOK_DOMAIN_VERIFICATION;
   const resolvedDescription = pickLocalizedCopy(description, locale);
   const resolvedTitle = title ? pickLocalizedCopy(title, locale) : undefined;
   const openGraphLocale = locale === "zh" ? "zh_CN" : "en_US";
@@ -62,11 +64,15 @@ export function buildMetadata({
     ...(metadataTitle !== undefined ? { title: metadataTitle } : {}),
     description: resolvedDescription,
     metadataBase: new URL(baseUrl),
-    verification: googleVerification
-      ? {
-          google: googleVerification
-        }
-      : undefined,
+    verification:
+      googleVerification || facebookDomainVerification
+        ? {
+            ...(googleVerification ? { google: googleVerification } : {}),
+            ...(facebookDomainVerification
+              ? { other: { "facebook-domain-verification": facebookDomainVerification } }
+              : {})
+          }
+        : undefined,
     alternates: {
       canonical: url,
       languages: {

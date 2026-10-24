@@ -23,7 +23,7 @@ export const contactContent = {
   },
   methods: {
     eyebrow: { en: "Reach our team", zh: "联系我们" },
-    title: { en: "Three ways to reach us.", zh: "三种方式联系我们。" },
+    title: { en: "Four ways to reach us.", zh: "四种方式联系我们。" },
     whatsapp: {
       title: { en: "WhatsApp", zh: "WhatsApp" },
       value: "+86 133 9224 7649",
@@ -33,6 +33,14 @@ export const contactContent = {
     email: {
       title: { en: "Email", zh: "邮箱" },
       value: "service@decoropic.com"
+    },
+    facebook: {
+      title: { en: "Facebook", zh: "Facebook" },
+      value: "@decoropicdesign",
+      note: {
+        en: "Follow for new projects, product arrivals and sourcing tips.",
+        zh: "关注我们，获取新项目、新品到货与采购贴士。"
+      }
     },
     offices: {
       title: { en: "Offices", zh: "办公地点" },

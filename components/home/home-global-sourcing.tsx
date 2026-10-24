@@ -52,6 +52,9 @@ export function HomeGlobalSourcing({ locale }: Props) {
           >
             {cta}
           </Link>
+          <Link href="/source-from-china/southeast-asia" className="mt-5 block text-brand-ivory underline underline-offset-4">
+            {locale === "zh" ? "东南亚酒店、别墅与公寓项目采购 →" : "Sourcing for Southeast Asia hotel, villa & apartment projects →"}
+          </Link>
         </Reveal>
       </div>
     </section>

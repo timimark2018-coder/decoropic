@@ -3,6 +3,7 @@ import type { Locale } from "@/content/types";
 import { siteNavContent } from "@/content/site-nav";
 import { siteConfig } from "@/lib/utils/constants";
 import { localizePath, resolveSiteHref } from "@/lib/utils/site-links";
+import { FacebookFollowLink } from "@/components/shared/facebook-link";
 
 type SiteFooterProps = {
   locale: Locale;
@@ -114,6 +115,13 @@ export function SiteFooter({ locale }: SiteFooterProps) {
               <li className="text-brand-ivory/80">
                 {siteConfig.contactLocation}
               </li>
+              <li className="pt-1">
+                <FacebookFollowLink
+                  locale={locale}
+                  campaign="footer"
+                  className="inline-flex items-center gap-2 text-brand-ivory/80 transition-colors hover:text-brand-gold"
+                />
+              </li>
               <li className="mt-4 border-t border-brand-ivory/10 pt-4">
                 <a
                   href="https://diy.decoropic.com"
@@ -135,6 +143,7 @@ export function SiteFooter({ locale }: SiteFooterProps) {
                 <ul className="space-y-1.5">
                   {[
                     { href: "/source-from-china", en: "Source from China", zh: "从中国采购" },
+                    { href: "/source-from-china/southeast-asia", en: "Southeast Asia Projects", zh: "东南亚项目采购" },
                     { href: "/source-from-china/hotel-ff-e", en: "Hotel FF&E", zh: "酒店FF&E" },
                     { href: "/source-from-china/tiles-sanitary", en: "Tiles & Sanitaryware", zh: "瓷砖·卫浴" },
                     { href: "/guides", en: "Sourcing Guides", zh: "采购指南" }
