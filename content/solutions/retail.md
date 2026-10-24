@@ -25,11 +25,13 @@ Showroom and retail fit-out materials from China can cover everything a shop nee
 
 ## Budget tiers
 
-| Tier | Typical finishes | Price range |
-|---|---|---|
-| Functional | Metal shelving, melamine counters, standard porcelain tiles, basic track lighting, standard glass doors | [KEVIN TO CONFIRM] |
-| Mid-Range | Custom wall displays, lacquer or veneer counters, large-format tiles, adjustable spotlights, lit glass showcases | [KEVIN TO CONFIRM] |
-| Premium | Fully custom display joinery, stone or slab surfaces, decorative feature lighting, frameless glass storefront | [KEVIN TO CONFIRM] |
+| Tier | Typical finishes |
+| --- | --- |
+| Functional | Metal shelving, melamine counters, standard porcelain tiles, basic track lighting, standard glass doors |
+| Mid-Range | Custom wall displays, lacquer or veneer counters, large-format tiles, adjustable spotlights, lit glass showcases |
+| Premium | Fully custom display joinery, stone or slab surfaces, decorative feature lighting, frameless glass storefront |
+
+Use our 11-step [estimator](/estimator) for a range.
 
 ## How we deliver
 
@@ -42,15 +44,15 @@ Showroom and retail fit-out materials from China can cover everything a shop nee
 
 ## Recent project
 
-[CASE: Kevin to confirm a real delivered project for this page]
+[See delivered projects](/projects) →
 
 ## FAQ
 
 **Is there a minimum order for retail fixtures?**
-A single store is quoted as one project. Custom display units and counters may carry factory minimums per design: [KEVIN TO CONFIRM]. Rolling out the same fixtures across several stores or branches helps meet them.
+No minimum order. Mixed categories can be consolidated in one container.
 
 **How long does a retail fit-out take to produce?**
-It depends on how much custom joinery is involved: [KEVIN TO CONFIRM]. Shipping and clearance time is added on top, so give us your opening date early.
+Confirmed with your quote — talk to our team on WhatsApp +233 59 247 0446.
 
 **Can fixtures be designed around our products and brand?**
 Yes. Shelf depths, display heights, colours and counter finishes are specified to suit your products and brand. We confirm samples or drawings before production.

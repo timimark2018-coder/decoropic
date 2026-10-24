@@ -50,21 +50,21 @@ Many services route via Panama or other regional hubs. These are published forwa
 
 ## Project reference
 
-[CASE: Kevin to confirm a real delivered project or remove this block]
+[See delivered projects](/projects) →
 
 ## FAQ
 
 **Is there a minimum order?**
-[KEVIN TO CONFIRM]
+No minimum order. Mixed categories can be consolidated in one container.
 
 **Can several categories ship together?**
 Yes. Tiles, doors, windows, sanitaryware, furniture and lighting are consolidated at our Foshan warehouse and loaded into the same container, with one packing list per container. Larger projects ship in several containers.
 
 **What are your payment terms?**
-[KEVIN TO CONFIRM]
+T/T or L/C.
 
 **What lead time should I plan for?**
-[KEVIN TO CONFIRM]. On these routes, allow for transshipment on top of production, QC and sea transit.
+Confirmed with your quote — talk to our team on WhatsApp +233 59 247 0446.
 
 ## Get a quote
 

@@ -3,9 +3,6 @@ import path from "node:path";
 
 // 第 1 周起的内容包以 markdown 入库(content/solutions/*.md、content/markets/*.md)，
 // 每页一个文件、带 front-matter。这里把它解析成结构化区块，交给 ContentPage 渲染。
-//
-// 占位符 [KEVIN TO CONFIRM] / [CASE: ...] 原样留在 content 里，隐藏发生在渲染层，
-// 由 SHOW_PENDING_FIGURES 控制 —— Kevin 补数值时只要改 content、翻开关，不必动代码。
 
 export type ContentGroup = "solutions" | "markets";
 
@@ -34,13 +31,9 @@ export type ContentPage = {
   internalLinks: Array<{ href: string; label: string }>;
   /** 源文件给的配图建议:filename + 建议 alt。实际用图在 page 层挑选。 */
   imageSuggestions: Array<{ filename: string; alt: string }>;
+  /** 挂在「Recent project / Project reference」小节下的已交付项目卡(取自 content/project-cards.ts)。 */
+  projectCards: string[];
 };
-
-const PLACEHOLDER = /\[KEVIN TO CONFIRM\]|\[CASE:[^\]]*\]/;
-
-export function hasPlaceholder(value: string) {
-  return PLACEHOLDER.test(value);
-}
 
 function contentDir(group: ContentGroup) {
   return path.join(process.cwd(), "content", group);
@@ -228,7 +221,11 @@ export function getContentPage(group: ContentGroup, slug: string): ContentPage |
     intro,
     sections,
     internalLinks,
-    imageSuggestions
+    imageSuggestions,
+    projectCards: (fm.project_cards || "")
+      .split(",")
+      .map((v) => v.trim())
+      .filter(Boolean)
   };
 }
 

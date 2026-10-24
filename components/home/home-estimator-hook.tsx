@@ -542,8 +542,8 @@ export function HomeEstimatorHook({ locale }: Props) {
               Stuck on something?
             </h4>
             <p className="text-brand-pine-dark/70 text-sm leading-6 mb-5">
-              Send our team what you've shared so far — we'll continue from there. Or finish the
-              flow to see your project's preliminary budget.
+              Send our team what you&rsquo;ve shared so far — we&rsquo;ll continue from there. Or finish the
+              flow to see your project&rsquo;s preliminary budget.
             </p>
             {summarizeAnswered(form).length > 0 && (
               <div className="rounded-2xl bg-[#f7f3ec] p-4 mb-6 space-y-1">
@@ -852,7 +852,7 @@ export function HomeEstimatorHook({ locale }: Props) {
       {step === "reveal" && result && (
         <div className="py-8">
           <p className="text-brand-gold mb-6" style={{ fontSize: "0.78rem", fontWeight: 700, letterSpacing: "0.28em", textTransform: "uppercase" }}>
-            ━━ Your project's preliminary range
+            ━━ Your project&rsquo;s preliminary range
           </p>
           <h3 className="text-brand-pine-dark mb-8" style={{ fontFamily: "var(--serif)", fontSize: "clamp(2.5rem, 6vw, 5rem)", fontWeight: 800, lineHeight: 1 }}>
             {formatPrice(result.minEstimate, result.currency)} — {formatPrice(result.maxEstimate, result.currency)}
@@ -882,7 +882,7 @@ export function HomeEstimatorHook({ locale }: Props) {
           {exitedAtStep && (
             <div className="mb-6 rounded-2xl border border-brand-gold/30 bg-brand-gold/10 p-4">
               <p className="text-brand-gold text-sm leading-6">
-                ✦ We'll send our team what you've shared. Just need your contact.
+                ✦ We&rsquo;ll send our team what you&rsquo;ve shared. Just need your contact.
               </p>
             </div>
           )}

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { getProjectCards } from "@/content/project-cards";
 import Image from "next/image";
 import { buildMetadata } from "@/lib/seo/metadata";
 import { breadcrumbListSchema, faqPageSchema, webPageSchema } from "@/lib/seo/schema";
@@ -80,56 +81,27 @@ const NUMBERS = [
   ["14", "Average weeks from contract to handover"]
 ];
 
-const PROJECTS = [
-  {
-    title: "East Legon Villa",
-    meta: "4-bed · Premium · 487 m²",
-    body: "Marble-look porcelain feature wall, custom kitchen with Italian millwork, brass linear pendant in stairwell. Delivered in 14 weeks.",
-    img: "/projects/01-east-legon-villa/living-room.webp",
-    alt: "East Legon villa living room — Decoropic Premium tier project, Accra, 4-bed 487 m²"
-  },
-  {
-    title: "Cantonments Penthouse",
-    meta: "3-bed · Mid-Range · 220 m²",
-    body: "Travertine porcelain throughout, wall-hung sanitary, designer Italian sofa. Delivered in 11 weeks.",
-    img: "/projects/02-cantonments-penthouse/open-plan-living.webp",
-    alt: "Cantonments penthouse open-plan living — Decoropic Mid-Range tier project, Accra, 3-bed 220 m²"
-  },
-  {
-    title: "Airport Residential Apartment",
-    meta: "2-bed · Functional Refresh · 140 m²",
-    body: "Marble-look tile, fresh paint, ready-made furniture replacement. Delivered in 6 weeks.",
-    img: "/projects/03-airport-residential-apt/living-room.webp",
-    alt: "Airport Residential apartment living room — Decoropic Functional Refresh project, Accra, 2-bed 140 m²"
-  }
-];
+// 项目卡口径统一在 content/project-cards.ts，避免这里和 solutions 页各存一份后漂移。
+const PROJECTS = getProjectCards([
+  "east-legon-villa",
+  "cantonments-penthouse",
+  "airport-residential-apartment"
+]);
 
-const MINI_CASES = [
-  {
-    no: "01",
-    name: "Adjiringanor Family Villa",
-    spec: "Premium · 312 m² · 5-bed · 13 weeks",
-    highlight: "Marble-look porcelain throughout, custom kitchen, smart lighting integration.",
-    img: "/projects/04-adjiringanor-family-villa/exterior.webp",
-    alt: "Adjiringanor family villa exterior — Decoropic Premium tier project, Accra, 5-bed 312 m²"
-  },
-  {
-    no: "02",
-    name: "Airport Hills Modern Build",
-    spec: "Mid-Range · 240 m² · 4-bed · 11 weeks",
-    highlight: "Travertine slab feature wall, designer Italian sofa, walk-in pantry millwork.",
-    img: "/projects/05-airport-hills-modern-build/exterior.webp",
-    alt: "Airport Hills modern build exterior — Decoropic Mid-Range tier project, Accra, 4-bed 240 m²"
-  },
-  {
-    no: "03",
-    name: "Trasacco Penthouse Refit",
-    spec: "Luxury · 380 m² · 3-bed · 16 weeks",
-    highlight: "Italian leather upholstery, full smart-home, pivot entrance door.",
-    img: "/projects/06-trasacco-penthouse-refit/exterior-entry-door.webp",
-    alt: "Trasacco penthouse refit pivot entrance door — Decoropic Luxury tier project, Accra, 3-bed 380 m²"
-  }
-];
+// 本节用的是另一套字段名(no / name / spec / highlight)，在这里映射，
+// 这样下面的 JSX 不用改，数据仍只有 content/project-cards.ts 一个来源。
+const MINI_CASES = getProjectCards([
+  "adjiringanor-family-villa",
+  "airport-hills-modern-build",
+  "trasacco-penthouse-refit"
+]).map((card, index) => ({
+  no: String(index + 1).padStart(2, "0"),
+  name: card.title,
+  spec: card.meta,
+  highlight: card.body,
+  img: card.img,
+  alt: card.alt
+}));
 
 const VALUE_STACK = [
   "A written tier recommendation based on your brief — which of the 4 tiers fits, and why",

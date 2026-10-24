@@ -24,11 +24,13 @@ Restaurant fit-out sourcing in China lets you furnish and finish a dining room, 
 
 ## Budget tiers
 
-| Tier | Typical finishes | Price range |
-|---|---|---|
-| Functional | Metal-frame chairs, laminate tabletops, standard porcelain floor tiles, basic LED lighting, standard sanitaryware | [KEVIN TO CONFIRM] |
-| Mid-Range | Upholstered chairs and booths, solid-wood or stone-look tabletops, feature wall tiles, coordinated pendant lighting | [KEVIN TO CONFIRM] |
-| Premium | Custom-designed seating and bar counter, marble or slab surfaces, decorative lighting, designer washroom fittings | [KEVIN TO CONFIRM] |
+| Tier | Typical finishes |
+| --- | --- |
+| Functional | Metal-frame chairs, laminate tabletops, standard porcelain floor tiles, basic LED lighting, standard sanitaryware |
+| Mid-Range | Upholstered chairs and booths, solid-wood or stone-look tabletops, feature wall tiles, coordinated pendant lighting |
+| Premium | Custom-designed seating and bar counter, marble or slab surfaces, decorative lighting, designer washroom fittings |
+
+Use our 11-step [estimator](/estimator) for a range.
 
 ## How we deliver
 
@@ -41,15 +43,15 @@ Restaurant fit-out sourcing in China lets you furnish and finish a dining room, 
 
 ## Recent project
 
-[CASE: Kevin to confirm a real delivered project for this page]
+[See delivered projects](/projects) →
 
 ## FAQ
 
 **Is there a minimum order for restaurant furniture?**
-Custom chairs, booths and bar counters usually carry factory minimums per design: [KEVIN TO CONFIRM]. A full restaurant fit-out is quoted as one project.
+No minimum order. Mixed categories can be consolidated in one container.
 
 **How long does a restaurant fit-out take to produce and ship?**
-Production time depends on how much is custom: [KEVIN TO CONFIRM]. Sea transit and clearance are added on top. Tell us your opening date early so we can plan backwards from it.
+Confirmed with your quote — talk to our team on WhatsApp +233 59 247 0446.
 
 **Can you match our brand concept?**
 Yes. Upholstery, table finishes, the bar counter and feature walls can be specified to your concept. We send fabric and finish samples for approval before production starts.

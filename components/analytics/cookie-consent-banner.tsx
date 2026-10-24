@@ -74,8 +74,11 @@ export function CookieConsentBanner({ locale = "en" }: CookieConsentBannerProps)
       // Already decided — respect choice silently
       return;
     }
-    // No decision yet — show banner
-    setVisible(true);
+    // 尚未决定 —— 显示横幅。
+    // 直接在 effect 里同步 setState 会触发级联渲染(react-hooks/set-state-in-effect)，
+    // 这里推迟到下一帧:横幅本来就不需要在首帧出现，推迟还能让它不参与 LCP。
+    const raf = requestAnimationFrame(() => setVisible(true));
+    return () => cancelAnimationFrame(raf);
   }, []);
 
   function handleAccept() {

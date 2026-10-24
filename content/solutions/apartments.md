@@ -4,6 +4,7 @@ title: "Apartment Fit-Out Materials from China | Decoropic"
 description: "Apartment fit-out materials from China for developers: repeatable unit packs of tiles, doors, kitchens, sanitaryware and lighting, inspected in Foshan, shipped."
 h1: "Apartment Fit-Out Materials from China"
 primary_keyword: "apartment fit-out materials from China"
+project_cards: cantonments-penthouse, airport-residential-apartment
 ---
 
 Apartment fit-out materials from China work best when every unit is specified once and supplied as a repeatable pack. Decoropic, the brand of Foshan Home Style Import & Export Co., Ltd., founded in 2011 in Foshan, helps developers and contractors define a standard unit specification, source it across categories, check it in our Foshan warehouse and ship it in planned batches. Our Accra team measures sites in Ghana; for projects elsewhere we work from drawings and video walk-throughs.
@@ -24,11 +25,13 @@ Apartment fit-out materials from China work best when every unit is specified on
 
 ## Budget tiers
 
-| Tier | Typical finishes | Price range |
-|---|---|---|
-| Functional | Standard porcelain tiles, flat-panel interior doors, standard aluminium windows, melamine kitchen modules, basic sanitaryware | [KEVIN TO CONFIRM] |
-| Mid-Range | Larger-format tiles, steel-security entrance doors, heavier window profiles, quartz or solid-surface worktops, wall-hung toilets | [KEVIN TO CONFIRM] |
-| Premium | Marble-look slab tiles, veneer doors, slim-frame windows, high-gloss or lacquer kitchens, coordinated lighting and furniture packs | [KEVIN TO CONFIRM] |
+| Tier | Typical finishes |
+| --- | --- |
+| Functional | Standard porcelain tiles, flat-panel interior doors, standard aluminium windows, melamine kitchen modules, basic sanitaryware |
+| Mid-Range | Larger-format tiles, steel-security entrance doors, heavier window profiles, quartz or solid-surface worktops, wall-hung toilets |
+| Premium | Marble-look slab tiles, veneer doors, slim-frame windows, high-gloss or lacquer kitchens, coordinated lighting and furniture packs |
+
+Use our 11-step [estimator](/estimator) for a range.
 
 ## How we deliver
 
@@ -41,15 +44,15 @@ Apartment fit-out materials from China work best when every unit is specified on
 
 ## Recent project
 
-[CASE: Kevin to confirm a real delivered project for this page]
+Apartment and penthouse projects we have delivered in Accra.
 
 ## FAQ
 
 **What is the minimum order for an apartment project?**
-We quote per project, and factory minimums apply to some items such as custom-size tiles or doors: [KEVIN TO CONFIRM]. Repeating one specification across many units usually makes those minimums easier to meet.
+No minimum order. Mixed categories can be consolidated in one container.
 
 **How long does production take for a full block?**
-Lead time depends on unit count and the categories involved: [KEVIN TO CONFIRM]. We can split production and shipping into phases so early floors are supplied first.
+Confirmed with your quote — talk to our team on WhatsApp +233 59 247 0446.
 
 **Can we use different specifications for different unit types?**
 Yes. Studios, two-bedroom and penthouse units can each have their own specification. We keep a separate schedule and packing list for each type.

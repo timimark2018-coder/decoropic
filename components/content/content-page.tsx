@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import type { Locale } from "@/content/types";
 import type { ContentPage as ContentPageData } from "@/lib/content-pages/getContentPage";
-import { filterSections } from "@/lib/content-pages/pending";
+import { getProjectCards } from "@/content/project-cards";
 import { localizePath } from "@/lib/utils/site-links";
 import { HandDrawnLine, Reveal } from "@/components/ui";
 import { RichText } from "./rich-text";
@@ -23,7 +23,8 @@ type Props = {
 const PROSE = "text-base leading-[1.8] text-brand-pine-dark/80";
 
 export function ContentPage({ page, locale, eyebrow, heroImage }: Props) {
-  const sections = filterSections(page.sections);
+  const sections = page.sections;
+  const cards = getProjectCards(page.projectCards);
 
   return (
     <>
@@ -204,6 +205,34 @@ export function ContentPage({ page, locale, eyebrow, heroImage }: Props) {
 
                 return null;
               })}
+
+              {cards.length > 0 && /^(Recent project|Project reference)$/.test(section.heading) && (
+                <ul className="grid gap-x-8 gap-y-10 pt-2 sm:grid-cols-2 lg:grid-cols-3">
+                  {cards.map((card) => (
+                    <li key={card.slug}>
+                      <div className="relative aspect-[4/3] w-full overflow-hidden rounded-[6px]">
+                        <Image
+                          src={card.img}
+                          alt={card.alt}
+                          fill
+                          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 380px"
+                          className="object-cover"
+                        />
+                      </div>
+                      <h3
+                        className="mt-4 text-brand-pine-dark"
+                        style={{ fontFamily: "var(--serif)", fontSize: "1.1rem", fontWeight: 700, lineHeight: 1.3 }}
+                      >
+                        {card.title}
+                      </h3>
+                      <p className="mt-1 text-xs font-semibold uppercase tracking-wider text-brand-gold">
+                        {card.meta}
+                      </p>
+                      <p className="mt-3 text-sm leading-[1.75] text-brand-pine-dark/75">{card.body}</p>
+                    </li>
+                  ))}
+                </ul>
+              )}
             </div>
           </div>
         </section>

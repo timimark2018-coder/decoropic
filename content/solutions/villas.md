@@ -4,6 +4,7 @@ title: "Villa Interior Materials Package from China | Decoropic"
 description: "One villa interior materials package from China: tiles, doors, windows, kitchens, bathrooms, lighting and furniture sourced in Foshan, checked, shipped as one."
 h1: "Villa Interior Materials Package from China"
 primary_keyword: "villa interior materials package from China"
+project_cards: east-legon-villa, adjiringanor-family-villa, airport-hills-modern-build
 ---
 
 A villa interior materials package from China lets you buy every finish for a private house through one supplier, one contract and one consolidated shipment. Decoropic is the brand of Foshan Home Style Import & Export Co., Ltd., founded in 2011 in Foshan. We measure the house, draw a design around your budget, source each category from factories in Foshan and Guangdong, inspect the goods in our warehouse and ship them together. Our Accra team supports installation in Ghana; overseas clients get drawings, video guides and a WhatsApp line.
@@ -24,11 +25,13 @@ A villa interior materials package from China lets you buy every finish for a pr
 
 ## Budget tiers
 
-| Tier | Typical finishes | Price range |
-|---|---|---|
-| Functional | Standard-size porcelain tiles, flat-panel doors, basic aluminium windows, laminate kitchen fronts, standard sanitaryware | [KEVIN TO CONFIRM] |
-| Mid-Range | Large-format tiles, solid-core doors, thermal-break or heavier aluminium profiles, quartz worktops, concealed cisterns, coordinated lighting | [KEVIN TO CONFIRM] |
-| Premium | Slab tiles or marble-look surfaces, pivot or custom entrance door, slim-frame windows, lacquer or veneer kitchen, designer lighting, custom furniture | [KEVIN TO CONFIRM] |
+| Tier | Typical finishes |
+| --- | --- |
+| Functional | Standard-size porcelain tiles, flat-panel doors, basic aluminium windows, laminate kitchen fronts, standard sanitaryware |
+| Mid-Range | Large-format tiles, solid-core doors, thermal-break or heavier aluminium profiles, quartz worktops, concealed cisterns, coordinated lighting |
+| Premium | Slab tiles or marble-look surfaces, pivot or custom entrance door, slim-frame windows, lacquer or veneer kitchen, designer lighting, custom furniture |
+
+Use our 11-step [estimator](/estimator) for a range.
 
 ## How we deliver
 
@@ -41,15 +44,15 @@ A villa interior materials package from China lets you buy every finish for a pr
 
 ## Recent project
 
-[CASE: Kevin to confirm a real delivered project for this page]
+Villas we have delivered in Accra, with the tier, size and programme each one ran to.
 
 ## FAQ
 
 **Is there a minimum order for a villa package?**
-The package is built per house, so there is no fixed minimum for the package itself. Individual factory items such as custom doors or tiles can carry their own minimums: [KEVIN TO CONFIRM].
+No minimum order. Mixed categories can be consolidated in one container.
 
 **How long does a villa package take from approved design to shipment?**
-Production and consolidation time depends on the categories in the package: [KEVIN TO CONFIRM]. Sea transit and clearance time is added on top and depends on the destination port.
+Confirmed with your quote — talk to our team on WhatsApp +233 59 247 0446.
 
 **Can doors, windows and cabinets be made to our sizes?**
 Yes. Doors, windows, kitchen cabinets and wardrobes are produced to the measurements taken on site or from your drawings. Finishes, colours and hardware are chosen during the design stage.
