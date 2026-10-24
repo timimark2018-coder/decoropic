@@ -350,11 +350,12 @@ export default async function ProjectsPage() {
           <Reveal delay={400}>
             <article className="mb-20">
               <div className="relative mb-10 aspect-[16/9] w-full overflow-hidden bg-brand-pine-dark/5">
-                <img
+                <Image
                   src={c.hotelsSection.featured.imageSrc}
                   alt={t(c.hotelsSection.featured.title, locale)}
-                  loading="lazy"
-                  className="h-full w-full object-cover"
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 1200px"
+                  className="object-cover"
                 />
               </div>
 
@@ -469,11 +470,12 @@ export default async function ProjectsPage() {
                           className="flex-shrink-0 relative aspect-[4/3] bg-brand-pine-dark/5 overflow-hidden"
                           style={{ width: "320px", scrollSnapAlign: "start" }}
                         >
-                          <img
+                          <Image
                             src={img}
                             alt={`${t(mc.city, locale)} ${imgIdx + 1}`}
-                            loading="lazy"
-                            className="w-full h-full object-cover"
+                            fill
+                            sizes="320px"
+                            className="object-cover"
                           />
                         </figure>
                       ))}
@@ -543,11 +545,12 @@ export default async function ProjectsPage() {
           <div className="mb-12 grid grid-cols-1 gap-10 lg:grid-cols-2 lg:items-center lg:gap-16">
             <Reveal delay={400}>
               <div className="relative aspect-[4/3] w-full overflow-hidden bg-brand-pine-dark/5">
-                <img
+                <Image
                   src={c.villaSection.imageSrc}
                   alt={t(c.villaSection.imageAlt, locale)}
-                  loading="lazy"
-                  className="h-full w-full object-cover"
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  className="object-cover"
                 />
               </div>
             </Reveal>
@@ -716,11 +719,12 @@ export default async function ProjectsPage() {
                       className="flex-shrink-0 relative aspect-[4/5] bg-brand-pine-dark/5 overflow-hidden"
                       style={{ width: "260px", scrollSnapAlign: "start" }}
                     >
-                      <img
+                      <Image
                         src={img.src}
                         alt={t(img.stage, locale)}
-                        loading="lazy"
-                        className="w-full h-full object-cover"
+                        fill
+                        sizes="260px"
+                        className="object-cover"
                       />
                       <figcaption
                         className="absolute inset-x-0 bottom-0 p-3 text-brand-ivory"

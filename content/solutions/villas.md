@@ -31,7 +31,7 @@ A villa interior materials package from China lets you buy every finish for a pr
 | Mid-Range | Large-format tiles, solid-core doors, thermal-break or heavier aluminium profiles, quartz worktops, concealed cisterns, coordinated lighting |
 | Premium | Slab tiles or marble-look surfaces, pivot or custom entrance door, slim-frame windows, lacquer or veneer kitchen, designer lighting, custom furniture |
 
-Use our 11-step [estimator](/estimator) for a range.
+Use our 11-step [estimator](/estimator?type=villa) for a range.
 
 ## How we deliver
 
@@ -62,9 +62,9 @@ Yes. Ghana is our proven delivery base, and we serve overseas projects worldwide
 
 ## Start your villa budget
 
-Use our 11-step [budget estimator](/estimator) to get a first figure for your villa, or send your drawings on WhatsApp to +233 59 247 0446. We will reply with questions, a design plan and the next step.
+Use our 11-step [budget estimator](/estimator?type=villa) to get a first figure for your villa, or send your drawings on WhatsApp to +233 59 247 0446. We will reply with questions, a design plan and the next step.
 
-**Internal links:** /estimator, /source-from-china, /markets/ghana
+**Internal links:** /estimator?type=villa, /source-from-china, /markets/ghana
 
 **Image suggestions:**
 - villa-living-room-porcelain-tiles.webp — Villa living room finished with large-format porcelain floor tiles sourced from Foshan

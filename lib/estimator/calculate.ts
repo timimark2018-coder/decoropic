@@ -14,6 +14,7 @@ export function calculateEstimatorResult(input: EstimatorPreviewInput | Estimato
   const baseEstimate =
     estimatorConfig.baseAreaPrice *
       input.builtUpArea *
+      estimatorConfig.projectTypeMultiplier[input.projectType] *
       estimatorConfig.finishMultiplier[input.finishLevel] *
       estimatorConfig.serviceMultiplier[input.serviceScope] *
       estimatorConfig.customMultiplier[input.customItems] +

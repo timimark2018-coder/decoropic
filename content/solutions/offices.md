@@ -30,7 +30,7 @@ Office fit-out furniture and materials from China can be bought as one package c
 | Mid-Range | Bench desking with cable trays, ergonomic chairs, full-height glass partitions, coordinated lighting, branded reception counter |
 | Premium | Veneer or lacquer executive furniture, height-adjustable desks, frameless glass partitions, decorative lighting, stone-look reception finishes |
 
-Use our 11-step [estimator](/estimator) for a range.
+[Send your project brief](/contact?type=commercial) and we will come back with a layout and tiered pricing.
 
 ## How we deliver
 
@@ -61,9 +61,9 @@ Yes. We serve office projects worldwide. Outside Ghana, we hand the consolidated
 
 ## Plan your office budget
 
-Use our 11-step [budget estimator](/estimator) to get a first figure, or send your floor plan and headcount on WhatsApp to +233 59 247 0446. We will reply with a layout and tiered pricing.
+[Send your project brief](/contact?type=commercial), or send your floor plan and headcount on WhatsApp to +233 59 247 0446. We will reply with a layout and tiered pricing.
 
-**Internal links:** /estimator, /source-from-china, /contact
+**Internal links:** /contact, /source-from-china, /contact
 
 **Image suggestions:**
 - office-workstations-china-fit-out.webp — Open-plan office with workstations and task chairs supplied from China

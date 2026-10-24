@@ -27,7 +27,31 @@ export async function generateMetadata(): Promise<Metadata> {
   });
 }
 
-export default async function ContactPage() {
+// /contact?type=... 预选项目类型。
+// 只接受白名单内的值，映射到 contactContent.options.projectTypes 里的 en 名;
+// 其它值一律忽略，不让 URL 参数塞进表单。
+const TYPE_PARAM_MAP: Record<string, string> = {
+  commercial: "Commercial",
+  villa: "Villa",
+  apartment: "Apartment",
+  hospitality: "Hospitality",
+  hotel: "Hospitality",
+  office: "Office",
+  mixed: "Mixed Project"
+};
+
+function resolveProjectType(value: string | string[] | undefined) {
+  const v = Array.isArray(value) ? value[0] : value;
+  return v ? TYPE_PARAM_MAP[v.toLowerCase()] : undefined;
+}
+
+export default async function ContactPage({
+  searchParams
+}: {
+  searchParams: Promise<{ type?: string | string[] }>;
+}) {
+  const { type } = await searchParams;
+  const initialProjectType = resolveProjectType(type);
   const locale = await getLocale();
   const c = contactContent;
 
@@ -204,7 +228,7 @@ export default async function ContactPage() {
           </Reveal>
           <Reveal delay={400}>
             <div className="max-w-[800px]">
-              <ProjectInquiryForm sourcePage="/contact" locale={locale} />
+              <ProjectInquiryForm sourcePage="/contact" locale={locale} initialProjectType={initialProjectType} />
             </div>
           </Reveal>
         </div>

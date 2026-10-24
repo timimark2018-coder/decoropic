@@ -31,7 +31,7 @@ Showroom and retail fit-out materials from China can cover everything a shop nee
 | Mid-Range | Custom wall displays, lacquer or veneer counters, large-format tiles, adjustable spotlights, lit glass showcases |
 | Premium | Fully custom display joinery, stone or slab surfaces, decorative feature lighting, frameless glass storefront |
 
-Use our 11-step [estimator](/estimator) for a range.
+[Send your project brief](/contact?type=commercial) and we will come back with a layout and tiered pricing.
 
 ## How we deliver
 
@@ -62,9 +62,9 @@ Yes. We serve retail projects worldwide. Outside Ghana, the consolidated shipmen
 
 ## Budget your store
 
-Use our 11-step [budget estimator](/estimator) for a first figure, or send your floor plan and product list on WhatsApp to +233 59 247 0446. We will reply with a layout and tiered pricing.
+[Send your project brief](/contact?type=commercial), or send your floor plan and product list on WhatsApp to +233 59 247 0446. We will reply with a layout and tiered pricing.
 
-**Internal links:** /estimator, /products, /contact
+**Internal links:** /contact, /products, /contact
 
 **Image suggestions:**
 - retail-store-display-shelving-china.webp — Retail store with wall display shelving and track lighting sourced from China

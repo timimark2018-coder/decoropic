@@ -1,4 +1,4 @@
-export type ProjectType = "villa";
+export type ProjectType = "villa" | "apartment";
 export type FinishLevel = "standard" | "premium" | "luxury";
 export type ServiceScope = "product_only" | "product_design" | "measure_design_sourcing" | "full_support";
 export type CustomItems = "yes" | "no" | "not_sure";

@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useState, useEffect, useRef, useCallback } from "react";
 import {
   ChevronRight,
@@ -10,8 +11,6 @@ import {
   X,
   Home as HomeIcon,
   Building,
-  Building2,
-  Briefcase,
   Sparkles,
   Crown,
   Square,
@@ -27,6 +26,7 @@ import { InquirySuccess } from "@/components/forms/inquiry-success";
 import type {
   EstimatorResult,
   FunctionalZone,
+  ProjectType,
   FinishLevel,
   ServiceScope,
   CustomItems
@@ -34,6 +34,8 @@ import type {
 
 type Props = {
   locale: Locale;
+  /** 由 /estimator?type=villa|apartment 预选,此时跳过 q1 直接从 q2 开始。 */
+  initialProjectType?: ProjectType;
 };
 
 type Step =
@@ -48,7 +50,6 @@ type Step =
   | "q11" | "q11_reward"
   | "loading" | "reveal" | "contact" | "submitting" | "thank_you";
 
-type ProjectType = "villa" | "apartment" | "hotel" | "office";
 type LocationKey = "accra" | "kumasi" | "takoradi" | "other";
 type StyleKey = "modern_luxury" | "classic_european" | "contemporary" | "tropical";
 type InvestmentKey = "under_10k" | "10_30k" | "30_50k" | "50_100k" | "100_300k" | "over_300k";
@@ -200,9 +201,7 @@ function summarizeAnswered(form: FormState): string[] {
   if (form.projectType) {
     const pt: Record<ProjectType, string> = {
       villa: "Villa / Detached home",
-      apartment: "Apartment / Unit",
-      hotel: "Hotel / Hospitality",
-      office: "Office / Commercial"
+      apartment: "Apartment / Unit"
     };
     lines.push(pt[form.projectType]);
   }
@@ -237,9 +236,13 @@ function summarizeAnswered(form: FormState): string[] {
   return lines;
 }
 
-export function HomeEstimatorHook({ locale }: Props) {
+export function HomeEstimatorHook({ locale, initialProjectType }: Props) {
   const [step, setStep] = useState<Step>("intro");
-  const [form, setForm] = useState<FormState>(initialState);
+  // 从 /estimator?type=villa|apartment 进来时，q1 已经有答案 —— 预置进表单，
+  // 开始后直接跳到 q2，不让用户把同一个问题再答一遍。
+  const [form, setForm] = useState<FormState>(
+    initialProjectType ? { ...initialState, projectType: initialProjectType } : initialState
+  );
   const [result, setResult] = useState<EstimatorResult | null>(null);
   const [soundOn, setSoundOn] = useState(true);
   const [submitError, setSubmitError] = useState("");
@@ -360,7 +363,7 @@ export function HomeEstimatorHook({ locale }: Props) {
   const fetchPreview = async (state: FormState) => {
     try {
       const payload = {
-        projectType: "villa" as const,
+        projectType: state.projectType ?? "villa",
         builtUpArea: areaMedian[state.areaRange ?? "400_700"] ?? 550,
         bedrooms: state.bedrooms ?? 4,
         bathrooms: state.bathrooms ?? 3,
@@ -414,7 +417,7 @@ export function HomeEstimatorHook({ locale }: Props) {
         (form.notes || "");
 
       const payload = {
-        projectType: "villa" as const,
+        projectType: form.projectType ?? "villa",
         builtUpArea: areaMedian[form.areaRange ?? "400_700"] ?? 550,
         bedrooms: form.bedrooms ?? 4,
         bathrooms: form.bathrooms ?? 3,
@@ -591,7 +594,7 @@ export function HomeEstimatorHook({ locale }: Props) {
           </h3>
           <button
             type="button"
-            onClick={() => { initContext(); advanceTo("q1"); }}
+            onClick={() => { initContext(); advanceTo(initialProjectType ? "q2" : "q1"); }}
             className="inline-flex items-center gap-3 rounded-full bg-brand-pine-dark px-10 py-4 text-white hover:bg-brand-pine-dark/90 transition-colors"
           >
             <span>Begin</span>
@@ -605,9 +608,7 @@ export function HomeEstimatorHook({ locale }: Props) {
           <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
             {([
               { v: "villa" as const, label: "Villa / Detached home", Icon: HomeIcon },
-              { v: "apartment" as const, label: "Apartment / Unit", Icon: Building },
-              { v: "hotel" as const, label: "Hotel / Hospitality", Icon: Building2 },
-              { v: "office" as const, label: "Office / Commercial", Icon: Briefcase }
+              { v: "apartment" as const, label: "Apartment / Unit", Icon: Building }
             ]).map((opt) => (
               <button key={opt.v} type="button" onClick={() => handleQ1(opt.v)} className={choiceBtnClass}>
                 <span className="flex items-center gap-4">
@@ -618,6 +619,17 @@ export function HomeEstimatorHook({ locale }: Props) {
               </button>
             ))}
           </div>
+          {/* 这个测算器的单价模型只覆盖住宅。酒店/办公/餐厅/零售走人工报价，
+              不在这里给数字。 */}
+          <p className="mt-6 text-sm leading-relaxed text-brand-pine-dark/70">
+            Hotel, office, restaurant or retail project?{" "}
+            <Link
+              href="/contact?type=commercial"
+              className="font-semibold text-brand-pine underline decoration-brand-gold/60 underline-offset-2 transition-colors hover:text-brand-gold"
+            >
+              Send us your brief →
+            </Link>
+          </p>
         </QuestionShell>
       )}
 

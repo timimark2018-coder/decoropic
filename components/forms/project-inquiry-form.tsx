@@ -12,6 +12,8 @@ import { InquirySuccess } from "./inquiry-success";
 type ProjectInquiryFormProps = {
   sourcePage: string;
   locale: Locale;
+  /** 由 /contact?type=... 预选项目类型(值取 contactContent.options.projectTypes 的 en 名)。 */
+  initialProjectType?: string;
 };
 
 const copy = {
@@ -31,7 +33,7 @@ const copy = {
   }
 } as const;
 
-export function ProjectInquiryForm({ sourcePage, locale }: ProjectInquiryFormProps) {
+export function ProjectInquiryForm({ sourcePage, locale, initialProjectType}: ProjectInquiryFormProps) {
   const [status, setStatus] = useState("");
   const [fieldErrors, setFieldErrors] = useState<Record<string, string>>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -105,7 +107,12 @@ export function ProjectInquiryForm({ sourcePage, locale }: ProjectInquiryFormPro
           <input name="email" type="email" placeholder={t(contactContent.form.fields.email, locale)} className={inputClass("email")} required />
         </div>
         <div className="grid gap-4 sm:grid-cols-2">
-          <select name="projectType" className={inputClass("projectType")} defaultValue="" required>
+          <select
+            name="projectType"
+            className={inputClass("projectType")}
+            defaultValue={initialProjectType ?? ""}
+            required
+          >
             <option value="" disabled>
               {t(contactContent.form.fields.projectType, locale)}
             </option>
