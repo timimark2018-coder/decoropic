@@ -11,7 +11,7 @@ export async function generateMetadata(): Promise<Metadata> {
       zh: "中国家具供应商 — 全球出口"
     },
     description: {
-      en: "Source furniture from China with a vetted export partner — residential and contract furniture, quality-controlled and consolidated for worldwide shipping. You handle local import and installation.",
+      en: "Furniture made in Guangdong for villas, apartments and hotels. Built to your drawings or standard ranges, inspected and photographed before container loading.",
       zh: "与经验证的出口伙伴从中国采购家具 — 住宅与工程家具，验货后拼柜全球发运。当地进口与安装由买方自办。"
     },
     path: "/source-from-china/furniture",

@@ -8,8 +8,8 @@ export async function generateMetadata(): Promise<Metadata> {
 
   return buildMetadata({
     description: {
-      en: "From local site measurement and budget-led design to sourcing coordination and Ghana delivery support. 20 years on the ground in Accra. 26 years of international building-materials trade.",
-      zh: "从当地现场测量、预算导向设计到采购协调与加纳本地交付支持。深耕加纳 20 年,26 年国际建材贸易。"
+      en: "One-stop sourcing of building materials, furniture and lighting from China for overseas projects — factory QC, consolidation and Ghana delivery support.",
+      zh: "为海外项目从中国一站式采购建材、家具与灯具：工厂验货、集中拼柜装柜,并提供加纳本地交付支持。"
     },
     path: "/",
     locale

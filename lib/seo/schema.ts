@@ -16,6 +16,23 @@ const ORG_ADDRESS = {
   addressCountry: "CN"
 };
 
+// 阿克拉办公室。佛山是总部(上面的 address)，加纳是交付支点 ——
+// 两个地点都登记，买家和 Google 才看得到"中国采购 + 当地落地"这个结构。
+const ORG_ACCRA_LOCATION = {
+  "@type": "Place" as const,
+  name: "Decoropic Accra Office",
+  address: {
+    "@type": "PostalAddress" as const,
+    streetAddress: "15 Bermudagrass Street",
+    addressLocality: "Accra",
+    addressCountry: "GH"
+  },
+  telephone: "+233592470446"
+};
+
+// 服务范围从"仅加纳"放开到实际出口市场 —— 锁加纳会让 Google 判定为本地站。
+const ORG_AREA_SERVED = ["Worldwide", "GH", "NG", "CI", "TG", "AE", "SA", "KE", "TZ", "ZA"];
+
 export function websiteSchema(locale: Locale = "en") {
   const baseUrl = siteConfig.siteUrl;
   const description =
@@ -55,6 +72,7 @@ export function organizationSchema(locale: Locale = "en") {
     description,
     email: siteConfig.contactEmail,
     address: ORG_ADDRESS,
+    location: ORG_ACCRA_LOCATION,
     contactPoint: [
       {
         "@type": "ContactPoint",
@@ -62,11 +80,18 @@ export function organizationSchema(locale: Locale = "en") {
         email: siteConfig.contactEmail,
         telephone: "+8613392247649",
         availableLanguage: ["English", "Chinese"],
-        areaServed: ["GH", "CN"]
+        areaServed: ORG_AREA_SERVED
+      },
+      {
+        "@type": "ContactPoint",
+        contactType: "customer service",
+        telephone: "+233592470446",
+        availableLanguage: ["English"],
+        areaServed: "GH"
       }
     ],
-    areaServed: { "@type": "Country", name: "Ghana" },
-    knowsLanguage: ["en", "zh", "en-GH"],
+    areaServed: ORG_AREA_SERVED,
+    knowsLanguage: ["en", "zh"],
     sameAs: [
       siteConfig.productCenterUrl,
       "https://diy.decoropic.com",
@@ -151,5 +176,28 @@ export function personSchema() {
     knowsLanguage: ["en", "zh"],
     url,
     mainEntityOfPage: `${url}#webpage`
+  };
+}
+
+
+// ItemList —— 品类索引页用,让 Google 看到这一页罗列的是哪些品类/产品。
+export function itemListSchema(
+  items: Array<{ name: string; path: string; description?: string }>,
+  listName?: string
+) {
+  const baseUrl = siteConfig.siteUrl;
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    ...(listName ? { name: listName } : {}),
+    numberOfItems: items.length,
+    itemListElement: items.map((item, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: item.name,
+      url: `${baseUrl}${item.path}`,
+      ...(item.description ? { description: item.description } : {})
+    }))
   };
 }

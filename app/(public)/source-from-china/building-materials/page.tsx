@@ -11,7 +11,7 @@ export async function generateMetadata(): Promise<Metadata> {
       zh: "从中国采购建材 — 全球出口"
     },
     description: {
-      en: "Source building materials from China for export worldwide — tiles, sanitary ware, doors, windows and finishes. Factory selection, QC, consolidation and shipping. You handle local import and installation.",
+      en: "Source building materials from China for overseas projects: tiles, sanitaryware, kitchens, doors, windows and lighting in one order, inspected before loading.",
       zh: "从中国采购建材并全球出口 — 瓷砖、卫浴、门窗与饰面。工厂选品、验货、拼柜与发运。当地进口与安装由买方自办。"
     },
     path: "/source-from-china/building-materials",

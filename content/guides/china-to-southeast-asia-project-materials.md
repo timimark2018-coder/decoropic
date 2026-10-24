@@ -1,6 +1,6 @@
 ---
-title: "China to Southeast Asia: Hotel & Interior Procurement Checklist"
-description: "Plan a China-sourced hotel, villa or apartment package for Southeast Asia: drawings, specifications, samples, QC, export packing and local receiving responsibilities."
+title: "China to Southeast Asia: Procurement Checklist"
+description: "Ports, transit times, duty treatment and QC for shipping hotel and interior materials from China into Southeast Asia, with the lead times that drive programmes."
 slug: "china-to-southeast-asia-project-materials"
 targetKeyword: "source hotel furniture from China Southeast Asia"
 order: 2

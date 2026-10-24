@@ -10,12 +10,11 @@ import { ProjectInquiryForm } from "@/components/forms/project-inquiry-form";
 import styles from "./southeast-asia.module.css";
 
 const sourcePage = "/source-from-china/southeast-asia";
-const title = "China Sourcing for Southeast Asia | Hotel FF&E & Interiors";
-const description = "Source hotel FF&E, villa interiors and building materials from China for Southeast Asia. Remote design, QC and consolidated export; local import and installation by your team.";
+const title = "China Sourcing for Southeast Asia — Hotel FF&E";
+const description = "Source hotel FF&E, tiles and interior packages from China for Southeast Asian projects — factory QC, consolidation and shipping to your regional port.";
 
 export const metadata: Metadata = {
   ...buildMetadata({ title, description, path: sourcePage }),
-  title: { absolute: `${title} | Decoropic` },
   alternates: { canonical: `https://www.decoropic.com${sourcePage}` },
   openGraph: {
     title, description, type: "website", locale: "en_US",

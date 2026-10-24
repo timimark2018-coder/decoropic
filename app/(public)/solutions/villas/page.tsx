@@ -14,7 +14,7 @@ export async function generateMetadata(): Promise<Metadata> {
       zh: "加纳别墅与住宅装修"
     },
     description: {
-      en: "House decoration in Ghana for villas and private residences — China-sourced tiles, furniture, lighting, sanitary ware and doors delivered to Accra. Project pricing, one contract.",
+      en: "Complete material and furniture packages for villa and residential projects — measured, specified to budget, inspected in China and installed on site in Ghana.",
       zh: "加纳别墅与住宅装修 — 从中国直采瓷砖、家具、灯饰、卫浴和门窗，配送至阿克拉。项目报价，一份合同。"
     },
     path: "/solutions/villas",
@@ -117,7 +117,7 @@ export default async function VillasPage() {
                 Start Your Villa Project
               </Link>
               <Link
-                href="/#estimator"
+                href="/estimator"
                 className="border border-brand-pine-dark/30 text-brand-pine-dark px-7 py-4 transition-colors hover:bg-brand-pine-dark/5"
                 style={{ fontFamily: "var(--serif)", fontSize: "0.875rem", letterSpacing: "0.18em", textTransform: "uppercase", fontWeight: 700 }}
               >

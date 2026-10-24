@@ -1,6 +1,6 @@
 ---
 title: "Hotel FF&E RFQ Template for Southeast Asia Projects"
-description: "Prepare a hotel furniture and fittings request for quotation: room quantities, item specifications, sample approvals, quote exclusions and destination responsibilities."
+description: "What a hotel FF&E request for quotation must specify to get comparable bids from Chinese factories — scope, finishes, samples, lead times and inspection terms."
 slug: "hotel-ffe-rfq-template-southeast-asia"
 targetKeyword: "hotel FF&E RFQ template Southeast Asia"
 order: 3

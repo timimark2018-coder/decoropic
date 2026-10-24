@@ -16,7 +16,7 @@ export async function generateMetadata(): Promise<Metadata> {
       zh: "项目作品"
     },
     description: {
-      en: "Hundreds of villas, apartments, hotels and offices delivered across Ghana since 2006. Browse our project portfolio.",
+      en: "Delivered projects across villas, hotels and commercial interiors — what was supplied, how it shipped and how it was installed, with photographs from site.",
       zh: "自 2006 年以来,数百个别墅、公寓、酒店与办公项目在加纳交付。浏览我们的项目作品集。"
     },
     path: "/projects",

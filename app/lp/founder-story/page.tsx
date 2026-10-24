@@ -11,9 +11,9 @@ import { LpCtaGroup } from "@/components/lp/lp-cta-group";
 const ESTIMATE_URL = "https://decoropic.com/lp/villa-renovation-quote#lp-estimator";
 
 const PATH = "/lp/founder-story";
-const TITLE = "26 Years in Building Materials, 20 Years in Ghana — The Decoropic Founder Story";
+const TITLE = "26 Years in Materials, 20 in Ghana — Founder Story";
 const DESCRIPTION =
-  "How one founder's two-decade journey through Accra job sites built Decoropic into Ghana's one-stop interior solutions partner.";
+  "Twenty-six years in cross-border building-materials trade and twenty years on the ground in Accra — how Decoropic came to supply projects from China to Ghana.";
 
 export async function generateMetadata(): Promise<Metadata> {
   const locale = await getLocale();

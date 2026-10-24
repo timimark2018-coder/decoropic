@@ -13,7 +13,7 @@ export function EstimatorFloatingTrigger({ locale }: EstimatorFloatingTriggerPro
 
   return (
     <Link
-      href="/#estimator"
+      href="/estimator"
       onClick={() => trackEvent("estimator_open", { page: window.location.pathname, source_site: "decoropic", source: "floating_trigger" })}
       className="fixed bottom-5 right-5 z-40 inline-flex items-center gap-2 rounded-full bg-brand-pine px-4 py-3 text-sm font-semibold text-white shadow-[0_22px_45px_rgba(28,56,51,0.24)]"
     >

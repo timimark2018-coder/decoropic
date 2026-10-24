@@ -3,6 +3,25 @@ import { siteConfig } from "@/lib/utils/constants";
 import { getAllPosts } from "@/lib/blog/getPosts";
 import { getAllGuides } from "@/lib/guides/getGuides";
 
+// 每个页面登记两条:英文版和 /zh 版，两条都带 hreflang 互指(en / zh / x-default)。
+// 中文版过去没有自己的 URL，所以完全不被收录 —— 这里是让它进索引的入口。
+function localizedPair(
+  baseUrl: string,
+  path: string,
+  lastModified: Date,
+  changeFrequency: MetadataRoute.Sitemap[number]["changeFrequency"],
+  priority: number
+): MetadataRoute.Sitemap {
+  const enUrl = `${baseUrl}${path}`;
+  const zhUrl = `${baseUrl}/zh${path}`;
+  const languages = { en: enUrl, zh: zhUrl, "x-default": enUrl };
+
+  return [
+    { url: enUrl, lastModified, changeFrequency, priority, alternates: { languages } },
+    { url: zhUrl, lastModified, changeFrequency, priority: Math.max(priority - 0.1, 0.1), alternates: { languages } }
+  ];
+}
+
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = siteConfig.siteUrl;
   const lastModified = new Date();
@@ -34,62 +53,27 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { path: "/local-services", changeFrequency: "monthly", priority: 0.8 },
     { path: "/about", changeFrequency: "monthly", priority: 0.7 },
     { path: "/contact", changeFrequency: "monthly", priority: 0.8 },
+    { path: "/estimator", changeFrequency: "monthly", priority: 0.9 },
     { path: "/blog", changeFrequency: "weekly", priority: 0.8 },
     { path: "/lp/villa-renovation-quote", changeFrequency: "monthly", priority: 0.7 },
     { path: "/lp/founder-story", changeFrequency: "monthly", priority: 0.7 }
   ];
 
-  const staticEntries = routes.map(({ path, changeFrequency, priority }) => {
-    const url = `${baseUrl}${path}`;
-    return {
-      url,
-      lastModified,
-      changeFrequency,
-      priority,
-      alternates: {
-        languages: {
-          "en-GH": url,
-          "x-default": url
-        }
-      }
-    };
-  });
+  const staticEntries = routes.flatMap(({ path, changeFrequency, priority }) =>
+    localizedPair(baseUrl, path, lastModified, changeFrequency, priority)
+  );
 
   // Auto-scan content/blog/*.mdx and add each post
   const posts = getAllPosts();
-  const blogEntries = posts.map((post) => {
-    const url = `${baseUrl}/blog/${post.slug}`;
-    return {
-      url,
-      lastModified: new Date(post.publishDate),
-      changeFrequency: "monthly" as MetadataRoute.Sitemap[number]["changeFrequency"],
-      priority: 0.7,
-      alternates: {
-        languages: {
-          "en-GH": url,
-          "x-default": url
-        }
-      }
-    };
-  });
+  const blogEntries = posts.flatMap((post) =>
+    localizedPair(baseUrl, `/blog/${post.slug}`, new Date(post.publishDate), "monthly", 0.7)
+  );
 
   // Auto-scan content/guides/*.md and add each guide
   const guides = getAllGuides();
-  const guideEntries = guides.map((g) => {
-    const url = `${baseUrl}/guides/${g.slug}`;
-    return {
-      url,
-      lastModified,
-      changeFrequency: "monthly" as MetadataRoute.Sitemap[number]["changeFrequency"],
-      priority: 0.7,
-      alternates: {
-        languages: {
-          "en-GH": url,
-          "x-default": url
-        }
-      }
-    };
-  });
+  const guideEntries = guides.flatMap((g) =>
+    localizedPair(baseUrl, `/guides/${g.slug}`, lastModified, "monthly", 0.7)
+  );
 
   return [...staticEntries, ...blogEntries, ...guideEntries];
 }

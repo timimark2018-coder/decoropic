@@ -23,7 +23,7 @@ export const homeContent = {
     ctas: [
       { label: { en: "Start Your Project", zh: "开始您的项目" }, href: "/contact" },
       { label: { en: "Browse Products", zh: "浏览产品" }, href: "/products" },
-      { label: { en: "Estimate Budget", zh: "预算测算" }, href: "/#estimator" }
+      { label: { en: "Estimate Budget", zh: "预算测算" }, href: "/estimator" }
     ] satisfies CtaLink[],
     stats: [
       { value: "6", label: { en: "Core service stages", zh: "核心服务阶段" } },
@@ -155,61 +155,61 @@ export const homeContent = {
     items: [
       {
         title: {
-          en: "We measure before we quote.",
+          en: "On-site measurement",
           zh: "先测量，再报价。"
         },
         body: {
-          en: "On-site measurement and dimension verification in Accra, before a single item gets ordered. Drawings lie. Sites tell the truth.",
+          en: "Every project starts with real numbers. Our Accra team visits the site, measures each room, checks ceiling heights, wet areas, power points and door swings, and photographs existing conditions. For overseas projects outside Ghana we work from your architect's drawings and a short video walk-through, then confirm critical dimensions with you before anything is ordered. Accurate measurement is what keeps tile cuts, cabinet runs and window frames right the first time, and it is the reason our installations rarely need a second shipment.",
           zh: "在订一件产品之前，先在阿克拉现场完成测量与尺寸核对。图纸会骗人，现场不会。"
         }
       },
       {
         title: {
-          en: "Design shaped by your budget.",
+          en: "Budget-led design",
           zh: "用你的预算塑造设计。"
         },
         body: {
-          en: "We take your target budget, spatial needs and style direction, and turn them into design guidance that's both refined and actually buildable.",
+          en: "Tell us the budget before the mood board. We design to a number, not away from it: a material schedule, a quantity take-off and a landed-cost estimate for every space, with two or three price tiers so you can trade finishes against spend. Renders and 2D layouts come from our Foshan design desk, drawn to the dimensions taken on site. You see the cost of each choice as you make it, which keeps the project out of the usual overrun cycle.",
           zh: "我们把你的预算、空间功能和风格方向，转化为既有品质感、又能真正落地的设计建议。"
         }
       },
       {
         title: {
-          en: "One project scope. Many categories.",
+          en: "Multi-category sourcing",
           zh: "一个项目范围，覆盖多品类。"
         },
         body: {
-          en: "Furniture, lighting, stone, doors, bathroom, finishes — sourced for residential, hospitality, office and commercial projects around one scope, not six invoices.",
+          en: "One purchase order, every category. We source tiles, sanitaryware, kitchens, doors, windows, lighting, furniture and hardware directly from Foshan and the Guangdong manufacturing belt, one of the world's largest clusters for ceramics and furniture. Twenty-six years of factory relationships mean verified suppliers, negotiated prices and consistent quality across the whole package, rather than a dozen separate vendors with a dozen different lead times.",
           zh: "家具、灯饰、石材、门类、卫浴、饰面——围绕住宅、酒店、办公、商业项目统筹采购，一个范围，而不是六张发票。"
         }
       },
       {
         title: {
-          en: "Specs that hold on paper and on site.",
+          en: "Quality control and consolidation",
           zh: "图纸上成立，现场也成立的规格。"
         },
         body: {
-          en: "Dimensions, materials, colors, finishes, suitability — aligned across drawings, suppliers and Accra conditions before orders ship.",
+          en: "Every item is inspected before it is packed. Our QC team checks tile calibre and shade, furniture joints and finishes, glass thickness and hardware function against the approved samples, and photographs each batch. Goods from all suppliers are consolidated at our Foshan warehouse, packed for sea freight and loaded into one or more containers with a full packing list and photo record, so what arrives matches what was ordered.",
           zh: "尺寸、材质、颜色、表面处理、适配性——在出货之前就在图纸、供应商和阿克拉现场条件之间对齐。"
         }
       },
       {
         title: {
-          en: "Shipments timed to your build calendar.",
+          en: "Shipment and clearance",
           zh: "按你的工程节奏安排出货。"
         },
         body: {
-          en: "Multi-supplier, multi-category consolidation organized around when your site is ready — not when our warehouse is.",
+          en: "We book the vessel, prepare the commercial invoice, packing list and certificate of origin, and track the container from Shenzhen or Guangzhou to the port of discharge. For Ghana, our Tema clearing partners handle duties and release; for other markets we work with your nominated forwarder or recommend one. You receive a sailing schedule up front and status updates at each milestone until the container is at your site.",
           zh: "多供应商、多品类的集运组织，围绕你工地准备好的时间——不是围绕我们仓库的时间。"
         }
       },
       {
         title: {
-          en: "We stand on site until it stands.",
+          en: "Installation support",
           zh: "我们站在现场，直到它真的站住。"
         },
         body: {
-          en: "On-site execution support in Ghana: installation guidance, communication, issue follow-up — from the first crate to the final detail.",
+          en: "Shipping the goods is half the job. In Ghana our site supervisors set out tiling, oversee kitchen and wardrobe fitting, and commission doors, windows and lighting with your contractor. For overseas projects we supply installation drawings, video guides and a WhatsApp line to the factory technicians, so your local team installs Chinese-made materials correctly. The result is a finished space that looks like the render you approved.",
           zh: "加纳现场执行支持：安装指导、沟通协调、问题跟进——从第一个集装箱到最后一个细节。"
         }
       }
@@ -342,6 +342,48 @@ export const homeContent = {
       en: "To explore specific categories, styles, and a broader product range, continue to our product center and browse by category, space, or project type.",
       zh: "如希望进一步查看具体品类、款式与更多产品选择，可进入我们的产品中心，按类别、空间或项目类型继续浏览。"
     },
+    categories: [
+      {
+        slug: "tiles-flooring",
+        title: { en: "Tiles and flooring", zh: "" },
+        body: {
+          en: "Porcelain, ceramic, marble-effect and outdoor tiles from Foshan, one of the world's largest tile-producing clusters, in 600x600 to 1200x2400 formats, plus SPC, laminate and engineered wood flooring. We supply full project quantities with matched shades and 5-8% cutting allowance, and can mix grades to suit front-of-house and back-of-house areas. Samples ship by courier within a week.",
+          zh: ""
+        }
+      },
+      {
+        slug: "furniture",
+        title: { en: "Furniture", zh: "" },
+        body: {
+          en: "Loose and fixed furniture for villas, apartments, hotels and offices: sofas, beds, dining sets, wardrobes, reception desks, hotel case goods and restaurant seating. We work from your drawings or our standard ranges, in solid wood, veneer, metal or upholstered finishes, and build to hotel FF&E specifications when required. Everything is inspected and photographed before container loading.",
+          zh: ""
+        }
+      },
+      {
+        slug: "bathroom-kitchen",
+        title: { en: "Bathroom and kitchen", zh: "" },
+        body: {
+          en: "Complete sanitaryware sets, shower enclosures, vanities, taps and accessories, together with modular kitchens in lacquer, melamine or stainless steel, with quartz or sintered-stone worktops. We match sizes to your measured rooms, supply installation drawings, and can include appliances and water heaters so the whole wet-area package arrives in one shipment.",
+          zh: ""
+        }
+      },
+      {
+        slug: "lights-lighting",
+        title: { en: "Lighting", zh: "" },
+        body: {
+          en: "Decorative and architectural lighting: chandeliers, pendants, wall lights, LED downlights, track systems, outdoor and landscape fittings. We check voltage, driver compatibility and IP ratings for your market, supply lighting layouts for each room, and provide bulk pricing for hotel and commercial projects where hundreds of identical fittings are needed.",
+          zh: ""
+        }
+      },
+      {
+        slug: "doors-windows",
+        title: { en: "Doors and windows", zh: "" },
+        body: {
+          en: "Aluminium and uPVC windows, sliding and folding door systems, interior wooden doors, security doors and fire-rated doors, made to the openings measured on site. Glass options include tempered, laminated and Low-E double glazing for hot climates. Each unit is labelled by room, packed in crates and shipped with hardware and installation guides.",
+          zh: ""
+        }
+      }
+    ],
     ctas: [
       { label: { en: "Explore Product Center", zh: "进入产品中心" }, href: "/products" },
       { label: { en: "Send Project Requirements", zh: "提交项目需求" }, href: "/contact" }
@@ -357,7 +399,7 @@ export const homeContent = {
       zh: "两种方式。11 步预算测算器一分钟获得初步预估——无需打字。或直接联系我们的团队。我们 24 小时内亲自回复。"
     },
     ctas: [
-      { label: { en: "Open the 11-step estimator", zh: "打开 11 步测算器" }, href: "/#estimator" },
+      { label: { en: "Open the 11-step estimator", zh: "打开 11 步测算器" }, href: "/estimator" },
       { label: { en: "Talk to our team", zh: "联系我们" }, href: "/contact" }
     ] satisfies CtaLink[]
   }

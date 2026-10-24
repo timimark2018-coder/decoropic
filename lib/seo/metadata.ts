@@ -22,24 +22,42 @@ export function buildMetadata({
   titleTemplate
 }: MetadataInput): Metadata {
   const baseUrl = siteConfig.siteUrl;
-  const url = new URL(path, baseUrl).toString();
+  // path 一律是英文版路径；中文版是它前面加 /zh。
+  // 两个地址互指 hreflang，x-default 指英文版。
+  const normalizedPath = path === "/" ? "" : path.replace(/\/$/, "");
+  const enUrl = `${baseUrl}${normalizedPath}`;
+  const zhUrl = `${baseUrl}/zh${normalizedPath}`;
+  const url = locale === "zh" ? zhUrl : enUrl;
   const ogImageUrl = `${baseUrl}/og/default.jpg`;
   const googleVerification = process.env.GOOGLE_SITE_VERIFICATION;
   // Meta Business Suite → Brand Safety → Domains → "Meta-tag verification"
   const facebookDomainVerification = process.env.FACEBOOK_DOMAIN_VERIFICATION;
   const resolvedDescription = pickLocalizedCopy(description, locale);
   const resolvedTitle = title ? pickLocalizedCopy(title, locale) : undefined;
-  const openGraphLocale = locale === "zh" ? "zh_CN" : "en_GH";
-  const alternateLocale = locale === "zh" ? "en_GH" : "zh_CN";
+  const openGraphLocale = locale === "zh" ? "zh_CN" : "en_US";
+  const alternateLocale = locale === "zh" ? "en_US" : "zh_CN";
+
+  // 品牌后缀「放得下才加」。
+  //
+  // 过去用 titleTemplate "%s | Decoropic" 无条件拼接，后缀固定吃掉 12 个字符，
+  // 关键词密集的页面因此普遍超过 60，在搜索结果里被截断。现在由这里统一判断:
+  // 加上后缀仍 ≤60 就加，否则只保留页面标题本身(品牌词 Google 多半会自己补)。
+  const BRAND_SUFFIX = ` | ${siteConfig.name}`;
+  const TITLE_LIMIT = 60;
+
+  function withBrand(value: string) {
+    if (value.includes(siteConfig.name)) {
+      return value;
+    }
+    return value.length + BRAND_SUFFIX.length <= TITLE_LIMIT ? `${value}${BRAND_SUFFIX}` : value;
+  }
 
   let metadataTitle: Metadata["title"] | undefined;
   if (titleTemplate) {
-    metadataTitle = {
-      default: resolvedTitle ?? siteConfig.name,
-      template: titleTemplate
-    };
+    // 根 layout 传 titleTemplate 时，子页若没有自己的 title 就用这个默认值
+    metadataTitle = { absolute: withBrand(resolvedTitle ?? siteConfig.name) };
   } else if (resolvedTitle) {
-    metadataTitle = resolvedTitle;
+    metadataTitle = { absolute: withBrand(resolvedTitle) };
   }
 
   return {
@@ -58,8 +76,9 @@ export function buildMetadata({
     alternates: {
       canonical: url,
       languages: {
-        "en-GH": url,
-        "x-default": url
+        en: enUrl,
+        zh: zhUrl,
+        "x-default": enUrl
       }
     },
     openGraph: {
@@ -75,7 +94,7 @@ export function buildMetadata({
           url: ogImageUrl,
           width: 1200,
           height: 630,
-          alt: "Decoropic — One-Stop Interior Solutions for Projects in Ghana",
+          alt: "Decoropic — one-stop building materials and interior sourcing from China",
           type: "image/jpeg"
         }
       ]

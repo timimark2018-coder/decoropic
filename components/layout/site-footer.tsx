@@ -2,7 +2,7 @@ import Link from "next/link";
 import type { Locale } from "@/content/types";
 import { siteNavContent } from "@/content/site-nav";
 import { siteConfig } from "@/lib/utils/constants";
-import { resolveSiteHref } from "@/lib/utils/site-links";
+import { localizePath, resolveSiteHref } from "@/lib/utils/site-links";
 import { FacebookFollowLink } from "@/components/shared/facebook-link";
 
 type SiteFooterProps = {
@@ -80,7 +80,7 @@ export function SiteFooter({ locale }: SiteFooterProps) {
               {PRODUCT_CATEGORIES.map((cat) => (
                 <li key={cat.slug}>
                   <Link
-                    href={`/products/${cat.slug}`}
+                    href={localizePath(`/products/${cat.slug}`, locale)}
                     className="text-sm text-brand-ivory/80 transition-colors hover:text-brand-gold"
                   >
                     {locale === "zh" ? cat.zh : cat.en}
@@ -150,7 +150,7 @@ export function SiteFooter({ locale }: SiteFooterProps) {
                   ].map((l) => (
                     <li key={l.href}>
                       <Link
-                        href={l.href}
+                        href={localizePath(l.href, locale)}
                         className="text-sm text-brand-ivory/70 transition-colors hover:text-brand-gold"
                       >
                         {locale === "zh" ? l.zh : l.en}

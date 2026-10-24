@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { buildMetadata } from "@/lib/seo/metadata";
-import { faqPageSchema } from "@/lib/seo/schema";
+import { homeContent } from "@/content/home";
+import { faqPageSchema, itemListSchema } from "@/lib/seo/schema";
 import { getLocale } from "@/lib/i18n/server";
 import { productsContent } from "@/content/products";
 import { t } from "@/lib/i18n/content";
@@ -13,11 +14,11 @@ export async function generateMetadata(): Promise<Metadata> {
 
   return buildMetadata({
     title: {
-      en: "Building Materials from China to Ghana — Tiles, Sanitary, Lighting, Furniture",
+      en: "Building Materials from China — Tiles, Sanitary, Lighting",
       zh: "从中国采购建材到加纳 — 瓷砖、卫浴、灯饰、家具"
     },
     description: {
-      en: "Source building materials from China for Ghana projects — tiles, sanitary ware, lighting, furniture, doors. Foshan-direct, project pricing, Accra delivery.",
+      en: "Five material categories sourced from China under one order: tiles and flooring, furniture, bathroom and kitchen, lighting, doors and windows. One shipment.",
       zh: "为加纳项目从中国直采建材 — 瓷砖、卫浴、灯饰、家具、门窗，佛山直供，项目报价，阿克拉配送。"
     },
     path: "/products",
@@ -876,6 +877,24 @@ export default async function ProductsPage() {
             <script
               type="application/ld+json"
               dangerouslySetInnerHTML={{ __html: JSON.stringify(faqPageSchema(faqs)) }}
+            />
+            {/* ItemList —— 让 Google 看到这一页罗列的五个品类各自落在哪个 URL。
+                slug 取自 content/home.ts 的 productCenterBridge.categories，
+                与 /products/[category] 的真实路由一致。 */}
+            <script
+              type="application/ld+json"
+              dangerouslySetInnerHTML={{
+                __html: JSON.stringify(
+                  itemListSchema(
+                    homeContent.productCenterBridge.categories.map((cat) => ({
+                      name: cat.title.en,
+                      path: `/products/${cat.slug}`,
+                      description: cat.body.en
+                    })),
+                    "Product categories"
+                  )
+                )
+              }}
             />
             <div className="container-wide max-w-[860px]">
               <Reveal>

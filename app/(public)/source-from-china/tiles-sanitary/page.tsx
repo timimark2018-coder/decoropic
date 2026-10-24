@@ -11,7 +11,7 @@ export async function generateMetadata(): Promise<Metadata> {
       zh: "中国瓷砖与卫浴供应商 — 全球出口"
     },
     description: {
-      en: "Source tiles and sanitary ware from China — porcelain slab, ceramic, toilets, basins and brassware at project volume. Best value into tariff-friendly markets (Australia, Middle East, Africa). QC, consolidation and export; you handle local import.",
+      en: "Porcelain tiles, slabs and sanitaryware sourced direct from Foshan for overseas projects. Shade-matched project quantities, factory QC and consolidated export.",
       zh: "从中国采购瓷砖与卫浴 — 岩板、瓷砖、坐便、面盆、龙头,工程量供应。面向关税友好市场(澳/中东/非洲)。验货、拼柜与出口;当地进口由买方自办。"
     },
     path: "/source-from-china/tiles-sanitary",

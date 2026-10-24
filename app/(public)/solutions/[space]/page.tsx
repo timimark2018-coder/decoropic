@@ -382,7 +382,7 @@ export default async function SpaceDetailPage({
           </div>
           <Reveal delay={800}>
             <Link
-              href="/#estimator"
+              href="/estimator"
               className="inline-flex items-center gap-3 rounded-full bg-brand-pine-dark px-8 py-4 text-white hover:bg-brand-pine-dark/90 transition-colors"
             >
               <span>Open the 11-step estimator</span>
@@ -411,7 +411,7 @@ export default async function SpaceDetailPage({
           <Reveal delay={400}>
             <div className="flex flex-wrap gap-4">
               <Link
-                href="/#estimator"
+                href="/estimator"
                 className="inline-flex items-center gap-3 rounded-full bg-brand-gold px-8 py-4 text-brand-pine-dark font-semibold hover:bg-brand-gold/90 transition-colors"
               >
                 <span>Estimate your project</span>

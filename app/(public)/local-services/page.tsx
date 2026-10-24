@@ -15,7 +15,7 @@ export async function generateMetadata(): Promise<Metadata> {
       zh: "本地服务"
     },
     description: {
-      en: "On-site measurement, technical supervision, installation guidance and post-delivery support — all delivered by our Accra-based team.",
+      en: "On-the-ground services in Accra: site measurement, material delivery, installation supervision and after-sales support for projects fitted out with our supply.",
       zh: "现场测量、技术监理、安装指导与交付后支持——全部由阿克拉本地团队完成。"
     },
     path: "/local-services",
@@ -674,7 +674,7 @@ export default async function LocalServicesPage() {
                 {t({ en: "Book a Site Measurement", zh: "预约现场测量" }, locale)}
               </Link>
               <Link
-                href="/#estimator"
+                href="/estimator"
                 className="border border-brand-ivory/40 text-brand-ivory px-8 py-4 transition-colors hover:bg-brand-ivory/10"
                 style={{
                   fontFamily: "var(--serif)",
