@@ -1,7 +1,9 @@
 import { z } from "zod";
 
 export const estimatorPreviewSchema = z.object({
-  projectType: z.enum(["villa"]),
+  // 住宅两项。酒店/办公/餐厅/零售走 /contact?type=commercial 人工报价，
+  // 不走这个单价模型,所以不在枚举里。
+  projectType: z.enum(["villa", "apartment"]),
   builtUpArea: z.coerce.number().positive("Please enter the built-up area."),
   bedrooms: z.coerce.number().int("Bedrooms must be a whole number.").min(1, "Please enter at least one bedroom."),
   bathrooms: z.coerce.number().int("Bathrooms must be a whole number.").min(1, "Please enter at least one bathroom."),

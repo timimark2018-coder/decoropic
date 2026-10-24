@@ -26,8 +26,21 @@ export async function generateMetadata(): Promise<Metadata> {
 // 独立的 /estimator 路由。
 // 此前测算器只以首页 #estimator 锚点存在，问题文本在客户端 JS 里，
 // HTML 中一句都搜不到 —— 站点最核心的互动工具因此完全不被索引。
-export default async function EstimatorRoute() {
+// ?type=villa|apartment 预选 q1(solutions 页的 CTA 会带上它)。
+// 其它值一律忽略,不让 URL 参数塞进表单。
+function resolveProjectType(value: string | string[] | undefined) {
+  const v = Array.isArray(value) ? value[0] : value;
+  return v === "villa" || v === "apartment" ? v : undefined;
+}
+
+export default async function EstimatorRoute({
+  searchParams
+}: {
+  searchParams: Promise<{ type?: string | string[] }>;
+}) {
   const locale = await getLocale();
+  const { type } = await searchParams;
+  const initialProjectType = resolveProjectType(type);
   const { hero, questionsHeading, questionsIntro, questions, scope, disclaimer } = estimatorContent;
 
   return (
@@ -82,7 +95,7 @@ export default async function EstimatorRoute() {
       {/* 测算器本体 */}
       <section className="bg-[#f7f3ec] pb-24 lg:pb-32">
         <div className="container-wide">
-          <HomeEstimatorHook locale={locale} />
+          <HomeEstimatorHook locale={locale} initialProjectType={initialProjectType} />
         </div>
       </section>
 

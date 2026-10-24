@@ -31,7 +31,7 @@ Apartment fit-out materials from China work best when every unit is specified on
 | Mid-Range | Larger-format tiles, steel-security entrance doors, heavier window profiles, quartz or solid-surface worktops, wall-hung toilets |
 | Premium | Marble-look slab tiles, veneer doors, slim-frame windows, high-gloss or lacquer kitchens, coordinated lighting and furniture packs |
 
-Use our 11-step [estimator](/estimator) for a range.
+Use our 11-step [estimator](/estimator?type=apartment) for a range.
 
 ## How we deliver
 
@@ -62,9 +62,9 @@ Yes. We work on overseas projects worldwide. Outside Ghana, goods go through you
 
 ## Price your units
 
-Run your unit numbers through our 11-step [budget estimator](/estimator), or send floor plans on WhatsApp to +233 59 247 0446. We will come back with a unit specification and a tiered budget.
+Run your unit numbers through our 11-step [budget estimator](/estimator?type=apartment), or send floor plans on WhatsApp to +233 59 247 0446. We will come back with a unit specification and a tiered budget.
 
-**Internal links:** /estimator, /products, /projects
+**Internal links:** /estimator?type=apartment, /products, /projects
 
 **Image suggestions:**
 - apartment-unit-living-area-tiles.webp — Apartment living area fitted with porcelain tiles and aluminium sliding door from China

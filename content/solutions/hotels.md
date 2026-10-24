@@ -30,7 +30,7 @@ Working with a hotel FF&E supplier in China makes sense when you want guestrooms
 | Mid-Range | Veneer casegoods, upholstered headboards, large-format tiles, coordinated lighting scheme, wall-hung sanitaryware |
 | Premium | Custom-designed casegoods, stone or slab surfaces, decorative lighting, solid-wood doors, branded-standard bathroom fittings |
 
-Use our 11-step [estimator](/estimator) for a range.
+[Send your project brief](/contact?type=commercial) and we will come back with an FF&E schedule and tiered pricing.
 
 ## How we deliver
 
@@ -61,9 +61,9 @@ Yes. We serve hotel projects worldwide. Outside Ghana, the consolidated shipment
 
 ## Get an FF&E budget
 
-Use our 11-step [budget estimator](/estimator) for a first figure, or send your room schedule and drawings on WhatsApp to +233 59 247 0446. We will reply with an FF&E schedule and tiered pricing.
+[Send your project brief](/contact?type=commercial), or send your room schedule and drawings on WhatsApp to +233 59 247 0446. We will reply with an FF&E schedule and tiered pricing.
 
-**Internal links:** /estimator, /products, /local-services
+**Internal links:** /contact, /products, /local-services
 
 **Image suggestions:**
 - hotel-guestroom-casegoods-china.webp — Hotel guestroom with bed, headboard, desk and wardrobe supplied by a China FF&E supplier

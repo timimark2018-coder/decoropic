@@ -30,7 +30,7 @@ Restaurant fit-out sourcing in China lets you furnish and finish a dining room, 
 | Mid-Range | Upholstered chairs and booths, solid-wood or stone-look tabletops, feature wall tiles, coordinated pendant lighting |
 | Premium | Custom-designed seating and bar counter, marble or slab surfaces, decorative lighting, designer washroom fittings |
 
-Use our 11-step [estimator](/estimator) for a range.
+[Send your project brief](/contact?type=commercial) and we will come back with a layout and tiered pricing.
 
 ## How we deliver
 
@@ -61,9 +61,9 @@ Yes. We serve restaurant projects worldwide. Outside Ghana, the consolidated shi
 
 ## Cost your restaurant
 
-Use our 11-step [budget estimator](/estimator) for a first figure, or send your floor plan and seat count on WhatsApp to +233 59 247 0446. We will reply with a layout and tiered pricing.
+[Send your project brief](/contact?type=commercial), or send your floor plan and seat count on WhatsApp to +233 59 247 0446. We will reply with a layout and tiered pricing.
 
-**Internal links:** /estimator, /guides, /projects
+**Internal links:** /contact, /guides, /projects
 
 **Image suggestions:**
 - restaurant-dining-room-furniture-china.webp — Restaurant dining room with tables, chairs and pendant lights sourced from China
