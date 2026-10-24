@@ -4,6 +4,8 @@ import { ChevronRight, Sparkles } from "lucide-react";
 import { buildMetadata } from "@/lib/seo/metadata";
 import { getLocale } from "@/lib/i18n/server";
 import { solutionsContent } from "@/content/solutions";
+import { getAllContentPages } from "@/lib/content-pages/getContentPage";
+import { localizePath } from "@/lib/utils/site-links";
 import { t } from "@/lib/i18n/content";
 import { HandDrawnLine, Reveal } from "@/components/ui";
 
@@ -26,6 +28,14 @@ export async function generateMetadata(): Promise<Metadata> {
 
 export default async function SolutionsPage() {
   const locale = await getLocale();
+  // 第 1 周内容包新增的「按项目类型」页。/solutions 下现在有两套分类:
+  // 项目类型(别墅/公寓/酒店/办公/餐厅/零售)与房间类型(客厅/餐厅/厨房…),
+  // 索引页必须把两套都列全。
+  const projectTypeOrder = ["villas", "apartments", "hotels", "offices", "restaurants", "retail"];
+  const projectTypes = getAllContentPages("solutions").sort(
+    (a, b) => projectTypeOrder.indexOf(a.slug) - projectTypeOrder.indexOf(b.slug)
+  );
+
   const c = solutionsContent;
 
   return (
@@ -114,6 +124,48 @@ export default async function SolutionsPage() {
       </section>
 
       {/* GRID INTRO + ASYMMETRIC LAYOUT */}
+      {/* 按项目类型 — 第 1 周内容包 */}
+      <section className="bg-white py-20 lg:py-28">
+        <div className="container-wide">
+          <Reveal>
+            <p
+              className="text-brand-gold mb-4"
+              style={{ fontSize: "0.78rem", fontWeight: 700, letterSpacing: "0.28em", textTransform: "uppercase" }}
+            >
+              {locale === "zh" ? "按项目类型" : "By project type"}
+            </p>
+          </Reveal>
+          <Reveal delay={150}>
+            <h2
+              className="text-brand-pine-dark mb-12 max-w-[900px]"
+              style={{ fontFamily: "var(--serif)", fontSize: "clamp(1.75rem, 3.4vw, 2.75rem)", fontWeight: 700, lineHeight: 1.15, letterSpacing: "-0.02em" }}
+            >
+              {locale === "zh"
+                ? "每种项目类型一页:包含哪些品类、预算档位、交付流程与常见问题。"
+                : "One page per project type: what the package covers, budget tiers, how we deliver and the questions buyers ask."}
+            </h2>
+          </Reveal>
+
+          <ul className="grid gap-x-10 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
+            {projectTypes.map((page, i) => (
+              <Reveal key={page.slug} delay={i * 70}>
+                <li>
+                  <h3
+                    className="text-brand-pine-dark"
+                    style={{ fontFamily: "var(--serif)", fontSize: "1.25rem", fontWeight: 700, lineHeight: 1.25, letterSpacing: "-0.015em" }}
+                  >
+                    <Link href={localizePath(page.url, locale)} className="transition-colors hover:text-brand-gold">
+                      {page.h1}
+                    </Link>
+                  </h3>
+                  <p className="mt-3 text-sm leading-[1.8] text-brand-pine-dark/75">{page.description}</p>
+                </li>
+              </Reveal>
+            ))}
+          </ul>
+        </div>
+      </section>
+
       <section className="bg-[#f7f3ec] py-24 lg:py-32">
         <div className="container-wide">
           <Reveal>
@@ -135,7 +187,7 @@ export default async function SolutionsPage() {
             {c.spaces.map((space, i) => (
               <Reveal key={space.slug} delay={i * 80}>
                 <Link
-                  href={`/solutions/${space.slug}`}
+                  href={localizePath(`/solutions/${space.slug}`, locale)}
                   className="group relative block rounded-3xl bg-transparent border border-brand-pine-dark/10 p-8 hover:bg-brand-pine-dark hover:border-brand-pine-dark transition-all duration-500 min-h-[280px] flex flex-col justify-between"
                 >
                   {/* Geometric icon (top-left, gold) */}

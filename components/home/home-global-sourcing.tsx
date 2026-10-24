@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { localizePath } from "@/lib/utils/site-links";
 import type { Locale } from "@/content/types";
 import { Reveal } from "@/components/ui";
 
@@ -46,14 +47,18 @@ export function HomeGlobalSourcing({ locale }: Props) {
         </Reveal>
         <Reveal delay={450}>
           <Link
-            href="/source-from-china"
+            href={localizePath("/source-from-china", locale)}
             className="inline-flex items-center bg-brand-gold text-brand-pine-dark px-8 py-4 transition-colors hover:bg-brand-gold/90"
             style={{ fontFamily: "var(--serif)", fontSize: "0.875rem", letterSpacing: "0.16em", textTransform: "uppercase", fontWeight: 700 }}
           >
             {cta}
           </Link>
-          <Link href="/source-from-china/southeast-asia" className="mt-5 block text-brand-ivory underline underline-offset-4">
+          <Link href={localizePath("/source-from-china/southeast-asia", locale)} className="mt-5 block text-brand-ivory underline underline-offset-4">
             {locale === "zh" ? "东南亚酒店、别墅与公寓项目采购 →" : "Sourcing for Southeast Asia hotel, villa & apartment projects →"}
+          </Link>
+          {/* Markets 入口 — 第 1 周内容包新增 /markets 簇 */}
+          <Link href={localizePath("/markets", locale)} className="mt-3 block text-brand-ivory underline underline-offset-4">
+            {locale === "zh" ? "查看我们服务的市场:港口、航程与清关要点 →" : "See the markets we ship to — ports, transit and clearing →"}
           </Link>
         </Reveal>
       </div>

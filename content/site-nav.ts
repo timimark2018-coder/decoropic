@@ -6,6 +6,7 @@ export const siteNavContent = {
     { label: { en: "Design", zh: "设计方案" }, href: "/solutions" },
     { label: { en: "Products", zh: "产品中心" }, href: "/products" },
     { label: { en: "Projects", zh: "项目展示" }, href: "/projects" },
+    { label: { en: "Markets", zh: "服务市场" }, href: "/markets" },
     { label: { en: "Local Services", zh: "本地服务" }, href: "/local-services" },
     { label: { en: "Blog", zh: "博客" }, href: "/blog" },
     { label: { en: "About", zh: "关于我们" }, href: "/about" },
