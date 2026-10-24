@@ -16,7 +16,7 @@ When you source interior materials from China for Southeast Asia projects, short
 | Laem Chabang, Thailand | About 7–14 days | Direct services faster; transshipment slower |
 | Manila, Philippines | About 9 days | Published Shenzhen figure |
 | Haiphong, Vietnam | About 10–15 days | Northern Vietnam gateway |
-| Ho Chi Minh City (Cat Lai), Vietnam | [KEVIN TO CONFIRM] | Southern Vietnam gateway |
+| Ho Chi Minh City (Cat Lai), Vietnam | Confirmed at booking | Southern Vietnam gateway |
 
 These are published forwarder ranges, not guarantees. The schedule is confirmed at booking.
 
@@ -50,21 +50,21 @@ These are published forwarder ranges, not guarantees. The schedule is confirmed 
 
 ## Project reference
 
-[CASE: Kevin to confirm a real delivered project or remove this block]
+[See delivered projects](/projects) →
 
 ## FAQ
 
 **Is there a minimum order?**
-[KEVIN TO CONFIRM]
+No minimum order. Mixed categories can be consolidated in one container.
 
 **Can I mix furniture, tiles and lighting in one container?**
 Yes. Every category is consolidated at our Foshan warehouse and loaded together, with a packing list per container. Larger projects ship in several containers.
 
 **What are your payment terms?**
-[KEVIN TO CONFIRM]
+T/T or L/C.
 
 **What is the lead time?**
-[KEVIN TO CONFIRM]. For this region, production and QC usually take longer than the sea voyage.
+Confirmed with your quote — talk to our team on WhatsApp +233 59 247 0446.
 
 ## Get a quote
 

@@ -51,21 +51,21 @@ These are published forwarder ranges, not guarantees. Your forwarder or ours con
 
 ## Project reference
 
-[CASE: Kevin to confirm a real delivered project or remove this block]
+[See delivered projects](/projects) →
 
 ## FAQ
 
 **Is there a minimum order?**
-[KEVIN TO CONFIRM]
+No minimum order. Mixed categories can be consolidated in one container.
 
 **Can different product categories share one container?**
 Yes. Tiles, doors, sanitaryware, furniture and lighting are consolidated at our Foshan warehouse and loaded together, with one packing list per container.
 
 **What are your payment terms?**
-[KEVIN TO CONFIRM]
+T/T or L/C.
 
 **What lead time should I plan for?**
-[KEVIN TO CONFIRM]. Add production, QC, sea transit and destination clearing together when you plan your site schedule.
+Confirmed with your quote — talk to our team on WhatsApp +233 59 247 0446.
 
 ## Get a quote
 

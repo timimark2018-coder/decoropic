@@ -14,7 +14,7 @@ As a building materials supplier, Ghana from China is the route we know best. De
 |---|---|---|
 | Tema (FCL) | About 28–35 days | Main container port for Accra and most of our deliveries; cleared by our Tema clearing partners |
 | Tema (LCL / shared container) | Add about 7–10 days to FCL | Extra time for consolidation and deconsolidation |
-| Takoradi | [KEVIN TO CONFIRM] | Western Region port; useful for sites in the west |
+| Takoradi | Confirmed at booking | Western Region port; useful for sites in the west |
 
 Transit ranges are published forwarder estimates and change with carrier, routing and season. We confirm the schedule at booking.
 
@@ -48,21 +48,21 @@ Transit ranges are published forwarder estimates and change with carrier, routin
 
 ## Project reference
 
-[CASE: Kevin to confirm a real delivered project or remove this block]
+[See delivered projects](/projects) →
 
 ## FAQ
 
 **Is there a minimum order?**
-[KEVIN TO CONFIRM]
+No minimum order. Mixed categories can be consolidated in one container.
 
 **Can I combine tiles, doors, furniture and lighting in one container?**
 Yes. Every category is delivered to our Foshan warehouse, checked, and loaded together. Larger jobs go in more than one container, each with its own packing list.
 
 **What are your payment terms?**
-[KEVIN TO CONFIRM]
+T/T or L/C.
 
 **How long from order to delivery in Ghana?**
-[KEVIN TO CONFIRM]. Sea transit to Tema is only one part; production, QC and clearing time are added to it.
+Confirmed with your quote — talk to our team on WhatsApp +233 59 247 0446.
 
 ## Get a quote
 

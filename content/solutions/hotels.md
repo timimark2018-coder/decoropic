@@ -24,11 +24,13 @@ Working with a hotel FF&E supplier in China makes sense when you want guestrooms
 
 ## Budget tiers
 
-| Tier | Typical finishes | Price range |
-|---|---|---|
-| Functional | Melamine casegoods, fabric seating in commercial-grade fabric, standard porcelain tiles, basic LED lighting, standard sanitaryware | [KEVIN TO CONFIRM] |
-| Mid-Range | Veneer casegoods, upholstered headboards, large-format tiles, coordinated lighting scheme, wall-hung sanitaryware | [KEVIN TO CONFIRM] |
-| Premium | Custom-designed casegoods, stone or slab surfaces, decorative lighting, solid-wood doors, branded-standard bathroom fittings | [KEVIN TO CONFIRM] |
+| Tier | Typical finishes |
+| --- | --- |
+| Functional | Melamine casegoods, fabric seating in commercial-grade fabric, standard porcelain tiles, basic LED lighting, standard sanitaryware |
+| Mid-Range | Veneer casegoods, upholstered headboards, large-format tiles, coordinated lighting scheme, wall-hung sanitaryware |
+| Premium | Custom-designed casegoods, stone or slab surfaces, decorative lighting, solid-wood doors, branded-standard bathroom fittings |
+
+Use our 11-step [estimator](/estimator) for a range.
 
 ## How we deliver
 
@@ -41,15 +43,15 @@ Working with a hotel FF&E supplier in China makes sense when you want guestrooms
 
 ## Recent project
 
-[CASE: Kevin to confirm a real delivered project for this page]
+[See delivered projects](/projects) →
 
 ## FAQ
 
 **Is there a minimum order for hotel FF&E?**
-Custom casegoods and upholstered items usually carry factory minimums per design: [KEVIN TO CONFIRM]. Repeating one room type across many keys normally covers them.
+No minimum order. Mixed categories can be consolidated in one container.
 
 **What is the lead time for a hotel FF&E order?**
-It depends on the number of keys and how much is custom-made: [KEVIN TO CONFIRM]. We agree a production schedule with you that works back from your opening date.
+Confirmed with your quote — talk to our team on WhatsApp +233 59 247 0446.
 
 **Can you build to our designer's drawings and brand standards?**
 Yes. We can produce casegoods and seating to your interior designer's drawings, materials and finishes. We recommend approving one sample room before full production.

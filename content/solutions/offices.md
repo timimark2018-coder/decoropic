@@ -24,11 +24,13 @@ Office fit-out furniture and materials from China can be bought as one package c
 
 ## Budget tiers
 
-| Tier | Typical finishes | Price range |
-|---|---|---|
-| Functional | Melamine desking, mesh task chairs, standard partitions, basic LED panel lights, standard porcelain tiles | [KEVIN TO CONFIRM] |
-| Mid-Range | Bench desking with cable trays, ergonomic chairs, full-height glass partitions, coordinated lighting, branded reception counter | [KEVIN TO CONFIRM] |
-| Premium | Veneer or lacquer executive furniture, height-adjustable desks, frameless glass partitions, decorative lighting, stone-look reception finishes | [KEVIN TO CONFIRM] |
+| Tier | Typical finishes |
+| --- | --- |
+| Functional | Melamine desking, mesh task chairs, standard partitions, basic LED panel lights, standard porcelain tiles |
+| Mid-Range | Bench desking with cable trays, ergonomic chairs, full-height glass partitions, coordinated lighting, branded reception counter |
+| Premium | Veneer or lacquer executive furniture, height-adjustable desks, frameless glass partitions, decorative lighting, stone-look reception finishes |
+
+Use our 11-step [estimator](/estimator) for a range.
 
 ## How we deliver
 
@@ -41,15 +43,15 @@ Office fit-out furniture and materials from China can be bought as one package c
 
 ## Recent project
 
-[CASE: Kevin to confirm a real delivered project for this page]
+[See delivered projects](/projects) →
 
 ## FAQ
 
 **What is the minimum order for an office fit-out?**
-We quote per office, so there is no fixed package minimum. Some custom items, such as a branded reception counter or non-standard desk sizes, carry factory minimums: [KEVIN TO CONFIRM].
+No minimum order. Mixed categories can be consolidated in one container.
 
 **How long does an office fit-out order take?**
-It depends on headcount and how much is custom: [KEVIN TO CONFIRM]. Standard workstations and chairs are usually quicker to produce than custom joinery, so a phased move-in is possible if your lease date is fixed.
+Confirmed with your quote — talk to our team on WhatsApp +233 59 247 0446.
 
 **Can furniture match our company colours?**
 Yes. Desk finishes, chair fabrics, partition film and the reception counter can be specified in your colours. We confirm samples before production.

@@ -6,7 +6,6 @@ import { siteConfig } from "@/lib/utils/constants";
 import { breadcrumbListSchema, faqPageSchema } from "@/lib/seo/schema";
 import { ContentPage } from "@/components/content/content-page";
 import { getContentPage, type ContentGroup } from "./getContentPage";
-import { filterSections } from "./pending";
 
 const GROUP_LABEL: Record<ContentGroup, { en: string; zh: string; indexPath: string }> = {
   solutions: { en: "Solutions", zh: "解决方案", indexPath: "/solutions" },
@@ -55,9 +54,8 @@ export async function ContentRoute({ group, slug }: { group: ContentGroup; slug:
     { name: page.h1, path: page.url }
   ]);
 
-  // FAQPage 只收录实际渲染出来的问答 —— 被开关隐藏的条目不能进结构化数据，
-  // 否则 schema 与页面内容不一致。
-  const faqItems = filterSections(page.sections)
+  // FAQPage 收录页面上实际渲染出来的问答，与正文逐字一致。
+  const faqItems = page.sections
     .flatMap((s) => s.blocks)
     .flatMap((b) => (b.kind === "faq" ? b.items : []));
 

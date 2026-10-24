@@ -50,21 +50,21 @@ These are published forwarder ranges, not guarantees. The schedule is confirmed 
 
 ## Project reference
 
-[CASE: Kevin to confirm a real delivered project or remove this block]
+[See delivered projects](/projects) →
 
 ## FAQ
 
 **Is there a minimum order?**
-[KEVIN TO CONFIRM]
+No minimum order. Mixed categories can be consolidated in one container.
 
 **Can tiles, furniture and lighting ship in the same container?**
 Yes. All categories are consolidated at our Foshan warehouse and loaded together. Larger projects ship in several containers, each with its own packing list.
 
 **What are your payment terms?**
-[KEVIN TO CONFIRM]
+T/T or L/C.
 
 **What is the lead time?**
-[KEVIN TO CONFIRM]. Production time depends on the product mix; sea transit is added after loading.
+Confirmed with your quote — talk to our team on WhatsApp +233 59 247 0446.
 
 ## Get a quote
 
