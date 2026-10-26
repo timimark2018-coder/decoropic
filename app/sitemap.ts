@@ -1,20 +1,18 @@
-import fs from "node:fs";
-import path from "node:path";
 import type { MetadataRoute } from "next";
 import { siteConfig } from "@/lib/utils/constants";
 import { getAllPosts } from "@/lib/blog/getPosts";
 import { getAllGuides } from "@/lib/guides/getGuides";
+import { getContentPage } from "@/lib/content-pages/getContentPage";
 
 // 每个页面登记两条:英文版和 /zh 版，两条都带 hreflang 互指(en / zh / x-default)。
 // 中文版过去没有自己的 URL，所以完全不被收录 —— 这里是让它进索引的入口。
 // lastmod 只在能查证时才写。
 //
-// 之前这里对所有静态路由统一用 new Date() —— 等于每次 Google 来抓，全站 110 条
-// 都声称「刚刚更新」。Google 对不可信的 lastmod 的处理是直接忽略它，于是本该用来
-// 排重抓优先级的信号被我们自己废掉了。
-//
-// 现在:有源文件的(guides / blog / solutions / markets)取文件修改时间;
-// 手写的静态页查证不了，就不写 lastmod —— 省略好过填一个假的。
+// 来源是内容文件 front-matter 的 lastmod 字段(值 = 该文件正文最后一次改动的日期，
+// 由 scripts/update-lastmod.mjs 回填、提交前钩子自动更新)。
+// 不读文件系统时间:git 不保存 mtime，Vercel 检出后所有文件都是部署时刻 —— 上一版
+// 这么做，线上 sitemap 便全是同一个时间。
+// 手写的静态页没有可查证的日期，不输出 lastmod —— 省略好过填一个假的。
 function localizedPair(
   baseUrl: string,
   routePath: string,
@@ -33,25 +31,19 @@ function localizedPair(
   ];
 }
 
-/** 取内容源文件的修改时间;文件不在就返回 undefined(宁可不写 lastmod)。 */
-function contentMtime(...segments: string[]): Date | undefined {
-  try {
-    const file = path.join(process.cwd(), ...segments);
-    return fs.statSync(file).mtime;
-  } catch {
-    return undefined;
-  }
+/** front-matter 里的 YYYY-MM-DD → Date;缺失或非法返回 undefined。 */
+function toDate(value: unknown): Date | undefined {
+  if (value instanceof Date) return value;
+  if (typeof value !== "string" || !value) return undefined;
+  const d = new Date(`${value}T00:00:00Z`);
+  return Number.isNaN(d.getTime()) ? undefined : d;
 }
 
-/** 有 markdown 源文件的路由 → 用该文件的修改时间。 */
+/** 有 markdown 源文件的路由 → 取该文件 front-matter 的 lastmod。 */
 function routeLastModified(routePath: string): Date | undefined {
-  const solutions = routePath.match(/^\/solutions\/([a-z0-9-]+)$/);
-  if (solutions) return contentMtime("content", "solutions", `${solutions[1]}.md`);
-
-  const markets = routePath.match(/^\/markets\/([a-z0-9-]+)$/);
-  if (markets) return contentMtime("content", "markets", `${markets[1]}.md`);
-
-  return undefined;
+  const m = routePath.match(/^\/(solutions|markets)\/([a-z0-9-]+)$/);
+  if (!m) return undefined;
+  return toDate(getContentPage(m[1] as "solutions" | "markets", m[2])?.lastmod);
 }
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
@@ -116,7 +108,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     localizedPair(
       baseUrl,
       `/guides/${g.slug}`,
-      contentMtime("content", "guides", `${g.slug}.md`),
+      toDate(g.lastmod),
       "monthly",
       0.7
     )

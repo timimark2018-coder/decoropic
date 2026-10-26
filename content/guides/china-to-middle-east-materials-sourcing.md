@@ -4,6 +4,7 @@ description: "Gulf ports and routing, the Chinese New Year trap that slips fit-o
 slug: "china-to-middle-east-materials-sourcing"
 targetKeyword: "sourcing building materials from China to the Middle East"
 order: 2
+lastmod: "2026-08-07"
 ---
 
 # Sourcing Project Materials from China to the Middle East

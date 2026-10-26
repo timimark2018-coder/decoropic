@@ -4,6 +4,7 @@ description: "Guestroom packages, container sizing (33–38 m³ per 40ft), $1,80
 slug: "how-to-source-hotel-ffe-from-china"
 targetKeyword: "how to source hotel FF&E from China"
 order: 1
+lastmod: "2026-08-07"
 ---
 
 # How to Source Hotel FF&E from China — A Project Buyer's Guide

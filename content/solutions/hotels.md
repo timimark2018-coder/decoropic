@@ -4,6 +4,7 @@ title: "Hotel FF&E Supplier China | Decoropic"
 description: "Hotel FF&E supplier in China: guestroom furniture, lobby and restaurant seating, lighting, bathrooms and finishes sourced in Foshan and shipped as one project."
 h1: "Hotel FF&E Supplier in China"
 primary_keyword: "hotel FF&E supplier China"
+lastmod: "2026-10-24"
 ---
 
 Working with a hotel FF&E supplier in China makes sense when you want guestrooms, public areas and back-of-house supplied from one source. Decoropic is the brand of Foshan Home Style Import & Export Co., Ltd., founded in 2011 in Foshan. We source furniture, fixtures and equipment together with the hard finishes they sit on: tiles, doors, bathrooms and lighting. Everything is checked in our Foshan warehouse and shipped together, with our Accra team on site for projects in Ghana.

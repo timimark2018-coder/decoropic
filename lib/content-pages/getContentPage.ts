@@ -26,6 +26,8 @@ export type ContentPage = {
   description: string;
   h1: string;
   primaryKeyword: string;
+  /** 最后一次正文改动的日期(YYYY-MM-DD)，由 scripts/update-lastmod.mjs 维护。 */
+  lastmod?: string;
   intro: string;
   sections: ContentSection[];
   internalLinks: Array<{ href: string; label: string }>;
@@ -218,6 +220,7 @@ export function getContentPage(group: ContentGroup, slug: string): ContentPage |
     description: fm.description || "",
     h1: fm.h1 || "",
     primaryKeyword: fm.primary_keyword || "",
+    lastmod: fm.lastmod || undefined,
     intro,
     sections,
     internalLinks,

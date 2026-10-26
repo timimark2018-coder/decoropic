@@ -2,13 +2,11 @@ export const estimatorConfig = {
   currency: "USD",
   projectTypes: ["villa", "apartment"],
   baseAreaPrice: 80,
-  // projectType 过去只存在于问卷里:公式不读它，hook 提交时还把它硬编码成 "villa"，
-  // 所以同面积的别墅和公寓算出来完全一样。现在它是真实的一维。
-  // apartment rate = villa until confirmed —— 公寓先沿用别墅单价，等实测后再给自己的系数，
-  // 不在这里自拟一个没有依据的数字。
+  // 项目类型系数，乘在 baseAreaPrice 上，对 standard / premium / luxury 三档同比例生效。
+  // 别墅 USD 80/㎡(=1);公寓 USD 60/㎡(=0.75)，2026-10 由 Kevin 确认。
   projectTypeMultiplier: {
     villa: 1,
-    apartment: 1
+    apartment: 0.75
   },
   minRangeFactor: 0.9,
   maxRangeFactor: 1.15,

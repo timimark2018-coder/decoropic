@@ -4,6 +4,7 @@ title: "China Building Materials Supplier for UAE & Saudi Projects"
 description: "China building materials supplier for UAE and Saudi projects: tiles, hotel FF&E, sanitaryware, lighting, doors, windows, checked in Foshan and shipped to port."
 h1: "China Building Materials Supplier for UAE and Saudi Projects"
 primary_keyword: "China building materials supplier for UAE and Saudi projects"
+lastmod: "2026-10-24"
 ---
 
 Decoropic is a China building materials supplier for UAE and Saudi projects, from single villas to hotels and apartment blocks. We are the brand of Foshan Home Style Import & Export Co., Ltd., founded in Foshan in 2011. Foshan is a major production base for tiles, sanitaryware, furniture and lighting, and we buy across those categories for you. Every order is checked at our Foshan warehouse, consolidated, and shipped to your Gulf or Red Sea port, with your forwarder or ours.

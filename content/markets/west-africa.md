@@ -4,6 +4,7 @@ title: "Import Building Materials from China to West Africa"
 description: "Import building materials from China to West Africa: tiles, furniture, sanitaryware, lighting and doors, consolidated in Foshan and shipped to your port."
 h1: "Import Building Materials from China to West Africa"
 primary_keyword: "import building materials from China to West Africa"
+lastmod: "2026-10-24"
 ---
 
 If you plan to import building materials from China to West Africa, Decoropic can buy, check and ship the whole package for you. We are the brand of Foshan Home Style Import & Export Co., Ltd., founded in Foshan in 2011, and we run a staffed office in Accra. Ghana is our regional base, so we understand West African site conditions, port routines and project timing. For Nigeria, Côte d'Ivoire, Togo, Senegal, Sierra Leone and Liberia, we work from your drawings, consolidate in Foshan and ship to your port.

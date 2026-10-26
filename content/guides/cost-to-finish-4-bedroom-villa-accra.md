@@ -5,6 +5,7 @@ slug: "cost-to-finish-4-bedroom-villa-accra"
 targetKeyword: "cost to finish a 4 bedroom house in Ghana"
 category: "Ghana guides"
 order: 10
+lastmod: "2026-10-26"
 ---
 
 # Cost to Finish a 4 Bedroom House in Ghana: How the Budget Breaks Down

@@ -5,6 +5,7 @@ description: "One villa interior materials package from China: tiles, doors, win
 h1: "Villa Interior Materials Package from China"
 primary_keyword: "villa interior materials package from China"
 project_cards: east-legon-villa, adjiringanor-family-villa, airport-hills-modern-build
+lastmod: "2026-10-24"
 ---
 
 A villa interior materials package from China lets you buy every finish for a private house through one supplier, one contract and one consolidated shipment. Decoropic is the brand of Foshan Home Style Import & Export Co., Ltd., founded in 2011 in Foshan. We measure the house, draw a design around your budget, source each category from factories in Foshan and Guangdong, inspect the goods in our warehouse and ship them together. Our Accra team supports installation in Ghana; overseas clients get drawings, video guides and a WhatsApp line.

@@ -5,6 +5,7 @@ slug: "sanitaryware-bathroom-import-ghana"
 targetKeyword: "bathroom fittings suppliers in Ghana"
 category: "Ghana guides"
 order: 18
+lastmod: "2026-10-26"
 ---
 
 # Bathroom Fittings Suppliers in Ghana: What to Import and What to Buy Locally

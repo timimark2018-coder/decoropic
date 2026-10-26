@@ -4,6 +4,7 @@ description: "Ports, transit times, duty treatment and QC for shipping hotel and
 slug: "china-to-southeast-asia-project-materials"
 targetKeyword: "source hotel furniture from China Southeast Asia"
 order: 2
+lastmod: "2026-10-24"
 ---
 
 # China to Southeast Asia: Hotel & Interior Procurement Checklist

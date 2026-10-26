@@ -5,6 +5,7 @@ slug: "lighting-design-ghana-villa"
 targetKeyword: "lighting for houses in Ghana"
 category: "Ghana guides"
 order: 19
+lastmod: "2026-10-26"
 ---
 
 # Lighting for Houses in Ghana: A Layered Lighting Plan for Villas

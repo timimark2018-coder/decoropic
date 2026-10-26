@@ -10,6 +10,8 @@ export type GuideFrontmatter = {
   targetKeyword?: string;
   /** 指南分组。第 2 周起的加纳系列是 "Ghana guides"，早先的全球系列留空。 */
   category?: string;
+  /** 最后一次正文改动的日期(YYYY-MM-DD)，由 scripts/update-lastmod.mjs 维护。 */
+  lastmod?: string;
   order: number;
   readingTime?: string;
 };

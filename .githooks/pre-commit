@@ -1,0 +1,4 @@
+#!/bin/sh
+# 内容文件正文有改动时，把 front-matter 的 lastmod 更新为今天(sitemap 读这个字段)。
+# 由 package.json 的 prepare 脚本通过 core.hooksPath 启用。
+node scripts/update-lastmod.mjs --staged || exit 1

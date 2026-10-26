@@ -5,6 +5,7 @@ slug: "diaspora-building-in-ghana-pay-by-milestones"
 targetKeyword: "building a house in Ghana from abroad"
 category: "Ghana guides"
 order: 12
+lastmod: "2026-10-26"
 ---
 
 # Building a House in Ghana from Abroad: How to Pay by Milestones and Keep Control

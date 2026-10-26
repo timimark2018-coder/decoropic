@@ -4,6 +4,7 @@ description: "Routing and transhipment, inland legs that blow programmes, why we
 slug: "china-to-africa-project-materials"
 targetKeyword: "sourcing building materials from China to Africa"
 order: 7
+lastmod: "2026-08-07"
 ---
 
 # Sourcing Project Materials from China to Africa
