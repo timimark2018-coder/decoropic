@@ -3,6 +3,7 @@ import { siteConfig } from "@/lib/utils/constants";
 import { getAllPosts } from "@/lib/blog/getPosts";
 import { getAllGuides } from "@/lib/guides/getGuides";
 import { getContentPage } from "@/lib/content-pages/getContentPage";
+import { getAllProjects } from "@/lib/projects/getProjects";
 
 // 每个页面登记两条:英文版和 /zh 版，两条都带 hreflang 互指(en / zh / x-default)。
 // 中文版过去没有自己的 URL，所以完全不被收录 —— 这里是让它进索引的入口。
@@ -114,5 +115,10 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     )
   );
 
-  return [...staticEntries, ...blogEntries, ...guideEntries];
+  // 已交付案例页(content/projects/*.md)
+  const projectEntries = getAllProjects().flatMap((p) =>
+    localizedPair(baseUrl, `/projects/${p.slug}`, toDate(p.lastmod), "monthly", 0.75)
+  );
+
+  return [...staticEntries, ...blogEntries, ...guideEntries, ...projectEntries];
 }

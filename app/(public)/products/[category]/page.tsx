@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { buildMetadata } from "@/lib/seo/metadata";
+import { getLocale } from "@/lib/i18n/server";
 import { faqPageSchema } from "@/lib/seo/schema";
 import { siteConfig } from "@/lib/utils/constants";
 import { CategoryHero } from "@/components/categories/CategoryHero";
@@ -87,6 +88,7 @@ export async function generateMetadata({
 }: {
   params: Promise<{ category: string }>;
 }): Promise<Metadata> {
+  const locale = await getLocale();
   const { category } = await params;
   const data = await getCategoryData(category);
   if (!data) return {};
@@ -94,7 +96,8 @@ export async function generateMetadata({
   return buildMetadata({
     title: data.seo.title,
     description: data.seo.description,
-    path: `/products/${data.slug}`
+    path: `/products/${data.slug}`,
+    locale
   });
 }
 

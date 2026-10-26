@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// 维护 content/{guides,solutions,markets}/*.md 的 front-matter `lastmod` 字段。
+// 维护 content/{guides,solutions,markets,projects}/*.md 的 front-matter `lastmod` 字段。
 //
 // sitemap 的 lastmod 读的就是这个字段。之所以不读文件系统时间:git 不保存 mtime，
 // Vercel 每次检出后所有文件的 mtime 都是部署时刻，线上 sitemap 因此全是同一个时间。
@@ -17,11 +17,16 @@ import fs from "node:fs";
 import path from "node:path";
 
 const ROOT = execFileSync("git", ["rev-parse", "--show-toplevel"], { encoding: "utf8" }).trim();
-const DIRS = ["content/guides", "content/solutions", "content/markets"];
+const DIRS = ["content/guides", "content/solutions", "content/markets", "content/projects"];
 const mode = process.argv[2];
 
-function git(args) {
-  return execFileSync("git", args, { cwd: ROOT, encoding: "utf8" });
+function git(args, { quiet = false } = {}) {
+  return execFileSync("git", args, {
+    cwd: ROOT,
+    encoding: "utf8",
+    // 新文件在 HEAD 里不存在，git show 会往 stderr 打 fatal —— 那是预期内的，静音
+    stdio: ["ignore", "pipe", quiet ? "ignore" : "inherit"]
+  });
 }
 
 function isContentFile(rel) {
@@ -73,7 +78,7 @@ if (mode === "--backfill") {
     const current = fs.readFileSync(file, "utf8");
     let previous = "";
     try {
-      previous = git(["show", `HEAD:${rel}`]);
+      previous = git(["show", `HEAD:${rel}`], { quiet: true });
     } catch {
       previous = ""; // 新文件
     }

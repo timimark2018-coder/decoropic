@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { buildMetadata } from "@/lib/seo/metadata";
+import { getLocale } from "@/lib/i18n/server";
 import { getGuideBySlug, getAllGuideSlugs, getGuideFaq } from "@/lib/guides/getGuides";
 import { GuideBody } from "@/components/guides/GuideBody";
 import { siteConfig } from "@/lib/utils/constants";
@@ -15,6 +16,7 @@ export async function generateMetadata({
 }: {
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
+  const locale = await getLocale();
   const { slug } = await params;
   const guide = getGuideBySlug(slug);
   if (!guide) return {};
@@ -22,7 +24,8 @@ export async function generateMetadata({
   return buildMetadata({
     title: guide.frontmatter.title,
     description: guide.frontmatter.description,
-    path: `/guides/${guide.frontmatter.slug}`
+    path: `/guides/${guide.frontmatter.slug}`,
+    locale
   });
 }
 
