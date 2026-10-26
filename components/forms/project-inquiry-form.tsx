@@ -22,6 +22,10 @@ const copy = {
     success: "Your inquiry has been received. We will review it and follow up with the right next step.",
     retry: "Please review the highlighted fields and try again.",
     fail: "We could not submit your inquiry right now. Please try again in a moment.",
+    // 服务端两条留档通路都失败时用这条 —— 必须给出可立即改用的联系方式，
+    // 否则访客只会以为是网络问题而默默离开。
+    notCaptured:
+      "We could not record your inquiry just now. Please message us on WhatsApp +233 59 247 0446 or email service@decoropic.com — we will pick it up straight away.",
     submitting: "Submitting..."
   },
   zh: {
@@ -29,6 +33,8 @@ const copy = {
     success: "我们已收到您的咨询，会尽快评估并与您沟通下一步。",
     retry: "请检查高亮字段后重新提交。",
     fail: "暂时无法提交，请稍后再试。",
+    notCaptured:
+      "您的咨询暂时未能记录。请通过 WhatsApp +233 59 247 0446 或邮件 service@decoropic.com 联系我们，我们会立即跟进。",
     submitting: "提交中..."
   }
 } as const;
@@ -75,6 +81,14 @@ export function ProjectInquiryForm({ sourcePage, locale, initialProjectType}: Pr
         setTimeout(() => {
           document.querySelector("#inquiry-form-anchor")?.scrollIntoView({ behavior: "smooth" });
         }, 100);
+        return;
+      }
+
+      // 502 + code=lead_not_captured:服务端明确告知这条询盘没能留档。
+      // 用本地化文案覆盖服务端那句英文,并且不上报转化。
+      if (response.status === 502) {
+        setFieldErrors({});
+        setStatus(copy[locale].notCaptured);
         return;
       }
 
