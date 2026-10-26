@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { buildMetadata } from "@/lib/seo/metadata";
+import { getLocale } from "@/lib/i18n/server";
 import { getPostBySlug, getAllSlugs, extractFaqs } from "@/lib/blog/getPosts";
 import { PostBody } from "@/components/blog/PostBody";
 import { siteConfig } from "@/lib/utils/constants";
@@ -15,6 +16,7 @@ export async function generateMetadata({
 }: {
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
+  const locale = await getLocale();
   const { slug } = await params;
   const post = getPostBySlug(slug);
   if (!post) return {};
@@ -22,7 +24,8 @@ export async function generateMetadata({
   return buildMetadata({
     title: post.frontmatter.title,
     description: post.frontmatter.description,
-    path: `/blog/${post.frontmatter.slug}`
+    path: `/blog/${post.frontmatter.slug}`,
+    locale
   });
 }
 

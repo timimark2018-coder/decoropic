@@ -8,6 +8,7 @@ import { localizePath } from "@/lib/utils/site-links";
 import { Reveal } from "@/components/ui";
 
 export async function generateMetadata(): Promise<Metadata> {
+  const locale = await getLocale();
   return buildMetadata({
     title: {
       en: "Sourcing Guides — Building Materials & FF&E from China",
@@ -17,7 +18,8 @@ export async function generateMetadata(): Promise<Metadata> {
       en: "Practical guides for teams sourcing project material packages from China: hotel FF&E, tiles, tariffs, QC, consolidation and export, with real operating numbers.",
       zh: "面向开发商与采购团队的实用指南：从中国采购整套项目材料包 — 酒店FF&E、瓷砖、关税、验货、拼柜与出口。"
     },
-    path: "/guides"
+    path: "/guides",
+    locale
   });
 }
 
@@ -25,9 +27,19 @@ export default async function GuidesIndexPage() {
   const locale = await getLocale();
   const allGuides = getAllGuides();
   // 两组:面向全球买家的出口指南(早先 9 篇),与第 2 周起的加纳本地指南。
-  const GHANA_CATEGORY = "Ghana guides";
-  const guides = allGuides.filter((g) => g.category !== GHANA_CATEGORY);
-  const ghanaGuides = allGuides.filter((g) => g.category === GHANA_CATEGORY);
+  // 分组:无 category 的是早先面向全球买家的出口指南;其余按地区分组展示。
+  const REGIONAL_GROUPS = [
+    {
+      category: "Ghana guides",
+      heading: "Finishing, importing and clearing in Ghana — written from Accra projects"
+    },
+    {
+      category: "West Africa guides",
+      heading: "Importing into Nigeria, Côte d'Ivoire and Togo — ports, documents and packages"
+    }
+  ];
+  const regional = new Set(REGIONAL_GROUPS.map((g) => g.category));
+  const guides = allGuides.filter((g) => !g.category || !regional.has(g.category));
   const baseUrl = siteConfig.siteUrl;
 
   const breadcrumbSchema = {
@@ -114,56 +126,60 @@ export default async function GuidesIndexPage() {
             ))}
           </div>
 
-          {/* Ghana guides —— 第 2 周内容包 */}
-          {ghanaGuides.length > 0 && (
-            <div className="mt-20 border-t border-brand-gold/15 pt-12">
-              <Reveal>
-                <p
-                  className="text-brand-gold mb-4"
-                  style={{ fontSize: "0.78rem", letterSpacing: "0.28em", textTransform: "uppercase", fontWeight: 700 }}
-                >
-                  Ghana guides
-                </p>
-              </Reveal>
-              <Reveal delay={120}>
-                <h2
-                  className="text-brand-pine-dark mb-10 max-w-[780px]"
-                  style={{ fontFamily: "var(--serif)", fontSize: "clamp(1.6rem, 3vw, 2.4rem)", fontWeight: 700, lineHeight: 1.15, letterSpacing: "-0.02em" }}
-                >
-                  Finishing, importing and clearing in Ghana — written from Accra projects
-                </h2>
-              </Reveal>
+          {/* 地区指南分组:Ghana guides(第 2、3 周)· West Africa guides(第 3 周) */}
+          {REGIONAL_GROUPS.map((group) => {
+            const items = allGuides.filter((g) => g.category === group.category);
+            if (items.length === 0) return null;
+            return (
+              <div key={group.category} className="mt-20 border-t border-brand-gold/15 pt-12">
+                <Reveal>
+                  <p
+                    className="text-brand-gold mb-4"
+                    style={{ fontSize: "0.78rem", letterSpacing: "0.28em", textTransform: "uppercase", fontWeight: 700 }}
+                  >
+                    {group.category}
+                  </p>
+                </Reveal>
+                <Reveal delay={120}>
+                  <h2
+                    className="text-brand-pine-dark mb-10 max-w-[780px]"
+                    style={{ fontFamily: "var(--serif)", fontSize: "clamp(1.6rem, 3vw, 2.4rem)", fontWeight: 700, lineHeight: 1.15, letterSpacing: "-0.02em" }}
+                  >
+                    {group.heading}
+                  </h2>
+                </Reveal>
 
-              <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
-                {ghanaGuides.map((g, i) => (
-                  <Reveal key={g.slug} delay={i * 60}>
-                    <Link
-                      href={localizePath(`/guides/${g.slug}`, locale)}
-                      className="group block h-full rounded-lg border border-brand-line/60 bg-white p-8 transition-shadow hover:shadow-lg"
-                    >
-                      {g.readingTime && (
-                        <p
-                          className="text-brand-gold mb-4"
-                          style={{ fontSize: "0.7rem", fontWeight: 700, letterSpacing: "0.22em", textTransform: "uppercase" }}
-                        >
-                          {g.readingTime}
-                        </p>
-                      )}
-                      <h3
-                        className="text-brand-pine-dark mb-3 group-hover:text-brand-gold transition-colors"
-                        style={{ fontFamily: "var(--serif)", fontSize: "1.375rem", fontWeight: 700, lineHeight: 1.25 }}
+                <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+                  {items.map((g, i) => (
+                    <Reveal key={g.slug} delay={i * 60}>
+                      <Link
+                        href={localizePath(`/guides/${g.slug}`, locale)}
+                        className="group block h-full rounded-lg border border-brand-line/60 bg-white p-8 transition-shadow hover:shadow-lg"
                       >
-                        {g.title}
-                      </h3>
-                      <p className="text-brand-pine-dark/75" style={{ fontSize: "0.95rem", lineHeight: 1.6 }}>
-                        {g.description}
-                      </p>
-                    </Link>
-                  </Reveal>
-                ))}
+                        {g.readingTime && (
+                          <p
+                            className="text-brand-gold mb-4"
+                            style={{ fontSize: "0.7rem", fontWeight: 700, letterSpacing: "0.22em", textTransform: "uppercase" }}
+                          >
+                            {g.readingTime}
+                          </p>
+                        )}
+                        <h3
+                          className="text-brand-pine-dark mb-3 group-hover:text-brand-gold transition-colors"
+                          style={{ fontFamily: "var(--serif)", fontSize: "1.375rem", fontWeight: 700, lineHeight: 1.25 }}
+                        >
+                          {g.title}
+                        </h3>
+                        <p className="text-brand-pine-dark/75" style={{ fontSize: "0.95rem", lineHeight: 1.6 }}>
+                          {g.description}
+                        </p>
+                      </Link>
+                    </Reveal>
+                  ))}
+                </div>
               </div>
-            </div>
-          )}
+            );
+          })}
 
           {/* Link back to the global cluster */}
           <Reveal delay={200}>

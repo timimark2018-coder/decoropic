@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { buildMetadata } from "@/lib/seo/metadata";
+import { getLocale } from "@/lib/i18n/server";
 import { faqPageSchema } from "@/lib/seo/schema";
 import { SERVICE_BOUNDARY } from "@/components/source/source-page";
 import { LpWhatsAppButton } from "@/components/lp/lp-whatsapp-button";
@@ -13,16 +14,20 @@ const sourcePage = "/source-from-china/southeast-asia";
 const title = "China Sourcing for Southeast Asia — Hotel FF&E";
 const description = "Source hotel FF&E, tiles and interior packages from China for Southeast Asian projects — factory QC, consolidation and shipping to your regional port.";
 
-export const metadata: Metadata = {
-  ...buildMetadata({ title, description, path: sourcePage }),
-  alternates: { canonical: `https://www.decoropic.com${sourcePage}` },
-  openGraph: {
-    title, description, type: "website", locale: "en_US",
-    url: `https://www.decoropic.com${sourcePage}`, siteName: "Decoropic",
-    images: [{ url: "https://www.decoropic.com/images/products/furniture.jpg", alt: "Furniture available through Decoropic's China sourcing service" }]
-  },
-  twitter: { card: "summary_large_image", title, description, images: ["https://www.decoropic.com/images/products/furniture.jpg"] }
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const locale = await getLocale();
+  const base = buildMetadata({ title, description, path: sourcePage, locale });
+  // 只换掉分享图;canonical 与 hreflang 交给 buildMetadata(之前这里手写 alternates，
+  // 把 hreflang 整个清空了，中文版 canonical 也被写死成英文版)
+  return {
+    ...base,
+    openGraph: {
+      ...base.openGraph,
+      images: [{ url: "https://www.decoropic.com/images/products/furniture.jpg", alt: "Furniture available through Decoropic's China sourcing service" }]
+    },
+    twitter: { ...base.twitter, images: ["https://www.decoropic.com/images/products/furniture.jpg"] }
+  };
+}
 
 const packages = [
   { title: "Hotel & resort FF&E", body: "Guestroom furniture, lobby seating, lighting, bathroom fittings and finishes coordinated against your room schedule.", image: "furniture.jpg", href: "/source-from-china/hotel-ff-e" },

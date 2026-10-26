@@ -1,15 +1,18 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { buildMetadata } from "@/lib/seo/metadata";
+import { getLocale } from "@/lib/i18n/server";
 import { getAllPosts } from "@/lib/blog/getPosts";
 import { PostCard } from "@/components/blog/PostCard";
 
 export async function generateMetadata(): Promise<Metadata> {
+  const locale = await getLocale();
   return buildMetadata({
     title: "Renovation & Interior Design Resources for Ghana Projects",
     description:
       "Notes on sourcing, shipping and fitting out projects with Chinese-made materials — prices, lead times and what actually goes wrong, written from live projects.",
-    path: "/blog"
+    path: "/blog",
+    locale
   });
 }
 

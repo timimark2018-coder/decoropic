@@ -6,7 +6,9 @@ type MetadataInput = {
   title?: string | LocalizedText;
   description: string | LocalizedText;
   path?: string;
-  locale?: Locale;
+  // 必填:/zh 版的 canonical 取决于它。曾经是可选、默认 en,结果有 6 个页面漏传，
+  // 它们的中文版 canonical 全都指向英文版，和 hreflang 自相矛盾。
+  locale: Locale;
   titleTemplate?: string;
 };
 
@@ -18,7 +20,7 @@ export function buildMetadata({
   title,
   description,
   path = "/",
-  locale = "en",
+  locale,
   titleTemplate
 }: MetadataInput): Metadata {
   const baseUrl = siteConfig.siteUrl;

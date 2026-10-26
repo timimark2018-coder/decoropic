@@ -5,18 +5,58 @@ import { getLocale } from "@/lib/i18n/server";
 import { siteConfig } from "@/lib/utils/constants";
 import { breadcrumbListSchema, faqPageSchema } from "@/lib/seo/schema";
 import { ContentPage } from "@/components/content/content-page";
-import { getAllGuides } from "@/lib/guides/getGuides";
+import { getAllGuides, type GuideFrontmatter } from "@/lib/guides/getGuides";
 import { getContentPage, type ContentGroup } from "./getContentPage";
 
-// /markets/ghana 挂的加纳指南。取这 5 篇:落地成本、Tema 清关、工期、厨房进口、海外业主付款,
-// 覆盖「要花多少 → 怎么清关 → 多久 → 怎么买 → 人不在怎么管」这条链路。
+// 市场页底部的指南模块。
+// /markets/ghana:第 2 周 5 篇(落地成本 → Tema 清关 → 工期 → 厨房进口 → 海外业主付款)
+//   + 第 3 周 5 篇(Kumasi、西部地区/Takoradi 两个区域篇，整柜拼装、灯具电气标准、远程管理装修)。
+// /markets/west-africa:第 3 周全部 9 篇西非指南(按 category 取)。
 const GHANA_GUIDE_SLUGS = [
   "cost-to-finish-4-bedroom-villa-accra",
   "tema-port-clearing-building-materials",
   "ghana-house-finishing-timeline",
   "import-kitchen-cabinets-china-to-ghana",
-  "diaspora-building-in-ghana-pay-by-milestones"
+  "diaspora-building-in-ghana-pay-by-milestones",
+  "kumasi-house-finishing-materials",
+  "takoradi-western-region-house-finishing",
+  "container-consolidation-house-finishing-ghana",
+  "ghana-electrical-standards-lighting-import",
+  "managing-a-renovation-remotely-ghana"
 ];
+
+const MARKET_GUIDES: Record<string, {
+  pick: (g: GuideFrontmatter) => boolean;
+  order?: string[];
+  copy: { eyebrow: { en: string; zh: string }; heading: { en: string; zh: string } };
+}> = {
+  ghana: {
+    pick: (g) => GHANA_GUIDE_SLUGS.includes(g.slug),
+    order: GHANA_GUIDE_SLUGS,
+    copy: {
+      eyebrow: { en: "Guides for Ghana", zh: "加纳指南" },
+      heading: { en: "What it costs, how it clears, how long it takes", zh: "落地成本、清关、工期与采购方式" }
+    }
+  },
+  "west-africa": {
+    pick: (g) => g.category === "West Africa guides",
+    copy: {
+      eyebrow: { en: "Guides", zh: "指南" },
+      heading: {
+        en: "Importing into Nigeria, Côte d'Ivoire and Togo",
+        zh: "进口到尼日利亚、科特迪瓦与多哥"
+      }
+    }
+  }
+};
+
+function marketGuides(slug: string) {
+  const cfg = MARKET_GUIDES[slug];
+  if (!cfg) return undefined;
+  const list = getAllGuides().filter(cfg.pick);
+  if (cfg.order) list.sort((a, b) => cfg.order!.indexOf(a.slug) - cfg.order!.indexOf(b.slug));
+  return { guides: list, copy: cfg.copy };
+}
 
 const GROUP_LABEL: Record<ContentGroup, { en: string; zh: string; indexPath: string }> = {
   solutions: { en: "Solutions", zh: "解决方案", indexPath: "/solutions" },
@@ -58,6 +98,7 @@ export async function ContentRoute({ group, slug }: { group: ContentGroup; slug:
   const locale = await getLocale();
   const baseUrl = siteConfig.siteUrl;
   const label = GROUP_LABEL[group];
+  const guidesModule = group === "markets" ? marketGuides(slug) : undefined;
 
   const breadcrumb = breadcrumbListSchema([
     { name: locale === "zh" ? "首页" : "Home", path: "/" },
@@ -86,11 +127,8 @@ export async function ContentRoute({ group, slug }: { group: ContentGroup; slug:
         locale={locale}
         eyebrow={locale === "zh" ? label.zh : label.en}
         heroImage={HERO_IMAGES[`${group}/${slug}`]}
-        relatedGuides={
-          group === "markets" && slug === "ghana"
-            ? getAllGuides().filter((g) => GHANA_GUIDE_SLUGS.includes(g.slug))
-            : undefined
-        }
+        relatedGuides={guidesModule?.guides}
+        relatedGuidesCopy={guidesModule?.copy}
       />
     </>
   );

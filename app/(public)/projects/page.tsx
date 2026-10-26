@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { getAllProjects, projectMeta } from "@/lib/projects/getProjects";
+import { localizePath } from "@/lib/utils/site-links";
 import { buildMetadata } from "@/lib/seo/metadata";
 import { getLocale } from "@/lib/i18n/server";
 import { projectsContent } from "@/content/projects";
@@ -218,6 +220,7 @@ function SupplyJourneyIllustration() {
 export default async function ProjectsPage() {
   const locale = await getLocale();
   const c = projectsContent;
+  const deliveredProjects = getAllProjects();
 
   return (
     <main className="min-h-screen">
@@ -633,33 +636,40 @@ export default async function ProjectsPage() {
             </p>
           </Reveal>
 
-          {/* Mosaic 网格 4 张 */}
-          <div className="mb-12 grid grid-cols-2 gap-4 lg:grid-cols-4 lg:gap-6">
-            {c.residentialSection.images.map((img, i) => (
-              <Reveal key={i} delay={400 + i * 100}>
-                <div className="relative aspect-square w-full overflow-hidden bg-brand-pine-dark/5">
-                  <Image src={img.src} alt={t(img.alt, locale)} fill sizes="(max-width: 1024px) 50vw, 25vw" className="object-cover" />
-                </div>
+          {/* 已交付住宅案例 —— 第 3 周内容包的 7 个案例页。
+              原先这里是 4 张不带链接的图片拼贴,现在每张卡片链到 /projects/<slug>。 */}
+          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            {deliveredProjects.map((p, i) => (
+              <Reveal key={p.slug} delay={300 + i * 80}>
+                <Link href={localizePath(`/projects/${p.slug}`, locale)} className="group block">
+                  <div className="relative aspect-[4/3] w-full overflow-hidden bg-brand-pine-dark/5">
+                    {p.images[0] && (
+                      <Image
+                        src={p.images[0].src}
+                        alt={p.images[0].alt}
+                        fill
+                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 380px"
+                        className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                      />
+                    )}
+                  </div>
+                  <p
+                    className="mt-4 text-brand-gold"
+                    style={{ fontSize: "0.72rem", fontWeight: 700, letterSpacing: "0.2em", textTransform: "uppercase" }}
+                  >
+                    {projectMeta(p)}
+                  </p>
+                  <h3
+                    className="mt-2 text-brand-pine-dark transition-colors group-hover:text-brand-gold"
+                    style={{ fontFamily: "var(--serif)", fontSize: "1.25rem", fontWeight: 700, lineHeight: 1.25 }}
+                  >
+                    {p.h1.split(" — ")[0]}
+                  </h3>
+                  <p className="mt-2 text-sm leading-[1.7] text-brand-pine-dark/75">{p.description}</p>
+                </Link>
               </Reveal>
             ))}
           </div>
-
-          {c.residentialSection.viewAllUrl && c.residentialSection.viewAllLabel ? (
-            <Reveal delay={900}>
-              <Link
-                href={c.residentialSection.viewAllUrl}
-                className="text-brand-gold hover:text-brand-pine-dark transition-colors inline-flex items-center"
-                style={{
-                  fontSize: "0.78rem",
-                  letterSpacing: "0.22em",
-                  textTransform: "uppercase",
-                  fontWeight: 700
-                }}
-              >
-                {t(c.residentialSection.viewAllLabel, locale)}
-              </Link>
-            </Reveal>
-          ) : null}
         </div>
       </section>
 

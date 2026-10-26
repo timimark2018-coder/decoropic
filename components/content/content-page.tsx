@@ -19,13 +19,14 @@ type Props = {
   eyebrow: string;
   /** 本页实际配的图。源文件的 image suggestions 多数还没有对应素材 —— 没有就不传，留空不放占位图。 */
   heroImage?: HeroImage;
-  /** 页尾挂的相关指南(目前只有 /markets/ghana 用)。 */
+  /** 页尾挂的相关指南(/markets/ghana 与 /markets/west-africa 使用)。 */
   relatedGuides?: GuideFrontmatter[];
+  relatedGuidesCopy?: { eyebrow: { en: string; zh: string }; heading: { en: string; zh: string } };
 };
 
 const PROSE = "text-base leading-[1.8] text-brand-pine-dark/80";
 
-export function ContentPage({ page, locale, eyebrow, heroImage, relatedGuides }: Props) {
+export function ContentPage({ page, locale, eyebrow, heroImage, relatedGuides, relatedGuidesCopy }: Props) {
   const sections = page.sections;
   const cards = getProjectCards(page.projectCards);
 
@@ -248,7 +249,7 @@ export function ContentPage({ page, locale, eyebrow, heroImage, relatedGuides }:
               className="text-brand-gold"
               style={{ fontSize: "0.72rem", fontWeight: 700, letterSpacing: "0.22em", textTransform: "uppercase" }}
             >
-              {locale === "zh" ? "加纳指南" : "Guides for Ghana"}
+              {relatedGuidesCopy?.eyebrow[locale] ?? (locale === "zh" ? "相关指南" : "Guides")}
             </p>
             <h2
               className="mt-4 text-brand-pine-dark"
@@ -260,9 +261,7 @@ export function ContentPage({ page, locale, eyebrow, heroImage, relatedGuides }:
                 letterSpacing: "-0.02em"
               }}
             >
-              {locale === "zh"
-                ? "落地成本、清关、工期与采购方式"
-                : "What it costs, how it clears, how long it takes"}
+              {relatedGuidesCopy?.heading[locale]}
             </h2>
             <ul className="mt-8 space-y-5">
               {relatedGuides.map((guide) => (
