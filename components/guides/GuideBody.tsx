@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { compileMDX } from "next-mdx-remote/rsc";
+import remarkGfm from "remark-gfm";
 import { WHATSAPP_LINK } from "@/lib/constants/contact";
 import type { GuideFrontmatter } from "@/lib/guides/getGuides";
 
@@ -12,9 +13,14 @@ type GuideBodyProps = {
 // inside the prose container, then appends a standard project-oriented CTA that
 // uses the site's unified WhatsApp link format.
 export async function GuideBody({ content, frontmatter }: GuideBodyProps) {
+  // remark-gfm:第 2 周起的指南大量使用表格。此前没配这个插件 —— 现有 9 篇恰好
+  // 一个表格都没有，所以一直没暴露;不配的话 GFM 表格会原样渲染成一堆竖线。
   const { content: rendered } = await compileMDX({
     source: content,
-    options: { parseFrontmatter: false }
+    options: {
+      parseFrontmatter: false,
+      mdxOptions: { remarkPlugins: [remarkGfm] }
+    }
   });
 
   const waText = `Hi Decoropic, I read your guide "${frontmatter.title}" and would like a project material proposal.`;
