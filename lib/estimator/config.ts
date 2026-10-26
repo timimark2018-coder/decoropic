@@ -2,7 +2,7 @@ export const estimatorConfig = {
   currency: "USD",
   projectTypes: ["villa", "apartment"],
   baseAreaPrice: 80,
-  // 项目类型系数，乘在 baseAreaPrice 上，对 standard / premium / luxury 三档同比例生效。
+  // 项目类型系数，同时乘在 baseAreaPrice 与功能区加价上，对 standard / premium / luxury 三档同比例生效。
   // 别墅 USD 80/㎡(=1);公寓 USD 60/㎡(=0.75)，2026-10 由 Kevin 确认。
   projectTypeMultiplier: {
     villa: 1,

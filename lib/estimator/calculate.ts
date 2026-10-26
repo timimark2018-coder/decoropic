@@ -10,11 +10,15 @@ const allocationLabels: Record<keyof typeof estimatorConfig.allocationDefaults, 
 };
 
 export function calculateEstimatorResult(input: EstimatorPreviewInput | EstimatorLeadInput): EstimatorResult {
-  const zoneAddOnsTotal = input.functionalZones.reduce((total, zone) => total + estimatorConfig.zoneAddOns[zone], 0);
+  // 项目类型系数同时作用于面积单价和功能区加价，公寓总价因此恒为同参数别墅的 75%。
+  const projectTypeMultiplier = estimatorConfig.projectTypeMultiplier[input.projectType];
+  const zoneAddOnsTotal =
+    input.functionalZones.reduce((total, zone) => total + estimatorConfig.zoneAddOns[zone], 0) *
+    projectTypeMultiplier;
   const baseEstimate =
     estimatorConfig.baseAreaPrice *
       input.builtUpArea *
-      estimatorConfig.projectTypeMultiplier[input.projectType] *
+      projectTypeMultiplier *
       estimatorConfig.finishMultiplier[input.finishLevel] *
       estimatorConfig.serviceMultiplier[input.serviceScope] *
       estimatorConfig.customMultiplier[input.customItems] +
