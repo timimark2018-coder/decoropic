@@ -1,6 +1,6 @@
 ---
 title: "Trasacco Valley New Build | Luxury villa interior, Accra"
-description: "Luxury new-build villa interior in Trasacco Valley, Accra — double-height living room, kitchen island, bedrooms and bathrooms supplied from Foshan in one order."
+description: "Luxury new-build villa interior in Trasacco Valley, Accra — double-height living room, custom kitchen, bedrooms and bathrooms supplied from Foshan in one order."
 h1: "Trasacco Valley New Build — Luxury villa interior"
 slug: "07-trasacco-valley-new-build"
 primaryKeyword: "Trasacco Valley villa interior design"
@@ -10,7 +10,7 @@ duration: "4-month build"
 order: 7
 images:
   - src: "/projects/07-trasacco-valley-new-build/exterior.webp"
-    alt: "Exterior of a new-build villa in Trasacco Valley, Accra"
+    alt: "Trasacco Valley new-build villa exterior — Decoropic project, Accra"
 related:
   - "/solutions/villas"
   - "/guides/cost-to-finish-4-bedroom-villa-accra"
@@ -26,15 +26,15 @@ lastmod: "2026-10-26"
 
 ## The brief
 
-A new villa in Trasacco Valley, with Decoropic brought in while the structure was still being built so that the interior could be designed and sourced in parallel with construction. The centrepiece is a double-height living room opening onto a kitchen with a large island.
+A new villa in Trasacco Valley, with Decoropic working alongside the architect from the foundation stage so that the interior could be designed and sourced in parallel with construction. The centrepiece is a double-height living room opening onto the kitchen.
 
 ## What we supplied
 
-- **Kitchen** — custom kitchen with large island, veneered and lacquered fronts, natural-stone worktop, tall appliance wall.
-- **Wardrobes** — fitted wardrobes in all bedrooms, walk-in dressing room in the master.
-- **Interior doors** — full-height veneered doors with concealed frames.
-- **Sanitaryware** — freestanding bath, rain showers, wall-hung WCs, stone vanities in all bathrooms.
-- **Lighting** — full lighting design for the double-height space, cove and recessed lighting, dimming control.
+- **Custom kitchen, dressing room and wardrobes** — Luxury tier
+- **Interior doors** — Luxury tier
+- **Sanitaryware and bathroom fittings** — Luxury tier
+- **Tiles and flooring** — Luxury tier
+- **Lighting** — Luxury tier
 
 ## How it was delivered (indicative, against a four-month build)
 
@@ -55,7 +55,7 @@ A new villa in Trasacco Valley, with Decoropic brought in while the structure wa
 
 ## Result
 
-A Luxury-tier villa interior delivered in step with a four-month build, with a double-height living room, island kitchen and fully fitted bedrooms and bathrooms arriving on site when the builder needed them.
+A Luxury-tier villa interior delivered in step with a four-month build and shipped in three containers, with a double-height living room, a custom kitchen and fully fitted bedrooms and bathrooms arriving on site when the builder needed them.
 
 ## Next step
 Building a villa in Accra? Bring us in before the shell is finished — estimate at /estimator, or message the Accra office on WhatsApp +233 59 247 0446.
