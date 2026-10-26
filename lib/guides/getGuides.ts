@@ -8,6 +8,8 @@ export type GuideFrontmatter = {
   description: string;
   slug: string;
   targetKeyword?: string;
+  /** 指南分组。第 2 周起的加纳系列是 "Ghana guides"，早先的全球系列留空。 */
+  category?: string;
   order: number;
   readingTime?: string;
 };
@@ -46,4 +48,23 @@ export function getGuideBySlug(slug: string): Guide | null {
 
 export function getAllGuideSlugs(): string[] {
   return getAllGuides().map((g) => g.slug);
+}
+
+/**
+ * 从指南正文里取出 FAQ 问答,用来生成 FAQPage schema。
+ * 内容包的写法固定是 `## FAQ` 下面若干组 `**问题**` + 下一行答案,
+ * 这里只认这一种,避免把正文里的粗体误当成问题。
+ */
+export function getGuideFaq(content: string): Array<{ question: string; answer: string }> {
+  const section = content.match(/^##\s+FAQ\s*$([\s\S]*?)(?=^##\s|\Z)/m);
+  if (!section) return [];
+
+  const items: Array<{ question: string; answer: string }> = [];
+  for (const block of section[1].trim().split(/\n\s*\n/)) {
+    const m = block.match(/^\*\*(.+?)\*\*\s*\n([\s\S]+)$/);
+    if (m) {
+      items.push({ question: m[1].trim(), answer: m[2].replace(/\s+/g, " ").trim() });
+    }
+  }
+  return items;
 }

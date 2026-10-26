@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import type { Locale } from "@/content/types";
 import type { ContentPage as ContentPageData } from "@/lib/content-pages/getContentPage";
+import type { GuideFrontmatter } from "@/lib/guides/getGuides";
 import { getProjectCards } from "@/content/project-cards";
 import { localizePath } from "@/lib/utils/site-links";
 import { HandDrawnLine, Reveal } from "@/components/ui";
@@ -18,11 +19,13 @@ type Props = {
   eyebrow: string;
   /** 本页实际配的图。源文件的 image suggestions 多数还没有对应素材 —— 没有就不传，留空不放占位图。 */
   heroImage?: HeroImage;
+  /** 页尾挂的相关指南(目前只有 /markets/ghana 用)。 */
+  relatedGuides?: GuideFrontmatter[];
 };
 
 const PROSE = "text-base leading-[1.8] text-brand-pine-dark/80";
 
-export function ContentPage({ page, locale, eyebrow, heroImage }: Props) {
+export function ContentPage({ page, locale, eyebrow, heroImage, relatedGuides }: Props) {
   const sections = page.sections;
   const cards = getProjectCards(page.projectCards);
 
@@ -237,6 +240,51 @@ export function ContentPage({ page, locale, eyebrow, heroImage }: Props) {
           </div>
         </section>
       ))}
+
+      {relatedGuides && relatedGuides.length > 0 && (
+        <section className="border-t border-brand-pine-dark/10 bg-[#f7f3ec] py-16 lg:py-20">
+          <div className="container-wide max-w-[920px]">
+            <p
+              className="text-brand-gold"
+              style={{ fontSize: "0.72rem", fontWeight: 700, letterSpacing: "0.22em", textTransform: "uppercase" }}
+            >
+              {locale === "zh" ? "加纳指南" : "Guides for Ghana"}
+            </p>
+            <h2
+              className="mt-4 text-brand-pine-dark"
+              style={{
+                fontFamily: "var(--serif)",
+                fontSize: "clamp(1.5rem, 2.6vw, 2.1rem)",
+                fontWeight: 700,
+                lineHeight: 1.2,
+                letterSpacing: "-0.02em"
+              }}
+            >
+              {locale === "zh"
+                ? "落地成本、清关、工期与采购方式"
+                : "What it costs, how it clears, how long it takes"}
+            </h2>
+            <ul className="mt-8 space-y-5">
+              {relatedGuides.map((guide) => (
+                <li key={guide.slug} className="border-b border-brand-pine-dark/10 pb-5">
+                  <h3
+                    className="text-brand-pine-dark"
+                    style={{ fontFamily: "var(--serif)", fontSize: "1.15rem", fontWeight: 700, lineHeight: 1.3 }}
+                  >
+                    <Link
+                      href={localizePath(`/guides/${guide.slug}`, locale)}
+                      className="transition-colors hover:text-brand-gold"
+                    >
+                      {guide.title}
+                    </Link>
+                  </h3>
+                  <p className="mt-2 text-sm leading-[1.75] text-brand-pine-dark/75">{guide.description}</p>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+      )}
 
       {page.internalLinks.length > 0 && (
         <section className="border-t border-brand-pine-dark/10 bg-white py-12">

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { buildMetadata } from "@/lib/seo/metadata";
-import { getGuideBySlug, getAllGuideSlugs } from "@/lib/guides/getGuides";
+import { getGuideBySlug, getAllGuideSlugs, getGuideFaq } from "@/lib/guides/getGuides";
 import { GuideBody } from "@/components/guides/GuideBody";
 import { siteConfig } from "@/lib/utils/constants";
 
@@ -61,11 +61,26 @@ export default async function GuidePage({
     ]
   };
 
+  // FAQPage —— 只收录正文里实际渲染出来的问答,保证 schema 与页面逐字一致。
+  const faq = getGuideFaq(content);
+  const schemas: object[] = [articleSchema, breadcrumbSchema];
+  if (faq.length > 0) {
+    schemas.push({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: faq.map((item) => ({
+        "@type": "Question",
+        name: item.question,
+        acceptedAnswer: { "@type": "Answer", text: item.answer }
+      }))
+    });
+  }
+
   return (
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify([articleSchema, breadcrumbSchema]) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemas) }}
       />
 
       {/* Breadcrumb */}

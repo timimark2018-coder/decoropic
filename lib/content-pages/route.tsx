@@ -5,7 +5,18 @@ import { getLocale } from "@/lib/i18n/server";
 import { siteConfig } from "@/lib/utils/constants";
 import { breadcrumbListSchema, faqPageSchema } from "@/lib/seo/schema";
 import { ContentPage } from "@/components/content/content-page";
+import { getAllGuides } from "@/lib/guides/getGuides";
 import { getContentPage, type ContentGroup } from "./getContentPage";
+
+// /markets/ghana 挂的加纳指南。取这 5 篇:落地成本、Tema 清关、工期、厨房进口、海外业主付款,
+// 覆盖「要花多少 → 怎么清关 → 多久 → 怎么买 → 人不在怎么管」这条链路。
+const GHANA_GUIDE_SLUGS = [
+  "cost-to-finish-4-bedroom-villa-accra",
+  "tema-port-clearing-building-materials",
+  "ghana-house-finishing-timeline",
+  "import-kitchen-cabinets-china-to-ghana",
+  "diaspora-building-in-ghana-pay-by-milestones"
+];
 
 const GROUP_LABEL: Record<ContentGroup, { en: string; zh: string; indexPath: string }> = {
   solutions: { en: "Solutions", zh: "解决方案", indexPath: "/solutions" },
@@ -75,6 +86,11 @@ export async function ContentRoute({ group, slug }: { group: ContentGroup; slug:
         locale={locale}
         eyebrow={locale === "zh" ? label.zh : label.en}
         heroImage={HERO_IMAGES[`${group}/${slug}`]}
+        relatedGuides={
+          group === "markets" && slug === "ghana"
+            ? getAllGuides().filter((g) => GHANA_GUIDE_SLUGS.includes(g.slug))
+            : undefined
+        }
       />
     </>
   );
