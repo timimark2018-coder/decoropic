@@ -4,6 +4,7 @@ title: "Source Interior Materials from China for Southeast Asia"
 description: "Source interior materials from China for Southeast Asia projects: tiles, furniture, bathroom, kitchen and lighting checked in Foshan, consolidated and shipped."
 h1: "Source Interior Materials from China for Southeast Asia Projects"
 primary_keyword: "source interior materials from China for Southeast Asia projects"
+lastmod: "2026-10-24"
 ---
 
 When you source interior materials from China for Southeast Asia projects, short sea routes from South China keep transit time low, so most of your timeline goes into selection, production and checking. Decoropic is the brand of Foshan Home Style Import & Export Co., Ltd., founded in Foshan in 2011. We buy tiles, furniture, bathroom and kitchen products, lighting, doors and windows from Foshan and Guangdong makers, check them at our warehouse, and ship the package to your port with your forwarder or ours.

@@ -4,6 +4,7 @@ title: "Restaurant Fit-Out Sourcing China | Decoropic"
 description: "Restaurant fit-out sourcing in China: dining seating, bar counters, lighting, tiles, washrooms and doors from Foshan, checked in one warehouse, shipped as one."
 h1: "Restaurant Fit-Out Sourcing from China"
 primary_keyword: "restaurant fit-out sourcing China"
+lastmod: "2026-10-24"
 ---
 
 Restaurant fit-out sourcing in China lets you furnish and finish a dining room, bar and washrooms through one supplier instead of several importers. Decoropic, the brand of Foshan Home Style Import & Export Co., Ltd., founded in 2011 in Foshan, designs around your seating plan and budget, buys each category from Foshan and Guangdong factories, checks everything in our warehouse and ships it together. In Ghana our Accra team measures the space and supports installation on site.

@@ -4,6 +4,7 @@ title: "China Building Materials Export to Caribbean & LatAm"
 description: "China building materials export to Caribbean and Latin America: tiles, furniture, sanitaryware, lighting, doors and windows, consolidated in Foshan and shipped."
 h1: "China Building Materials Export to the Caribbean and Latin America"
 primary_keyword: "China building materials export to Caribbean and Latin America"
+lastmod: "2026-10-24"
 ---
 
 Decoropic handles China building materials export to Caribbean and Latin America projects, from private homes to small hotels and apartment buildings. We are the brand of Foshan Home Style Import & Export Co., Ltd., founded in Foshan in 2011. These are long routes, often with transshipment, so one consolidated, well-packed shipment matters more than usual. We buy across categories in Foshan, check every item at our warehouse, and ship to your port through your forwarder or one we recommend.

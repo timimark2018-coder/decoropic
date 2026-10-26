@@ -4,6 +4,7 @@ description: "Four inspection points, what a useful report must contain, $200–
 slug: "china-export-qc-consolidation-checklist"
 targetKeyword: "China export QC and consolidation inspection checklist"
 order: 6
+lastmod: "2026-08-07"
 ---
 
 # QC & Consolidation from China: The Project Inspection Checklist

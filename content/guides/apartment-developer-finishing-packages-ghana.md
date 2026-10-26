@@ -5,6 +5,7 @@ slug: "apartment-developer-finishing-packages-ghana"
 targetKeyword: "finishing materials for apartment developers Ghana"
 category: "Ghana guides"
 order: 17
+lastmod: "2026-10-26"
 ---
 
 # Finishing Materials for Apartment Developers in Ghana: Repeatable Unit Packs

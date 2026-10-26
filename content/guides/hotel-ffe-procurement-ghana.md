@@ -5,6 +5,7 @@ slug: "hotel-ffe-procurement-ghana"
 targetKeyword: "hotel furniture suppliers Ghana"
 category: "Ghana guides"
 order: 16
+lastmod: "2026-10-26"
 ---
 
 # Hotel Furniture Suppliers in Ghana: How to Procure an FF&E Package for 20 to 100 Rooms

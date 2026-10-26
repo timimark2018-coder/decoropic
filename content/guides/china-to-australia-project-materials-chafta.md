@@ -4,6 +4,7 @@ description: "Where the ChAFTA advantage really lands, the origin paperwork that
 slug: "china-to-australia-project-materials-chafta"
 targetKeyword: "importing project materials from China to Australia ChAFTA"
 order: 3
+lastmod: "2026-08-07"
 ---
 
 # Importing Project Materials from China to Australia — A Developer's Guide (ChAFTA)

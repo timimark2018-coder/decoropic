@@ -4,6 +4,7 @@ description: "All seven categories in a fit-out package, the omissions that stal
 slug: "villa-apartment-fit-out-materials-from-china"
 targetKeyword: "villa and apartment fit-out material package from China"
 order: 4
+lastmod: "2026-08-07"
 ---
 
 # Villa & Apartment Fit-out: The Complete Material Package from China

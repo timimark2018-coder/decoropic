@@ -4,6 +4,7 @@ description: "What's reported for EU anti-dumping and US Section 301, why the sa
 slug: "china-materials-tariffs-eu-us-how-to-verify"
 targetKeyword: "China building materials tariffs EU US how to verify"
 order: 5
+lastmod: "2026-08-07"
 ---
 
 # Tariffs on Chinese Building Materials (EU & US): What's Reported, and How to Verify

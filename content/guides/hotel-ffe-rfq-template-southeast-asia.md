@@ -4,6 +4,7 @@ description: "What a hotel FF&E request for quotation must specify to get compar
 slug: "hotel-ffe-rfq-template-southeast-asia"
 targetKeyword: "hotel FF&E RFQ template Southeast Asia"
 order: 3
+lastmod: "2026-10-24"
 ---
 
 # Hotel FF&E RFQ Template for Southeast Asia Projects

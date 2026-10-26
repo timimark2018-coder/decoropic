@@ -4,6 +4,7 @@ title: "Building Materials Supplier Ghana from China | Decoropic"
 description: "Tiles, furniture, sanitaryware, lighting, doors and windows from Foshan to Ghana, with an Accra office, Tema port clearing and on-site measurement and install."
 h1: "Building Materials Supplier for Ghana, Shipped from China"
 primary_keyword: "building materials supplier Ghana from China"
+lastmod: "2026-10-24"
 ---
 
 As a building materials supplier, Ghana from China is the route we know best. Decoropic is the brand of Foshan Home Style Import & Export Co., Ltd., founded in 2011 in Foshan. Our founder has 26 years in the building-materials trade and more than 20 years working in Ghana. We buy in Foshan, check and consolidate the goods in our own warehouse, ship to Tema, and our staffed Accra office follows the job through to site: measurement before the order, clearing at Tema, and installation supervision after delivery.

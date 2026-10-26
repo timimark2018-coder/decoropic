@@ -5,6 +5,7 @@ slug: "ghana-house-finishing-timeline"
 targetKeyword: "how long to finish a house in Ghana"
 category: "Ghana guides"
 order: 15
+lastmod: "2026-10-26"
 ---
 
 # How Long to Finish a House in Ghana? A Stage-by-Stage Timeline

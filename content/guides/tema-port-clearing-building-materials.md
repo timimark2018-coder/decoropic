@@ -5,6 +5,7 @@ slug: "tema-port-clearing-building-materials"
 targetKeyword: "clearing goods at Tema port"
 category: "Ghana guides"
 order: 14
+lastmod: "2026-10-26"
 ---
 
 # Clearing Goods at Tema Port: A Building-Materials Importer's Guide

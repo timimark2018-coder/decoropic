@@ -5,6 +5,7 @@ slug: "import-kitchen-cabinets-china-to-ghana"
 targetKeyword: "import kitchen cabinets from China to Ghana"
 category: "Ghana guides"
 order: 11
+lastmod: "2026-10-26"
 ---
 
 # How to Import Kitchen Cabinets from China to Ghana

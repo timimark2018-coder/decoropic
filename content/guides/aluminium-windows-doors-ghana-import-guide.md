@@ -5,6 +5,7 @@ slug: "aluminium-windows-doors-ghana-import-guide"
 targetKeyword: "aluminium windows Ghana price"
 category: "Ghana guides"
 order: 13
+lastmod: "2026-10-26"
 ---
 
 # Aluminium Windows in Ghana: Price Drivers, Specification and Import Guide

@@ -4,6 +4,7 @@ title: "Office Fit-Out Furniture and Materials from China"
 description: "Office fit-out furniture and materials from China: workstations, meeting rooms, partitions, flooring, lighting and doors sourced in Foshan, inspected, shipped."
 h1: "Office Fit-Out Furniture and Materials from China"
 primary_keyword: "office fit-out furniture and materials from China"
+lastmod: "2026-10-24"
 ---
 
 Office fit-out furniture and materials from China can be bought as one package covering the workspace, meeting rooms, reception and washrooms. Decoropic, the brand of Foshan Home Style Import & Export Co., Ltd., founded in 2011 in Foshan, plans the layout around your headcount and budget, sources each category from Foshan and Guangdong factories, checks the goods in our warehouse and ships them together. In Ghana our Accra team measures and supervises on site; overseas we work from drawings and video.

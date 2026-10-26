@@ -4,6 +4,7 @@ title: "Showroom and Retail Fit-Out Materials from China"
 description: "Showroom and retail fit-out materials from China: display shelving, counters, lighting, flooring, glass and signage frames sourced in Foshan and shipped as one."
 h1: "Showroom and Retail Fit-Out Materials from China"
 primary_keyword: "showroom and retail fit-out materials from China"
+lastmod: "2026-10-24"
 ---
 
 Showroom and retail fit-out materials from China can cover everything a shop needs to open: display fixtures, counters, lighting, flooring and the finishes around them. Decoropic, the brand of Foshan Home Style Import & Export Co., Ltd., founded in 2011 in Foshan, plans the layout around your products and budget, sources each category from Foshan and Guangdong factories, checks it in our warehouse and ships it together. In Ghana our Accra team measures and supports installation on site.
