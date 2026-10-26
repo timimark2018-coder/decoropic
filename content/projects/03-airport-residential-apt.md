@@ -11,7 +11,7 @@ duration: "6 weeks"
 order: 3
 images:
   - src: "/projects/03-airport-residential-apt/living-room.webp"
-    alt: "Functional-tier living room with new porcelain floor tiles and LED lighting"
+    alt: "Airport Residential apartment living room — Decoropic Functional Refresh project, Accra, 2-bed 140 m²"
 related:
   - "/solutions/apartments"
   - "/markets/ghana"
@@ -23,21 +23,20 @@ lastmod: "2026-10-26"
 
 | Location | Type | Tier | Area | Duration | Scope of supply |
 |---|---|---|---|---|---|
-| Airport Residential, Accra | 2-bedroom apartment | Functional | 140 m² | 6 weeks | Kitchen, wardrobes, interior doors, sanitaryware & hardware, lighting, tiles |
+| Airport Residential, Accra | 2-bedroom apartment | Functional | 140 m² | 6 weeks | Kitchen, wardrobes, interior doors, sanitaryware & hardware, lighting, tiles, furniture |
 
 ## The brief
 
-A two-bedroom apartment in Airport Residential, bought for rental and needing a clean, durable refresh rather than a full redesign. The owner's priorities were speed and cost control: a new kitchen, two refreshed bathrooms, replacement interior doors, fitted wardrobes and new floor tiles in the living areas, all from one order and finished before the next tenancy.
+A two-bedroom apartment in Airport Residential, bought for rental and needing a clean, durable refresh rather than a full redesign. The owner's priorities were speed and cost control: a new kitchen, two refreshed bathrooms, replacement interior doors, fitted wardrobes, new floor tiles and replacement furniture, all from one order and finished before the next tenancy.
 
 ## What we supplied
 
-- **Kitchen** — modular kitchen in standard cabinet widths, melamine doors, laminate worktop, stainless sink and basic soft-close hinges.
-- **Wardrobes** — two fitted wardrobes with hinged melamine doors and adjustable shelving.
-- **Interior doors** — pre-hung engineered doors with painted finish and standard lever handles.
-- **Sanitaryware** — close-coupled WCs, basin-and-pedestal sets, mixer taps and shower sets in two bathrooms.
-- **Hardware** — locks, hinges, towel rails and accessories in a matching chrome finish.
-- **Tiles** — 600 × 600 mm porcelain floor tiles in living areas, ceramic wall tiles in bathrooms and kitchen splashback.
-- **Lighting** — surface-mounted LED panels and downlights, bathroom mirror lights.
+- **Kitchen and wardrobes** — Functional tier
+- **Interior doors and hardware** — Functional tier
+- **Sanitaryware and bathroom fittings** — Functional tier
+- **Tiles** — Functional tier
+- **Lighting** — Functional tier
+- **Furniture** — Functional tier, ready-made
 
 ## How it was delivered (indicative)
 
@@ -52,13 +51,13 @@ A two-bedroom apartment in Airport Residential, bought for rental and needing a 
 
 ## Challenges and how we handled them
 
-- **Short programme.** Six weeks leaves no slack for custom production. The scheme was built from standard-size cabinets, doors and sanitaryware that factories hold in stock, which is the main reason the Functional tier can move this fast.
+- **Short programme.** Six weeks leaves no slack for custom production. The scheme was built from standard ranges that factories hold in stock, which is the main reason the Functional tier can move this fast.
 - **Working in an existing apartment.** Typical for a refresh, old fittings had to come out before new ones went in. Removal was scheduled in the week the container was at sea so the apartment was ready when goods arrived.
 - **Consolidation.** A 140 m² apartment does not fill a container on its own.
 
 ## Result
 
-A rental apartment refreshed in six weeks with a new kitchen, two bathrooms, doors, wardrobes and floors, all from one Foshan order.
+A rental apartment refreshed in six weeks with a new kitchen, two bathrooms, doors, wardrobes, floors and replacement furniture, all from one Foshan order.
 
 ## Next step
 Need a fast, budget-led apartment refresh? Get a Functional-tier estimate at /estimator, or message the Accra office on WhatsApp +233 59 247 0446.

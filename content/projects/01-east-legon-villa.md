@@ -11,9 +11,9 @@ duration: "14 weeks"
 order: 1
 images:
   - src: "/projects/01-east-legon-villa/exterior.webp"
-    alt: "Exterior of a four-bedroom villa in East Legon, Accra, finished by Decoropic"
+    alt: "East Legon villa exterior at golden hour — Decoropic project, Accra"
   - src: "/projects/01-east-legon-villa/living-room.webp"
-    alt: "Premium-tier living room with large-format porcelain floor tiles and feature lighting"
+    alt: "East Legon villa living room — Decoropic Premium tier project, Accra, 4-bed 487 m²"
 related:
   - "/solutions/villas"
   - "/guides/cost-to-finish-4-bedroom-villa-accra"
@@ -29,17 +29,15 @@ lastmod: "2026-10-26"
 
 ## The brief
 
-A four-bedroom villa in East Legon with the structure complete and the interior still bare. The owner wanted a single supplier to take the house from measured shell to finished rooms, rather than buying piece by piece from local showrooms. The Premium tier was chosen for a unified material palette across 487 m²: large-format floor tiles, a full custom kitchen, fitted wardrobes in every bedroom, and coordinated doors, sanitaryware and lighting.
+A four-bedroom villa in East Legon with the structure complete and the interior still bare. The owner wanted a single supplier to take the house from measured shell to finished rooms, rather than buying piece by piece from local showrooms. The Premium tier was chosen for one coordinated finish across 487 m²: floors, a full custom kitchen, fitted wardrobes in every bedroom, and matching doors, sanitaryware and lighting.
 
 ## What we supplied
 
-- **Kitchen** — custom L-shaped kitchen with island, lacquered doors, quartz worktop, soft-close hardware and built-in bin and cutlery systems.
-- **Wardrobes** — fitted floor-to-ceiling wardrobes in four bedrooms, melamine carcasses with lacquered fronts, internal LED strips.
-- **Interior doors** — solid-core timber-veneer doors with matching frames and architraves, concealed-pattern hinges.
-- **Windows** — thermally broken aluminium sliding and casement windows with tinted glazing and insect screens.
-- **Sanitaryware** — wall-hung WCs with concealed cisterns, rain-shower sets, vanity units with stone tops in all bathrooms.
-- **Tiles & flooring** — 1200 × 600 mm porcelain floor tiles in living areas, full-height bathroom wall tiles, engineered wood in bedrooms.
-- **Lighting** — recessed downlights, feature pendants for the dining and stair areas, exterior wall lights.
+- **Custom kitchen and wardrobes** — Premium tier
+- **Interior doors and windows** — Premium tier
+- **Sanitaryware and bathroom fittings** — Premium tier
+- **Tiles and flooring** — Premium tier
+- **Lighting** — Premium tier
 
 ## How it was delivered (indicative)
 

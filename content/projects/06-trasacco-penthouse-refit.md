@@ -11,7 +11,7 @@ duration: "16 weeks"
 order: 6
 images:
   - src: "/projects/06-trasacco-penthouse-refit/exterior-entry-door.webp"
-    alt: "Oversized pivot entrance door of a refitted Trasacco penthouse, Accra"
+    alt: "Trasacco penthouse refit entrance door — Decoropic Luxury tier project, Accra, 3-bed 380 m²"
 related:
   - "/solutions/apartments"
   - "/guides/ghana-house-finishing-timeline"
@@ -23,42 +23,42 @@ lastmod: "2026-10-26"
 
 | Location | Type | Tier | Area | Duration | Scope of supply |
 |---|---|---|---|---|---|
-| Trasacco, Accra | 3-bedroom penthouse refit | Luxury | 380 m² | 16 weeks | Entrance door, custom kitchen & wardrobes, interior doors, sanitaryware & hardware, lighting, tiles & flooring |
+| Trasacco, Accra | 3-bedroom penthouse refit | Luxury | 380 m² | 16 weeks | Entrance door, custom kitchen & wardrobes, interior doors, sanitaryware & hardware, lighting and smart-home controls, tiles & flooring, furniture |
 
 ## The brief
 
-An existing three-bedroom penthouse in Trasacco, around ten years old and fully fitted, which the owner wanted stripped back and refinished to a higher standard rather than patched. The scope covered everything visible: a new entrance door, floors, interior doors, a custom kitchen, a master suite with dressing room and bathroom, two further bathrooms and a full lighting scheme. The Luxury tier allowed natural stone, veneered joinery and premium sanitaryware.
+An existing three-bedroom penthouse in Trasacco, around ten years old and fully fitted, which the owner wanted stripped back and refinished to a higher standard rather than patched. The scope covered everything visible: a new entrance door, floors, interior doors, a custom kitchen, a master suite with dressing room and bathroom, two further bathrooms, furniture and a full lighting and smart-home scheme, all at the Luxury tier.
 
 ## What we supplied
 
-- **Entrance door** — oversized pivot entrance door with concealed closer and multi-point lock.
-- **Kitchen** — custom kitchen with island, veneered and lacquered fronts, natural-stone worktop and integrated appliance housings.
-- **Master suite** — walk-in dressing room with veneered wardrobes, island drawers and integrated lighting.
-- **Wardrobes** — fitted wardrobes in the two guest bedrooms.
-- **Interior doors** — full-height veneered doors with concealed frames and hinges.
-- **Sanitaryware** — freestanding bath, rain and hand showers, wall-hung WCs, stone vanities in three bathrooms.
-- **Lighting** — layered scheme: recessed, cove, picture lights, feature pendants, dimming control.
+- **Entrance door** — Luxury tier
+- **Custom kitchen, dressing room and wardrobes** — Luxury tier
+- **Interior doors** — Luxury tier
+- **Sanitaryware and bathroom fittings** — Luxury tier
+- **Tiles and flooring** — Luxury tier
+- **Lighting and smart-home controls** — Luxury tier
+- **Furniture and upholstery** — Luxury tier
 
 ## How it was delivered (indicative)
 
 | Stage | What happened | Week |
 |---|---|---|
 | 1. Measurement | Survey of existing penthouse, strip-out scope agreed | 1–2 |
-| 2. Design | Luxury scheme, stone and veneer samples, itemised budget | 2–4 |
-| 3. Sourcing | Orders placed; kitchen, dressing room and pivot door into production; stone cut to size | 5–9 |
-| 4. QC & consolidation | Factory inspections, stone crating, consolidation in Foshan | 9–10 |
+| 2. Design | Luxury scheme, material samples, itemised budget | 2–4 |
+| 3. Sourcing | Orders placed; kitchen, dressing room and entrance door into production | 5–9 |
+| 4. QC & consolidation | Factory inspections, crating, consolidation in Foshan | 9–10 |
 | 5. Shipment & clearance | Sea freight to Tema, clearance, delivery to building | 10–13 |
 | 6. Installation | Strip-out complete, supervised installation, snagging, handover | 13–16 |
 
 ## Challenges and how we handled them
 
 - **Strip-out in an occupied building.** Typical for a refit, removal of the old fit-out had to follow building rules on noise, hours and waste. The strip-out was programmed during the shipping window so the apartment was clear when the container landed.
-- **Oversized items and lift access.** A pivot door and stone slabs do not fit a standard lift. Item sizes were checked against the lift and stair at survey stage and the stone was cut to manageable panel sizes in Foshan.
-- **Longer production.** Veneered joinery and stone extend factory lead times. The 16-week programme allowed for this rather than compressing it.
+- **Large items and lift access.** The entrance door and some surface panels do not fit a standard lift. Item sizes were checked against the lift and stair at survey stage and large panels were cut to manageable sizes in Foshan.
+- **Longer production.** Custom joinery and Luxury-tier finishes extend factory lead times. The 16-week programme allowed for this rather than compressing it.
 
 ## Result
 
-A ten-year-old penthouse refitted to a Luxury standard in 16 weeks: new pivot entrance, stone floors, a veneered kitchen, a complete master suite and three bathrooms, with a layered lighting scheme throughout.
+A ten-year-old penthouse refitted to a Luxury standard in 16 weeks: a new entrance door and floors, a custom kitchen, a complete master suite, three bathrooms, furniture, and lighting with smart-home control throughout.
 
 ## Next step
 Refitting an existing apartment in Accra? Start with an estimate at /estimator, or message the Accra office on WhatsApp +233 59 247 0446.

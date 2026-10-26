@@ -11,9 +11,9 @@ duration: "11 weeks"
 order: 2
 images:
   - src: "/projects/02-cantonments-penthouse/exterior.webp"
-    alt: "Exterior of a Cantonments apartment building, Accra, home to a Decoropic penthouse fit-out"
+    alt: "Cantonments penthouse balcony with sea view — Decoropic project, Accra"
   - src: "/projects/02-cantonments-penthouse/open-plan-living.webp"
-    alt: "Open-plan living and kitchen in a Mid-Range penthouse interior with polished porcelain floors"
+    alt: "Cantonments penthouse open-plan living — Decoropic Mid-Range tier project, Accra, 3-bed 220 m²"
 related:
   - "/solutions/apartments"
   - "/guides/ghana-house-finishing-timeline"
@@ -25,21 +25,20 @@ lastmod: "2026-10-26"
 
 | Location | Type | Tier | Area | Duration | Scope of supply |
 |---|---|---|---|---|---|
-| Cantonments, Accra | 3-bedroom penthouse | Mid-Range | 220 m² | 11 weeks | Custom kitchen & wardrobes, interior doors, sanitaryware & hardware, lighting, tiles & flooring |
+| Cantonments, Accra | 3-bedroom penthouse | Mid-Range | 220 m² | 11 weeks | Custom kitchen & wardrobes, interior doors, sanitaryware & hardware, lighting, tiles & flooring, furniture |
 
 ## The brief
 
-A three-bedroom penthouse in Cantonments, delivered by the developer as a bare shell with services in place. The owner wanted an open-plan living and kitchen area, three fitted bedrooms and two finished bathrooms, at a budget below a full Premium scheme but with better materials than the developer's standard finish. The Mid-Range tier set the balance: good porcelain tiles throughout, a custom kitchen with a durable laminate finish, wall-hung sanitaryware and consistent interior doors.
+A three-bedroom penthouse in Cantonments, delivered by the developer as a bare shell with services in place. The owner wanted an open-plan living and kitchen area, three fitted bedrooms and two finished bathrooms, at a budget below a full Premium scheme but above the developer's standard finish. The Mid-Range tier set that balance across tiles, kitchen, sanitaryware, doors and furniture.
 
 ## What we supplied
 
-- **Kitchen** — custom open-plan kitchen with peninsula, high-pressure laminate doors, quartz-composite worktop, soft-close drawers.
-- **Wardrobes** — fitted wardrobes in three bedrooms, melamine finish with sliding doors in the master.
-- **Interior doors** — engineered timber flush doors with veneer finish, matching frames, stainless handles.
-- **Sanitaryware** — wall-hung WCs, shower enclosures with glass screens, mirrored vanity cabinets in two bathrooms.
-- **Hardware** — door locks, hinges, handles and bathroom accessories in a single brushed finish.
-- **Tiles & flooring** — 800 × 800 mm polished porcelain in living areas, matt porcelain in wet rooms, full-height wall tiles in showers.
-- **Lighting** — recessed LED downlights throughout, a linear pendant over the dining table, mirror lights in bathrooms.
+- **Custom kitchen and wardrobes** — Mid-Range tier
+- **Interior doors and hardware** — Mid-Range tier
+- **Sanitaryware and bathroom fittings** — Mid-Range tier
+- **Tiles and flooring** — Mid-Range tier
+- **Lighting** — Mid-Range tier
+- **Furniture** — Mid-Range tier
 
 ## How it was delivered (indicative)
 
@@ -54,8 +53,8 @@ A three-bedroom penthouse in Cantonments, delivered by the developer as a bare s
 
 ## Challenges and how we handled them
 
-- **Access.** Typical for apartment projects, the lift limits the size of any single carton. Kitchen carcasses and wardrobe panels were specified as flat-pack and crated to fit, with assembly on the floor rather than in the factory.
-- **Measurement variance.** Shell dimensions were confirmed on site before the kitchen was cut; a second check of the wet-room walls was made after waterproofing so the shower screens fitted without filler strips.
+- **Access.** Typical for apartment projects, the lift limits the size of any single carton. Kitchen and wardrobe units were packed in sizes that fit the lift and assembled on the floor rather than in the factory.
+- **Measurement variance.** Shell dimensions were confirmed on site before the kitchen went into production, and the bathrooms were re-checked after waterproofing so the fittings went in first time.
 - **Building rules.** Shared buildings often restrict working hours and loading times. The installation plan was set with building management before the container arrived in Tema.
 
 ## Result

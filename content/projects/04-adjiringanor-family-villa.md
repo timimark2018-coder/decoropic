@@ -11,7 +11,7 @@ duration: "13 weeks"
 order: 4
 images:
   - src: "/projects/04-adjiringanor-family-villa/exterior.webp"
-    alt: "Exterior of a five-bedroom family villa in Adjiringanor, Accra"
+    alt: "Adjiringanor family villa exterior — Decoropic Premium tier project, Accra, 5-bed 312 m²"
 related:
   - "/solutions/villas"
   - "/guides/ghana-house-finishing-timeline"
@@ -27,17 +27,15 @@ lastmod: "2026-10-26"
 
 ## The brief
 
-A five-bedroom villa in Adjiringanor for a family, with the structure complete and a double-height entrance hall around the main stair. The owner asked for a Premium-tier interior that would work hard for daily family life: a large kitchen, wardrobes in every bedroom, robust floors, and a living room with integrated lighting and smart controls. The entrance stair was to be treated as a feature.
+A five-bedroom villa in Adjiringanor for a family, with the structure complete and a double-height entrance hall around the main stair. The owner asked for a Premium-tier interior that would work hard for daily family life: a large kitchen, wardrobes in every bedroom, hard-wearing floors, and a living room with integrated lighting and smart controls. The entrance stair was to be treated as a feature.
 
 ## What we supplied
 
-- **Kitchen** — custom kitchen with island and tall-unit wall, lacquered doors, quartz worktop, integrated waste and pantry pull-outs.
-- **Wardrobes** — fitted wardrobes in five bedrooms, walk-in layout in the master with island drawers.
-- **Interior doors** — tall solid-core veneered doors with matching frames, concealed hinges, magnetic latches.
-- **Windows** — aluminium casement and sliding windows with insect screens and tinted glass.
-- **Sanitaryware** — wall-hung WCs, freestanding bath in the master, rain showers, stone-top vanities.
-- **Lighting & smart controls** — recessed downlights, cove LED, scene-controlled living-room lighting, feature pendant in the entrance hall.
-- **Tiles & flooring** — large-format porcelain in living areas and hall, engineered wood in bedrooms, anti-slip porcelain outdoors.
+- **Custom kitchen and wardrobes** — Premium tier
+- **Interior doors and windows** — Premium tier
+- **Sanitaryware and bathroom fittings** — Premium tier
+- **Lighting and smart controls** — Premium tier
+- **Tiles and flooring** — Premium tier
 
 ## How it was delivered (indicative)
 
@@ -52,13 +50,13 @@ A five-bedroom villa in Adjiringanor for a family, with the structure complete a
 
 ## Challenges and how we handled them
 
-- **Stair and hall geometry.** Typical for a feature stair, the measured dimensions matter to the millimetre for cladding and balustrade. The stair was surveyed separately and the production drawings checked against site before manufacture.
-- **Smart controls and wiring.** Scene lighting depends on the electrician's first-fix. Wiring diagrams were issued at design stage so the local contractor could pull cables before the fittings arrived.
+- **Stair and hall geometry.** Typical for a feature stair, the measured dimensions matter to the millimetre. The stair was surveyed separately and the production drawings checked against site before manufacture.
+- **Smart controls and wiring.** Lighting control depends on the electrician's first-fix. Wiring diagrams were issued at design stage so the local contractor could pull cables before the fittings arrived.
 - **Clearance timing.** A larger container load means more lines on the customs declaration. The packing list and invoice were prepared to match the declaration so Tema clearance did not stall on paperwork.
 
 ## Result
 
-A five-bedroom family villa delivered as a finished interior in 13 weeks: feature entrance stair, scene-lit living room, a large family kitchen and fitted wardrobes in every bedroom, all coordinated through one Premium-tier order and installed under supervision.
+A five-bedroom family villa delivered as a finished interior in 13 weeks: a feature entrance stair, a living room with integrated lighting control, a family kitchen and fitted wardrobes in every bedroom, all coordinated through one Premium-tier order and installed under supervision.
 
 ## Next step
 Finishing a family villa in Accra? Get a Premium-tier estimate at /estimator, or message the Accra office on WhatsApp +233 59 247 0446.
