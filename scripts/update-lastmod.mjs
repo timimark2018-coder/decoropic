@@ -20,8 +20,13 @@ const ROOT = execFileSync("git", ["rev-parse", "--show-toplevel"], { encoding: "
 const DIRS = ["content/guides", "content/solutions", "content/markets", "content/projects"];
 const mode = process.argv[2];
 
-function git(args) {
-  return execFileSync("git", args, { cwd: ROOT, encoding: "utf8" });
+function git(args, { quiet = false } = {}) {
+  return execFileSync("git", args, {
+    cwd: ROOT,
+    encoding: "utf8",
+    // 新文件在 HEAD 里不存在，git show 会往 stderr 打 fatal —— 那是预期内的，静音
+    stdio: ["ignore", "pipe", quiet ? "ignore" : "inherit"]
+  });
 }
 
 function isContentFile(rel) {
@@ -73,7 +78,7 @@ if (mode === "--backfill") {
     const current = fs.readFileSync(file, "utf8");
     let previous = "";
     try {
-      previous = git(["show", `HEAD:${rel}`]);
+      previous = git(["show", `HEAD:${rel}`], { quiet: true });
     } catch {
       previous = ""; // 新文件
     }
