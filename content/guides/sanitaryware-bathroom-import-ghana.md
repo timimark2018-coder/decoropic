@@ -1,11 +1,11 @@
 ---
-title: "Bathroom Fittings Suppliers in Ghana: Import or Local?"
-description: "Choosing bathroom fittings suppliers in Ghana: what to import from China and what to buy locally, water pressure and fitting standards, spares and warranty."
+title: "Bathroom Renovation Ghana: Fittings, Import or Local?"
+description: "Bathroom renovation in Ghana: choosing fittings, import vs local supply, and design + sourcing + shipping + installation from China, with an Accra office."
 slug: "sanitaryware-bathroom-import-ghana"
 targetKeyword: "bathroom fittings suppliers in Ghana"
 category: "Ghana guides"
 order: 18
-lastmod: "2026-10-26"
+lastmod: "2026-10-27"
 ---
 
 # Bathroom Fittings Suppliers in Ghana: What to Import and What to Buy Locally

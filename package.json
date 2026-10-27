@@ -17,7 +17,8 @@
     "typecheck": "next typegen && tsc --project tsconfig.typecheck.json --noEmit --incremental false",
     "verify": "npm run lint && npm run test && npm run typecheck && npm run build",
     "prepare": "git config core.hooksPath .githooks || true",
-    "lastmod:backfill": "node scripts/update-lastmod.mjs --backfill"
+    "lastmod:backfill": "node scripts/update-lastmod.mjs --backfill",
+    "url:inventory": "node scripts/url-inventory.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "2.103.0",
