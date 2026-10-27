@@ -27,6 +27,8 @@ export type SourcePageProps = {
   eyebrow: string;
   h1: string;
   subtitle: string;
+  /** 首屏副标题下的一条链接(例如指向同主题的指南);可选 */
+  heroLink?: { lead: string; label: string; href: string };
   intro: string[];
   categoriesTitle?: string;
   categories?: SourceListItem[];
@@ -104,6 +106,7 @@ export function SourcePage(props: SourcePageProps) {
     eyebrow,
     h1,
     subtitle,
+    heroLink,
     intro,
     categoriesTitle,
     categories,
@@ -173,6 +176,20 @@ export function SourcePage(props: SourcePageProps) {
               {subtitle}
             </p>
           </Reveal>
+
+          {heroLink && (
+            <Reveal delay={420}>
+              <p className="mb-8 text-sm text-brand-pine-dark/75">
+                {heroLink.lead}{" "}
+                <Link
+                  href={heroLink.href}
+                  className="font-semibold text-brand-pine underline decoration-brand-gold/60 underline-offset-2 hover:text-brand-gold"
+                >
+                  {heroLink.label}
+                </Link>
+              </p>
+            </Reveal>
+          )}
 
           <Reveal delay={500}>
             <div className="flex flex-wrap gap-4">

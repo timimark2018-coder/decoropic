@@ -6,9 +6,11 @@ type Props = {
   eyebrow: string;
   h1: string;
   lead: string;
+  /** 首屏 lead 下的一条链接(例如指向同主题的指南);可选 */
+  guideLink?: { lead: string; label: string; href: string };
 };
 
-export function CategoryHero({ eyebrow, h1, lead }: Props) {
+export function CategoryHero({ eyebrow, h1, lead, guideLink }: Props) {
   const waHref = buildWhatsAppHref();
 
   return (
@@ -57,6 +59,20 @@ export function CategoryHero({ eyebrow, h1, lead }: Props) {
             {lead}
           </p>
         </Reveal>
+
+        {guideLink && (
+          <Reveal delay={580}>
+            <p className="-mt-6 mb-12 text-sm text-brand-ink/75" style={{ maxWidth: "700px" }}>
+              {guideLink.lead}{" "}
+              <Link
+                href={guideLink.href}
+                className="font-semibold text-brand-pine underline decoration-brand-gold/60 underline-offset-2 hover:text-brand-gold"
+              >
+                {guideLink.label}
+              </Link>
+            </p>
+          </Reveal>
+        )}
 
         <Reveal delay={650}>
           <div className="flex flex-wrap gap-4">

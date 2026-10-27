@@ -7,12 +7,12 @@ export async function generateMetadata(): Promise<Metadata> {
   const locale = await getLocale();
   return buildMetadata({
     title: {
-      en: "Hotel FF&E from China — Worldwide Export & Sourcing",
-      zh: "从中国采购酒店FF&E — 全球出口"
+      en: "Turnkey Hotel FF&E Packages from China",
+      zh: "中国交钥匙酒店FF&E配套 — 全球出口"
     },
     description: {
-      en: "Hotel FF&E manufactured to specification in China: case goods, seating, lighting and bathroom packages, inspected and consolidated for export to your port.",
-      zh: "从中国采购酒店FF&E并全球出口 — 客房家具、大堂饰面、灯饰与卫浴。工厂选品、验货、拼柜与发运。当地进口与安装由买方自办。"
+      en: "Turnkey hotel FF&E packages from China: the full list of FF&E items, design + installation in Ghana via our Accra office, and supply and export worldwide.",
+      zh: "从中国采购的交钥匙酒店 FF&E 配套:完整 FF&E 清单，设计+安装(加纳，由阿克拉办公室执行)，并向全球供货出口。"
     },
     path: "/source-from-china/hotel-ff-e",
     locale
@@ -65,6 +65,11 @@ export default async function HotelFFEPage() {
     <SourcePage
       eyebrow="Sourcing · Hospitality FF&E"
       h1="Hotel FF&E from China — Worldwide Export"
+      heroLink={{
+        lead: "Scoping a property first?",
+        label: "Read our guide to the full list of hotel FF&E items",
+        href: "/guides/hotel-ffe-procurement-ghana"
+      }}
       subtitle="Design and full FF&E supply for hotel projects — guestrooms, lobbies and bathrooms specified as one scheme, then sourced, quality-controlled and exported from China as a single package."
       intro={[
         "Decoropic equips hotel projects with a complete, designed FF&amp;E and finish-material package sourced from China — not loose furniture orders. We design and specify the interior remotely (layouts, renders and a room-by-room material schedule), then source every element for it: guestroom casegoods, lobby feature furniture, bathroom fittings, lighting and finishes, coordinated as one scheme.",
@@ -118,6 +123,7 @@ export default async function HotelFFEPage() {
       related={related}
       guidesTitle="Related guides"
       guides={[
+        { label: "List of FF&E items for hotels", href: "/guides/hotel-ffe-procurement-ghana" },
         { label: "How to source hotel FF&E from China", href: "/guides/how-to-source-hotel-ffe-from-china" },
         { label: "China → Middle East sourcing", href: "/guides/china-to-middle-east-materials-sourcing" },
         { label: "QC & consolidation checklist", href: "/guides/china-export-qc-consolidation-checklist" }

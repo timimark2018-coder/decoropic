@@ -10,6 +10,8 @@ lastmod: "2026-10-27"
 
 # Hotel Furniture Suppliers in Ghana: How to Procure an FF&E Package for 20 to 100 Rooms
 
+*Ready to source rather than read? See our [list of FF&E items for hotels](/source-from-china/hotel-ff-e), supplied as one package from China.*
+
 Owners searching for hotel furniture suppliers Ghana are usually at the point where the building is nearly done and the rooms are empty. The decision is bigger than furniture: a hotel FF&E package covers casegoods, seating, beds, lighting, bathroom fittings, doors, window treatments and the public areas, and the quality of procurement determines whether rooms open on time and survive their first three years of use. This guide explains how to scope an FF&E package for a 20 to 100 room hotel in Ghana, why a mock-up room pays for itself, how to run quality control, and how to phase delivery.
 
 ## What an FF&E package includes
