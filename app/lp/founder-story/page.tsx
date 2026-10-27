@@ -46,13 +46,13 @@ const TEAM = [
 const STORY_PROJECTS = [
   {
     title: "East Legon Villa",
-    body: "Three brothers, one inherited family compound. We delivered three coordinated renovations over 18 months while keeping the family's design unity intact.",
+    body: "One four-bedroom villa, 487 m², taken from bare shell to a finished Premium interior in 14 weeks — kitchen, wardrobes, doors, bathrooms, lighting and floors from one coordinated order.",
     img: "/projects/01-east-legon-villa/exterior.webp",
     alt: "East Legon villa exterior at golden hour — Decoropic project, Accra"
   },
   {
     title: "Cantonments Penthouse",
-    body: "A returning Ghanaian-American family wanted “feels like London but works for Accra.” Italian materials, Ghana-spec wiring, 9-week turnaround.",
+    body: "A returning Ghanaian-American family wanted “feels like London but works for Accra.” Italian materials, Ghana-spec wiring, 11-week turnaround.",
     img: "/projects/02-cantonments-penthouse/exterior.webp",
     alt: "Cantonments penthouse balcony with sea view — Decoropic project, Accra"
   },
