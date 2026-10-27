@@ -8,7 +8,7 @@ import { Reveal } from "@/components/ui";
 import { LpWhatsAppButton } from "@/components/lp/lp-whatsapp-button";
 import { LpCtaGroup } from "@/components/lp/lp-cta-group";
 
-const ESTIMATE_URL = "https://decoropic.com/lp/villa-renovation-quote#lp-estimator";
+const ESTIMATE_URL = "/lp/villa-renovation-quote#lp-estimator";
 
 const PATH = "/lp/founder-story";
 const TITLE = "26 Years in Materials, 20 in Ghana — Founder Story";
@@ -65,7 +65,7 @@ const STORY_PROJECTS = [
 ];
 
 const WA_MESSAGE = "Hi Kevin, I just read your founder story and I'd like to chat.";
-const BRIEF_URL = "https://decoropic.com/lp/villa-renovation-quote#lp-lead-form";
+const BRIEF_URL = "/lp/villa-renovation-quote#lp-lead-form";
 const eyebrow = "text-brand-gold text-[0.78rem] font-bold uppercase tracking-[0.28em]";
 
 export default async function FounderStoryPage() {

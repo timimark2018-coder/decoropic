@@ -10,6 +10,8 @@ lastmod: "2026-10-27"
 
 # Bathroom Fittings Suppliers in Ghana: What to Import and What to Buy Locally
 
+*Planning the whole room? See [bathroom renovation Ghana](/products/bathroom-kitchen) for the bathroom and kitchen systems we supply.*
+
 Comparing bathroom fittings suppliers in Ghana comes down to one question per item: is this better imported as part of a matched set, or bought locally where it can be replaced in an afternoon? A bathroom combines ceramics, brassware, glass, cabinetry and the plumbing that connects them, and the right answer differs for each. This guide splits a Ghana bathroom into its parts, explains the water-pressure and fitting-standard issues that catch importers out, and sets out what a workable warranty and spares arrangement looks like for a house in Accra, Tema or Kumasi.
 
 ## The parts of a bathroom and where to buy each

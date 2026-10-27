@@ -2,13 +2,18 @@
   "slug": "bathroom-kitchen",
   "label": "Bathroom & Kitchen",
   "seo": {
-    "title": "Bathroom & Kitchen Systems for Ghana Villa Projects",
-    "description": "Sanitaryware, shower enclosures, vanities and modular kitchens with quartz or sintered-stone worktops, sized to your measured rooms and shipped as one package."
+    "title": "Bathroom Renovation Ghana — Bathroom & Kitchen Systems",
+    "description": "Bathroom renovation in Ghana: sanitaryware, showers and kitchens sized to your rooms, with design + sourcing + shipping + installation and an Accra office."
   },
   "hero": {
     "eyebrow": "BATHROOM & KITCHEN · CURATED",
     "h1": "Wet-area systems, project-ready.",
-    "lead": "Three modern vanity systems (artificial stone + solid wood + smart LED mirror), one 2-person hydro-massage bathtub, one premium configuration — designed to be ordered as a system, not piece by piece."
+    "lead": "Three modern vanity systems (artificial stone + solid wood + smart LED mirror), one 2-person hydro-massage bathtub, one premium configuration — designed to be ordered as a system, not piece by piece.",
+    "guideLink": {
+      "lead": "Choosing fittings first?",
+      "label": "our guide to bathroom fittings in Ghana: import or local",
+      "href": "/guides/sanitaryware-bathroom-import-ghana"
+    }
   },
   "why": {
     "items": [

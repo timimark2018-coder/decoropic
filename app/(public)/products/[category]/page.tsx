@@ -26,7 +26,13 @@ type CategoryData = {
   slug: string;
   label: string;
   seo: { title: string; description: string };
-  hero: { eyebrow: string; h1: string; lead: string };
+  hero: {
+    eyebrow: string;
+    h1: string;
+    lead: string;
+    /** 首屏 lead 下的一条链接(例如指向同主题的指南);可选 */
+    guideLink?: { lead: string; label: string; href: string };
+  };
   why: { items: Array<{ title: string; body: string }> };
   skus: Array<{
     name: string;
@@ -141,7 +147,12 @@ export default async function CategoryPage({
         />
       )}
       <main className="min-h-screen">
-        <CategoryHero eyebrow={data.hero.eyebrow} h1={data.hero.h1} lead={data.hero.lead} />
+        <CategoryHero
+          eyebrow={data.hero.eyebrow}
+          h1={data.hero.h1}
+          lead={data.hero.lead}
+          guideLink={data.hero.guideLink}
+        />
         <WhySection items={data.why.items} />
         <FeaturedSKUs skus={data.skus} categoryLabel={data.label} baseUrl={baseUrl} />
         <ApplicationSection applications={data.applications} categoryLabel={data.label} />
