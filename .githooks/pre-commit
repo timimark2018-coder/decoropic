@@ -1,4 +1,10 @@
 #!/bin/sh
-# 内容文件正文有改动时，把 front-matter 的 lastmod 更新为今天(sitemap 读这个字段)。
+# 1) 内容文件正文有改动时，把 front-matter 的 lastmod 更新为今天(sitemap 读这个字段)。
+# 2) 之后再重新生成 docs/url-inventory.md —— 必须在第 1 步之后，否则清单里的 lastmod
+#    会落后一天(#31 就出现过:清单先生成，提交时钩子才改日期)。
 # 由 package.json 的 prepare 脚本通过 core.hooksPath 启用。
 node scripts/update-lastmod.mjs --staged || exit 1
+if git diff --cached --name-only | grep -q '^content/guides/'; then
+  node scripts/url-inventory.mjs >/dev/null || exit 1
+  git add docs/url-inventory.md
+fi
