@@ -1,11 +1,11 @@
 ---
-title: "Hotel Furniture Suppliers Ghana: FF&E Procurement Guide"
-description: "Choosing hotel furniture suppliers in Ghana for a 20 to 100 room property: FF&E package scope, mock-up rooms, QC, phased delivery to Tema and installation."
+title: "List of FF&E Items for Hotels: Ghana Supplier Guide"
+description: "A list of FF&E items for hotels in Ghana, from guestrooms to public areas, plus design + sourcing + shipping + installation from China and an Accra office."
 slug: "hotel-ffe-procurement-ghana"
 targetKeyword: "hotel furniture suppliers Ghana"
 category: "Ghana guides"
 order: 16
-lastmod: "2026-10-26"
+lastmod: "2026-10-27"
 ---
 
 # Hotel Furniture Suppliers in Ghana: How to Procure an FF&E Package for 20 to 100 Rooms

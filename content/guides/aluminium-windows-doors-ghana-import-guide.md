@@ -1,11 +1,11 @@
 ---
-title: "Aluminium Windows Ghana Price Guide: Spec and Import"
-description: "Aluminium windows Ghana price depends on profile, glass and hardware. What to specify for heat, humidity and salt air, how to measure, and import versus local."
+title: "Aluminium Sliding Door Price in Ghana: Windows & Doors"
+description: "What sets aluminium sliding door price in Ghana: profile, glass and size. Then design + sourcing + shipping + installation from China, with an Accra office."
 slug: "aluminium-windows-doors-ghana-import-guide"
 targetKeyword: "aluminium windows Ghana price"
 category: "Ghana guides"
 order: 13
-lastmod: "2026-10-26"
+lastmod: "2026-10-27"
 ---
 
 # Aluminium Windows in Ghana: Price Drivers, Specification and Import Guide
