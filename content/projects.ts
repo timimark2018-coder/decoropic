@@ -354,7 +354,7 @@ export const projectsContent: ProjectsContent = {
     },
     imageSrc: "/images/projects/villa-concept-east-legon.jpg",
     imageAlt: {
-      en: "East Legon Luxury Villa concept rendering",
+      en: "East Legon villa concept rendering",
       zh: "East Legon 高端别墅概念渲染"
     },
     viewAllLabel: {
@@ -1048,8 +1048,8 @@ export const eastLegonVillaContent: EastLegonVillaContent = {
 
   meta: {
     title: {
-      en: "East Legon Luxury Villa — Concept Case Study | Decoropic",
-      zh: "East Legon 奢华别墅 — 概念案例 | Decoropic"
+      en: "East Legon Villa — Concept Case Study | Decoropic",
+      zh: "East Legon 别墅 — 概念案例 | Decoropic"
     },
     description: {
       en: "From the first conversation to materials on site. A concept case showing how Decoropic transforms a client's vision into a delivered villa.",
@@ -1063,8 +1063,8 @@ export const eastLegonVillaContent: EastLegonVillaContent = {
       zh: "概念案例 · East Legon · 加纳"
     },
     title: {
-      en: "East Legon Luxury Villa",
-      zh: "East Legon 奢华别墅"
+      en: "East Legon Villa",
+      zh: "East Legon 别墅"
     },
     subtitle: {
       en: "From conversation to completion.",

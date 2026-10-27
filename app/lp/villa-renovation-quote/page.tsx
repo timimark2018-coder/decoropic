@@ -31,22 +31,22 @@ const TIERS = [
   {
     name: "Functional Refresh",
     range: "≈ USD 20K – 45K",
-    body: "Fresh paint, mid-range tile, basic sanitary ware, ready-made furniture, standard lighting. Owner-occupied retrofit, no structural change."
+    body: "Fresh paint, mid-range tile, basic sanitary ware, ready-made furniture, standard lighting. Owner-occupied retrofit, no structural change. Airport Residential level."
   },
   {
     name: "Mid-Range",
     range: "≈ USD 45K – 110K",
-    body: "Imported 60×120 porcelain, branded sanitary, semi-custom millwork, designer pendants, accent walls. The most common Accra villa tier."
+    body: "Imported 60×120 porcelain, branded sanitary, semi-custom millwork, designer pendants, accent walls. The most common Accra villa tier. Cantonments / Airport Hills level."
   },
   {
     name: "Premium",
     range: "≈ USD 110K – 245K",
-    body: "1200×2700 supreme slabs, integrated wet-area systems, full custom cabinetry, statement chandeliers, 3000mm sliding doors. East Legon / Cantonments level."
+    body: "1200×2700 supreme slabs, integrated wet-area systems, full custom cabinetry, statement chandeliers, 3000mm sliding doors. East Legon / Adjiringanor level."
   },
   {
     name: "Luxury",
     range: "USD 245K+",
-    body: "Italian / Spanish imports across all categories, smart home integration, pivot entry doors with stone matching. Trasacco / Adjiringanor level."
+    body: "Italian / Spanish imports across all categories, smart home integration, pivot entry doors with stone matching. Trasacco level."
   }
 ];
 
@@ -69,7 +69,7 @@ const STEPS = [
   { n: "01", title: "Brief", body: "You tell us: floor plan, intended use, preferred aesthetic, hard budget ceiling. We return a tier recommendation and a written scope." },
   { n: "02", title: "Curate", body: "From 1,000+ vetted factories, we pre-select materials and finishes that work together as a system. You see the full palette before any container leaves Foshan." },
   { n: "03", title: "Sample", body: "Physical samples arrive at our Accra workshop. You touch the tile, see the wood grain, sit on the sofa frame. Anything you reject, we substitute — before mass order." },
-  { n: "04", title: "Container", body: "One order, one container, one arrival at Tema, one installation team coordinated by our local supervisor. From sign-off to handover: 12–16 weeks, on a written schedule." }
+  { n: "04", title: "Container", body: "One order, one container, one arrival at Tema, one installation team coordinated by our local supervisor. From sign-off to handover: typically 11–16 weeks for a villa, on a written schedule." }
 ];
 
 const NUMBERS = [
