@@ -39,7 +39,8 @@ export async function generateMetadata({
 const RELATED_LABEL: Record<string, string> = {
   "/solutions/villas": "Villa packages",
   "/solutions/apartments": "Apartment packages",
-  "/solutions/hotels": "Hotel FF&E",
+  "/solutions/hotels": "Hotel solutions",
+  "/source-from-china/hotel-ff-e": "Hotel FF&E packages from China",
   "/markets/ghana": "Ghana market",
   "/estimator": "Budget estimator",
   "/projects": "All delivered projects",
@@ -127,7 +128,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
             className="text-brand-gold"
             style={{ fontSize: "0.78rem", fontWeight: 700, letterSpacing: "0.28em", textTransform: "uppercase" }}
           >
-            Delivered project · {fm.projectType}
+            {fm.status ? `${fm.projectType} · ${fm.status}` : `Delivered project · ${fm.projectType}`}
           </p>
           <h1
             className="mt-6 max-w-[900px] text-brand-pine-dark"
@@ -138,13 +139,21 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
           <p className="mt-6 text-sm font-semibold uppercase tracking-wider text-brand-pine-dark/70">
             {projectMeta(fm)}
           </p>
+          {fm.notice && (
+            <p
+              role="note"
+              className="mt-6 max-w-[820px] rounded-[6px] border border-brand-gold/50 bg-brand-ivory px-5 py-4 text-sm leading-[1.7] text-brand-pine-dark/85"
+            >
+              {fm.notice}
+            </p>
+          )}
 
           {hero && (
             <div className="relative mt-10 aspect-[16/9] w-full overflow-hidden rounded-[6px] bg-brand-pine-dark/5">
               <Image src={hero.src} alt={hero.alt} fill priority sizes="(max-width: 1100px) 100vw, 1100px" className="object-cover" />
             </div>
           )}
-          {gallery.length > 0 && (
+          {!fm.imagesInBody && gallery.length > 0 && (
             <div className="mt-4 grid grid-cols-2 gap-4 sm:grid-cols-3">
               {gallery.map((img) => (
                 <div key={img.src} className="relative aspect-[4/3] overflow-hidden rounded-[6px] bg-brand-pine-dark/5">

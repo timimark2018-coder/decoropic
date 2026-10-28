@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { compileMDX } from "next-mdx-remote/rsc";
 import type { PostFrontmatter } from "@/lib/blog/getPosts";
@@ -63,7 +64,7 @@ export async function PostBody({ content, frontmatter }: PostBodyProps) {
               letterSpacing: "-0.02em"
             }}
           >
-            {frontmatter.title}
+            {frontmatter.h1 ?? frontmatter.title}
           </h1>
 
           <p
@@ -77,6 +78,24 @@ export async function PostBody({ content, frontmatter }: PostBodyProps) {
           >
             {frontmatter.description}
           </p>
+
+          {frontmatter.cover && (
+            <figure className="mt-10">
+              <div className="relative aspect-[16/9] w-full overflow-hidden rounded-[6px] bg-brand-pine-dark/5">
+                <Image
+                  src={frontmatter.cover}
+                  alt={frontmatter.coverAlt ?? frontmatter.title}
+                  fill
+                  priority
+                  sizes="(max-width: 860px) 100vw, 860px"
+                  className="object-cover"
+                />
+              </div>
+              {frontmatter.coverCaption && (
+                <figcaption className="mt-3 text-sm text-brand-pine-dark/60">{frontmatter.coverCaption}</figcaption>
+              )}
+            </figure>
+          )}
         </div>
       </section>
 

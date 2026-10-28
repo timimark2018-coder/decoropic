@@ -22,11 +22,13 @@ type Props = {
   /** 页尾挂的相关指南(/markets/ghana 与 /markets/west-africa 使用)。 */
   relatedGuides?: GuideFrontmatter[];
   relatedGuidesCopy?: { eyebrow: { en: string; zh: string }; heading: { en: string; zh: string } };
+  /** 案例模块(例如 <RecentHotelProject />)，放在正文之后、相关指南之前 */
+  recentProject?: React.ReactNode;
 };
 
 const PROSE = "text-base leading-[1.8] text-brand-pine-dark/80";
 
-export function ContentPage({ page, locale, eyebrow, heroImage, relatedGuides, relatedGuidesCopy }: Props) {
+export function ContentPage({ page, locale, eyebrow, heroImage, relatedGuides, relatedGuidesCopy, recentProject }: Props) {
   const sections = page.sections;
   const cards = getProjectCards(page.projectCards);
 
@@ -241,6 +243,8 @@ export function ContentPage({ page, locale, eyebrow, heroImage, relatedGuides, r
           </div>
         </section>
       ))}
+
+      {recentProject}
 
       {relatedGuides && relatedGuides.length > 0 && (
         <section className="border-t border-brand-pine-dark/10 bg-[#f7f3ec] py-16 lg:py-20">

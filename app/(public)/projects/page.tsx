@@ -220,7 +220,9 @@ function SupplyJourneyIllustration() {
 export default async function ProjectsPage() {
   const locale = await getLocale();
   const c = projectsContent;
-  const deliveredProjects = getAllProjects();
+  const allProjects = getAllProjects();
+  const deliveredProjects = allProjects.filter((p) => p.sector !== "hotel");
+  const hotelProjects = allProjects.filter((p) => p.sector === "hotel");
 
   return (
     <main className="min-h-screen">
@@ -423,6 +425,42 @@ export default async function ProjectsPage() {
               </Link>
             </article>
           </Reveal>
+
+          {/* 酒店案例页(content/projects 里 sector: hotel 的条目)，例如 2026 年的设计方案 */}
+          {hotelProjects.length > 0 && (
+            <div className="mb-20 grid grid-cols-1 gap-8 sm:grid-cols-2">
+              {hotelProjects.map((p, i) => (
+                <Reveal key={p.slug} delay={450 + i * 80}>
+                  <Link href={localizePath(`/projects/${p.slug}`, locale)} className="group block">
+                    <div className="relative aspect-[4/3] w-full overflow-hidden bg-brand-pine-dark/5">
+                      {p.images[0] && (
+                        <Image
+                          src={p.images[0].src}
+                          alt={p.images[0].alt}
+                          fill
+                          sizes="(max-width: 640px) 100vw, 580px"
+                          className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                        />
+                      )}
+                    </div>
+                    <p
+                      className="mt-4 text-brand-gold"
+                      style={{ fontSize: "0.72rem", fontWeight: 700, letterSpacing: "0.2em", textTransform: "uppercase" }}
+                    >
+                      {p.cardLabel ?? projectMeta(p)}
+                    </p>
+                    <h3
+                      className="mt-2 text-brand-pine-dark transition-colors group-hover:text-brand-gold"
+                      style={{ fontFamily: "var(--serif)", fontSize: "1.25rem", fontWeight: 700, lineHeight: 1.25 }}
+                    >
+                      {p.h1.split(" — ")[0]}
+                    </h3>
+                    <p className="mt-2 text-sm leading-[1.7] text-brand-pine-dark/75">{p.description}</p>
+                  </Link>
+                </Reveal>
+              ))}
+            </div>
+          )}
 
           {/* Mini cases: Tamale + Accra — vertical stack with horizontal scroll strips */}
           <div className="space-y-12 lg:space-y-16 mb-12">

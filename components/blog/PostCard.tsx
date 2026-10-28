@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import type { PostFrontmatter } from "@/lib/blog/getPosts";
 
@@ -17,6 +18,17 @@ export function PostCard({ post }: PostCardProps) {
   return (
     <article className="group border border-brand-line bg-brand-ivory hover:border-brand-gold transition-colors duration-300">
       <Link href={`/blog/${post.slug}`} className="block p-8 lg:p-10">
+        {post.cover && (
+          <div className="relative -mx-8 -mt-8 mb-8 aspect-[16/9] overflow-hidden bg-brand-pine-dark/5 lg:-mx-10 lg:-mt-10">
+            <Image
+              src={post.cover}
+              alt={post.coverAlt ?? post.title}
+              fill
+              sizes="(max-width: 1024px) 100vw, 600px"
+              className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+            />
+          </div>
+        )}
         <div className="flex items-center gap-4 mb-5">
           {post.readingTime && (
             <span

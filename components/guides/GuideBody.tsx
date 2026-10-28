@@ -7,12 +7,14 @@ import type { GuideFrontmatter } from "@/lib/guides/getGuides";
 type GuideBodyProps = {
   content: string;
   frontmatter: GuideFrontmatter;
+  /** 正文与 CTA 之间的附加模块(例如酒店指南的 <RecentHotelProject />) */
+  children?: React.ReactNode;
 };
 
 // Renders the guide markdown VERBATIM (scope note + tariff disclaimers included)
 // inside the prose container, then appends a standard project-oriented CTA that
 // uses the site's unified WhatsApp link format.
-export async function GuideBody({ content, frontmatter }: GuideBodyProps) {
+export async function GuideBody({ content, frontmatter, children }: GuideBodyProps) {
   // remark-gfm:第 2 周起的指南大量使用表格。此前没配这个插件 —— 现有 9 篇恰好
   // 一个表格都没有，所以一直没暴露;不配的话 GFM 表格会原样渲染成一堆竖线。
   const { content: rendered } = await compileMDX({
@@ -41,6 +43,8 @@ export async function GuideBody({ content, frontmatter }: GuideBodyProps) {
           <div className="prose prose-lg max-w-none overflow-x-auto">{rendered}</div>
         </div>
       </section>
+
+      {children}
 
       {/* CTA footer — /contact + unified WhatsApp link */}
       <section className="border-t border-brand-line bg-brand-sand py-16">

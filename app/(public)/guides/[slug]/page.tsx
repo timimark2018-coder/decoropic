@@ -5,7 +5,11 @@ import { buildMetadata } from "@/lib/seo/metadata";
 import { getLocale } from "@/lib/i18n/server";
 import { getGuideBySlug, getAllGuideSlugs, getGuideFaq } from "@/lib/guides/getGuides";
 import { GuideBody } from "@/components/guides/GuideBody";
+import { RecentHotelProject } from "@/components/projects/RecentHotelProject";
 import { siteConfig } from "@/lib/utils/constants";
+
+// 这两篇酒店指南在正文后挂「Recent hotel project」模块
+const HOTEL_GUIDES = ["small-hotel-renovation-ghana-guesthouse", "hotel-ffe-procurement-ghana"];
 
 export async function generateStaticParams() {
   return getAllGuideSlugs().map((slug) => ({ slug }));
@@ -99,7 +103,9 @@ export default async function GuidePage({
         </div>
       </nav>
 
-      <GuideBody content={content} frontmatter={frontmatter} />
+      <GuideBody content={content} frontmatter={frontmatter}>
+        {HOTEL_GUIDES.includes(frontmatter.slug) && <RecentHotelProject locale={await getLocale()} />}
+      </GuideBody>
     </>
   );
 }

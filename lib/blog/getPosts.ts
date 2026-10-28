@@ -14,6 +14,16 @@ export type PostFrontmatter = {
   readingTime?: string;
   ogImage?: string;
   canonical?: string;
+  /** 页面 H1;缺省用 title */
+  h1?: string;
+  /** JSON-LD 类型，缺省 Article */
+  schemaType?: "Article" | "BlogPosting";
+  /** 置顶到 /blog 列表第一位 */
+  pinned?: boolean;
+  /** 封面图(public 下的路径)，显示在文章页首与列表卡片上 */
+  cover?: string;
+  coverAlt?: string;
+  coverCaption?: string;
 };
 
 export type Post = {

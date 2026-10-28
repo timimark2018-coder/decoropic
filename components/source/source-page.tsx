@@ -58,6 +58,8 @@ export type SourcePageProps = {
   /** Related in-depth guides (bidirectional link with the /guides content area). */
   guidesTitle?: string;
   guides?: { label: string; href: string }[];
+  /** 案例模块(例如 <RecentHotelProject />)，放在交付能力说明之后 */
+  recentProject?: React.ReactNode;
 };
 
 function ListGrid({ title, items }: { title: string; items: SourceListItem[] }) {
@@ -126,7 +128,8 @@ export function SourcePage(props: SourcePageProps) {
     relatedTitle,
     related,
     guidesTitle,
-    guides
+    guides,
+    recentProject
   } = props;
 
   return (
@@ -317,6 +320,8 @@ export function SourcePage(props: SourcePageProps) {
           </div>
         </section>
       )}
+
+      {recentProject}
 
       {/* Categories */}
       {categories && categories.length > 0 && (
