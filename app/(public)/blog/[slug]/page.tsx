@@ -44,8 +44,8 @@ export default async function BlogPostPage({
 
   const articleSchema = {
     "@context": "https://schema.org",
-    "@type": "Article",
-    headline: frontmatter.title,
+    "@type": frontmatter.schemaType ?? "Article",
+    headline: frontmatter.h1 ?? frontmatter.title,
     description: frontmatter.description,
     datePublished: frontmatter.publishDate,
     dateModified: frontmatter.publishDate,
@@ -60,7 +60,7 @@ export default async function BlogPostPage({
       url: baseUrl
     },
     url: `${baseUrl}/blog/${frontmatter.slug}`,
-    image: `${baseUrl}${frontmatter.ogImage ?? "/og/default.jpg"}`,
+    image: `${baseUrl}${frontmatter.cover ?? frontmatter.ogImage ?? "/og/default.jpg"}`,
     mainEntityOfPage: {
       "@type": "WebPage",
       "@id": `${baseUrl}/blog/${frontmatter.slug}`

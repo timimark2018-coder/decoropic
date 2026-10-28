@@ -17,7 +17,8 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 export default function BlogPage() {
-  const posts = getAllPosts();
+  // pinned 的文章排在最前，其余仍按发布日期倒序
+  const posts = getAllPosts().sort((a, b) => Number(Boolean(b.pinned)) - Number(Boolean(a.pinned)));
 
   return (
     <>

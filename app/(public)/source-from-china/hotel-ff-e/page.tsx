@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { buildMetadata } from "@/lib/seo/metadata";
 import { getLocale } from "@/lib/i18n/server";
 import { SourcePage, type SourceFaq } from "@/components/source/source-page";
+import { RecentHotelProject } from "@/components/projects/RecentHotelProject";
 
 export async function generateMetadata(): Promise<Metadata> {
   const locale = await getLocale();
@@ -61,8 +62,10 @@ const related = [
 ];
 
 export default async function HotelFFEPage() {
+  const locale = await getLocale();
   return (
     <SourcePage
+      recentProject={<RecentHotelProject locale={locale} />}
       eyebrow="Sourcing · Hospitality FF&E"
       h1="Hotel FF&E from China — Worldwide Export"
       heroLink={{

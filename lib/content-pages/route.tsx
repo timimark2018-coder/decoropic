@@ -5,6 +5,7 @@ import { getLocale } from "@/lib/i18n/server";
 import { siteConfig } from "@/lib/utils/constants";
 import { breadcrumbListSchema, faqPageSchema } from "@/lib/seo/schema";
 import { ContentPage } from "@/components/content/content-page";
+import { RecentHotelProject } from "@/components/projects/RecentHotelProject";
 import { getAllGuides, type GuideFrontmatter } from "@/lib/guides/getGuides";
 import { getContentPage, type ContentGroup } from "./getContentPage";
 
@@ -129,6 +130,7 @@ export async function ContentRoute({ group, slug }: { group: ContentGroup; slug:
         heroImage={HERO_IMAGES[`${group}/${slug}`]}
         relatedGuides={guidesModule?.guides}
         relatedGuidesCopy={guidesModule?.copy}
+        recentProject={group === "solutions" && slug === "hotels" ? <RecentHotelProject locale={locale} /> : undefined}
       />
     </>
   );

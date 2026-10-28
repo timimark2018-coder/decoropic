@@ -28,6 +28,17 @@ export type ProjectFrontmatter = {
   related: string[];
   /** 最后一次正文改动的日期(YYYY-MM-DD)，由 scripts/update-lastmod.mjs 维护。 */
   lastmod?: string;
+  /** 缺省 = 住宅;hotel 案例不进 /projects 的住宅网格，放在酒店板块 */
+  sector?: "residential" | "hotel";
+  /** 有值 = 未交付的设计方案(例如 "Design proposal · renovation 2026")，页首不写 Delivered */
+  status?: string;
+  /** 卡片标签，缺省用 projectMeta() */
+  cardLabel?: string;
+  /** 页首提示框(设计方案的声明)，原样显示在 H1 下方 */
+  notice?: string;
+  location?: string;
+  /** 正文里已经插了图:页首只放第一张，不再重复整组图库 */
+  imagesInBody?: boolean;
 };
 
 export type Project = {
