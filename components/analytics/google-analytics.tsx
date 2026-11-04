@@ -3,6 +3,7 @@
 import Script from "next/script";
 import { useEffect } from "react";
 import { usePathname, useSearchParams } from "next/navigation";
+import { CONSENT_KEY } from "@/components/analytics/cookie-consent-banner";
 import { trackEvent, trackPageView } from "@/lib/analytics/gtag";
 
 // Support both the original env var name and the shorter alias
@@ -62,6 +63,18 @@ export function GoogleAnalytics() {
             ad_personalization:'denied',
             wait_for_update:2000
           });
+          /* 回访者已同意过就在这里恢复:横幅的 effect 比本脚本先跑，那时 gtag 还不存在，
+             它的 grantConsent() 会落空，结果每次加载都停在 denied */
+          try {
+            if (localStorage.getItem('${CONSENT_KEY}') === 'granted') {
+              gtag('consent','update',{
+                analytics_storage:'granted',
+                ad_storage:'granted',
+                ad_user_data:'granted',
+                ad_personalization:'granted'
+              });
+            }
+          } catch (e) {}
           gtag('js', new Date());
           ${gaId ? `gtag('config','${gaId}',{send_page_view:false});` : ""}
           ${adsId ? `gtag('config','${adsId}');` : ""}

@@ -14,7 +14,7 @@ import { captureUtm } from "@/lib/utm-tracking";
 // On "granted": activates GA4 Consent Mode v2 + Meta Pixel consent.
 // On "denied" / not yet decided: scripts load silently with storage blocked.
 
-const CONSENT_KEY = "decoropic_analytics_consent";
+export const CONSENT_KEY = "decoropic_analytics_consent";
 
 const copy = {
   en: {
