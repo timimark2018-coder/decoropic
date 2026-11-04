@@ -3,7 +3,6 @@
 import { useState } from "react";
 import { Calculator, ChevronDown, ChevronUp, MessageCircle } from "lucide-react";
 import type { Locale } from "@/content/types";
-import { trackEvent } from "@/lib/analytics/gtag";
 import { pixelTrack } from "@/lib/analytics/meta-pixel";
 import { LpLeadForm } from "./lp-lead-form";
 import { WHATSAPP_LINK } from "@/lib/constants/contact";
@@ -27,7 +26,6 @@ export function LpStickyCta({
   const waHref = WHATSAPP_LINK(whatsappMessage);
 
   function trackWhatsApp() {
-    trackEvent("whatsapp_click", { source_page: sourcePage });
     pixelTrack("Contact", { source_page: sourcePage });
   }
 
@@ -39,6 +37,7 @@ export function LpStickyCta({
           href={waHref}
           target="_blank"
           rel="noopener noreferrer"
+          data-source-page={sourcePage}
           onClick={trackWhatsApp}
           aria-label="Chat on WhatsApp"
           className="grid h-14 w-14 place-items-center rounded-full bg-brand-pine-dark text-brand-sand shadow-card"
@@ -76,7 +75,8 @@ export function LpStickyCta({
                 href={waHref}
                 target="_blank"
                 rel="noopener noreferrer"
-                onClick={trackWhatsApp}
+                data-source-page={sourcePage}
+          onClick={trackWhatsApp}
                 className="inline-flex items-center gap-1.5 text-sm font-semibold text-brand-pine underline-offset-2 hover:underline"
               >
                 <MessageCircle size={16} strokeWidth={1.8} />

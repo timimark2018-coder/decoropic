@@ -385,6 +385,7 @@ export function HomeEstimatorHook({ locale, initialProjectType }: Props) {
       setResult(data.data);
       setStep("reveal");
       trackEvent("estimator_hook_reveal", { source_site: "decoropic" });
+      trackEvent("estimator_complete", { estimator: "home_hook", source_page: window.location.pathname });
     } catch {
       setResult({
         currency: "USD",
@@ -445,6 +446,7 @@ export function HomeEstimatorHook({ locale, initialProjectType }: Props) {
         setStep("contact");
         return;
       }
+      trackEvent("form_submit", { form_name: "estimator_lead", source_page: window.location.pathname });
       trackEvent("estimator_hook_lead_submitted", {
         source_site: "decoropic",
         style: styleStr,

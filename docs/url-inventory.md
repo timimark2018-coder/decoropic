@@ -15,10 +15,10 @@
 | https://www.decoropic.com/guides/china-to-africa-project-materials | Project Materials from China to Africa: Ports, Duty & QC | sourcing building materials from China to Africa | 2026-08-07 |
 | https://www.decoropic.com/guides/china-to-australia-project-materials-chafta | Importing Project Materials from China to Australia (ChAFTA) | importing project materials from China to Australia ChAFTA | 2026-08-07 |
 | https://www.decoropic.com/guides/china-to-middle-east-materials-sourcing | Sourcing Project Materials from China to the Middle East | sourcing building materials from China to the Middle East | 2026-08-07 |
-| https://www.decoropic.com/guides/china-to-southeast-asia-project-materials | China to Southeast Asia: Procurement Checklist | source hotel furniture from China Southeast Asia | 2026-10-24 |
-| https://www.decoropic.com/guides/hotel-ffe-rfq-template-southeast-asia | Hotel FF&E RFQ Template for Southeast Asia Projects | hotel FF&E RFQ template Southeast Asia | 2026-10-24 |
-| https://www.decoropic.com/guides/how-to-source-hotel-ffe-from-china | How to Source Hotel FF&E from China: A Buyer's Guide | how to source hotel FF&E from China | 2026-08-07 |
-| https://www.decoropic.com/guides/villa-apartment-fit-out-materials-from-china | Villa & Apartment Fit-Out Materials from China: Full Package | villa and apartment fit-out material package from China | 2026-08-07 |
+| https://www.decoropic.com/guides/china-to-southeast-asia-project-materials | China to Southeast Asia: Procurement Checklist | source hotel furniture from China Southeast Asia | 2026-11-04 |
+| https://www.decoropic.com/guides/hotel-ffe-rfq-template-southeast-asia | Hotel FF&E RFQ Template for Southeast Asia Projects | hotel FF&E RFQ template Southeast Asia | 2026-11-04 |
+| https://www.decoropic.com/guides/how-to-source-hotel-ffe-from-china | How to Source Hotel FF&E from China: A Buyer's Guide | how to source hotel FF&E from China | 2026-11-04 |
+| https://www.decoropic.com/guides/villa-apartment-fit-out-materials-from-china | Villa & Apartment Fit-Out Materials from China: Full Package | villa and apartment fit-out material package from China | 2026-11-04 |
 
 ## Ghana guides(20)
 

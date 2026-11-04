@@ -10,6 +10,8 @@ import { NextResponse, type NextRequest } from "next/server";
 //   /<path>           x-locale: en
 //   /<path>?lang=zh   301 到 /zh/<path>(兼容旧链接)
 // getLocale() 只读 x-locale，所以 URL 是语言的唯一来源。
+//
+// 路径规范化也放在这里:GSC 报 404 的旧链接按表 301，其余带大写的路径 301 到全小写。
 
 const supportedLocales = new Set(["en", "zh"]);
 const LOCALE_HEADER = "x-locale";
@@ -31,6 +33,28 @@ function isCacheableDocument(request: NextRequest, pathname: string) {
   return safeMethod && !HAS_EXTENSION.test(pathname);
 }
 
+// 旧链接表，键一律小写(大小写变体都命中)
+const LEGACY_REDIRECTS: Record<string, string> = {
+  "/product_center": "/products",
+  "/solutions/product_center": "/products"
+};
+
+// 只动路径里的字母，%E4 这样的转义不算大写
+function lowercasePath(pathname: string) {
+  return pathname.replace(/%[0-9a-f]{2}|[A-Z]/gi, (m) => (m[0] === "%" ? m : m.toLowerCase()));
+}
+
+// public 下的文件和 /_next 内部路径大小写敏感，不能动
+function canonicalPath(pathname: string) {
+  if (HAS_EXTENSION.test(pathname) || pathname.startsWith("/_")) return null;
+
+  const lower = lowercasePath(pathname);
+  const isZh = lower === "/zh" || lower.startsWith("/zh/");
+  const legacy = LEGACY_REDIRECTS[isZh ? lower.slice(3) : lower];
+  if (legacy) return isZh ? `/zh${legacy}` : legacy;
+  return lower === pathname ? null : lower;
+}
+
 function withLocaleHeader(request: NextRequest, locale: "en" | "zh") {
   const headers = new Headers(request.headers);
   headers.set(LOCALE_HEADER, locale);
@@ -39,6 +63,13 @@ function withLocaleHeader(request: NextRequest, locale: "en" | "zh") {
 
 export function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
+
+  const canonical = canonicalPath(pathname);
+  if (canonical) {
+    const target = request.nextUrl.clone();
+    target.pathname = canonical;
+    return NextResponse.redirect(target, 301);
+  }
 
   // 旧的 ?lang= / ?locale= 链接:301 到对应的 /zh 路径，不再发 cookie
   const legacyLocale =

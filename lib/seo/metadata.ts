@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import type { Locale, LocalizedText } from "@/content/types";
 import { siteConfig } from "@/lib/utils/constants";
+import { isZhTranslated } from "@/lib/seo/zh-translated";
 
 type MetadataInput = {
   title?: string | LocalizedText;
@@ -25,11 +26,13 @@ export function buildMetadata({
 }: MetadataInput): Metadata {
   const baseUrl = siteConfig.siteUrl;
   // path 一律是英文版路径；中文版是它前面加 /zh。
-  // 两个地址互指 hreflang，x-default 指英文版。
+  // 中文版已翻译(zhTranslated)时两个地址互指 hreflang，x-default 指英文版;
+  // 未翻译时英文版不提 /zh，/zh 版自身 noindex。
   const normalizedPath = path === "/" ? "" : path.replace(/\/$/, "");
   const enUrl = `${baseUrl}${normalizedPath}`;
   const zhUrl = `${baseUrl}/zh${normalizedPath}`;
   const url = locale === "zh" ? zhUrl : enUrl;
+  const zhOpen = isZhTranslated(path);
   const ogImageUrl = `${baseUrl}/og/default.jpg`;
   const googleVerification = process.env.GOOGLE_SITE_VERIFICATION;
   // Meta Business Suite → Brand Safety → Domains → "Meta-tag verification"
@@ -77,11 +80,7 @@ export function buildMetadata({
         : undefined,
     alternates: {
       canonical: url,
-      languages: {
-        en: enUrl,
-        zh: zhUrl,
-        "x-default": enUrl
-      }
+      ...(zhOpen ? { languages: { en: enUrl, zh: zhUrl, "x-default": enUrl } } : {})
     },
     openGraph: {
       ...(resolvedTitle ? { title: resolvedTitle } : {}),
@@ -89,7 +88,7 @@ export function buildMetadata({
       url,
       siteName: siteConfig.name,
       locale: openGraphLocale,
-      alternateLocale: [alternateLocale],
+      ...(zhOpen ? { alternateLocale: [alternateLocale] } : {}),
       type: "website",
       images: [
         {
@@ -107,16 +106,19 @@ export function buildMetadata({
       description: resolvedDescription,
       images: [ogImageUrl]
     },
-    robots: {
-      index: true,
-      follow: true,
-      googleBot: {
-        index: true,
-        follow: true,
-        "max-image-preview": "large",
-        "max-snippet": -1,
-        "max-video-preview": -1
-      }
-    }
+    robots:
+      locale === "zh" && !zhOpen
+        ? "noindex,follow"
+        : {
+            index: true,
+            follow: true,
+            googleBot: {
+              index: true,
+              follow: true,
+              "max-image-preview": "large",
+              "max-snippet": -1,
+              "max-video-preview": -1
+            }
+          }
   };
 }

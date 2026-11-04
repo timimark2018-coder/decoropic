@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import type { Locale } from "@/content/types";
-import { trackEvent } from "@/lib/analytics/gtag";
 import { pixelTrack } from "@/lib/analytics/meta-pixel";
 import { buildWhatsAppHref } from "@/lib/utils/site-links";
 
@@ -28,11 +27,6 @@ export function WhatsAppButton({
       target={external ? "_blank" : undefined}
       rel={external ? "noreferrer" : undefined}
       onClick={() => {
-        trackEvent("whatsapp_click", {
-          event_category: "engagement",
-          destination: "whatsapp",
-          label
-        });
         pixelTrack("Contact", { destination: "whatsapp" });
       }}
       className={`inline-flex items-center justify-center rounded-full bg-brand-pine px-5 py-3 text-sm font-semibold text-white ${className}`}

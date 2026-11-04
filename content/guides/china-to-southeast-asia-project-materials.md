@@ -4,7 +4,7 @@ description: "Ports, transit times, duty treatment and QC for shipping hotel and
 slug: "china-to-southeast-asia-project-materials"
 targetKeyword: "source hotel furniture from China Southeast Asia"
 order: 2
-lastmod: "2026-10-24"
+lastmod: "2026-11-04"
 ---
 
 # China to Southeast Asia: Hotel & Interior Procurement Checklist
@@ -90,6 +90,8 @@ Local importer / customs broker:
 Local installation contractor:
 Sample approval contact:
 ```
+
+For destination ports and typical transit times, see our [Southeast Asia market guide](/markets/southeast-asia), or compare regions on the [markets we ship to](/markets) page.
 
 Explore [Decoropic sourcing for Southeast Asia](/source-from-china/southeast-asia), the [hotel FF&E service](/source-from-china/hotel-ff-e) and our [villa and apartment package guide](/guides/villa-apartment-fit-out-materials-from-china). To inspect a delivered example, view the [Kumasi hotel project in Ghana](/projects/hotels/kumasi-boutique-hotel).
 
