@@ -4,7 +4,7 @@ description: "All seven categories in a fit-out package, the omissions that stal
 slug: "villa-apartment-fit-out-materials-from-china"
 targetKeyword: "villa and apartment fit-out material package from China"
 order: 4
-lastmod: "2026-08-07"
+lastmod: "2026-11-04"
 ---
 
 # Villa & Apartment Fit-out: The Complete Material Package from China
@@ -105,6 +105,8 @@ The fix for all five is the same: one specification, one schedule, one shipment,
 👉 [Request a project material proposal](/contact) · WhatsApp **+86 133 9224 7649**
 
 *Scope note: remote design/selection and complete material supply exported from China. Local import, customs clearance and installation are the buyer's own; full turnkey is available in Ghana only. Duty figures are reported estimates — verify before ordering.*
+
+Planning delivery? Our [markets we ship to](/markets) page covers ports and transit by region, including the [Caribbean and Latin America](/markets/caribbean-latin-america).
 
 Proof of delivery: [see our completed projects](/projects) — 26 years in cross-border trade, 200+ delivered fit-outs.
 

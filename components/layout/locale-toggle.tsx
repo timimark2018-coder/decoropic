@@ -31,7 +31,6 @@ export function LocaleToggle({ locale }: LocaleToggleProps) {
           <Link
             key={item}
             href={hrefFor(item)}
-            hrefLang={item}
             aria-current={active ? "true" : undefined}
             className={`rounded-full px-3 py-1.5 text-xs font-semibold transition ${
               active ? "bg-brand-pine text-white" : "text-slate-600 hover:bg-brand-mist/70"

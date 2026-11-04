@@ -2,7 +2,7 @@
 
 import { type FormEvent, useEffect, useState } from "react";
 import type { Locale } from "@/content/types";
-import { trackLead } from "@/lib/analytics/gtag";
+import { trackEvent, trackLead } from "@/lib/analytics/gtag";
 import { pixelTrack } from "@/lib/analytics/meta-pixel";
 import { readSubmissionError } from "@/lib/forms/submission-feedback";
 import { captureUtm, getStoredReferrer, getStoredUtm } from "@/lib/utm-tracking";
@@ -93,6 +93,7 @@ export function LpLeadForm({ sourcePage, locale = "en", variant = "full" }: LpLe
           location: String(formData.get("location") || ""),
           project_type: String(formData.get("projectType") || "")
         });
+        trackEvent("form_submit", { form_name: "contact", source_page: sourcePage });
         pixelTrack("Lead", { source_page: sourcePage });
         const nameValue = String(formData.get("name") || "") || undefined;
         form.reset();

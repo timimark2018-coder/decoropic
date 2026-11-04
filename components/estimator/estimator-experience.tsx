@@ -325,6 +325,7 @@ export function EstimatorExperience({ locale }: EstimatorExperienceProps) {
         source_site: "decoropic",
         device_type: deviceType()
       });
+      trackEvent("estimator_complete", { estimator: "full", source_page: window.location.pathname });
     } catch {
       setStatus(copy.previewFallback);
     } finally {
@@ -363,6 +364,7 @@ export function EstimatorExperience({ locale }: EstimatorExperienceProps) {
       const payload = await response.json();
       setDetailedResult(payload.data.result);
       setStatus(copy.leadSuccess);
+      trackEvent("form_submit", { form_name: "estimator_lead", source_page: window.location.pathname });
       trackEvent("estimator_step_2_complete", {
         page: "/",
         source_site: "decoropic",

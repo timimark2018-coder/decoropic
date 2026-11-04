@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { MessageCircle } from "lucide-react";
-import { trackEvent } from "@/lib/analytics/gtag";
 import { pixelTrack } from "@/lib/analytics/meta-pixel";
 import { WHATSAPP_LINK } from "@/lib/constants/contact";
 
@@ -45,10 +44,8 @@ export function LpCtaGroup({
         href={waHref}
         target="_blank"
         rel="noopener noreferrer"
-        onClick={() => {
-          trackEvent("whatsapp_click", { source_page: sourcePage });
-          pixelTrack("Contact", { source_page: sourcePage });
-        }}
+        data-source-page={sourcePage}
+        onClick={() => pixelTrack("Contact", { source_page: sourcePage })}
         className={`${baseBtn} gap-2 bg-brand-pine-dark text-brand-sand ${onDark ? "ring-1 ring-brand-sand/40" : ""}`}
       >
         <MessageCircle size={18} strokeWidth={1.8} />

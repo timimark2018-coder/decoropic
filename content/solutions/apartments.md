@@ -5,7 +5,7 @@ description: "Apartment fit-out materials from China for developers: repeatable 
 h1: "Apartment Fit-Out Materials from China"
 primary_keyword: "apartment fit-out materials from China"
 project_cards: cantonments-penthouse, airport-residential-apartment
-lastmod: "2026-10-24"
+lastmod: "2026-11-04"
 ---
 
 Apartment fit-out materials from China work best when every unit is specified once and supplied as a repeatable pack. Decoropic, the brand of Foshan Home Style Import & Export Co., Ltd., founded in 2011 in Foshan, helps developers and contractors define a standard unit specification, source it across categories, check it in our Foshan warehouse and ship it in planned batches. Our Accra team measures sites in Ghana; for projects elsewhere we work from drawings and video walk-throughs.
@@ -65,7 +65,7 @@ Yes. We work on overseas projects worldwide. Outside Ghana, goods go through you
 
 Run your unit numbers through our 11-step [budget estimator](/estimator?type=apartment), or send floor plans on WhatsApp to +233 59 247 0446. We will come back with a unit specification and a tiered budget.
 
-**Internal links:** /estimator?type=apartment, /products, /projects
+**Internal links:** [Apartment estimator](/estimator?type=apartment) · [Products](/products) · [Projects](/projects) · [Markets we ship to](/markets) · [Southeast Asia market guide](/markets/southeast-asia)
 
 **Image suggestions:**
 - apartment-unit-living-area-tiles.webp — Apartment living area fitted with porcelain tiles and aluminium sliding door from China

@@ -4,7 +4,7 @@ title: "Turnkey Hotel Packages with Design | Hotel FF&E China"
 description: "Turnkey hotel packages with design + sourcing + shipping + installation: guestroom FF&E, lighting, bathrooms and finishes from China, with an Accra office."
 h1: "Hotel FF&E Supplier in China"
 primary_keyword: "hotel FF&E supplier China"
-lastmod: "2026-10-27"
+lastmod: "2026-11-04"
 ---
 
 Working with a hotel FF&E supplier in China makes sense when you want guestrooms, public areas and back-of-house supplied from one source. Decoropic is the brand of Foshan Home Style Import & Export Co., Ltd., founded in 2011 in Foshan. We source furniture, fixtures and equipment together with the hard finishes they sit on: tiles, doors, bathrooms and lighting. Everything is checked in our Foshan warehouse and shipped together, with our Accra team on site for projects in Ghana. For the complete scope, see our [turnkey hotel packages with design](/source-from-china/hotel-ff-e).
@@ -64,7 +64,7 @@ Yes. We serve hotel projects worldwide. Outside Ghana, the consolidated shipment
 
 [Send your project brief](/contact?type=commercial), or send your room schedule and drawings on WhatsApp to +233 59 247 0446. We will reply with an FF&E schedule and tiered pricing.
 
-**Internal links:** /contact, /products, /local-services
+**Internal links:** [Contact](/contact) · [Products](/products) · [Local services](/local-services) · [Markets we ship to](/markets) · [Southeast Asia market guide](/markets/southeast-asia) · [Caribbean and Latin America market guide](/markets/caribbean-latin-america)
 
 **Image suggestions:**
 - hotel-guestroom-casegoods-china.webp — Hotel guestroom with bed, headboard, desk and wardrobe supplied by a China FF&E supplier

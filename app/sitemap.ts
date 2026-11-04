@@ -4,9 +4,10 @@ import { getAllPosts } from "@/lib/blog/getPosts";
 import { getAllGuides } from "@/lib/guides/getGuides";
 import { getContentPage } from "@/lib/content-pages/getContentPage";
 import { getAllProjects } from "@/lib/projects/getProjects";
+import { isZhTranslated } from "@/lib/seo/zh-translated";
 
-// 每个页面登记两条:英文版和 /zh 版，两条都带 hreflang 互指(en / zh / x-default)。
-// 中文版过去没有自己的 URL，所以完全不被收录 —— 这里是让它进索引的入口。
+// 每个页面登记英文版。中文版只有 zhTranslated 的页面才登记，两条互指 hreflang
+// (en / zh / x-default)，开关见 lib/seo/zh-translated.ts。
 // lastmod 只在能查证时才写。
 //
 // 来源是内容文件 front-matter 的 lastmod 字段(值 = 该文件正文最后一次改动的日期，
@@ -25,6 +26,10 @@ function localizedPair(
   const zhUrl = `${baseUrl}/zh${routePath}`;
   const languages = { en: enUrl, zh: zhUrl, "x-default": enUrl };
   const stamp = lastModified ? { lastModified } : {};
+
+  if (!isZhTranslated(routePath || "/")) {
+    return [{ url: enUrl, ...stamp, changeFrequency, priority }];
+  }
 
   return [
     { url: enUrl, ...stamp, changeFrequency, priority, alternates: { languages } },

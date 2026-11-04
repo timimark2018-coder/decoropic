@@ -60,6 +60,12 @@ export function HomeGlobalSourcing({ locale }: Props) {
           <Link href={localizePath("/markets", locale)} className="mt-3 block text-brand-ivory underline underline-offset-4">
             {locale === "zh" ? "查看我们服务的市场:港口、航程与清关要点 →" : "See the markets we ship to — ports, transit and clearing →"}
           </Link>
+          <Link href={localizePath("/markets/southeast-asia", locale)} className="mt-3 block text-brand-ivory underline underline-offset-4">
+            {locale === "zh" ? "运往东南亚:港口与航程 →" : "Shipping to Southeast Asia: ports and transit →"}
+          </Link>
+          <Link href={localizePath("/markets/caribbean-latin-america", locale)} className="mt-3 block text-brand-ivory underline underline-offset-4">
+            {locale === "zh" ? "运往加勒比与拉丁美洲:港口与航程 →" : "Shipping to the Caribbean and Latin America: ports and transit →"}
+          </Link>
         </Reveal>
       </div>
     </section>

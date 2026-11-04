@@ -4,7 +4,7 @@ description: "Guestroom packages, container sizing (33–38 m³ per 40ft), $1,80
 slug: "how-to-source-hotel-ffe-from-china"
 targetKeyword: "how to source hotel FF&E from China"
 order: 1
-lastmod: "2026-08-07"
+lastmod: "2026-11-04"
 ---
 
 # How to Source Hotel FF&E from China — A Project Buyer's Guide
@@ -89,6 +89,8 @@ Consolidating several factories into one shipment typically saves **$1,500–3,0
 👉 [Request a project material proposal](/contact) · WhatsApp **+86 133 9224 7649**
 
 *Scope note: Decoropic provides remote design/selection and complete material supply exported from China. Local import, customs clearance and installation are the buyer's own; full turnkey delivery is available in Ghana only.*
+
+Building a hotel or resort in the region? See ports and transit in our [Caribbean and Latin America market guide](/markets/caribbean-latin-america).
 
 Proof of delivery: [see our completed projects](/projects) — 26 years in cross-border trade, 200+ delivered fit-outs.
 

@@ -3,7 +3,7 @@
 import Script from "next/script";
 import { useEffect } from "react";
 import { usePathname, useSearchParams } from "next/navigation";
-import { trackPageView } from "@/lib/analytics/gtag";
+import { trackEvent, trackPageView } from "@/lib/analytics/gtag";
 
 // Support both the original env var name and the shorter alias
 const gaId =
@@ -23,6 +23,23 @@ export function GoogleAnalytics() {
     const url = `${window.location.origin}${pathname}${query ? `?${query}` : ""}`;
     trackPageView(url);
   }, [pathname, searchParams]);
+
+  // whatsapp_click 走事件委托:全站 WhatsApp 链接(wa.me 与 api.whatsapp.com，
+  // 含 content 里写死的那些)一处覆盖，新加的链接不用再记得埋点。
+  useEffect(() => {
+    function onClick(event: MouseEvent) {
+      const link = (event.target as Element | null)?.closest?.<HTMLAnchorElement>(
+        'a[href*="wa.me/"], a[href*="api.whatsapp.com/"]'
+      );
+      if (!link) return;
+      trackEvent("whatsapp_click", {
+        event_category: "engagement",
+        source_page: link.dataset.sourcePage ?? window.location.pathname
+      });
+    }
+    document.addEventListener("click", onClick, true);
+    return () => document.removeEventListener("click", onClick, true);
+  }, []);
 
   if (!primaryId) return null;
 

@@ -4,7 +4,7 @@ description: "What a hotel FF&E request for quotation must specify to get compar
 slug: "hotel-ffe-rfq-template-southeast-asia"
 targetKeyword: "hotel FF&E RFQ template Southeast Asia"
 order: 3
-lastmod: "2026-10-24"
+lastmod: "2026-11-04"
 ---
 
 # Hotel FF&E RFQ Template for Southeast Asia Projects
@@ -117,6 +117,8 @@ Review applicable requirements with your destination professionals before orderi
 Decoropic coordinates remote design, material selection, China-side sourcing, quality control, consolidation and export. Your local importer and contractor handle destination clearance, duties, inland delivery and installation. Our published delivered hotel cases are in Ghana, not evidence of a Southeast Asian installation team.
 
 Share your country and city, room schedule, drawings or BOQ, budget range and target date through the [Southeast Asia project inquiry form](/source-from-china/southeast-asia#project-brief). The scope and feasibility are reviewed before any quotation or programme is agreed.
+
+Before you fix delivery dates in the brief, check ports and sea transit in our [Southeast Asia market guide](/markets/southeast-asia).
 
 For the next steps, read the [China-to-Southeast-Asia procurement checklist](/guides/china-to-southeast-asia-project-materials), inspect the [hotel FF&E service scope](/source-from-china/hotel-ff-e), or review our [export QC and consolidation checklist](/guides/china-export-qc-consolidation-checklist).
 
