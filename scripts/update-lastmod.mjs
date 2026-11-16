@@ -17,7 +17,7 @@ import fs from "node:fs";
 import path from "node:path";
 
 const ROOT = execFileSync("git", ["rev-parse", "--show-toplevel"], { encoding: "utf8" }).trim();
-const DIRS = ["content/guides", "content/solutions", "content/markets", "content/projects"];
+const DIRS = ["content/guides", "content/solutions", "content/markets", "content/projects", "content/products"];
 const mode = process.argv[2];
 
 function git(args, { quiet = false } = {}) {

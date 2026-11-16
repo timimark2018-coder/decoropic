@@ -47,9 +47,9 @@ function toDate(value: unknown): Date | undefined {
 
 /** 有 markdown 源文件的路由 → 取该文件 front-matter 的 lastmod。 */
 function routeLastModified(routePath: string): Date | undefined {
-  const m = routePath.match(/^\/(solutions|markets)\/([a-z0-9-]+)$/);
+  const m = routePath.match(/^\/(solutions|markets|products)\/([a-z0-9-]+(?:\/[a-z0-9-]+)?)$/);
   if (!m) return undefined;
-  return toDate(getContentPage(m[1] as "solutions" | "markets", m[2])?.lastmod);
+  return toDate(getContentPage(m[1] as "solutions" | "markets" | "products", m[2])?.lastmod);
 }
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
@@ -70,6 +70,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { path: "/markets/middle-east", changeFrequency: "monthly", priority: 0.8 },
     { path: "/markets/southeast-asia", changeFrequency: "monthly", priority: 0.8 },
     { path: "/markets/caribbean-latin-america", changeFrequency: "monthly", priority: 0.8 },
+    { path: "/markets/ghana/diaspora", changeFrequency: "monthly", priority: 0.8 },
     { path: "/solutions/apartments", changeFrequency: "monthly", priority: 0.85 },
     { path: "/solutions/offices", changeFrequency: "monthly", priority: 0.8 },
     { path: "/solutions/restaurants", changeFrequency: "monthly", priority: 0.8 },
@@ -80,6 +81,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { path: "/products/bathroom-kitchen", changeFrequency: "monthly", priority: 0.85 },
     { path: "/products/lights-lighting", changeFrequency: "monthly", priority: 0.85 },
     { path: "/products/doors-windows", changeFrequency: "monthly", priority: 0.85 },
+    { path: "/products/kitchen-cabinets-ghana", changeFrequency: "monthly", priority: 0.85 },
+    { path: "/products/tiles-sanitary-ware-ghana", changeFrequency: "monthly", priority: 0.85 },
+    { path: "/products/furniture-packages-ghana", changeFrequency: "monthly", priority: 0.85 },
     { path: "/source-from-china", changeFrequency: "monthly", priority: 0.85 },
     { path: "/source-from-china/southeast-asia", changeFrequency: "monthly", priority: 0.85 },
     { path: "/source-from-china/hotel-ff-e", changeFrequency: "monthly", priority: 0.85 },

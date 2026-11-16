@@ -21,6 +21,8 @@ const GHANA_GUIDE_SLUGS = [
   "diaspora-building-in-ghana-pay-by-milestones",
   "kumasi-house-finishing-materials",
   "takoradi-western-region-house-finishing",
+  "ship-furniture-china-to-ghana",
+  "china-to-tema-shipping-cost",
   "container-consolidation-house-finishing-ghana",
   "ghana-electrical-standards-lighting-import",
   "managing-a-renovation-remotely-ghana"
@@ -61,7 +63,8 @@ function marketGuides(slug: string) {
 
 const GROUP_LABEL: Record<ContentGroup, { en: string; zh: string; indexPath: string }> = {
   solutions: { en: "Solutions", zh: "解决方案", indexPath: "/solutions" },
-  markets: { en: "Markets", zh: "市场", indexPath: "/markets" }
+  markets: { en: "Markets", zh: "市场", indexPath: "/markets" },
+  products: { en: "Products", zh: "产品", indexPath: "/products" }
 };
 
 // 本页实际配的图。
@@ -72,6 +75,15 @@ const HERO_IMAGES: Record<string, { src: string; alt: string }> = {
   "solutions/villas": {
     src: "/projects/01-east-legon-villa/living-room.webp",
     alt: "Villa living room finished with large-format porcelain floor tiles sourced from Foshan"
+  },
+  // 第 4 批:按内容包的配图建议挑现有实拍/效果图，alt 去掉画面里没有的东西
+  "products/tiles-sanitary-ware-ghana": {
+    src: "/projects/08-tamale-hotel-room-renovation/bathroom.webp",
+    alt: "Hotel bathroom with vanity, glass shower screen and matched floor tiles"
+  },
+  "products/furniture-packages-ghana": {
+    src: "/projects/01-east-legon-villa/living-room.webp",
+    alt: "Furnished villa living room in Accra with sofa set and rug"
   },
   "solutions/apartments": {
     src: "/projects/03-airport-residential-apt/living-room.webp",
@@ -101,9 +113,13 @@ export async function ContentRoute({ group, slug }: { group: ContentGroup; slug:
   const label = GROUP_LABEL[group];
   const guidesModule = group === "markets" ? marketGuides(slug) : undefined;
 
+  // 嵌套页(例如 /markets/ghana/diaspora)在面包屑里补上父页
+  const parentSlug = slug.includes("/") ? slug.split("/")[0] : null;
+  const parent = parentSlug ? getContentPage(group, parentSlug) : null;
   const breadcrumb = breadcrumbListSchema([
     { name: locale === "zh" ? "首页" : "Home", path: "/" },
     { name: locale === "zh" ? label.zh : label.en, path: label.indexPath },
+    ...(parent ? [{ name: parent.h1, path: parent.url }] : []),
     { name: page.h1, path: page.url }
   ]);
 
@@ -113,6 +129,18 @@ export async function ContentRoute({ group, slug }: { group: ContentGroup; slug:
     .flatMap((b) => (b.kind === "faq" ? b.items : []));
 
   const schemas: object[] = [breadcrumb];
+  if (page.schema === "Service") {
+    schemas.unshift({
+      "@context": "https://schema.org",
+      "@type": "Service",
+      name: page.h1,
+      description: page.description,
+      serviceType: page.primaryKeyword,
+      url: `${baseUrl}${page.url}`,
+      areaServed: { "@type": "Country", name: "Ghana" },
+      provider: { "@id": `${baseUrl}/#organization` }
+    });
+  }
   if (faqItems.length > 0) {
     schemas.push(faqPageSchema(faqItems.map((i) => ({ question: i.question, answer: i.answer }))));
   }

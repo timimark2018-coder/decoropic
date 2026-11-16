@@ -13,7 +13,14 @@
       "lead": "Choosing fittings first?",
       "label": "our guide to bathroom fittings in Ghana: import or local",
       "href": "/guides/sanitaryware-bathroom-import-ghana"
-    }
+    },
+    "moreLinks": [
+      {
+        "lead": "Fitting out a hotel or a development?",
+        "label": "Tiles and sanitary ware for projects in Ghana",
+        "href": "/products/tiles-sanitary-ware-ghana"
+      }
+    ]
   },
   "why": {
     "items": [

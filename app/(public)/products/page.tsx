@@ -6,8 +6,12 @@ import { homeContent } from "@/content/home";
 import { faqPageSchema, itemListSchema } from "@/lib/seo/schema";
 import { getLocale } from "@/lib/i18n/server";
 import { productsContent } from "@/content/products";
+import { getContentPage } from "@/lib/content-pages/getContentPage";
+import { localizePath } from "@/lib/utils/site-links";
 import { t } from "@/lib/i18n/content";
 import { HandDrawnLine, Reveal } from "@/components/ui";
+
+const GHANA_PACKAGE_SLUGS = ["kitchen-cabinets-ghana", "tiles-sanitary-ware-ghana", "furniture-packages-ghana"];
 
 export async function generateMetadata(): Promise<Metadata> {
   const locale = await getLocale();
@@ -849,6 +853,35 @@ export default async function ProductsPage() {
           >
             Visit Design Center →
           </a>
+        </div>
+      </section>
+
+      {/* 加纳整套方案页(第 4 批内容包):content/products/*.md */}
+      <section className="bg-[#f7f3ec] py-16 lg:py-20 border-t border-brand-gold/15">
+        <div className="container-wide max-w-[1100px]">
+          <p
+            className="text-brand-gold mb-4"
+            style={{ fontSize: "0.78rem", letterSpacing: "0.28em", textTransform: "uppercase", fontWeight: 700 }}
+          >
+            {t({ en: "Packages for Ghana projects", zh: "加纳项目整套方案" }, locale)}
+          </p>
+          <div className="mt-6 grid gap-8 sm:grid-cols-3">
+            {GHANA_PACKAGE_SLUGS.map((slug) => getContentPage("products", slug))
+              .filter((p) => p !== null)
+              .map((p) => (
+                <div key={p.slug}>
+                  <h3
+                    className="text-brand-pine-dark"
+                    style={{ fontFamily: "var(--serif)", fontSize: "1.2rem", fontWeight: 700, lineHeight: 1.25 }}
+                  >
+                    <Link href={localizePath(p.url, locale)} className="transition-colors hover:text-brand-gold">
+                      {p.h1}
+                    </Link>
+                  </h3>
+                  <p className="mt-3 text-sm leading-[1.75] text-brand-pine-dark/75">{p.description}</p>
+                </div>
+              ))}
+          </div>
         </div>
       </section>
 

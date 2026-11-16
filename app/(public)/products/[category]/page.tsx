@@ -34,6 +34,7 @@ type CategoryData = {
     lead: string;
     /** 首屏 lead 下的一条链接(例如指向同主题的指南);可选 */
     guideLink?: { lead: string; label: string; href: string };
+    moreLinks?: Array<{ lead: string; label: string; href: string }>;
   };
   why: { items: Array<{ title: string; body: string }> };
   skus: Array<{
@@ -154,6 +155,7 @@ export default async function CategoryPage({
           h1={data.hero.h1}
           lead={data.hero.lead}
           guideLink={data.hero.guideLink}
+          moreLinks={data.hero.moreLinks}
         />
         <WhySection items={data.why.items} />
         <FeaturedSKUs skus={data.skus} categoryLabel={data.label} baseUrl={baseUrl} title={data.skusTitle} />
