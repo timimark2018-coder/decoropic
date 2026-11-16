@@ -53,9 +53,10 @@ export function AboutHero({ locale }: Props) {
             </span>
           </div>
 
-          <div className="mt-2 space-y-1 editorial-rise" style={{ animationDelay: "220ms" }}>
-            <div
-              className="text-white"
+          {/* 页面唯一的 H1:三行主标题 */}
+          <h1 className="mt-2 space-y-1 editorial-rise" style={{ animationDelay: "220ms" }}>
+            <span
+              className="block text-white"
               style={{
                 fontFamily: "var(--serif)",
                 fontSize: "clamp(3.25rem, 8vw, 6.5rem)",
@@ -65,9 +66,9 @@ export function AboutHero({ locale }: Props) {
               }}
             >
               {t(hero.numeral.lineOne, locale)}
-            </div>
-            <div
-              className="text-white/90"
+            </span>
+            <span
+              className="block text-white/90"
               style={{
                 fontFamily: "var(--serif)",
                 fontSize: "clamp(1.75rem, 3.6vw, 3rem)",
@@ -78,9 +79,9 @@ export function AboutHero({ locale }: Props) {
               }}
             >
               {t(hero.numeral.lineTwo, locale)}
-            </div>
-            <div
-              className="text-white"
+            </span>
+            <span
+              className="block text-white"
               style={{
                 fontFamily: "var(--serif)",
                 fontSize: "clamp(1.75rem, 3.6vw, 3rem)",
@@ -90,8 +91,8 @@ export function AboutHero({ locale }: Props) {
               }}
             >
               {t(hero.numeral.lineThree, locale)}
-            </div>
-          </div>
+            </span>
+          </h1>
 
           <div
             className="mt-10 max-w-2xl border-l border-brand-gold/60 pl-6 text-white/70 editorial-rise"

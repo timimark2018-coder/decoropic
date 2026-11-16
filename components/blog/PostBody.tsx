@@ -24,6 +24,8 @@ export async function PostBody({ content, frontmatter }: PostBodyProps) {
     // remark-gfm:博文里的价格表是 GFM 表格，没有它会原样渲染成一串竖线
     options: { parseFrontmatter: false, mdxOptions: { remarkPlugins: [remarkGfm] } },
     components: {
+      // 一页只有一个 H1(页首，取 front-matter 的 h1);正文里的 "# " 降为 H2
+      h1: (props) => <h2 {...props} />,
       // 「Key takeaways」要点框:条目写在 front-matter，正文里用 <KeyTakeaways /> 决定位置
       KeyTakeaways: () =>
         takeaways.length ? (

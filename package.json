@@ -7,7 +7,8 @@
   },
   "scripts": {
     "dev": "next dev",
-    "build": "next build --webpack",
+    "build": "next build --webpack && node scripts/check-h1.mjs",
+    "check:h1": "node scripts/check-h1.mjs",
     "start": "next start",
     "start:standalone": "node .next/standalone/server.js",
     "package:deploy": "npm run build && /bin/zsh ./scripts/package-deploy.sh",

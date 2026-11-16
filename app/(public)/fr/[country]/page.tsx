@@ -6,6 +6,7 @@ import { breadcrumbListSchema, faqPageSchema } from "@/lib/seo/schema";
 import { frHreflangCluster } from "@/lib/seo/fr-pages";
 import { ContentPage } from "@/components/content/content-page";
 import { getContentPage, getContentSlugs } from "@/lib/content-pages/getContentPage";
+import { placeholderCard } from "@/lib/placeholder-card";
 
 // 法语试水页 /fr/<country>，正文在 content/fr/*.md(第 5 批内容包)。
 // 不走 buildMetadata:那里的 hreflang / noindex 逻辑是给 en、zh 用的。
@@ -60,7 +61,7 @@ export async function generateMetadata({ params }: { params: Promise<{ country: 
       siteName: siteConfig.name,
       locale: "fr_FR",
       type: "website",
-      images: [{ url: `${base}${HERO_IMAGES[country]?.src ?? "/og/default.jpg"}` }]
+      images: [{ url: `${base}${(HERO_IMAGES[country] ?? placeholderCard(page.url, page.primaryKeyword))?.src ?? "/og/default.jpg"}` }]
     },
     twitter: { card: "summary_large_image", title: page.title, description: page.description },
     robots: { index: true, follow: true }
@@ -106,7 +107,7 @@ export default async function FrCountryPage({ params }: { params: Promise<{ coun
         page={page}
         locale="en"
         eyebrow="Afrique de l'Ouest francophone"
-        heroImage={HERO_IMAGES[country]}
+        heroImage={HERO_IMAGES[country] ?? placeholderCard(page.url, page.primaryKeyword)}
         relatedLabel="Liens utiles"
       />
     </>
