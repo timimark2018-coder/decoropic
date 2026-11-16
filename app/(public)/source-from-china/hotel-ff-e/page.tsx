@@ -70,8 +70,8 @@ export default async function HotelFFEPage() {
       h1="Hotel FF&E from China — Worldwide Export"
       heroLink={{
         lead: "Scoping a property first?",
-        label: "Read our guide to the full list of hotel FF&E items",
-        href: "/guides/hotel-ffe-procurement-ghana"
+        label: "Read our room-by-room list of hotel FF&E items",
+        href: "/guides/hotel-ffe-checklist"
       }}
       subtitle="Design and full FF&E supply for hotel projects — guestrooms, lobbies and bathrooms specified as one scheme, then sourced, quality-controlled and exported from China as a single package."
       intro={[
@@ -126,7 +126,8 @@ export default async function HotelFFEPage() {
       related={related}
       guidesTitle="Related guides"
       guides={[
-        { label: "List of FF&E items for hotels", href: "/guides/hotel-ffe-procurement-ghana" },
+        { label: "List of FF&E items for hotels", href: "/guides/hotel-ffe-checklist" },
+        { label: "Hotel FF&E procurement in Ghana", href: "/guides/hotel-ffe-procurement-ghana" },
         { label: "How to source hotel FF&E from China", href: "/guides/how-to-source-hotel-ffe-from-china" },
         { label: "China → Middle East sourcing", href: "/guides/china-to-middle-east-materials-sourcing" },
         { label: "QC & consolidation checklist", href: "/guides/china-export-qc-consolidation-checklist" }

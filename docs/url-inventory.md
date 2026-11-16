@@ -35,7 +35,7 @@
 | https://www.decoropic.com/guides/ghana-electrical-standards-lighting-import | Lighting Import Ghana: 230V, Type G and GSA Conformity | lighting import Ghana standards | 2026-10-26 |
 | https://www.decoropic.com/guides/ghana-house-finishing-timeline | How Long to Finish a House in Ghana: Stage Timeline | how long to finish a house in Ghana | 2026-10-26 |
 | https://www.decoropic.com/guides/hotel-ffe-checklist | Hotel FF&E Checklist: Room-by-Room List | list of FF&E items for hotels | 2026-11-16 |
-| https://www.decoropic.com/guides/hotel-ffe-procurement-ghana | List of FF&E Items for Hotels: Ghana Supplier Guide | hotel furniture suppliers Ghana | 2026-11-16 |
+| https://www.decoropic.com/guides/hotel-ffe-procurement-ghana | Hotel FF&E Procurement in Ghana: A 20 to 100 Room Guide | hotel FF&E procurement Ghana | 2026-11-16 |
 | https://www.decoropic.com/guides/import-kitchen-cabinets-china-to-ghana | Import Kitchen Cabinets from China to Ghana: Full Process | import kitchen cabinets from China to Ghana | 2026-11-16 |
 | https://www.decoropic.com/guides/interior-doors-ghana-wood-vs-wpc | Interior Doors in Ghana: Wood, WPC or Steel? | interior doors Ghana | 2026-10-26 |
 | https://www.decoropic.com/guides/kitchen-worktops-ghana-quartz-vs-granite | Kitchen Worktops in Ghana: Quartz vs Granite vs Sintered | kitchen worktop Ghana | 2026-10-26 |

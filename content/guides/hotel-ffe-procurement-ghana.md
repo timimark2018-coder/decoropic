@@ -1,36 +1,22 @@
 ---
-title: "List of FF&E Items for Hotels: Ghana Supplier Guide"
-description: "A list of FF&E items for hotels in Ghana, from guestrooms to public areas, plus design + sourcing + shipping + installation from China and an Accra office."
+title: "Hotel FF&E Procurement in Ghana: A 20 to 100 Room Guide"
+description: "Hotel FF&E procurement in Ghana for 20 to 100 rooms: scoping from the room matrix, a mock-up room, QC for repeat items, phased delivery via Tema and payment."
 slug: "hotel-ffe-procurement-ghana"
-targetKeyword: "hotel furniture suppliers Ghana"
+targetKeyword: "hotel FF&E procurement Ghana"
 category: "Ghana guides"
 order: 16
 lastmod: "2026-11-16"
 ---
 
-# Hotel Furniture Suppliers in Ghana: How to Procure an FF&E Package for 20 to 100 Rooms
+# Hotel FF&E Procurement in Ghana: Sourcing a Package for 20 to 100 Rooms
 
-*Ready to source rather than read? See our [list of FF&E items for hotels](/source-from-china/hotel-ff-e), supplied as one package from China. Need the item list room by room? Use our [hotel FF&E checklist](/guides/hotel-ffe-checklist).*
+*Need every item, room by room? Use our [room-by-room hotel FF&E checklist](/guides/hotel-ffe-checklist). Ready to source rather than read? See our [turnkey hotel FF&E packages from China](/source-from-china/hotel-ff-e).*
 
-Owners searching for hotel furniture suppliers Ghana are usually at the point where the building is nearly done and the rooms are empty. The decision is bigger than furniture: a hotel FF&E package covers casegoods, seating, beds, lighting, bathroom fittings, doors, window treatments and the public areas, and the quality of procurement determines whether rooms open on time and survive their first three years of use. This guide explains how to scope an FF&E package for a 20 to 100 room hotel in Ghana, why a mock-up room pays for itself, how to run quality control, and how to phase delivery.
+Hotel FF&E procurement in Ghana usually starts when the building is nearly done and the rooms are empty. The decision is bigger than furniture: a hotel FF&E package covers casegoods, seating, beds, lighting, bathroom fittings, doors, window treatments and the public areas, and the quality of procurement determines whether rooms open on time and survive their first three years of use. This guide explains how to handle hotel FF&E procurement in Ghana for a 20 to 100 room property: how to scope the package, why a mock-up room pays for itself, how to run quality control, and how to phase delivery.
 
 ## What an FF&E package includes
 
-FF&E stands for furniture, fixtures and equipment: the items that are not part of the building fabric and that a hotel operator needs to run rooms. For a Ghana property sourced from China, the package typically breaks down as follows.
-
-| Area | Items | Notes for Ghana |
-|---|---|---|
-| Guestroom casegoods | Headboard, bed base, bedside tables, desk, luggage bench, wardrobe, minibar cabinet, TV panel | Moisture-resistant board, sealed edges; wardrobe to ceiling where possible |
-| Guestroom seating | Desk chair, armchair, sofa in suites | Upholstery with high rub count; removable covers for cleaning |
-| Mattresses and bedding | Mattress, protector, pillows | Fire-retardant specification; confirm bed base dimensions |
-| Guestroom lighting | Bedside, desk, reading, ceiling, bathroom mirror light | 230 V, 50 Hz; LED drivers rated for high ambient temperature |
-| Bathroom | WC, basin, shower set, mirror, accessories, glass screen | Wall-hung or floor-standing by tier; spares for consumables |
-| Doors and ironmongery | Entry door with lock system, bathroom door, wardrobe doors | Electronic lock compatible with the operator's system |
-| Window treatments | Blackout and sheer curtains, tracks | Flame-retardant fabric |
-| Public areas | Reception desk, lobby seating, restaurant tables and chairs, bar, meeting-room furniture | Heavier-duty construction than guestrooms |
-| Back of house | Staff lockers, housekeeping trolleys, luggage trolleys | Often sourced separately |
-
-Operating supplies and equipment (OS&E), such as linen, crockery and small appliances, is a separate package with a different supplier base and should be budgeted separately.
+FF&E (furniture, fixtures and equipment) covers guestroom casegoods, seating, mattresses, lighting, bathroom fittings, doors, window treatments, public-area furniture and back-of-house items, while operating supplies (OS&E) such as linen and crockery are a separate package with its own budget; for every item room by room, with the specifications to decide, use our [full list of FF&E items for hotels](/guides/hotel-ffe-checklist).
 
 ## Scoping: from room count to a bill of quantities
 
@@ -97,9 +83,6 @@ It depends on the specification and how much is flat-packed. Casegoods, mattress
 
 **Do mattresses and curtains need any certificate in Ghana?**
 Fire-retardant specifications are a matter for the operator's brand standard and the insurer. Check with the Ghana Standards Authority and the fire service on current requirements for the property class; do not assume the exporting country's certificate is sufficient.
-
-**What is the lead time for a hotel FF&E order?**
-Allow design and mock-up, production of — confirmed with your quote depending on scope, consolidation, about 30 days at sea, clearance and phased installation. The mock-up stage is the part owners most often underestimate.
 
 ## Next step
 
