@@ -80,7 +80,17 @@ export default async function BlogPostPage({
         }
       : null;
 
-  const schemas = faqSchema ? [articleSchema, faqSchema] : [articleSchema];
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: baseUrl },
+      { "@type": "ListItem", position: 2, name: "Blog", item: `${baseUrl}/blog` },
+      { "@type": "ListItem", position: 3, name: frontmatter.title, item: `${baseUrl}/blog/${frontmatter.slug}` }
+    ]
+  };
+
+  const schemas = [articleSchema, breadcrumbSchema, ...(faqSchema ? [faqSchema] : [])];
 
   return (
     <>

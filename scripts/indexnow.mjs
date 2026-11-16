@@ -4,6 +4,7 @@
 //   node scripts/indexnow.mjs --all                 推 sitemap 里全部 URL(首次手动推送用)
 //   node scripts/indexnow.mjs --changed <state>     只推 lastmod 有变化或新出现的 URL，
 //                                                   然后把这次的 lastmod 写回 <state>
+//   node scripts/indexnow.mjs --urls <url> ...      推指定 URL(例如同一天里又改过、lastmod 没变的页)
 //   加 --dry-run 只打印，不推送
 //
 // --changed 由 .github/workflows/indexnow.yml 在每次生产部署成功后调用(push 到 main 后等 Vercel 报成功)，
@@ -20,10 +21,10 @@ const ENDPOINT = "https://api.indexnow.org/indexnow";
 
 const args = process.argv.slice(2);
 const dryRun = args.includes("--dry-run");
-const mode = args.includes("--all") ? "all" : args.includes("--changed") ? "changed" : null;
+const mode = args.includes("--all") ? "all" : args.includes("--changed") ? "changed" : args.includes("--urls") ? "urls" : null;
 const statePath = mode === "changed" ? args[args.indexOf("--changed") + 1] : null;
 if (!mode || (mode === "changed" && !statePath)) {
-  console.error("用法: --all | --changed <state.json> [--dry-run]");
+  console.error("用法: --all | --changed <state.json> | --urls <url>... [--dry-run]");
   process.exit(2);
 }
 
@@ -56,6 +57,12 @@ async function push(urlList) {
     console.error(await res.text());
     process.exit(1);
   }
+}
+
+if (mode === "urls") {
+  const list = args.filter((a) => a.startsWith("https://"));
+  await push(list);
+  process.exit(0);
 }
 
 const current = await readSitemap();
