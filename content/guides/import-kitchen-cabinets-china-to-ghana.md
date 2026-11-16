@@ -5,10 +5,12 @@ slug: "import-kitchen-cabinets-china-to-ghana"
 targetKeyword: "import kitchen cabinets from China to Ghana"
 category: "Ghana guides"
 order: 11
-lastmod: "2026-10-26"
+lastmod: "2026-11-16"
 ---
 
 # How to Import Kitchen Cabinets from China to Ghana
+
+*Choosing styles and materials first? See what goes into a complete kitchen on our [kitchen cabinets Ghana](/products/kitchen-cabinets-ghana) page.*
 
 To import kitchen cabinets from China to Ghana you need to get four things right in sequence: accurate site measurement, a signed-off design with a full hardware schedule, a factory and loading plan that protects the cabinets for a month at sea, and a clearance and installation plan at the Ghana end. This guide walks through each stage, the documents involved, realistic lead times and the mistakes that cause reorders. It is written for homeowners, diaspora builders and small developers finishing property in Accra, Tema, Kumasi or Takoradi.
 

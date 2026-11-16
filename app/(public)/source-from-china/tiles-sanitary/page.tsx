@@ -75,6 +75,11 @@ export default async function TilesSanitaryPage() {
     <SourcePage
       eyebrow="Sourcing · Tiles & Sanitary Ware"
       h1="Tiles & Sanitary Ware Supplier from China — Worldwide Export"
+      heroLink={{
+        lead: "Building in Ghana? We also supply",
+        label: "tiles and sanitary ware for projects in Ghana",
+        href: "/products/tiles-sanitary-ware-ghana"
+      }}
       subtitle="Porcelain slab, ceramic, toilets, basins and brassware at project volume — sourced from Foshan, quality-controlled, and exported to tariff-friendly markets worldwide."
       intro={[
         "One supplier, one batch, one container. Decoropic sources hotel sanitary ware and the matching ceramic tiles together in Foshan, orders the tiles from a single production batch so colours match from room to room, and ships both in one consolidated container.",

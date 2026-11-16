@@ -8,9 +8,11 @@ type Props = {
   lead: string;
   /** 首屏 lead 下的一条链接(例如指向同主题的指南);可选 */
   guideLink?: { lead: string; label: string; href: string };
+  /** guideLink 之后的其他首屏链接(例如指向同主题的项目页) */
+  moreLinks?: Array<{ lead: string; label: string; href: string }>;
 };
 
-export function CategoryHero({ eyebrow, h1, lead, guideLink }: Props) {
+export function CategoryHero({ eyebrow, h1, lead, guideLink, moreLinks = [] }: Props) {
   const waHref = buildWhatsAppHref();
 
   return (
@@ -60,17 +62,21 @@ export function CategoryHero({ eyebrow, h1, lead, guideLink }: Props) {
           </p>
         </Reveal>
 
-        {guideLink && (
+        {(guideLink || moreLinks.length > 0) && (
           <Reveal delay={580}>
-            <p className="-mt-6 mb-12 text-sm text-brand-ink/75" style={{ maxWidth: "700px" }}>
-              {guideLink.lead}{" "}
-              <Link
-                href={guideLink.href}
-                className="font-semibold text-brand-pine underline decoration-brand-gold/60 underline-offset-2 hover:text-brand-gold"
-              >
-                {guideLink.label}
-              </Link>
-            </p>
+            <div className="-mt-6 mb-12 space-y-2 text-sm text-brand-ink/75" style={{ maxWidth: "700px" }}>
+              {[...(guideLink ? [guideLink] : []), ...moreLinks].map((link) => (
+                <p key={link.href}>
+                  {link.lead}{" "}
+                  <Link
+                    href={link.href}
+                    className="font-semibold text-brand-pine underline decoration-brand-gold/60 underline-offset-2 hover:text-brand-gold"
+                  >
+                    {link.label}
+                  </Link>
+                </p>
+              ))}
+            </div>
           </Reveal>
         )}
 

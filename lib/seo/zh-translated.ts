@@ -22,9 +22,12 @@ const CONTENT_FILES: Record<string, string> = {
 };
 
 function contentFileHasFlag(group: string, slug: string): boolean {
-  const ext = group === "products" ? ".json" : CONTENT_FILES[group];
+  // /products/<slug>:第 4 批起有 markdown 页(content/products)，其余是品类 JSON(content/categories)
+  const productMd = path.join(process.cwd(), "content", "products", `${slug}.md`);
+  const useJson = group === "products" && !fs.existsSync(productMd);
+  const ext = useJson ? ".json" : group === "products" ? ".md" : CONTENT_FILES[group];
   if (!ext) return false;
-  const dir = group === "products" ? "categories" : group;
+  const dir = useJson ? "categories" : group;
   const file = path.join(process.cwd(), "content", dir, `${slug}${ext}`);
   if (!fs.existsSync(file)) return false;
   const raw = fs.readFileSync(file, "utf-8");

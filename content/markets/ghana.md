@@ -30,7 +30,9 @@ Transit ranges are published forwarder estimates and change with carrier, routin
 - Hotel and guesthouse furniture (FF&E) and home furniture
 - Ceiling lights, downlights and outdoor lighting
 
-For typical prices and choices, see [aluminium window prices in Ghana](/products/doors-windows) and our guide to [bathroom renovation in Ghana](/guides/sanitaryware-bathroom-import-ghana).
+For typical prices and choices, see [aluminium window prices in Ghana](/products/doors-windows) and our guide to [bathroom renovation in Ghana](/guides/sanitaryware-bathroom-import-ghana). Complete packages: [kitchen cabinets](/products/kitchen-cabinets-ghana), [tiles and sanitary ware](/products/tiles-sanitary-ware-ghana) and [furniture packages](/products/furniture-packages-ghana).
+
+Building from the UK, USA or elsewhere abroad? See [building and furnishing a house in Ghana from abroad](/markets/ghana/diaspora).
 
 ## How delivery works
 

@@ -4,7 +4,7 @@ import path from "node:path";
 // 第 1 周起的内容包以 markdown 入库(content/solutions/*.md、content/markets/*.md)，
 // 每页一个文件、带 front-matter。这里把它解析成结构化区块，交给 ContentPage 渲染。
 
-export type ContentGroup = "solutions" | "markets";
+export type ContentGroup = "solutions" | "markets" | "products";
 
 export type ContentBlock =
   | { kind: "paragraph"; text: string }
@@ -26,6 +26,8 @@ export type ContentPage = {
   description: string;
   h1: string;
   primaryKeyword: string;
+  /** front-matter 的 schema 字段:"Service" 时页面额外输出 Service JSON-LD(产品页、市场子页) */
+  schema?: string;
   /** 最后一次正文改动的日期(YYYY-MM-DD)，由 scripts/update-lastmod.mjs 维护。 */
   lastmod?: string;
   intro: string;
@@ -123,7 +125,7 @@ function parseBlocks(chunk: string, heading: string): ContentBlock[] {
     mode = "none";
   };
 
-  const isFaqSection = /^FAQ$/i.test(heading);
+  const isFaqSection = /^(FAQ|Frequently asked questions)$/i.test(heading);
 
   for (const line of lines) {
     const t = line.trim();
@@ -220,6 +222,7 @@ export function getContentPage(group: ContentGroup, slug: string): ContentPage |
     description: fm.description || "",
     h1: fm.h1 || "",
     primaryKeyword: fm.primary_keyword || "",
+    schema: fm.schema || undefined,
     lastmod: fm.lastmod || undefined,
     intro,
     sections,
