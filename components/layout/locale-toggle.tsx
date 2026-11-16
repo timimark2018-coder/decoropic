@@ -18,7 +18,9 @@ const localeLabels: Record<Locale, string> = {
 export function LocaleToggle({ locale }: LocaleToggleProps) {
   const pathname = usePathname() || "/";
   // middleware 已把 /zh 剥掉，所以 pathname 始终是英文版路径。
-  const basePath = pathname.replace(/^\/zh(?=\/|$)/, "") || "/";
+  // /fr/* 没有中文版，EN / 中文 都指向对应的英文页 /markets/west-africa
+  const stripped = pathname.replace(/^\/zh(?=\/|$)/, "") || "/";
+  const basePath = /^\/fr(\/|$)/.test(stripped) ? "/markets/west-africa" : stripped;
   const hrefFor = (target: Locale) =>
     target === "zh" ? `/zh${basePath === "/" ? "" : basePath}` : basePath;
 

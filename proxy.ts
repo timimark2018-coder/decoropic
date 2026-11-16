@@ -103,9 +103,10 @@ export function proxy(request: NextRequest) {
     return response;
   }
 
-  const response = NextResponse.next({
-    request: { headers: withLocaleHeader(request, "en") }
-  });
+  const headers = withLocaleHeader(request, "en");
+  // /fr/* 是法语页:界面语言仍按 en 走，只把 <html lang> 换成 fr
+  if (pathname === "/fr" || pathname.startsWith("/fr/")) headers.set("x-html-lang", "fr");
+  const response = NextResponse.next({ request: { headers } });
   if (isCacheableDocument(request, pathname)) {
     response.headers.set("Cache-Control", CDN_CACHE);
   }

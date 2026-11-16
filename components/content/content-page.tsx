@@ -22,13 +22,15 @@ type Props = {
   /** 页尾挂的相关指南(/markets/ghana 与 /markets/west-africa 使用)。 */
   relatedGuides?: GuideFrontmatter[];
   relatedGuidesCopy?: { eyebrow: { en: string; zh: string }; heading: { en: string; zh: string } };
-  /** 案例模块(例如 <RecentHotelProject />)，放在正文之后、相关指南之前 */
-  recentProject?: React.ReactNode;
+  /** 正文之后、相关指南之前的附加模块(例如 <RecentHotelProject />、法语版入口) */
+  extraSection?: React.ReactNode;
+  /** 页尾链接区的标题，缺省 Related / 相关页面 */
+  relatedLabel?: string;
 };
 
 const PROSE = "text-base leading-[1.8] text-brand-pine-dark/80";
 
-export function ContentPage({ page, locale, eyebrow, heroImage, relatedGuides, relatedGuidesCopy, recentProject }: Props) {
+export function ContentPage({ page, locale, eyebrow, heroImage, relatedGuides, relatedGuidesCopy, extraSection, relatedLabel }: Props) {
   const sections = page.sections;
   const cards = getProjectCards(page.projectCards);
 
@@ -247,7 +249,7 @@ export function ContentPage({ page, locale, eyebrow, heroImage, relatedGuides, r
         </section>
       ))}
 
-      {recentProject}
+      {extraSection}
 
       {relatedGuides && relatedGuides.length > 0 && (
         <section className="border-t border-brand-pine-dark/10 bg-[#f7f3ec] py-16 lg:py-20">
@@ -296,7 +298,7 @@ export function ContentPage({ page, locale, eyebrow, heroImage, relatedGuides, r
         <section className="border-t border-brand-pine-dark/10 bg-white py-12">
           <div className="container-wide max-w-[920px]">
             <p className="text-brand-gold" style={{ fontSize: "0.72rem", fontWeight: 700, letterSpacing: "0.22em", textTransform: "uppercase" }}>
-              {locale === "zh" ? "相关页面" : "Related"}
+              {relatedLabel ?? (locale === "zh" ? "相关页面" : "Related")}
             </p>
             <div className="mt-4 flex flex-wrap gap-x-6 gap-y-2">
               {page.internalLinks.map((link) => (

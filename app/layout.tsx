@@ -7,6 +7,7 @@ import "./globals.css";
 import { GoogleAnalytics } from "@/components/analytics/google-analytics";
 import { MetaPixel } from "@/components/analytics/meta-pixel";
 import { CookieConsentBanner } from "@/components/analytics/cookie-consent-banner";
+import { headers } from "next/headers";
 import { getLocale } from "@/lib/i18n/server";
 import { buildMetadata } from "@/lib/seo/metadata";
 import { organizationSchema, websiteSchema } from "@/lib/seo/schema";
@@ -47,7 +48,7 @@ export default async function RootLayout({ children }: Readonly<{ children: Reac
   const structuredData = [websiteSchema(locale), organizationSchema(locale)];
   const gtmId = process.env.NEXT_PUBLIC_GTM_ID;
   // en(不是 en-GH):站点面向全球买家，锁区域会让 Google 判定为加纳本地站。
-  const htmlLang = locale === "zh" ? "zh-CN" : "en";
+  const htmlLang = (await headers()).get("x-html-lang") ?? (locale === "zh" ? "zh-CN" : "en");
 
   return (
     <html lang={htmlLang} className={`${inter.variable} ${playfair.variable}`}>

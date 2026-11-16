@@ -5,6 +5,8 @@ import { getAllGuides } from "@/lib/guides/getGuides";
 import { getContentPage } from "@/lib/content-pages/getContentPage";
 import { getAllProjects } from "@/lib/projects/getProjects";
 import { isZhTranslated } from "@/lib/seo/zh-translated";
+import { frHreflangCluster } from "@/lib/seo/fr-pages";
+import { getAllContentPages } from "@/lib/content-pages/getContentPage";
 
 // 每个页面登记英文版。中文版只有 zhTranslated 的页面才登记，两条互指 hreflang
 // (en / zh / x-default)，开关见 lib/seo/zh-translated.ts。
@@ -28,7 +30,8 @@ function localizedPair(
   const stamp = lastModified ? { lastModified } : {};
 
   if (!isZhTranslated(routePath || "/")) {
-    return [{ url: enUrl, ...stamp, changeFrequency, priority }];
+    const frCluster = frHreflangCluster(routePath || "/");
+    return [{ url: enUrl, ...stamp, changeFrequency, priority, ...(frCluster ? { alternates: { languages: frCluster } } : {}) }];
   }
 
   return [
@@ -129,5 +132,17 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     localizedPair(baseUrl, `/projects/${p.slug}`, toDate(p.lastmod), "monthly", 0.75)
   );
 
-  return [...staticEntries, ...blogEntries, ...guideEntries, ...projectEntries];
+  // 法语试水页(content/fr/*.md):与对应英文页组成一组 hreflang
+  const frEntries: MetadataRoute.Sitemap = getAllContentPages("fr").map((p) => {
+    const cluster = p.hreflangEn ? frHreflangCluster(p.hreflangEn) : null;
+    return {
+      url: `${baseUrl}${p.url}`,
+      ...(toDate(p.lastmod) ? { lastModified: toDate(p.lastmod) } : {}),
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+      ...(cluster ? { alternates: { languages: cluster } } : {})
+    };
+  });
+
+  return [...staticEntries, ...blogEntries, ...guideEntries, ...projectEntries, ...frEntries];
 }

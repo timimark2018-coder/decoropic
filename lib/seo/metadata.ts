@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import type { Locale, LocalizedText } from "@/content/types";
 import { siteConfig } from "@/lib/utils/constants";
 import { isZhTranslated } from "@/lib/seo/zh-translated";
+import { frHreflangCluster } from "@/lib/seo/fr-pages";
 
 type MetadataInput = {
   title?: string | LocalizedText;
@@ -33,6 +34,12 @@ export function buildMetadata({
   const zhUrl = `${baseUrl}/zh${normalizedPath}`;
   const url = locale === "zh" ? zhUrl : enUrl;
   const zhOpen = isZhTranslated(path);
+  // 英文页如果有法语版(/fr/*)，把那一组 hreflang 并进来
+  const frCluster = locale === "en" ? frHreflangCluster(normalizedPath || "/") : null;
+  const languages = {
+    ...(zhOpen ? { en: enUrl, zh: zhUrl, "x-default": enUrl } : {}),
+    ...(frCluster ?? {})
+  };
   const ogImageUrl = `${baseUrl}/og/default.jpg`;
   const googleVerification = process.env.GOOGLE_SITE_VERIFICATION;
   // Meta Business Suite → Brand Safety → Domains → "Meta-tag verification"
@@ -80,7 +87,7 @@ export function buildMetadata({
         : undefined,
     alternates: {
       canonical: url,
-      ...(zhOpen ? { languages: { en: enUrl, zh: zhUrl, "x-default": enUrl } } : {})
+      ...(Object.keys(languages).length ? { languages } : {})
     },
     openGraph: {
       ...(resolvedTitle ? { title: resolvedTitle } : {}),
