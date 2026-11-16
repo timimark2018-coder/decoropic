@@ -7,6 +7,7 @@ import { breadcrumbListSchema, faqPageSchema } from "@/lib/seo/schema";
 import { ContentPage } from "@/components/content/content-page";
 import { RecentHotelProject } from "@/components/projects/RecentHotelProject";
 import { FrenchVersion } from "@/components/content/french-version";
+import { placeholderCard } from "@/lib/placeholder-card";
 import { getAllGuides, type GuideFrontmatter } from "@/lib/guides/getGuides";
 import { getContentPage, type ContentGroup } from "./getContentPage";
 
@@ -158,7 +159,7 @@ export async function ContentRoute({ group, slug }: { group: ContentGroup; slug:
         page={page}
         locale={locale}
         eyebrow={locale === "zh" ? label.zh : label.en}
-        heroImage={HERO_IMAGES[`${group}/${slug}`]}
+        heroImage={HERO_IMAGES[`${group}/${slug}`] ?? placeholderCard(page.url, page.primaryKeyword)}
         relatedGuides={guidesModule?.guides}
         relatedGuidesCopy={guidesModule?.copy}
         extraSection={

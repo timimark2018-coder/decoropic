@@ -2,6 +2,7 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import readingTime from "reading-time";
+import { placeholderCard } from "@/lib/placeholder-card";
 
 export type PostFrontmatter = {
   title: string;
@@ -42,6 +43,13 @@ export type FaqItem = {
 
 const BLOG_DIR = path.join(process.cwd(), "content/blog");
 
+// 没有封面的博文用占位卡片(见 lib/placeholder-card.ts)，alt 写主词
+function withCover(fm: PostFrontmatter): PostFrontmatter {
+  if (fm.cover) return fm;
+  const card = placeholderCard(`/blog/${fm.slug}`, fm.focusKeyword ?? fm.title);
+  return card ? { ...fm, cover: card.src, coverAlt: card.alt } : fm;
+}
+
 export function getAllPosts(): PostFrontmatter[] {
   if (!fs.existsSync(BLOG_DIR)) return [];
   const files = fs.readdirSync(BLOG_DIR).filter((f) => f.endsWith(".mdx"));
@@ -53,7 +61,7 @@ export function getAllPosts(): PostFrontmatter[] {
       if (!fm.readingTime) {
         fm.readingTime = readingTime(content).text;
       }
-      return fm;
+      return withCover(fm);
     })
     .sort(
       (a, b) =>
@@ -66,7 +74,7 @@ export function getPostBySlug(slug: string): Post | null {
   if (!fs.existsSync(filePath)) return null;
   const raw = fs.readFileSync(filePath, "utf-8");
   const { data, content } = matter(raw);
-  return { frontmatter: data as PostFrontmatter, content };
+  return { frontmatter: withCover(data as PostFrontmatter), content };
 }
 
 export function getAllSlugs(): string[] {

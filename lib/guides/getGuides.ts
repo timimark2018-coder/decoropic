@@ -5,6 +5,8 @@ import readingTime from "reading-time";
 
 export type GuideFrontmatter = {
   title: string;
+  /** 页面 H1;缺省取正文第一个 "# " 标题 */
+  h1?: string;
   description: string;
   slug: string;
   targetKeyword?: string;
