@@ -24,6 +24,10 @@ export type PostFrontmatter = {
   cover?: string;
   coverAlt?: string;
   coverCaption?: string;
+  /** 正文最后一次修改的日期;JSON-LD 的 dateModified 与 sitemap 的 lastmod 用它，缺省 publishDate */
+  dateModified?: string;
+  /** 「Key takeaways」要点框，正文里用 <KeyTakeaways /> 放置;每条必须是正文里已有的事实 */
+  keyTakeaways?: string[];
 };
 
 export type Post = {

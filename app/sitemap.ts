@@ -112,7 +112,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // Auto-scan content/blog/*.mdx and add each post
   const posts = getAllPosts();
   const blogEntries = posts.flatMap((post) =>
-    localizedPair(baseUrl, `/blog/${post.slug}`, new Date(post.publishDate), "monthly", 0.7)
+    localizedPair(baseUrl, `/blog/${post.slug}`, new Date(post.dateModified ?? post.publishDate), "monthly", 0.7)
   );
 
   // Auto-scan content/guides/*.md and add each guide

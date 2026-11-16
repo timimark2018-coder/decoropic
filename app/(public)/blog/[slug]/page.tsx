@@ -48,7 +48,7 @@ export default async function BlogPostPage({
     headline: frontmatter.h1 ?? frontmatter.title,
     description: frontmatter.description,
     datePublished: frontmatter.publishDate,
-    dateModified: frontmatter.publishDate,
+    dateModified: frontmatter.dateModified ?? frontmatter.publishDate,
     author: {
       "@type": "Organization",
       name: "Decoropic",

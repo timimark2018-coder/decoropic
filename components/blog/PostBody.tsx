@@ -17,9 +17,29 @@ function formatDate(dateStr: string): string {
 }
 
 export async function PostBody({ content, frontmatter }: PostBodyProps) {
+  const takeaways = frontmatter.keyTakeaways ?? [];
   const { content: rendered } = await compileMDX({
     source: content,
-    options: { parseFrontmatter: false }
+    options: { parseFrontmatter: false },
+    components: {
+      // 「Key takeaways」要点框:条目写在 front-matter，正文里用 <KeyTakeaways /> 决定位置
+      KeyTakeaways: () =>
+        takeaways.length ? (
+          <aside className="not-prose my-10 rounded-[6px] border border-brand-gold/50 bg-[#f7f3ec] px-6 py-6 sm:px-8">
+            <p
+              className="mb-4 text-brand-gold"
+              style={{ fontSize: "0.75rem", fontWeight: 700, letterSpacing: "0.22em", textTransform: "uppercase" }}
+            >
+              Key takeaways
+            </p>
+            <ul className="list-disc space-y-2 pl-5 text-[1rem] leading-[1.7] text-brand-pine-dark/90">
+              {takeaways.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+          </aside>
+        ) : null
+    }
   });
 
   return (
