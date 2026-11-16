@@ -6,7 +6,7 @@
 //                                                   然后把这次的 lastmod 写回 <state>
 //   加 --dry-run 只打印，不推送
 //
-// --changed 由 .github/workflows/indexnow.yml 在每次生产部署成功后调用，
+// --changed 由 .github/workflows/indexnow.yml 在每次生产部署成功后调用(push 到 main 后等 Vercel 报成功)，
 // <state> 存在 Actions 缓存里。没有 <state>(第一次)时只记录基线，不推送 ——
 // 全站已经用 --all 推过一次。
 // 没有 lastmod 的手写静态页不会被判定为「有变化」，这是有意的:没有可查证的日期。
