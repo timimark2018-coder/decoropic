@@ -1,19 +1,42 @@
 # 每次 Vercel 生产部署成功后，把 sitemap 里 lastmod 有变化的 URL 推给 IndexNow。
+#
+# 触发用 main 的 push，再等 Vercel 给这个提交报部署成功 —— 不直接用
+# deployment_status 事件:那个事件不挂在分支上，actions/cache 存不了快照。
 # 上一次的 lastmod 快照存在 Actions 缓存里(每次运行存一份新的，恢复时取最近一份)。
 name: IndexNow
 
-on: deployment_status
+on:
+  push:
+    branches: [main]
 
 concurrency:
   group: indexnow
   cancel-in-progress: false
 
+permissions:
+  contents: read
+  statuses: read
+
 jobs:
   push:
-    if: github.event.deployment_status.state == 'success' && github.event.deployment.environment == 'Production'
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 20
     steps:
+      - name: Wait for the Vercel production deployment of this commit
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          for i in $(seq 1 60); do
+            state=$(gh api "repos/${{ github.repository }}/commits/${{ github.sha }}/statuses" \
+              --jq '[.[] | select(.context == "Vercel")][0].state // "missing"')
+            echo "Vercel: $state"
+            case "$state" in
+              success) exit 0 ;;
+              failure|error) echo "部署失败，不推送"; exit 1 ;;
+            esac
+            sleep 15
+          done
+          echo "等待超时"; exit 1
       - uses: actions/checkout@v4
         with:
           sparse-checkout: scripts
