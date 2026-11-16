@@ -6,6 +6,7 @@ import { siteConfig } from "@/lib/utils/constants";
 import { breadcrumbListSchema, faqPageSchema } from "@/lib/seo/schema";
 import { ContentPage } from "@/components/content/content-page";
 import { RecentHotelProject } from "@/components/projects/RecentHotelProject";
+import { FrenchVersion } from "@/components/content/french-version";
 import { getAllGuides, type GuideFrontmatter } from "@/lib/guides/getGuides";
 import { getContentPage, type ContentGroup } from "./getContentPage";
 
@@ -64,7 +65,9 @@ function marketGuides(slug: string) {
 const GROUP_LABEL: Record<ContentGroup, { en: string; zh: string; indexPath: string }> = {
   solutions: { en: "Solutions", zh: "解决方案", indexPath: "/solutions" },
   markets: { en: "Markets", zh: "市场", indexPath: "/markets" },
-  products: { en: "Products", zh: "产品", indexPath: "/products" }
+  products: { en: "Products", zh: "产品", indexPath: "/products" },
+  // /fr 页有自己的路由(app/(public)/fr/[country])，不经过 ContentRoute
+  fr: { en: "West Africa", zh: "西非", indexPath: "/markets/west-africa" }
 };
 
 // 本页实际配的图。
@@ -158,7 +161,13 @@ export async function ContentRoute({ group, slug }: { group: ContentGroup; slug:
         heroImage={HERO_IMAGES[`${group}/${slug}`]}
         relatedGuides={guidesModule?.guides}
         relatedGuidesCopy={guidesModule?.copy}
-        recentProject={group === "solutions" && slug === "hotels" ? <RecentHotelProject locale={locale} /> : undefined}
+        extraSection={
+          group === "solutions" && slug === "hotels" ? (
+            <RecentHotelProject locale={locale} />
+          ) : group === "markets" && slug === "west-africa" ? (
+            <FrenchVersion />
+          ) : undefined
+        }
       />
     </>
   );
