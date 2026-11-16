@@ -74,9 +74,12 @@ export function ContentPage({ page, locale, eyebrow, heroImage, relatedGuides, r
           </Reveal>
 
           <Reveal delay={500}>
-            <p className={`mt-8 max-w-[820px] ${PROSE}`}>
-              <RichText text={page.intro} locale={locale} />
-            </p>
+            {/* 首段可以拆成几段(空行分隔):第一段直接回答搜索问题，其余是展开 */}
+            {page.intro.split(/\n{2,}/).map((paragraph, i) => (
+              <p key={i} className={`${i === 0 ? "mt-8" : "mt-5"} max-w-[820px] ${PROSE}`}>
+                <RichText text={paragraph} locale={locale} />
+              </p>
+            ))}
           </Reveal>
 
           {heroImage && (

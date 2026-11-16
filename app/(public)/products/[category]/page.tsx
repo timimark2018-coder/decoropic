@@ -26,6 +26,8 @@ type CategoryData = {
   slug: string;
   label: string;
   seo: { title: string; description: string };
+  /** FeaturedSKUs 区块的 H2，缺省 "Featured selections" */
+  skusTitle?: string;
   hero: {
     eyebrow: string;
     h1: string;
@@ -154,7 +156,7 @@ export default async function CategoryPage({
           guideLink={data.hero.guideLink}
         />
         <WhySection items={data.why.items} />
-        <FeaturedSKUs skus={data.skus} categoryLabel={data.label} baseUrl={baseUrl} />
+        <FeaturedSKUs skus={data.skus} categoryLabel={data.label} baseUrl={baseUrl} title={data.skusTitle} />
         <ApplicationSection applications={data.applications} categoryLabel={data.label} />
         {data.faq && data.faq.length > 0 && (
           <section className="bg-white py-16 lg:py-20">

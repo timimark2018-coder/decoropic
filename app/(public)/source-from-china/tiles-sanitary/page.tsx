@@ -7,11 +7,11 @@ export async function generateMetadata(): Promise<Metadata> {
   const locale = await getLocale();
   return buildMetadata({
     title: {
-      en: "Tiles & Sanitary Ware Supplier from China — Worldwide Export",
-      zh: "中国瓷砖与卫浴供应商 — 全球出口"
+      en: "Hotel Sanitary Ware + Matching Tiles from China | Decoropic",
+      zh: "中国酒店卫浴 + 配套瓷砖 — 全球出口"
     },
     description: {
-      en: "Porcelain tiles, slabs and sanitaryware sourced direct from Foshan for overseas projects. Shade-matched project quantities, factory QC and consolidated export.",
+      en: "Hotel sanitary ware with matching ceramic tiles for hotel projects: one Foshan supplier, one production batch for colour and one consolidated container.",
       zh: "从中国采购瓷砖与卫浴 — 岩板、瓷砖、坐便、面盆、龙头,工程量供应。面向关税友好市场(澳/中东/非洲)。验货、拼柜与出口;当地进口由买方自办。"
     },
     path: "/source-from-china/tiles-sanitary",
@@ -20,6 +20,16 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 const faqs: SourceFaq[] = [
+  {
+    question: "Which sanitary ware supplier also supplies matching ceramic tiles for hotel projects?",
+    answer:
+      "Decoropic supplies both. We source hotel sanitary ware and the matching ceramic and porcelain tiles together in Foshan, order the tiles from a single production batch so the colour stays consistent across every room, and check both against your approved samples before they ship in one consolidated container."
+  },
+  {
+    question: "Can one supplier cover tiles, sanitary ware and wall panels in one order?",
+    answer:
+      "Yes. Tiles, sanitary ware and wall panels can go on one order and one packing list. We coordinate the factories in Foshan, inspect each category before loading and consolidate them into a single shipment when the volume fits one container, or into a planned sequence of containers when it does not."
+  },
   {
     question: "Which markets are best for sourcing tiles and sanitary ware from China?",
     answer:
@@ -67,6 +77,7 @@ export default async function TilesSanitaryPage() {
       h1="Tiles & Sanitary Ware Supplier from China — Worldwide Export"
       subtitle="Porcelain slab, ceramic, toilets, basins and brassware at project volume — sourced from Foshan, quality-controlled, and exported to tariff-friendly markets worldwide."
       intro={[
+        "One supplier, one batch, one container. Decoropic sources hotel sanitary ware and the matching ceramic tiles together in Foshan, orders the tiles from a single production batch so colours match from room to room, and ships both in one consolidated container.",
         "Tiles and sanitary ware are one part of the complete project material package Decoropic designs and supplies for hotel, villa and apartment projects — specified alongside furniture, lighting and finishes so the whole interior reads as one scheme. This page covers the tile and sanitary layer; you can source it on its own, or as part of a full project package from our <a href=\"/source-from-china\" style=\"color:var(--brand-gold);text-decoration:underline;text-underline-offset:2px\">project sourcing hub</a>.",
         "Foshan is the tile and sanitary capital of the world — it produces roughly 54% of China's ceramic tile and around a quarter of global output, alongside one of the densest concentrations of sanitary-ware factories anywhere. For a project buyer, that means almost any format, finish or fitting standard can be sourced from a single region, in one consolidated shipment.",
         "Decoropic sources tiles and sanitary ware from China as an export partner. We match your technical requirements — slip rating, thickness, fitting standard, finish — to the right factory, place project orders against a single batch for colour consistency, and inspect calibre, finish and function before shipment. Tile and sanitary for one project consolidate under a single contract, export-packed to survive the sea voyage.",

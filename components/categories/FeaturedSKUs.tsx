@@ -15,6 +15,8 @@ type Props = {
   skus: SKU[];
   categoryLabel: string;
   baseUrl: string;
+  /** 区块标题，缺省 "Featured selections" */
+  title?: string;
 };
 
 function ProductCard({ sku, index, baseUrl }: { sku: SKU; index: number; baseUrl: string }) {
@@ -79,7 +81,7 @@ function ProductCard({ sku, index, baseUrl }: { sku: SKU; index: number; baseUrl
   );
 }
 
-export function FeaturedSKUs({ skus, categoryLabel, baseUrl }: Props) {
+export function FeaturedSKUs({ skus, categoryLabel, baseUrl, title }: Props) {
   const productSchemas = skus.map((sku) => ({
     "@context": "https://schema.org",
     "@type": "Product",
@@ -121,7 +123,7 @@ export function FeaturedSKUs({ skus, categoryLabel, baseUrl }: Props) {
               lineHeight: 1.1
             }}
           >
-            Featured selections
+            {title ?? "Featured selections"}
           </h2>
         </Reveal>
 
