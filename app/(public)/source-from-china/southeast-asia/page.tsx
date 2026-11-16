@@ -11,7 +11,7 @@ import { ProjectInquiryForm } from "@/components/forms/project-inquiry-form";
 import styles from "./southeast-asia.module.css";
 
 const sourcePage = "/source-from-china/southeast-asia";
-const title = "China Sourcing for Southeast Asia — Hotel FF&E";
+const title = "China Sourcing for Singapore & Southeast Asia — Hotel FF&E";
 const description = "Source hotel FF&E, tiles and interior packages from China for Southeast Asian projects — factory QC, consolidation and shipping to your regional port.";
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -43,6 +43,7 @@ const markets = [
   { title: "Singapore", body: "For design and procurement teams, share specifications, documentation requirements and site access constraints before selection." }
 ];
 const faqs = [
+  { question: "Are you a hotel FF&E vendor for Singapore projects?", answer: "Yes, on the China side. For Singapore hotel projects we specify, source, inspect, consolidate and export the FF&E package from China. Your appointed local team handles import, clearance, delivery, installation and local compliance documents. Full turnkey delivery is available only in Ghana." },
   { question: "Do you install interiors in Southeast Asia?", answer: "Our Southeast Asia offer covers remote design and specification, China-side sourcing, quality control, consolidation and export. Your appointed local team handles import, clearance, inland delivery and installation. Full turnkey delivery is available only in Ghana." },
   { question: "What should I send for a sourcing proposal?", answer: "Send your country and city, project type, room or unit count, drawings or bill of quantities, budget range and target delivery date. Name your importer and installer if already appointed. We review the scope before agreeing prices or a programme." },
   { question: "Can several product categories ship together?", answer: "We coordinate multiple suppliers and categories into an export plan. Container type, packing, shipment phases and suitability for consolidation depend on the approved quantities, fragile items and production dates." },
@@ -60,7 +61,7 @@ export default function SoutheastAsiaPage() {
         <div className={`container-wide ${styles.heroContent}`}>
           <p>Decoropic / China sourcing & export</p>
           <h1>Interior materials from China for Southeast Asia</h1>
-          <p className={styles.subtitle}>Hotel FF&E, villa interiors and apartment packages. Design, sourcing, quality control and consolidated export from China, coordinated with your local project team.</p>
+          <p className={styles.subtitle}>Hotel FF&E, villa interiors and apartment packages for Singapore and the rest of Southeast Asia. Design, sourcing, quality control and consolidated export from China, coordinated with your local project team.</p>
           <div className={styles.actions}>
             <a href="#project-brief" className={styles.primary}>Discuss your project <ArrowRight size={18} /></a>
             <LpWhatsAppButton sourcePage={sourcePage} message="Hi Decoropic, I have a Southeast Asia project. Country/city: __. Hotel/villa/apartment: __. Rooms/units: __. Target delivery: __. Please help with China sourcing and export." className={styles.whatsapp} />

@@ -120,6 +120,27 @@ export function HomeProductBridge({ locale }: HomeProductBridgeProps) {
           </div>
         </Reveal>
 
+        {/* 加纳两个价格/装修词的入口(GSC 排名 10–11 位) */}
+        <Reveal delay={700}>
+          <p className="mt-12 text-sm leading-[1.8] text-brand-pine-dark/75">
+            {locale === "zh" ? "加纳项目参考:" : "Building in Ghana? See "}
+            <Link
+              href={localizePath("/products/doors-windows", locale)}
+              className="text-brand-pine underline decoration-brand-gold/60 underline-offset-2 hover:text-brand-gold"
+            >
+              {locale === "zh" ? "加纳铝合金窗价格" : "aluminium window prices in Ghana"}
+            </Link>
+            {locale === "zh" ? "、" : " and our guide to "}
+            <Link
+              href={localizePath("/guides/sanitaryware-bathroom-import-ghana", locale)}
+              className="text-brand-pine underline decoration-brand-gold/60 underline-offset-2 hover:text-brand-gold"
+            >
+              {locale === "zh" ? "加纳卫生间装修" : "bathroom renovation in Ghana"}
+            </Link>
+            {locale === "zh" ? "。" : "."}
+          </p>
+        </Reveal>
+
         {/* CTAs */}
         <Reveal delay={800}>
           <div className="mt-14 flex flex-wrap gap-3">
