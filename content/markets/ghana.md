@@ -4,7 +4,7 @@ title: "Building Materials Supplier Ghana from China | Decoropic"
 description: "Tiles, furniture, sanitaryware, lighting, doors and windows from Foshan to Ghana, with an Accra office, Tema port clearing and on-site measurement and install."
 h1: "Building Materials Supplier for Ghana, Shipped from China"
 primary_keyword: "building materials supplier Ghana from China"
-lastmod: "2026-11-16"
+lastmod: "2026-11-23"
 ---
 
 As a building materials supplier, Ghana from China is the route we know best. Decoropic is the brand of Foshan Home Style Import & Export Co., Ltd., founded in 2011 in Foshan. Our founder has 26 years in the building-materials trade and more than 20 years working in Ghana. We buy in Foshan, check and consolidate the goods in our own warehouse, ship to Tema, and our staffed Accra office follows the job through to site: measurement before the order, clearing at Tema, and installation supervision after delivery.
@@ -15,7 +15,7 @@ As a building materials supplier, Ghana from China is the route we know best. De
 |---|---|---|
 | Tema (FCL) | About 28–35 days | Main container port for Accra and most of our deliveries; cleared by our Tema clearing partners |
 | Tema (LCL / shared container) | Add about 7–10 days to FCL | Extra time for consolidation and deconsolidation |
-| Takoradi | Confirmed at booking | Western Region port; useful for sites in the west |
+| Takoradi | About 35–48 days | Western Region port; fewer direct sailings than Tema (often transshipped); useful for sites in the west |
 
 Transit ranges are published forwarder estimates and change with carrier, routing and season. We confirm the schedule at booking.
 
@@ -67,7 +67,7 @@ Yes. Every category is delivered to our Foshan warehouse, checked, and loaded to
 T/T or L/C.
 
 **How long from order to delivery in Ghana?**
-Confirmed with your quote — talk to our team on WhatsApp +233 59 247 0446.
+Plan for **8–12 weeks** from approved drawings to site delivery (3–5 weeks production and Foshan QC, 4–5 weeks sea transit to Tema, 1–2 weeks port clearance). Exact timing is confirmed with your quote — talk to our team on WhatsApp +233 59 247 0446.
 
 ## Get a quote
 

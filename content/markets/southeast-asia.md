@@ -4,7 +4,7 @@ title: "Source Interior Materials from China for Southeast Asia"
 description: "Source interior materials from China for Southeast Asia projects: tiles, furniture, bathroom, kitchen and lighting checked in Foshan, consolidated and shipped."
 h1: "Source Interior Materials from China for Southeast Asia Projects"
 primary_keyword: "source interior materials from China for Southeast Asia projects"
-lastmod: "2026-10-24"
+lastmod: "2026-11-23"
 ---
 
 When you source interior materials from China for Southeast Asia projects, short sea routes from South China keep transit time low, so most of your timeline goes into selection, production and checking. Decoropic is the brand of Foshan Home Style Import & Export Co., Ltd., founded in Foshan in 2011. We buy tiles, furniture, bathroom and kitchen products, lighting, doors and windows from Foshan and Guangdong makers, check them at our warehouse, and ship the package to your port with your forwarder or ours.
@@ -17,7 +17,7 @@ When you source interior materials from China for Southeast Asia projects, short
 | Laem Chabang, Thailand | About 7–14 days | Direct services faster; transshipment slower |
 | Manila, Philippines | About 9 days | Published Shenzhen figure |
 | Haiphong, Vietnam | About 10–15 days | Northern Vietnam gateway |
-| Ho Chi Minh City (Cat Lai), Vietnam | Confirmed at booking | Southern Vietnam gateway |
+| Ho Chi Minh City (Cat Lai), Vietnam | About 5–7 days | Southern Vietnam gateway; direct sailings from Shenzhen/Guangzhou |
 
 These are published forwarder ranges, not guarantees. The schedule is confirmed at booking.
 
@@ -65,7 +65,7 @@ Yes. Every category is consolidated at our Foshan warehouse and loaded together,
 T/T or L/C.
 
 **What is the lead time?**
-Confirmed with your quote — talk to our team on WhatsApp +233 59 247 0446.
+Plan for **5–8 weeks** from approved drawings to port arrival (3–5 weeks production and Foshan QC, 5–15 days sea transit depending on destination port). Exact timing is confirmed with your quote — talk to our team on WhatsApp +233 59 247 0446.
 
 ## Get a quote
 

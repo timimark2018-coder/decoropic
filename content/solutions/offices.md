@@ -4,7 +4,7 @@ title: "Office Fit-Out Furniture and Materials from China"
 description: "Office fit-out furniture and materials from China: workstations, meeting rooms, partitions, flooring, lighting and doors sourced in Foshan, inspected, shipped."
 h1: "Office Fit-Out Furniture and Materials from China"
 primary_keyword: "office fit-out furniture and materials from China"
-lastmod: "2026-10-24"
+lastmod: "2026-11-23"
 ---
 
 Office fit-out furniture and materials from China can be bought as one package covering the workspace, meeting rooms, reception and washrooms. Decoropic, the brand of Foshan Home Style Import & Export Co., Ltd., founded in 2011 in Foshan, plans the layout around your headcount and budget, sources each category from Foshan and Guangdong factories, checks the goods in our warehouse and ships them together. In Ghana our Accra team measures and supervises on site; overseas we work from drawings and video.
@@ -25,11 +25,11 @@ Office fit-out furniture and materials from China can be bought as one package c
 
 ## Budget tiers
 
-| Tier | Typical finishes |
-| --- | --- |
-| Functional | Melamine desking, mesh task chairs, standard partitions, basic LED panel lights, standard porcelain tiles |
-| Mid-Range | Bench desking with cable trays, ergonomic chairs, full-height glass partitions, coordinated lighting, branded reception counter |
-| Premium | Veneer or lacquer executive furniture, height-adjustable desks, frameless glass partitions, decorative lighting, stone-look reception finishes |
+| Tier | Indicative USD range (planning) | Typical finishes |
+| --- | --- | --- |
+| Functional | $56–$75 / m² | Melamine desking, mesh task chairs, standard partitions, basic LED panel lights, standard porcelain tiles |
+| Mid-Range | $79–$107 / m² | Bench desking with cable trays, ergonomic chairs, full-height glass partitions, coordinated lighting, branded reception counter |
+| Premium | $127–$172 / m² | Veneer or lacquer executive furniture, height-adjustable desks, frameless glass partitions, decorative lighting, stone-look reception finishes |
 
 [Send your project brief](/contact?type=commercial) and we will come back with a layout and tiered pricing.
 
@@ -52,7 +52,7 @@ Office fit-out furniture and materials from China can be bought as one package c
 No minimum order. Mixed categories can be consolidated in one container.
 
 **How long does an office fit-out order take?**
-Confirmed with your quote — talk to our team on WhatsApp +233 59 247 0446.
+Plan for **8–12 weeks** from layout approval to delivery in Ghana (3–5 weeks production and Foshan QC, 4–6 weeks sea freight and clearance). Exact timing is confirmed with your quote — talk to our team on WhatsApp +233 59 247 0446.
 
 **Can furniture match our company colours?**
 Yes. Desk finishes, chair fabrics, partition film and the reception counter can be specified in your colours. We confirm samples before production.
@@ -64,7 +64,7 @@ Yes. We serve office projects worldwide. Outside Ghana, we hand the consolidated
 
 [Send your project brief](/contact?type=commercial), or send your floor plan and headcount on WhatsApp to +233 59 247 0446. We will reply with a layout and tiered pricing.
 
-**Internal links:** /contact, /source-from-china, /contact
+**Internal links:** [Contact](/contact) · [Source from China](/source-from-china) · [Products](/products)
 
 **Image suggestions:**
 - office-workstations-china-fit-out.webp — Open-plan office with workstations and task chairs supplied from China

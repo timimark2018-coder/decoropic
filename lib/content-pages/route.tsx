@@ -92,6 +92,18 @@ const HERO_IMAGES: Record<string, { src: string; alt: string }> = {
   "solutions/apartments": {
     src: "/projects/03-airport-residential-apt/living-room.webp",
     alt: "Apartment living area fitted with porcelain tiles and aluminium sliding door from China"
+  },
+  "solutions/hotels": {
+    src: "/projects/08-tamale-hotel-room-renovation/bedroom-entry.webp",
+    alt: "Hotel guestroom with bed, headboard, desk and wardrobe supplied by a China FF&E supplier"
+  },
+  "solutions/restaurants": {
+    src: "/projects/ug-restaurant-buffet.webp",
+    alt: "Restaurant dining room and buffet island fit-out sourced from Foshan, China"
+  },
+  "markets/ghana": {
+    src: "/projects/01-east-legon-villa/exterior.webp",
+    alt: "Completed villa project in Accra, Ghana supplied with building materials from China"
   }
 };
 

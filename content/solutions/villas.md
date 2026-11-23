@@ -5,7 +5,7 @@ description: "One villa interior materials package from China: tiles, doors, win
 h1: "Villa Interior Materials Package from China"
 primary_keyword: "villa interior materials package from China"
 project_cards: east-legon-villa, adjiringanor-family-villa, airport-hills-modern-build
-lastmod: "2026-11-04"
+lastmod: "2026-11-23"
 ---
 
 A villa interior materials package from China lets you buy every finish for a private house through one supplier, one contract and one consolidated shipment. Decoropic is the brand of Foshan Home Style Import & Export Co., Ltd., founded in 2011 in Foshan. We measure the house, draw a design around your budget, source each category from factories in Foshan and Guangdong, inspect the goods in our warehouse and ship them together. Our Accra team supports installation in Ghana; overseas clients get drawings, video guides and a WhatsApp line.
@@ -26,11 +26,11 @@ A villa interior materials package from China lets you buy every finish for a pr
 
 ## Budget tiers
 
-| Tier | Typical finishes |
-| --- | --- |
-| Functional | Standard-size porcelain tiles, flat-panel doors, basic aluminium windows, laminate kitchen fronts, standard sanitaryware |
-| Mid-Range | Large-format tiles, solid-core doors, thermal-break or heavier aluminium profiles, quartz worktops, concealed cisterns, coordinated lighting |
-| Premium | Slab tiles or marble-look surfaces, pivot or custom entrance door, slim-frame windows, lacquer or veneer kitchen, designer lighting, custom furniture |
+| Tier | Indicative USD range (planning) | Typical finishes |
+| --- | --- | --- |
+| Functional | $48–$64 / m² (300 m² villa ~$20k–$45k) | Standard-size porcelain tiles, flat-panel doors, basic aluminium windows, laminate kitchen fronts, standard sanitaryware |
+| Mid-Range | $68–$92 / m² (300 m² villa ~$45k–$110k) | Large-format tiles, solid-core doors, thermal-break or heavier aluminium profiles, quartz worktops, concealed cisterns, coordinated lighting |
+| Premium | $109–$147 / m² (300 m² villa ~$110k–$245k) | Slab tiles or marble-look surfaces, pivot or custom entrance door, slim-frame windows, lacquer or veneer kitchen, designer lighting, custom furniture |
 
 Use our 11-step [estimator](/estimator?type=villa) for a range.
 
@@ -53,7 +53,7 @@ Villas we have delivered in Accra, with the tier, size and programme each one ra
 No minimum order. Mixed categories can be consolidated in one container.
 
 **How long does a villa package take from approved design to shipment?**
-Confirmed with your quote — talk to our team on WhatsApp +233 59 247 0446.
+Plan for **8–12 weeks** from approved drawings to site delivery in Ghana (4–5 weeks production and Foshan QC, 4–6 weeks sea freight to Tema and clearance). Exact timing is confirmed with your quote — talk to our team on WhatsApp +233 59 247 0446.
 
 **Can doors, windows and cabinets be made to our sizes?**
 Yes. Doors, windows, kitchen cabinets and wardrobes are produced to the measurements taken on site or from your drawings. Finishes, colours and hardware are chosen during the design stage.

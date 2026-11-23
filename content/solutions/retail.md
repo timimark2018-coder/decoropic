@@ -4,7 +4,7 @@ title: "Showroom and Retail Fit-Out Materials from China"
 description: "Showroom and retail fit-out materials from China: display shelving, counters, lighting, flooring, glass and signage frames sourced in Foshan and shipped as one."
 h1: "Showroom and Retail Fit-Out Materials from China"
 primary_keyword: "showroom and retail fit-out materials from China"
-lastmod: "2026-10-24"
+lastmod: "2026-11-23"
 ---
 
 Showroom and retail fit-out materials from China can cover everything a shop needs to open: display fixtures, counters, lighting, flooring and the finishes around them. Decoropic, the brand of Foshan Home Style Import & Export Co., Ltd., founded in 2011 in Foshan, plans the layout around your products and budget, sources each category from Foshan and Guangdong factories, checks it in our warehouse and ships it together. In Ghana our Accra team measures and supports installation on site.
@@ -26,11 +26,11 @@ Showroom and retail fit-out materials from China can cover everything a shop nee
 
 ## Budget tiers
 
-| Tier | Typical finishes |
-| --- | --- |
-| Functional | Metal shelving, melamine counters, standard porcelain tiles, basic track lighting, standard glass doors |
-| Mid-Range | Custom wall displays, lacquer or veneer counters, large-format tiles, adjustable spotlights, lit glass showcases |
-| Premium | Fully custom display joinery, stone or slab surfaces, decorative feature lighting, frameless glass storefront |
+| Tier | Indicative USD range (planning) | Typical finishes |
+| --- | --- | --- |
+| Functional | $55–$75 / m² | Metal shelving, melamine counters, standard porcelain tiles, basic track lighting, standard glass doors |
+| Mid-Range | $80–$110 / m² | Custom wall displays, lacquer or veneer counters, large-format tiles, adjustable spotlights, lit glass showcases |
+| Premium | $125–$175 / m² | Fully custom display joinery, stone or slab surfaces, decorative feature lighting, frameless glass storefront |
 
 [Send your project brief](/contact?type=commercial) and we will come back with a layout and tiered pricing.
 
@@ -53,7 +53,7 @@ Showroom and retail fit-out materials from China can cover everything a shop nee
 No minimum order. Mixed categories can be consolidated in one container.
 
 **How long does a retail fit-out take to produce?**
-Confirmed with your quote — talk to our team on WhatsApp +233 59 247 0446.
+Plan for **8–12 weeks** from approved display drawings to delivery in Ghana (3–5 weeks production and Foshan QC, 4–6 weeks sea transit and clearance). Exact timing is confirmed with your quote — talk to our team on WhatsApp +233 59 247 0446.
 
 **Can fixtures be designed around our products and brand?**
 Yes. Shelf depths, display heights, colours and counter finishes are specified to suit your products and brand. We confirm samples or drawings before production.
@@ -65,7 +65,7 @@ Yes. We serve retail projects worldwide. Outside Ghana, the consolidated shipmen
 
 [Send your project brief](/contact?type=commercial), or send your floor plan and product list on WhatsApp to +233 59 247 0446. We will reply with a layout and tiered pricing.
 
-**Internal links:** /contact, /products, /contact
+**Internal links:** [Contact](/contact) · [Products](/products) · [Source from China](/source-from-china)
 
 **Image suggestions:**
 - retail-store-display-shelving-china.webp — Retail store with wall display shelving and track lighting sourced from China

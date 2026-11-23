@@ -4,7 +4,7 @@ title: "Turnkey Hotel Packages with Design | Hotel FF&E China"
 description: "Turnkey hotel packages with design + sourcing + shipping + installation: guestroom FF&E, lighting, bathrooms and finishes from China, with an Accra office."
 h1: "Turnkey Hotel Packages with Design — FF&E from China"
 primary_keyword: "hotel FF&E supplier China"
-lastmod: "2026-11-16"
+lastmod: "2026-11-23"
 ---
 
 Decoropic delivers turnkey hotel packages with design: we design the rooms, source FF&E, finishes and sanitaryware in Foshan, ship to your port and supervise installation in Ghana.
@@ -27,11 +27,11 @@ Working with a hotel FF&E supplier in China makes sense when you want guestrooms
 
 ## Budget tiers
 
-| Tier | Typical finishes |
-| --- | --- |
-| Functional | Melamine casegoods, fabric seating in commercial-grade fabric, standard porcelain tiles, basic LED lighting, standard sanitaryware |
-| Mid-Range | Veneer casegoods, upholstered headboards, large-format tiles, coordinated lighting scheme, wall-hung sanitaryware |
-| Premium | Custom-designed casegoods, stone or slab surfaces, decorative lighting, solid-wood doors, branded-standard bathroom fittings |
+| Tier | Indicative USD range (planning) | Typical finishes |
+| --- | --- | --- |
+| Functional | $60–$81 / m² (~$4,500–$7,500 / key) | Melamine casegoods, fabric seating in commercial-grade fabric, standard porcelain tiles, basic LED lighting, standard sanitaryware |
+| Mid-Range | $85–$115 / m² (~$7,500–$12,000 / key) | Veneer casegoods, upholstered headboards, large-format tiles, coordinated lighting scheme, wall-hung sanitaryware |
+| Premium | $136–$184 / m² (~$12,000–$22,000+ / key) | Custom-designed casegoods, stone or slab surfaces, decorative lighting, solid-wood doors, branded-standard bathroom fittings |
 
 [Send your project brief](/contact?type=commercial) and we will come back with an FF&E schedule and tiered pricing.
 
@@ -57,7 +57,7 @@ Decoropic delivers turnkey hotel packages with design: we design the rooms, sour
 No minimum order. Mixed categories can be consolidated in one container.
 
 **What is the lead time for a hotel FF&E order?**
-Confirmed with your quote — talk to our team on WhatsApp +233 59 247 0446.
+Plan for **10–14 weeks** from sample-room approval to site delivery in Ghana (5–6 weeks production and QC in Foshan, 4–6 weeks sea transit and Tema clearance). Exact timing is confirmed with your quote — talk to our team on WhatsApp +233 59 247 0446.
 
 **Can you build to our designer's drawings and brand standards?**
 Yes. We can produce casegoods and seating to your interior designer's drawings, materials and finishes. We recommend approving one sample room before full production.

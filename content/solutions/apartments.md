@@ -5,7 +5,7 @@ description: "Apartment fit-out materials from China for developers: repeatable 
 h1: "Apartment Fit-Out Materials from China"
 primary_keyword: "apartment fit-out materials from China"
 project_cards: cantonments-penthouse, airport-residential-apartment
-lastmod: "2026-11-04"
+lastmod: "2026-11-23"
 ---
 
 Apartment fit-out materials from China work best when every unit is specified once and supplied as a repeatable pack. Decoropic, the brand of Foshan Home Style Import & Export Co., Ltd., founded in 2011 in Foshan, helps developers and contractors define a standard unit specification, source it across categories, check it in our Foshan warehouse and ship it in planned batches. Our Accra team measures sites in Ghana; for projects elsewhere we work from drawings and video walk-throughs.
@@ -26,11 +26,11 @@ Apartment fit-out materials from China work best when every unit is specified on
 
 ## Budget tiers
 
-| Tier | Typical finishes |
-| --- | --- |
-| Functional | Standard porcelain tiles, flat-panel interior doors, standard aluminium windows, melamine kitchen modules, basic sanitaryware |
-| Mid-Range | Larger-format tiles, steel-security entrance doors, heavier window profiles, quartz or solid-surface worktops, wall-hung toilets |
-| Premium | Marble-look slab tiles, veneer doors, slim-frame windows, high-gloss or lacquer kitchens, coordinated lighting and furniture packs |
+| Tier | Indicative USD range (planning) | Typical finishes |
+| --- | --- | --- |
+| Functional | $48–$64 / m² (1–3 bed ~$6k–$12k / unit) | Standard porcelain tiles, flat-panel interior doors, standard aluminium windows, melamine kitchen modules, basic sanitaryware |
+| Mid-Range | $68–$92 / m² (1–3 bed ~$12k–$25k / unit) | Larger-format tiles, steel-security entrance doors, heavier window profiles, quartz or solid-surface worktops, wall-hung toilets |
+| Premium | $109–$147 / m² (1–3 bed ~$25k–$50k+ / unit) | Marble-look slab tiles, veneer doors, slim-frame windows, high-gloss or lacquer kitchens, coordinated lighting and furniture packs |
 
 Use our 11-step [estimator](/estimator?type=apartment) for a range.
 
@@ -53,7 +53,7 @@ Apartment and penthouse projects we have delivered in Accra.
 No minimum order. Mixed categories can be consolidated in one container.
 
 **How long does production take for a full block?**
-Confirmed with your quote — talk to our team on WhatsApp +233 59 247 0446.
+Plan for **8–12 weeks** from approved unit specification to first delivery in Ghana (a show unit can ship first, with production units phased by floor). Exact timing is confirmed with your quote — talk to our team on WhatsApp +233 59 247 0446.
 
 **Can we use different specifications for different unit types?**
 Yes. Studios, two-bedroom and penthouse units can each have their own specification. We keep a separate schedule and packing list for each type.

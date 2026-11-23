@@ -4,7 +4,7 @@ title: "Restaurant Fit-Out Sourcing China | Decoropic"
 description: "Restaurant fit-out sourcing in China: dining seating, bar counters, lighting, tiles, washrooms and doors from Foshan, checked in one warehouse, shipped as one."
 h1: "Restaurant Fit-Out Sourcing from China"
 primary_keyword: "restaurant fit-out sourcing China"
-lastmod: "2026-10-24"
+lastmod: "2026-11-23"
 ---
 
 Restaurant fit-out sourcing in China lets you furnish and finish a dining room, bar and washrooms through one supplier instead of several importers. Decoropic, the brand of Foshan Home Style Import & Export Co., Ltd., founded in 2011 in Foshan, designs around your seating plan and budget, buys each category from Foshan and Guangdong factories, checks everything in our warehouse and ships it together. In Ghana our Accra team measures the space and supports installation on site.
@@ -25,11 +25,11 @@ Restaurant fit-out sourcing in China lets you furnish and finish a dining room, 
 
 ## Budget tiers
 
-| Tier | Typical finishes |
-| --- | --- |
-| Functional | Metal-frame chairs, laminate tabletops, standard porcelain floor tiles, basic LED lighting, standard sanitaryware |
-| Mid-Range | Upholstered chairs and booths, solid-wood or stone-look tabletops, feature wall tiles, coordinated pendant lighting |
-| Premium | Custom-designed seating and bar counter, marble or slab surfaces, decorative lighting, designer washroom fittings |
+| Tier | Indicative USD range (planning) | Typical finishes |
+| --- | --- | --- |
+| Functional | $65–$90 / m² | Metal-frame chairs, laminate tabletops, standard porcelain floor tiles, basic LED lighting, standard sanitaryware |
+| Mid-Range | $95–$135 / m² | Upholstered chairs and booths, solid-wood or stone-look tabletops, feature wall tiles, coordinated pendant lighting |
+| Premium | $150–$230 / m² | Custom-designed seating and bar counter, marble or slab surfaces, decorative lighting, designer washroom fittings |
 
 [Send your project brief](/contact?type=commercial) and we will come back with a layout and tiered pricing.
 
@@ -52,7 +52,7 @@ Restaurant fit-out sourcing in China lets you furnish and finish a dining room, 
 No minimum order. Mixed categories can be consolidated in one container.
 
 **How long does a restaurant fit-out take to produce and ship?**
-Confirmed with your quote — talk to our team on WhatsApp +233 59 247 0446.
+Plan for **8–12 weeks** from approved seating and bar drawings to site delivery in Ghana (4–5 weeks production and Foshan QC, 4–6 weeks sea transit and clearance). Exact timing is confirmed with your quote — talk to our team on WhatsApp +233 59 247 0446.
 
 **Can you match our brand concept?**
 Yes. Upholstery, table finishes, the bar counter and feature walls can be specified to your concept. We send fabric and finish samples for approval before production starts.
@@ -64,7 +64,7 @@ Yes. We serve restaurant projects worldwide. Outside Ghana, the consolidated shi
 
 [Send your project brief](/contact?type=commercial), or send your floor plan and seat count on WhatsApp to +233 59 247 0446. We will reply with a layout and tiered pricing.
 
-**Internal links:** /contact, /guides, /projects
+**Internal links:** [Contact](/contact) · [Guides](/guides) · [Projects](/projects)
 
 **Image suggestions:**
 - restaurant-dining-room-furniture-china.webp — Restaurant dining room with tables, chairs and pendant lights sourced from China
