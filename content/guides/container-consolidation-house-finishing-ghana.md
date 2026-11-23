@@ -5,7 +5,12 @@ slug: "container-consolidation-house-finishing-ghana"
 targetKeyword: "shipping container house materials Ghana"
 category: "Ghana guides"
 order: 26
-lastmod: "2026-10-26"
+lastmod: "2026-11-23"
+keyTakeaways:
+  - "One 40HQ container (~76.4 m³ nominal) can carry the complete finishing package for a villa or multiple apartments — kitchens, wardrobes, doors, sanitaryware, lighting and furniture."
+  - "Consolidating mixed categories at one Foshan warehouse cuts logistics overhead by combining into one bill of lading, one Tema clearance and one site delivery."
+  - "Load heavy dense items (tiles, stone) low and flat, crate glass/mirrors on edge, use desiccants, and sequence cartons in reverse order of installation."
+  - "Choose LCL (groupage) only for small single-category orders; once volume approaches half a container, FCL consolidation lowers damage risk and per-m³ cost."
 ---
 
 # Shipping a Container of House Finishing Materials to Ghana: How a 40HQ Is Packed, and LCL vs FCL

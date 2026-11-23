@@ -5,7 +5,12 @@ slug: "cost-to-finish-4-bedroom-villa-accra"
 targetKeyword: "cost to finish a 4 bedroom house in Ghana"
 category: "Ghana guides"
 order: 10
-lastmod: "2026-10-26"
+lastmod: "2026-11-23"
+keyTakeaways:
+  - "Finishing a 4-bedroom house in Ghana starts once the shell is weather-tight (roof on, external render, slabs cured, first-fix MEP in) and stacks 8–9 independent category budgets."
+  - "Kitchens, bathrooms, doors/windows, wardrobes and tiles carry the largest spend variance — lock specifications by tier (Functional, Mid-Range, Premium) before ordering."
+  - "Direct consolidated sourcing from Foshan typically reduces finishing material costs compared to local retail, while cement, blocks, sand, paint and installation labour stay local."
+  - "Build in logistics, Tema port clearance/duties and a 15% contingency before committing to custom orders so late changes do not stall handover."
 ---
 
 # Cost to Finish a 4 Bedroom House in Ghana: How the Budget Breaks Down

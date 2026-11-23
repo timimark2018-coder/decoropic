@@ -5,7 +5,12 @@ slug: "ghana-house-finishing-timeline"
 targetKeyword: "how long to finish a house in Ghana"
 category: "Ghana guides"
 order: 15
-lastmod: "2026-10-26"
+lastmod: "2026-11-23"
+keyTakeaways:
+  - "Once a house shell is weather-tight, the critical path runs through site measurement, custom production in China, ~30 days sea transit to Tema and port clearance."
+  - "Measure kitchens, wardrobes, doors and aluminium windows only after plastering, floor screed and MEP points are fixed to prevent costly remakes."
+  - "Every week spent revising design sign-offs adds a week to final handover — approve drawings and appliance lists early so production runs in parallel with site prep."
+  - "Plan installation in sequence (windows/doors, tiling, kitchens/wardrobes, sanitaryware, then lighting) and allow 4–8 weeks for fitting a 4-bedroom house."
 ---
 
 # How Long to Finish a House in Ghana? A Stage-by-Stage Timeline

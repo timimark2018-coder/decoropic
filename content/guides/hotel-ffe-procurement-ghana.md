@@ -5,7 +5,12 @@ slug: "hotel-ffe-procurement-ghana"
 targetKeyword: "hotel FF&E procurement Ghana"
 category: "Ghana guides"
 order: 16
-lastmod: "2026-11-16"
+lastmod: "2026-11-23"
+keyTakeaways:
+  - "Scope a 20 to 100 room hotel FF&E package directly from your room matrix and finish schedule so casegoods, seating, lighting, doors and bathroom fittings match across every room type."
+  - "Always build and sign off one mock-up room before bulk production — catching a socket clash, finish tone or clearance issue on 1 room avoids repeating it across 50."
+  - "Run factory and warehouse QC on repeat items, pack and label cartons by floor/room type, and include ~5% spare hardware, fabric and batch-matched tiles."
+  - "Phase consolidated container shipments via Tema to match your floor-by-floor handover schedule and keep operating rooms trading during renovations."
 ---
 
 # Hotel FF&E Procurement in Ghana: Sourcing a Package for 20 to 100 Rooms

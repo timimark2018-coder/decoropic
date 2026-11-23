@@ -24,30 +24,30 @@
 
 | URL | Title | targetKeyword | lastmod |
 |---|---|---|---|
-| https://www.decoropic.com/guides/aluminium-windows-doors-ghana-import-guide | Aluminium Sliding Door Price in Ghana: Windows & Doors | aluminium windows Ghana price | 2026-10-27 |
+| https://www.decoropic.com/guides/aluminium-windows-doors-ghana-import-guide | Aluminium Sliding Door Price in Ghana: Windows & Doors | aluminium windows Ghana price | 2026-11-23 |
 | https://www.decoropic.com/guides/apartment-developer-finishing-packages-ghana | Finishing Materials for Apartment Developers in Ghana | finishing materials for apartment developers Ghana | 2026-10-26 |
 | https://www.decoropic.com/guides/china-to-tema-shipping-cost | China to Tema Container Cost: What You Pay For | China to Tema container cost | 2026-11-23 |
-| https://www.decoropic.com/guides/container-consolidation-house-finishing-ghana | Shipping Container for House Materials to Ghana: 40HQ | shipping container house materials Ghana | 2026-10-26 |
-| https://www.decoropic.com/guides/cost-to-finish-4-bedroom-villa-accra | Cost to Finish a 4 Bedroom House in Ghana: Budget Guide | cost to finish a 4 bedroom house in Ghana | 2026-10-26 |
+| https://www.decoropic.com/guides/container-consolidation-house-finishing-ghana | Shipping Container for House Materials to Ghana: 40HQ | shipping container house materials Ghana | 2026-11-23 |
+| https://www.decoropic.com/guides/cost-to-finish-4-bedroom-villa-accra | Cost to Finish a 4 Bedroom House in Ghana: Budget Guide | cost to finish a 4 bedroom house in Ghana | 2026-11-23 |
 | https://www.decoropic.com/guides/developer-show-house-finishing-ghana | Show House Finishing in Ghana: Selling Off-Plan | show house finishing Ghana developers | 2026-10-26 |
-| https://www.decoropic.com/guides/diaspora-building-in-ghana-pay-by-milestones | Building a House in Ghana from Abroad: Pay by Milestones | building a house in Ghana from abroad | 2026-10-26 |
+| https://www.decoropic.com/guides/diaspora-building-in-ghana-pay-by-milestones | Building a House in Ghana from Abroad: Pay by Milestones | building a house in Ghana from abroad | 2026-11-23 |
 | https://www.decoropic.com/guides/fitted-wardrobes-ghana-custom-import | Fitted Wardrobes in Ghana: Measure, Materials, Import | fitted wardrobes Ghana | 2026-10-26 |
 | https://www.decoropic.com/guides/ghana-electrical-standards-lighting-import | Lighting Import Ghana: 230V, Type G and GSA Conformity | lighting import Ghana standards | 2026-10-26 |
-| https://www.decoropic.com/guides/ghana-house-finishing-timeline | How Long to Finish a House in Ghana: Stage Timeline | how long to finish a house in Ghana | 2026-10-26 |
+| https://www.decoropic.com/guides/ghana-house-finishing-timeline | How Long to Finish a House in Ghana: Stage Timeline | how long to finish a house in Ghana | 2026-11-23 |
 | https://www.decoropic.com/guides/hotel-ffe-checklist | Hotel FF&E Checklist: Room-by-Room List | list of FF&E items for hotels | 2026-11-23 |
-| https://www.decoropic.com/guides/hotel-ffe-procurement-ghana | Hotel FF&E Procurement in Ghana: A 20 to 100 Room Guide | hotel FF&E procurement Ghana | 2026-11-16 |
-| https://www.decoropic.com/guides/import-kitchen-cabinets-china-to-ghana | Import Kitchen Cabinets from China to Ghana: Full Process | import kitchen cabinets from China to Ghana | 2026-11-16 |
+| https://www.decoropic.com/guides/hotel-ffe-procurement-ghana | Hotel FF&E Procurement in Ghana: A 20 to 100 Room Guide | hotel FF&E procurement Ghana | 2026-11-23 |
+| https://www.decoropic.com/guides/import-kitchen-cabinets-china-to-ghana | Import Kitchen Cabinets from China to Ghana: Full Process | import kitchen cabinets from China to Ghana | 2026-11-23 |
 | https://www.decoropic.com/guides/interior-doors-ghana-wood-vs-wpc | Interior Doors in Ghana: Wood, WPC or Steel? | interior doors Ghana | 2026-10-26 |
 | https://www.decoropic.com/guides/kitchen-worktops-ghana-quartz-vs-granite | Kitchen Worktops in Ghana: Quartz vs Granite vs Sintered | kitchen worktop Ghana | 2026-10-26 |
 | https://www.decoropic.com/guides/kumasi-house-finishing-materials | Building Materials Kumasi: Finishing a House Inland | building materials Kumasi | 2026-10-26 |
 | https://www.decoropic.com/guides/lighting-design-ghana-villa | Lighting for Houses in Ghana: Layered Design Guide | lighting for houses in Ghana | 2026-10-26 |
-| https://www.decoropic.com/guides/managing-a-renovation-remotely-ghana | Renovate a House in Ghana While Abroad: A Remote Plan | renovate house in Ghana while abroad | 2026-10-26 |
+| https://www.decoropic.com/guides/managing-a-renovation-remotely-ghana | Renovate a House in Ghana While Abroad: A Remote Plan | renovate house in Ghana while abroad | 2026-11-23 |
 | https://www.decoropic.com/guides/qc-before-shipping-checklist | QC Checklist Before Ordering Furniture from China | what to check before ordering custom furniture from China | 2026-11-23 |
-| https://www.decoropic.com/guides/sanitaryware-bathroom-import-ghana | Bathroom Renovation Ghana: Fittings, Import or Local? | bathroom fittings suppliers in Ghana | 2026-10-27 |
+| https://www.decoropic.com/guides/sanitaryware-bathroom-import-ghana | Bathroom Renovation Ghana: Fittings, Import or Local? | bathroom fittings suppliers in Ghana | 2026-11-23 |
 | https://www.decoropic.com/guides/ship-furniture-china-to-ghana | How to Ship Furniture from China to Ghana | ship furniture from China to Ghana | 2026-11-23 |
 | https://www.decoropic.com/guides/small-hotel-renovation-ghana-guesthouse | Guest House Renovation in Ghana: Refresh in Phases | guest house renovation Ghana | 2026-10-26 |
 | https://www.decoropic.com/guides/takoradi-western-region-house-finishing | Building Materials Takoradi: Finishing Western Region Homes | building materials Takoradi | 2026-10-26 |
-| https://www.decoropic.com/guides/tema-port-clearing-building-materials | Clearing Goods at Tema Port: Building Materials Guide | clearing goods at Tema port | 2026-10-26 |
+| https://www.decoropic.com/guides/tema-port-clearing-building-materials | Clearing Goods at Tema Port: Building Materials Guide | clearing goods at Tema port | 2026-11-23 |
 
 ## West Africa guides(9)
 

@@ -5,7 +5,12 @@ slug: "diaspora-building-in-ghana-pay-by-milestones"
 targetKeyword: "building a house in Ghana from abroad"
 category: "Ghana guides"
 order: 12
-lastmod: "2026-10-26"
+lastmod: "2026-11-23"
+keyTakeaways:
+  - "Most diaspora finishing overruns come from budget drift — cash sent in lump sums gets split across unrelated labour and small local lots with no itemised record."
+  - "Tie every T/T or L/C milestone payment to verifiable proof: measured drawings, factory production photos, Foshan warehouse QC videos, B/L copies and site handover."
+  - "Consolidating kitchens, bathrooms, doors, tiles and furniture under one accountable supplier eliminates multi-vendor blame chains and duplicate clearing fees."
+  - "Schedule fixed weekly video walkthroughs from site and allow a trusted local relative to attend measurement and handover if desired."
 ---
 
 # Building a House in Ghana from Abroad: How to Pay by Milestones and Keep Control

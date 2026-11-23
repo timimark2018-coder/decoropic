@@ -5,7 +5,12 @@ slug: "tema-port-clearing-building-materials"
 targetKeyword: "clearing goods at Tema port"
 category: "Ghana guides"
 order: 14
-lastmod: "2026-10-26"
+lastmod: "2026-11-23"
+keyTakeaways:
+  - "Importers do not self-clear at Tema — a GRA-licensed customs house agent lodges your declaration in ICUMS, pays bank duties/levies and secures terminal release."
+  - "Prepare consistent commercial invoice, packing list, bill of lading, HS codes and any required GSA conformity documents before the vessel arrives to avoid holds."
+  - "Ghana's import tax stack assesses VAT, NHIL and GETFund on CIF plus customs duty (not CIF alone), alongside smaller CIF-based levies."
+  - "Most avoidable costs come from demurrage and detention after free days expire — clear documents and duty funds ahead of berthing."
 ---
 
 # Clearing Goods at Tema Port: A Building-Materials Importer's Guide

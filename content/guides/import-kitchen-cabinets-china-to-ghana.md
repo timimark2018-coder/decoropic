@@ -5,7 +5,12 @@ slug: "import-kitchen-cabinets-china-to-ghana"
 targetKeyword: "import kitchen cabinets from China to Ghana"
 category: "Ghana guides"
 order: 11
-lastmod: "2026-11-16"
+lastmod: "2026-11-23"
+keyTakeaways:
+  - "Importing custom kitchen cabinets from China to Ghana requires four steps in strict order: post-plaster site measurement, signed drawings/hardware schedule, export-grade packing and Tema clearance."
+  - "Specify moisture-resistant board, marine/WBP plywood or metal carcasses with 4-side edge banding and PVC/aluminium plinths for Ghana's coastal humidity and termite risk."
+  - "Confirm 230V / 50Hz appliance dimensions and sink/hob cut-outs before production so Foshan worktops and housings fit without on-site cutting."
+  - "Consolidate the kitchen with wardrobes, doors, bathrooms and lighting in one Foshan container to share freight and Tema clearing costs."
 ---
 
 # How to Import Kitchen Cabinets from China to Ghana
