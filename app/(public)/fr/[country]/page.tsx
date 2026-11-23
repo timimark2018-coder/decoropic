@@ -20,6 +20,10 @@ export async function generateStaticParams() {
 
 // 内容包的配图建议里只有这两张能对上现有图;科特迪瓦的建议(定制厨房、仓库验货)没有对应图，留空
 const HERO_IMAGES: Record<string, { src: string; alt: string }> = {
+  "cote-d-ivoire": {
+    src: "/projects/ug-tropical-lounge.webp",
+    alt: "Salon contemporain aménagé avec carrelage grand format, menuiserie aluminium et mobilier sur mesure"
+  },
   togo: {
     src: "/projects/01-east-legon-villa/living-room.webp",
     alt: "Salon de villa aménagé avec mobilier, luminaires et carrelage grand format"

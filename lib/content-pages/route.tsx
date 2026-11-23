@@ -104,6 +104,26 @@ const HERO_IMAGES: Record<string, { src: string; alt: string }> = {
   "markets/ghana": {
     src: "/projects/01-east-legon-villa/exterior.webp",
     alt: "Completed villa project in Accra, Ghana supplied with building materials from China"
+  },
+  "markets/ghana/diaspora": {
+    src: "/projects/02-cantonments-penthouse/open-plan-living.webp",
+    alt: "Finished Accra residence interior designed and supplied remotely for diaspora homeowners"
+  },
+  "markets/west-africa": {
+    src: "/projects/ug-tropical-lounge.webp",
+    alt: "Tropical hospitality lounge with porcelain flooring, aluminium windows and custom furniture from China"
+  },
+  "markets/middle-east": {
+    src: "/projects/ug-hotel-lobby.webp",
+    alt: "Double-height hotel reception lobby with crystal chandelier, marble flooring and custom millwork from Foshan"
+  },
+  "markets/southeast-asia": {
+    src: "/projects/ug-tropical-lounge.webp",
+    alt: "Resort lounge interior with humid-climate porcelain tiles, aluminium glazing and custom seating from China"
+  },
+  "markets/caribbean-latin-america": {
+    src: "/projects/04-adjiringanor-family-villa/exterior.webp",
+    alt: "Modern tropical villa finished with consolidated building materials exported from China"
   }
 };
 
