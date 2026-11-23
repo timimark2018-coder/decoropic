@@ -5,7 +5,12 @@ slug: "qc-before-shipping-checklist"
 targetKeyword: "what to check before ordering custom furniture from China"
 category: "Ghana guides"
 order: 52
-lastmod: "2026-11-16"
+lastmod: "2026-11-23"
+keyTakeaways:
+  - "Approve shop drawings, material swatches, daylight finish panels and a first-article prototype in writing before bulk production begins."
+  - "Verify supplier authenticity with a live workshop video call, matching business licence, company bank account and milestone payments tied to pre-shipment QC."
+  - "Check moisture-sealed edge banding on cabinets, 230V/50Hz lighting compatibility, plumbing outlet standards and five-ply/crated export packing before sealing."
+  - "Require dated wide shots, tape-measure photos, daylight colour comparisons and function videos of doors, drawers and lights before releasing the balance."
 ---
 
 # What to Check Before Ordering Custom Furniture from China

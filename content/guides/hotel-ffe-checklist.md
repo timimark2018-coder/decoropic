@@ -5,7 +5,12 @@ slug: "hotel-ffe-checklist"
 targetKeyword: "list of FF&E items for hotels"
 category: "Ghana guides"
 order: 51
-lastmod: "2026-11-16"
+lastmod: "2026-11-23"
+keyTakeaways:
+  - "Separate FF&E (capital, long-life items like beds, casegoods, vanities, lighting, curtains) from OS&E (operating items like linen, towels and glassware) before budgeting."
+  - "Ghana's four-star accommodation rules (L.I. 2239) specify room items including a writing desk, armchairs, luggage rack, wardrobe, minibar, remote AC, TV and telephone."
+  - "Lock one finish schedule across guestrooms, bathrooms, corridors, lobby and restaurant — and order spare hinges, handles, fabric and ~5% extra tiles."
+  - "Mixed hotel FF&E categories can be QC-checked and consolidated room-by-room in one Foshan warehouse shipment with no minimum order."
 ---
 
 # Hotel FF&E Checklist: A Room-by-Room List of Items

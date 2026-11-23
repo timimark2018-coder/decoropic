@@ -5,10 +5,17 @@ description: "Kitchen cabinets for Ghana homes, made in Foshan to your measureme
 h1: "Kitchen Cabinets for Ghana Homes, Measured in Accra and Made in Foshan"
 primary_keyword: "kitchen cabinets Ghana"
 schema: Service
-lastmod: "2026-11-16"
+lastmod: "2026-11-23"
 ---
 
 Kitchen cabinets for Ghana need to cope with humidity, heat, termites and the occasional power surge, not just look good on the day they are fitted. Decoropic supplies complete kitchens from China to Ghana: our Accra team measures the room, we prepare a 3D design to your budget, the cabinets are made and checked in Foshan, and we ship them to Tema with everything else your house needs. This page sets out what is in a kitchen package and how the work runs.
+
+## Key takeaways
+
+- **Built for Ghana's climate:** Moisture-resistant green-core board, marine/WBP plywood or aluminium carcasses with 4-side PVC/ABS edge banding and PVC/aluminium plinths to resist humidity and termites.
+- **230V / 50Hz appliance planning:** Built-in ovens, hobs, hoods and sockets (Type G/D) are coordinated into the drawings before production, with quartz, sintered stone or granite worktops pre-cut in Foshan.
+- **Complete turnkey scope:** Site measurement in Accra, 3D design (Functional, Mid-Range or Premium), Foshan QC, consolidated shipping to Tema and on-site installation supervision.
+- **Flexible terms:** No minimum order — combine kitchens with wardrobes, doors, tiles and sanitaryware in one container; payment via T/T or L/C.
 
 ## Cabinet styles that suit Ghanaian homes
 

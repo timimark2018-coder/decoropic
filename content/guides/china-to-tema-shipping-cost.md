@@ -5,7 +5,12 @@ slug: "china-to-tema-shipping-cost"
 targetKeyword: "China to Tema container cost"
 category: "Ghana guides"
 order: 50
-lastmod: "2026-11-16"
+lastmod: "2026-11-23"
+keyTakeaways:
+  - "A container quote to Tema is never just ocean freight: compare origin THC, BAF/surcharges, marine insurance, destination THC, ICUMS duties, clearing fees and haulage."
+  - "40HQ (~76.4 m³) lowers cost per m³ for bulky furniture, doors and cabinets; 20GP (~33 m³) often suits heavy loads like tiles that hit weight limits first."
+  - "Under CIF, import duties, VAT/levies and Tema terminal local charges are still paid by the buyer — always compare quotes on the same Incoterm."
+  - "Most avoidable cost comes from Tema demurrage and detention: confirm free days in writing and have HS codes, B/L and duty funds ready before arrival."
 ---
 
 # China to Tema Container Cost: Every Component Explained

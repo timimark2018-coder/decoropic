@@ -62,6 +62,40 @@ export async function GuideBody({ content, frontmatter, children }: GuideBodyPro
               <Image src={card.src} alt={card.alt} fill priority sizes="(max-width: 860px) 100vw, 860px" className="object-cover" />
             </div>
           )}
+          {frontmatter.keyTakeaways && frontmatter.keyTakeaways.length > 0 && (
+            <div className="mt-8 rounded-[6px] border-l-4 border-brand-gold bg-white p-6 shadow-sm sm:p-8">
+              <p
+                className="text-brand-gold"
+                style={{ fontSize: "0.78rem", fontWeight: 700, letterSpacing: "0.22em", textTransform: "uppercase" }}
+              >
+                Key takeaways
+              </p>
+              <ul className="mt-4 space-y-3">
+                {frontmatter.keyTakeaways.map((item, i) => (
+                  <li key={i} className="flex gap-3 text-base leading-[1.75] text-brand-pine-dark/85">
+                    <span aria-hidden className="mt-[0.65em] h-[5px] w-[5px] shrink-0 rounded-full bg-brand-gold" />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+              <div className="mt-6 flex flex-wrap items-center gap-3 border-t border-brand-pine-dark/10 pt-5">
+                <Link
+                  href="/estimator"
+                  className="inline-flex items-center justify-center rounded-[4px] bg-brand-pine-dark px-5 py-2.5 text-sm font-semibold text-[#f7f3ec] transition-colors hover:bg-brand-gold hover:text-brand-pine-dark"
+                >
+                  Get a 60-Second Estimate →
+                </Link>
+                <a
+                  href={WHATSAPP_LINK(waText)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center rounded-[4px] border border-brand-pine-dark/25 bg-white px-5 py-2.5 text-sm font-semibold text-brand-pine-dark transition-colors hover:border-brand-gold hover:text-brand-gold"
+                >
+                  WhatsApp Accra Team
+                </a>
+              </div>
+            </div>
+          )}
           <div className="mt-8 prose prose-lg max-w-none overflow-x-auto">{rendered}</div>
         </div>
       </section>

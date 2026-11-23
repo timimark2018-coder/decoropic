@@ -5,10 +5,17 @@ description: "Sanitary ware, showers, vanities, taps and matched tiles for Ghana
 h1: "Tiles and Sanitary Ware for Projects in Ghana"
 primary_keyword: "tiles and sanitary ware for projects Ghana"
 schema: Service
-lastmod: "2026-11-16"
+lastmod: "2026-11-23"
 ---
 
 Tiles and sanitary ware for projects in Ghana need to arrive as complete, matching sets — every WC with its cistern and seat, every shower with its valve, every vanity with its basin and waste. Decoropic supplies bathrooms for villas, hotels and apartment developments from Foshan, checks each set against local plumbing, and ships to Tema in one consolidated container. Our main strength is sanitaryware, fittings and bathroom design; we supply tiles where it genuinely makes sense for the project.
+
+## Key takeaways
+
+- **Complete, matched bathroom sets:** WCs, concealed cisterns, moisture-resistant vanities, showers, mixers and matched floor/wall tiles packed and labelled by room or floor.
+- **Ghana plumbing & pressure checked:** Every valve, rain shower and thread/outlet set-out is checked for low-pressure polytank systems and instant electric water heaters before ordering.
+- **Smart tile sourcing & spares:** We import large-format slabs, feature tiles and consolidated full-house packages from Foshan (and recommend local tiles when cheaper), plus 5% batch-matched spares and replacement cartridges.
+- **Zero MOQ & local supervision:** Consolidated shipping to Tema with no minimum order, T/T or L/C payment, and Accra on-site installation supervision.
 
 ## What we supply for project bathrooms
 

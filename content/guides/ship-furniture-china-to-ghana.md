@@ -5,7 +5,12 @@ slug: "ship-furniture-china-to-ghana"
 targetKeyword: "ship furniture from China to Ghana"
 category: "Ghana guides"
 order: 49
-lastmod: "2026-11-16"
+lastmod: "2026-11-23"
+keyTakeaways:
+  - "Sea transit from Shenzhen or Guangzhou (Nansha) to Tema runs roughly 4–6 weeks port to port, plus production, QC, ICUMS clearance and site delivery."
+  - "Supplier consolidation in Foshan gives FCL-level handling for mixed categories (furniture, doors, kitchens, sanitaryware) with less damage risk than LCL."
+  - "Inspect furniture before cartons are sealed, use corner protectors, wooden crates for stone/glass and desiccants to prevent equatorial condensation."
+  - "Under CIF, risk transfers at the Chinese loading port and default Clauses C cover is limited — check whether all-risks (Clauses A) cover is needed."
 ---
 
 # How to Ship Furniture from China to Ghana: A Homeowner's Guide

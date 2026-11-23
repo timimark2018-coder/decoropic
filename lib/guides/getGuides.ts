@@ -16,6 +16,7 @@ export type GuideFrontmatter = {
   lastmod?: string;
   order: number;
   readingTime?: string;
+  keyTakeaways?: string[];
 };
 
 export type Guide = {
