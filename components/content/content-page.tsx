@@ -82,6 +82,30 @@ export function ContentPage({ page, locale, eyebrow, heroImage, relatedGuides, r
                 <RichText text={paragraph} locale={locale} />
               </p>
             ))}
+            <div className="mt-8 flex flex-wrap items-center gap-4">
+              <Link
+                href={localizePath("/estimator", locale)}
+                className="inline-flex items-center justify-center rounded-[4px] bg-brand-pine-dark px-6 py-3 text-sm font-semibold text-[#f7f3ec] transition-colors hover:bg-brand-gold hover:text-brand-pine-dark"
+              >
+                {page.group === "fr"
+                  ? "Estimer mon budget (60 s) →"
+                  : locale === "zh"
+                    ? "60 秒估算项目预算 →"
+                    : "Get a 60-Second Estimate →"}
+              </Link>
+              <a
+                href="https://wa.me/233592470446"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center rounded-[4px] border border-brand-pine-dark/25 bg-white px-6 py-3 text-sm font-semibold text-brand-pine-dark transition-colors hover:border-brand-gold hover:text-brand-gold"
+              >
+                {page.group === "fr"
+                  ? "WhatsApp équipe Accra"
+                  : locale === "zh"
+                    ? "WhatsApp 联系阿克拉团队"
+                    : "WhatsApp Accra Team"}
+              </a>
+            </div>
           </Reveal>
 
           {heroImage && (
@@ -100,15 +124,21 @@ export function ContentPage({ page, locale, eyebrow, heroImage, relatedGuides, r
         </div>
       </section>
 
-      {sections.map((section, index) => (
+      {sections.map((section, index) => {
+        const isTakeaways = /^Key takeaways$/i.test(section.heading);
+        return (
         <section
           key={section.heading}
-          className={index % 2 === 0 ? "bg-white py-16 lg:py-20" : "bg-[#f7f3ec] py-16 lg:py-20"}
+          className={isTakeaways ? "bg-[#f7f3ec] pb-12 pt-2" : index % 2 === 0 ? "bg-white py-16 lg:py-20" : "bg-[#f7f3ec] py-16 lg:py-20"}
         >
           <div className="container-wide max-w-[920px]">
+            <div className={isTakeaways ? "rounded-[6px] border-l-4 border-brand-gold bg-white p-6 shadow-sm sm:p-8" : ""}>
             <h2
-              className="text-brand-pine-dark"
-              style={{
+              className={isTakeaways ? "text-brand-gold uppercase tracking-[0.18em]" : "text-brand-pine-dark"}
+              style={isTakeaways ? {
+                fontSize: "0.82rem",
+                fontWeight: 700
+              } : {
                 fontFamily: "var(--serif)",
                 fontSize: "clamp(1.6rem, 2.8vw, 2.4rem)",
                 fontWeight: 700,
@@ -119,7 +149,7 @@ export function ContentPage({ page, locale, eyebrow, heroImage, relatedGuides, r
               {section.heading}
             </h2>
 
-            <div className="mt-8 space-y-6">
+            <div className={isTakeaways ? "mt-5 space-y-4" : "mt-8 space-y-6"}>
               {section.blocks.map((block, bi) => {
                 if (block.kind === "paragraph") {
                   return (
@@ -245,9 +275,11 @@ export function ContentPage({ page, locale, eyebrow, heroImage, relatedGuides, r
                 </ul>
               )}
             </div>
+            </div>
           </div>
         </section>
-      ))}
+        );
+      })}
 
       {extraSection}
 

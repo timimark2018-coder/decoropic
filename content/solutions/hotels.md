@@ -11,6 +11,13 @@ Decoropic delivers turnkey hotel packages with design: we design the rooms, sour
 
 Working with a hotel FF&E supplier in China makes sense when you want guestrooms, public areas and back-of-house supplied from one source. Decoropic is the brand of Foshan Home Style Import & Export Co., Ltd., founded in 2011 in Foshan. We source furniture, fixtures and equipment together with the hard finishes they sit on: tiles, doors, bathrooms and lighting. Everything is checked in our Foshan warehouse and shipped together, with our Accra team on site for projects in Ghana. For the complete scope, see our [turnkey hotel packages with design](/source-from-china/hotel-ff-e).
 
+## Key takeaways
+
+- **Indicative planning ranges:** Functional $60–$81/m² (~$4,500–$7,500/key), Mid-Range $85–$115/m² (~$7,500–$12,000/key), and Premium $136–$184/m² (~$12,000–$22,000+/key), confirmed against your room schedule.
+- **Single-source scope:** Guestroom casegoods, seating, lighting, sanitaryware, tiles, doors and curtains are consolidated and packed room-by-room at our Foshan warehouse.
+- **Lead time & MOQ:** Plan for **10–14 weeks** from sample-room approval to site delivery in Ghana, with no minimum order.
+- **Local execution:** On-site measurement, Tema port clearing partners and installation supervision in Ghana; remote drawings, video guides and WhatsApp support worldwide.
+
 ## What's in the package
 
 - Guestroom casegoods: beds, headboards, wardrobes, desks, luggage racks and bedside tables

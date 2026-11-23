@@ -10,6 +10,13 @@ lastmod: "2026-11-23"
 
 A villa interior materials package from China lets you buy every finish for a private house through one supplier, one contract and one consolidated shipment. Decoropic is the brand of Foshan Home Style Import & Export Co., Ltd., founded in 2011 in Foshan. We measure the house, draw a design around your budget, source each category from factories in Foshan and Guangdong, inspect the goods in our warehouse and ship them together. Our Accra team supports installation in Ghana; overseas clients get drawings, video guides and a WhatsApp line.
 
+## Key takeaways
+
+- **Indicative planning ranges (300 m² villa):** Functional $48–$64/m² (~$20k–$45k), Mid-Range $68–$92/m² (~$45k–$110k), and Premium $109–$147/m² (~$110k–$245k).
+- **One consolidated shipment:** Tiles, doors, aluminium windows, kitchens, sanitaryware, wardrobes, lighting and furniture are inspected and loaded together in Foshan.
+- **Lead time & MOQ:** Plan for **8–12 weeks** from approved drawings to site delivery in Ghana, with no minimum order.
+- **Proven Ghana delivery:** Delivered villas in East Legon (487 m², 14 weeks), Adjiringanor (312 m², 13 weeks) and Airport Hills (240 m², 11 weeks).
+
 ## What's in the package
 
 - Porcelain floor tiles for living, dining and bedroom areas, with matching skirting

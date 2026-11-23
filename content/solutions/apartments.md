@@ -10,6 +10,13 @@ lastmod: "2026-11-23"
 
 Apartment fit-out materials from China work best when every unit is specified once and supplied as a repeatable pack. Decoropic, the brand of Foshan Home Style Import & Export Co., Ltd., founded in 2011 in Foshan, helps developers and contractors define a standard unit specification, source it across categories, check it in our Foshan warehouse and ship it in planned batches. Our Accra team measures sites in Ghana; for projects elsewhere we work from drawings and video walk-throughs.
 
+## Key takeaways
+
+- **Indicative planning ranges (1–3 bed unit):** Functional $48–$64/m² (~$6k–$12k/unit), Mid-Range $68–$92/m² (~$12k–$25k/unit), and Premium $109–$147/m² (~$25k–$50k+/unit).
+- **Repeatable developer packs:** Tiles, doors, windows, modular kitchens, sanitaryware, wardrobes and lighting packed and labelled by unit type or floor.
+- **Phased delivery:** Plan for **8–12 weeks** to first delivery; show units can ship first with production batches phased to your construction schedule.
+- **Zero MOQ:** No minimum order — single show units or full multi-storey developments consolidated in Foshan.
+
 ## What's in the package
 
 - Floor tiles for living areas and bedrooms, specified per unit type

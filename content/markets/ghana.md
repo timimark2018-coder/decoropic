@@ -9,6 +9,13 @@ lastmod: "2026-11-23"
 
 As a building materials supplier, Ghana from China is the route we know best. Decoropic is the brand of Foshan Home Style Import & Export Co., Ltd., founded in 2011 in Foshan. Our founder has 26 years in the building-materials trade and more than 20 years working in Ghana. We buy in Foshan, check and consolidate the goods in our own warehouse, ship to Tema, and our staffed Accra office follows the job through to site: measurement before the order, clearing at Tema, and installation supervision after delivery.
 
+## Key takeaways
+
+- **Sea transit from South China:** Tema FCL runs **28–35 days** (LCL +7–10 days); Takoradi runs **35–48 days** (fewer direct sailings).
+- **Order-to-site lead time:** Plan for **8–12 weeks** from approved drawings to delivery in Accra, covering production, Foshan QC, sea freight and Tema clearance.
+- **Staffed Accra office:** Located at 15 Bermudagrass St, Dome Pillar 2 (GE-310-2536), handling site measurement and on-site installation supervision.
+- **Flexible terms:** No minimum order, mixed categories consolidated in one container, payment by T/T or L/C.
+
 ## Ports and transit
 
 | Destination port | Typical sea transit from South China | Notes |
