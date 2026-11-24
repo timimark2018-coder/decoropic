@@ -5,7 +5,12 @@ slug: "ghana-electrical-standards-lighting-import"
 targetKeyword: "lighting import Ghana standards"
 category: "Ghana guides"
 order: 27
-lastmod: "2026-10-26"
+lastmod: "2026-11-24"
+keyTakeaways:
+  - "Ghana's domestic power runs on 230V / 50Hz with Type G (BS 1363 three-pin) sockets — specify all imported lighting, drivers and switches to match."
+  - "Cheap LED drivers fail early in Ghana's heat and voltage fluctuations; choose wide-voltage, high-power-factor drivers and keep spare units on hand."
+  - "Check Ghana Standards Authority (GSA) conformity requirements and wiring certificates before shipping electrical goods to avoid Tema port holds."
+  - "Prepare a room-by-room lighting schedule (colour temperature, IP rating for wet/outdoor zones, dimming loops) before ordering."
 ---
 
 # Importing Lighting into Ghana: Electrical Standards, Conformity and LED Driver Quality

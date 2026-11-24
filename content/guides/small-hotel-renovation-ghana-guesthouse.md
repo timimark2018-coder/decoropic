@@ -5,7 +5,12 @@ slug: "small-hotel-renovation-ghana-guesthouse"
 targetKeyword: "guest house renovation Ghana"
 category: "Ghana guides"
 order: 21
-lastmod: "2026-10-26"
+lastmod: "2026-11-24"
+keyTakeaways:
+  - "Refresh a 10–40 room guest house in Ghana floor-by-floor or wing-by-wing so remaining rooms keep generating revenue throughout renovation."
+  - "Build one repeatable room kit (casegoods, beds, lighting, bathroom fittings, curtains) and approve a single mock-up room before bulk ordering."
+  - "Keep noisy civil works strictly isolated by phase and order ~5–10% spare tiles, hardware and fabrics from the same batch so future phases match."
+  - "Consolidating phased FF&E containers in Foshan keeps landed cost predictable and ensures every phase lands on schedule."
 ---
 
 # Guest House Renovation in Ghana: Refreshing 10–40 Rooms Without Closing

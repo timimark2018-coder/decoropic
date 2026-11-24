@@ -5,7 +5,12 @@ slug: "kitchen-worktops-ghana-quartz-vs-granite"
 targetKeyword: "kitchen worktop Ghana"
 category: "Ghana guides"
 order: 25
-lastmod: "2026-10-26"
+lastmod: "2026-11-24"
+keyTakeaways:
+  - "Ghanaian cooking puts worktops through heavy heat, palm oil and tomato stains — choose sintered stone or dark granite for hot pots, or engineered quartz with trivets."
+  - "Pre-cut worktops shipped with Foshan kitchen cabinets save installation time, provided sink and hob models are locked before production."
+  - "Sintered stone offers near-zero porosity and high heat resistance; quartz gives uniform colour and easy daily cleaning; granite needs periodic sealing."
+  - "Pack stone tops on edge in dedicated wooden crates with ~5% spares or matching splashbacks to prevent transit breakage."
 ---
 
 # Kitchen Worktops in Ghana: Quartz, Sintered Stone, Granite and the Local vs Import Question

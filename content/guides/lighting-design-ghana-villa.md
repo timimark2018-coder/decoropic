@@ -5,7 +5,12 @@ slug: "lighting-design-ghana-villa"
 targetKeyword: "lighting for houses in Ghana"
 category: "Ghana guides"
 order: 19
-lastmod: "2026-10-26"
+lastmod: "2026-11-24"
+keyTakeaways:
+  - "Plan every Ghana villa room in three layers — ambient (ceiling/cove), task (kitchen worktops, vanities, desks) and accent (wall washers, pendants) — to eliminate glare on glossy tiles."
+  - "Match colour temperature to function: warm 2700K–3000K for living areas and bedrooms, neutral 4000K for kitchens, dressing rooms and utility zones."
+  - "Specify IP65+ weatherproof fittings for compounds, terraces and pool decks to survive heavy rainy-season downpours and coastal salt air."
+  - "Coordinate ceiling light points and switching loops before slab casting or gypsum ceiling framing so fixtures align cleanly with furniture."
 ---
 
 # Lighting for Houses in Ghana: A Layered Lighting Plan for Villas

@@ -5,7 +5,12 @@ slug: "fitted-wardrobes-ghana-custom-import"
 targetKeyword: "fitted wardrobes Ghana"
 category: "Ghana guides"
 order: 20
-lastmod: "2026-10-26"
+lastmod: "2026-11-24"
+keyTakeaways:
+  - "Most fitted wardrobe failures in Ghana stem from moisture swelling, termites and measuring before walls are plastered and floors are screeded."
+  - "Specify moisture-resistant green-core board or marine/WBP plywood with 4-side PVC/ABS edge banding and corrosion-resistant soft-close hardware."
+  - "Factory-made flat-pack wardrobes from Foshan deliver consistent door alignment and interior fittings at scale, especially across 4+ bedrooms or apartments."
+  - "Consolidate wardrobes with kitchens, doors and bathrooms in one Foshan container to share ocean freight and Tema clearing costs."
 ---
 
 # Fitted Wardrobes in Ghana: Measuring, Materials and Import vs Local Carpentry

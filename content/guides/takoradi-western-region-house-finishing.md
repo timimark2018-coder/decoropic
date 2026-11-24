@@ -5,7 +5,12 @@ slug: "takoradi-western-region-house-finishing"
 targetKeyword: "building materials Takoradi"
 category: "Ghana guides"
 order: 23
-lastmod: "2026-10-26"
+lastmod: "2026-11-24"
+keyTakeaways:
+  - "Takoradi has its own seaport (~35–48 days from South China, often transshipped), but most mixed house loads clear faster via Tema with onward road haulage."
+  - "Coastal Takoradi salt air corrodes standard hardware quickly — specify stainless or powder-coated aluminium railings, marine-grade hinges and solid brass sanitaryware."
+  - "For corporate and energy-sector rental units, Mid-Range durable finishes with matched bathrooms and modern kitchens deliver the strongest occupancy and rent."
+  - "Decoropic conducts coastal salt-air specification reviews, Foshan consolidation and installation supervision across the Western Region."
 ---
 
 # Building Materials in Takoradi: Port Options, Oil-City Demand and Salt-Air Specifications

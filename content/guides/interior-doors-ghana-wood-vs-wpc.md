@@ -5,7 +5,12 @@ slug: "interior-doors-ghana-wood-vs-wpc"
 targetKeyword: "interior doors Ghana"
 category: "Ghana guides"
 order: 24
-lastmod: "2026-10-26"
+lastmod: "2026-11-24"
+keyTakeaways:
+  - "Compare door types by zone: WPC (wood-plastic composite) resists termites and bathroom humidity, engineered wood suits dry bedrooms, and steel security doors fit main entrances."
+  - "Always order doors, frames, architraves and hinges/locks as matched sets — mismatched site frames cause sagging leaves and sticking latches."
+  - "Measure every structural opening at three width points and two height points after plastering and floor levels are fixed, recording swing direction."
+  - "Consolidating a full-house door schedule (10–20+ doors) from Foshan ensures uniform finish, hardware tone and lower landed cost."
 ---
 
 # Interior Doors in Ghana: Wood vs WPC vs Steel Security Doors

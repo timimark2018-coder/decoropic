@@ -5,7 +5,12 @@ slug: "kumasi-house-finishing-materials"
 targetKeyword: "building materials Kumasi"
 category: "Ghana guides"
 order: 22
-lastmod: "2026-10-26"
+lastmod: "2026-11-24"
+keyTakeaways:
+  - "Nearly all imported finishing materials for Kumasi clear at Tema port first and travel inland by flatbed truck — plan haulage and night-halt timing into your schedule."
+  - "Buy cement, blocks, sand and local structural timber in Kumasi; import custom kitchens, wardrobes, matched sanitaryware, aluminium windows and lighting from Foshan."
+  - "Consolidating your full-house package into one sealed 20ft or 40HQ container reduces handling damage on the Tema–Kumasi road leg."
+  - "Decoropic's Ghana team coordinates site measurement in Kumasi, Foshan QC, Tema clearing and on-site installation supervision."
 ---
 
 # Building Materials in Kumasi: Finishing a House in the Ashanti Region

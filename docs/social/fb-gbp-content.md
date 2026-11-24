@@ -15,7 +15,7 @@ Settings → Page Info → 填入以下内容：
 | 字段 | 内容 |
 |------|------|
 | Name | Decoropic |
-| Phone | +233 53 151 9347 |
+| Phone | +233 59 247 0446 |
 | Email | service@decoropic.com |
 | Website | https://www.decoropic.com |
 | Address | Accra, Ghana (service area) |
@@ -48,7 +48,7 @@ We're your one-stop interior partner for villa and commercial projects in Accra 
 
 20 years in Ghana. Hundreds of homes shaped.
 
-📞 +233 53 151 9347
+📞 +233 59 247 0446
 🌐 www.decoropic.com
 📩 service@decoropic.com
 
@@ -157,7 +157,7 @@ Available from stock. MOQ negotiable for full project quantities.
 
 That's enough. We'll ask the right questions.
 
-WhatsApp: +233 53 151 9347
+WhatsApp: +233 59 247 0446
 Or: www.decoropic.com/contact
 
 ---
@@ -172,7 +172,7 @@ Or: www.decoropic.com/contact
 | Primary category | Building materials supplier |
 | Additional categories | Interior designer; Furniture store; Tile store |
 | Service area | Greater Accra; Kumasi; Tema; Takoradi |
-| Phone | +233 53 151 9347 |
+| Phone | +233 59 247 0446 |
 | Website | https://www.decoropic.com |
 | Email | service@decoropic.com |
 | Hours | Mon–Sat 08:00–20:00 (GMT) |
