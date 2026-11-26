@@ -6,7 +6,12 @@ targetKeyword: "matériaux de finition Abidjan"
 category: "West Africa guides"
 country: "Côte d'Ivoire"
 order: 44
-lastmod: "2026-10-26"
+lastmod: "2026-11-26"
+keyTakeaways:
+  - "Multi-unit apartment blocks in Abidjan (10–100 units across Cocody, Marcory or Riviera) gain the biggest savings by ordering repeatable unit packs from Foshan."
+  - "Standardise one specification per apartment type (kitchen, bathrooms, doors, tiles, lighting) and pack containers by floor so site crews install sequentially."
+  - "Prepare Côte d'Ivoire import documents (FDI, BSC cargo tracking note and VoC Certificate of Conformity via GUCE) before shipment leaves South China."
+  - "Consolidate all categories in Foshan with pre-shipment photo QC and ship phased 40HQ containers to Port of Abidjan (~45 days transit)."
 ---
 
 # Abidjan Apartment Finishing Materials from China (Matériaux de Finition)

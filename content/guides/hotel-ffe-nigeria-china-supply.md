@@ -6,7 +6,12 @@ targetKeyword: "hotel furniture suppliers Nigeria"
 category: "West Africa guides"
 country: "Nigeria"
 order: 42
-lastmod: "2026-10-26"
+lastmod: "2026-11-26"
+keyTakeaways:
+  - "For 30- to 200-key hotels in Lagos, Abuja or Port Harcourt, consolidated Foshan FF&E supply balances contract-grade durability, finish consistency and landed cost."
+  - "Start Nigerian import paperwork early: Form M, SONCAP Product/SONCAP Certificate and PAAR must align with your commercial invoice and packing list."
+  - "Approve physical swatches and a mock-up room before bulk production, and run pre-shipment Foshan warehouse QC with dated photo reports."
+  - "Pack and label cartons by floor and room type across phased 40HQ containers so site teams can fit rooms in sequence."
 ---
 
 # Hotel Furniture and FF&E Supply from China to Nigeria

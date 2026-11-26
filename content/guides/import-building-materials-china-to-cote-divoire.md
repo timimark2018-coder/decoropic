@@ -6,7 +6,12 @@ targetKeyword: "import building materials from China to Côte d'Ivoire"
 category: "West Africa guides"
 country: "Côte d'Ivoire"
 order: 43
-lastmod: "2026-10-26"
+lastmod: "2026-11-26"
+keyTakeaways:
+  - "Importing building materials into Côte d'Ivoire runs through the GUCE single electronic window and Port of Abidjan (~45 days sea transit from South China)."
+  - "Three documents drive smooth clearance: the FDI (Fiche de Déclaration à l'Importation), BSC (Bordereau de Suivi de Cargaison) and VoC Certificate of Conformity."
+  - "The VoC programme covers 13 product categories including building materials and electrical/lighting products — arrange pre-shipment inspection before loading."
+  - "Consolidating tiles, kitchens, doors, sanitaryware and furniture at one Foshan warehouse keeps invoices, HS codes and packing lists consistent."
 ---
 
 # How to Import Building Materials from China to Côte d'Ivoire

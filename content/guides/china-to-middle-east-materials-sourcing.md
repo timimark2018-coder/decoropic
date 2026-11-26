@@ -4,7 +4,12 @@ description: "Gulf ports and routing, the Chinese New Year trap that slips fit-o
 slug: "china-to-middle-east-materials-sourcing"
 targetKeyword: "sourcing building materials from China to the Middle East"
 order: 2
-lastmod: "2026-08-07"
+lastmod: "2026-11-26"
+keyTakeaways:
+  - "Fast-moving UAE, Saudi Arabia and GCC hotel and residential projects save significant cost and coordination time by consolidating FF&E and finishes in Foshan."
+  - "Low GCC customs duties and frequent South China–Jebel Ali/Dammam sailings make multi-category 40HQ container sourcing highly competitive."
+  - "Check destination conformity requirements (such as Saudi SABER/SASO or UAE ESMA) and 230V/50Hz electrical ratings before placing factory deposits."
+  - "Approve physical material samples and run pre-shipment warehouse QC with photo reports before releasing balance payment."
 ---
 
 # Sourcing Project Materials from China to the Middle East

@@ -6,7 +6,12 @@ targetKeyword: "hotel fit-out Abidjan"
 category: "West Africa guides"
 country: "Côte d'Ivoire"
 order: 45
-lastmod: "2026-10-26"
+lastmod: "2026-11-26"
+keyTakeaways:
+  - "For a 40-key business hotel in Plateau or lagoon resort in Abidjan, consolidating FF&E, bathroom fittings, lighting, doors and tiles in Foshan keeps finishes uniform."
+  - "Approve a mock-up room and finish schedule before bulk production, then phase 40HQ shipments to Port of Abidjan to match your construction sequence."
+  - "Prepare Côte d'Ivoire's FDI, BSC and VoC conformity documents early via GUCE so containers clear without demurrage."
+  - "Decoropic handles remote design, Foshan QC, room-by-room packing and export; your local importer and contractor handle Abidjan clearance and installation."
 ---
 
 # Hotel Fit-Out in Abidjan: FF&E and Finishes Supplied from China

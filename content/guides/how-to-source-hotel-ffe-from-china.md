@@ -4,7 +4,12 @@ description: "Guestroom packages, container sizing (33–38 m³ per 40ft), $1,80
 slug: "how-to-source-hotel-ffe-from-china"
 targetKeyword: "how to source hotel FF&E from China"
 order: 1
-lastmod: "2026-11-04"
+lastmod: "2026-11-26"
+keyTakeaways:
+  - "Treat hotel FF&E as one coordinated material programme — not loose product purchases — so casegoods, seating, lighting, doors and bathroom fittings match."
+  - "Approve a mock-up room and physical finish swatches before bulk production; standard items take 7–15 days while bespoke joinery and upholstery take 20–40 days."
+  - "Consolidate categories at one Foshan warehouse and label cartons by floor and room type so site crews unpack in installation sequence."
+  - "Plan ocean freight ($1,800–$3,200 per 40ft container from South China in 2026, market-dependent) and phase containers to match your opening date."
 ---
 
 # How to Source Hotel FF&E from China — A Project Buyer's Guide

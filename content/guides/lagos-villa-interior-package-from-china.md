@@ -6,7 +6,12 @@ targetKeyword: "interior finishing materials Lagos"
 category: "West Africa guides"
 country: "Nigeria"
 order: 41
-lastmod: "2026-10-26"
+lastmod: "2026-11-26"
+keyTakeaways:
+  - "Sourcing a Lagos villa's kitchens, wardrobes, doors, tiles, sanitaryware and lighting in one Foshan consolidated container saves cost and avoids mismatched finishes."
+  - "We return shop drawings for sign-off before production and run short video calls with your Lagos contractor to verify site openings and plumbing points."
+  - "Prepare Form M and SONCAP conformity documents in parallel with production so clearance at Lagos ports runs smoothly."
+  - "Units arrive numbered to the installation drawing with bagged hardware per room; your local contractor installs with our remote video support."
 ---
 
 # Lagos Villa Interior Package from China: What to Include and How It Ships

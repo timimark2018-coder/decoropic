@@ -4,7 +4,12 @@ description: "Where the ChAFTA advantage really lands, the origin paperwork that
 slug: "china-to-australia-project-materials-chafta"
 targetKeyword: "importing project materials from China to Australia ChAFTA"
 order: 3
-lastmod: "2026-08-07"
+lastmod: "2026-11-26"
+keyTakeaways:
+  - "Under the China–Australia Free Trade Agreement (ChAFTA), qualifying Chinese-origin interior materials and FF&E enter Australia at preferential or zero customs duty."
+  - "Claiming ChAFTA requires a valid Certificate of Origin and consistent commercial invoice, packing list and bill of lading prepared before shipment."
+  - "Verify Australian compliance standards (such as WaterMark for plumbing/sanitaryware, RCM electrical approval and glazing codes) prior to factory production."
+  - "Plan 7–15 days for standard items, 20–40 days for bespoke joinery/slabs and ~28–35 days sea transit, consolidated into one container in Foshan."
 ---
 
 # Importing Project Materials from China to Australia — A Developer's Guide (ChAFTA)

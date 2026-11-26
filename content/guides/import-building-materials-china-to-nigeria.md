@@ -6,7 +6,12 @@ targetKeyword: "import building materials from China to Nigeria"
 category: "West Africa guides"
 country: "Nigeria"
 order: 40
-lastmod: "2026-10-26"
+lastmod: "2026-11-26"
+keyTakeaways:
+  - "In Nigeria, paperwork sequence matters more than ocean transit: open Form M, obtain SONCAP certification for regulated building/electrical items and secure PAAR before arrival."
+  - "Confirm with your Lagos clearing agent which gateway (Apapa, Tin Can Island or Lekki Deep Sea Port) best suits your vessel routing and site location."
+  - "Consolidating mixed categories in one Foshan container cuts duplicate clearing fees and ensures itemised invoices match the packing list line by line."
+  - "Approve samples and run pre-shipment warehouse QC in Foshan before balance payment so defects are fixed prior to export."
 ---
 
 # How to Import Building Materials from China to Nigeria

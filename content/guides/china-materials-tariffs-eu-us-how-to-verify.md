@@ -4,7 +4,12 @@ description: "What's reported for EU anti-dumping and US Section 301, why the sa
 slug: "china-materials-tariffs-eu-us-how-to-verify"
 targetKeyword: "China building materials tariffs EU US how to verify"
 order: 5
-lastmod: "2026-08-07"
+lastmod: "2026-11-26"
+keyTakeaways:
+  - "Import duties on Chinese building materials vary sharply by destination and HS code: EU and US can apply high anti-dumping or Section 301 tariffs on tiles and aluminium."
+  - "Australia (under ChAFTA), the Middle East (GCC) and much of Africa apply low or zero customs duty on most interior finishing categories."
+  - "Furniture and lighting generally face milder tariff treatment than ceramic tiles or extruded aluminium across most markets."
+  - "Never rely on general web averages — verify your exact 8- or 10-digit HS code and current duty rate with a licensed local customs broker before ordering."
 ---
 
 # Tariffs on Chinese Building Materials (EU & US): What's Reported, and How to Verify

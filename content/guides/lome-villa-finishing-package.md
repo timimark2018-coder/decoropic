@@ -6,7 +6,12 @@ targetKeyword: "villa finishing Lomé"
 category: "West Africa guides"
 country: "Togo"
 order: 48
-lastmod: "2026-10-26"
+lastmod: "2026-11-26"
+keyTakeaways:
+  - "Finishing a villa in Lomé (Agoè, Baguida, Avépozo) as one consolidated Foshan package delivers matched kitchens, wardrobes, bathrooms, tiles, doors and lighting."
+  - "Shop drawings are issued in French or English for sign-off before production, with video call support for your local mason or carpenter."
+  - "There is no minimum order — start with a kitchen/bathroom package or consolidate a full 40HQ container via Port of Lomé (~30–45 days transit, ~3–7 days clearing)."
+  - "Payment runs by T/T or L/C with deposit on order and balance before shipment after Foshan warehouse QC photos and videos."
 ---
 
 # Villa Finishing in Lomé: A Complete Interior Package from China

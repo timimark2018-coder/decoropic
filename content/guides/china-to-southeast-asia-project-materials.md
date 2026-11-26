@@ -4,7 +4,12 @@ description: "Ports, transit times, duty treatment and QC for shipping hotel and
 slug: "china-to-southeast-asia-project-materials"
 targetKeyword: "source hotel furniture from China Southeast Asia"
 order: 2
-lastmod: "2026-11-04"
+lastmod: "2026-11-26"
+keyTakeaways:
+  - "Short South China sea routes to Southeast Asia (5–15 days to major regional ports) mean design sign-off, production and QC — not ocean freight — drive your schedule."
+  - "Start with your site schedule, bill of quantities and nominated local importer/contractor so export documents and packing match destination rules."
+  - "Specify moisture-resistant cabinet boards, tropical-climate adhesives and corrosion-resistant hardware for humid and beachfront Southeast Asian sites."
+  - "Decoropic handles remote specification, Foshan factory sourcing, QC and consolidated export; your local team handles customs clearance and installation."
 ---
 
 # China to Southeast Asia: Hotel & Interior Procurement Checklist

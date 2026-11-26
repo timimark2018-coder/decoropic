@@ -29,6 +29,8 @@ export type SourcePageProps = {
   subtitle: string;
   /** 首屏副标题下的一条链接(例如指向同主题的指南);可选 */
   heroLink?: { lead: string; label: string; href: string };
+  /** GEO 结构化要点框（置于正文之前，方便 AI 搜索与买家速览） */
+  keyTakeaways?: string[];
   intro: string[];
   categoriesTitle?: string;
   categories?: SourceListItem[];
@@ -109,6 +111,7 @@ export function SourcePage(props: SourcePageProps) {
     h1,
     subtitle,
     heroLink,
+    keyTakeaways,
     intro,
     categoriesTitle,
     categories,
@@ -203,6 +206,13 @@ export function SourcePage(props: SourcePageProps) {
               >
                 Get a Project Material Plan
               </Link>
+              <Link
+                href="/estimator"
+                className="bg-brand-pine-dark text-brand-ivory px-7 py-4 transition-colors hover:bg-brand-pine-dark/90"
+                style={{ fontFamily: "var(--serif)", fontSize: "0.875rem", letterSpacing: "0.18em", textTransform: "uppercase", fontWeight: 700 }}
+              >
+                60-Second Budget Estimate →
+              </Link>
               <a
                 href={WHATSAPP_LINK(whatsappText)}
                 target="_blank"
@@ -216,6 +226,29 @@ export function SourcePage(props: SourcePageProps) {
           </Reveal>
         </div>
       </section>
+
+      {keyTakeaways && keyTakeaways.length > 0 && (
+        <section className="bg-[#f7f3ec] pt-14 pb-2">
+          <div className="container-wide max-w-[860px]">
+            <div className="rounded-[6px] border-l-4 border-brand-gold bg-white p-6 shadow-sm sm:p-8">
+              <p
+                className="text-brand-gold"
+                style={{ fontSize: "0.78rem", fontWeight: 700, letterSpacing: "0.22em", textTransform: "uppercase" }}
+              >
+                Key takeaways
+              </p>
+              <ul className="mt-4 space-y-3">
+                {keyTakeaways.map((item, i) => (
+                  <li key={i} className="flex gap-3 text-base leading-[1.75] text-brand-pine-dark/85">
+                    <span aria-hidden className="mt-[0.65em] h-[5px] w-[5px] shrink-0 rounded-full bg-brand-gold" />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* Intro prose */}
       <section className="bg-[#f7f3ec] py-16 lg:py-24">

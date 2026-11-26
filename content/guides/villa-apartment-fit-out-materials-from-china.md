@@ -4,7 +4,12 @@ description: "All seven categories in a fit-out package, the omissions that stal
 slug: "villa-apartment-fit-out-materials-from-china"
 targetKeyword: "villa and apartment fit-out material package from China"
 order: 4
-lastmod: "2026-11-04"
+lastmod: "2026-11-26"
+keyTakeaways:
+  - "A complete villa or apartment fit-out package spans seven coordinated categories: tiles, sanitaryware, kitchens, wardrobes, doors/windows, lighting and furniture."
+  - "Build in 5–8% breakage and cutting allowance on tiles/stone and verify ±0.5 mm tile calibration before loading to prevent site shortages."
+  - "Plan 10–12 weeks from approved drawings to port arrival, consolidating all categories into one or more 40HQ containers in Foshan."
+  - "Lock hardware, electrical voltage and plumbing set-out dimensions before production so nothing stalls handover on site."
 ---
 
 # Villa & Apartment Fit-out: The Complete Material Package from China

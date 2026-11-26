@@ -74,6 +74,12 @@ export default async function HotelFFEPage() {
         href: "/guides/hotel-ffe-checklist"
       }}
       subtitle="Design and full FF&E supply for hotel projects — guestrooms, lobbies and bathrooms specified as one scheme, then sourced, quality-controlled and exported from China as a single package."
+      keyTakeaways={[
+        "Full hospitality scope from Foshan & Lecong: guestroom casegoods, seating, lobby millwork, bathroom fittings, tiles and commercial lighting under one scheme.",
+        "Batch-consistent quality across 20 to 300+ rooms — approved mock-up samples, factory QC photo reports and cartons labelled by floor and room type.",
+        "Typical schedule runs 50–80 days from approved specification to port, phased across 40HQ containers to match your build and opening sequence.",
+        "Worldwide export on FOB/CIF terms (your local contractor clears and installs); full turnkey delivery with site supervision is available in Ghana."
+      ]}
       intro={[
         "Decoropic equips hotel projects with a complete, designed FF&amp;E and finish-material package sourced from China — not loose furniture orders. We design and specify the interior remotely (layouts, renders and a room-by-room material schedule), then source every element for it: guestroom casegoods, lobby feature furniture, bathroom fittings, lighting and finishes, coordinated as one scheme.",
         "China is the primary manufacturing source of hotel FF&amp;E for the global hospitality industry, and Foshan and Lecong sit at its centre — producing the casegoods, seating, lighting and bathroom fittings that equip hotels on every continent, from three-star contract grade to five-star bespoke. The value is not a single cheap category; it is a whole property specified coherently and bought as one package.",

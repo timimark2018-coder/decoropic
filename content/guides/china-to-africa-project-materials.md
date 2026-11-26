@@ -4,7 +4,12 @@ description: "Routing and transhipment, inland legs that blow programmes, why we
 slug: "china-to-africa-project-materials"
 targetKeyword: "sourcing building materials from China to Africa"
 order: 7
-lastmod: "2026-08-07"
+lastmod: "2026-11-26"
+keyTakeaways:
+  - "African hospitality and residential markets remain tariff-friendly for Chinese finishes, making consolidated Foshan sourcing cost-effective for hotels, apartments and villas."
+  - "Plan around standard production (7–15 days stock, 20–40 days bespoke/slabs) plus ~28–35 days direct ocean transit to major West and East African ports."
+  - "Confirm destination pre-shipment conformity programmes (such as SONCAP, PVoC or VoC) and cargo tracking notes before goods leave China."
+  - "Consolidate all categories at one Foshan warehouse with itemised invoices, packing lists and photo QC reports so local clearing runs cleanly."
 ---
 
 # Sourcing Project Materials from China to Africa

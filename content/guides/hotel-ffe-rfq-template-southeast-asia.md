@@ -4,7 +4,12 @@ description: "What a hotel FF&E request for quotation must specify to get compar
 slug: "hotel-ffe-rfq-template-southeast-asia"
 targetKeyword: "hotel FF&E RFQ template Southeast Asia"
 order: 3
-lastmod: "2026-11-04"
+lastmod: "2026-11-26"
+keyTakeaways:
+  - "Issue every hotel FF&E supplier the exact same room matrix, item specification, Incoterm and inclusion/exclusion list so quotes can be compared fairly."
+  - "Explicitly state whether mattresses, lighting fixtures, assembly hardware, spare parts and export crating are inside or outside the quoted price."
+  - "Tie quotation acceptance to physical sample approval, shop-drawing sign-off and a pre-shipment QC inspection gate before balance payment."
+  - "Include destination port, phasing by floor and required compliance certificates upfront to avoid hidden surcharges after deposit."
 ---
 
 # Hotel FF&E RFQ Template for Southeast Asia Projects

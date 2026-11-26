@@ -4,7 +4,12 @@ description: "Four inspection points, what a useful report must contain, $200–
 slug: "china-export-qc-consolidation-checklist"
 targetKeyword: "China export QC and consolidation inspection checklist"
 order: 6
-lastmod: "2026-08-07"
+lastmod: "2026-11-26"
+keyTakeaways:
+  - "Pre-shipment QC catches dimension, finish and hardware errors at the Foshan factory before balance payment — avoiding costly site delays overseas."
+  - "Consolidating tiles, sanitaryware, doors, lighting and furniture into one warehouse shipment cuts duplicate freight, customs and handling fees."
+  - "Inspect against approved physical samples and a written spec matrix, documenting quantities, moisture-sealed packing and container seal numbers."
+  - "Require dated photo and video QC reports per category before sealing the container and releasing final balance payment."
 ---
 
 # QC & Consolidation from China: The Project Inspection Checklist

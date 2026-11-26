@@ -58,6 +58,12 @@ export default async function SourceFromChinaHub() {
       eyebrow="Global Sourcing · Worldwide Export"
       h1="Source Building Materials & Interior FF&E from China — Worldwide Export"
       subtitle="Design and full-material supply for hotel, villa and apartment projects — we design and specify remotely, then source, QC, consolidate and export the whole package from China. You import and install locally."
+      keyTakeaways={[
+        "Project-level sourcing from 1,000+ Foshan/Guangdong factories: tiles, furniture, hotel FF&E, sanitaryware, lighting, doors and windows consolidated into one shipment.",
+        "No fixed SKU minimum — LCL shared containers for smaller scopes and phased 40HQ containers for hotels, villas and multi-unit developments.",
+        "Typical timeline runs 8–12 weeks from order to port (15–45 days production, 7–10 days Foshan QC & consolidation, 13–35 days sea freight).",
+        "China-side scope worldwide (remote design, QC photo reports and export paperwork); full turnkey delivery with local installation is offered in Ghana."
+      ]}
       intro={[
         "Decoropic supplies complete interior material packages — with design and selection — for hotel, villa and apartment projects worldwide. Rather than selling loose categories, we work at project level: we help you design and specify the interior, then source every material for it from China and export the package as one coordinated shipment.",
         "The design side is remote. We produce layouts, renders and a fully specified material list — the schedule that turns a project brief into an orderable package. From there we work the China supply chain: qualifying factories from our 1,000+ network in Foshan, Guangdong, negotiating project pricing, inspecting goods before shipment, and consolidating tiles, furniture, sanitary ware, lighting, doors and finishes into a single export shipment.",

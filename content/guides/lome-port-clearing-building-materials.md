@@ -6,7 +6,12 @@ targetKeyword: "Lomé port clearing"
 category: "West Africa guides"
 country: "Togo"
 order: 47
-lastmod: "2026-10-26"
+lastmod: "2026-11-26"
+keyTakeaways:
+  - "Most Lomé port clearing delays stem from late or mismatched Chinese export documents — not customs itself."
+  - "Provide your clearing agent with consistent commercial invoice, itemised packing list, bill of lading, Certificate of Origin and validated BESC before vessel arrival."
+  - "Confirm HS codes and duty estimates with your licensed Togolese agent prior to loading so funds are ready when the container berths."
+  - "Consolidated Foshan shipments under one supplier reduce multi-invoice discrepancies and speed up terminal release."
 ---
 
 # Lomé Port Clearing for Building Materials: What Your Agent Needs from Your Supplier

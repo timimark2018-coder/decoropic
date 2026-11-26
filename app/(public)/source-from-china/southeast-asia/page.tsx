@@ -64,14 +64,15 @@ export default function SoutheastAsiaPage() {
           <p className={styles.subtitle}>Hotel FF&E, villa interiors and apartment packages for Singapore and the rest of Southeast Asia. Design, sourcing, quality control and consolidated export from China, coordinated with your local project team.</p>
           <div className={styles.actions}>
             <a href="#project-brief" className={styles.primary}>Discuss your project <ArrowRight size={18} /></a>
+            <Link href="/estimator" className={styles.primary}>60-Second Estimate <ArrowRight size={18} /></Link>
             <LpWhatsAppButton sourcePage={sourcePage} message="Hi Decoropic, I have a Southeast Asia project. Country/city: __. Hotel/villa/apartment: __. Rooms/units: __. Target delivery: __. Please help with China sourcing and export." className={styles.whatsapp} />
           </div>
         </div>
       </section>
       <section className={styles.boundary}>
         <div className="container-wide">
-          <h2>China-side supply. Your local team on site.</h2>
-          <p>{SERVICE_BOUNDARY}</p>
+          <h2>Key takeaways — Singapore &amp; Southeast Asia sourcing</h2>
+          <p>Short South China sea lanes (about 5–7 days to Ho Chi Minh Cat Lai, 7–14 days to Thailand/Malaysia/Philippines) mean production and QC set the timeline. Decoropic handles remote specification, Foshan factory sourcing, pre-shipment QC and consolidated export with no SKU minimum; your local team handles import clearance and installation (full turnkey is Ghana-only).</p>
         </div>
       </section>
       <section className={styles.section}>

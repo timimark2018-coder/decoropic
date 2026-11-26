@@ -6,7 +6,12 @@ targetKeyword: "import building materials from China to Togo"
 category: "West Africa guides"
 country: "Togo"
 order: 46
-lastmod: "2026-10-26"
+lastmod: "2026-11-26"
+keyTakeaways:
+  - "Port of Lomé is Togo's deep-water container hub (~30–45 days sea transit from South China), making it a practical gateway for Togo and regional inland projects."
+  - "Obtain the mandatory BESC (electronic cargo tracking note) and Certificate of Origin on time — missing BESC filings are the top cause of port penalties."
+  - "Keep commercial invoice, packing list and bill of lading descriptions 100% consistent across all consolidated building-material categories."
+  - "Consolidate kitchens, bathrooms, tiles, doors, lighting and furniture in one Foshan warehouse with no minimum order."
 ---
 
 # How to Import Building Materials from China to Togo
