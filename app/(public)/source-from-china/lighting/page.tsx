@@ -56,6 +56,12 @@ export default async function LightingPage() {
       eyebrow="Sourcing · Lighting"
       h1="Lighting from China — Worldwide Export"
       subtitle="Chandeliers, pendants, architectural and commercial LED — sourced to your market's voltage and certification, quality-controlled and exported worldwide."
+      keyTakeaways={[
+        "Destination-matched electrical specification from day one: mains voltage, wide-voltage LED drivers, dimming compatibility and CE/UL/SAA certificates where required.",
+        "Full project range from decorative chandeliers and pendants to recessed architectural LED, track/linear systems, hospitality fixtures and IP-rated exterior lighting.",
+        "Every consignment is pre-shipment tested for function, finish and quantity, then export-packed with fragile protection and consolidated with other categories.",
+        "China-side sourcing, QC and worldwide export (your licensed local electrician installs); full turnkey installation is offered in Ghana."
+      ]}
       intro={[
         "Lighting is one part of the complete project package Decoropic designs and supplies for hotel, villa and apartment projects — specified alongside tiles, furniture and finishes as one scheme. You can source lighting on its own, or as part of a full project material package from our <a href=\"/source-from-china\" style=\"color:var(--brand-gold);text-decoration:underline;text-underline-offset:2px\">project sourcing hub</a>.",
         "China manufactures the majority of the world's lighting, decorative and architectural alike. The variety available to an international buyer is enormous — but lighting carries a risk that most other categories don't: it has to match your market's electrical standards. A fitting sourced without regard to voltage, driver compatibility or certification can be unsellable or uninstallable when it lands.",

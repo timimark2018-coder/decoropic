@@ -81,6 +81,12 @@ export default async function TilesSanitaryPage() {
         href: "/products/tiles-sanitary-ware-ghana"
       }}
       subtitle="Porcelain slab, ceramic, toilets, basins and brassware at project volume — sourced from Foshan, quality-controlled, and exported to tariff-friendly markets worldwide."
+      keyTakeaways={[
+        "One Foshan supplier, one production batch, one consolidated container — hotel sanitary ware and matching ceramic/porcelain tiles ordered together so shade and calibre stay consistent across every room.",
+        "Full range: large-format porcelain slabs (up to 1.5×3m), ceramic/stone tiles, wall-hung & close-coupled WCs, vanity units, brassware and shower systems.",
+        "Typical lead time runs 6–10 weeks from confirmed order to port (15–30 days production, 5–10 days QC & palletising, 13–35 days sea freight).",
+        "Best value into tariff-friendly markets (Australia under ChAFTA, Middle East, Africa); EU/US buyers should verify anti-dumping and Section 301 duties first."
+      ]}
       intro={[
         "One supplier, one batch, one container. Decoropic sources hotel sanitary ware and the matching ceramic tiles together in Foshan, orders the tiles from a single production batch so colours match from room to room, and ships both in one consolidated container.",
         "Tiles and sanitary ware are one part of the complete project material package Decoropic designs and supplies for hotel, villa and apartment projects — specified alongside furniture, lighting and finishes so the whole interior reads as one scheme. This page covers the tile and sanitary layer; you can source it on its own, or as part of a full project package from our <a href=\"/source-from-china\" style=\"color:var(--brand-gold);text-decoration:underline;text-underline-offset:2px\">project sourcing hub</a>.",

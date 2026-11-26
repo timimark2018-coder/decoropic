@@ -56,6 +56,12 @@ export default async function BuildingMaterialsPage() {
       eyebrow="Sourcing · Building Materials"
       h1="Building Materials from China — Worldwide Export"
       subtitle="Source a complete building-materials package from China's largest manufacturing cluster — vetted, quality-controlled, and consolidated for export to your port."
+      keyTakeaways={[
+        "One contract covers all structural interior categories from Foshan: porcelain slabs & ceramic tiles, sanitary ware, aluminium/steel/timber doors & windows, and wall finishes.",
+        "Every order includes pre-shipment factory QC checking dimensions, finish, batch colour consistency and quantity with photo reports before container loading.",
+        "Market-specific technical specs (plumbing standards, glazing grades, fire ratings, voltage) are confirmed at sample approval before production.",
+        "Worldwide export with clean customs paperwork (invoice, packing list, B/L, certificates); full turnkey installation is offered in Ghana."
+      ]}
       intro={[
         "Building materials are the structural layer of the complete project package Decoropic designs and supplies for hotel, villa and apartment projects — specified alongside furniture, lighting and FF&amp;E as one scheme. You can source the material package on its own, or as part of a full project from our <a href=\"/source-from-china\" style=\"color:var(--brand-gold);text-decoration:underline;text-underline-offset:2px\">project sourcing hub</a>.",
         "China produces the majority of the world's interior building materials, and the Foshan region in Guangdong is its centre of gravity — tens of thousands of factories making tiles, sanitary ware, doors, windows and finishes at every specification tier. For an international buyer, that scale is both the opportunity and the problem: the choice is vast, quality is uneven, and coordinating a full material package across categories is a full-time job.",

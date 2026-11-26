@@ -56,6 +56,12 @@ export default async function FurniturePage() {
       eyebrow="Sourcing · Furniture"
       h1="Furniture Supplier from China — Worldwide Export"
       subtitle="A vetted China furniture supply base, one accountable partner: sample approval, quality control, export-grade packing and worldwide shipping."
+      keyTakeaways={[
+        "Vetted Guangdong factories across residential (living, dining, bedrooms, wardrobes), office/workspace, hospitality contract ranges and bespoke millwork.",
+        "Physical samples and frame/joinery/upholstery specs are verified before bulk production, backed by pre-shipment photo QC reports.",
+        "Export-grade packing (corner protection, moisture barriers, sensible knock-down) prevents transit damage across FCL or shared LCL containers.",
+        "China-side sourcing, QC and export worldwide; full turnkey delivery with on-site assembly is available in Ghana."
+      ]}
       intro={[
         "Furniture is one part of the complete project package Decoropic designs and supplies for hotel, villa and apartment projects — selected alongside tiles, lighting and finishes to one design intent. You can source furniture on its own, or as part of a full project material package from our <a href=\"/source-from-china\" style=\"color:var(--brand-gold);text-decoration:underline;text-underline-offset:2px\">project sourcing hub</a>.",
         "China is the world's largest furniture manufacturer, and buyers everywhere source from it — but finding a reliable furniture supplier in China from the outside is genuinely difficult. Factory listings are unverified, quality varies widely between workshops that look identical online, and the difference between solid-wood joinery and veneer over particleboard is invisible until the furniture arrives.",
