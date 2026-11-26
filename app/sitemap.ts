@@ -100,6 +100,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { path: "/about", changeFrequency: "monthly", priority: 0.7 },
     { path: "/contact", changeFrequency: "monthly", priority: 0.8 },
     { path: "/estimator", changeFrequency: "monthly", priority: 0.9 },
+    { path: "/tools/tema-duty-calculator", changeFrequency: "monthly", priority: 0.85 },
     { path: "/blog", changeFrequency: "weekly", priority: 0.8 },
     { path: "/lp/villa-renovation-quote", changeFrequency: "monthly", priority: 0.7 },
     { path: "/lp/founder-story", changeFrequency: "monthly", priority: 0.7 }

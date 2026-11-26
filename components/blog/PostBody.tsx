@@ -42,7 +42,37 @@ export async function PostBody({ content, frontmatter }: PostBodyProps) {
               ))}
             </ul>
           </aside>
-        ) : null
+        ) : null,
+      // 文中段情境化转化卡片（减少长文读到一半流失）
+      MidArticleCta: ({
+        heading = "Planning a Ghana or West Africa project?",
+        body = "Run our free Tema duty & container calculator or send your floor plan to our Accra team for a 3-tier Foshan quote."
+      }: {
+        heading?: string;
+        body?: string;
+      }) => (
+        <aside className="not-prose my-10 rounded-[6px] border-l-4 border-brand-gold bg-[#f7f3ec] p-6 sm:p-8">
+          <p className="text-xs font-bold uppercase tracking-[0.2em] text-brand-gold">Quick project tools</p>
+          <p className="mt-2 text-lg font-bold text-brand-pine-dark">{heading}</p>
+          <p className="mt-2 text-sm leading-[1.7] text-brand-pine-dark/75">{body}</p>
+          <div className="mt-5 flex flex-wrap gap-3">
+            <Link
+              href="/tools/tema-duty-calculator"
+              className="inline-flex items-center justify-center rounded-[4px] bg-brand-pine-dark px-5 py-2.5 text-sm font-semibold text-[#f7f3ec] transition-colors hover:bg-brand-gold hover:text-brand-pine-dark"
+            >
+              Tema Duty &amp; Container Calculator →
+            </Link>
+            <a
+              href="https://wa.me/233592470446"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center rounded-[4px] border border-brand-pine-dark/25 bg-white px-5 py-2.5 text-sm font-semibold text-brand-pine-dark transition-colors hover:border-brand-gold hover:text-brand-gold"
+            >
+              WhatsApp Accra Team
+            </a>
+          </div>
+        </aside>
+      )
     }
   });
 
